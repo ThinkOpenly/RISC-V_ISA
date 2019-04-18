@@ -1,0 +1,2312 @@
+[
+	{
+		"description":"Load Byte and Zero",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lbz",
+				"regs": "['RT,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Byte and Zero Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lbzx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Byte and Zero with Update",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lbzu",
+				"regs": "['RT,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Byte and Zero with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lbzux",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Halfword and Zero",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lhz",
+				"regs": "['RT,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Halfword and Zero Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lhzx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Halfword and Zero with Update",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lhzu",
+				"regs": "['RT,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Halfword and Zero with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lhzux",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Halfword Algebraic",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lha",
+				"regs": "['RT,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Halfword Algebraic Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lhax",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Halfword Algebraic with Update",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lhau",
+				"regs": "['RT,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Halfword Algebraic with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lhaux",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Word and Zero",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lwz",
+				"regs": "['RT,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Word and Zero Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lwzx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Word and Zero with Update",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lwzu",
+				"regs": "['RT,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Word and Zero with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lwzux",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Word Algebraic",
+		"form":"DS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lwa",
+				"regs": "['RT,DS(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Word Algebraic Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lwax",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	}
+	{
+		"description":"Load Word Algebraic with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lwaux",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Doubleword",
+		"form":"DS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "ld",
+				"regs": "['RT,DS(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Doubleword Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "ldx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Doubleword with Update",
+		"form":"DS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "ldu",
+				"regs": "['RT,DS(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Doubleword with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "ldux",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Word and Zero Monitored Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lwzmx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Doubleword Monitored Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "ldmx",
+				"regs": "['RT,RA,', 'RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Byte",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stb",
+				"regs": "['RS,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Byte Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stbx",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Byte with Update",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stbu",
+				"regs": "['RS,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Byte with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stbux",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Halfword",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "sth",
+				"regs": "['RS,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Halfword Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "sthx",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Halfword with Update",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "sthu",
+				"regs": "['RS,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Halfword with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "sthux",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Word",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stw",
+				"regs": "['RS,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Word Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stwx",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Word with Update",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stwu",
+				"regs": "['RS,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Word with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stwux",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Doubleword",
+		"form":"DS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "std",
+				"regs": "['RS,DS(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Doubleword Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stdx",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Doubleword with Update",
+		"form":"DS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stdu",
+				"regs": "['RS,DS(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Doubleword with Update Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stdux",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Quadword",
+		"form":"DQ-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lq",
+				"regs": "['RTp,DQ(RA),PT']"
+			}
+		]
+	},
+	{
+		"description":"Store Quadword",
+		"form":"DS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stq",
+				"regs": "['RSp,DS(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Quadword",
+		"form":"DQ-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lq",
+				"regs": "['RTp,DQ(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Quadword",
+		"form":"DS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stq",
+				"regs": "['RSp,DS(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Tagged Pointer",
+		"form":"DQE-form",
+		"mnemonics":[
+			{
+				"mnemonic": "ltptr",
+				"regs": "['RT,DQ(RA),EPT']"
+			}
+		]
+	},
+	{
+		"description":"Load Halfword Byte-Reverse Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lhbrx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Halfword Byte-Reverse Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "sthbrx",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Word Byte-Reverse Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lwbrx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Word Byte-Reverse Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stwbrx",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Doubleword Byte-Reverse Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "ldbrx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store Doubleword Byte-Reverse Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stdbrx",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load Multiple Word",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lmw",
+				"regs": "['RT,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load Multiple Doubleword",
+		"form":"DS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lmd",
+				"regs": "['RT,DS(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Multiple Word",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stmw",
+				"regs": "['RS,D(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Store Multiple Doubleword",
+		"form":"DS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stmd",
+				"regs": "['RS,DS(RA)']"
+			}
+		]
+	},
+	{
+		"description":"Load String Word Immediate",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lswi",
+				"regs": "['RT,RA,NB']"
+			}
+		]
+	},
+	{
+		"description":"Load String Word Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lswx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Load String Doubleword Immediate",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lsdi",
+				"regs": "['RT,RA,NB']"
+			}
+		]
+	},
+	{
+		"description":"Load String Doubleword Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "lsdx",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store String Word Immediate",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stswi",
+				"regs": "['RS,RA,NB']"
+			}
+		]
+	},
+	{
+		"description":"Store String Word Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stswx",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Store String Doubleword Immediate",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stsdi",
+				"regs": "['RS,RA,NB']"
+			}
+		]
+	},
+	{
+		"description":"Store String Doubleword Indexed",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "stsdx",
+				"regs": "['RS,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Add Immediate",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addi",
+				"regs": "['RT,RA,SI']"
+			}
+		]
+	},
+	{
+		"description":"Add Immediate Shifted",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addis",
+				"regs": "['RT,RA,SI']"
+			}
+		]
+	},
+	{
+		"description":"Add PC Immediate Shifted",
+		"form":"DX-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addpcis",
+				"regs": "['RT,D']"
+			}
+		]
+	},
+	{
+		"description":"Add",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "add",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "add.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "addo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "addo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Subtract From",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "subf",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "subf.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "subfo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "subfo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Add Immediate Carrying",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addic",
+				"regs": "['RT,RA,SI']"
+			}
+		]
+	},
+	{
+		"description":"Add Immediate Carrying and Record",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addic.",
+				"regs": "['RT,RA,SI']"
+			}
+		]
+	},
+	{
+		"description":"Subtract From Immediate Carrying",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "subfic",
+				"regs": "['RT,RA,SI']"
+			}
+		]
+	},
+	{
+		"description":"Add Carrying",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addc",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "addc.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "addco",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "addco.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Subtract From Carrying",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "subfc",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "subfc.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "subfco",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "subfco.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Add Extended",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "adde",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "adde.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "addeo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "addeo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Subtract From Extended",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "subfe",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "subfe.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "subfeo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "subfeo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Add to Minus One Extended",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addme",
+				"regs": "['RT,RA', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "addme.",
+				"regs": "['RT,RA', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "addmeo",
+				"regs": "['RT,RA', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "addmeo.",
+				"regs": "['RT,RA', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Subtract From Minus One Extended",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "subfme",
+				"regs": "['RT,RA', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "subfme.",
+				"regs": "['RT,RA', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "subfmeo",
+				"regs": "['RT,RA', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "subfmeo.",
+				"regs": "['RT,RA', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Add Extended using alternate carry bit Z23",
+		"form":"-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addex",
+				"regs": "['RT,RA,RB,CY']"
+			}
+		]
+	},
+	{
+		"description":"Add to Zero Extended",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addze",
+				"regs": "['RT,RA', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "addze.",
+				"regs": "['RT,RA', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "addzeo",
+				"regs": "['RT,RA', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "addzeo.",
+				"regs": "['RT,RA', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Subtract From Zero Extended",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "subfze",
+				"regs": "['RT,RA', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "subfze.",
+				"regs": "['RT,RA', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "subfzeo",
+				"regs": "['RT,RA', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "subfzeo.",
+				"regs": "['RT,RA', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Negate",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "neg",
+				"regs": "['RT,RA', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "neg.",
+				"regs": "['RT,RA', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "nego",
+				"regs": "['RT,RA', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "nego.",
+				"regs": "['RT,RA', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Multiply Low Immediate",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mulli",
+				"regs": "['RT,RA,SI']"
+			}
+		]
+	},
+	{
+		"description":"Multiply Low Word",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mullw",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "mullw.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "mullwo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "mullwo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Multiply High Word",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mulhw",
+				"regs": "['RT,RA,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "mulhw.",
+				"regs": "['RT,RA,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Multiply High Word Unsigned",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mulhwu",
+				"regs": "['RT,RA,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "mulhwu.",
+				"regs": "['RT,RA,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Divide Word",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "divw",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "divw.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "divwo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "divwo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Divide Word Unsigned",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "divwu",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "divwu.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "divwuo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "divwuo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Divide Word Extended",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "divwe",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "divwe.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "divweo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "divweo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']"
+			}
+		]
+	},
+	{
+		"description":"Divide Word Extended Unsigned",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "divweu",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "divweu.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "divweuo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "divweuo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']"
+			}
+		]
+	},
+	{
+		"description":"Modulo Signed Word X-form",
+		"form":"",
+		"mnemonics":[
+			{
+				"mnemonic": "modsw",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Modulo Unsigned Word X-form",
+		"form":"",
+		"mnemonics":[
+			{
+				"mnemonic": "moduw",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Deliver A Random Number",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "darn",
+				"regs": "['RT,L']"
+			}
+		]
+	},
+	{
+		"description":"Multiply Low Doubleword",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mulld",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "mulld.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "mulldo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "mulldo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Multiply High Doubleword",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mulhd",
+				"regs": "['RT,RA,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "mulhd.",
+				"regs": "['RT,RA,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Multiply High Doubleword Unsigned",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mulhdu",
+				"regs": "['RT,RA,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "mulhdu.",
+				"regs": "['RT,RA,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Multiply-Add High Doubleword VA-form",
+		"form":"",
+		"mnemonics":[
+			{
+				"mnemonic": "maddhd",
+				"regs": "['RT,RA.RB,RC']"
+			}
+		]
+	},
+	{
+		"description":"Multiply-Add High Doubleword Unsigned",
+		"form":"VA-form",
+		"mnemonics":[
+			{
+				"mnemonic": "maddhdu",
+				"regs": "['RT,RA.RB,RC']"
+			}
+		]
+	},
+	{
+		"description":"Multiply-Add Low Doubleword VA-form",
+		"form":"",
+		"mnemonics":[
+			{
+				"mnemonic": "maddld",
+				"regs": "['RT,RA.RB,RC']"
+			}
+		]
+	},
+	{
+		"description":"Divide Doubleword",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "divd",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "divd.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "divdo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "divdo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Divide Doubleword Unsigned",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "divdu",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "divdu.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "divduo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "divduo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Divide Doubleword Extended",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "divde",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "divde.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "divdeo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "divdeo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']"
+			}
+		]
+	},
+	{
+		"description":"Divide Doubleword Extended Unsigned",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "divdeu",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=0)']"
+			},
+			{
+				"mnemonic": "divdeu.",
+				"regs": "['RT,RA,RB', '(OE=0 Rc=1)']"
+			},
+			{
+				"mnemonic": "divdeuo",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=0)']"
+			},
+			{
+				"mnemonic": "divdeuo.",
+				"regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']"
+			}
+		]
+	},
+	{
+		"description":"Modulo Signed Doubleword X-form",
+		"form":"",
+		"mnemonics":[
+			{
+				"mnemonic": "modsd",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Modulo Unsigned Doubleword X-form",
+		"form":"",
+		"mnemonics":[
+			{
+				"mnemonic": "modud",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Compare Immediate",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cmpi",
+				"regs": "['BF,L,RA,SI']"
+			}
+		]
+	},
+	{
+		"description":"Compare",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cmp",
+				"regs": "['BF,L,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Compare Logical Immediate",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cmpli",
+				"regs": "['BF,L,RA,UI']"
+			}
+		]
+	},
+	{
+		"description":"Compare Logical",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cmpl",
+				"regs": "['BF,L,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Compare Logical Addresses",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cmpla",
+				"regs": "['BF,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Compare Ranged Byte",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cmprb",
+				"regs": "['BF,L,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Compare Equal Byte",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cmpeqb",
+				"regs": "['BF,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Trap Word Immediate",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "twi",
+				"regs": "['TO,RA,SI']"
+			}
+		]
+	},
+	{
+		"description":"Trap Word",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "tw",
+				"regs": "['TO,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Trap on XER",
+		"form":"TX-form",
+		"mnemonics":[
+			{
+				"mnemonic": "txer",
+				"regs": "['TO,UI,XBI']"
+			}
+		]
+	},
+	{
+		"description":"Trap Doubleword Immediate",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "tdi",
+				"regs": "['TO,RA,SI']"
+			}
+		]
+	},
+	{
+		"description":"Trap Doubleword",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "td",
+				"regs": "['TO,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Select Immediate-Immediate",
+		"form":"MDS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "selii",
+				"regs": "['RA,IS,IB,XBI', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "selii.",
+				"regs": "['RA,IS,IB,XBI', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Select Immediate-Register",
+		"form":"MDS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "selir",
+				"regs": "['RA,IS,RB,XBI', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "selir.",
+				"regs": "['RA,IS,RB,XBI', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Select Register-Immediate",
+		"form":"MDS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "selri",
+				"regs": "['RA,RS,IB,XBI', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "selri.",
+				"regs": "['RA,RS,IB,XBI', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Select Register-Register",
+		"form":"MDS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "selrr",
+				"regs": "['RA,RS,RB,XBI', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "selrr.",
+				"regs": "['RA,RS,RB,XBI', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Integer Select",
+		"form":"A-form",
+		"mnemonics":[
+			{
+				"mnemonic": "isel",
+				"regs": "['RT,RA,RB,BC']"
+			}
+		]
+	},
+	{
+		"description":"AND Immediate",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "andi.",
+				"regs": "['RA,RS,UI']"
+			}
+		]
+	},
+	{
+		"description":"AND Immediate Shifted",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "andis.",
+				"regs": "['RA,RS,UI']"
+			}
+		]
+	},
+	{
+		"description":"OR Immediate",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "ori",
+				"regs": "['RA,RS,UI']"
+			}
+		]
+	},
+	{
+		"description":"XOR Immediate",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "xori",
+				"regs": "['RA,RS,UI']"
+			}
+		]
+	},
+	{
+		"description":"XOR Immediate Shifted",
+		"form":"D-form",
+		"mnemonics":[
+			{
+				"mnemonic": "xoris",
+				"regs": "['RA,RS,UI']"
+			}
+		]
+	},
+	{
+		"description":"AND",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "and",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "and.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"XOR",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "xor",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "xor.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"NAND",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "nand",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "nand.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"OR",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "or",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "or.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"NOR",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "nor",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "nor.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Equivalent",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "eqv",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "eqv.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"AND with Complement",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "andc",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "andc.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"OR with Complement",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "orc",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "orc.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Extend Sign Byte",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "extsb",
+				"regs": "['RA,RS', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "extsb.",
+				"regs": "['RA,RS', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Extend Sign Halfword",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "extsh",
+				"regs": "['RA,RS', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "extsh.",
+				"regs": "['RA,RS', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Count Leading Zeros Word",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cntlzw",
+				"regs": "['RA,RS', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "cntlzw.",
+				"regs": "['RA,RS', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Count Trailing Zeros Word",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cnttzw",
+				"regs": "['RA,', 'RS', '(', 'Rc=0', ')']"
+			},
+			{
+				"mnemonic": "cnttzw.",
+				"regs": "['RA,', 'RS', '(', 'Rc=1', ')']"
+			}
+		]
+	},
+	{
+		"description":"Compare Bytes",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cmpb",
+				"regs": "['RA,RS,RB']"
+			}
+		]
+	},
+	{
+		"description":"Population Count Bytes",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "popcntb",
+				"regs": "['RA, RS']"
+			}
+		]
+	},
+	{
+		"description":"Population Count Words",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "popcntw",
+				"regs": "['RA, R', 'S']"
+			}
+		]
+	},
+	{
+		"description":"Parity Doubleword",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "prtyd RA,R",
+				"regs": "['S']"
+			}
+		]
+	},
+	{
+		"description":"Parity Word",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "prtyw RA,RS"
+			}
+		]
+	},
+	{
+		"description":"Extend Sign Word",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "extsw",
+				"regs": "['RA,RS', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "extsw.",
+				"regs": "['RA,RS', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Population Count Doubleword",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "popcntd",
+				"regs": "['RA, R', 'S']"
+			}
+		]
+	},
+	{
+		"description":"Count Leading Zeros Doubleword",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cntlzd",
+				"regs": "['RA,RS', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "cntlzd.",
+				"regs": "['RA,RS', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Count Trailing Zeros Doubleword",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cnttzd",
+				"regs": "['RA,', 'RS', '(', 'Rc=0', ')']"
+			},
+			{
+				"mnemonic": "cnttzd.",
+				"regs": "['RA,', 'RS', '(', 'Rc=1', ')']"
+			}
+		]
+	},
+	{
+		"description":"Bit Permute Doubleword",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "bpermd",
+				"regs": "['RA,RS,R', 'B]']"
+			}
+		]
+	},
+	{
+		"description":"Rotate Left Word Immediate then AND with Mask",
+		"form":"M-form",
+		"mnemonics":[
+			{
+				"mnemonic": "rlwinm",
+				"regs": "['RA,RS,SH,MB,ME', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "rlwinm.",
+				"regs": "['RA,RS,SH,MB,ME', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Rotate Left Word then AND with Mask",
+		"form":"M-form",
+		"mnemonics":[
+			{
+				"mnemonic": "rlwnm",
+				"regs": "['RA,RS,RB,MB,ME', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "rlwnm.",
+				"regs": "['RA,RS,RB,MB,ME', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Rotate Left Word Immediate then Mask Insert",
+		"form":"M-form",
+		"mnemonics":[
+			{
+				"mnemonic": "rlwimi",
+				"regs": "['RA,RS,SH,MB,ME', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "rlwimi.",
+				"regs": "['RA,RS,SH,MB,ME', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Rotate Left Doubleword Immediate then Clear Left",
+		"form":"MD-form",
+		"mnemonics":[
+			{
+				"mnemonic": "rldicl",
+				"regs": "['RA,RS,SH,MB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "rldicl.",
+				"regs": "['RA,RS,SH,MB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Rotate Left Doubleword Immediate then Clear Right",
+		"form":"MD-form",
+		"mnemonics":[
+			{
+				"mnemonic": "rldicr",
+				"regs": "['RA,RS,SH,ME', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "rldicr.",
+				"regs": "['RA,RS,SH,ME', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Rotate Left Doubleword Immediate then Clear",
+		"form":"MD-form",
+		"mnemonics":[
+			{
+				"mnemonic": "rldic",
+				"regs": "['RA,RS,SH,MB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "rldic.",
+				"regs": "['RA,RS,SH,MB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Rotate Left Doubleword then Clear Left",
+		"form":"MDS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "rldcl",
+				"regs": "['RA,RS,RB,MB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "rldcl.",
+				"regs": "['RA,RS,RB,MB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Rotate Left Doubleword then Clear Right",
+		"form":"MDS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "rldcr",
+				"regs": "['RA,RS,RB,ME', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "rldcr.",
+				"regs": "['RA,RS,RB,ME', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Rotate Left Doubleword Immediate then Mask Insert",
+		"form":"MD-form",
+		"mnemonics":[
+			{
+				"mnemonic": "rldimi",
+				"regs": "['RA,RS,SH,MB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "rldimi.",
+				"regs": "['RA,RS,SH,MB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Shift Left Word",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "slw",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "slw.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Shift Right Word",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "srw",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "srw.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Shift Right Algebraic Word Immediate",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "srawi",
+				"regs": "['RA,RS,SH', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "srawi.",
+				"regs": "['RA,RS,SH', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Shift Right Algebraic Word",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "sraw",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "sraw.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Shift Left Doubleword",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "sld",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "sld.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Shift Right Doubleword",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "srd",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "srd.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Shift Right Algebraic Doubleword Immediate",
+		"form":"XS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "sradi",
+				"regs": "['RA,RS,SH', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "sradi.",
+				"regs": "['RA,RS,SH', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Shift Right Algebraic Doubleword  X-form",
+		"form":"",
+		"mnemonics":[
+			{
+				"mnemonic": "srad",
+				"regs": "['RA,RS,RB', '(Rc=0)']"
+			},
+			{
+				"mnemonic": "srad.",
+				"regs": "['RA,RS,RB', '(Rc=1)']"
+			}
+		]
+	},
+	{
+		"description":"Extend-Sign Word and Shift Left",
+		"form":"Immediate XS-form",
+		"mnemonics":[
+			{
+				"mnemonic": "extswsli",
+				"regs": "['RA,RS,SH', '(', 'Rc=0', ')']"
+			}
+		]
+	},
+	{
+		"description":"Convert Declets To Binary Coded Decimal",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cdtbcd",
+				"regs": "['RA, RS']"
+			}
+		]
+	},
+	{
+		"description":"Convert Binary Coded Decimal To Declets",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "cbcdtd",
+				"regs": "['RA, RS']"
+			}
+		]
+	},
+	{
+		"description":"Add and Generate Sixes",
+		"form":"XO-form",
+		"mnemonics":[
+			{
+				"mnemonic": "addg6s",
+				"regs": "['RT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Decimal Sixes",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "dsixes",
+				"regs": "['RA']"
+			}
+		]
+	},
+	{
+		"description":"Decimal Test and Clear Sign",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "dtcs.",
+				"regs": "['RA,RS']"
+			}
+		]
+	},
+	{
+		"description":"Move From VSR Doubleword X",
+		"form":"-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mfvsrd",
+				"regs": "['RA,XS']"
+			}
+		]
+	},
+	{
+		"description":"Move From VSR Lower Doubleword X",
+		"form":"-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mfvsrld",
+				"regs": "['RA,XS']"
+			}
+		]
+	},
+	{
+		"description":"Move From VSR Word and Zero X",
+		"form":"-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mfvsrwz",
+				"regs": "['RA,XS']"
+			}
+		]
+	},
+	{
+		"description":"Move To VSR Doubleword X for",
+		"form":"m",
+		"mnemonics":[
+			{
+				"mnemonic": "mtvsrd",
+				"regs": "['XT,RA']"
+			}
+		]
+	},
+	{
+		"description":"Move To VSR Word Algebraic X for",
+		"form":"m",
+		"mnemonics":[
+			{
+				"mnemonic": "mtvsrwa",
+				"regs": "['XT,RA']"
+			}
+		]
+	},
+	{
+		"description":"Move To VSR Word and Zero X for",
+		"form":"m",
+		"mnemonics":[
+			{
+				"mnemonic": "mtvsrwz",
+				"regs": "['XT,RA']"
+			}
+		]
+	},
+	{
+		"description":"Move To VSR Double Doubleword X",
+		"form":"-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mtvsrdd",
+				"regs": "['XT,RA,RB']"
+			}
+		]
+	},
+	{
+		"description":"Move To VSR Word & Splat X",
+		"form":"-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mtvsrws",
+				"regs": "['XT,RA']"
+			}
+		]
+	},
+	{
+		"description":"Move To Special Purpose Register",
+		"form":"XFX-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mtspr",
+				"regs": "['SPR,RS']"
+			}
+		]
+	},
+	{
+		"description":"Move From Special Purpose Register",
+		"form":"XFX-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mfspr",
+				"regs": "['RT,SPR']"
+			}
+		]
+	},
+	{
+		"description":"Move to CR from XER Extended",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mcrxrx",
+				"regs": "['BF']"
+			}
+		]
+	},
+	{
+		"description":"Set XER TAG",
+		"form":"XFX-form",
+		"mnemonics":[
+			{
+				"mnemonic": "settag"
+			}
+		]
+	},
+	{
+		"description":"Move to CR from XER TGCC",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mcrxrt",
+				"regs": "['BF']"
+			}
+		]
+	},
+	{
+		"description":"M ove To One Condition Register Field",
+		"form":"XFX-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mtocrf",
+				"regs": "['FXM,RS']"
+			}
+		]
+	},
+	{
+		"description":"Move To Condition Register Fields",
+		"form":"XFX-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mtcrf",
+				"regs": "['FXM,RS']"
+			}
+		]
+	},
+	{
+		"description":"Move From One Condition Register Field",
+		"form":"XFX-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mfocrf",
+				"regs": "['RT,FXM']"
+			}
+		]
+	},
+	{
+		"description":"Move From Condition Register",
+		"form":"XFX-form",
+		"mnemonics":[
+			{
+				"mnemonic": "mfcr",
+				"regs": "['RT']"
+			}
+		]
+	},
+	{
+		"description":"Set Boolean",
+		"form":"X-form",
+		"mnemonics":[
+			{
+				"mnemonic": "setb",
+				"regs": "['RT,BFA']"
+			}
+		]
+	}
+]
