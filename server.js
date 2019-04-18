@@ -54,7 +54,8 @@ app.get("*", function(request, response) {
 ////////////////////////////////////////////////////////////////////////////////
 
 function main() {
-    app.listen(3000);
+    var port = process.env.PORT || port;
+    app.listen(port);
 
     console.log("server: running local environmnet on http://localhost:3000");
 }
