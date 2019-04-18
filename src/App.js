@@ -15,6 +15,7 @@ class App extends Component {
     genData = data => {
         let allJson = [];
         for (let i = 0; i < data.length; i++) {
+            console.log(data[i]);
             allJson.push(<p>{data[i].description}</p>);
         }
         return allJson;
