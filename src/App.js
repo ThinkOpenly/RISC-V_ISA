@@ -12,6 +12,14 @@ class App extends Component {
             data: data
         };
     }
+
+    genData = data => {
+        let allJson = [];
+        for (let i = 0; i < data.length; i++) {
+            allJson.push(<p>{data[i].description}</p>);
+        }
+        return allJson;
+    };
     render() {
         return (
             <div className="App">
@@ -24,6 +32,9 @@ class App extends Component {
                         <Nav />
                         <h1>ISA</h1>
                     </div>
+                    <br />
+                    <br />
+                    {this.genData(this.state.data)}
                 </div>
             </div>
         );
