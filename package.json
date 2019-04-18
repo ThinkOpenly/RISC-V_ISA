@@ -6,6 +6,8 @@
         "@carbon/elements": "^10.1.1",
         "carbon-components": "^10.1.0",
         "carbon-components-react": "^7.1.0",
+        "cors": "^2.8.5",
+        "express": "^4.16.4",
         "node-sass": "^4.11.0",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
@@ -13,7 +15,7 @@
         "serve": "^11.0.0"
     },
     "scripts": {
-        "start": "serve -s build",
+        "start": "node server.js",
         "local": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
