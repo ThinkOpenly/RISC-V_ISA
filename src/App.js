@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 import Nav from "./Nav";
 import data from "./ISA.json";
-import { TextInput } from "carbon-components";
+import { Accordion, AccordionItem, Search } from "carbon-components-react";
 
 class App extends Component {
     constructor() {
@@ -16,7 +16,24 @@ class App extends Component {
         let allJson = [];
         for (let i = 0; i < data.length; i++) {
             console.log(data[i]);
-            allJson.push(<p>{data[i].description}</p>);
+            allJson.push(
+                <AccordionItem
+                    title={data[i].description}
+                    onClick={e => {
+                        console.log("click");
+                    }}
+                    onHeadingClick={e => {
+                        console.log("heading click");
+                    }}
+                >
+                    <div className="expandContainer">
+                        <div className="column">
+                            <h4>Form: </h4>
+                            {data[i].form}
+                        </div>
+                    </div>
+                </AccordionItem>
+            );
         }
         return allJson;
     };
@@ -30,11 +47,31 @@ class App extends Component {
                 >
                     <div className="homeContainer">
                         <Nav />
-                        <h1>ISA</h1>
+                        <div className="mainContainer">
+                            <div className="filterContainer">
+                                <h3>Filter stuff here</h3>
+                            </div>
+                            <div className="accordianContainer">
+                                <div className="searchContainer">
+                                    <Search
+                                        className="some-class"
+                                        name=""
+                                        defaultValue=""
+                                        labelText="Search"
+                                        closeButtonLabelText=""
+                                        placeHolderText="Search"
+                                        onChange={() => {
+                                            console.log("searching");
+                                        }}
+                                        id="search-1"
+                                    />
+                                </div>
+                                <Accordion>
+                                    {this.genData(this.state.data)}
+                                </Accordion>
+                            </div>
+                        </div>
                     </div>
-                    <br />
-                    <br />
-                    {this.genData(this.state.data)}
                 </div>
             </div>
         );
