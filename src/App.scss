@@ -1,0 +1,18 @@
+.pageContainer {
+    padding: 3.5em 0 0 3.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.homeContainer {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
