@@ -21,6 +21,8 @@ class Instruction:
 		self.head = []
 		self.index = 0
 		self.forms = []
+		self.code = []
+		self.body = []
 	def output(self):
 		print("Instruction:")
 		print("\tDesc:\t",sep="",end="")
@@ -64,6 +66,22 @@ class Instruction:
 				print(line_prefix + "\t\t\t\"regs\": \"" + str(form[1:]) + "\"",sep="",end="")
 			print("")
 			print(line_prefix + "\t\t}",sep="",end="")
+			comma = "," + line_postfix + "\n"
+		print("")
+		print(line_prefix + "\t]" + line_postfix)
+		print(line_prefix + "\t\"code\":[" + line_postfix)
+		comma = ''
+		for line in self.code:
+			print(comma,sep="",end="")
+			print(line_prefix + "\t\t\"" + line + "\"",sep="",end="")
+			comma = "," + line_postfix + "\n"
+		print("")
+		print(line_prefix + "\t]" + line_postfix)
+		print(line_prefix + "\t\"body\":[" + line_postfix)
+		comma = ''
+		for line in self.body:
+			print(comma,sep="",end="")
+			print(line_prefix + "\t\t\"" + line + "\"",sep="",end="")
 			comma = "," + line_postfix + "\n"
 		print("")
 		print(line_prefix + "\t]" + line_postfix)
@@ -132,16 +150,24 @@ def getString(f):
 		c = f.read(1)
 	return s
 
-ignored = [ "MIFFile", "Units", "CharUnits", "ColorCatalog", "ConditionCatalog", "BoolCondCatalog", "DefAttrValuesCatalog", "AttrCondExprCatalog", "DictionaryPreferences", "CombinedFontCatalog", "PgfCatalog", "FontCatalog", "RulingCatalog", "TblCatalog", "StyleCatalog", "KumihanCatalog", "Views", "VariableFormats", "MarkerTypeCatalog", "XRefFormats", "Document", "BookComponent", "InitialAutoNums", "Dictionary", "AFrames", "Tbls", "Page", "InlineComponentsInfo" ]
-
 def ParaLine(f,tag):
 	global c,inst
+	suppress = False
+	if tag == "code_example":
+		try:
+			inst.code.append("")
+		except: return
+	if tag == "Body":
+		try:
+			if len(inst.head) > 0:
+				inst.body.append("")
+		except: pass
 	while True:
 		try:
 			FindElementStart(f)
 		except: return
 		token = getToken(f)
-		if token == "String":
+		if token == "String" and not suppress:
 			if tag == "Instruction Head":
 				c = f.read(1)
 				h = getString(f)
@@ -151,6 +177,32 @@ def ParaLine(f,tag):
 				s = getString(f).strip()
 				if len(s) > 0:
 					inst.forms[len(inst.forms)-1].append(s.strip())
+			elif tag == "code_example":
+				c = f.read(1)
+				# translate FrameMaker special characters with ASCII equivalents
+				s = getString(f).replace(b'\xc2\xac',':=').replace(b'\xc2\xa3','<=').replace(b'\xc2\xba','not xor').replace(b'\xc3\x85','/')
+				inst.code[len(inst.code)-1] += s
+			elif tag == "Body":
+				try:
+					c = f.read(1)
+					s = getString(f)
+					inst.body[len(inst.body)-1] += s
+				except: pass
+		elif token == "Conditional":
+			suppress = False
+			while True:
+				try:
+					FindElementStart(f)
+				except: break
+				token = getToken(f)
+				if token == "InCondition":
+					c = f.read(1)
+					s = getString(f)
+					if s == "tags_both":
+						suppress = True
+				FindElementEnd(f)
+		elif token == "Unconditional":
+			suppress = False
 		FindElementEnd(f)
 
 def PgfTag(f):
@@ -163,15 +215,23 @@ def PgfTag(f):
 		try:
 			# implicit exception on first invocation
 			# excplicit exception if last instruction was OK
-			# if last instruction was a dud, reuse the object
+			# if last instruction was a dud, delete it
 			if len(inst.head) > 0:
 				raise
-		except:
-			inst = Instruction();
+			del insts[len(insts)-1]
+			del inst
+		except: pass
+		inst = Instruction();
 		insts.append(inst)
 	elif s in ["Instruction Form", ":p1.inst-syntax", ":p1.inst-syntax-compact"]:
 		tag = "Instruction Form"
 		inst.forms.append([])
+	elif s in [ "code_example", ":xmp." ]:
+		tag = "code_example"
+	elif s in [ "Body", ":p1." ]:
+		tag = "Body"
+	elif s in [ "Head_2_span" ]:
+		inst = ''
 	return tag
 
 def Para(f):
@@ -223,9 +283,6 @@ while c:
 	FindElementStart(f)
 
 	token = getToken(f)
-	if token in ignored:
-		FindElementEnd(f)
-		continue
 	if token == "TextFlow":
 		TextFlow(f)
 	FindElementEnd(f)
