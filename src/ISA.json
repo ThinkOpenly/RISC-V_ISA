@@ -8,6 +8,17 @@
                 "regs": "['RT,D(RA)']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(D)",
+            "RT := 560 || MEM(EA, 1)"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA|0)+D. ",
+            "The byte in storage addressed by EA is loaded into ",
+            "RT56:63. RT0:55 are set to 0."
+        ]
     },
     {
         "description": "Load Byte and Zero Indexed",
@@ -17,6 +28,17 @@
                 "mnemonic": "lbzx",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "RT := 560 || MEM(EA, 1)"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). The byte in storage addressed by EA ",
+            "is loaded into RT56:63. RT0:55 are set to 0."
         ]
     },
     {
@@ -28,6 +50,18 @@
                 "regs": "['RT,D(RA)']"
             }
         ]
+        "code": [
+            "EA := (RA) + EXTS(D)",
+            "RT := 560 || MEM(EA, 1)",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA)+D. ",
+            "The byte in storage addressed by EA is loaded into ",
+            "RT56:63. RT0:55 are set to 0.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
+        ]
     },
     {
         "description": "Load Byte and Zero with Update Indexed",
@@ -37,6 +71,18 @@
                 "mnemonic": "lbzux",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "EA := (RA) + (RB)",
+            "RT := 560 || MEM(EA, 1)",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). The byte in storage addressed by EA is ",
+            "loaded into RT56:63. RT0:55 are set to 0.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
         ]
     },
     {
@@ -48,6 +94,17 @@
                 "regs": "['RT,D(RA)']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(D)",
+            "RT := 480 || MEM(EA, 2)"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA|0)+D. ",
+            "The halfword in storage addressed by EA is loaded into ",
+            "RT48:63. RT0:47 are set to 0."
+        ]
     },
     {
         "description": "Load Halfword and Zero Indexed",
@@ -57,6 +114,17 @@
                 "mnemonic": "lhzx",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "RT := 480 || MEM(EA, 2)"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). The halfword in storage addressed by ",
+            "EA is loaded into RT48:63. RT0:47 are set to 0."
         ]
     },
     {
@@ -68,6 +136,18 @@
                 "regs": "['RT,D(RA)']"
             }
         ]
+        "code": [
+            "EA := (RA) + EXTS(D)",
+            "RT := 480 || MEM(EA, 2)",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA)+D. ",
+            "The halfword in storage addressed by EA is loaded into ",
+            "RT48:63. RT0:47 are set to 0.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
+        ]
     },
     {
         "description": "Load Halfword and Zero with Update Indexed",
@@ -77,6 +157,18 @@
                 "mnemonic": "lhzux",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "EA := (RA) + (RB)",
+            "RT := 480 || MEM(EA, 2)",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). The halfword in storage addressed by ",
+            "EA is loaded into RT48:63. RT0:47 are set to 0.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
         ]
     },
     {
@@ -88,6 +180,18 @@
                 "regs": "['RT,D(RA)']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(D)",
+            "RT := EXTS(MEM(EA, 2))"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA|0)+D. ",
+            "The halfword in storage addressed by EA is loaded into ",
+            "RT48:63. RT0:47 are filled with a copy of bit 0 of the ",
+            "loaded halfword."
+        ]
     },
     {
         "description": "Load Halfword Algebraic Indexed",
@@ -97,6 +201,18 @@
                 "mnemonic": "lhax",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "RT := EXTS(MEM(EA, 2))"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). The halfword in storage addressed by ",
+            "EA is loaded into RT48:63. RT0:47 are filled with a copy ",
+            "of bit 0 of the loaded halfword."
         ]
     },
     {
@@ -108,6 +224,19 @@
                 "regs": "['RT,D(RA)']"
             }
         ]
+        "code": [
+            "EA := (RA) + EXTS(D)",
+            "RT := EXTS(MEM(EA, 2))",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA)+D. ",
+            "The halfword in storage addressed by EA is loaded into ",
+            "RT48:63. RT0:47 are filled with a copy of bit 0 of the ",
+            "loaded halfword.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
+        ]
     },
     {
         "description": "Load Halfword Algebraic with Update Indexed",
@@ -117,6 +246,19 @@
                 "mnemonic": "lhaux",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "EA := (RA) + (RB)",
+            "RT := EXTS(MEM(EA, 2))",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). The halfword in storage addressed by ",
+            "EA is loaded into RT48:63. RT0:47 are filled with a copy ",
+            "of bit 0 of the loaded halfword.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
         ]
     },
     {
@@ -128,6 +270,17 @@
                 "regs": "['RT,D(RA)']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(D)",
+            "RT := 320 || MEM(EA, 4)"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA|0)+D. ",
+            "The word in storage addressed by EA is loaded into ",
+            "RT32:63. RT0:31 are set to 0."
+        ]
     },
     {
         "description": "Load Word and Zero Indexed",
@@ -137,6 +290,17 @@
                 "mnemonic": "lwzx",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "RT := 320 || MEM(EA, 4)"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). The word in storage addressed by EA ",
+            "is loaded into RT32:63. RT0:31 are set to 0."
         ]
     },
     {
@@ -148,6 +312,18 @@
                 "regs": "['RT,D(RA)']"
             }
         ]
+        "code": [
+            "EA := (RA) + EXTS(D)",
+            "RT := 320 || MEM(EA, 4)",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA)+D. ",
+            "The word in storage addressed by EA is loaded into ",
+            "RT32:63. RT0:31 are set to 0.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
+        ]
     },
     {
         "description": "Load Word and Zero with Update Indexed",
@@ -157,6 +333,18 @@
                 "mnemonic": "lwzux",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "EA := (RA) + (RB)",
+            "RT := 320 || MEM(EA, 4)",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). The word in storage addressed by EA is ",
+            "loaded into RT32:63. RT0:31 are set to 0.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
         ]
     },
     {
@@ -168,6 +356,18 @@
                 "regs": "['RT,DS(RA)']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(DS || 0b00)",
+            "RT := EXTS(MEM(EA, 4))"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(DS||0b00). The word in storage addressed ",
+            "by EA is loaded into RT32:63. RT0:31 are filled with a ",
+            "copy of bit 0 of the loaded word."
+        ]
     },
     {
         "description": "Load Word Algebraic Indexed",
@@ -177,6 +377,18 @@
                 "mnemonic": "lwax",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "RT := EXTS(MEM(EA, 4))"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). The word in storage addressed by EA ",
+            "is loaded into RT32:63. RT0:31 are filled with a copy of bit ",
+            "0 of the loaded word."
         ]
     },
     {
@@ -188,6 +400,19 @@
                 "regs": "['RT,RA,RB']"
             }
         ]
+        "code": [
+            "EA := (RA) + (RB)",
+            "RT := EXTS(MEM(EA, 4))",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). The word in storage addressed by EA is ",
+            "loaded into RT32:63. RT0:31 are filled with a copy of bit 0 ",
+            "of the loaded word.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
+        ]
     },
     {
         "description": "Load Doubleword",
@@ -197,6 +422,17 @@
                 "mnemonic": "ld",
                 "regs": "['RT,DS(RA)']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(DS || 0b00)",
+            "RT := MEM(EA, 8)"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(DS||0b00). The doubleword in storage ",
+            "addressed by EA is loaded into RT."
         ]
     },
     {
@@ -208,6 +444,17 @@
                 "regs": "['RT,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "RT := MEM(EA, 8)"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). The doubleword in storage addressed ",
+            "by EA is loaded into RT."
+        ]
     },
     {
         "description": "Load Doubleword with Update",
@@ -217,6 +464,18 @@
                 "mnemonic": "ldu",
                 "regs": "['RT,DS(RA)']"
             }
+        ]
+        "code": [
+            "EA := (RA) + EXTS(DS || 0b00)",
+            "RT := MEM(EA, 8)",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(DS||0b00). The doubleword in storage ",
+            "addressed by EA is loaded into RT.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
         ]
     },
     {
@@ -228,6 +487,18 @@
                 "regs": "['RT,RA,RB']"
             }
         ]
+        "code": [
+            "EA := (RA) + (RB)",
+            "RT := MEM(EA, 8)",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). The doubleword in storage addressed ",
+            "by EA is loaded into RT.",
+            "EA is placed into register RA.",
+            "If RA=0 or RA=RT, the instruction form is invalid."
+        ]
     },
     {
         "description": "Load Word and Zero Monitored Indexed",
@@ -237,6 +508,51 @@
                 "mnemonic": "lwzmx",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "loaded_ea := 320 || MEM(EA,4)",
+            "n := (LMRRSHIFT)",
+            "if n=1",
+            " loaded_ea := ROTL(loaded_ea,3)",
+            " else if n=2",
+            " loaded_ea := ROTL(loaded_ea,4)",
+            "if :=((loaded_ea is in enabled section of",
+            "  load-monitored region) & BESCRGE LME=0b11)",
+            "RT := loaded_ea",
+            " "
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). ",
+            "The word in storage addressed by EA is accessed, ",
+            "zero-extended to a doubleword with bits 0:31 set to 0s, ",
+            "and rotated left by 3 if the value of LMRRSHIFT=1 or by ",
+            "4 if the value of LMRRSHIFT=2.",
+            "If the doubleword resulting from the above operations, ",
+            "interpreted as an effective address, is not equal to an ",
+            "effective address within an enabled section of the Load ",
+            "Monitored region, or if Load Monitored event-based ",
+            "exceptions are disabled (BESCRLME=0 or BES",
+            "CRGE=0), the doubleword is placed into RT; otherwise ",
+            "a Load Monitored event-based branch occurs. (The ",
+            "Load Monitored region is described in Section 3.2.4. ",
+            "Event-based branches and the BESCR are described ",
+            "in Chapter 7 of Book II.)",
+            "The word in storage specified by the lwzmx instruction ",
+            "should not be in storage that is either Caching Inhibited ",
+            "or Guarded; execution of an lwzmx instruction to ",
+            "access storage with either of these attributes will result ",
+            "in boundedly undefined behavior. (See Section 1.6.2 ",
+            "and Section1.6.4 of Book II.)",
+            "In privileged state, this instruction is an illegal instruc",
+            "tion and an attempt to execute it will invoke the system ",
+            "illegal instruction error handler. See Section4.4.4 of ",
+            "Book III.",
+            " ",
+            ""
         ]
     },
     {
@@ -248,6 +564,44 @@
                 "regs": "['RT,RA,', 'RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "loaded_ea := MEM(EA,8)",
+            "if :=((loaded_ea is in enabled section of",
+            "  load-monitored region) & BESCRGE LME=0b11)",
+            "RT := loaded_ea",
+            " "
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). ",
+            "The doubleword in storage addressed by EA is ",
+            "accessed. If the accessed doubleword, interpreted as ",
+            "an effective address, is not equal to an effective ",
+            "address within an enabled section of the Load Moni",
+            "tored region, or if Load Monitored event-based ",
+            "branches are disabled (BESCRLME=0 or BESCRGE=0), ",
+            "the doubleword is placed into RT; otherwise a Load ",
+            "Monitored event-based branch occurs. (The Load Mon",
+            "itored region is described in Section 3.2.4. Event-based ",
+            "branches and the BESCR are described in Chapter 7 of ",
+            "Book II.)",
+            "The doubleword in storage specified by the ldmx ",
+            "instruction should not be in storage that is either Cach",
+            "ing Inhibited or Guarded; execution of an ldmx instruc",
+            "tion to access storage with either of these attributes will ",
+            "result in boundedly undefined behavior. (See ",
+            "Section1.6 of Book II.)",
+            "In privileged state, this instruction is an illegal instruc",
+            "tion and an attempt to execute it will invoke the system ",
+            "illegal instruction error handler. See Section4.4.4 of ",
+            "Book III for additional information.",
+            " ",
+            " ",
+            "  "
+        ]
     },
     {
         "description": "Store Byte",
@@ -257,6 +611,18 @@
                 "mnemonic": "stb",
                 "regs": "['RS,D(RA)']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(D)",
+            "MEM(EA, 1) := (RS)56:63",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA|0)+D. ",
+            "(RS)56:63 are stored into the byte in storage addressed ",
+            "by EA."
         ]
     },
     {
@@ -268,6 +634,18 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "MEM(EA, 1) := (RS)56:63",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). (RS)56:63 are stored into the byte in ",
+            "storage addressed by EA."
+        ]
     },
     {
         "description": "Store Byte with Update",
@@ -277,6 +655,19 @@
                 "mnemonic": "stbu",
                 "regs": "['RS,D(RA)']"
             }
+        ]
+        "code": [
+            "EA := (RA) + EXTS(D)",
+            "MEM(EA, 1) := (RS)56:63",
+            "",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA)+D. ",
+            "(RS)56:63 are stored into the byte in storage addressed ",
+            "by EA.",
+            "EA is placed into register RA.",
+            "If RA=0, the instruction form is invalid."
         ]
     },
     {
@@ -288,6 +679,19 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "EA := (RA) + (RB)",
+            "MEM(EA, 1) := (RS)56:63",
+            "",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). (RS)56:63 are stored into the byte in stor",
+            "age addressed by EA.",
+            "EA is placed into register RA.",
+            "If RA=0, the instruction form is invalid."
+        ]
     },
     {
         "description": "Store Halfword",
@@ -297,6 +701,18 @@
                 "mnemonic": "sth",
                 "regs": "['RS,D(RA)']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(D)",
+            "MEM(EA, 2) := (RS)48:63",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA|0)+D. ",
+            "(RS)48:63 are stored into the halfword in storage ",
+            "addressed by EA."
         ]
     },
     {
@@ -308,6 +724,18 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "MEM(EA, 2) := (RS)48:63",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). (RS)48:63 are stored into the halfword ",
+            "in storage addressed by EA."
+        ]
     },
     {
         "description": "Store Halfword with Update",
@@ -317,6 +745,19 @@
                 "mnemonic": "sthu",
                 "regs": "['RS,D(RA)']"
             }
+        ]
+        "code": [
+            "EA := (RA) + EXTS(D)",
+            "MEM(EA, 2) := (RS)48:63",
+            "",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA)+D. ",
+            "(RS)48:63 are stored into the halfword in storage ",
+            "addressed by EA.",
+            "EA is placed into register RA.",
+            "If RA=0, the instruction form is invalid."
         ]
     },
     {
@@ -328,6 +769,19 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "EA := (RA) + (RB)",
+            "MEM(EA, 2) := (RS)48:63",
+            "",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). (RS)48:63 are stored into the halfword in ",
+            "storage addressed by EA.",
+            "EA is placed into register RA.",
+            "If RA=0, the instruction form is invalid."
+        ]
     },
     {
         "description": "Store Word",
@@ -337,6 +791,18 @@
                 "mnemonic": "stw",
                 "regs": "['RS,D(RA)']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(D)",
+            "MEM(EA, 4) := (RS)32:63",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA|0)+D. ",
+            "(RS)32:63 are stored into the word in storage addressed ",
+            "by EA."
         ]
     },
     {
@@ -348,6 +814,18 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "MEM(EA, 4) := (RS)32:63",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). (RS)32:63 are stored into the word in ",
+            "storage addressed by EA."
+        ]
     },
     {
         "description": "Store Word with Update",
@@ -357,6 +835,19 @@
                 "mnemonic": "stwu",
                 "regs": "['RS,D(RA)']"
             }
+        ]
+        "code": [
+            "EA := (RA) + EXTS(D)",
+            "MEM(EA, 4) := (RS)32:63",
+            "",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA)+D. ",
+            "(RS)32:63 are stored into the word in storage addressed ",
+            "by EA.",
+            "EA is placed into register RA.",
+            "If RA=0, the instruction form is invalid."
         ]
     },
     {
@@ -368,6 +859,19 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "EA := (RA) + (RB)",
+            "MEM(EA, 4) := (RS)32:63",
+            "",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). (RS)32:63 are stored into the word in ",
+            "storage addressed by EA.",
+            "EA is placed into register RA.",
+            "If RA=0, the instruction form is invalid."
+        ]
     },
     {
         "description": "Store Doubleword",
@@ -377,6 +881,18 @@
                 "mnemonic": "std",
                 "regs": "['RS,DS(RA)']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(DS || 0b00)",
+            "MEM(EA, 8) := (RS)",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(DS||0b00). (RS) is stored into the double",
+            "word in storage addressed by EA."
         ]
     },
     {
@@ -388,6 +904,18 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "MEM(EA, 8) := (RS)",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). (RS) is stored into the doubleword in ",
+            "storage addressed by EA."
+        ]
     },
     {
         "description": "Store Doubleword with Update",
@@ -397,6 +925,19 @@
                 "mnemonic": "stdu",
                 "regs": "['RS,DS(RA)']"
             }
+        ]
+        "code": [
+            "EA := (RA) + EXTS(DS || 0b00)",
+            "MEM(EA, 8) := (RS)",
+            "",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(DS||0b00). (RS) is stored into the doubleword ",
+            "in storage addressed by EA.",
+            "EA is placed into register RA.",
+            "If RA=0, the instruction form is invalid."
         ]
     },
     {
@@ -408,15 +949,18 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
-    },
-    {
-        "description": "Load Quadword",
-        "form": "DQ-form",
-        "mnemonics": [
-            {
-                "mnemonic": "lq",
-                "regs": "['RTp,DQ(RA),PT']"
-            }
+        "code": [
+            "EA := (RA) + (RB)",
+            "MEM(EA, 8) := (RS)",
+            "",
+            "RA := EA"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA)+(RB). (RS) is stored into the doubleword in ",
+            "storage addressed by EA.",
+            "EA is placed into register RA.",
+            "If RA=0, the instruction form is invalid."
         ]
     },
     {
@@ -427,6 +971,27 @@
                 "mnemonic": "stq",
                 "regs": "['RSp,DS(RA)']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b +tea EXTS(DS || 0b00)",
+            "",
+            "MEM(EA, 16) := RSp",
+            "if tags active then MEMtag(EA) := XER43",
+            "else                MEMtag(EA) := 0"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+tea(DS||0b00). The content of register pair RSp ",
+            "is stored into the quadword in storage addressed by ",
+            "EA.",
+            "In tags active mode, the tag bit of the quadword in stor",
+            "age is set to the value of XER43. In tags inactive mode, ",
+            "the tag bit of the quadword in storage is set to zero.",
+            "In tags active mode, EA must be a multiple of 16. If it is ",
+            "not, the system alignment error handler is invoked.",
+            " If RSp is odd, the instruction form is invalid. "
         ]
     },
     {
@@ -438,6 +1003,32 @@
                 "regs": "['RTp,DQ(RA)']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(DQ || 0b0000)",
+            "RTp := MEM(EA, 16)"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA|0)+ ",
+            "(DQ||0b0000). The quadword in storage addressed by ",
+            "EA is loaded into register pair RTp.",
+            "If RTp is odd or RTp=RA, the instruction form is invalid. ",
+            "If RTp=RA, an attempt to execute this instruction will ",
+            "invoke the system illegal instruction error handler. (The ",
+            "RTp=RA case includes the case of RTp=RA=0.)",
+            "The quadword in storage addressed by EA is loaded ",
+            "into an even-odd pair of GPRs as follows. In ",
+            "Big-Endian mode, the even-numbered GPR is loaded ",
+            "with the doubleword from storage addressed by EA ",
+            "and the odd-numbered GPR is loaded with the double",
+            "word addressed by EA+8. In Little-Endian mode, the ",
+            "even-numbered GPR is loaded with the byte-reversed  ",
+            "doubleword from storage addressed by EA+8 and the ",
+            "odd-numbered GPR is loaded with the byte-reversed ",
+            "doubleword addressed by EA.",
+            " "
+        ]
     },
     {
         "description": "Store Quadword",
@@ -447,6 +1038,29 @@
                 "mnemonic": "stq",
                 "regs": "['RSp,DS(RA)']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(DS || 0b00)",
+            "MEM(EA, 16) := RSp"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum (RA|0)+ ",
+            "(DS||0b00). The contents of register pair RSp are ",
+            "stored into the quadword in storage addressed by EA.",
+            "If RSp is odd, the instruction form is invalid.",
+            "The contents of an even-odd pair of GPRs is stored into ",
+            "the quadword in storage addressed by EA as follows. ",
+            "In Big-Endian mode, the even-numbered GPR is stored ",
+            "into the doubleword in storage addressed by EA and ",
+            "the odd-numbered GPR is stored into the doubleword ",
+            "addressed by EA+8. In Little-Endian mode, the ",
+            "even-numbered GPR is stored byte-reversed into the ",
+            "doubleword in storage addressed by EA+8 and the ",
+            "odd-numbered GPR is stored byte-reversed into the ",
+            "doubleword addressed by EA.",
+            " "
         ]
     },
     {
@@ -458,6 +1072,51 @@
                 "regs": "['RT,DQ(RA),EPT']"
             }
         ]
+        "code": [
+            "This instruction uses a DECODE function",
+            "   y = DECODE(x) defined by:",
+            "           x    y",
+            "          00   1000",
+            "          01   0100",
+            "          10   0010",
+            "          11   0001",
+            "",
+            "and a DECODE1 function",
+            "   y = DECODE1(x) defined by:",
+            "           x    y",
+            "          00   0010",
+            "          01   0100",
+            "          10   0110",
+            "          11   1000",
+            "",
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b +tea EXTS(DQ || 0b0000)",
+            "pt := DECODE1(EPT)",
+            "if ((DECODE(MEM0:1(EA,1)) & pt) ¹ 0b0000) &",
+            "(MEM2(EA,1) = 0) & (MEMtag(EA) = 1)",
+            "then RT := MEM(EA+8, 8)",
+            "else RT := 0",
+            "XER41:43 := undefined",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+tea(DQ||0b0000). The doubleword in storage ",
+            "addressed by EA+8 is loaded into register RT if all of ",
+            "the following conditions are met:",
+            "Otherwise RT is set to 0. The DECODE and DECODE1 ",
+            "functions are defined above in the RTL description.",
+            "The contents of XER41:43 are undefined. ",
+            "EA must be a multiple of 16. If it is not, the system ",
+            "alignment error handler is invoked.",
+            "",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute it will invoke the ",
+            "system illegal instruction error handler.",
+            "  ",
+            "  "
+        ]
     },
     {
         "description": "Load Halfword Byte-Reverse Indexed",
@@ -467,6 +1126,20 @@
                 "mnemonic": "lhbrx",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "load_data := MEM(EA, 2)",
+            "RT := 480 || load_data8:15 || load_data0:7"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). Bits 0:7 of the halfword in storage ",
+            "addressed by EA are loaded into RT56:63. Bits 8:15 of ",
+            "the halfword in storage addressed by EA are loaded ",
+            "into RT48:55. RT0:47 are set to 0."
         ]
     },
     {
@@ -478,6 +1151,20 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "MEM(EA, 2) := (RS)56:63 || (RS)48:55",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). (RS)56:63 are stored into bits 0:7 of the ",
+            "halfword in storage addressed by EA. (RS)48:55 are ",
+            "stored into bits 8:15 of the halfword in storage ",
+            "addressed by EA."
+        ]
     },
     {
         "description": "Load Word Byte-Reverse Indexed",
@@ -487,6 +1174,24 @@
                 "mnemonic": "lwbrx",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "load_data := MEM(EA, 4)",
+            "RT := 320 || load_data24:31 || load_data16:23",
+            "         || load_data8:15 || load_data0:7"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). Bits 0:7 of the word in storage ",
+            "addressed by EA are loaded into RT56:63. Bits 8:15 of ",
+            "the word in storage addressed by EA are loaded into ",
+            "RT48:55. Bits 16:23 of the word in storage addressed by ",
+            "EA are loaded into RT40:47. Bits 24:31 of the word in ",
+            "storage addressed by EA are loaded into RT32:39. ",
+            "RT0:31 are set to 0."
         ]
     },
     {
@@ -498,6 +1203,23 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "MEM(EA, 4) := (RS)56:63 || (RS)48:55 || (RS)40:47",
+            "               ||(RS)32:39",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). (RS)56:63 are stored into bits 0:7 of the ",
+            "word in storage addressed by EA. (RS)48:55 are stored ",
+            "into bits 8:15 of the word in storage addressed by EA. ",
+            "(RS)40:47 are stored into bits 16:23 of the word in stor",
+            "age addressed by EA. (RS)32:39 are stored into bits ",
+            "24:31 of the word in storage addressed by EA."
+        ]
     },
     {
         "description": "Load Doubleword Byte-Reverse Indexed",
@@ -507,6 +1229,32 @@
                 "mnemonic": "ldbrx",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "load_data := MEM(EA, 8)",
+            "RT :=  load_data56:63 || load_data48:55",
+            "|| load_data40:47 || load_data32:39",
+            "|| load_data24:31 || load_data16:23",
+            "|| load_data8:15  || load_data0:7"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). Bits 0:7 of the doubleword in storage ",
+            "addressed by EA are loaded into RT56:63. Bits 8:15 of ",
+            "the doubleword in storage addressed by EA are loaded ",
+            "into RT48:55. Bits 16:23 of the doubleword in storage ",
+            "addressed by EA are loaded into RT40:47. Bits 24:31 of ",
+            "the doubleword in storage addressed by EA are loaded ",
+            "into RT32:39. Bits 32:39 of the doubleword in storage ",
+            "addressed by EA are loaded into RT24:31. Bits 40:47 of ",
+            "the doubleword in storage addressed by EA are loaded ",
+            "into RT16:23. Bits 48:55 of the doubleword in storage ",
+            "addressed by EA are loaded into RT8:15. Bits 56:63 of ",
+            "the doubleword in storage addressed by EA are loaded ",
+            "into RT0:7."
         ]
     },
     {
@@ -518,6 +1266,32 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "MEM(EA, 8) := (RS)56:63 || (RS)48:55",
+            "|| (RS)40:47 || (RS)32:39",
+            "|| (RS)24:31 || (RS)16:23",
+            "|| (RS)8:15  || (RS)0:7",
+            ""
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). (RS)56:63 are stored into bits 0:7 of the ",
+            "doubleword in storage addressed by EA. (RS)48:55 are ",
+            "stored into bits 8:15 of the doubleword in storage ",
+            "addressed by EA. (RS)40:47 are stored into bits 16:23 of ",
+            "the doubleword in storage addressed by EA. (RS)32:39 ",
+            "are stored into bits 23:31 of the doubleword in storage ",
+            "addressed by EA. (RS)24:31 are stored into bits 32:39 of ",
+            "the doubleword in storage addressed by EA. (RS)16:23 ",
+            "are stored into bits 40:47 of the doubleword in storage ",
+            "addressed by EA. (RS)8:15 are stored into bits 48:55 of ",
+            "the doubleword in storage addressed by EA. (RS)0:7 ",
+            "are stored into bits 56:63 of the doubleword in storage ",
+            "addressed by EA."
+        ]
     },
     {
         "description": "Load Multiple Word",
@@ -528,15 +1302,27 @@
                 "regs": "['RT,D(RA)']"
             }
         ]
-    },
-    {
-        "description": "Load Multiple Doubleword",
-        "form": "DS-form",
-        "mnemonics": [
-            {
-                "mnemonic": "lmd",
-                "regs": "['RT,DS(RA)']"
-            }
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(D)",
+            "r := RT",
+            "do while r <= 31",
+            "GPR(r) := 320 || MEM(EA, 4)",
+            "r := r + 1",
+            "EA := EA + 4"
+        ]
+        "body": [
+            "Let n = (32-RT). Let the effective address (EA) be the ",
+            "sum (RA|0)+D.",
+            "n consecutive words starting at EA are loaded into the ",
+            "low-order 32 bits of GPRs RT through 31. The ",
+            "high-order 32 bits of these GPRs are set to zero.",
+            "If RA is in the range of registers to be loaded, including ",
+            "the case in which RA=0, the instruction form is invalid.",
+            "This instruction is not supported in Little-Endian mode. ",
+            "If it is executed in Little-Endian mode, the system align",
+            "ment error handler is invoked."
         ]
     },
     {
@@ -548,15 +1334,49 @@
                 "regs": "['RS,D(RA)']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + EXTS(D)",
+            "r := RS",
+            "do while r <= 31",
+            "MEM(EA, 4) := GPR(r)32:63",
+            "",
+            "r := r + 1",
+            "EA := EA + 4"
+        ]
+        "body": [
+            "Let n = (32-RS). Let the effective address (EA) be the ",
+            "sum (RA|0)+D.",
+            "n consecutive words starting at EA are stored from the ",
+            "low-order 32 bits of GPRs RS through 31.",
+            "This instruction is not supported in Little-Endian mode. ",
+            "If it is executed in Little-Endian mode, the system align",
+            "ment error handler is invoked."
+        ]
     },
     {
-        "description": "Store Multiple Doubleword",
-        "form": "DS-form",
+        "description": "",
+        "form": "",
         "mnemonics": [
             {
                 "mnemonic": "stmd",
                 "regs": "['RS,DS(RA)']"
             }
+        ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b +tea EXTS(DS || 0b00)",
+            "r := RS",
+            "do while r <= 31",
+            "MEM(EA, 8) := GPR(r)",
+            "MEMtag(EA, 8) := 0",
+            "r := r + 1",
+            "EA := EA +tea 8"
+        ]
+        "body": [
+
         ]
     },
     {
@@ -568,6 +1388,43 @@
                 "regs": "['RT,RA,NB']"
             }
         ]
+        "code": [
+            "if RA = 0 then EA := 0",
+            "else           EA := (RA)",
+            "if NB = 0 then n := 32",
+            "else           n := NB",
+            "r := RT - 1",
+            "i := 32",
+            "do while n \> 0",
+            "if i = 32 then",
+            "  r := r + 1 (mod 32)",
+            "  GPR(r) := 0",
+            "GPR(r)i:i+7 := MEM(EA, 1)",
+            "i := i + 8",
+            "if i = 64 then i := 32",
+            "EA := EA + 1",
+            "n := n - 1"
+        ]
+        "body": [
+            "Let the effective address (EA) be (RA|0). Let n = NB if ",
+            "NB¹0, n = 32 if NB=0; n is the number of bytes to load. ",
+            "Let nr=CEIL(n/4); nr is the number of registers to ",
+            "receive data.",
+            "n consecutive bytes starting at EA are loaded into ",
+            "GPRs RT through RT+nr-1. Data are loaded into the ",
+            "low-order four bytes of each GPR; the high-order four ",
+            "bytes are set to 0.",
+            "Bytes are loaded left to right in each register. The ",
+            "sequence of registers wraps around to GPR 0 if ",
+            "required. If the low-order four bytes of register RT+nr-1 ",
+            "are only partially filled, the unfilled low-order byte(s) of ",
+            "that register are set to 0.",
+            "If RA is in the range of registers to be loaded, including ",
+            "the case in which RA=0, the instruction form is invalid.",
+            "This instruction is not supported in Little-Endian mode. ",
+            "If it is executed in Little-Endian mode, the system align",
+            "ment error handler is invoked."
+        ]
     },
     {
         "description": "Load String Word Indexed",
@@ -578,15 +1435,90 @@
                 "regs": "['RT,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "n := XER57:63",
+            "r := RT - 1",
+            "i := 32",
+            "RT := undefined",
+            "do while n \> 0",
+            "if i = 32 then",
+            " r := r + 1 (mod 32)",
+            " GPR(r) := 0",
+            "GPR(r)i:i+7 := MEM(EA, 1)",
+            "i := i + 8",
+            "if i = 64 then i := 32",
+            "EA := EA + 1",
+            "n := n - 1"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). Let n=XER57:63; n is the number of ",
+            "bytes to load. Let nr=CEIL(n/4); nr is the number of reg",
+            "isters to receive data.",
+            "If n\>0, n consecutive bytes starting at EA are loaded ",
+            "into GPRs RT through RT+nr-1. Data are loaded into ",
+            "the low-order four bytes of each GPR; the high-order ",
+            "four bytes are set to 0.",
+            "Bytes are loaded left to right in each register. The ",
+            "sequence of registers wraps around to GPR 0 if ",
+            "required. If the low-order four bytes of register RT+nr-1 ",
+            "are only partially filled, the unfilled low-order byte(s) of ",
+            "that register are set to 0.",
+            "If n=0, the contents of register RT are undefined.",
+            "If RA or RB is in the range of registers to be loaded, ",
+            "including the case in which RA=0, the instruction is ",
+            "treated as if the instruction form were invalid. If RT=RA ",
+            "or RT=RB, the instruction form is invalid.",
+            "This instruction is not supported in Little-Endian mode. ",
+            "If it is executed in Little-Endian mode and n\>0, the sys",
+            "tem alignment error handler is invoked."
+        ]
     },
     {
-        "description": "Load String Doubleword Immediate",
+        "description": "",
         "form": "X-form",
         "mnemonics": [
             {
                 "mnemonic": "lsdi",
                 "regs": "['RT,RA,NB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then EA := 0",
+            "else           EA := (RA)",
+            "if NB = 0 then n := 32",
+            "else           n := NB",
+            "r := RT - 1",
+            "i := 0",
+            "do while n \> 0",
+            "  if i = 0 then",
+            "    r := r + 1 (mod 32)",
+            "    GPR(r) := 0",
+            "  GPR(r)i:i+7 := MEM(EA, 1)",
+            "  i := i + 8 (mod 64)",
+            "  EA := EA +tea 1",
+            "  n := n - 1"
+        ]
+        "body": [
+            "Let the effective address (EA) be (RA|0). Let n=NB if ",
+            "NB¹0, n=32 if NB=0: n is the number of bytes to load. ",
+            "Let nr=CEIL(n/8): nr is the number of registers to ",
+            "receive data.",
+            "n consecutive bytes starting at EA are loaded into ",
+            "GPRs RT through RT+nr-1. Data are loaded into all ",
+            "eight bytes of each GPR.",
+            "Bytes are loaded left to right in each register. The ",
+            "sequence of registers wraps around to GPR 0 if ",
+            "required. If register RT+nr-1 is only partially filled, the ",
+            "unfilled low-order byte(s) of that register are set to 0.",
+            "If RA is in the range of registers to be loaded, including ",
+            "the case in which RA=0, the instruction form is invalid.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler."
         ]
     },
     {
@@ -598,6 +1530,44 @@
                 "regs": "['RT,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b +tea (RB)",
+            "n := XER57:63",
+            "r := RT - 1",
+            "i := 0",
+            "RT := undefined",
+            "do while n \> 0",
+            "  if i = 0 then",
+            "    r := r + 1 (mod 32)",
+            "    GPR(r) := 0",
+            "  GPR(r)i:i+7 := MEM(EA, 1)",
+            "  i := i + 8 (mod 64)",
+            "  EA := EA +tea 1",
+            "  n := n - 1"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+tea(RB). Let n=XER57:63: n is the number of ",
+            "bytes to load. Let nr=CEIL(n/8): nr is the number of reg",
+            "isters to receive data.",
+            "If n\>0, n consecutive bytes starting at EA are loaded ",
+            "into GPRs RT through RT+nr-1. Data are loaded into ",
+            "all eight bytes of each GPR.",
+            "Bytes are loaded left to right in each register. The ",
+            "sequence of registers wraps around to GPR 0 if ",
+            "required. If register RT+nr-1 is only partially filled, the ",
+            "unfilled low-order byte(s) of that register are set to 0.",
+            "If n=0, the contents of register RT are undefined.",
+            "If RA or RB is in the range of registers to be loaded, ",
+            "including the case in which RA=0, the instruction is ",
+            "treated as if the instruction form were invalid. If RT=RA ",
+            "or RT=RB, the instruction form is invalid.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler."
+        ]
     },
     {
         "description": "Store String Word Immediate",
@@ -607,6 +1577,37 @@
                 "mnemonic": "stswi",
                 "regs": "['RS,RA,NB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then EA := 0",
+            "else           EA := (RA)",
+            "if NB = 0 then n := 32",
+            "else           n := NB",
+            "r := RS - 1",
+            "i := 32",
+            "do while n \> 0",
+            "  if i = 32 then r := r + 1 (mod 32)",
+            "  MEM(EA, 1) := GPR(r)i:i+7",
+            " ",
+            "  i := i + 8",
+            "  if i = 64 then i := 32",
+            "  EA := EA + 1",
+            "  n := n - 1"
+        ]
+        "body": [
+            "Let the effective address (EA) be (RA|0). Let n = NB if ",
+            "NB¹0, n = 32 if NB=0; n is the number of bytes to store. ",
+            "Let nr =CEIL(n/4); nr is the number of registers to sup",
+            "ply data.",
+            "n consecutive bytes starting at EA are stored from ",
+            "GPRs RS through RS+nr-1. Data are stored from the ",
+            "low-order four bytes of each GPR.",
+            "Bytes are stored left to right from each register. The ",
+            "sequence of registers wraps around to GPR 0 if ",
+            "required.",
+            "This instruction is not supported in Little-Endian mode. ",
+            "If it is executed in Little-Endian mode, the system align",
+            "ment error handler is invoked."
         ]
     },
     {
@@ -618,15 +1619,77 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b + (RB)",
+            "n := XER57:63",
+            "r := RS - 1",
+            "i := 32",
+            "do while n \> 0",
+            "  if i = 32 then r := r + 1 (mod 32)",
+            "  MEM(EA, 1) := GPR(r)i:i+7",
+            "  ",
+            "  i := i + 8",
+            "  if i = 64 then i := 32",
+            "  EA := EA + 1",
+            "  n := n - 1"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+(RB). Let n = XER57:63; n is the number of ",
+            "bytes to store. Let nr = CEIL(n/4); nr is the number of ",
+            "registers to supply data.",
+            "If n\>0, n consecutive bytes starting at EA are stored ",
+            "from GPRs RS through RS+nr-1. Data are stored from ",
+            "the low-order four bytes of each GPR.",
+            "Bytes are stored left to right from each register. The ",
+            "sequence of registers wraps around to GPR 0 if ",
+            "required.",
+            "If n=0, no bytes are stored.",
+            "This instruction is not supported in Little-Endian mode. ",
+            "If it is executed in Little-Endian mode and n\>0, the sys",
+            "tem alignment error handler is invoked."
+        ]
     },
     {
-        "description": "Store String Doubleword Immediate",
-        "form": "X-form",
+        "description": "X-form",
+        "form": "",
         "mnemonics": [
             {
                 "mnemonic": "stsdi",
                 "regs": "['RS,RA,NB']"
             }
+        ]
+        "code": [
+            "if RA = 0 then EA := 0",
+            "else           EA := (RA)",
+            "if NB = 0 then n := 32",
+            "else           n := NB",
+            "r := RS - 1",
+            "i := 0",
+            "do while n \> 0",
+            "  if i = 0 then r := r + 1 (mod 32)",
+            "  MEM(EA, 1) := GPR(r)i:i+7",
+            "  MEMtag(EA) := 0",
+            "  i := i + 8 (mod 64)",
+            "  EA := EA +tea 1",
+            "  n := n - 1"
+        ]
+        "body": [
+            "Let the effective address (EA) be (RA|0). Let n = NB if ",
+            "NB¹0, n=32 if NB=0: n is the number of bytes to store. ",
+            "Let nr =CEIL(n/8): nr is the number of registers to sup",
+            "ply data.",
+            "n consecutive bytes starting at EA are stored from ",
+            "GPRs RS through RS+nr-1. Data are stored from all ",
+            "eight bytes of each GPR.",
+            "Bytes are stored left to right from each register. The ",
+            "sequence of registers wraps around to GPR 0 if ",
+            "required.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler."
         ]
     },
     {
@@ -638,6 +1701,37 @@
                 "regs": "['RS,RA,RB']"
             }
         ]
+        "code": [
+            "if RA = 0 then b := 0",
+            "else           b := (RA)",
+            "EA := b +tea (RB)",
+            "n := XER57:63",
+            "r := RS - 1",
+            "i := 0",
+            "do while n \> 0",
+            "  if i = 0 then r := r + 1 (mod 32)",
+            "  MEM(EA, 1) := GPR(r)i:i+7",
+            "  MEMtag(EA) := 0",
+            "  i := i + 8 (mod 64)",
+            "  EA := EA +tea 1",
+            "  n := n - 1"
+        ]
+        "body": [
+            "Let the effective address (EA) be the sum ",
+            "(RA|0)+tea(RB). Let n=XER57:63: n is the number of ",
+            "bytes to store. Let nr=CEIL(n/8): nr is the number of ",
+            "registers to supply data.",
+            "If n\>0, n consecutive bytes starting at EA are stored ",
+            "from GPRs RS through RS+nr-1. Data are stored from ",
+            "all eight bytes of each GPR.",
+            "Bytes are stored left to right from each register. The ",
+            "sequence of registers wraps around to GPR 0 if ",
+            "required.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler.",
+            "If n=0, no bytes are stored."
+        ]
     },
     {
         "description": "Add Immediate",
@@ -647,6 +1741,15 @@
                 "mnemonic": "addi",
                 "regs": "['RT,RA,SI']"
             }
+        ]
+        "code": [
+            "if RA = 0 then RT := EXTS(SI)",
+            "else           RT := (RA) + EXTS(SI)"
+        ]
+        "body": [
+            "The sum (RA|0) + SI is placed into register RT.",
+            "Examples of extended mnemonics for Add Immediate:",
+            "  "
         ]
     },
     {
@@ -658,6 +1761,16 @@
                 "regs": "['RT,RA,SI']"
             }
         ]
+        "code": [
+            "if RA = 0 then RT := EXTS(SI || 160)",
+            "else           RT := (RA) + EXTS(SI || 160)"
+        ]
+        "body": [
+            "The sum (RA|0) + (SI||0x0000) is placed into register ",
+            "RT.",
+            "Examples of extended mnemonics for Add Immediate ",
+            "Shifted:"
+        ]
     },
     {
         "description": "Add PC Immediate Shifted",
@@ -667,6 +1780,17 @@
                 "mnemonic": "addpcis",
                 "regs": "['RT,D']"
             }
+        ]
+        "code": [
+            "D := d0||d1||d2",
+            "RT := NIA + EXTS(D || 160)"
+        ]
+        "body": [
+            "The sum of NIA + (D||0x0000) is placed into register ",
+            "RT. ",
+            "",
+            "Examples of extended mnemonics for Add PC Immedi",
+            "ate Shifted:"
         ]
     },
     {
@@ -690,6 +1814,12 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "RT := (RA) + (RB)"
+        ]
+        "body": [
+            "The sum (RA) + (RB) is placed into register RT."
+        ]
     },
     {
         "description": "Subtract From",
@@ -712,6 +1842,13 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "RT := :=(RA) + (RB) + 1"
+        ]
+        "body": [
+            "The sum ¬(RA) + (RB) +1 is placed into register RT.",
+            "Example of extended mnemonics for Subtract From:"
+        ]
     },
     {
         "description": "Add Immediate Carrying",
@@ -721,6 +1858,14 @@
                 "mnemonic": "addic",
                 "regs": "['RT,RA,SI']"
             }
+        ]
+        "code": [
+            "RT := (RA) + EXTS(SI)"
+        ]
+        "body": [
+            "The sum (RA) + SI is placed into register RT.",
+            "Example of extended mnemonics for Add Immediate ",
+            "Carrying:"
         ]
     },
     {
@@ -732,6 +1877,14 @@
                 "regs": "['RT,RA,SI']"
             }
         ]
+        "code": [
+            "RT := (RA) + EXTS(SI)"
+        ]
+        "body": [
+            "The sum (RA) + SI is placed into register RT.",
+            "Example of extended mnemonics for Add Immediate ",
+            "Carrying and Record:"
+        ]
     },
     {
         "description": "Subtract From Immediate Carrying",
@@ -741,6 +1894,23 @@
                 "mnemonic": "subfic",
                 "regs": "['RT,RA,SI']"
             }
+        ]
+        "code": [
+
+        ]
+        "body": [
+            "RT ¬ ¬(RA) + EXTS(SI) + 1",
+            "The sum ¬(RA) + SI + 1 is placed into register RT.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     },
     {
@@ -764,6 +1934,12 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "RT := (RA) + (RB)"
+        ]
+        "body": [
+            "The sum (RA) + (RB) is placed into register RT."
+        ]
     },
     {
         "description": "Subtract From Carrying",
@@ -785,6 +1961,14 @@
                 "mnemonic": "subfco.",
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
+        ]
+        "code": [
+            "RT := :=(RA) + (RB) + 1"
+        ]
+        "body": [
+            "The sum ¬(RA) + (RB) + 1 is placed into register RT.",
+            "Example of extended mnemonics for Subtract From ",
+            "Carrying:"
         ]
     },
     {
@@ -808,6 +1992,12 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "RT := (RA) + (RB) + CA"
+        ]
+        "body": [
+            "The sum (RA) + (RB) + CA is placed into register RT."
+        ]
     },
     {
         "description": "Subtract From Extended",
@@ -829,6 +2019,12 @@
                 "mnemonic": "subfeo.",
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
+        ]
+        "code": [
+            "RT := :=(RA) + (RB) + CA"
+        ]
+        "body": [
+            "The sum ¬(RA) + (RB) + CA is placed into register RT."
         ]
     },
     {
@@ -852,6 +2048,12 @@
                 "regs": "['RT,RA', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "RT := (RA) + CA - 1"
+        ]
+        "body": [
+            "The sum (RA) + CA + 641 is placed into register RT."
+        ]
     },
     {
         "description": "Subtract From Minus One Extended",
@@ -874,6 +2076,12 @@
                 "regs": "['RT,RA', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "RT := :=(RA) + CA - 1"
+        ]
+        "body": [
+            "The sum ¬(RA) + CA + 641 is placed into register RT."
+        ]
     },
     {
         "description": "Add Extended using alternate carry bit Z23",
@@ -883,6 +2091,20 @@
                 "mnemonic": "addex",
                 "regs": "['RT,RA,RB,CY']"
             }
+        ]
+        "code": [
+            "if CY=0 then RT := (RA) + (RB) + OV"
+        ]
+        "body": [
+            "For CY=0, the sum (RA) + (RB) + OV is placed into regis",
+            "ter RT.",
+            "For CY=0, OV is set to 1 if there is a carry out of bit 0 of ",
+            "the sum in 64-bit mode or there is a carry out of bit 32 ",
+            "of the sum in 32-bit mode, and set to 0 otherwise. ",
+            "OV32 is set to 1 if there is a carry out of bit 32 bit of the ",
+            "sum.",
+            "CY=1, CY=2, and CY=3 are reserved.",
+            "  "
         ]
     },
     {
@@ -906,6 +2128,12 @@
                 "regs": "['RT,RA', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "RT := (RA) + CA"
+        ]
+        "body": [
+            "The sum (RA) + CA is placed into register RT."
+        ]
     },
     {
         "description": "Subtract From Zero Extended",
@@ -927,6 +2155,13 @@
                 "mnemonic": "subfzeo.",
                 "regs": "['RT,RA', '(OE=1 Rc=1)']"
             }
+        ]
+        "code": [
+            "RT := :=(RA) + CA"
+        ]
+        "body": [
+            "The sum ¬(RA) + CA is placed into register RT.",
+            ""
         ]
     },
     {
@@ -950,6 +2185,23 @@
                 "regs": "['RT,RA', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "RT := :=(RA) + 1"
+        ]
+        "body": [
+            "The sum ¬(RA) + 1 is placed into register RT.",
+            "If the processor is in 64-bit mode and register RA con",
+            "tains the most negative 64-bit number (0x8000_ ",
+            "0000_0000_0000), the result is the most negative num",
+            "ber and, if OE=1, OV is set to 1. If (RA)32:63 contain the ",
+            "most negative 32-bit number (0x8000_0000) and ",
+            "OE=1, OV32 is set to 1.",
+            "Similarly, if the processor is in 32-bit mode and ",
+            "(RA)32:63 contain the most negative 32-bit number ",
+            "(0x8000_0000), the low-order 32 bits of the result con",
+            "tain the most negative 32-bit number and, if OE=1, OV ",
+            "and OV32 are set to 1. "
+        ]
     },
     {
         "description": "Multiply Low Immediate",
@@ -959,6 +2211,18 @@
                 "mnemonic": "mulli",
                 "regs": "['RT,RA,SI']"
             }
+        ]
+        "code": [
+            "prod0:127 := (RA) ´ EXTS(SI)",
+            "RT := prod64:127"
+        ]
+        "body": [
+            "The 64-bit first operand is (RA). The 64-bit second ",
+            "operand is the sign-extended value of the SI field. The ",
+            "low-order 64 bits of the 128-bit product of the operands ",
+            "are placed into register RT.",
+            "Both operands and the product are interpreted as ",
+            "signed integers."
         ]
     },
     {
@@ -982,6 +2246,18 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "RT := (RA)32:63 ´ (RB)32:63"
+        ]
+        "body": [
+            "The 32-bit operands are the low-order 32 bits of RA ",
+            "and of RB. The 64-bit product of the operands is placed ",
+            "into register RT.",
+            "If OE=1 then OV and OV32 are set to 1 if the product ",
+            "cannot be represented in 32 bits.",
+            "Both operands and the product are interpreted as ",
+            "signed integers."
+        ]
     },
     {
         "description": "Multiply High Word",
@@ -996,6 +2272,19 @@
                 "regs": "['RT,RA,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "prod0:63 := (RA)32:63 ´ (RB)32:63",
+            "RT32:63 := prod0:31",
+            "RT0:31 := undefined"
+        ]
+        "body": [
+            "The 32-bit operands are the low-order 32 bits of RA ",
+            "and of RB. The high-order 32 bits of the 64-bit product ",
+            "of the operands are placed into RT32:63. The contents ",
+            "of RT0:31 are undefined.",
+            "Both operands and the product are interpreted as ",
+            "signed integers."
+        ]
     },
     {
         "description": "Multiply High Word Unsigned",
@@ -1009,6 +2298,21 @@
                 "mnemonic": "mulhwu.",
                 "regs": "['RT,RA,RB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "prod0:63 := (RA)32:63 ´ (RB)32:63",
+            "RT32:63 := prod0:31",
+            "RT0:31 := undefined"
+        ]
+        "body": [
+            "The 32-bit operands are the low-order 32 bits of RA ",
+            "and of RB. The high-order 32 bits of the 64-bit product ",
+            "of the operands are placed into RT32:63. The contents ",
+            "of RT0:31 are undefined.",
+            "Both operands and the product are interpreted as ",
+            "unsigned integers, except that if Rc=1 the first three ",
+            "bits of CR Field 0 are set by signed comparison of the ",
+            "result to zero."
         ]
     },
     {
@@ -1032,6 +2336,31 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "dividend0:31  := (RA)32:63",
+            "divisor0:31 := (RB)32:63",
+            "RT32:63 := dividend ¸ divisor",
+            "RT0:31 := undefined",
+            "",
+            "   0x8000_0000 ¸ -1",
+            "   <anything\> ¸ 0"
+        ]
+        "body": [
+            "The 32-bit dividend is (RA)32:63. The 32-bit divisor is ",
+            "(RB)32:63. The 32-bit quotient is placed into RT32:63. ",
+            "The contents of RT0:31 are undefined. The remainder is ",
+            "not supplied as a result.",
+            "Both operands and the quotient are interpreted as ",
+            "signed integers. The quotient is the unique signed inte",
+            "ger that satisfies",
+            "where 0 £ r < |divisor| if the dividend is nonnegative, ",
+            "and -|divisor| < r £ 0 if the dividend is negative.",
+            "If an attempt is made to perform any of the divisions",
+            "then the contents of register RT are undefined as are ",
+            "(ifRc=1) the contents of the LT, GT, and EQ bits of CR ",
+            "Field 0. In these cases, if OE=1 then ",
+            "OV and OV32 are set to 1."
+        ]
     },
     {
         "description": "Divide Word Unsigned",
@@ -1053,6 +2382,31 @@
                 "mnemonic": "divwuo.",
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
+        ]
+        "code": [
+            "dividend0:31  := (RA)32:63",
+            "divisor0:31 := (RB)32:63",
+            "RT32:63 := dividend ¸ divisor",
+            "RT0:31 := undefined",
+            "",
+            "    <anything\> ¸ 0"
+        ]
+        "body": [
+            "The 32 bit dividend is (RA)32:63. The 32-bit divisor is ",
+            "(RB)32:63. The 32-bit quotient is placed into RT32:63. ",
+            "The contents of RT0:31 are undefined. The remainder is ",
+            "not supplied as a result.",
+            "Both operands and the quotient are interpreted as ",
+            "unsigned integers, except that if Rc=1 the first three ",
+            "bits of CR Field 0 are set by signed comparison of the ",
+            "result to zero. The quotient is the unique unsigned inte",
+            "ger that satisfies",
+            "where 0 £ r < divisor.",
+            "If an attempt is made to perform the division",
+            "then the contents of register RT are undefined as are (if ",
+            "Rc=1) the contents of the LT, GT, and EQ bits of CR ",
+            "Field 0. In this case, if OE=1 then OV ",
+            "and OV32 are set to 1."
         ]
     },
     {
@@ -1076,6 +2430,31 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']"
             }
         ]
+        "code": [
+            "dividend0:63 := (RA)32:63 || 320",
+            "divisor0:31 := (RB)32:63",
+            "RT32:63 := dividend ¸ divisor",
+            "RT0:31 := undefined",
+            "",
+            "    <anything\> ¸ 0"
+        ]
+        "body": [
+            "The 64-bit dividend is (RA)32:63 || 320. The 32-bit divisor ",
+            "is (RB)32:63. If the quotient can be represented in 32 ",
+            "bits, it is placed into RT32:63. The contents of RT0:31 are ",
+            "undefined. The remainder is not supplied as a result. ",
+            "Both operands and the quotient are interpreted as ",
+            "signed integers. The quotient is the unique signed inte",
+            "ger that satisfies",
+            "where 0 £ r < |divisor| if the dividend is nonnegative, ",
+            "and -|divisor| < r £ 0 if the dividend is negative.",
+            "If the quotient cannot be represented in 32 bits, or if an ",
+            "attempt is made to perform the division",
+            "then the contents of register RT are undefined as are (if ",
+            "Rc=1) the contents of the LT, GT, and EQ bits of CR ",
+            "Field 0. In these cases, if OE=1 then ",
+            "OV and OV32 are set to 1."
+        ]
     },
     {
         "description": "Divide Word Extended Unsigned",
@@ -1098,6 +2477,48 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']"
             }
         ]
+        "code": [
+            "dividend0:63 := (RA)32:63 || 320",
+            "divisor0:31 := (RB)32:63",
+            "RT32:63 := dividend ¸ divisor",
+            "RT0:31 := undefined",
+            "",
+            "    <anything\> ¸ 0"
+        ]
+        "body": [
+            "The 64-bit dividend is (RA)32:63 || 320. The 32-bit divisor ",
+            "is (RB)32:63. If the quotient can be represented in 32 ",
+            "bits, it is placed into RT32:63. The contents of RT0:31 are ",
+            "undefined. The remainder is not supplied as a result. ",
+            "Both operands and the quotient are interpreted as ",
+            "unsigned integers, except that if Rc=1 the first three ",
+            "bits of CR Field 0 are set by signed comparison of the ",
+            "result to zero. The quotient is the unique unsigned inte",
+            "ger that satisfies",
+            "where 0 £ r < divisor.",
+            "If (RA) ³ (RB), or if an attempt is made to perform the ",
+            "division",
+            "then the contents of register RT are undefined as are (if ",
+            "Rc=1) the contents of the LT, GT, and EQ bits of CR ",
+            "Field 0. In these cases, if OE=1 then ",
+            "OV and OV32 are set to 1.",
+            "Unsigned long division of a 64-bit dividend contained in ",
+            "two 32-bit registers by a 32-bit divisor can be computed ",
+            "as follows. The algorithm is shown first, followed by ",
+            "Assembler code that implements the algorithm. The ",
+            "dividend is Dh || Dl, the divisor is Dv, and the quotient ",
+            "and remainder are Q and R respectively, where these ",
+            "variables and all intermediate variables represent ",
+            "unsigned 32-bit integers. It is assumed that Dv \> Dh, ",
+            "and that assigning a value to an intermediate variable ",
+            "assigns the low-order 32 bits of the value and ignores ",
+            "any higher-order bits of the value. (In both the algorithm ",
+            "and the Assembler code, “r1” and “r2” refer to “remain",
+            "der 1” and “remainder 2”, rather than to GPRs 1 and 2.)",
+            "Algorithm:",
+            "Assembler Code:",
+            "Notes:"
+        ]
     },
     {
         "description": "Modulo Signed Word X-form",
@@ -1107,6 +2528,21 @@
                 "mnemonic": "modsw",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "remainder = dividend - (quotient × divisor)",
+            "0x8000_0000 % -1"
+        ]
+        "body": [
+            "The 32-bit dividend is (RA)32:63. The 32-bit divisor is ",
+            "(RB)32:63. The 32-bit remainder of the dividend divided ",
+            "by the divisor is placed into RT32:63. The contents of ",
+            "RT0:31 are undefined. The quotient is not supplied as a ",
+            "result.",
+            "where 0 £ remainder < |divisor| if the dividend is ",
+            "nonnegative, and -|divisor| < remainder £ 0 if the ",
+            "dividend is negative.",
+            "then the contents of register RT are undefined."
         ]
     },
     {
@@ -1118,6 +2554,19 @@
                 "regs": "['RT,RA,RB']"
             }
         ]
+        "code": [
+            "remainder = dividend - (quotient × divisor)",
+            "<anything\> % 0"
+        ]
+        "body": [
+            "The 32-bit dividend is (RA)32:63. The 32-bit divisor is ",
+            "(RB)32:63. The 32-bit remainder of the dividend divided ",
+            "by the divisor is placed into RT32:63. The contents of ",
+            "RT0:31 are undefined. The quotient is not supplied as a ",
+            "result.",
+            "where 0 £ remainder < divisor.",
+            "then the contents of register RT are undefined."
+        ]
     },
     {
         "description": "Deliver A Random Number",
@@ -1127,6 +2576,26 @@
                 "mnemonic": "darn",
                 "regs": "['RT,L']"
             }
+        ]
+        "code": [
+            "RT := random(L)",
+            " ",
+            " "
+        ]
+        "body": [
+            "A random number is placed into register RT in a format ",
+            "selected by L as shown in the following table.  The ",
+            "value 0xFFFFFFFF_FFFFFFFF indicates an error con",
+            "dition.  For L=0, the random number range is ",
+            "0:0xFFFFFFFF.  For L=1 and L=2, the random number ",
+            "range is 0:0xFFFFFFFF_FFFFFFFE.",
+            "",
+            " ",
+            "",
+            "",
+            "",
+            " ",
+            ""
         ]
     },
     {
@@ -1150,6 +2619,20 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "prod0:127 := (RA) ´ (RB)",
+            "RT := prod64:127"
+        ]
+        "body": [
+            "The 64-bit operands are (RA) and (RB). The low-order ",
+            "64 bits of the 128-bit product of the operands are ",
+            "placed into register RT.",
+            "If OE=1 then OV and OV32 are set to 1 if the product ",
+            "cannot be represented in 64 bits.",
+            "Both operands and the product are interpreted as ",
+            "signed integers.",
+            "  "
+        ]
     },
     {
         "description": "Multiply High Doubleword",
@@ -1163,6 +2646,17 @@
                 "mnemonic": "mulhd.",
                 "regs": "['RT,RA,RB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "prod0:127 := (RA) ´ (RB)",
+            "RT := prod0:63"
+        ]
+        "body": [
+            "The 64-bit operands are (RA) and (RB). The high-order ",
+            "64 bits of the 128-bit product of the operands are ",
+            "placed into register RT.",
+            "Both operands and the product are interpreted as ",
+            "signed integers."
         ]
     },
     {
@@ -1178,6 +2672,19 @@
                 "regs": "['RT,RA,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "prod0:127 := (RA) ´ (RB)",
+            "RT := prod0:63"
+        ]
+        "body": [
+            "The 64-bit operands are (RA) and (RB). The high-order ",
+            "64 bits of the 128-bit product of the operands are ",
+            "placed into register RT.",
+            "Both operands and the product are interpreted as ",
+            "unsigned integers, except that if Rc=1 the first three ",
+            "bits of CR Field 0 are set by signed comparison of the ",
+            "result to zero."
+        ]
     },
     {
         "description": "Multiply-Add High Doubleword VA-form",
@@ -1187,6 +2694,15 @@
                 "mnemonic": "maddhd",
                 "regs": "['RT,RA.RB,RC']"
             }
+        ]
+        "code": [
+            "prod0:127 := (RA) × (RB)"
+        ]
+        "body": [
+            "The 64-bit operands are (RA), (RB), and (RC). The ",
+            "128-bit product of the operands (RA) and (RB) is ",
+            "added to (RC). The high-order 64 bits of the 128-bit ",
+            "sum are placed into register RT."
         ]
     },
     {
@@ -1198,6 +2714,15 @@
                 "regs": "['RT,RA.RB,RC']"
             }
         ]
+        "code": [
+            "prod0:127 := (RA) × (RB)"
+        ]
+        "body": [
+            "The 64-bit operands are (RA), (RB), and (RC). The ",
+            "128-bit product of the operands (RA) and (RB) is ",
+            "added to (RC). The high-order 64 bits of the 128-bit ",
+            "sum are placed into register RT."
+        ]
     },
     {
         "description": "Multiply-Add Low Doubleword VA-form",
@@ -1207,6 +2732,15 @@
                 "mnemonic": "maddld",
                 "regs": "['RT,RA.RB,RC']"
             }
+        ]
+        "code": [
+            "prod0:127 := (RA) × (RB)"
+        ]
+        "body": [
+            "The 64-bit operands are (RA), (RB), and (RC). The ",
+            "128-bit product of the operands (RA) and (RB) is ",
+            "added to (RC). The low-order 64 bits of the 128-bit ",
+            "sum are placed into register RT."
         ]
     },
     {
@@ -1230,6 +2764,30 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
         ]
+        "code": [
+            "dividend0:63 := (RA)",
+            "divisor0:63 := (RB)",
+            "RT := dividend ¸ divisor",
+            "",
+            "   0x8000_0000_0000_0000 ¸ -1",
+            "   <anything\> ¸ 0"
+        ]
+        "body": [
+            "The 64-bit dividend is (RA). The 64-bit divisor is (RB). ",
+            "The 64-bit quotient is placed into register RT. The ",
+            "remainder is not supplied as a result.",
+            "Both operands and the quotient are interpreted as ",
+            "signed integers. The quotient is the unique signed inte",
+            "ger that satisfies",
+            "where 0 £ r < |divisor| if the dividend is nonnegative, ",
+            "and -|divisor| < r £ 0 if the dividend is negative.",
+            "If an attempt is made to perform any of the divisions",
+            "then the contents of register RT are undefined as are (if ",
+            "Rc=1) the contents of the LT, GT, and EQ bits of CR ",
+            "Field 0. In these cases, if OE=1 then ",
+            "OV and OV32 are set to 1.",
+            "  "
+        ]
     },
     {
         "description": "Divide Doubleword Unsigned",
@@ -1251,6 +2809,29 @@
                 "mnemonic": "divduo.",
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1)']"
             }
+        ]
+        "code": [
+            "dividend0:63 := (RA)",
+            "divisor0:63 := (RB)",
+            "RT := dividend ¸ divisor",
+            "",
+            "    <anything\> ¸ 0"
+        ]
+        "body": [
+            "The 64-bit dividend is (RA). The 64-bit divisor is (RB). ",
+            "The 64-bit quotient is placed into register RT. The ",
+            "remainder is not supplied as a result.",
+            "Both operands and the quotient are interpreted as ",
+            "unsigned integers, except that if Rc=1 the first three ",
+            "bits of CR Field 0 are set by signed comparison of the ",
+            "result to zero. The quotient is the unique unsigned inte",
+            "ger that satisfies",
+            "where 0 £ r < divisor.",
+            "If an attempt is made to perform the division",
+            "then the contents of register RT are undefined as are (if ",
+            "Rc=1) the contents of the LT, GT, and EQ bits of CR ",
+            "Field 0. In this case, if OE=1 then OV ",
+            "and OV32 are set to 1."
         ]
     },
     {
@@ -1274,6 +2855,30 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']"
             }
         ]
+        "code": [
+            "dividend0:127 := (RA) || 640",
+            "divisor0:63 := (RB)",
+            "RT := dividend ¸ divisor",
+            "",
+            "    <anything\> ¸ 0"
+        ]
+        "body": [
+            "The 128-bit dividend is (RA) || 640. The 64-bit divisor is ",
+            "(RB). If the quotient can be represented in 64 bits, it is ",
+            "placed into register RT. The remainder is not supplied ",
+            "as a result. ",
+            "Both operands and the quotient are interpreted as ",
+            "signed integers. The quotient is the unique signed inte",
+            "ger that satisfies",
+            "where 0 £ r < |divisor| if the dividend is nonnegative, ",
+            "and -|divisor| < r £ 0 if the dividend is negative.",
+            "If the quotient cannot be represented in 64 bits, or if an ",
+            "attempt is made to perform the division",
+            "then the contents of register RT are undefined as are (if ",
+            "Rc=1) the contents of the LT, GT, and EQ bits of CR ",
+            "Field 0. In these cases, if OE=1 then ",
+            "OV and OV32 are set to 1."
+        ]
     },
     {
         "description": "Divide Doubleword Extended Unsigned",
@@ -1296,6 +2901,32 @@
                 "regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']"
             }
         ]
+        "code": [
+            "dividend0:127 := (RA) || 640",
+            "divisor0:63 := (RB)",
+            "RT := dividend ¸ divisor",
+            "",
+            "    <anything\> ¸ 0"
+        ]
+        "body": [
+            "The 128-bit dividend is (RA) || 640. The 64-bit divisor is ",
+            "(RB). If the quotient can be represented in 64 bits, it is ",
+            "placed into register RT. The remainder is not supplied ",
+            "as a result. ",
+            "Both operands and the quotient are interpreted as ",
+            "unsigned integers, except that if Rc=1 the first three ",
+            "bits of CR Field 0 are set by signed comparison of the ",
+            "result to zero. The quotient is the unique unsigned inte",
+            "ger that satisfies",
+            "where 0 £ r < divisor.",
+            "If (RA) ³ (RB), or if an attempt is made to perform the ",
+            "division",
+            "then the contents of register RT are undefined as are (if ",
+            "Rc=1) the contents of the LT, GT, and EQ bits of CR ",
+            "Field 0. In these cases, if OE=1 then ",
+            "OV and OV32 are set to 1.",
+            "  "
+        ]
     },
     {
         "description": "Modulo Signed Doubleword X-form",
@@ -1305,6 +2936,20 @@
                 "mnemonic": "modsd",
                 "regs": "['RT,RA,RB']"
             }
+        ]
+        "code": [
+            "remainder = dividend - (quotient × divisor)",
+            "<anything\> % 0"
+        ]
+        "body": [
+            "The 64-bit dividend is (RA). The 64-bit divisor is (RB). ",
+            "The 64-bit remainder of the dividend divided by the ",
+            "divisor is placed into register RT. The quotient is not ",
+            "supplied as a result.",
+            "where 0 £ remainder < |divisor| if the dividend is ",
+            "nonnegative, and -|divisor| < remainder £ 0 if the ",
+            "dividend is negative.",
+            "then the contents of register RT are undefined."
         ]
     },
     {
@@ -1316,6 +2961,18 @@
                 "regs": "['RT,RA,RB']"
             }
         ]
+        "code": [
+            "remainder = dividend - (quotient × divisor)",
+            "<anything\> % 0"
+        ]
+        "body": [
+            "The 64-bit dividend is (RA). The 64-bit divisor is (RB). ",
+            "The 64-bit remainder of the dividend divided by the ",
+            "divisor is placed into register RT. The quotient is not ",
+            "supplied as a result.",
+            "where 0 £ remainder < divisor.",
+            "then the contents of register RT are undefined."
+        ]
     },
     {
         "description": "Compare Immediate",
@@ -1325,6 +2982,24 @@
                 "mnemonic": "cmpi",
                 "regs": "['BF,L,RA,SI']"
             }
+        ]
+        "code": [
+            "if L = 0 then a := EXTS((RA)32:63)",
+            "         else a := (RA)",
+            "if      a < EXTS(SI) then c := 0b100",
+            "else if a \> EXTS(SI) then c := 0b010",
+            "else                      c := 0b001",
+            "CR4´BF+32:4´BF+35 := c || XERSO",
+            ""
+        ]
+        "body": [
+            "The contents of register RA ((RA)32:63 sign-extended to ",
+            "64 bits if L=0) are compared with the sign-extended ",
+            "value of the SI field, treating the operands as signed ",
+            "integers. The result of the comparison is placed into CR ",
+            "field BF.",
+            "Examples of extended mnemonics for Compare Imme",
+            "diate:"
         ]
     },
     {
@@ -1336,6 +3011,25 @@
                 "regs": "['BF,L,RA,RB']"
             }
         ]
+        "code": [
+            "if L = 0 then a := EXTS((RA)32:63)",
+            "                b := EXTS((RB)32:63)",
+            "           else a := (RA)",
+            "                b := (RB)",
+            "if      a < b then c := 0b100",
+            "else if a \> b then c := 0b010",
+            "else               c := 0b001",
+            "CR4´BF+32:4´BF+35 := c || XERSO",
+            ""
+        ]
+        "body": [
+            "The contents of register RA ((RA)32:63 if L=0) are com",
+            "pared with the contents of register RB ((RB)32:63 if ",
+            "L=0), treating the operands as signed integers. The ",
+            "result of the comparison is placed into CR field BF",
+            "in tags active mode, into the FXCC.",
+            "Examples of extended mnemonics for Compare:"
+        ]
     },
     {
         "description": "Compare Logical Immediate",
@@ -1345,6 +3039,24 @@
                 "mnemonic": "cmpli",
                 "regs": "['BF,L,RA,UI']"
             }
+        ]
+        "code": [
+            "if L = 0 then a := 320 || (RA)32:63",
+            "         else a := (RA)",
+            "if      a <u (480 || UI) then c := 0b100",
+            "else if a \>u (480 || UI) then c := 0b010",
+            "else                         c := 0b001",
+            "CR4´BF+32:4´BF+35 := c || XERSO",
+            ""
+        ]
+        "body": [
+            "The contents of register RA ((RA)32:63 zero-extended ",
+            "to 64 bits if L=0) are compared with 480||UI, treating ",
+            "the operands as unsigned integers. The result of the ",
+            "comparison is placed into CR field BF",
+            "active mode, into the FXCC.",
+            "Examples of extended mnemonics for Compare Logical ",
+            "Immediate:"
         ]
     },
     {
@@ -1356,15 +3068,25 @@
                 "regs": "['BF,L,RA,RB']"
             }
         ]
-    },
-    {
-        "description": "Compare Logical Addresses",
-        "form": "X-form",
-        "mnemonics": [
-            {
-                "mnemonic": "cmpla",
-                "regs": "['BF,RA,RB']"
-            }
+        "code": [
+            "if L = 0 then a := 320 || (RA)32:63",
+            "              b := 320 || (RB)32:63",
+            "         else a := (RA)",
+            "              b := (RB)",
+            "if      a <u b then c := 0b100",
+            "else if a \>u b then c := 0b010",
+            "else                c := 0b001",
+            "CR4´BF+32:4´BF+35 := c || XERSO",
+            ""
+        ]
+        "body": [
+            "The contents of register RA ((RA)32:63 if L=0) are com",
+            "pared with the contents of register RB ((RB)32:63 if ",
+            "L=0), treating the operands as unsigned integers. The ",
+            "result of the comparison is placed into CR field BF",
+            "in tags active mode, into the FXCC.",
+            "Examples of extended mnemonics for Compare Logi",
+            "cal:"
         ]
     },
     {
@@ -1376,6 +3098,14 @@
                 "regs": "['BF,L,RA,RB']"
             }
         ]
+        "code": [
+
+        ]
+        "body": [
+            "Let src1 be the unsigned integer value in bits 56:63 of ",
+            "register RA.",
+            ""
+        ]
     },
     {
         "description": "Compare Equal Byte",
@@ -1385,6 +3115,15 @@
                 "mnemonic": "cmpeqb",
                 "regs": "['BF,RA,RB']"
             }
+        ]
+        "code": [
+
+        ]
+        "body": [
+            "CR field BF is set to indicate if the contents of bits 56:63 ",
+            "of register RA are equal to the contents of any of the 8 ",
+            "bytes in register RB.",
+            ""
         ]
     },
     {
@@ -1396,6 +3135,26 @@
                 "regs": "['TO,RA,SI']"
             }
         ]
+        "code": [
+            "a := EXTS((RA)32:63)",
+            "if (a < EXTS(SI)) & TO0  then TRAP",
+            "if (a \> EXTS(SI)) & TO1  then TRAP",
+            "if (a = EXTS(SI)) & TO2  then TRAP",
+            "if (a <u EXTS(SI)) & TO3 then TRAP",
+            "if (a \>u EXTS(SI)) & TO4 then TRAP"
+        ]
+        "body": [
+            "The contents of RA32:63 are compared with the ",
+            "sign-extended value of the SI field. If any bit in the TO ",
+            "field is set to 1 and its corresponding condition is met ",
+            "by the result of the comparison, the system trap han",
+            "dler is invoked.",
+            "If the trap conditions are met, this instruction is context ",
+            "synchronizing (see Book III).",
+            "",
+            "Examples of extended mnemonics for Trap Word ",
+            "Immediate:"
+        ]
     },
     {
         "description": "Trap Word",
@@ -1406,15 +3165,24 @@
                 "regs": "['TO,RA,RB']"
             }
         ]
-    },
-    {
-        "description": "Trap on XER",
-        "form": "TX-form",
-        "mnemonics": [
-            {
-                "mnemonic": "txer",
-                "regs": "['TO,UI,XBI']"
-            }
+        "code": [
+            "a := EXTS((RA)32:63)",
+            "b := EXTS((RB)32:63)",
+            "if (a < b) & TO0 then TRAP",
+            "if (a \> b) & TO1 then TRAP",
+            "if (a = b) & TO2 then TRAP",
+            "if (a <u b) & TO3 then TRAP",
+            "if (a \>u b) & TO4 then TRAP"
+        ]
+        "body": [
+            "The contents of RA32:63 are compared with the con",
+            "tents of RB32:63. If any bit in the TO field is set to 1 and ",
+            "its corresponding condition is met by the result of the ",
+            "comparison, the system trap handler is invoked.",
+            "If the trap conditions are met, this instruction is context ",
+            "synchronizing (see Book III).",
+            "",
+            "Examples of extended mnemonics for Trap Word:"
         ]
     },
     {
@@ -1426,6 +3194,54 @@
                 "regs": "['TO,RA,SI']"
             }
         ]
+        "code": [
+            "a := (RA)",
+            "b := EXTS(SI)",
+            "",
+            "     ( a0:15 ¹ 0  &",
+            "     ( ( a16:39 ¹ b16:39) | (a < b) ) ) ) &",
+            "    TO = 0b11100 & (tags active) then TRAP",
+            "if ( a0:15 ¹ b0:15 | ",
+            "     ( a0:15 ¹ 0  & (a16:39 ¹ b16:39) ) ) &",
+            "     (TO = 0b11101) & (tags active) then TRAP",
+            "if (a0:39 ¹ b0:39) &",
+            "     (TO = 0b11110) & (tags active) then TRAP",
+            "if (a < b) & TO0",
+            "   ((TO ¹ 0b11100 &",
+            "     TO ¹ 0b11101)| tags inactive) then TRAP",
+            "if (a \> b) & TO1",
+            "   ((TO ¹ 0b11100 &",
+            "     TO ¹ 0b11101 &",
+            "     TO ¹ 0b11110) | tags inactive) then TRAP",
+            "if (a = b) & TO2",
+            "   ((TO ¹ 0b11100 &",
+            "     TO ¹ 0b11101 &",
+            "     TO ¹ 0b11110) | tags inactive) then TRAP",
+            "if (a <u b) & TO3 then TRAP",
+            "if (a \>u b) & TO4 ",
+            "   ((TO ¹ 0b11101) | tags inactive) then TRAP"
+        ]
+        "body": [
+            "The contents of register RA are compared with the ",
+            "sign-extended value of the SI field. If ",
+            "mode or if TO is equal to any value other than 0b11100, ",
+            "0b11101, or 0b11110, if any bit in the TO field is set to 1 ",
+            "and its corresponding condition is met by the result of ",
+            "the comparison, the system trap handler is invoked.",
+            "If the trap conditions are met, this instruction is context ",
+            "synchronizing (see Book III).",
+            "",
+            "handler is invoked if any of the following conditions are ",
+            "met.",
+            "In tags active mode with TO=0b11101 the system trap ",
+            "handler is invoked if any of the following conditions are ",
+            "met.",
+            "In tags active mode with TO = 0b11110 the system trap ",
+            "handler is invoked if any of the following conditions are ",
+            "met.",
+            "Examples of extended mnemonics for Trap Double",
+            "word Immediate:"
+        ]
     },
     {
         "description": "Trap Doubleword",
@@ -1435,6 +3251,54 @@
                 "mnemonic": "td",
                 "regs": "['TO,RA,RB']"
             }
+        ]
+        "code": [
+            "a := (RA)",
+            "b := (RB)",
+            "",
+            "     ( a0:15 ¹ 0  &",
+            "     ( ( a16:39 ¹ b16:39) | (a < b) ) ) ) &",
+            "    TO = 0b11100 & (tags active) then TRAP",
+            "if ( a0:15 ¹ b0:15 | ",
+            "     ( a0:15 ¹ 0  & (a16:39 ¹ b16:39) ) ) &",
+            "     (TO = 0b11101) & (tags active) then TRAP",
+            "if (a0:39 ¹ b0:39) &",
+            "   (TO = 0b11110) & (tags active) then TRAP",
+            "if (a < b) & TO0",
+            "   ((TO ¹ 0b11100 &",
+            "     TO ¹ 0b11101)| tags inactive) then TRAP",
+            "if (a \> b) & TO1",
+            "   ((TO ¹ 0b11100 &",
+            "     TO ¹ 0b11101 &",
+            "     TO ¹ 0b11110) | tags inactive) then TRAP",
+            "if (a = b) & TO2",
+            "   ((TO ¹ 0b11100 &",
+            "     TO ¹ 0b11101 &",
+            "     TO ¹ 0b11110) | tags inactive) then TRAP",
+            "if (a <u b) & TO3 then TRAP",
+            "if (a \>u b) & TO4 ",
+            "   ((TO ¹ 0b11101) | tags inactive) then TRAP"
+        ]
+        "body": [
+            "The contents of register RA are compared with the con",
+            "tents of register RB. If ",
+            "equal to any value other than 0b11100, 0b11101, or ",
+            "0b11110, if any bit in the TO field is set to 1 and its cor",
+            "responding condition is met by the result of the compar",
+            "ison, the system trap handler is invoked.",
+            "If the trap conditions are met, this instruction is context ",
+            "synchronizing (see Book III).",
+            "",
+            "handler is invoked if any of the following conditions are ",
+            "met.",
+            "In tags active mode with TO = 0b11101 the system trap ",
+            "handler is invoked if any of the following conditions are ",
+            "met.",
+            "In tags active mode with TO = 0b11110 the system trap ",
+            "handler is invoked if any of the following conditions are ",
+            "met.",
+            "Examples of extended mnemonics for Trap Double",
+            "word:"
         ]
     },
     {
@@ -1450,6 +3314,22 @@
                 "regs": "['RA,IS,IB,XBI', '(Rc=1)']"
             }
         ]
+        "code": [
+            "if XERXBI+32 then RA := EXTS(IS)",
+            "             else RA := EXTS(IB)"
+        ]
+        "body": [
+            "The XER bit at position XBI+32 is tested. If it is 1, regis",
+            "ter RA is set to the sign-extended value of IS. Other",
+            "wise register RA is set to the sign-extended value of IB.",
+            "OV32 and CA32 are always read as 0 by this instruc",
+            "tion.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler.",
+            "Examples of extended mnemonics for Select Immedi",
+            "ate-Immediate:"
+        ]
     },
     {
         "description": "Select Immediate-Register",
@@ -1463,6 +3343,22 @@
                 "mnemonic": "selir.",
                 "regs": "['RA,IS,RB,XBI', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "if XERXBI+32 then RA := EXTS(IS)",
+            "              else RA := (RB)"
+        ]
+        "body": [
+            "The XER bit at position XBI+32 is tested. If it is 1, regis",
+            "ter RA is set to the sign-extended value of IS. Other",
+            "wise register RA is set to (RB).",
+            "OV32 and CA32 are always read as 0 by this instruc",
+            "tion.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler.",
+            "Examples of extended mnemonics for Select Immedi",
+            "ate-Register:"
         ]
     },
     {
@@ -1478,6 +3374,22 @@
                 "regs": "['RA,RS,IB,XBI', '(Rc=1)']"
             }
         ]
+        "code": [
+            "if XERXBI+32 then RA := (RS)",
+            "else RA := EXTS(IB)"
+        ]
+        "body": [
+            "The XER bit at position XBI+32 is tested. If it is 1, regis",
+            "ter RA is set to (RS). Otherwise register RA is set to the ",
+            "sign-extended value of IB.",
+            "OV32 and CA32 are always read as 0 by this instruc",
+            "tion.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler.",
+            "Examples of extended mnemonics for Select Regis",
+            "ter-Immediate:"
+        ]
     },
     {
         "description": "Select Register-Register",
@@ -1492,6 +3404,22 @@
                 "regs": "['RA,RS,RB,XBI', '(Rc=1)']"
             }
         ]
+        "code": [
+            "if XERXBI+32 then RA := (RS)",
+            "else RA := (RB)"
+        ]
+        "body": [
+            "The XER bit at position XBI+32 is tested. If it is 1, regis",
+            "ter RA is set to (RS). Otherwise register RA is set to ",
+            "(RB).",
+            "OV32 and CA32 are always read as 0 by this instruc",
+            "tion.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler.",
+            "Examples of extended mnemonics for Select Regis",
+            "ter-Register:"
+        ]
     },
     {
         "description": "Integer Select",
@@ -1501,6 +3429,18 @@
                 "mnemonic": "isel",
                 "regs": "['RT,RA,RB,BC']"
             }
+        ]
+        "code": [
+            "if RA=0 then a := 0 else a := (RA)",
+            "if CRBC+32=1 then RT := a",
+            "else           RT := (RB)"
+        ]
+        "body": [
+            "If the contents of bit BC+32 of the Condition Register ",
+            "are equal to 1, then the contents of register RA (or 0) ",
+            "are placed into register RT. Otherwise, the contents of ",
+            "register RB are placed into register RT.",
+            "Examples of extended mnemonics for Integer Select:"
         ]
     },
     {
@@ -1512,6 +3452,13 @@
                 "regs": "['RA,RS,UI']"
             }
         ]
+        "code": [
+            "RA := (RS) & (480 || UI)"
+        ]
+        "body": [
+            "The contents of register RS are ANDed with 480||UI ",
+            "and the result is placed into register RA."
+        ]
     },
     {
         "description": "AND Immediate Shifted",
@@ -1521,6 +3468,13 @@
                 "mnemonic": "andis.",
                 "regs": "['RA,RS,UI']"
             }
+        ]
+        "code": [
+            "RA := (RS) & (320 || UI || 160)"
+        ]
+        "body": [
+            "The contents of register RS are ANDed with ",
+            "320||UI||160 and the result is placed into register RA."
         ]
     },
     {
@@ -1532,6 +3486,34 @@
                 "regs": "['RA,RS,UI']"
             }
         ]
+        "code": [
+            "RA := (RS) | (480 || UI)",
+            "",
+            "ori0,0,0"
+        ]
+        "body": [
+            "The contents of register RS are ORed with 480||UI and ",
+            "the result is placed into register RA.",
+            "The preferred “no-op” (an instruction that does nothing) ",
+            "is:",
+            "Example of extended mnemonics for OR Immediate:",
+            "  "
+        ]
+    },
+    {
+        "description": "OR Immediate Shifted",
+        "form": "D-form",
+        "mnemonics": [
+
+        ]
+        "code": [
+            "RA := (RS) | (320 || UI || 160)"
+        ]
+        "body": [
+            "oris      RA,RS,UI",
+            "The contents of register RS are ORed with ",
+            "320||UI||160 and the result is placed into register RA."
+        ]
     },
     {
         "description": "XOR Immediate",
@@ -1542,6 +3524,21 @@
                 "regs": "['RA,RS,UI']"
             }
         ]
+        "code": [
+            "RA := (RS) XOR (480 || UI)",
+            "",
+            "xori0,0,0"
+        ]
+        "body": [
+            "The contents of register RS are XORed with 480||UI ",
+            "and the result is placed into register RA.",
+            "The executed form of a “no-op” (an instruction that ",
+            "does nothing, but consumes execution resources nev",
+            "ertheless) is:",
+            "Example of extended mnemonics for XOR Immediate:",
+            "  ",
+            "  "
+        ]
     },
     {
         "description": "XOR Immediate Shifted",
@@ -1551,6 +3548,13 @@
                 "mnemonic": "xoris",
                 "regs": "['RA,RS,UI']"
             }
+        ]
+        "code": [
+            "RA := (RS) XOR (320 || UI || 160)"
+        ]
+        "body": [
+            "The contents of register RS are XORed with ",
+            "320||UI||160 and the result is placed into register RA."
         ]
     },
     {
@@ -1566,6 +3570,17 @@
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "RA := (RS) & (RB)"
+        ]
+        "body": [
+            "The contents of register RS are ANDed with the con",
+            "tents of register RB and the result is placed into register ",
+            "RA.",
+            "Some forms of and Rx, Rx, Rx provide special func",
+            "tions; see Section9.3 of Book III.",
+            ""
+        ]
     },
     {
         "description": "XOR",
@@ -1579,6 +3594,15 @@
                 "mnemonic": "xor.",
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "RA := (RS) / (RB)"
+        ]
+        "body": [
+            "The contents of register RS are XORed with the con",
+            "tents of register RB and the result is placed into register ",
+            "RA.",
+            ""
         ]
     },
     {
@@ -1594,6 +3618,14 @@
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "RA := :=((RS) & (RB))"
+        ]
+        "body": [
+            "The contents of register RS are ANDed with the con",
+            "tents of register RB and the complemented result is ",
+            "placed into register RA."
+        ]
     },
     {
         "description": "OR",
@@ -1607,6 +3639,16 @@
                 "mnemonic": "or.",
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "RA := (RS) | (RB)"
+        ]
+        "body": [
+            "The contents of register RS are ORed with the contents ",
+            "of register RB and the result is placed into register RA.",
+            "Some forms of or Rx,Rx,Rx provide special functions; ",
+            "see Section 3.2 and Section 4.3.3, both in Book II.",
+            "Example of extended mnemonics for OR:"
         ]
     },
     {
@@ -1622,6 +3664,15 @@
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "   RA := :=((RS) | (RB))"
+        ]
+        "body": [
+            "The contents of register RS are ORed with the contents ",
+            "of register RB and the complemented result is placed ",
+            "into register RA.",
+            "Example of extended mnemonics for NOR:"
+        ]
     },
     {
         "description": "Equivalent",
@@ -1635,6 +3686,14 @@
                 "mnemonic": "eqv.",
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "RA := (RS) not xor (RB)"
+        ]
+        "body": [
+            "The contents of register RS are XORed with the con",
+            "tents of register RB and the complemented result is ",
+            "placed into register RA."
         ]
     },
     {
@@ -1650,6 +3709,14 @@
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "RA := (RS) & :=(RB)"
+        ]
+        "body": [
+            "The contents of register RS are ANDed with the com",
+            "plement of the contents of register RB and the result is ",
+            "placed into register RA."
+        ]
     },
     {
         "description": "OR with Complement",
@@ -1663,6 +3730,14 @@
                 "mnemonic": "orc.",
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "RA := (RS) | :=(RB)"
+        ]
+        "body": [
+            "The contents of register RS are ORed with the comple",
+            "ment of the contents of register RB and the result is ",
+            "placed into register RA."
         ]
     },
     {
@@ -1678,6 +3753,15 @@
                 "regs": "['RA,RS', '(Rc=1)']"
             }
         ]
+        "code": [
+            "s := (RS)56",
+            "RA56:63 := (RS)56:63",
+            "RA0:55 := 56s"
+        ]
+        "body": [
+            "(RS)56:63 are placed into RA56:63. RA0:55 are filled with ",
+            "a copy of (RS)56."
+        ]
     },
     {
         "description": "Extend Sign Halfword",
@@ -1691,6 +3775,15 @@
                 "mnemonic": "extsh.",
                 "regs": "['RA,RS', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "s := (RS)48",
+            "RA48:63 := (RS)48:63",
+            "RA0:47 := 48s"
+        ]
+        "body": [
+            "(RS)48:63 are placed into RA48:63. RA0:47 are filled with ",
+            "a copy of (RS)48."
         ]
     },
     {
@@ -1706,6 +3799,21 @@
                 "regs": "['RA,RS', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := 32",
+            "",
+            "do while n < 64",
+            "   if (RS)n = 1 then leave",
+            "   n := n + 1",
+            "",
+            "RA := n - 32"
+        ]
+        "body": [
+            "A count of the number of consecutive zero bits starting ",
+            "at bit 32 of register RS is placed into register RA. This ",
+            "number ranges from 0 to 32, inclusive.",
+            "  "
+        ]
     },
     {
         "description": "Count Trailing Zeros Word",
@@ -1720,6 +3828,21 @@
                 "regs": "['RA,', 'RS', '(', 'Rc=1', ')']"
             }
         ]
+        "code": [
+            "n := 0",
+            "",
+            "do while n < 32",
+            "   if (RS)63-n = 0b1 then leave ",
+            "   n  := n + 1",
+            "",
+            "RA := EXTZ64(n)"
+        ]
+        "body": [
+            "A count of the number of consecutive zero bits starting ",
+            "at bit 63 of the rightmost word of register RS is placed ",
+            "into register RA. This number ranges from 0 to 32, ",
+            "inclusive."
+        ]
     },
     {
         "description": "Compare Bytes",
@@ -1729,6 +3852,20 @@
                 "mnemonic": "cmpb",
                 "regs": "['RA,RS,RB']"
             }
+        ]
+        "code": [
+            "do n = 0 to 7 ",
+            "if RS8´n:8´n+7 = (RB)8´n:8´n+7 then",
+            "   RA8´n:8´n+7 := 81",
+            "else ",
+            "   RA8´n:8´n+7 := 80"
+        ]
+        "body": [
+            "Each byte of the contents of register RS is compared to ",
+            "each corresponding byte of the contents in register RB. ",
+            "If they are equal, the corresponding byte in RA is set to ",
+            "0xFF. Otherwise the corresponding byte in RA is set to ",
+            "0x00."
         ]
     },
     {
@@ -1740,6 +3877,19 @@
                 "regs": "['RA, RS']"
             }
         ]
+        "code": [
+            "do i = 0 to 7",
+            "   n := 0",
+            "   do j = 0 to 7",
+            "      if (RS)(i´8)+j = 1 then",
+            "          n := n+1",
+            "   RA(i´8):(i´8)+7 := n"
+        ]
+        "body": [
+            "A count of the number of one bits in each byte of regis",
+            "ter RS is placed into the corresponding byte of register ",
+            "RA. This number ranges from 0 to 8, inclusive."
+        ]
     },
     {
         "description": "Population Count Words",
@@ -1749,6 +3899,19 @@
                 "mnemonic": "popcntw",
                 "regs": "['RA, R', 'S']"
             }
+        ]
+        "code": [
+            "do i = 0 to 1",
+            "   n := 0",
+            "   do j = 0 to 31",
+            "      if (RS)(i´32)+j = 1 then",
+            "          n := n+1",
+            "   RA(i´32):(i´32)+31 := n"
+        ]
+        "body": [
+            "A count of the number of one bits in each word of regis",
+            "ter RS is placed into the corresponding word of register ",
+            "RA. This number ranges from 0 to 32, inclusive."
         ]
     },
     {
@@ -1760,6 +3923,19 @@
                 "regs": "['S']"
             }
         ]
+        "code": [
+            "s := 0",
+            "do i = 0 to 7",
+            "s := s / (RS)i%8+7",
+            "RA := 630 || s"
+        ]
+        "body": [
+            "The least significant bit in each byte of the contents of ",
+            "register RS is examined. If there is an odd number of ",
+            "one bits the value 1 is placed into register RA; other",
+            "wise the value 0 is placed into register RA.",
+            " "
+        ]
     },
     {
         "description": "Parity Word",
@@ -1768,6 +3944,28 @@
             {
                 "mnemonic": "prtyw RA,RS"
             }
+        ]
+        "code": [
+            "s := 0",
+            "t := 0",
+            "do i = 0 to 3",
+            "s := s / (RS)i%8+7",
+            "do i = 4 to 7",
+            "t := t / (RS)i%8+7",
+            "RA0:31 := 310 || s ",
+            "RA32:63 := 310 || t"
+        ]
+        "body": [
+            "The least significant bit in each byte of (RS)0:31 is ",
+            "examined. If there is an odd number of one bits the ",
+            "value 1 is placed into RA0:31; otherwise the value 0 is ",
+            "placed into RA0:31. The least significant bit in each byte ",
+            "of (RS)32:63 is examined. If there is an odd number of ",
+            "one bits the value 1 is placed into RA32:63; otherwise ",
+            "the value 0 is placed into RA32:63.",
+            "  ",
+            "  ",
+            ""
         ]
     },
     {
@@ -1783,6 +3981,16 @@
                 "regs": "['RA,RS', '(Rc=1)']"
             }
         ]
+        "code": [
+            "s := (RS)32",
+            "RA32:63 := (RS)32:63",
+            "RA0:31 := 32s"
+        ]
+        "body": [
+            "(RS)32:63 are placed into RA32:63. RA0:31 are filled with ",
+            "a copy of (RS)32.",
+            ""
+        ]
     },
     {
         "description": "Population Count Doubleword",
@@ -1792,6 +4000,18 @@
                 "mnemonic": "popcntd",
                 "regs": "['RA, R', 'S']"
             }
+        ]
+        "code": [
+            "n := 0",
+            "do i = 0 to 63",
+            "   if (RS)i = 1 then",
+            "   n := n+1",
+            "RA := n"
+        ]
+        "body": [
+            "A count of the number of one bits in register RS is ",
+            "placed into register RA. This number ranges from 0 to ",
+            "64, inclusive."
         ]
     },
     {
@@ -1807,6 +4027,18 @@
                 "regs": "['RA,RS', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := 0",
+            "do while n < 64",
+            "  if (RS)n = 1 then leave",
+            "  n := n + 1",
+            "RA := n"
+        ]
+        "body": [
+            "A count of the number of consecutive zero bits starting ",
+            "at bit 0 of register RS is placed into register RA. This ",
+            "number ranges from 0 to 64, inclusive."
+        ]
     },
     {
         "description": "Count Trailing Zeros Doubleword",
@@ -1821,6 +4053,18 @@
                 "regs": "['RA,', 'RS', '(', 'Rc=1', ')']"
             }
         ]
+        "code": [
+            "n  := 0",
+            "do while n < 64",
+            "   if (RS)63-n = 0b1 then leave ",
+            "   n  := n + 1",
+            "RA := EXTZ64(n)"
+        ]
+        "body": [
+            "A count of the number of consecutive zero bits starting ",
+            "at bit 63 of register RS is placed into register RA. This ",
+            "number ranges from 0 to 64, inclusive."
+        ]
     },
     {
         "description": "Bit Permute Doubleword",
@@ -1830,6 +4074,22 @@
                 "mnemonic": "bpermd",
                 "regs": "['RA,RS,R', 'B]']"
             }
+        ]
+        "code": [
+            "For i = 0 to 7 ",
+            "   index := (RS)8*i:8*i+7",
+            "   If index < 64",
+            "      then permi := (RB)index",
+            "      else permi := 0",
+            "RA := 560 || perm0:7"
+        ]
+        "body": [
+            "Eight permuted bits are produced. For each permuted ",
+            "bit i where i ranges from 0 to 7 and for each byte i of ",
+            "RS, do the following.",
+            "The permuted bits are placed in the least-significant ",
+            "byte of RA, and the remaining bits are filled with 0s.",
+            "  "
         ]
     },
     {
@@ -1845,6 +4105,22 @@
                 "regs": "['RA,RS,SH,MB,ME', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := SH",
+            "r := ROTL32((RS)32:63, n)",
+            "m := MASK(MB+32, ME+32)",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of register RS are rotated32 left SH bits. A ",
+            "mask is generated having 1-bits from bit MB+32 ",
+            "through bit ME+32 and 0-bits elsewhere. The rotated ",
+            "data are ANDed with the generated mask and the ",
+            "result is placed into register RA.",
+            "Examples of extended mnemonics for Rotate Left Word ",
+            "Immediate then AND with Mask:",
+            "  "
+        ]
     },
     {
         "description": "Rotate Left Word then AND with Mask",
@@ -1858,6 +4134,23 @@
                 "mnemonic": "rlwnm.",
                 "regs": "['RA,RS,RB,MB,ME', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "n := (RB)59:63",
+            "r := ROTL32((RS)32:63, n)",
+            "m := MASK(MB+32, ME+32)",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of register RS are rotated32 left the num",
+            "ber of bits specified by (RB)59:63. A mask is generated ",
+            "having 1-bits from bit MB+32 through bit ME+32 and ",
+            "0-bits elsewhere. The rotated data are ANDed with the ",
+            "generated mask and the result is placed into register ",
+            "RA.",
+            "Example of extended mnemonics for Rotate Left Word ",
+            "then AND with Mask:",
+            "  "
         ]
     },
     {
@@ -1873,6 +4166,22 @@
                 "regs": "['RA,RS,SH,MB,ME', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := SH",
+            "r := ROTL32((RS)32:63, n)",
+            "m := MASK(MB+32, ME+32)",
+            "RA := r&m | (RA)&:=m"
+        ]
+        "body": [
+            "The contents of register RS are rotated32 left SH bits. A ",
+            "mask is generated having 1-bits from bit MB+32 ",
+            "through bit ME+32 and 0-bits elsewhere. The rotated ",
+            "data are inserted into register RA under control of the ",
+            "generated mask.",
+            "Example of extended mnemonics for Rotate Left Word ",
+            "Immediate then Mask Insert:",
+            "  "
+        ]
     },
     {
         "description": "Rotate Left Doubleword Immediate then Clear Left",
@@ -1886,6 +4195,23 @@
                 "mnemonic": "rldicl.",
                 "regs": "['RA,RS,SH,MB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "n := sh5 || sh0:4",
+            "r := ROTL64((RS), n)",
+            "b := mb5 || mb0:4",
+            "m := MASK(b, 63)",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of register RS are rotated64 left SH bits. A ",
+            "mask is generated having 1-bits from bit MB through bit ",
+            "63 and 0-bits elsewhere. The rotated data are ANDed ",
+            "with the generated mask and the result is placed into ",
+            "register RA.",
+            "Examples of extended mnemonics for Rotate Left Dou",
+            "bleword Immediate then Clear Left:",
+            "  "
         ]
     },
     {
@@ -1901,6 +4227,23 @@
                 "regs": "['RA,RS,SH,ME', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := sh5 || sh0:4",
+            "r := ROTL64((RS), n)",
+            "e := me5 || me0:4",
+            "m := MASK(0, e)",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of register RS are rotated64 left SH bits. A ",
+            "mask is generated having 1-bits from bit 0 through bit ",
+            "ME and 0-bits elsewhere. The rotated data are ANDed ",
+            "with the generated mask and the result is placed into ",
+            "register RA.",
+            "Examples of extended mnemonics for Rotate Left Dou",
+            "bleword Immediate then Clear Right:",
+            "  "
+        ]
     },
     {
         "description": "Rotate Left Doubleword Immediate then Clear",
@@ -1914,6 +4257,23 @@
                 "mnemonic": "rldic.",
                 "regs": "['RA,RS,SH,MB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "n := sh5 || sh0:4",
+            "r := ROTL64((RS), n)",
+            "b := mb5 || mb0:4",
+            "m := MASK(b, :=n)",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of register RS are rotated64 left SH bits. A ",
+            "mask is generated having 1-bits from bit MB through bit ",
+            "63-SH and 0-bits elsewhere. The rotated data are ",
+            "ANDed with the generated mask and the result is ",
+            "placed into register RA.",
+            "Example of extended mnemonics for Rotate Left Dou",
+            "bleword Immediate then Clear:",
+            "  "
         ]
     },
     {
@@ -1929,6 +4289,23 @@
                 "regs": "['RA,RS,RB,MB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := (RB)58:63",
+            "r := ROTL64((RS), n)",
+            "b := mb5 || mb0:4",
+            "m := MASK(b, 63)",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of register RS are rotated64 left the num",
+            "ber of bits specified by (RB)58:63. A mask is generated ",
+            "having 1-bits from bit MB through bit 63 and 0-bits else",
+            "where. The rotated data are ANDed with the generated ",
+            "mask and the result is placed into register RA.",
+            "Example of extended mnemonics for Rotate Left Dou",
+            "bleword then Clear Left:",
+            "  "
+        ]
     },
     {
         "description": "Rotate Left Doubleword then Clear Right",
@@ -1942,6 +4319,21 @@
                 "mnemonic": "rldcr.",
                 "regs": "['RA,RS,RB,ME', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "n := (RB)58:63",
+            "r := ROTL64((RS), n)",
+            "e := me5 || me0:4",
+            "m := MASK(0, e)",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of register RS are rotated64 left the num",
+            "ber of bits specified by (RB)58:63. A mask is generated ",
+            "having 1-bits from bit 0 through bit ME and 0-bits else",
+            "where. The rotated data are ANDed with the generated ",
+            "mask and the result is placed into register RA.",
+            "  "
         ]
     },
     {
@@ -1957,6 +4349,33 @@
                 "regs": "['RA,RS,SH,MB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := sh5 || sh0:4",
+            "r := ROTL64((RS), n)",
+            "b := mb5 || mb0:4",
+            "m := MASK(b, :=n)",
+            "RA := r&m | (RA)&:=m"
+        ]
+        "body": [
+            "The contents of register RS are rotated64 left SH bits. A ",
+            "mask is generated having 1-bits from bit MB through bit ",
+            "63-SH and 0-bits elsewhere. The rotated data are ",
+            "inserted into register RA under control of the generated ",
+            "mask.",
+            "Example of extended mnemonics for Rotate Left Dou",
+            "bleword Immediate then Mask Insert:",
+            "  ",
+            "The instructions in this section perform left and right ",
+            "shifts.",
+            "Immediate-form logical (unsigned) shift operations are ",
+            "obtained by specifying appropriate masks and shift val",
+            "ues for certain Rotate instructions. A set of extended ",
+            "mnemonics is provided to make coding of such shifts ",
+            "simpler and easier to understand. Some of these are ",
+            "shown as examples with the Rotate instructions. See ",
+            "AppendixC, “Assembler Extended Mnemonics” on ",
+            "page815 for additional extended mnemonics."
+        ]
     },
     {
         "description": "Shift Left Word",
@@ -1970,6 +4389,22 @@
                 "mnemonic": "slw.",
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "n := (RB)59:63",
+            "r := ROTL32((RS)32:63, n)",
+            "if (RB)58 = 0 then",
+            "     m := MASK(32, 63-n)",
+            "else m := 640",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of the low-order 32 bits of register RS are ",
+            "shifted left the number of bits specified by (RB)58:63. ",
+            "Bits shifted out of position 32 are lost. Zeros are sup",
+            "plied to the vacated positions on the right. The 32-bit ",
+            "result is placed into RA32:63. RA0:31 are set to zero. ",
+            "Shift amounts from 32 to 63 give a zero result."
         ]
     },
     {
@@ -1985,6 +4420,22 @@
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := (RB)59:63",
+            "r := ROTL32((RS)32:63, 64-n)",
+            "if (RB)58 = 0 then",
+            "    m := MASK(n+32, 63)",
+            "else m := 640",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of the low-order 32 bits of register RS are ",
+            "shifted right the number of bits specified by (RB)58:63. ",
+            "Bits shifted out of position 63 are lost. Zeros are sup",
+            "plied to the vacated positions on the left. The 32-bit ",
+            "result is placed into RA32:63. RA0:31 are set to zero. ",
+            "Shift amounts from 32 to 63 give a zero result."
+        ]
     },
     {
         "description": "Shift Right Algebraic Word Immediate",
@@ -1998,6 +4449,30 @@
                 "mnemonic": "srawi.",
                 "regs": "['RA,RS,SH', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "n := SH",
+            "r := ROTL32((RS)32:63, 64-n)",
+            "m := MASK(n+32, 63)",
+            "s := (RS)32",
+            "RA := r&m | (64s)&:=m",
+            "carry := s & ((r&:=m)32:63¹0)",
+            "CA    := carry",
+            "CA32  := carry"
+        ]
+        "body": [
+            "The contents of the low-order 32 bits of register RS are ",
+            "shifted right SH bits. Bits shifted out of position 63 are ",
+            "lost. Bit 32 of RS is replicated to fill the vacated posi",
+            "tions on the left. The 32-bit result is placed into RA32:63. ",
+            "Bit 32 of RS is replicated to fill RA0:31. CA and CA32 ",
+            "are set to 1 if the low-order 32 bits of (RS) contain a ",
+            "negative number and any 1-bits are shifted out of posi",
+            "tion 63; otherwise CA and CA32 are set to 0. A shift ",
+            "amount of zero causes RA to receive EXTS((RS)32:63), ",
+            "and CA and CA32 to be set to 0.",
+            "",
+            "undefined value."
         ]
     },
     {
@@ -2013,6 +4488,36 @@
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := (RB)59:63",
+            "r := ROTL32((RS)32:63, 64-n)",
+            "if (RB)58 = 0 then",
+            "    m := MASK(n+32, 63)",
+            "else m := 640",
+            "s := (RS)32",
+            "RA := r&m | (64s)&:=m",
+            "carry := s & ((r&:=m)32:63¹0)",
+            "CA    := carry",
+            "CA32  := carry"
+        ]
+        "body": [
+            "The contents of the low-order 32 bits of register RS are ",
+            "shifted right the number of bits specified by (RB)58:63. ",
+            "Bits shifted out of position 63 are lost. Bit 32 of RS is ",
+            "replicated to fill the vacated positions on the left. The ",
+            "32-bit result is placed into RA32:63. Bit 32 of RS is repli",
+            "cated to fill RA0:31. CA and CA32 are set to 1 if the ",
+            "low-order 32 bits of (RS) contain a negative number ",
+            "and any 1-bits are shifted out of position 63; otherwise ",
+            "CA and CA32 are set to 0. A shift amount of zero ",
+            "causes RA to receive EXTS((RS)32:63), and CA and ",
+            "CA32 to be set to 0. Shift amounts from 32 to 63 give a ",
+            "result of 64 sign bits, and cause CA and CA32 to ",
+            "receive the sign bit of (RS)32:63.",
+            "",
+            "undefined value.",
+            "  "
+        ]
     },
     {
         "description": "Shift Left Doubleword",
@@ -2026,6 +4531,21 @@
                 "mnemonic": "sld.",
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "n := (RB)58:63",
+            "r := ROTL64((RS), n)",
+            "if (RB)57 = 0 then",
+            "     m := MASK(0, 63-n)",
+            "else m := 640",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of register RS are shifted left the number ",
+            "of bits specified by (RB)57:63. Bits shifted out of position ",
+            "0 are lost. Zeros are supplied to the vacated positions ",
+            "on the right. The result is placed into register RA. Shift ",
+            "amounts from 64 to 127 give a zero result."
         ]
     },
     {
@@ -2041,6 +4561,21 @@
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := (RB)58:63",
+            "r := ROTL64((RS), 64-n)",
+            "if (RB)57 = 0 then",
+            "    m := MASK(n, 63)",
+            "else m := 640",
+            "RA := r & m"
+        ]
+        "body": [
+            "The contents of register RS are shifted right the num",
+            "ber of bits specified by (RB)57:63. Bits shifted out of ",
+            "position 63 are lost. Zeros are supplied to the vacated ",
+            "positions on the left. The result is placed into register ",
+            "RA. Shift amounts from 64 to 127 give a zero result."
+        ]
     },
     {
         "description": "Shift Right Algebraic Doubleword Immediate",
@@ -2054,6 +4589,29 @@
                 "mnemonic": "sradi.",
                 "regs": "['RA,RS,SH', '(Rc=1)']"
             }
+        ]
+        "code": [
+            "n := sh5 || sh0:4",
+            "r := ROTL64((RS), 64-n)",
+            "m := MASK(n, 63)",
+            "s := (RS)0",
+            "RA := r&m | (64s)&:=m",
+            "carry := s & ((r&:=m)¹0)",
+            "CA    := carry",
+            "CA32  := carry"
+        ]
+        "body": [
+            "The contents of register RS are shifted right SH bits. ",
+            "Bits shifted out of position 63 are lost. Bit 0 of RS is rep",
+            "licated to fill the vacated positions on the left. The result ",
+            "is placed into register RA. CA and CA32 are set to 1 if ",
+            "(RS) is negative and any 1-bits are shifted out of posi",
+            "tion 63; otherwise CA and CA32 are set to 0. A shift ",
+            "amount of zero causes RA to be set equal to (RS), and ",
+            "CA and CA32 to be set to 0.",
+            "",
+            "to an undefined value.",
+            "Special Registers Altered:"
         ]
     },
     {
@@ -2069,6 +4627,33 @@
                 "regs": "['RA,RS,RB', '(Rc=1)']"
             }
         ]
+        "code": [
+            "n := (RB)58:63",
+            "r := ROTL64((RS), 64-n)",
+            "if (RB)57 = 0 then",
+            "    m := MASK(n, 63)",
+            "else m := 640",
+            "s := (RS)0",
+            "RA := r&m | (64s)&:=m",
+            "carry := s & ((r&:=m)¹0)",
+            "CA    := carry",
+            "CA32  := carry"
+        ]
+        "body": [
+            "The contents of register RS are shifted right the num",
+            "ber of bits specified by (RB)57:63. Bits shifted out of ",
+            "position 63 are lost. Bit 0 of RS is replicated to fill the ",
+            "vacated positions on the left. The result is placed into ",
+            "register RA. CA and CA32 are set to 1 if (RS) is nega",
+            "tive and any 1-bits are shifted out of position 63; other",
+            "wise CA and CA32 are set to 0. A shift amount of zero ",
+            "causes RA to be set equal to (RS), and CA and CA32 ",
+            "to be set to 0. Shift amounts from 64 to 127 give a ",
+            "result of 64 sign bits in RA, and cause CA and CA32 to ",
+            "receive the sign bit of (RS).",
+            "",
+            "to an undefined value."
+        ]
     },
     {
         "description": "Extend-Sign Word and Shift Left",
@@ -2078,6 +4663,16 @@
                 "mnemonic": "extswsli",
                 "regs": "['RA,RS,SH', '(', 'Rc=0', ')']"
             }
+        ]
+        "code": [
+            "n  := sh5 || sh0:4"
+        ]
+        "body": [
+            "The contents of the low order 32 bits of RS are ",
+            "sign-extended to 64 bits and then shifted left SH bits. ",
+            "Bits shifted out of bit 0 are lost. Zeros are supplied to ",
+            "vacated bits on the right. The result is placed in ",
+            "register RA."
         ]
     },
     {
@@ -2089,6 +4684,20 @@
                 "regs": "['RA, RS']"
             }
         ]
+        "code": [
+            "do i = 0 to 1",
+            "  n := i x 32",
+            "  RAn+0:n+7 := 0 ",
+            "  RAn+8:n+19 := DPD_TO_BCD( (RS)n+12:n+21 ) ",
+            "  RAn+20:n+31 := DPD_TO_BCD( (RS)n+22:n+31 )"
+        ]
+        "body": [
+            "The low-order 20 bits of each word of register RS con",
+            "tain two declets which are converted to six, 4-bit BCD ",
+            "fields; each set of six, 4-bit BCD fields is placed into the ",
+            "low-order 24 bits of the corresponding word in RA. The ",
+            "high-order 8 bits in each word of RA are set to 0."
+        ]
     },
     {
         "description": "Convert Binary Coded Decimal To Declets",
@@ -2098,6 +4707,22 @@
                 "mnemonic": "cbcdtd",
                 "regs": "['RA, RS']"
             }
+        ]
+        "code": [
+            "do i = 0 to 1",
+            "  n := i x 32",
+            "  RAn+0:n+11 := 0 ",
+            "  RAn+12:n+21 := BCD_TO_DPD( (RS)n+8:n+19 ) ",
+            "  RAn+22:n+31 := BCD_TO_DPD( (RS)n+20:n+31 )"
+        ]
+        "body": [
+            "The low-order 24 bits of each word of register RS con",
+            "tain six, 4-bit BCD fields which are converted to two ",
+            "declets; each set of two declets is placed into the ",
+            "low-order 20 bits of the corresponding word in RA. The ",
+            "high-order 12 bits in each word of RA are set to 0.",
+            "If a 4-bit BCD field has a value greater than 9 the ",
+            "results are undefined."
         ]
     },
     {
@@ -2109,6 +4734,27 @@
                 "regs": "['RT,RA,RB']"
             }
         ]
+        "code": [
+            "do i = 0 to 15",
+            "dci := carry_out(RA4xi:63 + RB4xi:63)",
+            "c := 4(dc0) || 4(dc1) || ... || 4(dc15)",
+            "RT := (:=c) & 0x6666_6666_6666_6666"
+        ]
+        "body": [
+            "The contents of register RA are added to the contents ",
+            "of register RB. Sixteen carry bits are produced, one ",
+            "for each carry out of decimal position n (bit posi",
+            "tion 4xn).",
+            "A doubleword is composed from the 16 carry bits, and ",
+            "placed into RT. The doubleword consists of a decimal ",
+            "six (0b0110) in every decimal digit position for which ",
+            "the corresponding carry bit is 0, and a zero (0b0000) in ",
+            "every position for which the corresponding carry bit is ",
+            "1.",
+            "  ",
+            "",
+            "  "
+        ]
     },
     {
         "description": "Decimal Sixes",
@@ -2118,6 +4764,23 @@
                 "mnemonic": "dsixes",
                 "regs": "['RA']"
             }
+        ]
+        "code": [
+            "c := 4(DC0) || 4(DC1) || ... || 4(DC15)",
+            "RA := (:=c) & 0x6666_6666_6666_6666"
+        ]
+        "body": [
+            "A doubleword is composed from the Decimal Carry bits ",
+            "in the XER, and placed into RA. The doubleword con",
+            "sists of a decimal six (0b0110) in every decimal digit ",
+            "position for which the corresponding bit in XERDC is ",
+            "zero, and a zero (0b0000) in every position for which ",
+            "the corresponding bit in XERDC is one. Bit i of XERDC ",
+            "corresponds to decimal digit position i of RA, for i = 0, ",
+            "1, ..., 15.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler."
         ]
     },
     {
@@ -2129,6 +4792,25 @@
                 "regs": "['RA,RS']"
             }
         ]
+        "code": [
+            "s := (RS)60 & ((RS)61 / (RS)62) & (RS)63",
+            "if s = 1 then CR0:3 := 0b100 || XERSO",
+            "              FXCC := 0b1000",
+            "         else CR0:3 := 0b010 || XERSO",
+            "              FXCC := 0b0100",
+            "RA   := (RS)0:59 || 0b0000",
+            "CA   := 0",
+            "CA32 := 0"
+        ]
+        "body": [
+            "CR0 and the FXCC are set to reflect “Less Than” if the ",
+            "sign in the low-order four bits of (RS) is 0xB or 0xD, and ",
+            "to reflect “Greater Than” otherwise. RA0:59 is set to ",
+            "(RS)0:59. RA60:63 are set to 0. XERCA is set to 0.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler."
+        ]
     },
     {
         "description": "Move From VSR Doubleword X",
@@ -2138,6 +4820,12 @@
                 "mnemonic": "mfvsrd",
                 "regs": "['RA,XS']"
             }
+        ]
+        "code": [
+
+        ]
+        "body": [
+            "Let XS be the value 32×SX + S."
         ]
     },
     {
@@ -2149,6 +4837,12 @@
                 "regs": "['RA,XS']"
             }
         ]
+        "code": [
+
+        ]
+        "body": [
+            "Let XS be the value 32×SX + S."
+        ]
     },
     {
         "description": "Move From VSR Word and Zero X",
@@ -2158,6 +4852,12 @@
                 "mnemonic": "mfvsrwz",
                 "regs": "['RA,XS']"
             }
+        ]
+        "code": [
+
+        ]
+        "body": [
+            "Let XS be the value 32×SX + S."
         ]
     },
     {
@@ -2169,6 +4869,12 @@
                 "regs": "['XT,RA']"
             }
         ]
+        "code": [
+
+        ]
+        "body": [
+            "Let XT be the value 32×TX + T."
+        ]
     },
     {
         "description": "Move To VSR Word Algebraic X for",
@@ -2178,6 +4884,12 @@
                 "mnemonic": "mtvsrwa",
                 "regs": "['XT,RA']"
             }
+        ]
+        "code": [
+
+        ]
+        "body": [
+            "Let XT be the value 32×TX + T."
         ]
     },
     {
@@ -2189,6 +4901,12 @@
                 "regs": "['XT,RA']"
             }
         ]
+        "code": [
+
+        ]
+        "body": [
+            "Let XT be the value 32×TX + T."
+        ]
     },
     {
         "description": "Move To VSR Double Doubleword X",
@@ -2198,6 +4916,12 @@
                 "mnemonic": "mtvsrdd",
                 "regs": "['XT,RA,RB']"
             }
+        ]
+        "code": [
+
+        ]
+        "body": [
+            "Let XT be the value 32×TX + T."
         ]
     },
     {
@@ -2209,6 +4933,12 @@
                 "regs": "['XT,RA']"
             }
         ]
+        "code": [
+
+        ]
+        "body": [
+            "Let XT be the value 32×TX + T."
+        ]
     },
     {
         "description": "Move To Special Purpose Register",
@@ -2218,6 +4948,47 @@
                 "mnemonic": "mtspr",
                 "regs": "['SPR,RS']"
             }
+        ]
+        "code": [
+            "n := spr5:9 || spr0:4",
+            "switch (n)",
+            "  case(13): see Book III",
+            "  case(808, 809, 810, 811):",
+            "  default:",
+            "    if length(SPR(n)) = 64 then",
+            "      SPR(n) := (RS)",
+            "    else",
+            "      SPR(n) := (RS)32:63"
+        ]
+        "body": [
+            "The SPR field denotes a Special Purpose Register, ",
+            "encoded as shown in the table below. If the SPR field ",
+            "contains a value from 808 through 811, the instruction ",
+            "specifies a reserved SPR, and is treated as a no-op;  ",
+            "see Section1.3.3, “Reserved Fields, Reserved Values, ",
+            "and Reserved SPRs”.  Otherwise, unless the SPR field ",
+            "contains 13 (denoting the AMR), the contents of regis",
+            "ter RS are placed into the designated Special Purpose ",
+            "Register. For Special Purpose Registers that are 32 bits ",
+            "long, the low-order 32 bits of RS are placed into the ",
+            "SPR. ",
+            "The AMR (Authority Mask Register) is used for “stor",
+            "age protection.” This use, and operation of mtspr for ",
+            "the AMR, are described in Book III.",
+            "If execution of this instruction is attempted specifying ",
+            "an SPR number that is not shown above, one of the fol",
+            "lowing occurs.",
+            "If an attempt is made to execute mtspr specifying a TM ",
+            "SPR in other than Non-transactional state, with the ",
+            "exception of TFHAR in suspended state, a TM Bad ",
+            "Thing type Program interrupt is generated.",
+            "A complete description of this instruction can be found ",
+            "in Book III.",
+            "Examples of extended mnemonics for Move To Special ",
+            "Purpose Register:",
+            "     ",
+            "  ",
+            " "
         ]
     },
     {
@@ -2229,6 +5000,42 @@
                 "regs": "['RT,SPR']"
             }
         ]
+        "code": [
+            "n := spr5:9 || spr0:4",
+            "switch (n)",
+            "  case(129): see Book III",
+            "  case(808, 809, 810, 811):",
+            "  default:",
+            "    if length(SPR(n)) = 64 then",
+            "      RT := SPR(n)",
+            "    else",
+            "      RT := 320 || SPR(n)"
+        ]
+        "body": [
+            "The SPR field denotes a Special Purpose Register, ",
+            "encoded as shown in the table below.  If the SPR field ",
+            "contains 129,  the instruction references the Transac",
+            "tion Failure Instruction Address Register (TFIAR)  and ",
+            "the result is dependent on the privilege with which it is ",
+            "executed.  See Book III.  If the SPR field contains a ",
+            "value from 808 through 811, the instruction specifies a ",
+            "reserved SPR, and is treated as a no-op; see ",
+            "Section1.3.3, “Reserved Fields, Reserved Values, and ",
+            "Reserved SPRs”.  Otherwise, the contents of the desig",
+            "nated Special Purpose Register are placed into register ",
+            "RT. For Special Purpose Registers that are 32 bits long, ",
+            "the low-order 32 bits of RT receive the contents of the ",
+            "Special Purpose Register and the high-order 32 bits of ",
+            "RT are set to zero.",
+            "If execution of this instruction is attempted specifying ",
+            "an SPR number that is not shown above, one of the fol",
+            "lowing occurs.",
+            "A complete description of this instruction can be found ",
+            "in Book III.",
+            "Examples of extended mnemonics for Move From Spe",
+            "cial Purpose Register:",
+            " "
+        ]
     },
     {
         "description": "Move to CR from XER Extended",
@@ -2239,14 +5046,12 @@
                 "regs": "['BF']"
             }
         ]
-    },
-    {
-        "description": "Set XER TAG",
-        "form": "XFX-form",
-        "mnemonics": [
-            {
-                "mnemonic": "settag"
-            }
+        "code": [
+            "CR4×BF+32:4×BF+35 := XEROV OV32 CA CA32"
+        ]
+        "body": [
+            "The contents of the OV, OV32, CA, and CA32 are cop",
+            "ied to Condition Register field BF."
         ]
     },
     {
@@ -2258,6 +5063,16 @@
                 "regs": "['BF']"
             }
         ]
+        "code": [
+            "CR4´BF:4´BF+3 := 0b0 || XER41:43"
+        ]
+        "body": [
+            "0b0 concatenated with the contents of XER41:43 is cop",
+            "ied into the Condition Register field designated by BF.",
+            "In tags inactive mode, this instruction is an illegal ",
+            "instruction and an attempt to execute this instruction ",
+            "will invoke the system illegal instruction error handler."
+        ]
     },
     {
         "description": "M ove To One Condition Register Field",
@@ -2267,6 +5082,16 @@
                 "mnemonic": "mtocrf",
                 "regs": "['FXM,RS']"
             }
+        ]
+        "code": [
+
+        ]
+        "body": [
+            "If exactly one bit of the FXM field is set to 1, let n be the ",
+            "position of that bit in the field (0 £ n £ 7). The contents ",
+            "of bits 4´n+32:4´n+35 of register RS are placed into ",
+            "CR field n (CR bits 4´n+32:4´n+35). Otherwise, the ",
+            "contents of the Condition Register are undefined."
         ]
     },
     {
@@ -2278,6 +5103,21 @@
                 "regs": "['FXM,RS']"
             }
         ]
+        "code": [
+            "mask := 4(FXM0) || 4(FXM1) || ... 4(FXM7)",
+            "CR := ((RS)32:63 & mask) | (CR & :=mask)"
+        ]
+        "body": [
+            "The contents of bits 32:63 of register RS are placed ",
+            "into the Condition Register under control of the field ",
+            "mask specified by FXM. The field mask identifies the ",
+            "4-bit fields affected. Let i be an integer in the range 0-7. ",
+            "If FXMi=1 then CR field i (CR bits 4´i+32:4´i+35) is set ",
+            "to the contents of the corresponding field of the ",
+            "low-order 32 bits of RS.",
+            "Example of extended mnemonics for Move To Condi",
+            "tion Register Fields:"
+        ]
     },
     {
         "description": "Move From One Condition Register Field",
@@ -2287,6 +5127,19 @@
                 "mnemonic": "mfocrf",
                 "regs": "['RT,FXM']"
             }
+        ]
+        "code": [
+
+        ]
+        "body": [
+            "If exactly one bit of the FXM field is set to 1, let n be ",
+            "the position of that bit in the field (0 £ n £ 7). The ",
+            "contents of CR field n (CR bits 4´n+32:4´n+35) are ",
+            "placed into bits 4´n+32:4´n+35 of register RT, and the ",
+            "contents of the remaining bits of register RT are ",
+            "undefined. Otherwise, the contents of register RT are ",
+            "undefined.",
+            "  "
         ]
     },
     {
@@ -2298,6 +5151,12 @@
                 "regs": "['RT']"
             }
         ]
+        "code": [
+
+        ]
+        "body": [
+            "   RT ¬ 320 || CR"
+        ]
     },
     {
         "description": "Set Boolean",
@@ -2307,6 +5166,14 @@
                 "mnemonic": "setb",
                 "regs": "['RT,BFA']"
             }
+        ]
+        "code": [
+
+        ]
+        "body": [
+            "If the contents of bit 0 of CR field BFA are equal to 0b1, ",
+            "the contents of register RT are set to ",
+            "0xFFFF_FFFF_FFFF_FFFF."
         ]
     }
 ]
