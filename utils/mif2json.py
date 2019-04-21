@@ -15,6 +15,7 @@ c = f.read(1)
 
 whitespace = re.compile('\s')
 wordchar = re.compile('\w')
+t = '    '
 
 class Instruction:
 	def __init__(self):
@@ -23,24 +24,6 @@ class Instruction:
 		self.forms = []
 		self.code = []
 		self.body = []
-	def output(self):
-		print("Instruction:")
-		print("\tDesc:\t",sep="",end="")
-		form = ''
-		n_head = len(self.head)
-		if n_head > 1:
-			form = self.head[n_head-1]
-		else:
-			n_head += 1
-		heads = ''
-		for head in self.head[0:n_head-1]:
-			heads = (heads + ' ' + head).strip()
-		print(heads)
-		print("\tForm:\t" + form)
-		for form in self.forms:
-			if len(form) > 0:
-				print("\tMnem:\t" + str(form))
-		print("--")
 	def outputJSON(self,line_prefix,line_postfix):
 		print(line_prefix + "{" + line_postfix);
 		form = ''
@@ -52,39 +35,39 @@ class Instruction:
 		heads = ''
 		for head in self.head[0:n_head-1]:
 			heads = (heads + ' ' + head).strip()
-		print(line_prefix + "\t\"description\":\"" + heads + "\"," + line_postfix)
-		print(line_prefix + "\t\"form\":\"" + form + "\"," + line_postfix)
-		print(line_prefix + "\t\"mnemonics\":[" + line_postfix)
+		print(line_prefix + t + "\"description\": \"" + heads + "\"," + line_postfix)
+		print(line_prefix + t + "\"form\": \"" + form + "\"," + line_postfix)
+		print(line_prefix + t + "\"mnemonics\": [" + line_postfix)
 		comma = ''
 		for form in self.forms:
 			print(comma,sep="",end="")
-			print(line_prefix + "\t\t{" + line_postfix)
+			print(line_prefix + t + t + "{" + line_postfix)
 			if len(form) > 0:
-				print(line_prefix + "\t\t\t\"mnemonic\": \"" + form[0] + "\"",sep="",end="")
+				print(line_prefix + t + t + t + "\"mnemonic\": \"" + form[0] + "\"",sep="",end="")
 			if len(form) > 1:
 				print(",")
-				print(line_prefix + "\t\t\t\"regs\": \"" + str(form[1:]) + "\"",sep="",end="")
+				print(line_prefix + t + t + t + "\"regs\": \"" + str(form[1:]) + "\"",sep="",end="")
 			print("")
-			print(line_prefix + "\t\t}",sep="",end="")
+			print(line_prefix + t + t + "}",sep="",end="")
 			comma = "," + line_postfix + "\n"
 		print("")
-		print(line_prefix + "\t]" + line_postfix)
-		print(line_prefix + "\t\"code\":[" + line_postfix)
+		print(line_prefix + t + "]" + line_postfix)
+		print(line_prefix + t + "\"code\": [" + line_postfix)
 		comma = ''
 		for line in self.code:
 			print(comma,sep="",end="")
-			print(line_prefix + "\t\t\"" + line + "\"",sep="",end="")
+			print(line_prefix + t + t + "\"" + line + "\"",sep="",end="")
 			comma = "," + line_postfix + "\n"
 		print("")
-		print(line_prefix + "\t]" + line_postfix)
-		print(line_prefix + "\t\"body\":[" + line_postfix)
+		print(line_prefix + t + "]" + line_postfix)
+		print(line_prefix + t + "\"body\": [" + line_postfix)
 		comma = ''
 		for line in self.body:
 			print(comma,sep="",end="")
-			print(line_prefix + "\t\t\"" + line + "\"",sep="",end="")
+			print(line_prefix + t + t + "\"" + line + "\"",sep="",end="")
 			comma = "," + line_postfix + "\n"
 		print("")
-		print(line_prefix + "\t]" + line_postfix)
+		print(line_prefix + t + "]" + line_postfix)
 		print(line_prefix + "}" + line_postfix,sep="",end="");
 
 inst = ''
@@ -294,6 +277,6 @@ print("[")
 comma=''
 for inst in insts:
 	print(comma,sep="",end="")
-	inst.outputJSON('\t','')
+	inst.outputJSON(t,'')
 	comma=',\n'
 print("\n]")
