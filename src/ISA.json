@@ -1450,7 +1450,7 @@
             "else           n := NB",
             "r := RT - 1",
             "i := 32",
-            "do while n \> 0",
+            "do while n > 0",
             "if i = 32 then",
             "  r := r + 1 (mod 32)",
             "  GPR(r) := 0",
@@ -1499,7 +1499,7 @@
             "r := RT - 1",
             "i := 32",
             "RT := undefined",
-            "do while n \> 0",
+            "do while n > 0",
             "if i = 32 then",
             " r := r + 1 (mod 32)",
             " GPR(r) := 0",
@@ -1514,7 +1514,7 @@
             "(RA|0)+(RB). Let n=XER57:63; n is the number of ",
             "bytes to load. Let nr=CEIL(n/4); nr is the number of reg",
             "isters to receive data.",
-            "If n\>0, n consecutive bytes starting at EA are loaded ",
+            "If n>0, n consecutive bytes starting at EA are loaded ",
             "into GPRs RT through RT+nr-1. Data are loaded into ",
             "the low-order four bytes of each GPR; the high-order ",
             "four bytes are set to 0.",
@@ -1529,7 +1529,7 @@
             "treated as if the instruction form were invalid. If RT=RA ",
             "or RT=RB, the instruction form is invalid.",
             "This instruction is not supported in Little-Endian mode. ",
-            "If it is executed in Little-Endian mode and n\>0, the sys",
+            "If it is executed in Little-Endian mode and n>0, the sys",
             "tem alignment error handler is invoked."
         ]
     },
@@ -1550,7 +1550,7 @@
             "else           n := NB",
             "r := RT - 1",
             "i := 0",
-            "do while n \> 0",
+            "do while n > 0",
             "  if i = 0 then",
             "    r := r + 1 (mod 32)",
             "    GPR(r) := 0",
@@ -1596,7 +1596,7 @@
             "r := RT - 1",
             "i := 0",
             "RT := undefined",
-            "do while n \> 0",
+            "do while n > 0",
             "  if i = 0 then",
             "    r := r + 1 (mod 32)",
             "    GPR(r) := 0",
@@ -1610,7 +1610,7 @@
             "(RA|0)+tea(RB). Let n=XER57:63: n is the number of ",
             "bytes to load. Let nr=CEIL(n/8): nr is the number of reg",
             "isters to receive data.",
-            "If n\>0, n consecutive bytes starting at EA are loaded ",
+            "If n>0, n consecutive bytes starting at EA are loaded ",
             "into GPRs RT through RT+nr-1. Data are loaded into ",
             "all eight bytes of each GPR.",
             "Bytes are loaded left to right in each register. The ",
@@ -1644,7 +1644,7 @@
             "else           n := NB",
             "r := RS - 1",
             "i := 32",
-            "do while n \> 0",
+            "do while n > 0",
             "  if i = 32 then r := r + 1 (mod 32)",
             "  MEM(EA, 1) := GPR(r)i:i+7",
             " ",
@@ -1686,7 +1686,7 @@
             "n := XER57:63",
             "r := RS - 1",
             "i := 32",
-            "do while n \> 0",
+            "do while n > 0",
             "  if i = 32 then r := r + 1 (mod 32)",
             "  MEM(EA, 1) := GPR(r)i:i+7",
             "  ",
@@ -1700,7 +1700,7 @@
             "(RA|0)+(RB). Let n = XER57:63; n is the number of ",
             "bytes to store. Let nr = CEIL(n/4); nr is the number of ",
             "registers to supply data.",
-            "If n\>0, n consecutive bytes starting at EA are stored ",
+            "If n>0, n consecutive bytes starting at EA are stored ",
             "from GPRs RS through RS+nr-1. Data are stored from ",
             "the low-order four bytes of each GPR.",
             "Bytes are stored left to right from each register. The ",
@@ -1708,7 +1708,7 @@
             "required.",
             "If n=0, no bytes are stored.",
             "This instruction is not supported in Little-Endian mode. ",
-            "If it is executed in Little-Endian mode and n\>0, the sys",
+            "If it is executed in Little-Endian mode and n>0, the sys",
             "tem alignment error handler is invoked."
         ]
     },
@@ -1729,7 +1729,7 @@
             "else           n := NB",
             "r := RS - 1",
             "i := 0",
-            "do while n \> 0",
+            "do while n > 0",
             "  if i = 0 then r := r + 1 (mod 32)",
             "  MEM(EA, 1) := GPR(r)i:i+7",
             "  MEMtag(EA) := 0",
@@ -1770,7 +1770,7 @@
             "n := XER57:63",
             "r := RS - 1",
             "i := 0",
-            "do while n \> 0",
+            "do while n > 0",
             "  if i = 0 then r := r + 1 (mod 32)",
             "  MEM(EA, 1) := GPR(r)i:i+7",
             "  MEMtag(EA) := 0",
@@ -1783,7 +1783,7 @@
             "(RA|0)+tea(RB). Let n=XER57:63: n is the number of ",
             "bytes to store. Let nr=CEIL(n/8): nr is the number of ",
             "registers to supply data.",
-            "If n\>0, n consecutive bytes starting at EA are stored ",
+            "If n>0, n consecutive bytes starting at EA are stored ",
             "from GPRs RS through RS+nr-1. Data are stored from ",
             "all eight bytes of each GPR.",
             "Bytes are stored left to right from each register. The ",
@@ -2469,7 +2469,7 @@
             "RT0:31 := undefined",
             "",
             "   0x8000_0000 ¸ -1",
-            "   <anything\> ¸ 0"
+            "   <anything> ¸ 0"
         ],
         "body": [
             "The 32-bit dividend is (RA)32:63. The 32-bit divisor is ",
@@ -2519,7 +2519,7 @@
             "RT32:63 := dividend ¸ divisor",
             "RT0:31 := undefined",
             "",
-            "    <anything\> ¸ 0"
+            "    <anything> ¸ 0"
         ],
         "body": [
             "The 32 bit dividend is (RA)32:63. The 32-bit divisor is ",
@@ -2570,7 +2570,7 @@
             "RT32:63 := dividend ¸ divisor",
             "RT0:31 := undefined",
             "",
-            "    <anything\> ¸ 0"
+            "    <anything> ¸ 0"
         ],
         "body": [
             "The 64-bit dividend is (RA)32:63 || 320. The 32-bit divisor ",
@@ -2621,7 +2621,7 @@
             "RT32:63 := dividend ¸ divisor",
             "RT0:31 := undefined",
             "",
-            "    <anything\> ¸ 0"
+            "    <anything> ¸ 0"
         ],
         "body": [
             "The 64-bit dividend is (RA)32:63 || 320. The 32-bit divisor ",
@@ -2647,7 +2647,7 @@
             "dividend is Dh || Dl, the divisor is Dv, and the quotient ",
             "and remainder are Q and R respectively, where these ",
             "variables and all intermediate variables represent ",
-            "unsigned 32-bit integers. It is assumed that Dv \> Dh, ",
+            "unsigned 32-bit integers. It is assumed that Dv > Dh, ",
             "and that assigning a value to an intermediate variable ",
             "assigns the low-order 32 bits of the value and ignores ",
             "any higher-order bits of the value. (In both the algorithm ",
@@ -2696,7 +2696,7 @@
         ],
         "code": [
             "remainder = dividend - (quotient × divisor)",
-            "<anything\> % 0"
+            "<anything> % 0"
         ],
         "body": [
             "The 32-bit dividend is (RA)32:63. The 32-bit divisor is ",
@@ -2926,7 +2926,7 @@
             "RT := dividend ¸ divisor",
             "",
             "   0x8000_0000_0000_0000 ¸ -1",
-            "   <anything\> ¸ 0"
+            "   <anything> ¸ 0"
         ],
         "body": [
             "The 64-bit dividend is (RA). The 64-bit divisor is (RB). ",
@@ -2975,7 +2975,7 @@
             "divisor0:63 := (RB)",
             "RT := dividend ¸ divisor",
             "",
-            "    <anything\> ¸ 0"
+            "    <anything> ¸ 0"
         ],
         "body": [
             "The 64-bit dividend is (RA). The 64-bit divisor is (RB). ",
@@ -3024,7 +3024,7 @@
             "divisor0:63 := (RB)",
             "RT := dividend ¸ divisor",
             "",
-            "    <anything\> ¸ 0"
+            "    <anything> ¸ 0"
         ],
         "body": [
             "The 128-bit dividend is (RA) || 640. The 64-bit divisor is ",
@@ -3074,7 +3074,7 @@
             "divisor0:63 := (RB)",
             "RT := dividend ¸ divisor",
             "",
-            "    <anything\> ¸ 0"
+            "    <anything> ¸ 0"
         ],
         "body": [
             "The 128-bit dividend is (RA) || 640. The 64-bit divisor is ",
@@ -3108,7 +3108,7 @@
         ],
         "code": [
             "remainder = dividend - (quotient × divisor)",
-            "<anything\> % 0"
+            "<anything> % 0"
         ],
         "body": [
             "The 64-bit dividend is (RA). The 64-bit divisor is (RB). ",
@@ -3133,7 +3133,7 @@
         ],
         "code": [
             "remainder = dividend - (quotient × divisor)",
-            "<anything\> % 0"
+            "<anything> % 0"
         ],
         "body": [
             "The 64-bit dividend is (RA). The 64-bit divisor is (RB). ",
@@ -3158,7 +3158,7 @@
             "if L = 0 then a := EXTS((RA)32:63)",
             "         else a := (RA)",
             "if      a < EXTS(SI) then c := 0b100",
-            "else if a \> EXTS(SI) then c := 0b010",
+            "else if a > EXTS(SI) then c := 0b010",
             "else                      c := 0b001",
             "CR4´BF+32:4´BF+35 := c || XERSO",
             ""
@@ -3189,7 +3189,7 @@
             "           else a := (RA)",
             "                b := (RB)",
             "if      a < b then c := 0b100",
-            "else if a \> b then c := 0b010",
+            "else if a > b then c := 0b010",
             "else               c := 0b001",
             "CR4´BF+32:4´BF+35 := c || XERSO",
             ""
@@ -3217,7 +3217,7 @@
             "if L = 0 then a := 320 || (RA)32:63",
             "         else a := (RA)",
             "if      a <u (480 || UI) then c := 0b100",
-            "else if a \>u (480 || UI) then c := 0b010",
+            "else if a >u (480 || UI) then c := 0b010",
             "else                         c := 0b001",
             "CR4´BF+32:4´BF+35 := c || XERSO",
             ""
@@ -3248,7 +3248,7 @@
             "         else a := (RA)",
             "              b := (RB)",
             "if      a <u b then c := 0b100",
-            "else if a \>u b then c := 0b010",
+            "else if a >u b then c := 0b010",
             "else                c := 0b001",
             "CR4´BF+32:4´BF+35 := c || XERSO",
             ""
@@ -3315,10 +3315,10 @@
         "code": [
             "a := EXTS((RA)32:63)",
             "if (a < EXTS(SI)) & TO0  then TRAP",
-            "if (a \> EXTS(SI)) & TO1  then TRAP",
+            "if (a > EXTS(SI)) & TO1  then TRAP",
             "if (a = EXTS(SI)) & TO2  then TRAP",
             "if (a <u EXTS(SI)) & TO3 then TRAP",
-            "if (a \>u EXTS(SI)) & TO4 then TRAP"
+            "if (a >u EXTS(SI)) & TO4 then TRAP"
         ],
         "body": [
             "The contents of RA32:63 are compared with the ",
@@ -3347,10 +3347,10 @@
             "a := EXTS((RA)32:63)",
             "b := EXTS((RB)32:63)",
             "if (a < b) & TO0 then TRAP",
-            "if (a \> b) & TO1 then TRAP",
+            "if (a > b) & TO1 then TRAP",
             "if (a = b) & TO2 then TRAP",
             "if (a <u b) & TO3 then TRAP",
-            "if (a \>u b) & TO4 then TRAP"
+            "if (a >u b) & TO4 then TRAP"
         ],
         "body": [
             "The contents of RA32:63 are compared with the con",
@@ -3388,7 +3388,7 @@
             "if (a < b) & TO0",
             "   ((TO ¹ 0b11100 &",
             "     TO ¹ 0b11101)| tags inactive) then TRAP",
-            "if (a \> b) & TO1",
+            "if (a > b) & TO1",
             "   ((TO ¹ 0b11100 &",
             "     TO ¹ 0b11101 &",
             "     TO ¹ 0b11110) | tags inactive) then TRAP",
@@ -3397,7 +3397,7 @@
             "     TO ¹ 0b11101 &",
             "     TO ¹ 0b11110) | tags inactive) then TRAP",
             "if (a <u b) & TO3 then TRAP",
-            "if (a \>u b) & TO4 ",
+            "if (a >u b) & TO4 ",
             "   ((TO ¹ 0b11101) | tags inactive) then TRAP"
         ],
         "body": [
@@ -3447,7 +3447,7 @@
             "if (a < b) & TO0",
             "   ((TO ¹ 0b11100 &",
             "     TO ¹ 0b11101)| tags inactive) then TRAP",
-            "if (a \> b) & TO1",
+            "if (a > b) & TO1",
             "   ((TO ¹ 0b11100 &",
             "     TO ¹ 0b11101 &",
             "     TO ¹ 0b11110) | tags inactive) then TRAP",
@@ -3456,7 +3456,7 @@
             "     TO ¹ 0b11101 &",
             "     TO ¹ 0b11110) | tags inactive) then TRAP",
             "if (a <u b) & TO3 then TRAP",
-            "if (a \>u b) & TO4 ",
+            "if (a >u b) & TO4 ",
             "   ((TO ¹ 0b11101) | tags inactive) then TRAP"
         ],
         "body": [

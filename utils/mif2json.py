@@ -175,12 +175,12 @@ def ParaLine(f,tag):
 			elif tag == "code_example":
 				c = f.read(1)
 				# translate FrameMaker special characters with ASCII equivalents
-				s = getString(f).replace(b'\xc2\xac',':=').replace(b'\xc2\xa3','<=').replace(b'\xc2\xba','not xor').replace(b'\xc3\x85','/')
+				s = getString(f).replace(b'\xc2\xac',':=').replace(b'\xc2\xa3','<=').replace(b'\xc2\xba','not xor').replace(b'\xc3\x85','/').replace('\>','>')
 				inst.code[len(inst.code)-1] += s
 			elif tag == "Body":
 				try:
 					c = f.read(1)
-					s = getString(f)
+					s = getString(f).replace('\>','>')
 					inst.body[len(inst.body)-1] += s
 				except: pass
 		elif token == "Conditional":
