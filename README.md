@@ -10,13 +10,13 @@ $ (cat PPC1_ChFixedPt.mif PPC_ApInstMnem.mif ) | ./utils/mif2json.py > ./src/ISA
 
 ## Run Local React Environment
 
-###1. Once you have cloned the repo, navigate to the same directory as package.json and run
+### 1. Once you have cloned the repo, navigate to the same directory as package.json and run
 
 ```
 npm i
 ```
 
-###2. After npm installs your dependencies, run
+### 2. After npm installs your dependencies, run
 
 ```
 npm run local
