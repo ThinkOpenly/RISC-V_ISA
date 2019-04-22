@@ -10,6 +10,13 @@ $ (cat PPC1_ChFixedPt.mif PPC_ApInstMnem.mif ) | ./utils/mif2json.py > ./src/ISA
 
 # Run Local React Environment
 
+Note: These intructions assume you have Node, and React installed on your maching. If you do not visit the node.js website.
+Once Node is installed, you can use the node package manager to install React with the following command
+
+```
+npm i react
+```
+
 #### 1. Once you have cloned the repo, navigate to the same directory that contains package.json and run
 
 ```
