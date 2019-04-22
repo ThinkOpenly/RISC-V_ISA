@@ -60,7 +60,7 @@ class Instruction:
 			form.outputJSON(line_prefix,line_postfix)
 			comma = "," + line_postfix + "\n"
 		print("")
-		print(line_prefix + t + "]" + line_postfix)
+		print(line_prefix + t + "]," + line_postfix)
 		print(line_prefix + t + "\"code\": [" + line_postfix)
 		comma = ''
 		for line in self.code:
@@ -68,7 +68,7 @@ class Instruction:
 			print(line_prefix + t + t + "\"" + line + "\"",sep="",end="")
 			comma = "," + line_postfix + "\n"
 		print("")
-		print(line_prefix + t + "]" + line_postfix)
+		print(line_prefix + t + "]," + line_postfix)
 		print(line_prefix + t + "\"body\": [" + line_postfix)
 		comma = ''
 		for line in self.body:
