@@ -8,7 +8,8 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            data: data
+            data: data,
+            filter: ''
         };
     }
 
@@ -64,7 +65,9 @@ class App extends Component {
                         <div className="column">
                             <h4>Mnemonics:</h4>
                             <table>
-                            {this.displayMnemonics(item)}
+                                <tbody>
+                                {this.displayMnemonics(item)}
+                                </tbody>
                             </table>
                             <h4>Code:</h4>
                             {this.displayCode(item)}
@@ -78,29 +81,32 @@ class App extends Component {
     genData = data => {
         let allJson = [];
         for (let i = 0; i < data.length; i++) {
-            console.log(data[i]);
-            allJson.push(
-                <AccordionItem
-                    title={data[i].description}
-                    onClick={e => {
-                        console.log("click");
-                    }}
-                    onHeadingClick={e => {
-                        console.log("heading click");
-                    }}
-                >
-                    {this.genItem(data[i])}
-                    <div className="expandContainer">
-                        <div className="column">
-                            <h4>Form: </h4>
-                            {data[i].form}
-                        </div>
-                    </div>
-                </AccordionItem>
-            );
+            for (let m = 0; m < data[i].mnemonics.length; m++) {
+                if (data[i].mnemonics[m].mnemonic.startsWith(this.state.filter)) {
+                    allJson.push(
+                        <AccordionItem
+                            title={data[i].description}
+                            onClick={e => {
+                                console.log("click");
+                            }}
+                            onHeadingClick={e => {
+                                console.log("heading click");
+                            }}
+                        >
+                            {this.genItem(data[i])}
+                        </AccordionItem>
+                    );
+                    break;
+                }
+            }
         }
         return allJson;
     };
+
+    filter() {
+        let id = document.getElementById("search-1");
+	this.setState({filter: id.value});
+    }
     render() {
         return (
             <div className="App">
@@ -125,7 +131,7 @@ class App extends Component {
                                         closeButtonLabelText=""
                                         placeHolderText="Search"
                                         onChange={() => {
-                                            console.log("searching");
+                                            this.filter()
                                         }}
                                         id="search-1"
                                     />
