@@ -194,7 +194,7 @@ class App extends Component {
                                         closeButtonLabelText=""
                                         placeHolderText="Search"
                                         onChange={() => {
-                                            this.filter()
+                                            this.search()
                                         }}
                                         id="search-1"
                                     />
