@@ -5,7 +5,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lbz",
-                "regs": "['RT,D(RA)']",
+                "regs": [ "RT,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -27,7 +27,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lbzx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -49,7 +49,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lbzu",
-                "regs": "['RT,D(RA)']",
+                "regs": [ "RT,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -72,7 +72,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lbzux",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -95,7 +95,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lhz",
-                "regs": "['RT,D(RA)']",
+                "regs": [ "RT,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -117,7 +117,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lhzx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -139,7 +139,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lhzu",
-                "regs": "['RT,D(RA)']",
+                "regs": [ "RT,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -162,7 +162,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lhzux",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -185,7 +185,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lha",
-                "regs": "['RT,D(RA)']",
+                "regs": [ "RT,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -208,7 +208,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lhax",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -231,7 +231,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lhau",
-                "regs": "['RT,D(RA)']",
+                "regs": [ "RT,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -255,7 +255,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lhaux",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -279,7 +279,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lwz",
-                "regs": "['RT,D(RA)']",
+                "regs": [ "RT,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -301,7 +301,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lwzx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -323,7 +323,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lwzu",
-                "regs": "['RT,D(RA)']",
+                "regs": [ "RT,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -346,7 +346,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lwzux",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -369,7 +369,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lwa",
-                "regs": "['RT,DS(RA)']",
+                "regs": [ "RT,DS(RA)" ],
                 "release": "PPC"
             }
         ],
@@ -392,7 +392,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lwax",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "PPC"
             }
         ],
@@ -415,7 +415,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lwaux",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "PPC"
             }
         ],
@@ -439,7 +439,7 @@
         "mnemonics": [
             {
                 "mnemonic": "ld",
-                "regs": "['RT,DS(RA)']",
+                "regs": [ "RT,DS(RA)" ],
                 "release": "PPC"
             }
         ],
@@ -461,7 +461,7 @@
         "mnemonics": [
             {
                 "mnemonic": "ldx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "PPC"
             }
         ],
@@ -483,7 +483,7 @@
         "mnemonics": [
             {
                 "mnemonic": "ldu",
-                "regs": "['RT,DS(RA)']",
+                "regs": [ "RT,DS(RA)" ],
                 "release": "PPC"
             }
         ],
@@ -506,7 +506,7 @@
         "mnemonics": [
             {
                 "mnemonic": "ldux",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "PPC"
             }
         ],
@@ -529,7 +529,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lwzmx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": ""
             }
         ],
@@ -585,7 +585,7 @@
         "mnemonics": [
             {
                 "mnemonic": "ldmx",
-                "regs": "['RT,RA,', 'RB']",
+                "regs": [ "RT,RA,", "RB" ],
                 "release": ""
             }
         ],
@@ -634,7 +634,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stb",
-                "regs": "['RS,D(RA)']",
+                "regs": [ "RS,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -657,7 +657,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stbx",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -680,7 +680,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stbu",
-                "regs": "['RS,D(RA)']",
+                "regs": [ "RS,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -704,7 +704,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stbux",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -728,7 +728,7 @@
         "mnemonics": [
             {
                 "mnemonic": "sth",
-                "regs": "['RS,D(RA)']",
+                "regs": [ "RS,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -751,7 +751,7 @@
         "mnemonics": [
             {
                 "mnemonic": "sthx",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -774,7 +774,7 @@
         "mnemonics": [
             {
                 "mnemonic": "sthu",
-                "regs": "['RS,D(RA)']",
+                "regs": [ "RS,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -798,7 +798,7 @@
         "mnemonics": [
             {
                 "mnemonic": "sthux",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -822,7 +822,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stw",
-                "regs": "['RS,D(RA)']",
+                "regs": [ "RS,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -845,7 +845,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stwx",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -868,7 +868,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stwu",
-                "regs": "['RS,D(RA)']",
+                "regs": [ "RS,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -892,7 +892,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stwux",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -916,7 +916,7 @@
         "mnemonics": [
             {
                 "mnemonic": "std",
-                "regs": "['RS,DS(RA)']",
+                "regs": [ "RS,DS(RA)" ],
                 "release": "PPC"
             }
         ],
@@ -939,7 +939,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stdx",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "PPC"
             }
         ],
@@ -962,7 +962,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stdu",
-                "regs": "['RS,DS(RA)']",
+                "regs": [ "RS,DS(RA)" ],
                 "release": "PPC"
             }
         ],
@@ -986,7 +986,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stdux",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "PPC"
             }
         ],
@@ -1010,7 +1010,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stq",
-                "regs": "['RSp,DS(RA)']",
+                "regs": [ "RSp,DS(RA)" ],
                 "release": "PPCAS"
             }
         ],
@@ -1042,7 +1042,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lq",
-                "regs": "['RTp,DQ(RA)']",
+                "regs": [ "RTp,DQ(RA)" ],
                 "release": "PPCAS"
             }
         ],
@@ -1079,7 +1079,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stq",
-                "regs": "['RSp,DS(RA)']",
+                "regs": [ "RSp,DS(RA)" ],
                 "release": "PPCAS"
             }
         ],
@@ -1113,7 +1113,7 @@
         "mnemonics": [
             {
                 "mnemonic": "ltptr",
-                "regs": "['RT,DQ(RA),EPT']",
+                "regs": [ "RT,DQ(RA),EPT" ],
                 "release": "v2.06AS"
             }
         ],
@@ -1169,7 +1169,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lhbrx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -1194,7 +1194,7 @@
         "mnemonics": [
             {
                 "mnemonic": "sthbrx",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -1219,7 +1219,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lwbrx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -1248,7 +1248,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stwbrx",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -1276,7 +1276,7 @@
         "mnemonics": [
             {
                 "mnemonic": "ldbrx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "v2.06"
             }
         ],
@@ -1313,7 +1313,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stdbrx",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "v2.06"
             }
         ],
@@ -1350,7 +1350,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lmw",
-                "regs": "['RT,D(RA)']",
+                "regs": [ "RT,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -1383,7 +1383,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stmw",
-                "regs": "['RS,D(RA)']",
+                "regs": [ "RS,D(RA)" ],
                 "release": "P1"
             }
         ],
@@ -1414,7 +1414,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stmd",
-                "regs": "['RS,DS(RA)']",
+                "regs": [ "RS,DS(RA)" ],
                 "release": "PPCAS"
             }
         ],
@@ -1439,7 +1439,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lswi",
-                "regs": "['RT,RA,NB']",
+                "regs": [ "RT,RA,NB" ],
                 "release": "P1"
             }
         ],
@@ -1487,7 +1487,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lswx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -1539,7 +1539,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lsdi",
-                "regs": "['RT,RA,NB']",
+                "regs": [ "RT,RA,NB" ],
                 "release": "PPCAS"
             }
         ],
@@ -1584,7 +1584,7 @@
         "mnemonics": [
             {
                 "mnemonic": "lsdx",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "PPCAS"
             }
         ],
@@ -1633,7 +1633,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stswi",
-                "regs": "['RS,RA,NB']",
+                "regs": [ "RS,RA,NB" ],
                 "release": "P1"
             }
         ],
@@ -1675,7 +1675,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stswx",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -1718,7 +1718,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stsdi",
-                "regs": "['RS,RA,NB']",
+                "regs": [ "RS,RA,NB" ],
                 "release": "PPCAS"
             }
         ],
@@ -1759,7 +1759,7 @@
         "mnemonics": [
             {
                 "mnemonic": "stsdx",
-                "regs": "['RS,RA,RB']",
+                "regs": [ "RS,RA,RB" ],
                 "release": "PPCAS"
             }
         ],
@@ -1801,7 +1801,7 @@
         "mnemonics": [
             {
                 "mnemonic": "addi",
-                "regs": "['RT,RA,SI']",
+                "regs": [ "RT,RA,SI" ],
                 "release": "P1"
             }
         ],
@@ -1821,7 +1821,7 @@
         "mnemonics": [
             {
                 "mnemonic": "addis",
-                "regs": "['RT,RA,SI']",
+                "regs": [ "RT,RA,SI" ],
                 "release": "P1"
             }
         ],
@@ -1842,7 +1842,7 @@
         "mnemonics": [
             {
                 "mnemonic": "addpcis",
-                "regs": "['RT,D']",
+                "regs": [ "RT,D" ],
                 "release": "v3.0"
             }
         ],
@@ -1864,22 +1864,22 @@
         "mnemonics": [
             {
                 "mnemonic": "add",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "add.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -1896,22 +1896,22 @@
         "mnemonics": [
             {
                 "mnemonic": "subf",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "subf.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "subfo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "subfo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -1929,7 +1929,7 @@
         "mnemonics": [
             {
                 "mnemonic": "addic",
-                "regs": "['RT,RA,SI']",
+                "regs": [ "RT,RA,SI" ],
                 "release": "P1"
             }
         ],
@@ -1948,7 +1948,7 @@
         "mnemonics": [
             {
                 "mnemonic": "addic.",
-                "regs": "['RT,RA,SI']",
+                "regs": [ "RT,RA,SI" ],
                 "release": "P1"
             }
         ],
@@ -1967,7 +1967,7 @@
         "mnemonics": [
             {
                 "mnemonic": "subfic",
-                "regs": "['RT,RA,SI']",
+                "regs": [ "RT,RA,SI" ],
                 "release": "P1"
             }
         ],
@@ -1995,22 +1995,22 @@
         "mnemonics": [
             {
                 "mnemonic": "addc",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addc.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addco",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addco.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2027,22 +2027,22 @@
         "mnemonics": [
             {
                 "mnemonic": "subfc",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfc.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfco",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfco.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2061,22 +2061,22 @@
         "mnemonics": [
             {
                 "mnemonic": "adde",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "adde.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addeo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addeo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2093,22 +2093,22 @@
         "mnemonics": [
             {
                 "mnemonic": "subfe",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfe.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfeo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfeo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2125,22 +2125,22 @@
         "mnemonics": [
             {
                 "mnemonic": "addme",
-                "regs": "['RT,RA', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addme.",
-                "regs": "['RT,RA', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addmeo",
-                "regs": "['RT,RA', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addmeo.",
-                "regs": "['RT,RA', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2157,22 +2157,22 @@
         "mnemonics": [
             {
                 "mnemonic": "subfme",
-                "regs": "['RT,RA', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfme.",
-                "regs": "['RT,RA', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfmeo",
-                "regs": "['RT,RA', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfmeo.",
-                "regs": "['RT,RA', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2189,7 +2189,7 @@
         "mnemonics": [
             {
                 "mnemonic": "addex",
-                "regs": "['RT,RA,RB,CY']",
+                "regs": [ "RT,RA,RB,CY" ],
                 "release": "v3.0B"
             }
         ],
@@ -2214,22 +2214,22 @@
         "mnemonics": [
             {
                 "mnemonic": "addze",
-                "regs": "['RT,RA', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addze.",
-                "regs": "['RT,RA', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addzeo",
-                "regs": "['RT,RA', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "addzeo.",
-                "regs": "['RT,RA', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2246,22 +2246,22 @@
         "mnemonics": [
             {
                 "mnemonic": "subfze",
-                "regs": "['RT,RA', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfze.",
-                "regs": "['RT,RA', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfzeo",
-                "regs": "['RT,RA', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "subfzeo.",
-                "regs": "['RT,RA', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2279,22 +2279,22 @@
         "mnemonics": [
             {
                 "mnemonic": "neg",
-                "regs": "['RT,RA', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "neg.",
-                "regs": "['RT,RA', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "nego",
-                "regs": "['RT,RA', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "nego.",
-                "regs": "['RT,RA', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2322,7 +2322,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mulli",
-                "regs": "['RT,RA,SI']",
+                "regs": [ "RT,RA,SI" ],
                 "release": "P1"
             }
         ],
@@ -2345,22 +2345,22 @@
         "mnemonics": [
             {
                 "mnemonic": "mullw",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "mullw.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "mullwo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "mullwo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -2383,12 +2383,12 @@
         "mnemonics": [
             {
                 "mnemonic": "mulhw",
-                "regs": "['RT,RA,RB', '(Rc=0)']",
+                "regs": [ "RT,RA,RB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "mulhw.",
-                "regs": "['RT,RA,RB', '(Rc=1)']",
+                "regs": [ "RT,RA,RB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -2412,12 +2412,12 @@
         "mnemonics": [
             {
                 "mnemonic": "mulhwu",
-                "regs": "['RT,RA,RB', '(Rc=0)']",
+                "regs": [ "RT,RA,RB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "mulhwu.",
-                "regs": "['RT,RA,RB', '(Rc=1)']",
+                "regs": [ "RT,RA,RB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -2443,22 +2443,22 @@
         "mnemonics": [
             {
                 "mnemonic": "divw",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divw.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divwo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divwo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -2494,22 +2494,22 @@
         "mnemonics": [
             {
                 "mnemonic": "divwu",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divwu.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divwuo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divwuo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -2545,22 +2545,22 @@
         "mnemonics": [
             {
                 "mnemonic": "divwe",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divwe.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divweo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divweo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1", ")" ],
                 "release": "v2.06"
             }
         ],
@@ -2596,22 +2596,22 @@
         "mnemonics": [
             {
                 "mnemonic": "divweu",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divweu.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divweuo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divweuo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1", ")" ],
                 "release": "v2.06"
             }
         ],
@@ -2664,7 +2664,7 @@
         "mnemonics": [
             {
                 "mnemonic": "modsw",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "v3.0"
             }
         ],
@@ -2690,7 +2690,7 @@
         "mnemonics": [
             {
                 "mnemonic": "moduw",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "v3.0"
             }
         ],
@@ -2714,7 +2714,7 @@
         "mnemonics": [
             {
                 "mnemonic": "darn",
-                "regs": "['RT,L']",
+                "regs": [ "RT,L" ],
                 "release": "v3.0"
             }
         ],
@@ -2745,22 +2745,22 @@
         "mnemonics": [
             {
                 "mnemonic": "mulld",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "mulld.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "mulldo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "mulldo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -2785,12 +2785,12 @@
         "mnemonics": [
             {
                 "mnemonic": "mulhd",
-                "regs": "['RT,RA,RB', '(Rc=0)']",
+                "regs": [ "RT,RA,RB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "mulhd.",
-                "regs": "['RT,RA,RB', '(Rc=1)']",
+                "regs": [ "RT,RA,RB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -2812,12 +2812,12 @@
         "mnemonics": [
             {
                 "mnemonic": "mulhdu",
-                "regs": "['RT,RA,RB', '(Rc=0)']",
+                "regs": [ "RT,RA,RB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "mulhdu.",
-                "regs": "['RT,RA,RB', '(Rc=1)']",
+                "regs": [ "RT,RA,RB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -2841,7 +2841,7 @@
         "mnemonics": [
             {
                 "mnemonic": "maddhd",
-                "regs": "['RT,RA.RB,RC']",
+                "regs": [ "RT,RA.RB,RC" ],
                 "release": "v3.0"
             }
         ],
@@ -2861,7 +2861,7 @@
         "mnemonics": [
             {
                 "mnemonic": "maddhdu",
-                "regs": "['RT,RA.RB,RC']",
+                "regs": [ "RT,RA.RB,RC" ],
                 "release": "v3.0"
             }
         ],
@@ -2881,7 +2881,7 @@
         "mnemonics": [
             {
                 "mnemonic": "maddld",
-                "regs": "['RT,RA.RB,RC']",
+                "regs": [ "RT,RA.RB,RC" ],
                 "release": "v3.0"
             }
         ],
@@ -2901,22 +2901,22 @@
         "mnemonics": [
             {
                 "mnemonic": "divd",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divd.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divdo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divdo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -2951,22 +2951,22 @@
         "mnemonics": [
             {
                 "mnemonic": "divdu",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divdu.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divduo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "divduo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -3000,22 +3000,22 @@
         "mnemonics": [
             {
                 "mnemonic": "divde",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divde.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divdeo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divdeo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1", ")" ],
                 "release": "v2.06"
             }
         ],
@@ -3050,22 +3050,22 @@
         "mnemonics": [
             {
                 "mnemonic": "divdeu",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=0)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divdeu.",
-                "regs": "['RT,RA,RB', '(OE=0 Rc=1)']",
+                "regs": [ "RT,RA,RB", "(OE=0 Rc=1)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divdeuo",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=0)']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=0)" ],
                 "release": "v2.06"
             },
             {
                 "mnemonic": "divdeuo.",
-                "regs": "['RT,RA,RB', '(OE=1 Rc=1', ')']",
+                "regs": [ "RT,RA,RB", "(OE=1 Rc=1", ")" ],
                 "release": "v2.06"
             }
         ],
@@ -3102,7 +3102,7 @@
         "mnemonics": [
             {
                 "mnemonic": "modsd",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "v3.0"
             }
         ],
@@ -3127,7 +3127,7 @@
         "mnemonics": [
             {
                 "mnemonic": "modud",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "v3.0"
             }
         ],
@@ -3150,7 +3150,7 @@
         "mnemonics": [
             {
                 "mnemonic": "cmpi",
-                "regs": "['BF,L,RA,SI']",
+                "regs": [ "BF,L,RA,SI" ],
                 "release": "P1"
             }
         ],
@@ -3179,7 +3179,7 @@
         "mnemonics": [
             {
                 "mnemonic": "cmp",
-                "regs": "['BF,L,RA,RB']",
+                "regs": [ "BF,L,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -3209,7 +3209,7 @@
         "mnemonics": [
             {
                 "mnemonic": "cmpli",
-                "regs": "['BF,L,RA,UI']",
+                "regs": [ "BF,L,RA,UI" ],
                 "release": "P1"
             }
         ],
@@ -3238,7 +3238,7 @@
         "mnemonics": [
             {
                 "mnemonic": "cmpl",
-                "regs": "['BF,L,RA,RB']",
+                "regs": [ "BF,L,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -3269,7 +3269,7 @@
         "mnemonics": [
             {
                 "mnemonic": "cmprb",
-                "regs": "['BF,L,RA,RB']",
+                "regs": [ "BF,L,RA,RB" ],
                 "release": "v3.0"
             }
         ],
@@ -3288,7 +3288,7 @@
         "mnemonics": [
             {
                 "mnemonic": "cmpeqb",
-                "regs": "['BF,RA,RB']",
+                "regs": [ "BF,RA,RB" ],
                 "release": "v3.0"
             }
         ],
@@ -3308,7 +3308,7 @@
         "mnemonics": [
             {
                 "mnemonic": "twi",
-                "regs": "['TO,RA,SI']",
+                "regs": [ "TO,RA,SI" ],
                 "release": "P1"
             }
         ],
@@ -3339,7 +3339,7 @@
         "mnemonics": [
             {
                 "mnemonic": "tw",
-                "regs": "['TO,RA,RB']",
+                "regs": [ "TO,RA,RB" ],
                 "release": "P1"
             }
         ],
@@ -3369,7 +3369,7 @@
         "mnemonics": [
             {
                 "mnemonic": "tdi",
-                "regs": "['TO,RA,SI']",
+                "regs": [ "TO,RA,SI" ],
                 "release": "PPC"
             }
         ],
@@ -3428,7 +3428,7 @@
         "mnemonics": [
             {
                 "mnemonic": "td",
-                "regs": "['TO,RA,RB']",
+                "regs": [ "TO,RA,RB" ],
                 "release": "PPC"
             }
         ],
@@ -3487,12 +3487,12 @@
         "mnemonics": [
             {
                 "mnemonic": "selii",
-                "regs": "['RA,IS,IB,XBI', '(Rc=0)']",
+                "regs": [ "RA,IS,IB,XBI", "(Rc=0)" ],
                 "release": "PPCAS"
             },
             {
                 "mnemonic": "selii.",
-                "regs": "['RA,IS,IB,XBI', '(Rc=1)']",
+                "regs": [ "RA,IS,IB,XBI", "(Rc=1)" ],
                 "release": "PPCAS"
             }
         ],
@@ -3519,12 +3519,12 @@
         "mnemonics": [
             {
                 "mnemonic": "selir",
-                "regs": "['RA,IS,RB,XBI', '(Rc=0)']",
+                "regs": [ "RA,IS,RB,XBI", "(Rc=0)" ],
                 "release": "PPCAS"
             },
             {
                 "mnemonic": "selir.",
-                "regs": "['RA,IS,RB,XBI', '(Rc=1)']",
+                "regs": [ "RA,IS,RB,XBI", "(Rc=1)" ],
                 "release": "PPCAS"
             }
         ],
@@ -3551,12 +3551,12 @@
         "mnemonics": [
             {
                 "mnemonic": "selri",
-                "regs": "['RA,RS,IB,XBI', '(Rc=0)']",
+                "regs": [ "RA,RS,IB,XBI", "(Rc=0)" ],
                 "release": "PPCAS"
             },
             {
                 "mnemonic": "selri.",
-                "regs": "['RA,RS,IB,XBI', '(Rc=1)']",
+                "regs": [ "RA,RS,IB,XBI", "(Rc=1)" ],
                 "release": "PPCAS"
             }
         ],
@@ -3583,12 +3583,12 @@
         "mnemonics": [
             {
                 "mnemonic": "selrr",
-                "regs": "['RA,RS,RB,XBI', '(Rc=0)']",
+                "regs": [ "RA,RS,RB,XBI", "(Rc=0)" ],
                 "release": "PPCAS"
             },
             {
                 "mnemonic": "selrr.",
-                "regs": "['RA,RS,RB,XBI', '(Rc=1)']",
+                "regs": [ "RA,RS,RB,XBI", "(Rc=1)" ],
                 "release": "PPCAS"
             }
         ],
@@ -3615,7 +3615,7 @@
         "mnemonics": [
             {
                 "mnemonic": "isel",
-                "regs": "['RT,RA,RB,BC']",
+                "regs": [ "RT,RA,RB,BC" ],
                 "release": "v2.03"
             }
         ],
@@ -3638,7 +3638,7 @@
         "mnemonics": [
             {
                 "mnemonic": "andi.",
-                "regs": "['RA,RS,UI']",
+                "regs": [ "RA,RS,UI" ],
                 "release": "P1"
             }
         ],
@@ -3656,7 +3656,7 @@
         "mnemonics": [
             {
                 "mnemonic": "andis.",
-                "regs": "['RA,RS,UI']",
+                "regs": [ "RA,RS,UI" ],
                 "release": "P1"
             }
         ],
@@ -3674,7 +3674,7 @@
         "mnemonics": [
             {
                 "mnemonic": "ori",
-                "regs": "['RA,RS,UI']",
+                "regs": [ "RA,RS,UI" ],
                 "release": "P1"
             }
         ],
@@ -3696,7 +3696,11 @@
         "description": "OR Immediate Shifted",
         "form": "D-form",
         "mnemonics": [
-
+            {
+                "mnemonic": "",
+                "regs": [  ],
+                "release": ""
+            }
         ],
         "code": [
             "RA := (RS) | (320 || UI || 160)"
@@ -3713,7 +3717,7 @@
         "mnemonics": [
             {
                 "mnemonic": "xori",
-                "regs": "['RA,RS,UI']",
+                "regs": [ "RA,RS,UI" ],
                 "release": "P1"
             }
         ],
@@ -3739,7 +3743,7 @@
         "mnemonics": [
             {
                 "mnemonic": "xoris",
-                "regs": "['RA,RS,UI']",
+                "regs": [ "RA,RS,UI" ],
                 "release": "P1"
             }
         ],
@@ -3757,12 +3761,12 @@
         "mnemonics": [
             {
                 "mnemonic": "and",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "and.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -3784,12 +3788,12 @@
         "mnemonics": [
             {
                 "mnemonic": "xor",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "xor.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -3809,12 +3813,12 @@
         "mnemonics": [
             {
                 "mnemonic": "nand",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "nand.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -3833,12 +3837,12 @@
         "mnemonics": [
             {
                 "mnemonic": "or",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "or.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -3859,12 +3863,12 @@
         "mnemonics": [
             {
                 "mnemonic": "nor",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "nor.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -3884,12 +3888,12 @@
         "mnemonics": [
             {
                 "mnemonic": "eqv",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "eqv.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -3908,12 +3912,12 @@
         "mnemonics": [
             {
                 "mnemonic": "andc",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "andc.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -3932,12 +3936,12 @@
         "mnemonics": [
             {
                 "mnemonic": "orc",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "orc.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -3956,12 +3960,12 @@
         "mnemonics": [
             {
                 "mnemonic": "extsb",
-                "regs": "['RA,RS', '(Rc=0)']",
+                "regs": [ "RA,RS", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "extsb.",
-                "regs": "['RA,RS', '(Rc=1)']",
+                "regs": [ "RA,RS", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -3981,12 +3985,12 @@
         "mnemonics": [
             {
                 "mnemonic": "extsh",
-                "regs": "['RA,RS', '(Rc=0)']",
+                "regs": [ "RA,RS", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "extsh.",
-                "regs": "['RA,RS', '(Rc=1)']",
+                "regs": [ "RA,RS", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -4006,12 +4010,12 @@
         "mnemonics": [
             {
                 "mnemonic": "cntlzw",
-                "regs": "['RA,RS', '(Rc=0)']",
+                "regs": [ "RA,RS", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "cntlzw.",
-                "regs": "['RA,RS', '(Rc=1)']",
+                "regs": [ "RA,RS", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -4037,12 +4041,12 @@
         "mnemonics": [
             {
                 "mnemonic": "cnttzw",
-                "regs": "['RA,', 'RS', '(', 'Rc=0', ')']",
+                "regs": [ "RA,", "RS", "(", "Rc=0", ")" ],
                 "release": "v3.0"
             },
             {
                 "mnemonic": "cnttzw.",
-                "regs": "['RA,', 'RS', '(', 'Rc=1', ')']",
+                "regs": [ "RA,", "RS", "(", "Rc=1", ")" ],
                 "release": "v3.0"
             }
         ],
@@ -4068,7 +4072,7 @@
         "mnemonics": [
             {
                 "mnemonic": "cmpb",
-                "regs": "['RA,RS,RB']",
+                "regs": [ "RA,RS,RB" ],
                 "release": "v2.05"
             }
         ],
@@ -4093,7 +4097,7 @@
         "mnemonics": [
             {
                 "mnemonic": "popcntb",
-                "regs": "['RA, RS']",
+                "regs": [ "RA, RS" ],
                 "release": "v2.02"
             }
         ],
@@ -4117,7 +4121,7 @@
         "mnemonics": [
             {
                 "mnemonic": "popcntw",
-                "regs": "['RA, R', 'S']",
+                "regs": [ "RA, R", "S" ],
                 "release": "v2.06"
             }
         ],
@@ -4140,9 +4144,9 @@
         "form": "X-form",
         "mnemonics": [
             {
-                "mnemonic": "prtyd RA,R",
-                "regs": "['S']",
-                "release": ""
+                "mnemonic": "prtyd",
+                "regs": [ "RA,R", "S" ],
+                "release": "v2.05"
             }
         ],
         "code": [
@@ -4164,8 +4168,9 @@
         "form": "X-form",
         "mnemonics": [
             {
-                "mnemonic": "prtyw RA,RS",
-                "release": ""
+                "mnemonic": "prtyw",
+                "regs": [ "RA,RS" ],
+                "release": "v2.05"
             }
         ],
         "code": [
@@ -4197,12 +4202,12 @@
         "mnemonics": [
             {
                 "mnemonic": "extsw",
-                "regs": "['RA,RS', '(Rc=0)']",
+                "regs": [ "RA,RS", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "extsw.",
-                "regs": "['RA,RS', '(Rc=1)']",
+                "regs": [ "RA,RS", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4223,7 +4228,7 @@
         "mnemonics": [
             {
                 "mnemonic": "popcntd",
-                "regs": "['RA, R', 'S']",
+                "regs": [ "RA, R", "S" ],
                 "release": "v2.06"
             }
         ],
@@ -4246,12 +4251,12 @@
         "mnemonics": [
             {
                 "mnemonic": "cntlzd",
-                "regs": "['RA,RS', '(Rc=0)']",
+                "regs": [ "RA,RS", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "cntlzd.",
-                "regs": "['RA,RS', '(Rc=1)']",
+                "regs": [ "RA,RS", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4274,12 +4279,12 @@
         "mnemonics": [
             {
                 "mnemonic": "cnttzd",
-                "regs": "['RA,', 'RS', '(', 'Rc=0', ')']",
+                "regs": [ "RA,", "RS", "(", "Rc=0", ")" ],
                 "release": "v3.0"
             },
             {
                 "mnemonic": "cnttzd.",
-                "regs": "['RA,', 'RS', '(', 'Rc=1', ')']",
+                "regs": [ "RA,", "RS", "(", "Rc=1", ")" ],
                 "release": "v3.0"
             }
         ],
@@ -4302,7 +4307,7 @@
         "mnemonics": [
             {
                 "mnemonic": "bpermd",
-                "regs": "['RA,RS,R', 'B]']",
+                "regs": [ "RA,RS,R", "B]" ],
                 "release": "v2.06"
             }
         ],
@@ -4329,12 +4334,12 @@
         "mnemonics": [
             {
                 "mnemonic": "rlwinm",
-                "regs": "['RA,RS,SH,MB,ME', '(Rc=0)']",
+                "regs": [ "RA,RS,SH,MB,ME", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "rlwinm.",
-                "regs": "['RA,RS,SH,MB,ME', '(Rc=1)']",
+                "regs": [ "RA,RS,SH,MB,ME", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -4361,12 +4366,12 @@
         "mnemonics": [
             {
                 "mnemonic": "rlwnm",
-                "regs": "['RA,RS,RB,MB,ME', '(Rc=0)']",
+                "regs": [ "RA,RS,RB,MB,ME", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "rlwnm.",
-                "regs": "['RA,RS,RB,MB,ME', '(Rc=1)']",
+                "regs": [ "RA,RS,RB,MB,ME", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -4394,12 +4399,12 @@
         "mnemonics": [
             {
                 "mnemonic": "rlwimi",
-                "regs": "['RA,RS,SH,MB,ME', '(Rc=0)']",
+                "regs": [ "RA,RS,SH,MB,ME", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "rlwimi.",
-                "regs": "['RA,RS,SH,MB,ME', '(Rc=1)']",
+                "regs": [ "RA,RS,SH,MB,ME", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -4426,12 +4431,12 @@
         "mnemonics": [
             {
                 "mnemonic": "rldicl",
-                "regs": "['RA,RS,SH,MB', '(Rc=0)']",
+                "regs": [ "RA,RS,SH,MB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "rldicl.",
-                "regs": "['RA,RS,SH,MB', '(Rc=1)']",
+                "regs": [ "RA,RS,SH,MB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4459,12 +4464,12 @@
         "mnemonics": [
             {
                 "mnemonic": "rldicr",
-                "regs": "['RA,RS,SH,ME', '(Rc=0)']",
+                "regs": [ "RA,RS,SH,ME", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "rldicr.",
-                "regs": "['RA,RS,SH,ME', '(Rc=1)']",
+                "regs": [ "RA,RS,SH,ME", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4492,12 +4497,12 @@
         "mnemonics": [
             {
                 "mnemonic": "rldic",
-                "regs": "['RA,RS,SH,MB', '(Rc=0)']",
+                "regs": [ "RA,RS,SH,MB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "rldic.",
-                "regs": "['RA,RS,SH,MB', '(Rc=1)']",
+                "regs": [ "RA,RS,SH,MB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4525,12 +4530,12 @@
         "mnemonics": [
             {
                 "mnemonic": "rldcl",
-                "regs": "['RA,RS,RB,MB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB,MB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "rldcl.",
-                "regs": "['RA,RS,RB,MB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB,MB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4558,12 +4563,12 @@
         "mnemonics": [
             {
                 "mnemonic": "rldcr",
-                "regs": "['RA,RS,RB,ME', '(Rc=0)']",
+                "regs": [ "RA,RS,RB,ME", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "rldcr.",
-                "regs": "['RA,RS,RB,ME', '(Rc=1)']",
+                "regs": [ "RA,RS,RB,ME", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4589,12 +4594,12 @@
         "mnemonics": [
             {
                 "mnemonic": "rldimi",
-                "regs": "['RA,RS,SH,MB', '(Rc=0)']",
+                "regs": [ "RA,RS,SH,MB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "rldimi.",
-                "regs": "['RA,RS,SH,MB', '(Rc=1)']",
+                "regs": [ "RA,RS,SH,MB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4632,12 +4637,12 @@
         "mnemonics": [
             {
                 "mnemonic": "slw",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "slw.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -4664,12 +4669,12 @@
         "mnemonics": [
             {
                 "mnemonic": "srw",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "srw.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -4696,12 +4701,12 @@
         "mnemonics": [
             {
                 "mnemonic": "srawi",
-                "regs": "['RA,RS,SH', '(Rc=0)']",
+                "regs": [ "RA,RS,SH", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "srawi.",
-                "regs": "['RA,RS,SH', '(Rc=1)']",
+                "regs": [ "RA,RS,SH", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -4736,12 +4741,12 @@
         "mnemonics": [
             {
                 "mnemonic": "sraw",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "P1"
             },
             {
                 "mnemonic": "sraw.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "P1"
             }
         ],
@@ -4782,12 +4787,12 @@
         "mnemonics": [
             {
                 "mnemonic": "sld",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "sld.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4813,12 +4818,12 @@
         "mnemonics": [
             {
                 "mnemonic": "srd",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "srd.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4844,12 +4849,12 @@
         "mnemonics": [
             {
                 "mnemonic": "sradi",
-                "regs": "['RA,RS,SH', '(Rc=0)']",
+                "regs": [ "RA,RS,SH", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "sradi.",
-                "regs": "['RA,RS,SH', '(Rc=1)']",
+                "regs": [ "RA,RS,SH", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4883,12 +4888,12 @@
         "mnemonics": [
             {
                 "mnemonic": "srad",
-                "regs": "['RA,RS,RB', '(Rc=0)']",
+                "regs": [ "RA,RS,RB", "(Rc=0)" ],
                 "release": "PPC"
             },
             {
                 "mnemonic": "srad.",
-                "regs": "['RA,RS,RB', '(Rc=1)']",
+                "regs": [ "RA,RS,RB", "(Rc=1)" ],
                 "release": "PPC"
             }
         ],
@@ -4926,7 +4931,7 @@
         "mnemonics": [
             {
                 "mnemonic": "extswsli",
-                "regs": "['RA,RS,SH', '(', 'Rc=0', ')']",
+                "regs": [ "RA,RS,SH", "(", "Rc=0", ")" ],
                 "release": "v3.0"
             }
         ],
@@ -4947,7 +4952,7 @@
         "mnemonics": [
             {
                 "mnemonic": "cdtbcd",
-                "regs": "['RA, RS']",
+                "regs": [ "RA, RS" ],
                 "release": "v2.06"
             }
         ],
@@ -4972,7 +4977,7 @@
         "mnemonics": [
             {
                 "mnemonic": "cbcdtd",
-                "regs": "['RA, RS']",
+                "regs": [ "RA, RS" ],
                 "release": "v2.06"
             }
         ],
@@ -4999,7 +5004,7 @@
         "mnemonics": [
             {
                 "mnemonic": "addg6s",
-                "regs": "['RT,RA,RB']",
+                "regs": [ "RT,RA,RB" ],
                 "release": "v2.06"
             }
         ],
@@ -5031,7 +5036,7 @@
         "mnemonics": [
             {
                 "mnemonic": "dsixes",
-                "regs": "['RA']",
+                "regs": [ "RA" ],
                 "release": "PPCAS"
             }
         ],
@@ -5059,7 +5064,7 @@
         "mnemonics": [
             {
                 "mnemonic": "dtcs.",
-                "regs": "['RA,RS']",
+                "regs": [ "RA,RS" ],
                 "release": "PPCAS"
             }
         ],
@@ -5089,7 +5094,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mfvsrd",
-                "regs": "['RA,XS']",
+                "regs": [ "RA,XS" ],
                 "release": "v2.07"
             }
         ],
@@ -5106,7 +5111,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mfvsrld",
-                "regs": "['RA,XS']",
+                "regs": [ "RA,XS" ],
                 "release": "v3.0"
             }
         ],
@@ -5123,7 +5128,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mfvsrwz",
-                "regs": "['RA,XS']",
+                "regs": [ "RA,XS" ],
                 "release": "v2.07"
             }
         ],
@@ -5140,7 +5145,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mtvsrd",
-                "regs": "['XT,RA']",
+                "regs": [ "XT,RA" ],
                 "release": "v2.07"
             }
         ],
@@ -5157,7 +5162,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mtvsrwa",
-                "regs": "['XT,RA']",
+                "regs": [ "XT,RA" ],
                 "release": "v2.07"
             }
         ],
@@ -5174,7 +5179,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mtvsrwz",
-                "regs": "['XT,RA']",
+                "regs": [ "XT,RA" ],
                 "release": "v2.07"
             }
         ],
@@ -5191,7 +5196,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mtvsrdd",
-                "regs": "['XT,RA,RB']",
+                "regs": [ "XT,RA,RB" ],
                 "release": "v3.0"
             }
         ],
@@ -5208,7 +5213,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mtvsrws",
-                "regs": "['XT,RA']",
+                "regs": [ "XT,RA" ],
                 "release": "v3.0"
             }
         ],
@@ -5225,7 +5230,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mtspr",
-                "regs": "['SPR,RS']",
+                "regs": [ "SPR,RS" ],
                 "release": "P1"
             }
         ],
@@ -5277,7 +5282,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mfspr",
-                "regs": "['RT,SPR']",
+                "regs": [ "RT,SPR" ],
                 "release": "P1"
             }
         ],
@@ -5324,7 +5329,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mcrxrx",
-                "regs": "['BF']",
+                "regs": [ "BF" ],
                 "release": "v3.0"
             }
         ],
@@ -5342,7 +5347,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mcrxrt",
-                "regs": "['BF']",
+                "regs": [ "BF" ],
                 "release": "PPCAS"
             }
         ],
@@ -5363,7 +5368,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mtocrf",
-                "regs": "['FXM,RS']",
+                "regs": [ "FXM,RS" ],
                 "release": "v2.01"
             }
         ],
@@ -5384,7 +5389,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mtcrf",
-                "regs": "['FXM,RS']",
+                "regs": [ "FXM,RS" ],
                 "release": "P1"
             }
         ],
@@ -5410,7 +5415,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mfocrf",
-                "regs": "['RT,FXM']",
+                "regs": [ "RT,FXM" ],
                 "release": "v2.01"
             }
         ],
@@ -5434,7 +5439,7 @@
         "mnemonics": [
             {
                 "mnemonic": "mfcr",
-                "regs": "['RT']",
+                "regs": [ "RT" ],
                 "release": "P1"
             }
         ],
@@ -5451,7 +5456,7 @@
         "mnemonics": [
             {
                 "mnemonic": "setb",
-                "regs": "['RT,BFA']",
+                "regs": [ "RT,BFA" ],
                 "release": "v3.0"
             }
         ],

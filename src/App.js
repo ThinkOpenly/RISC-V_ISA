@@ -12,6 +12,69 @@ class App extends Component {
         };
     }
 
+    displayRegs(regs) {
+        let all = []
+        for (let i = 0; i < regs.length; i++) {
+            all.push(
+                <td>{regs[i]}</td>
+            );
+        }
+        return(all);
+    }
+
+    displayMnemonics(item) {
+        let all = [];
+        for (let i = 0; i < item.mnemonics.length; i++) {
+            all.push(
+                <tr>
+                <td>{item.mnemonics[i].mnemonic}</td>
+                {this.displayRegs(item.mnemonics[i].regs)}
+                </tr>
+            );
+        }
+        return (all);
+    }
+
+    displayCode(item) {
+        let all = [];
+        for (let i = 0; i < item.code.length; i++) {
+            all.push(
+                <pre>
+                {item.code[i]}
+                </pre>
+            );
+        }
+        return (all);
+    }
+
+    displayBody(item) {
+        let all = [];
+        for (let i = 0; i < item.body.length; i++) {
+            all.push(
+                <p>{item.body[i]}</p>
+            );
+        }
+        return (all);
+    }
+
+    genItem(item) {
+        return (
+            <div className="expandContainer">
+                    <div className="expandContainer">
+                        <div className="column">
+                            <h4>Mnemonics:</h4>
+                            <table>
+                            {this.displayMnemonics(item)}
+                            </table>
+                            <h4>Code:</h4>
+                            {this.displayCode(item)}
+                            {this.displayBody(item)}
+                        </div>
+                    </div>
+            </div>
+        );
+    }
+
     genData = data => {
         let allJson = [];
         for (let i = 0; i < data.length; i++) {
@@ -26,6 +89,7 @@ class App extends Component {
                         console.log("heading click");
                     }}
                 >
+                    {this.genItem(data[i])}
                     <div className="expandContainer">
                         <div className="column">
                             <h4>Form: </h4>

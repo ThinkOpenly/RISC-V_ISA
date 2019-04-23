@@ -25,10 +25,13 @@ class Mnemonic:
 	def outputJSON(self,line_prefix,line_postfix):
 		print(line_prefix + t + t + "{" + line_postfix)
 		print(line_prefix + t + t + t + "\"mnemonic\": \"" + self.mnemonic + "\"",sep="",end="")
-		if len(self.rest) > 0:
-			print(",")
-			print(line_prefix + t + t + t + "\"regs\": \"" + str(self.rest) + "\"",sep="",end="")
 		print(",")
+		print(line_prefix + t + t + t + "\"regs\": [ ",sep="",end="")
+		comma = ''
+		for reg in self.rest:
+			print(comma + "\"" + reg + "\"",sep="",end="")
+			comma = ", "
+		print(" ],")
 		print(line_prefix + t + t + t + "\"release\": \"" + str(self.release) + "\"",sep="",end="")
 		print("")
 		print(line_prefix + t + t + "}",sep="",end="")
@@ -169,7 +172,14 @@ def ParaLine(f,tag):
 				s = getString(f).strip()
 				if len(s) > 0:
 					if len(inst.forms[len(inst.forms)-1].mnemonic) == 0:
-						inst.forms[len(inst.forms)-1].mnemonic = s.strip()
+						s = s.strip().split()
+						if len(s) > 0:
+							inst.forms[len(inst.forms)-1].mnemonic = s[0]
+							del s[0]
+						if len(s) > 0:
+							for r in s:
+								if len(r) > 0:
+									inst.forms[len(inst.forms)-1].rest.append(r)
 					else:
 						inst.forms[len(inst.forms)-1].rest.append(s.strip())
 			elif tag == "code_example":
@@ -412,6 +422,8 @@ for inst in insts:
 		if form.mnemonic != "":
 			forms.append(form)
 	inst.forms = forms
+	if len(inst.forms) == 0:
+		inst.forms.append(Mnemonic())
 
 print("[")
 comma=''
