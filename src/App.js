@@ -60,30 +60,30 @@ class App extends Component {
     }
 
     displayMnemonics(item) {
-        let all = [];
+        let s = "";
         let newline = "";
         const spaces = "            ";
 
         for (let i = 0; i < item.mnemonics.length; i++) {
             let gap = spaces.length - item.mnemonics[i].mnemonic.length;
             if (gap < 2) gap = 2;
-            all.push(
-                newline +
+            s += newline +
                 item.mnemonics[i].mnemonic +
                 spaces.substr(0,gap) +
-                this.displayRegs(item.mnemonics[i].regs)
-            );
+                this.displayRegs(item.mnemonics[i].regs);
             newline = "\n\r";
         }
-        return all;
+        return s;
     }
 
     displayCode(item) {
-        let all = [];
+        let s = "";
+        let newline = "";
         for (let i = 0; i < item.code.length; i++) {
-            all.push(item.code[i] + "\n");
+            s += newline + item.code[i];
+            newline = "\n";
         }
-        return all;
+        return s;
     }
 
     displayBody(item) {
