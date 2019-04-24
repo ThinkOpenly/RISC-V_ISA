@@ -82,6 +82,24 @@ class App extends Component {
         );
     }
 
+    genTitle(item) {
+        let s = "";
+        let comma = '';
+        for (let i = 0; i < item.mnemonics.length; i++) {
+            s = s + comma + item.mnemonics[i].mnemonic;
+            comma = ', ';
+        }
+        return (
+            <table className="item">
+                <tbody>
+                    <tr>
+                        <td className="itemtitledesc">{item.description}</td>
+                        <td className="itemtitlemnem">{s}</td>
+                    </tr>
+                </tbody>
+            </table>);
+    }
+
     genData = data => {
         let allJson = [];
         for (let i = 0; i < data.length; i++) {
@@ -90,7 +108,7 @@ class App extends Component {
                     if (this.state.releaseSet.includes(data[i].mnemonics[m].release)) {
                         allJson.push(
                             <AccordionItem
-                                title={data[i].description}
+                                title={this.genTitle(data[i])}
                                 onClick={e => {
                                     console.log("click");
                                 }}
