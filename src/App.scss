@@ -68,8 +68,14 @@
 
 .itemtitlemnem {
     width: 50%;
-    background-color: lightgrey;
     font-family: monospace;
+    font-weight: bold;
+}
+
+.pseudocode {
+    pre {
+        font-weight: bold;
+    }
 }
 
 h1 {

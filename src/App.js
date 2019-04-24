@@ -61,14 +61,19 @@ class App extends Component {
 
     displayMnemonics(item) {
         let all = [];
+        let newline = "";
+        const spaces = "            ";
 
         for (let i = 0; i < item.mnemonics.length; i++) {
+            let gap = spaces.length - item.mnemonics[i].mnemonic.length;
+            if (gap < 2) gap = 2;
             all.push(
+                newline +
                 item.mnemonics[i].mnemonic +
-                    "       " +
-                    this.displayRegs(item.mnemonics[i].regs) +
-                    "\n\r"
+                spaces.substr(0,gap) +
+                this.displayRegs(item.mnemonics[i].regs)
             );
+            newline = "\n\r";
         }
         return all;
     }
@@ -78,8 +83,6 @@ class App extends Component {
         for (let i = 0; i < item.code.length; i++) {
             all.push(item.code[i] + "\n");
         }
-        console.log(all);
-
         return all;
     }
 
@@ -95,22 +98,19 @@ class App extends Component {
         return (
             <div className="expandContainer">
                 <div className="column">
-                    <h4>Mnemonics:</h4>
                     <CodeSnippet
+                        className="pseudocode"
                         feedback="Copied to clipboard"
                         copyButtonDescription="Copy"
-                        ariaLabel="mneumonic"
-                        type="inline"
+                        ariaLabel="mnemonic"
                         onClick={() => {
                             console.log("clicked");
                         }}
-                        type={item.mnemonics.length > 1 ? "multi" : "inline"}
+                        type="multi"
                     >
                         {this.displayMnemonics(item)}
                     </CodeSnippet>
-                    <br />
-                    <br />
-                    <h4>Code:</h4>
+                    <h4>Pseudocode:</h4>
                     <CodeSnippet
                         type="multi"
                         feedback="Copied to clipboard"
