@@ -47,6 +47,18 @@
     display: inline-block;
 }
 
+.mnemonic {
+    padding-right: 80px;
+    font-family: monospace;
+    font-weight: bold;
+    background-color: lightgrey;
+}
+
+.code {
+    font-family: monospace;
+    background-color: lightgrey;
+}
+
 h1 {
     text-align: center;
 }

@@ -21,7 +21,7 @@ class App extends Component {
         let all = []
         for (let i = 0; i < regs.length; i++) {
             all.push(
-                <td>{regs[i]}</td>
+                <td className="mnemonic">{regs[i]}</td>
             );
         }
         return(all);
@@ -32,7 +32,7 @@ class App extends Component {
         for (let i = 0; i < item.mnemonics.length; i++) {
             all.push(
                 <tr>
-                <td>{item.mnemonics[i].mnemonic}</td>
+                <td className="mnemonic">{item.mnemonics[i].mnemonic}</td>
                 {this.displayRegs(item.mnemonics[i].regs)}
                 </tr>
             );
@@ -44,7 +44,7 @@ class App extends Component {
         let all = [];
         for (let i = 0; i < item.code.length; i++) {
             all.push(
-                <pre>
+                <pre className="code">
                 {item.code[i]}
                 </pre>
             );
