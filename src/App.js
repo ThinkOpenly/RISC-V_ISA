@@ -6,7 +6,8 @@ import { Accordion, AccordionItem, Search, Checkbox } from "carbon-components-re
 
 class App extends Component {
 
-    releases = [ "P1", "P2", "PPC", "v2.00", "v2.01", "v2.02", "v2.03", "v2.04", "v2.05", "v2.06", "v2.07", "v3.0", "v3.0B" ];
+    releases = [ "P1"    , "P2"    , "PPC"   , "v2.00" , "v2.01"  , "v2.02" , "v2.03" , "v2.04"  , "v2.05" , "v2.06" , "v2.07" , "v3.0"  , "v3.0B"  ];
+    cores =    [ "POWER1", "POWER2", "PPC970", "POWER4", "POWER4+", "POWER5", ""      , "POWER5+", "POWER6", "POWER7", "POWER8", "POWER9", "future" ];
 
     constructor() {
         super();
@@ -127,6 +128,19 @@ class App extends Component {
         return allJson;
     };
 
+    genReleaseLabel(i) {
+        return (
+            <table className="releaselabel">
+                <tbody>
+                    <tr>
+                        <td className="releaseversion">{this.releases[i]}</td>
+                        <td className="releasecore">{this.cores[i]}</td>
+                    </tr>
+                </tbody>
+            </table>
+        );
+    }
+            
     genReleaseCheckboxes() {
         let all = [];
         for (let i = 0; i < this.releases.length; i++) {
@@ -134,7 +148,7 @@ class App extends Component {
                 <Checkbox defaultChecked
                           className="checkbox"
                           id={this.releases[i]}
-                          labelText={this.releases[i]}
+                          labelText={this.genReleaseLabel(i)}
                           disabled={false}
                           hideLabel={false}
                           wrapperClassName=""
