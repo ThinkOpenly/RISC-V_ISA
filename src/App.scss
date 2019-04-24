@@ -27,7 +27,7 @@
     width: 20%;
     display: inline-block;
     vertical-align: top;
-    padding-left: 5%;
+    padding: 2%;
 }
 
 .accordianContainer {
@@ -54,23 +54,12 @@
     background-color: lightgrey;
 }
 
-.code {
-    font-family: monospace;
-    background-color: lightgrey;
-}
-
-.releaselabel {
-}
-
 .releaseversion {
     width: 60px;
 }
 
-.releasecore {
-}
-
 .item {
-    width: 100%
+    width: 100%;
 }
 
 .itemtitledesc {
