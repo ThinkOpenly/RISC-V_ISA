@@ -257,24 +257,27 @@ class App extends Component {
                         <Nav />
                         <div className="mainContainer">
                             <div className="filterContainer">
-                                <fieldset className="checkboxes">
-                                    <legend className="filter-heading">
-                                        Restrict results to ISA levels:
-                                    </legend>
-                                    <Checkbox
-                                        defaultChecked
-                                        className="checkbox"
-                                        id="all-releases"
-                                        labelText="[all]"
-                                        disabled={false}
-                                        hideLabel={false}
-                                        wrapperClassName=""
-                                        onChange={e => {
-                                            this.filterAll(e);
-                                        }}
-                                    />
-                                    {this.genReleaseCheckboxes()}
-                                </fieldset>
+                                <Accordion>
+                                    <AccordionItem
+                                        title="ISA levels"
+                                    >
+                                        <fieldset className="checkboxes">
+                                            <Checkbox
+                                                defaultChecked
+                                                className="checkbox"
+                                                id="all-releases"
+                                                labelText="[all]"
+                                                disabled={false}
+                                                hideLabel={false}
+                                                wrapperClassName=""
+                                                onChange={e => {
+                                                    this.filterAll(e);
+                                                }}
+                                            />
+                                            {this.genReleaseCheckboxes()}
+                                        </fieldset>
+                                    </AccordionItem>
+                                </Accordion>
                             </div>
                             <div className="accordianContainer">
                                 <div className="searchContainer">
