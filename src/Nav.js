@@ -7,21 +7,25 @@ import {
 } from "carbon-components-react/lib/components/UIShell";
 
 class Nav extends Component {
+    /*
     constructor() {
         super();
     }
+    */
 
     render() {
         return (
             <div>
-                <Header>
+                <Header aria-label="PowerISA">
                     <HeaderName href="#" prefix={"Power"}>
-                        ISA
+                        ISA Reference
                     </HeaderName>
                     <HeaderNavigation aria-label="ISA">
-                        <HeaderMenuItem href="#">Will</HeaderMenuItem>
-                        <HeaderMenuItem href="#">We</HeaderMenuItem>
-                        <HeaderMenuItem href="#">Navigate?</HeaderMenuItem>
+                        <HeaderMenuItem>|</HeaderMenuItem>
+                        <HeaderMenuItem href="https://www.IBM.com">IBM</HeaderMenuItem>
+                        <HeaderMenuItem href="https://OpenPOWERFoundation.org">The OpenPOWER Foundation</HeaderMenuItem>
+                        <HeaderMenuItem href="https://www.ibm.com/systems/power/openpower/">IBM Portal for OpenPOWER</HeaderMenuItem>
+                        <HeaderMenuItem href="https://developer.ibm.com/linuxonpower/">Linux on IBM Power Developer Portal</HeaderMenuItem>
                     </HeaderNavigation>
                 </Header>
             </div>
