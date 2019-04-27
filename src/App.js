@@ -10,43 +10,54 @@ import {
     CodeSnippet
 } from "carbon-components-react";
 
+const releases = [
+    "P1",
+    "P2",
+    "PPC",
+    "v2.00",
+    "v2.01",
+    "v2.02",
+    "v2.03",
+    "v2.04",
+    "v2.05",
+    "v2.06",
+    "v2.07",
+    "v3.0",
+    "v3.0B"
+];
+
+const cores = [
+    "POWER1",
+    "POWER2",
+    "PPC970",
+    "POWER4",
+    "POWER4+",
+    "POWER5",
+    "",
+    "POWER5+",
+    "POWER6",
+    "POWER7",
+    "POWER8",
+    "POWER9",
+    "future"
+];
+
+var classes = [];
+
+function genClassList(tree,index,array) {
+    classes.push(tree.name);
+    tree.chapters.forEach(genClassList);
+}
+
 class App extends Component {
-    releases = [
-        "P1",
-        "P2",
-        "PPC",
-        "v2.00",
-        "v2.01",
-        "v2.02",
-        "v2.03",
-        "v2.04",
-        "v2.05",
-        "v2.06",
-        "v2.07",
-        "v3.0",
-        "v3.0B"
-    ];
-    cores = [
-        "POWER1",
-        "POWER2",
-        "PPC970",
-        "POWER4",
-        "POWER4+",
-        "POWER5",
-        "",
-        "POWER5+",
-        "POWER6",
-        "POWER7",
-        "POWER8",
-        "POWER9",
-        "future"
-    ];
 
     constructor() {
         super();
+        ISA.chapters.forEach(genClassList);
         this.state = {
             data: ISA.instructions,
-            releaseSet: this.releases,
+            releaseSet: releases,
+            classSet: classes,
             search: ""
         };
     }
@@ -157,6 +168,9 @@ class App extends Component {
                     if (
                         this.state.releaseSet.includes(
                             data[i].mnemonics[m].release
+                        ) &&
+                        this.state.classSet.includes(
+                            data[i].category
                         )
                     ) {
                         allJson.push(
@@ -185,8 +199,8 @@ class App extends Component {
             <table className="releaselabel">
                 <tbody>
                     <tr>
-                        <td className="releaseversion">{this.releases[i]}</td>
-                        <td className="releasecore">{this.cores[i]}</td>
+                        <td className="releaseversion">{releases[i]}</td>
+                        <td className="releasecore">{cores[i]}</td>
                     </tr>
                 </tbody>
             </table>
@@ -195,18 +209,39 @@ class App extends Component {
 
     genReleaseCheckboxes() {
         let all = [];
-        for (let i = 0; i < this.releases.length; i++) {
+        for (let i = 0; i < releases.length; i++) {
             all.push(
                 <Checkbox
                     defaultChecked
                     className="checkbox"
-                    id={this.releases[i]}
+                    id={releases[i]}
                     labelText={this.genReleaseLabel(i)}
                     disabled={false}
                     hideLabel={false}
                     wrapperClassName=""
                     onChange={e => {
-                        this.filter(e, this.releases[i]);
+                        this.filterByReleases(e, releases[i]);
+                    }}
+                />
+            );
+        }
+        return all;
+    }
+
+    genClassCheckboxes(chapters) {
+        let all = [];
+        for (let i = 0; i < chapters.length; i++) {
+            all.push(
+                <Checkbox
+                    defaultChecked
+                    className="checkbox"
+                    id={chapters[i].name}
+                    labelText={chapters[i].name}
+                    disabled={false}
+                    hideLabel={false}
+                    wrapperClassName=""
+                    onChange={e => {
+                        this.filterByClasses(e, chapters[i].name);
                     }}
                 />
             );
@@ -219,19 +254,31 @@ class App extends Component {
         this.setState({ search: id.value });
     }
 
-    filterAll(set) {
+    filterAllReleases(set) {
         let newSet = [];
         if (set) {
-            newSet = this.releases;
+            newSet = releases;
         }
         for (let i = 0; i < this.releases.length; i++) {
-            let id = document.getElementById(this.releases[i]);
+            let id = document.getElementById(releases[i]);
             id.checked = set;
         }
         this.setState({ releaseSet: newSet });
     }
 
-    filter(set, b) {
+    filterAllClasses(set) {
+        let newSet = [];
+        if (set) {
+            newSet = classes;
+        }
+        for (let i = 0; i < classes.length; i++) {
+            let id = document.getElementById(classes[i]);
+            id.checked = set;
+        }
+        this.setState({ classSet: newSet });
+    }
+
+    filterByReleases(set, b) {
         let newSet = [];
         if (set) {
             newSet = this.state.releaseSet;
@@ -243,6 +290,20 @@ class App extends Component {
             }
         }
         this.setState({ releaseSet: newSet });
+    }
+
+    filterByClasses(set, b) {
+        let newSet = [];
+        if (set) {
+            newSet = this.state.classSet;
+            newSet.push(b);
+        } else {
+            for (let i = 0; i < this.state.classSet.length; i++) {
+                if (this.state.classSet[i] === b) continue;
+                newSet.push(this.state.classSet[i]);
+            }
+        }
+        this.setState({ classSet: newSet });
     }
 
     render() {
@@ -271,10 +332,31 @@ class App extends Component {
                                                 hideLabel={false}
                                                 wrapperClassName=""
                                                 onChange={e => {
-                                                    this.filterAll(e);
+                                                    this.filterAllReleases(e);
                                                 }}
                                             />
                                             {this.genReleaseCheckboxes()}
+                                        </fieldset>
+                                    </AccordionItem>
+                                </Accordion>
+                                <Accordion>
+                                    <AccordionItem
+                                        title="Instruction classes"
+                                    >
+                                        <fieldset className="checkboxes">
+                                            <Checkbox
+                                                defaultChecked
+                                                className="checkbox"
+                                                id="all-classes"
+                                                labelText="[all]"
+                                                disabled={false}
+                                                hideLabel={false}
+                                                wrapperClassName=""
+                                                onChange={e => {
+                                                    this.filterAllClasses(e);
+                                                }}
+                                            />
+                                            {this.genClassCheckboxes(ISA.chapters)}
                                         </fieldset>
                                     </AccordionItem>
                                 </Accordion>
