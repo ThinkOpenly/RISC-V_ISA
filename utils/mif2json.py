@@ -413,6 +413,8 @@ while c:
 		TextFlow(f)
 	elif token == "Tbls":
 		Tbls(f)
+	elif token == "MIFFile":
+		inst = ''
 	FindElementEnd(f)
 
 for inst in insts:
@@ -425,10 +427,13 @@ for inst in insts:
 	if len(inst.forms) == 0:
 		inst.forms.append(Mnemonic())
 
-print("[")
+print("{")
+print(t + "\"instructions\": [")
 comma=''
 for inst in insts:
 	print(comma,sep="",end="")
-	inst.outputJSON(t,'')
+	inst.outputJSON(t+t,'')
 	comma=',\n'
-print("\n]")
+print("")
+print(t + "]")
+print("}")

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.scss";
 import Nav from "./Nav";
-import data from "./ISA.json";
+import ISA from "./ISA.json";
 import {
     Accordion,
     AccordionItem,
@@ -45,7 +45,7 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            data: data,
+            data: ISA.instructions,
             releaseSet: this.releases,
             search: ""
         };
