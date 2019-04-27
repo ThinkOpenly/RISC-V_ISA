@@ -3,6 +3,7 @@
         {
             "description": "Load Byte and Zero",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lbz",
@@ -25,6 +26,7 @@
         {
             "description": "Load Byte and Zero Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lbzx",
@@ -47,6 +49,7 @@
         {
             "description": "Load Byte and Zero with Update",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lbzu",
@@ -70,6 +73,7 @@
         {
             "description": "Load Byte and Zero with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lbzux",
@@ -93,6 +97,7 @@
         {
             "description": "Load Halfword and Zero",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lhz",
@@ -115,6 +120,7 @@
         {
             "description": "Load Halfword and Zero Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lhzx",
@@ -137,6 +143,7 @@
         {
             "description": "Load Halfword and Zero with Update",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lhzu",
@@ -160,6 +167,7 @@
         {
             "description": "Load Halfword and Zero with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lhzux",
@@ -183,6 +191,7 @@
         {
             "description": "Load Halfword Algebraic",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lha",
@@ -206,6 +215,7 @@
         {
             "description": "Load Halfword Algebraic Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lhax",
@@ -229,6 +239,7 @@
         {
             "description": "Load Halfword Algebraic with Update",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lhau",
@@ -253,6 +264,7 @@
         {
             "description": "Load Halfword Algebraic with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lhaux",
@@ -277,6 +289,7 @@
         {
             "description": "Load Word and Zero",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lwz",
@@ -299,6 +312,7 @@
         {
             "description": "Load Word and Zero Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lwzx",
@@ -321,6 +335,7 @@
         {
             "description": "Load Word and Zero with Update",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lwzu",
@@ -344,6 +359,7 @@
         {
             "description": "Load Word and Zero with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lwzux",
@@ -367,6 +383,7 @@
         {
             "description": "Load Word Algebraic",
             "form": "DS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lwa",
@@ -390,6 +407,7 @@
         {
             "description": "Load Word Algebraic Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lwax",
@@ -413,6 +431,7 @@
         {
             "description": "Load Word Algebraic with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lwaux",
@@ -437,6 +456,7 @@
         {
             "description": "Load Doubleword",
             "form": "DS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "ld",
@@ -459,6 +479,7 @@
         {
             "description": "Load Doubleword Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "ldx",
@@ -481,6 +502,7 @@
         {
             "description": "Load Doubleword with Update",
             "form": "DS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "ldu",
@@ -504,6 +526,7 @@
         {
             "description": "Load Doubleword with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "ldux",
@@ -527,6 +550,7 @@
         {
             "description": "Load Word and Zero Monitored Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lwzmx",
@@ -583,6 +607,7 @@
         {
             "description": "Load Doubleword Monitored Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "ldmx",
@@ -632,6 +657,7 @@
         {
             "description": "Store Byte",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stb",
@@ -655,6 +681,7 @@
         {
             "description": "Store Byte Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stbx",
@@ -678,6 +705,7 @@
         {
             "description": "Store Byte with Update",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stbu",
@@ -702,6 +730,7 @@
         {
             "description": "Store Byte with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stbux",
@@ -726,6 +755,7 @@
         {
             "description": "Store Halfword",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "sth",
@@ -749,6 +779,7 @@
         {
             "description": "Store Halfword Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "sthx",
@@ -772,6 +803,7 @@
         {
             "description": "Store Halfword with Update",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "sthu",
@@ -796,6 +828,7 @@
         {
             "description": "Store Halfword with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "sthux",
@@ -820,6 +853,7 @@
         {
             "description": "Store Word",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stw",
@@ -843,6 +877,7 @@
         {
             "description": "Store Word Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stwx",
@@ -866,6 +901,7 @@
         {
             "description": "Store Word with Update",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stwu",
@@ -890,6 +926,7 @@
         {
             "description": "Store Word with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stwux",
@@ -914,6 +951,7 @@
         {
             "description": "Store Doubleword",
             "form": "DS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "std",
@@ -937,6 +975,7 @@
         {
             "description": "Store Doubleword Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stdx",
@@ -960,6 +999,7 @@
         {
             "description": "Store Doubleword with Update",
             "form": "DS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stdu",
@@ -984,6 +1024,7 @@
         {
             "description": "Store Doubleword with Update Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stdux",
@@ -1008,6 +1049,7 @@
         {
             "description": "Store Quadword",
             "form": "DS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stq",
@@ -1040,6 +1082,7 @@
         {
             "description": "Load Quadword",
             "form": "DQ-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lq",
@@ -1077,6 +1120,7 @@
         {
             "description": "Store Quadword",
             "form": "DS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stq",
@@ -1111,6 +1155,7 @@
         {
             "description": "Load Tagged Pointer",
             "form": "DQE-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "ltptr",
@@ -1167,6 +1212,7 @@
         {
             "description": "Load Halfword Byte-Reverse Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lhbrx",
@@ -1192,6 +1238,7 @@
         {
             "description": "Store Halfword Byte-Reverse Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "sthbrx",
@@ -1217,6 +1264,7 @@
         {
             "description": "Load Word Byte-Reverse Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lwbrx",
@@ -1246,6 +1294,7 @@
         {
             "description": "Store Word Byte-Reverse Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stwbrx",
@@ -1274,6 +1323,7 @@
         {
             "description": "Load Doubleword Byte-Reverse Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "ldbrx",
@@ -1311,6 +1361,7 @@
         {
             "description": "Store Doubleword Byte-Reverse Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stdbrx",
@@ -1348,6 +1399,7 @@
         {
             "description": "Load Multiple Word",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lmw",
@@ -1381,6 +1433,7 @@
         {
             "description": "Store Multiple Word",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stmw",
@@ -1412,6 +1465,7 @@
         {
             "description": "",
             "form": "",
+            "category": "",
             "mnemonics": [
                 {
                     "mnemonic": "stmd",
@@ -1437,6 +1491,7 @@
         {
             "description": "Load String Word Immediate",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lswi",
@@ -1485,6 +1540,7 @@
         {
             "description": "Load String Word Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lswx",
@@ -1537,6 +1593,7 @@
         {
             "description": "",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lsdi",
@@ -1582,6 +1639,7 @@
         {
             "description": "Load String Doubleword Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "lsdx",
@@ -1631,6 +1689,7 @@
         {
             "description": "Store String Word Immediate",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stswi",
@@ -1673,6 +1732,7 @@
         {
             "description": "Store String Word Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stswx",
@@ -1716,6 +1776,7 @@
         {
             "description": "X-form",
             "form": "",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stsdi",
@@ -1757,6 +1818,7 @@
         {
             "description": "Store String Doubleword Indexed",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "stsdx",
@@ -1799,6 +1861,7 @@
         {
             "description": "Add Immediate",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addi",
@@ -1819,6 +1882,7 @@
         {
             "description": "Add Immediate Shifted",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addis",
@@ -1840,6 +1904,7 @@
         {
             "description": "Add PC Immediate Shifted",
             "form": "DX-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addpcis",
@@ -1862,6 +1927,7 @@
         {
             "description": "Add",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "add",
@@ -1894,6 +1960,7 @@
         {
             "description": "Subtract From",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "subf",
@@ -1927,6 +1994,7 @@
         {
             "description": "Add Immediate Carrying",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addic",
@@ -1946,6 +2014,7 @@
         {
             "description": "Add Immediate Carrying and Record",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addic.",
@@ -1965,6 +2034,7 @@
         {
             "description": "Subtract From Immediate Carrying",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "subfic",
@@ -1993,6 +2063,7 @@
         {
             "description": "Add Carrying",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addc",
@@ -2025,6 +2096,7 @@
         {
             "description": "Subtract From Carrying",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "subfc",
@@ -2059,6 +2131,7 @@
         {
             "description": "Add Extended",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "adde",
@@ -2091,6 +2164,7 @@
         {
             "description": "Subtract From Extended",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "subfe",
@@ -2123,6 +2197,7 @@
         {
             "description": "Add to Minus One Extended",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addme",
@@ -2155,6 +2230,7 @@
         {
             "description": "Subtract From Minus One Extended",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "subfme",
@@ -2187,6 +2263,7 @@
         {
             "description": "Add Extended using alternate carry bit Z23",
             "form": "-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addex",
@@ -2212,6 +2289,7 @@
         {
             "description": "Add to Zero Extended",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addze",
@@ -2244,6 +2322,7 @@
         {
             "description": "Subtract From Zero Extended",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "subfze",
@@ -2277,6 +2356,7 @@
         {
             "description": "Negate",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "neg",
@@ -2320,6 +2400,7 @@
         {
             "description": "Multiply Low Immediate",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mulli",
@@ -2343,6 +2424,7 @@
         {
             "description": "Multiply Low Word",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mullw",
@@ -2381,6 +2463,7 @@
         {
             "description": "Multiply High Word",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mulhw",
@@ -2410,6 +2493,7 @@
         {
             "description": "Multiply High Word Unsigned",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mulhwu",
@@ -2441,6 +2525,7 @@
         {
             "description": "Divide Word",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "divw",
@@ -2492,6 +2577,7 @@
         {
             "description": "Divide Word Unsigned",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "divwu",
@@ -2543,6 +2629,7 @@
         {
             "description": "Divide Word Extended",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "divwe",
@@ -2594,6 +2681,7 @@
         {
             "description": "Divide Word Extended Unsigned",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "divweu",
@@ -2662,6 +2750,7 @@
         {
             "description": "Modulo Signed Word X-form",
             "form": "",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "modsw",
@@ -2688,6 +2777,7 @@
         {
             "description": "Modulo Unsigned Word X-form",
             "form": "",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "moduw",
@@ -2712,6 +2802,7 @@
         {
             "description": "Deliver A Random Number",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "darn",
@@ -2743,6 +2834,7 @@
         {
             "description": "Multiply Low Doubleword",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mulld",
@@ -2783,6 +2875,7 @@
         {
             "description": "Multiply High Doubleword",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mulhd",
@@ -2810,6 +2903,7 @@
         {
             "description": "Multiply High Doubleword Unsigned",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mulhdu",
@@ -2839,6 +2933,7 @@
         {
             "description": "Multiply-Add High Doubleword VA-form",
             "form": "",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "maddhd",
@@ -2859,6 +2954,7 @@
         {
             "description": "Multiply-Add High Doubleword Unsigned",
             "form": "VA-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "maddhdu",
@@ -2879,6 +2975,7 @@
         {
             "description": "Multiply-Add Low Doubleword VA-form",
             "form": "",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "maddld",
@@ -2899,6 +2996,7 @@
         {
             "description": "Divide Doubleword",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "divd",
@@ -2949,6 +3047,7 @@
         {
             "description": "Divide Doubleword Unsigned",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "divdu",
@@ -2998,6 +3097,7 @@
         {
             "description": "Divide Doubleword Extended",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "divde",
@@ -3048,6 +3148,7 @@
         {
             "description": "Divide Doubleword Extended Unsigned",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "divdeu",
@@ -3100,6 +3201,7 @@
         {
             "description": "Modulo Signed Doubleword X-form",
             "form": "",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "modsd",
@@ -3125,6 +3227,7 @@
         {
             "description": "Modulo Unsigned Doubleword X-form",
             "form": "",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "modud",
@@ -3148,6 +3251,7 @@
         {
             "description": "Compare Immediate",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cmpi",
@@ -3177,6 +3281,7 @@
         {
             "description": "Compare",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cmp",
@@ -3207,6 +3312,7 @@
         {
             "description": "Compare Logical Immediate",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cmpli",
@@ -3236,6 +3342,7 @@
         {
             "description": "Compare Logical",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cmpl",
@@ -3267,6 +3374,7 @@
         {
             "description": "Compare Ranged Byte",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cmprb",
@@ -3286,6 +3394,7 @@
         {
             "description": "Compare Equal Byte",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cmpeqb",
@@ -3306,6 +3415,7 @@
         {
             "description": "Trap Word Immediate",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "twi",
@@ -3337,6 +3447,7 @@
         {
             "description": "Trap Word",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "tw",
@@ -3367,6 +3478,7 @@
         {
             "description": "Trap Doubleword Immediate",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "tdi",
@@ -3426,6 +3538,7 @@
         {
             "description": "Trap Doubleword",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "td",
@@ -3485,6 +3598,7 @@
         {
             "description": "Select Immediate-Immediate",
             "form": "MDS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "selii",
@@ -3517,6 +3631,7 @@
         {
             "description": "Select Immediate-Register",
             "form": "MDS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "selir",
@@ -3549,6 +3664,7 @@
         {
             "description": "Select Register-Immediate",
             "form": "MDS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "selri",
@@ -3581,6 +3697,7 @@
         {
             "description": "Select Register-Register",
             "form": "MDS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "selrr",
@@ -3613,6 +3730,7 @@
         {
             "description": "Integer Select",
             "form": "A-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "isel",
@@ -3636,6 +3754,7 @@
         {
             "description": "AND Immediate",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "andi.",
@@ -3654,6 +3773,7 @@
         {
             "description": "AND Immediate Shifted",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "andis.",
@@ -3672,6 +3792,7 @@
         {
             "description": "OR Immediate",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "ori",
@@ -3696,6 +3817,7 @@
         {
             "description": "OR Immediate Shifted",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "",
@@ -3715,6 +3837,7 @@
         {
             "description": "XOR Immediate",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "xori",
@@ -3741,6 +3864,7 @@
         {
             "description": "XOR Immediate Shifted",
             "form": "D-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "xoris",
@@ -3759,6 +3883,7 @@
         {
             "description": "AND",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "and",
@@ -3786,6 +3911,7 @@
         {
             "description": "XOR",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "xor",
@@ -3811,6 +3937,7 @@
         {
             "description": "NAND",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "nand",
@@ -3835,6 +3962,7 @@
         {
             "description": "OR",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "or",
@@ -3861,6 +3989,7 @@
         {
             "description": "NOR",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "nor",
@@ -3886,6 +4015,7 @@
         {
             "description": "Equivalent",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "eqv",
@@ -3910,6 +4040,7 @@
         {
             "description": "AND with Complement",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "andc",
@@ -3934,6 +4065,7 @@
         {
             "description": "OR with Complement",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "orc",
@@ -3958,6 +4090,7 @@
         {
             "description": "Extend Sign Byte",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "extsb",
@@ -3983,6 +4116,7 @@
         {
             "description": "Extend Sign Halfword",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "extsh",
@@ -4008,6 +4142,7 @@
         {
             "description": "Count Leading Zeros Word",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cntlzw",
@@ -4039,6 +4174,7 @@
         {
             "description": "Count Trailing Zeros Word",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cnttzw",
@@ -4070,6 +4206,7 @@
         {
             "description": "Compare Bytes",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cmpb",
@@ -4095,6 +4232,7 @@
         {
             "description": "Population Count Bytes",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "popcntb",
@@ -4119,6 +4257,7 @@
         {
             "description": "Population Count Words",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "popcntw",
@@ -4143,6 +4282,7 @@
         {
             "description": "Parity Doubleword",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "prtyd",
@@ -4167,6 +4307,7 @@
         {
             "description": "Parity Word",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "prtyw",
@@ -4200,6 +4341,7 @@
         {
             "description": "Extend Sign Word",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "extsw",
@@ -4226,6 +4368,7 @@
         {
             "description": "Population Count Doubleword",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "popcntd",
@@ -4249,6 +4392,7 @@
         {
             "description": "Count Leading Zeros Doubleword",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cntlzd",
@@ -4277,6 +4421,7 @@
         {
             "description": "Count Trailing Zeros Doubleword",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cnttzd",
@@ -4305,6 +4450,7 @@
         {
             "description": "Bit Permute Doubleword",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "bpermd",
@@ -4332,6 +4478,7 @@
         {
             "description": "Rotate Left Word Immediate then AND with Mask",
             "form": "M-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "rlwinm",
@@ -4364,6 +4511,7 @@
         {
             "description": "Rotate Left Word then AND with Mask",
             "form": "M-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "rlwnm",
@@ -4397,6 +4545,7 @@
         {
             "description": "Rotate Left Word Immediate then Mask Insert",
             "form": "M-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "rlwimi",
@@ -4429,6 +4578,7 @@
         {
             "description": "Rotate Left Doubleword Immediate then Clear Left",
             "form": "MD-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "rldicl",
@@ -4462,6 +4612,7 @@
         {
             "description": "Rotate Left Doubleword Immediate then Clear Right",
             "form": "MD-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "rldicr",
@@ -4495,6 +4646,7 @@
         {
             "description": "Rotate Left Doubleword Immediate then Clear",
             "form": "MD-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "rldic",
@@ -4528,6 +4680,7 @@
         {
             "description": "Rotate Left Doubleword then Clear Left",
             "form": "MDS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "rldcl",
@@ -4561,6 +4714,7 @@
         {
             "description": "Rotate Left Doubleword then Clear Right",
             "form": "MDS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "rldcr",
@@ -4592,6 +4746,7 @@
         {
             "description": "Rotate Left Doubleword Immediate then Mask Insert",
             "form": "MD-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "rldimi",
@@ -4635,6 +4790,7 @@
         {
             "description": "Shift Left Word",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "slw",
@@ -4667,6 +4823,7 @@
         {
             "description": "Shift Right Word",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "srw",
@@ -4699,6 +4856,7 @@
         {
             "description": "Shift Right Algebraic Word Immediate",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "srawi",
@@ -4739,6 +4897,7 @@
         {
             "description": "Shift Right Algebraic Word",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "sraw",
@@ -4785,6 +4944,7 @@
         {
             "description": "Shift Left Doubleword",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "sld",
@@ -4816,6 +4976,7 @@
         {
             "description": "Shift Right Doubleword",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "srd",
@@ -4847,6 +5008,7 @@
         {
             "description": "Shift Right Algebraic Doubleword Immediate",
             "form": "XS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "sradi",
@@ -4886,6 +5048,7 @@
         {
             "description": "Shift Right Algebraic Doubleword  X-form",
             "form": "",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "srad",
@@ -4929,6 +5092,7 @@
         {
             "description": "Extend-Sign Word and Shift Left",
             "form": "Immediate XS-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "extswsli",
@@ -4950,6 +5114,7 @@
         {
             "description": "Convert Declets To Binary Coded Decimal",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cdtbcd",
@@ -4975,6 +5140,7 @@
         {
             "description": "Convert Binary Coded Decimal To Declets",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "cbcdtd",
@@ -5002,6 +5168,7 @@
         {
             "description": "Add and Generate Sixes",
             "form": "XO-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "addg6s",
@@ -5034,6 +5201,7 @@
         {
             "description": "Decimal Sixes",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "dsixes",
@@ -5062,6 +5230,7 @@
         {
             "description": "Decimal Test and Clear Sign",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "dtcs.",
@@ -5092,6 +5261,7 @@
         {
             "description": "Move From VSR Doubleword X",
             "form": "-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mfvsrd",
@@ -5109,6 +5279,7 @@
         {
             "description": "Move From VSR Lower Doubleword X",
             "form": "-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mfvsrld",
@@ -5126,6 +5297,7 @@
         {
             "description": "Move From VSR Word and Zero X",
             "form": "-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mfvsrwz",
@@ -5143,6 +5315,7 @@
         {
             "description": "Move To VSR Doubleword X for",
             "form": "m",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mtvsrd",
@@ -5160,6 +5333,7 @@
         {
             "description": "Move To VSR Word Algebraic X for",
             "form": "m",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mtvsrwa",
@@ -5177,6 +5351,7 @@
         {
             "description": "Move To VSR Word and Zero X for",
             "form": "m",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mtvsrwz",
@@ -5194,6 +5369,7 @@
         {
             "description": "Move To VSR Double Doubleword X",
             "form": "-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mtvsrdd",
@@ -5211,6 +5387,7 @@
         {
             "description": "Move To VSR Word & Splat X",
             "form": "-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mtvsrws",
@@ -5228,6 +5405,7 @@
         {
             "description": "Move To Special Purpose Register",
             "form": "XFX-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mtspr",
@@ -5280,6 +5458,7 @@
         {
             "description": "Move From Special Purpose Register",
             "form": "XFX-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mfspr",
@@ -5327,6 +5506,7 @@
         {
             "description": "Move to CR from XER Extended",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mcrxrx",
@@ -5345,6 +5525,7 @@
         {
             "description": "Move to CR from XER TGCC",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mcrxrt",
@@ -5366,6 +5547,7 @@
         {
             "description": "M ove To One Condition Register Field",
             "form": "XFX-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mtocrf",
@@ -5387,6 +5569,7 @@
         {
             "description": "Move To Condition Register Fields",
             "form": "XFX-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mtcrf",
@@ -5413,6 +5596,7 @@
         {
             "description": "Move From One Condition Register Field",
             "form": "XFX-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mfocrf",
@@ -5437,6 +5621,7 @@
         {
             "description": "Move From Condition Register",
             "form": "XFX-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "mfcr",
@@ -5454,6 +5639,7 @@
         {
             "description": "Set Boolean",
             "form": "X-form",
+            "category": "Fixed-Point Facility",
             "mnemonics": [
                 {
                     "mnemonic": "setb",
@@ -5469,6 +5655,12 @@
                 "the contents of register RT are set to ",
                 "0xFFFF_FFFF_FFFF_FFFF."
             ]
+        }
+    ],
+    "chapters": [
+        {
+            "name": "Fixed-Point Facility",
+            "chapters": []
         }
     ]
 }

@@ -43,6 +43,7 @@ class Instruction:
 		self.forms = []
 		self.code = []
 		self.body = []
+		self.category = ''
 	def outputJSON(self,line_prefix,line_postfix):
 		print(line_prefix + "{" + line_postfix);
 		form = ''
@@ -56,6 +57,7 @@ class Instruction:
 			heads = (heads + ' ' + head).strip()
 		print(line_prefix + t + "\"description\": \"" + heads + "\"," + line_postfix)
 		print(line_prefix + t + "\"form\": \"" + form + "\"," + line_postfix)
+		print(line_prefix + t + "\"category\": \"" + self.category + "\"," + line_postfix)
 		print(line_prefix + t + "\"mnemonics\": [" + line_postfix)
 		comma = ''
 		for form in self.forms:
@@ -84,6 +86,8 @@ class Instruction:
 
 inst = ''
 insts = []
+title = []
+outline = {}
 
 def FindElementStart(f):
 	global c
@@ -145,8 +149,15 @@ def getString(f):
 		c = f.read(1)
 	return s
 
+def updateOutline(outline,title):
+	if len(title[0]) > 0:
+		if title[0] not in outline:
+			outline[title[0]] = {}
+		if len(title) > 1:
+			updateOutline(outline[title[0]],title[1:])
+
 def ParaLine(f,tag):
-	global c,inst
+	global c,inst,title,outline
 	suppress = False
 	if tag == "code_example":
 		try:
@@ -167,6 +178,8 @@ def ParaLine(f,tag):
 				c = f.read(1)
 				h = getString(f)
 				inst.head.append(h)
+				inst.category = title[len(title)-1]
+				updateOutline(outline,title)
 			elif tag == "Instruction Form":
 				c = f.read(1)
 				s = getString(f).strip()
@@ -193,6 +206,18 @@ def ParaLine(f,tag):
 					s = getString(f).replace('\>','>')
 					inst.body[len(inst.body)-1] += s
 				except: pass
+			elif tag == "title":
+				c = f.read(1)
+				title[0] += getString(f)
+			elif tag == "sub-title":
+				c = f.read(1)
+				title[1] += getString(f)
+			elif tag == "sub-sub-title":
+				c = f.read(1)
+				title[2] += getString(f)
+			elif tag == "sub-sub-sub-title":
+				c = f.read(1)
+				title[3] += getString(f)
 		elif token == "Conditional":
 			suppress = False
 			while True:
@@ -211,7 +236,7 @@ def ParaLine(f,tag):
 		FindElementEnd(f)
 
 def xTag(f):
-	global c,inst,insts
+	global c,inst,insts,title
 	tag = ''
 	c = f.read(1)
 	s = getString(f)
@@ -235,10 +260,28 @@ def xTag(f):
 		tag = "code_example"
 	elif s in [ "Body", ":p1." ]:
 		tag = "Body"
-	elif s in [ "Head_2_span" ]:
-		inst = ''
 	elif s in [ "instruction index" ]:
 		tag = s
+	elif s in [ "Title (Chapter)" ]:
+		tag = "title"
+		title = [""]
+	# May support these later if nested Accordions work...
+	elif s in [ "Head_1_span" ]:
+	 	tag = ""
+	# 	tag = "sub-title"
+	# 	title = title[0:1]
+	# 	title.append("")
+	elif s in [ "Head_2", "Head_2_span" ]:
+	 	inst = ''
+	 	tag = ""
+	# 	tag = "sub-sub-title"
+	# 	title = title[0:2]
+	# 	title.append("")
+	elif s in [ "Head_3_span" ]:
+	 	tag = ""
+	# 	tag = "sub-sub-sub-title"
+	# 	title = title[0:3]
+	# 	title.append("")
 	return tag
 
 def Para(f):
@@ -435,5 +478,23 @@ for inst in insts:
 	inst.outputJSON(t+t,'')
 	comma=',\n'
 print("")
-print(t + "]")
+print(t + "]",sep="",end="")
+
+def printOutline(outline,line_prefix):
+	print(",")
+	print(line_prefix + "\"chapters\": [",sep="",end="")
+	if len(outline) > 0:
+		print("")
+		comma=''
+		for c in outline:
+			print(comma + line_prefix + t + "{")
+			print(line_prefix + t + t + "\"name\": \"" + c + "\"",sep="",end="")
+			printOutline(outline[c],line_prefix+t+t)
+			comma=',\n'
+			print(line_prefix + t + "}",sep="",end="")
+		print("\n" + line_prefix,sep="",end="")
+	print("]");
+
+printOutline(outline,t)
+
 print("}")
