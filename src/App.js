@@ -140,9 +140,20 @@ class App extends Component {
                     >
                         {this.displayMnemonics(item)}
                     </CodeSnippet>
-                    <table className="instruction-layout">
-                        {this.displayLayoutRows(item.layout)}
+                    <br />
+                    <table style={{width: '100%'}}>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table className="instruction-layout">
+                                        {this.displayLayoutRows(item.layout)}
+                                    </table>
+                                </td>
+                                <td style={{textAlign: 'right'}}>{item.form}</td>
+                            </tr>
+                        </tbody>
                     </table>
+                    <br />
                     <CodeSnippet
                         type="multi"
                         feedback="Copied to clipboard"
@@ -152,7 +163,6 @@ class App extends Component {
                     >
                         {this.displayCode(item)}
                     </CodeSnippet>
-                    <br />
                     <br />
                     {this.displayBody(item)}
                 </div>
