@@ -44,6 +44,7 @@ class Instruction:
 		self.code = []
 		self.body = []
 		self.category = ''
+		self.layout = []
 	def outputJSON(self,line_prefix,line_postfix):
 		print(line_prefix + "{" + line_postfix);
 		form = ''
@@ -66,6 +67,20 @@ class Instruction:
 			comma = "," + line_postfix + "\n"
 		print("")
 		print(line_prefix + t + "]," + line_postfix)
+
+		print(line_prefix + t + "\"layout\": [" + line_postfix)
+		comma = ''
+		for row in self.layout:
+			print(comma + line_prefix + t + t + "[ ",sep="",end="")
+			sep=''
+			for col in row:
+				print(sep + "\"" + col + "\"",sep="",end="")
+				sep = ", "
+			print(" ]",sep="",end="")
+			comma = "," + line_postfix + "\n"
+		print("")
+		print(line_prefix + t + "]," + line_postfix)
+
 		print(line_prefix + t + "\"code\": [" + line_postfix)
 		comma = ''
 		for line in self.code:
@@ -84,10 +99,16 @@ class Instruction:
 		print(line_prefix + t + "]" + line_postfix)
 		print(line_prefix + "}" + line_postfix,sep="",end="");
 
+class InstructionLayout:
+	def __init__(self):
+		self.rows = []
+
 inst = ''
 insts = []
 title = []
 outline = {}
+layout = ''
+layouts = {}
 
 def FindElementStart(f):
 	global c
@@ -233,6 +254,11 @@ def ParaLine(f,tag):
 				FindElementEnd(f)
 		elif token == "Unconditional":
 			suppress = False
+		elif token == "ATbl":
+			if tag == "Instruction Form":
+				c = f.read(1)
+				TblID = getToken(f)
+				inst.layout = layouts[TblID].rows
 		FindElementEnd(f)
 
 def xTag(f):
@@ -253,15 +279,27 @@ def xTag(f):
 		except: pass
 		inst = Instruction();
 		insts.append(inst)
-	elif s in ["Instruction Form", ":p1.inst-syntax", ":p1.inst-syntax-compact"]:
+	elif s in [ "Instruction Form", ":p1.inst-syntax", ":p1.inst-syntax-compact" ]:
 		tag = "Instruction Form"
 		inst.forms.append(Mnemonic())
+
+	# This is a weird one, which sometimes appears as the tag for
+	# where the ATbl for the Instruction Layout is found, AND
+	# for more things as well, including pseudocode.
+	# TODO: figure this out in the general case (or reformat
+	# the source data!)
+	#
+	# elif s in [ ":table.column" ]:
+	#	tag = "Instruction Form"
+
 	elif s in [ "code_example", ":xmp." ]:
 		tag = "code_example"
 	elif s in [ "Body", ":p1." ]:
 		tag = "Body"
 	elif s in [ "instruction index" ]:
 		tag = s
+	elif s in [ "Instruction Layout", "InstructionFormat", "Instruction Layout - compressed", ":inst-encoding." ]:
+		tag = "Instruction Layout"
 	elif s in [ "Title (Chapter)" ]:
 		tag = "title"
 		title = [""]
@@ -355,7 +393,7 @@ def cell_Para(f):
 			s += cell_ParaLine(f)
 		FindElementEnd(f)
 	return s
-	
+
 def CellContent(f):
 	global c
 	s = ''
@@ -388,8 +426,8 @@ def setISA(mnemonic,ISA):
 			if form.mnemonic == mnemonic:
 				form.release = ISA
 
-def Row(f):
-	global c
+def Row(f,tag):
+	global c,layout
 	row = []
 	while True:
 		try:
@@ -399,19 +437,22 @@ def Row(f):
 		if token == "Cell":
 			row.append(Cell(f))
 		FindElementEnd(f)
-	mnemonics = [row[9]]
-	for n in re.finditer(r'\[(\w|\.)*\]',row[9]):
-		mnemonics_preexpand_list = []
-		for s in mnemonics:
-			mnemonics_preexpand_list.append(s)
-		mnemonics = []
-		for s in mnemonics_preexpand_list:
-			mnemonics.append(s.replace(n.group(0),'')) 
-			mnemonics.append(s.replace(n.group(0),n.group(1))) 
-	for mnemonic in mnemonics:
-		setISA(mnemonic,row[10])
+	if tag == "instruction index":
+		mnemonics = [row[9]]
+		for n in re.finditer(r'\[(\w|\.)*\]',row[9]):
+			mnemonics_preexpand_list = []
+			for s in mnemonics:
+				mnemonics_preexpand_list.append(s)
+			mnemonics = []
+			for s in mnemonics_preexpand_list:
+				mnemonics.append(s.replace(n.group(0),'')) 
+				mnemonics.append(s.replace(n.group(0),n.group(1))) 
+		for mnemonic in mnemonics:
+			setISA(mnemonic,row[10])
+	elif tag == "Instruction Layout":
+		layout.rows.append(row)
 
-def TblBody(f):
+def TblBody(f,tag):
 	global c
 	while True:
 		try:
@@ -419,12 +460,13 @@ def TblBody(f):
 		except: break
 		token = getToken(f)
 		if token == "Row":
-			Row(f)
+			Row(f,tag)
 		FindElementEnd(f)
 
 def Tbl(f):
-	global c
+	global c,layout,layouts
 	tag = ''
+	TblID = ''
 	while True:
 		try:
 			FindElementStart(f)
@@ -432,10 +474,28 @@ def Tbl(f):
 		token = getToken(f)
 		if token == "TblTag":
 			tag = xTag(f)
+			if tag == "Instruction Layout":
+				layout = InstructionLayout()
+		elif token == "TblID":
+			c = f.read(1)
+			TblID = getToken(f)
 		elif token == "TblBody":
-			if tag == "instruction index":
-				TblBody(f)
+			if tag in [ "instruction index", "Instruction Layout" ]:
+				TblBody(f,tag)
+		elif token == "TblFormat":
+			while True:
+				try:
+					FindElementStart(f)
+				except: break
+				token = getToken(f)
+				if token == "TblTag":
+					tag = xTag(f)
+					if tag == "Instruction Layout":
+						layout = InstructionLayout()
+				FindElementEnd(f)
 		FindElementEnd(f)
+	if tag == "Instruction Layout":
+		layouts[TblID] = layout
 
 def Tbls(f):
 	global c

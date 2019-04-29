@@ -105,6 +105,25 @@ class App extends Component {
         return all;
     }
 
+    displayLayoutElements(row,rowClass) {
+        let all = [];
+        for (let i = 0; i < row.length; i++) {
+            all.push(<td className={rowClass}>{row[i]}</td>);
+        }
+        return all;
+    }
+
+    displayLayoutRows(layout) {
+	let all = [];
+        if (layout.length > 0) {
+            all.push(<tr>{this.displayLayoutElements(layout[0],"instruction-field")}</tr>);
+        }
+        if (layout.length > 1) {
+            all.push(<tr>{this.displayLayoutElements(layout[1],"instruction-bit-number")}</tr>);
+        }
+        return (all);
+    }
+
     genItem(item) {
         return (
             <div className="expandContainer">
@@ -121,7 +140,9 @@ class App extends Component {
                     >
                         {this.displayMnemonics(item)}
                     </CodeSnippet>
-                    <h4>Pseudocode:</h4>
+                    <table className="instruction-layout">
+                        {this.displayLayoutRows(item.layout)}
+                    </table>
                     <CodeSnippet
                         type="multi"
                         feedback="Copied to clipboard"

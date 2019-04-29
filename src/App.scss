@@ -78,6 +78,20 @@
     }
 }
 
+.instruction-layout {
+        width: 400px;
+        border-collapse: collapse;
+}
+.instruction-field {
+        border: 1px solid black;
+        text-align: center;
+}
+.instruction-bit-number {
+        border: 1px solid black;
+        text-align: left;
+        font-size: 75%;
+}
+
 h1 {
     text-align: center;
 }
