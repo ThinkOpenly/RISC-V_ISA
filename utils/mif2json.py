@@ -218,7 +218,12 @@ def ParaLine(f,tag):
 			elif tag == "code_example":
 				c = f.read(1)
 				# translate FrameMaker special characters with ASCII equivalents
-				s = getString(f).replace(b'\xc2\xac'.decode(),':=').replace(b'\xc2\xa3'.decode(),'<=').replace(b'\xc2\xba'.decode(),'not xor').replace(b'\xc3\x85'.decode(),'/').replace('\>','>')
+				s = getString(f)
+				if FTag == "Wingding_3":
+					s = s.replace('f',':=')
+				elif FTag == "symbol":
+					s = s.replace(b'\xc2\xac'.decode(),':=')
+				s = s.replace(b'\xc2\xac'.decode(),'~').replace(b'\xc2\xa3'.decode(),'<=').replace(b'\xc2\xba'.decode(),'==').replace(b'\xc3\x85'.decode(),'^').replace('\>','>').replace(b'\xc2\xb9'.decode(),'!=').replace(b'\xc2\xb4'.decode(),'*')
 				if FTag == "subscript":
 					s = "<sub>" + s + "</sub>"
 				elif FTag == "superscript":
@@ -246,6 +251,12 @@ def ParaLine(f,tag):
 			elif tag == "sub-sub-sub-title":
 				c = f.read(1)
 				title[3] += getString(f)
+		elif token == "Char" and not suppress:
+			c = f.read(1)
+			token = getToken(f)
+			if token == "HardHyphen":
+				if tag == "Instruction Head":
+					inst.head.append('-')
 		elif token == "Conditional":
 			suppress = False
 			while True:
@@ -276,7 +287,9 @@ def ParaLine(f,tag):
 					if token == "FTag":
 						c = f.read(1)
 						s = getString(f)
-						if s == "Sub" or s == "Sub - compressed":
+						if s == "Wingding_3":
+							FTag = "Wingding_3"
+						elif s == "Sub" or s == "Sub - compressed":
 							FTag = "subscript"
 						elif s == "Super" or s == "Super - compressed":
 							FTag = "superscript"
