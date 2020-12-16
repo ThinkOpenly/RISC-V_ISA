@@ -524,17 +524,20 @@ def Row(f,tag):
 			row.append(Cell(f))
 		FindElementEnd(f)
 	if tag == "instruction index":
-		mnemonics = [row[9]]
-		for n in re.finditer(r'\[(\w|\.)*\]',row[9]):
-			mnemonics_preexpand_list = []
-			for s in mnemonics:
-				mnemonics_preexpand_list.append(s)
-			mnemonics = []
-			for s in mnemonics_preexpand_list:
-				mnemonics.append(s.replace(n.group(0),'')) 
-				mnemonics.append(s.replace(n.group(0),n.group(1))) 
+		exprs = [row[6]]
+		mnemonics = []
+		while len(exprs) > 0:
+			exprs_next = []
+			for expr in exprs:
+				m = re.match(r'(.*)(\[[\w|.]\])+(.*)',expr)
+				if m != None:
+					exprs_next.append(f"{m.group(1)}{m.group(3)}")
+					exprs_next.append(f"{m.group(1)}{m.group(2)[1:-1]}{m.group(3)}")
+				else:
+					mnemonics.append (expr)
+			exprs = exprs_next
 		for mnemonic in mnemonics:
-			setISA(mnemonic,row[10])
+			setISA(mnemonic,row[7])
 	elif tag == "Instruction Layout":
 		layout.rows.append(row)
 
