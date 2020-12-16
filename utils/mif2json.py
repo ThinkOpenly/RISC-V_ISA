@@ -38,7 +38,6 @@ class Mnemonic:
 class Instruction:
 	def __init__(self):
 		self.head = []
-		self.index = 0
 		self.forms = []
 		self.code = []
 		self.body = []
@@ -102,11 +101,11 @@ class InstructionLayout:
 	def __init__(self):
 		self.rows = []
 
-inst = ''
+inst = None
 insts = []
 title = []
 outline = {}
-layout = ''
+layout = None
 layouts = {}
 
 def FindElementStart(f):
@@ -309,7 +308,7 @@ def xTag(f):
 	# 	title = title[0:1]
 	# 	title.append("")
 	elif s in [ "Head_2", "Head_2_span" ]:
-	 	inst = ''
+	 	inst = None
 	 	tag = ""
 	# 	tag = "sub-sub-title"
 	# 	title = title[0:2]
@@ -516,7 +515,7 @@ while c:
 	elif token == "Tbls":
 		Tbls(f)
 	elif token == "MIFFile":
-		inst = ''
+		inst = None
 	FindElementEnd(f)
 
 for inst in insts:
