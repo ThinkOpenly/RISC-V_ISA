@@ -365,7 +365,7 @@ def xTag(f):
 	# elif s in [ ":table.column" ]:
 	#	tag = "Instruction Form"
 
-	elif s in [ "code_example", ":xmp." ]:
+	elif s in [ "code_example", ":xmp.", ":xmp.compact", "code_example first" ]:
 		tag = "code_example"
 	elif s in [ "Body", ":p1." ]:
 		tag = "Body"
@@ -584,7 +584,7 @@ def Tbl(f):
 				token = getToken(f)
 				if token == "TblTag":
 					tag = xTag(f)
-					if tag == "Instruction Layout":
+					if tag in [ "Instruction Layout", ":inst-encoding." ]:
 						layout = InstructionLayout()
 				FindElementEnd(f)
 		FindElementEnd(f)
