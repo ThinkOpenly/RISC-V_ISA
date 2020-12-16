@@ -178,6 +178,7 @@ def updateOutline(outline,title):
 suppress = False
 def ParaLine(f,tag):
 	global c,inst,title,outline,suppress
+	FTag = ''
 	if tag == "code_example":
 		try:
 			inst.code.append("")
@@ -218,11 +219,19 @@ def ParaLine(f,tag):
 				c = f.read(1)
 				# translate FrameMaker special characters with ASCII equivalents
 				s = getString(f).replace(b'\xc2\xac'.decode(),':=').replace(b'\xc2\xa3'.decode(),'<=').replace(b'\xc2\xba'.decode(),'not xor').replace(b'\xc3\x85'.decode(),'/').replace('\>','>')
+				if FTag == "subscript":
+					s = "<sub>" + s + "</sub>"
+				elif FTag == "superscript":
+					s = "<sup>" + s + "</sup>"
 				inst.code[len(inst.code)-1] += s
 			elif tag == "Body":
 				try:
 					c = f.read(1)
 					s = getString(f).replace('\>','>')
+					if FTag == "subscript":
+						s = "<sub>" + s + "</sub>"
+					elif FTag == "superscript":
+						s = "<sup>" + s + "</sup>"
 					inst.body[len(inst.body)-1] += s
 				except: pass
 			elif tag == "title":
@@ -257,6 +266,33 @@ def ParaLine(f,tag):
 				c = f.read(1)
 				TblID = getToken(f)
 				inst.layout = layouts[TblID].rows
+		elif token == "Font":
+			if tag == "code_example" or tag == "Body":
+				while True:
+					try:
+						FindElementStart(f)
+					except: break
+					token = getToken(f)
+					if token == "FTag":
+						c = f.read(1)
+						s = getString(f)
+						if s == "Sub" or s == "Sub - compressed":
+							FTag = "subscript"
+						elif s == "Super" or s == "Super - compressed":
+							FTag = "superscript"
+						elif s == "":
+							FTag = "normal"
+					elif token == "FFamily":
+						c = f.read(1)
+						s = getString(f)
+						if s == "Symbol":
+							FTag = "symbol"
+					elif token == "FPosition":
+						c = f.read(1)
+						token = getToken(f)
+						if token == "FSubscript":
+							FTag = "subscript"
+					FindElementEnd(f)
 		FindElementEnd(f)
 
 def xTag(f):
