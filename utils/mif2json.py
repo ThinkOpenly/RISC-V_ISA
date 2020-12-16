@@ -1,8 +1,7 @@
-#!/usr/bin/python
-# Copyright (c) IBM 2019 All Rights Reserved.
+#!/usr/bin/python3
+# Copyright (c) IBM 2020 All Rights Reserved.
 # This project is licensed under the Apache License version 2.0, see LICENSE.
 
-from __future__ import print_function
 import sys
 import re
 
