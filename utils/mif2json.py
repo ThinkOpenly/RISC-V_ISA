@@ -39,23 +39,15 @@ class Instruction:
 	def __init__(self):
 		self.head = []
 		self.forms = []
+		self.form = ""
 		self.code = []
 		self.body = []
 		self.category = ''
 		self.layout = None
 	def outputJSON(self,line_prefix,line_postfix):
 		print(line_prefix + "{" + line_postfix);
-		form = ''
-		n_head = len(self.head)
-		if n_head > 1:
-			form = self.head[n_head-1]
-		else:
-			n_head += 1
-		heads = ''
-		for head in self.head[0:n_head-1]:
-			heads = (heads + ' ' + head).strip()
-		print(line_prefix + t + "\"description\": \"" + heads + "\"," + line_postfix)
-		print(line_prefix + t + "\"form\": \"" + form + "\"," + line_postfix)
+		print(line_prefix + t + "\"description\": \"" + self.head + "\"," + line_postfix)
+		print(line_prefix + t + "\"form\": \"" + self.form + "\"," + line_postfix)
 		print(line_prefix + t + "\"category\": \"" + self.category + "\"," + line_postfix)
 		print(line_prefix + t + "\"mnemonics\": [" + line_postfix)
 		comma = ''
@@ -616,6 +608,21 @@ while c:
 
 for inst in insts:
 	inst.head = [x.strip() for x in inst.head]
+	print(inst.head)
+	# hack to get HardHyphen properly inline in Instruction Head
+	if len(inst.head) > 2 and inst.head[-2] == '-' and inst.head[-1] == 'form':
+		inst.head = inst.head[0:-3] + [ f"{inst.head[-3]}-form" ]
+	print(inst.head)
+	# hack to combine long form types across minor font changes
+	if len(inst.head) > 1 and inst.head[-2].endswith(':'):
+		print(inst.head[0:-3])
+		inst.head = inst.head[0:-2] + [ f"{inst.head[-2]}{inst.head[-1]}" ]
+	print(inst.head)
+	print()
+	heads = ''
+	for head in inst.head:
+		heads = (heads + ' ' + head).strip()
+	(inst.head, space, inst.form) = heads.rpartition(' ')
 	forms = []
 	for form in inst.forms:
 		if form.mnemonic != "":
@@ -628,9 +635,11 @@ print("{")
 print(t + "\"instructions\": [")
 comma=''
 for inst in insts:
-	print(comma,sep="",end="")
-	inst.outputJSON(t+t,'')
-	comma=',\n'
+	# hack because some empty instructions are sneaking through, because of ATbls not being suppressed, I think
+	if inst.head != "":
+		print(comma,sep="",end="")
+		inst.outputJSON(t+t,'')
+		comma=',\n'
 print("")
 print(t + "]",sep="",end="")
 
