@@ -387,9 +387,9 @@ def xTag(f):
 	# 	title.append("")
 	return tag
 
+PgfTag = ''
 def Para(f):
-	global c,inst,insts
-	tag = ''
+	global c,inst,insts,PgfTag
 	while True:
 		try:
 			FindElementStart(f)
@@ -400,7 +400,7 @@ def Para(f):
 				c = f.read(1)
 			token = getToken(f)
 		elif token == "PgfTag":
-			tag = xTag(f)
+			PgfTag = xTag(f)
 		elif token == "Pgf":
 			while True:
 				try:
@@ -408,10 +408,10 @@ def Para(f):
 				except: break
 				token = getToken(f)
 				if token == "PgfTag":
-					tag = xTag(f)
+					PgfTag = xTag(f)
 				FindElementEnd(f)
 		elif token == "ParaLine":
-			ParaLine(f,tag)
+			ParaLine(f,PgfTag)
 		else:
 			pass
 		FindElementEnd(f)
