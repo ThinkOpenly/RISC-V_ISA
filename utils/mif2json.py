@@ -611,17 +611,13 @@ while c:
 
 for inst in insts:
 	inst.head = [x.strip() for x in inst.head]
-	print(inst.head)
 	# hack to get HardHyphen properly inline in Instruction Head
 	if len(inst.head) > 2 and inst.head[-2] == '-' and inst.head[-1] == 'form':
 		inst.head = inst.head[0:-3] + [ f"{inst.head[-3]}-form" ]
-	print(inst.head)
 	# hack to combine long form types across minor font changes
 	if len(inst.head) > 1 and inst.head[-2].endswith(':'):
-		print(inst.head[0:-3])
 		inst.head = inst.head[0:-2] + [ f"{inst.head[-2]}{inst.head[-1]}" ]
-	print(inst.head)
-	print()
+
 	heads = ''
 	for head in inst.head:
 		heads = (heads + ' ' + head).strip()
@@ -633,6 +629,15 @@ for inst in insts:
 	inst.forms = forms
 	if len(inst.forms) == 0:
 		inst.forms.append(Mnemonic())
+
+# share code and body from prefix instructions to non-prefix sibling
+for i in range(len(insts)-1):
+	a = "Prefix " + insts[i].head
+	if insts[i+1].head == "Prefixed " + insts[i].head:
+		if len(insts[i].code) == 0:
+			insts[i].code = insts[i+1].code
+		if len(insts[i].body) == 0:
+			insts[i].body = insts[i+1].body
 
 print("{")
 print(t + "\"instructions\": [")
