@@ -175,9 +175,9 @@ def updateOutline(outline,title):
 		if len(title) > 1:
 			updateOutline(outline[title[0]],title[1:])
 
+suppress = False
 def ParaLine(f,tag):
-	global c,inst,title,outline
-	suppress = False
+	global c,inst,title,outline,suppress
 	if tag == "code_example":
 		try:
 			inst.code.append("")
@@ -363,19 +363,40 @@ def TextFlow(f):
 		token = getToken(f)
 		if token == "Para":
 			Para(f)
+		elif token == "TFTag":
+			c = f.read(1)
+			s = getString(f)
+			if s == "HIDDEN":
+				FindElementEnd(f)
+				return
+
 		FindElementEnd(f)
 
 def cell_ParaLine(f):
-	global c
+	global c,suppress
 	s = ''
 	while True:
 		try:
 			FindElementStart(f)
 		except: break
 		token = getToken(f)
-		if token == "String":
+		if token == "String" and not suppress:
 			c = f.read(1)
 			s += getString(f)
+		elif token == "Conditional":
+			suppress = False
+			while True:
+				try:
+					FindElementStart(f)
+				except: break
+				token = getToken(f)
+				if token == "InCondition":
+					c = f.read(1)
+					if getString(f) == "tags_both":
+						suppress = True
+				FindElementEnd(f)
+		elif token == "Unconditional":
+			suppress = False
 		FindElementEnd(f)
 	return s
 	
