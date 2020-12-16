@@ -42,7 +42,7 @@ class Instruction:
 		self.code = []
 		self.body = []
 		self.category = ''
-		self.layout = []
+		self.layout = None
 	def outputJSON(self,line_prefix,line_postfix):
 		print(line_prefix + "{" + line_postfix);
 		form = ''
@@ -66,18 +66,9 @@ class Instruction:
 		print("")
 		print(line_prefix + t + "]," + line_postfix)
 
-		print(line_prefix + t + "\"layout\": [" + line_postfix)
-		comma = ''
-		for row in self.layout:
-			print(comma + line_prefix + t + t + "[ ",sep="",end="")
-			sep=''
-			for col in row:
-				print(sep + "\"" + col + "\"",sep="",end="")
-				sep = ", "
-			print(" ]",sep="",end="")
-			comma = "," + line_postfix + "\n"
-		print("")
-		print(line_prefix + t + "]," + line_postfix)
+		print(line_prefix + t + "\"layout\": ",sep="",end="")
+		self.layout.outputJSON(line_prefix+t,line_postfix)
+		print("," + line_postfix)
 
 		print(line_prefix + t + "\"code\": [" + line_postfix)
 		comma = ''
@@ -100,6 +91,38 @@ class Instruction:
 class InstructionLayout:
 	def __init__(self):
 		self.rows = []
+	def append(self,layout):
+		self.rows[0] += layout.rows[0]
+		self.rows[1] += layout.rows[1]
+	def outputJSON(self,line_prefix,line_postfix):
+		print("[" + line_postfix,sep="");
+		column = 0
+		opcode_index = 0
+		comma = ''
+		while column < len(self.rows[0]):
+			col = self.rows[0][column]
+			column += 1
+			if col.isdecimal():
+				field_name = f"opcode"
+				field_value = int(col)
+			elif col.startswith("/"):
+				field_name = "reserved"
+				field_value = None
+			else:
+				field_name = col
+				field_value = None
+
+			field_width = 1
+			while column < len(self.rows[0]) and len(self.rows[0][column]) == 0:
+				field_width += 1
+				column += 1
+			print (f"{comma}{line_prefix}" + t + "{" + f" \"name\": \"{field_name}\", \"size\": \"{field_width}\"",sep="",end="")
+			if field_value != None:
+				print (f", \"value\": \"{field_value}\"",sep="",end="")
+			print (" }",sep="",end="")
+			comma = "," + line_postfix + "\n"
+		print("" + line_postfix);
+		print(line_prefix + "]",sep="",end="");
 
 inst = None
 insts = []
@@ -273,10 +296,13 @@ def ParaLine(f,tag):
 		elif token == "Unconditional":
 			suppress = False
 		elif token == "ATbl":
-			if tag == "Instruction Form":
-				c = f.read(1)
-				TblID = getToken(f)
-				inst.layout = layouts[TblID].rows
+			c = f.read(1)
+			TblID = getToken(f)
+			if inst != None and (tag == "Instruction Form" or TblID in layouts):
+				if inst.layout == None:
+					inst.layout = layouts[TblID]
+				else:
+					inst.layout.append(layouts[TblID])
 		elif token == "Font":
 			if tag == "code_example" or tag == "Body":
 				while True:
