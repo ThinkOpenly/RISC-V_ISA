@@ -645,6 +645,9 @@ for i in range(len(insts)-1):
 		if len(insts[i].body) == 0:
 			insts[i].body = insts[i+1].body
 
+#insts.sort(key=lambda inst: inst.head.removeprefix("Prefixed "))
+insts.sort(key=lambda inst: inst.head.replace("Prefixed ","",1))
+
 print("{")
 print(t + "\"instructions\": [")
 comma=''
