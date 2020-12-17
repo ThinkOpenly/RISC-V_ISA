@@ -23,7 +23,8 @@ const releases = [
     "v2.06",
     "v2.07",
     "v3.0",
-    "v3.0B"
+    "v3.0B",
+    "v3.1"
 ];
 
 const cores = [
@@ -38,8 +39,9 @@ const cores = [
     "POWER6",
     "POWER7",
     "POWER8",
+    "",
     "POWER9",
-    "future"
+    "POWER10"
 ];
 
 var classes = [];
@@ -105,22 +107,30 @@ class App extends Component {
         return all;
     }
 
-    displayLayoutElements(row,rowClass) {
+    displayFields(layout) {
         let all = [];
-        for (let i = 0; i < row.length; i++) {
-            all.push(<td className={rowClass}>{row[i]}</td>);
+        for (let i = 0; i < layout.length; i++) {
+            var d = layout[i].name;
+            if (d.includes("opcode")) {
+                d = d.replace("opcode",layout[i].value);
+            }
+            all.push(<td className="instruction-field" colspan={layout[i].size}>{d}</td>);
+        }
+        return all;
+    }
+
+    displayBitScale(layout) {
+        let all = [];
+        for (let i = 0; i < 32; i++) {
+            all.push(<td className="instruction-bit-number">{("0" + i.toString()).slice(-2)}</td>);
         }
         return all;
     }
 
     displayLayoutRows(layout) {
 	let all = [];
-        if (layout.length > 0) {
-            all.push(<tr>{this.displayLayoutElements(layout[0],"instruction-field")}</tr>);
-        }
-        if (layout.length > 1) {
-            all.push(<tr>{this.displayLayoutElements(layout[1],"instruction-bit-number")}</tr>);
-        }
+        all.push(<tr>{this.displayFields(layout)}</tr>);
+        all.push(<tr>{this.displayBitScale(layout)}</tr>);
         return (all);
     }
 
