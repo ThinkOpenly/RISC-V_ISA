@@ -337,7 +337,7 @@ class App extends Component {
         if (set) {
             newSet = releases;
         }
-        for (let i = 0; i < this.releases.length; i++) {
+        for (let i = 0; i < releases.length; i++) {
             let id = document.getElementById(releases[i]);
             id.checked = set;
         }
