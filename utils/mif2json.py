@@ -38,7 +38,7 @@ class Mnemonic:
 class Instruction:
 	def __init__(self):
 		self.head = []
-		self.forms = []
+		self.mnemonics = []
 		self.form = ""
 		self.code = []
 		self.body = []
@@ -51,9 +51,9 @@ class Instruction:
 		print(line_prefix + t + "\"category\": \"" + self.category + "\"," + line_postfix)
 		print(line_prefix + t + "\"mnemonics\": [" + line_postfix)
 		comma = ''
-		for form in self.forms:
+		for mnemonic in self.mnemonics:
 			print(comma,sep="",end="")
-			form.outputJSON(line_prefix,line_postfix)
+			mnemonic.outputJSON(line_prefix,line_postfix)
 			comma = "," + line_postfix + "\n"
 		print("")
 		print(line_prefix + t + "]," + line_postfix)
@@ -219,17 +219,17 @@ def ParaLine(f,tag):
 				c = f.read(1)
 				s = getString(f).strip()
 				if len(s) > 0:
-					if len(inst.forms[len(inst.forms)-1].mnemonic) == 0:
+					if len(inst.mnemonics[len(inst.mnemonics)-1].mnemonic) == 0:
 						s = s.strip().split()
 						if len(s) > 0:
-							inst.forms[len(inst.forms)-1].mnemonic = s[0]
+							inst.mnemonics[len(inst.mnemonics)-1].mnemonic = s[0]
 							del s[0]
 						if len(s) > 0:
 							for r in s:
 								if len(r) > 0:
-									inst.forms[len(inst.forms)-1].rest.append(r)
+									inst.mnemonics[len(inst.mnemonics)-1].rest.append(r)
 					else:
-						inst.forms[len(inst.forms)-1].rest.append(s.strip())
+						inst.mnemonics[len(inst.mnemonics)-1].rest.append(s.strip())
 			elif tag == "code_example":
 				c = f.read(1)
 				# translate FrameMaker special characters with ASCII equivalents
@@ -346,7 +346,7 @@ def xTag(f):
 		insts.append(inst)
 	elif s in [ "Instruction Form", ":p1.inst-syntax", ":p1.inst-syntax-compact" ]:
 		tag = "Instruction Form"
-		inst.forms.append(Mnemonic())
+		inst.mnemonics.append(Mnemonic())
 
 	# This is a weird one, which sometimes appears as the tag for
 	# where the ATbl for the Instruction Layout is found, AND
@@ -417,8 +417,8 @@ def Para(f):
 		FindElementEnd(f)
 	# some silly cleaning...
 	try:
-		if inst.forms[len(inst.forms)-1] == []:
-			del inst.forms[len(inst.forms)-1]
+		if inst.mnemonics[len(inst.mnemonics)-1] == []:
+			del inst.mnemonics[len(inst.mnemonics)-1]
 	except: pass
 
 def TextFlow(f):
@@ -506,11 +506,11 @@ def Cell(f):
 		FindElementEnd(f)
 	return s
 
-def setISA(mnemonic,ISA):
+def setISA(m,ISA):
 	for inst in insts:
-		for form in inst.forms:
-			if form.mnemonic == mnemonic:
-				form.release = ISA
+		for mnemonic in inst.mnemonics:
+			if mnemonic.mnemonic == m:
+				mnemonic.release = ISA
 
 def Row(f,tag):
 	global c,layout
@@ -609,6 +609,7 @@ while c:
 		inst = None
 	FindElementEnd(f)
 
+forms = []
 for inst in insts:
 	inst.head = [x.strip() for x in inst.head]
 	# hack to get HardHyphen properly inline in Instruction Head
@@ -622,13 +623,18 @@ for inst in insts:
 	for head in inst.head:
 		heads = (heads + ' ' + head).strip()
 	(inst.head, space, inst.form) = heads.rpartition(' ')
-	forms = []
-	for form in inst.forms:
-		if form.mnemonic != "":
-			forms.append(form)
-	inst.forms = forms
-	if len(inst.forms) == 0:
-		inst.forms.append(Mnemonic())
+	if inst.form not in forms and len(inst.form) > 0:
+		forms.append(inst.form)
+
+	mnemonics = []
+	for mnemonic in inst.mnemonics:
+		if mnemonic.mnemonic != "":
+			mnemonics.append(mnemonic)
+	inst.mnemonics = mnemonics
+	if len(inst.mnemonics) == 0:
+		inst.mnemonics.append(Mnemonic())
+
+forms.sort()
 
 # share code and body from prefix instructions to non-prefix sibling
 for i in range(len(insts)-1):
@@ -649,6 +655,15 @@ for inst in insts:
 		inst.outputJSON(t+t,'')
 		comma=',\n'
 print("")
+print(t + "]",sep="",end="")
+
+print(",")
+print(t + "\"forms\": [")
+comma=''
+for form in forms:
+	print(f"{comma}{t*2}\"{form}\"",sep="",end="")
+	comma=',\n'
+print()
 print(t + "]",sep="",end="")
 
 def printOutline(outline,line_prefix):
