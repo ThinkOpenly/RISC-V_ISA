@@ -109,7 +109,7 @@ class App extends Component {
     displayBody(item) {
         let all = [];
         for (let i = 0; i < item.body.length; i++) {
-            all.push(<p>{item.body[i]}</p>);
+            all.push(<p key={i}>{item.body[i]}</p>);
         }
         return all;
     }
@@ -121,7 +121,7 @@ class App extends Component {
             if (d.includes("opcode")) {
                 d = d.replace("opcode",layout[i].value);
             }
-            all.push(<td className="instruction-field" colspan={layout[i].size}>{d}</td>);
+            all.push(<td className="instruction-field" key={i} colSpan={layout[i].size}>{d}</td>);
         }
         return all;
     }
@@ -129,15 +129,15 @@ class App extends Component {
     displayBitScale(layout) {
         let all = [];
         for (let i = 0; i < 32; i++) {
-            all.push(<td className="instruction-bit-number">{("0" + i.toString()).slice(-2)}</td>);
+            all.push(<td className="instruction-bit-number" key={i}>{("0" + i.toString()).slice(-2)}</td>);
         }
         return all;
     }
 
     displayLayoutRows(layout) {
 	let all = [];
-        all.push(<tr>{this.displayFields(layout)}</tr>);
-        all.push(<tr>{this.displayBitScale(layout)}</tr>);
+        all.push(<tr key="0">{this.displayFields(layout)}</tr>);
+        all.push(<tr key="1">{this.displayBitScale(layout)}</tr>);
         return (all);
     }
 
@@ -163,7 +163,9 @@ class App extends Component {
                             <tr>
                                 <td>
                                     <table className="instruction-layout">
-                                        {this.displayLayoutRows(item.layout)}
+                                        <tbody>
+                                            {this.displayLayoutRows(item.layout)}
+                                        </tbody>
                                     </table>
                                 </td>
                                 <td style={{textAlign: 'right'}}>{item.form}</td>
@@ -227,6 +229,7 @@ class App extends Component {
                         allJson.push(
                             <AccordionItem
                                 title={this.genTitle(data[i])}
+                                key={data[i].mnemonics[0].mnemonic}
                                 onClick={e => {
                                     console.log("click");
                                 }}
@@ -266,6 +269,7 @@ class App extends Component {
                     defaultChecked
                     className="checkbox"
                     id={releases[i]}
+                    key={releases[i]}
                     labelText={this.genReleaseLabel(i)}
                     disabled={false}
                     hideLabel={false}
@@ -287,6 +291,7 @@ class App extends Component {
                     defaultChecked
                     className="checkbox"
                     id={chapters[i].name}
+                    key={chapters[i].name}
                     labelText={chapters[i].name}
                     disabled={false}
                     hideLabel={false}
@@ -308,6 +313,7 @@ class App extends Component {
                     defaultChecked
                     className="checkbox"
                     id={forms[i]}
+                    key={forms[i]}
                     labelText={forms[i]}
                     disabled={false}
                     hideLabel={false}
