@@ -45,10 +45,15 @@ const cores = [
 ];
 
 var classes = [];
+var forms = [];
 
 function genClassList(tree,index,array) {
     classes.push(tree.name);
     tree.chapters.forEach(genClassList);
+}
+
+function genFormList(tree,index,array) {
+    forms.push(tree);
 }
 
 class App extends Component {
@@ -56,10 +61,12 @@ class App extends Component {
     constructor() {
         super();
         ISA.chapters.forEach(genClassList);
+        ISA.forms.forEach(genFormList);
         this.state = {
             data: ISA.instructions,
             releaseSet: releases,
             classSet: classes,
+            formSet: forms,
             search: ""
         };
     }
@@ -212,6 +219,9 @@ class App extends Component {
                         ) &&
                         this.state.classSet.includes(
                             data[i].category
+                        ) &&
+                        this.state.formSet.includes(
+                            data[i].form
                         )
                     ) {
                         allJson.push(
@@ -290,6 +300,27 @@ class App extends Component {
         return all;
     }
 
+    genFormCheckboxes(forms) {
+        let all = [];
+        for (let i = 0; i < forms.length; i++) {
+            all.push(
+                <Checkbox
+                    defaultChecked
+                    className="checkbox"
+                    id={forms[i]}
+                    labelText={forms[i]}
+                    disabled={false}
+                    hideLabel={false}
+                    wrapperClassName=""
+                    onChange={e => {
+                        this.filterByForms(e, forms[i]);
+                    }}
+                />
+            );
+        }
+        return all;
+    }
+
     search() {
         let id = document.getElementById("search-1");
         this.setState({ search: id.value });
@@ -319,6 +350,18 @@ class App extends Component {
         this.setState({ classSet: newSet });
     }
 
+    filterAllForms(set) {
+        let newSet = [];
+        if (set) {
+            newSet = forms;
+        }
+        for (let i = 0; i < forms.length; i++) {
+            let id = document.getElementById(forms[i]);
+            id.checked = set;
+        }
+        this.setState({ formSet: newSet });
+    }
+
     filterByReleases(set, b) {
         let newSet = [];
         if (set) {
@@ -345,6 +388,20 @@ class App extends Component {
             }
         }
         this.setState({ classSet: newSet });
+    }
+
+    filterByForms(set, b) {
+        let newSet = [];
+        if (set) {
+            newSet = this.state.formSet;
+            newSet.push(b);
+        } else {
+            for (let i = 0; i < this.state.formSet.length; i++) {
+                if (this.state.formSet[i] === b) continue;
+                newSet.push(this.state.formSet[i]);
+            }
+        }
+        this.setState({ formSet: newSet });
     }
 
     render() {
@@ -398,6 +455,27 @@ class App extends Component {
                                                 }}
                                             />
                                             {this.genClassCheckboxes(ISA.chapters)}
+                                        </fieldset>
+                                    </AccordionItem>
+                                </Accordion>
+                                <Accordion>
+                                    <AccordionItem
+                                        title="Instruction forms"
+                                    >
+                                        <fieldset className="checkboxes">
+                                            <Checkbox
+                                                defaultChecked
+                                                className="checkbox"
+                                                id="all-forms"
+                                                labelText="[all]"
+                                                disabled={false}
+                                                hideLabel={false}
+                                                wrapperClassName=""
+                                                onChange={e => {
+                                                    this.filterAllForms(e);
+                                                }}
+                                            />
+                                            {this.genFormCheckboxes(ISA.forms)}
                                         </fieldset>
                                     </AccordionItem>
                                 </Accordion>
