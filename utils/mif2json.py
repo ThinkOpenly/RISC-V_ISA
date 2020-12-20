@@ -247,7 +247,7 @@ def ParaLine(f,tag):
 			elif tag == "Body":
 				try:
 					c = f.read(1)
-					s = getString(f).replace('\>','>')
+					s = getString(f).replace('\>','>').replace('\q','')
 					if FTag == "subscript":
 						s = "<sub>" + s + "</sub>"
 					elif FTag == "superscript":
