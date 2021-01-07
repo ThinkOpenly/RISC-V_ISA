@@ -145,7 +145,7 @@ class App extends Component {
             <div className="expandContainer">
                 <div className="column">
                     <CodeSnippet
-                        className="pseudocode"
+                        className="syntax"
                         feedback="Copied to clipboard"
                         copyButtonDescription="Copy"
                         ariaLabel="mnemonic"
@@ -173,6 +173,7 @@ class App extends Component {
                     </table>
                     <br />
                     <CodeSnippet
+                        className="pseudocode"
                         type="multi"
                         feedback="Copied to clipboard"
                         onClick={() => {
@@ -182,7 +183,9 @@ class App extends Component {
                         {this.displayCode(item)}
                     </CodeSnippet>
                     <br />
-                    {this.displayBody(item)}
+                    <div className="prose">
+                        {this.displayBody(item)}
+                    </div>
                 </div>
             </div>
         );

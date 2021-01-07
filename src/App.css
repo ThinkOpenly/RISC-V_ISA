@@ -72,20 +72,32 @@
     font-weight: bold;
 }
 
+.syntax {
+    text-align: left;
+    font-weight: bold;
+}
+
 .pseudocode {
+    text-align: left;
     pre {
         font-weight: bold;
     }
+}
+
+.prose {
+    text-align: left;
 }
 
 .instruction-layout {
         width: 400px;
         border-collapse: collapse;
 }
+
 .instruction-field {
         border: 1px solid black;
         text-align: center;
 }
+
 .instruction-bit-number {
         border: 1px solid black;
         text-align: left;
