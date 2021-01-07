@@ -58,16 +58,15 @@ function genFormList(tree,index,array) {
 
 class App extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         ISA.chapters.forEach(genClassList);
         ISA.forms.forEach(genFormList);
         this.state = {
             data: ISA.instructions,
             releaseSet: releases,
             classSet: classes,
-            formSet: forms,
-            search: ""
+            formSet: forms
         };
     }
 
