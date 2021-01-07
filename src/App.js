@@ -362,7 +362,7 @@ class App extends Component {
 
     search() {
         let id = document.getElementById("search-1");
-        this.setState({ search: id.value });
+        this.setState({ search: id.value.toLowerCase() });
     }
 
     filterAllReleases(set) {
