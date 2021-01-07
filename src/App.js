@@ -113,14 +113,20 @@ class App extends Component {
         return all;
     }
 
+    displayField(layout,key) {
+        let all = [];
+        var d = layout.name;
+        if (d.includes("opcode")) {
+            d = d.replace("opcode",layout.value);
+        }
+        all.push(<td className="instruction-field" key={key} colSpan={layout.size}>{d}</td>);
+        return all;
+    }
+
     displayFields(layout) {
         let all = [];
         for (let i = 0; i < layout.length; i++) {
-            var d = layout[i].name;
-            if (d.includes("opcode")) {
-                d = d.replace("opcode",layout[i].value);
-            }
-            all.push(<td className="instruction-field" key={i} colSpan={layout[i].size}>{d}</td>);
+            all.push(this.displayField(layout[i],i));
         }
         return all;
     }
@@ -134,9 +140,24 @@ class App extends Component {
     }
 
     displayLayoutRows(layout) {
+        let all = [];
+        let bits = 0;
+        let start = 0;
+        for (let i = 0; i < layout.length; i++) {
+            bits += parseInt(layout[i].size);
+            if (bits >= 32) {
+                all.push(<tr key={start}>{this.displayFields(layout.slice(start,i+1))}</tr>);
+                start = i+1;
+                bits = 0;
+            }
+        }
+        return all;
+    }
+
+    displayLayout(layout) {
 	let all = [];
-        all.push(<tr key="0">{this.displayFields(layout)}</tr>);
-        all.push(<tr key="1">{this.displayBitScale(layout)}</tr>);
+        all.push(this.displayLayoutRows(layout));
+        all.push(<tr key="bitScale">{this.displayBitScale(layout)}</tr>);
         return (all);
     }
 
@@ -163,7 +184,7 @@ class App extends Component {
                                 <td>
                                     <table className="instruction-layout">
                                         <tbody>
-                                            {this.displayLayoutRows(item.layout)}
+                                            {this.displayLayout(item.layout)}
                                         </tbody>
                                     </table>
                                 </td>
