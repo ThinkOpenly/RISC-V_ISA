@@ -67,7 +67,9 @@ class App extends Component {
             releaseSet: releases,
             classSet: classes,
             formSet: forms,
-            search: ""
+            search: "",
+            search_mnemonics: true,
+            search_names: false
         };
     }
 
@@ -241,8 +243,10 @@ class App extends Component {
         for (let i = 0; i < data.length; i++) {
             for (let m = 0; m < data[i].mnemonics.length; m++) {
                 if (
-                    data[i].mnemonics[m].mnemonic.startsWith(this.state.search) ||
-                    this.state.search.split(" ").every(this.matchEach,data[i].description.toLowerCase())
+                    (this.state.search_mnemonics &&
+                     data[i].mnemonics[m].mnemonic.startsWith(this.state.search)) ||
+                    (this.state.search_names &&
+                     this.state.search.split(" ").every(this.matchEach,data[i].description.toLowerCase()))
                 ) {
                     if (
                         this.state.releaseSet.includes(
@@ -517,18 +521,51 @@ class App extends Component {
                             </div>
                             <div className="accordianContainer">
                                 <div className="searchContainer">
-                                    <Search
-                                        className="some-class"
-                                        name=""
-                                        defaultValue=""
-                                        labelText="Search"
-                                        closeButtonLabelText=""
-                                        placeHolderText="Search"
-                                        onChange={() => {
-                                            this.search();
-                                        }}
-                                        id="search-1"
-                                    />
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td style={{justifyContent: 'center'}}>
+                                                    <Search
+                                                        className="some-class"
+                                                        name=""
+                                                        defaultValue=""
+                                                        labelText="Search"
+                                                        closeButtonLabelText=""
+                                                        placeHolderText="Search"
+                                                        onChange={() => {
+                                                            this.search();
+                                                        }}
+                                                        id="search-1"
+                                                    />
+                                                </td>
+                                                <td>
+                                                    <Checkbox
+                                                        defaultChecked
+                                                        className="checkbox"
+                                                        id="search-mnemonics"
+                                                        labelText="mnemonics"
+                                                        disabled={false}
+                                                        hideLabel={false}
+                                                        wrapperClassName=""
+                                                        onChange={e => {
+                                                            this.setState({ search_mnemonics: e });
+                                                        }}
+                                                    />
+                                                    <Checkbox
+                                                        className="checkbox"
+                                                        id="search-names"
+                                                        labelText="names"
+                                                        disabled={false}
+                                                        hideLabel={false}
+                                                        wrapperClassName=""
+                                                        onChange={e => {
+                                                            this.setState({ search_names: e });
+                                                        }}
+                                                    />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <Accordion>
                                     {this.genData(this.state.data)}
