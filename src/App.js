@@ -66,7 +66,8 @@ class App extends Component {
             data: ISA.instructions,
             releaseSet: releases,
             classSet: classes,
-            formSet: forms
+            formSet: forms,
+            search: ""
         };
     }
 
@@ -231,12 +232,17 @@ class App extends Component {
         );
     }
 
+    matchEach(value) {
+        return this.includes(value);
+    }
+
     genData = data => {
         let allJson = [];
         for (let i = 0; i < data.length; i++) {
             for (let m = 0; m < data[i].mnemonics.length; m++) {
                 if (
-                    data[i].mnemonics[m].mnemonic.startsWith(this.state.search)
+                    data[i].mnemonics[m].mnemonic.startsWith(this.state.search) ||
+                    this.state.search.split(" ").every(this.matchEach,data[i].description.toLowerCase())
                 ) {
                     if (
                         this.state.releaseSet.includes(
