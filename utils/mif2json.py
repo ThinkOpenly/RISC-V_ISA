@@ -5,10 +5,21 @@
 import sys
 import re
 
-if len(sys.argv) < 2:
-        f = sys.stdin
+debug = False
+next_arg = 1
+
+def dprint (out):
+    if debug:
+        print (out)
+
+if next_arg < len(sys.argv) and sys.argv[next_arg] == "--debug":
+    debug = True
+    next_arg += 1
+
+if next_arg < len(sys.argv):
+        f = open(sys.argv[next_arg])
 else:
-        f = open(sys.argv[1])
+        f = sys.stdin
 
 c = f.read(1)
 
