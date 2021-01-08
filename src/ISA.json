@@ -11748,9 +11748,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf16ger2",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -11788,9 +11788,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf16ger2nn",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -11898,9 +11898,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf16ger2np",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -11938,9 +11938,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf16ger2pn",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -11978,9 +11978,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf16ger2pp",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12124,9 +12124,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvi16ger2s",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12164,9 +12164,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvi16ger2spp",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12236,9 +12236,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf32ger",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12275,9 +12275,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf32gernn",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12366,9 +12366,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf32gernp",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12405,9 +12405,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf32gerpn",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12444,9 +12444,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf32gerpp",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12483,9 +12483,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvi4ger8",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12522,9 +12522,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvi4ger8pp",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12593,9 +12593,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf64ger",
+                    "regs": [ "AT,XAp,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12632,9 +12632,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf64gernn",
+                    "regs": [ "AT,XAp,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12726,9 +12726,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf64gernp",
+                    "regs": [ "AT,XAp,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12765,9 +12765,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf64gerpn",
+                    "regs": [ "AT,XAp,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12804,9 +12804,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvf64gerpp",
+                    "regs": [ "AT,XAp,XB,XMSK,YMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12843,9 +12843,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvi8ger4",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -12883,9 +12883,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvi8ger4pp",
+                    "regs": [ "AT,XA,XB,XMSK,YMSK,PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -27811,9 +27811,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf16ger2",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -27840,9 +27840,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf16ger2nn",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -27869,9 +27869,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf16ger2np",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -27898,9 +27898,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf16ger2pn",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -27927,9 +27927,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf16ger2pp",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28014,9 +28014,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvi16ger2s",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28043,9 +28043,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvi16ger2spp",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28072,9 +28072,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf32ger",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28101,9 +28101,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf32gernn",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28130,9 +28130,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf32gernp",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28159,9 +28159,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf32gerpn",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28188,9 +28188,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf32gerpp",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28217,9 +28217,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvi4ger8",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28246,9 +28246,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvi4ger8pp",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28275,9 +28275,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf64ger",
+                    "regs": [ "AT,XAp,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28304,9 +28304,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf64gernn",
+                    "regs": [ "AT,XAp,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28333,9 +28333,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf64gernp",
+                    "regs": [ "AT,XAp,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28362,9 +28362,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf64gerpn",
+                    "regs": [ "AT,XAp,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28391,9 +28391,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvf64gerpp",
+                    "regs": [ "AT,XAp,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28420,9 +28420,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvi8ger4",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -28449,9 +28449,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "regs": [  ],
-                    "release": ""
+                    "mnemonic": "xvi8ger4pp",
+                    "regs": [ "AT,XA,XB" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
