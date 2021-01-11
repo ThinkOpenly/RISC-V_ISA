@@ -16,16 +16,10 @@ if next_arg < len(sys.argv) and sys.argv[next_arg] == "--debug":
     debug = True
     next_arg += 1
 
-if next_arg < len(sys.argv):
-        f = open(sys.argv[next_arg])
-else:
-        f = sys.stdin
-
-c = f.read(1)
-
 whitespace = re.compile('\s')
 wordchar = re.compile('\w')
 t = '    '
+c = ''
 
 class Mnemonic:
 	def __init__(self):
@@ -202,14 +196,15 @@ def updateOutline(outline,title):
 			updateOutline(outline[title[0]],title[1:])
 
 suppress = False
+possibly_in_instruction = False
 def ParaLine(f,tag):
-	global c,inst,title,outline,suppress
+	global c,inst,title,outline,suppress,possibly_in_instruction
 	FTag = ''
-	if tag == "code_example":
+	if tag == "code_example" and possibly_in_instruction:
 		try:
 			inst.code.append("")
 		except: return
-	if tag == "Body":
+	if tag == "Body" and possibly_in_instruction:
 		try:
 			if len(inst.head) > 0:
 				inst.body.append("")
@@ -226,7 +221,8 @@ def ParaLine(f,tag):
 				inst.head.append(h)
 				inst.category = title[len(title)-1]
 				updateOutline(outline,title)
-			elif tag == "Instruction Form":
+				possibly_in_instruction = True
+			elif tag == "Instruction Form" and possibly_in_instruction:
 				c = f.read(1)
 				s = getString(f).strip()
 				if len(s) > 0:
@@ -241,7 +237,7 @@ def ParaLine(f,tag):
 									inst.mnemonics[len(inst.mnemonics)-1].rest.append(r)
 					else:
 						inst.mnemonics[len(inst.mnemonics)-1].rest.append(s.strip())
-			elif tag == "code_example":
+			elif tag == "code_example" and possibly_in_instruction:
 				c = f.read(1)
 				# translate FrameMaker special characters with ASCII equivalents
 				s = getString(f)
@@ -255,7 +251,7 @@ def ParaLine(f,tag):
 				elif FTag == "superscript":
 					s = "<sup>" + s + "</sup>"
 				inst.code[len(inst.code)-1] += s
-			elif tag == "Body":
+			elif tag == "Body" and possibly_in_instruction:
 				try:
 					c = f.read(1)
 					s = getString(f).replace('\>','>').replace('\q','')
@@ -277,7 +273,7 @@ def ParaLine(f,tag):
 			elif tag == "sub-sub-sub-title":
 				c = f.read(1)
 				title[3] += getString(f)
-		elif token == "Char" and not suppress:
+		elif token == "Char" and not suppress and possibly_in_instruction:
 			c = f.read(1)
 			token = getToken(f)
 			if token == "HardHyphen":
@@ -306,7 +302,7 @@ def ParaLine(f,tag):
 					inst.layout = layouts[TblID]
 				else:
 					inst.layout.append(layouts[TblID])
-		elif token == "Font":
+		elif token == "Font" and possibly_in_instruction:
 			if tag == "code_example" or tag == "Body":
 				while True:
 					try:
@@ -433,7 +429,7 @@ def Para(f):
 	except: pass
 
 def TextFlow(f):
-	global c
+	global c,possibly_in_instruction
 	while True:
 		try:
 			FindElementStart(f)
@@ -449,6 +445,7 @@ def TextFlow(f):
 				return
 
 		FindElementEnd(f)
+	possibly_in_instruction = False
 
 def cell_ParaLine(f):
 	global c,suppress
@@ -608,17 +605,37 @@ def Tbls(f):
 			Tbl(f)
 		FindElementEnd(f)
 
-while c:
-	FindElementStart(f)
+def process_file (f):
+    global c,layout,layouts,suppress,PgfTag,possibly_in_instruction
+    possibly_in_instruction = False
+    layout = None
+    layouts = {}
+    suppress = False
+    PgfTag = ''
 
-	token = getToken(f)
-	if token == "TextFlow":
-		TextFlow(f)
-	elif token == "Tbls":
-		Tbls(f)
-	elif token == "MIFFile":
-		inst = None
-	FindElementEnd(f)
+    c = f.read(1)
+
+    while c:
+        FindElementStart(f)
+
+        token = getToken(f)
+        if token == "TextFlow":
+            TextFlow(f)
+        elif token == "Tbls":
+            Tbls(f)
+        elif token == "MIFFile":
+            inst = None
+        FindElementEnd(f)
+
+
+if next_arg == len(sys.argv):
+    process_file (sys.stdin)
+else:
+    while next_arg < len(sys.argv):
+        f = open(sys.argv[next_arg])
+        process_file (f)
+        f.close ()
+        next_arg += 1
 
 forms = []
 for inst in insts:
