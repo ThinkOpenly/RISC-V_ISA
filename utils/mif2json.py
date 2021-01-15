@@ -23,21 +23,25 @@ c = ''
 
 class Mnemonic:
 	def __init__(self):
+		self.syntax = ''
 		self.mnemonic = ''
-		self.rest = []
+		self.operands = None
+		self.conditions = None
 		self.release = ''
 	def outputJSON(self,line_prefix,line_postfix):
 		print(line_prefix + t + t + "{" + line_postfix)
 		print(line_prefix + t + t + t + "\"mnemonic\": \"" + self.mnemonic + "\"",sep="",end="")
 		print(",")
-		print(line_prefix + t + t + t + "\"regs\": [ ",sep="",end="")
+		print(line_prefix + t + t + t + "\"operands\": [ ",sep="",end="")
 		comma = ''
-		for reg in self.rest:
-			print(comma + "\"" + reg + "\"",sep="",end="")
-			comma = ", "
-		print(" ],")
-		print(line_prefix + t + t + t + "\"release\": \"" + str(self.release) + "\"",sep="",end="")
-		print("")
+		if self.operands != None:
+			for operand in self.operands.split(','):
+				print(comma + "\"" + operand + "\"",sep="",end="")
+				comma = ", "
+		print(" ]," + line_postfix)
+		if self.conditions != None:
+			print(line_prefix + t + t + t + "\"conditions\": \"" + self.conditions + "\"," + line_postfix,sep="")
+		print(line_prefix + t + t + t + "\"release\": \"" + str(self.release) + "\"",sep="")
 		print(line_prefix + t + t + "}",sep="",end="")
 
 class Instruction:
@@ -209,6 +213,9 @@ def ParaLine(f,tag):
 			if len(inst.head) > 0:
 				inst.body.append("")
 		except: pass
+	if tag == "Instruction Form" and possibly_in_instruction:
+		if len(inst.mnemonics[-1].syntax) != 0:
+			inst.mnemonics.append(Mnemonic())
 	while True:
 		try:
 			FindElementStart(f)
@@ -224,19 +231,8 @@ def ParaLine(f,tag):
 				possibly_in_instruction = True
 			elif tag == "Instruction Form" and possibly_in_instruction:
 				c = f.read(1)
-				s = getString(f).strip()
-				if len(s) > 0:
-					if len(inst.mnemonics[len(inst.mnemonics)-1].mnemonic) == 0:
-						s = s.strip().split()
-						if len(s) > 0:
-							inst.mnemonics[len(inst.mnemonics)-1].mnemonic = s[0]
-							del s[0]
-						if len(s) > 0:
-							for r in s:
-								if len(r) > 0:
-									inst.mnemonics[len(inst.mnemonics)-1].rest.append(r)
-					else:
-						inst.mnemonics[len(inst.mnemonics)-1].rest.append(s.strip())
+				s = getString(f)
+				inst.mnemonics[-1].syntax += s.strip()
 			elif tag == "code_example" and possibly_in_instruction:
 				c = f.read(1)
 				# translate FrameMaker special characters with ASCII equivalents
@@ -279,6 +275,10 @@ def ParaLine(f,tag):
 			if token == "HardHyphen":
 				if tag == "Instruction Head":
 					inst.head.append('-')
+			elif token == "Tab":
+				if tag == "Instruction Form":
+					#inst.mnemonics[-1].rest.append(' ')
+					inst.mnemonics[-1].syntax += ' '
 		elif token == "Conditional":
 			suppress = False
 			while True:
@@ -517,7 +517,7 @@ def Cell(f):
 def setISA(m,ISA):
 	for inst in insts:
 		for mnemonic in inst.mnemonics:
-			if mnemonic.mnemonic == m:
+			if len(mnemonic.syntax) > 0 and mnemonic.syntax.split()[0] == m:
 				mnemonic.release = ISA
 
 def Row(f,tag):
@@ -656,7 +656,18 @@ for inst in insts:
 
 	mnemonics = []
 	for mnemonic in inst.mnemonics:
-		if mnemonic.mnemonic != "":
+		if mnemonic.syntax != "":
+			m = re.fullmatch("^((?P<mnemonic>\w+(\.){,1}))(\s+(?P<operands>[\w,\s\(\)]*)( (?P<conditions>\(.*\))){,1}){,1}\s*",mnemonic.syntax)
+			# ISA BUG: some instructions have a period instead of a comma
+			if m == None:
+				m = re.fullmatch("^((?P<mnemonic>\w+(\.){,1}))(\s+(?P<operands>[\w,\.\s\(\)]*)( (?P<conditions>\(.*\))){,1}){,1}\s*",mnemonic.syntax)
+			mnemonic.mnemonic = m.group('mnemonic')
+			mnemonic.operands = m.group('operands')
+			if mnemonic.operands != None:
+				mnemonic.operands = mnemonic.operands.replace(' ','')
+				# ISA BUG: some instructions have a period instead of a comma
+				mnemonic.operands = mnemonic.operands.replace('.',',')
+			mnemonic.conditions = m.group('conditions')
 			mnemonics.append(mnemonic)
 	inst.mnemonics = mnemonics
 	if len(inst.mnemonics) == 0:

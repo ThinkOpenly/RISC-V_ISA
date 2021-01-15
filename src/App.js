@@ -73,10 +73,10 @@ class App extends Component {
         };
     }
 
-    displayRegs(regs) {
+    displayOperands(operands) {
         let all = "";
-        for (let i = 0; i < regs.length; i++) {
-            all += regs[i] + ", ";
+        for (let i = 0; i < operands.length; i++) {
+            all += operands[i] + ", ";
         }
         return all.substring(0, all.length - 2);
     }
@@ -92,7 +92,10 @@ class App extends Component {
             s += newline +
                 item.mnemonics[i].mnemonic +
                 spaces.substr(0,gap) +
-                this.displayRegs(item.mnemonics[i].regs);
+                this.displayOperands(item.mnemonics[i].operands);
+            try {
+                s += " " + item.mnemonics[i].conditions;
+            } catch(err) {}
             newline = "\n\r";
         }
         return s;
