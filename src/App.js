@@ -94,7 +94,15 @@ class App extends Component {
                 spaces.substr(0,gap) +
                 this.displayOperands(item.mnemonics[i].operands);
             try {
-                s += " " + item.mnemonics[i].conditions;
+                if (item.mnemonics[i].conditions.length > 0) {
+                    s += "  (";
+                    let comma = "";
+                    for (let c = 0; c < item.mnemonics[i].conditions.length; c++) {
+                        s += comma + item.mnemonics[i].conditions[c].field + "=" + item.mnemonics[i].conditions[c].value;
+                        comma = ", ";
+                    }
+                    s += ")";
+                }
             } catch(err) {}
             newline = "\n\r";
         }

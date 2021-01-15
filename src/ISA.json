@@ -8,13 +8,17 @@
                 {
                     "mnemonic": "and",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "and.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -96,13 +100,17 @@
                 {
                     "mnemonic": "andc",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "andc.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -131,25 +139,37 @@
                 {
                     "mnemonic": "add",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "add.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -177,25 +197,37 @@
                 {
                     "mnemonic": "addc",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addc.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addco",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addco.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -223,25 +255,37 @@
                 {
                     "mnemonic": "adde",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "adde.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addeo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addeo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -551,25 +595,37 @@
                 {
                     "mnemonic": "addme",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addme.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addmeo",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addmeo.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -597,25 +653,37 @@
                 {
                     "mnemonic": "addze",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addze.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addzeo",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "addzeo.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -679,25 +747,37 @@
                 {
                     "mnemonic": "b",
                     "operands": [ "target_addr" ],
-                    "conditions": "(AA=0 LK=0)",
+                    "conditions": [ 
+                        { "field": "AA", "value": "0" },
+                        { "field": "LK", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "ba",
                     "operands": [ "target_addr" ],
-                    "conditions": "(AA=1 LK=0)",
+                    "conditions": [ 
+                        { "field": "AA", "value": "1" },
+                        { "field": "LK", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "bl",
                     "operands": [ "target_addr" ],
-                    "conditions": "(AA=0 LK=1)",
+                    "conditions": [ 
+                        { "field": "AA", "value": "0" },
+                        { "field": "LK", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "bla",
                     "operands": [ "target_addr" ],
-                    "conditions": "(AA=1 LK=1)",
+                    "conditions": [ 
+                        { "field": "AA", "value": "1" },
+                        { "field": "LK", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -734,25 +814,37 @@
                 {
                     "mnemonic": "bc",
                     "operands": [ "BO", "BI", "target_addr" ],
-                    "conditions": "(AA=0 LK=0)",
+                    "conditions": [ 
+                        { "field": "AA", "value": "0" },
+                        { "field": "LK", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "bca",
                     "operands": [ "BO", "BI", "target_addr" ],
-                    "conditions": "(AA=1 LK=0)",
+                    "conditions": [ 
+                        { "field": "AA", "value": "1" },
+                        { "field": "LK", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "bcl",
                     "operands": [ "BO", "BI", "target_addr" ],
-                    "conditions": "(AA=0 LK=1)",
+                    "conditions": [ 
+                        { "field": "AA", "value": "0" },
+                        { "field": "LK", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "bcla",
                     "operands": [ "BO", "BI", "target_addr" ],
-                    "conditions": "(AA=1 LK=1)",
+                    "conditions": [ 
+                        { "field": "AA", "value": "1" },
+                        { "field": "LK", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -803,13 +895,17 @@
                 {
                     "mnemonic": "bctar",
                     "operands": [ "BO", "BI", "BH" ],
-                    "conditions": "(LK=0)",
+                    "conditions": [ 
+                        { "field": "LK", "value": "0" }
+                    ],
                     "release": "v2.07"
                 },
                 {
                     "mnemonic": "bctarl",
                     "operands": [ "BO", "BI", "BH" ],
-                    "conditions": "(LK=1)",
+                    "conditions": [ 
+                        { "field": "LK", "value": "1" }
+                    ],
                     "release": "v2.07"
                 }
             ],
@@ -854,13 +950,17 @@
                 {
                     "mnemonic": "bcctr",
                     "operands": [ "BO", "BI", "BH" ],
-                    "conditions": "(LK=0)",
+                    "conditions": [ 
+                        { "field": "LK", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "bcctrl",
                     "operands": [ "BO", "BI", "BH" ],
-                    "conditions": "(LK=1)",
+                    "conditions": [ 
+                        { "field": "LK", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -902,13 +1002,17 @@
                 {
                     "mnemonic": "bclr",
                     "operands": [ "BO", "BI", "BH" ],
-                    "conditions": "(LK=0)",
+                    "conditions": [ 
+                        { "field": "LK", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "bclrl",
                     "operands": [ "BO", "BI", "BH" ],
-                    "conditions": "(LK=1)",
+                    "conditions": [ 
+                        { "field": "LK", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -1704,13 +1808,17 @@
                 {
                     "mnemonic": "cntlzd",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "cntlzd.",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -1784,13 +1892,17 @@
                 {
                     "mnemonic": "cntlzw",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "cntlzw.",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -1827,13 +1939,17 @@
                 {
                     "mnemonic": "cnttzd",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.0"
                 },
                 {
                     "mnemonic": "cnttzd.",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -1907,13 +2023,17 @@
                 {
                     "mnemonic": "cnttzw",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.0"
                 },
                 {
                     "mnemonic": "cnttzw.",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -1950,7 +2070,9 @@
                 {
                     "mnemonic": "dadd",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -1977,7 +2099,9 @@
                 {
                     "mnemonic": "daddq",
                     "operands": [ "FRTp", "FRAp", "FRBp" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2162,7 +2286,9 @@
                 {
                     "mnemonic": "dcffix",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -2197,7 +2323,9 @@
                 {
                     "mnemonic": "dcffixq",
                     "operands": [ "FRTp", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2266,7 +2394,9 @@
                 {
                     "mnemonic": "dctqpq",
                     "operands": [ "FRTp", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2303,7 +2433,9 @@
                 {
                     "mnemonic": "dctdp",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2339,7 +2471,9 @@
                 {
                     "mnemonic": "dctfix",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2366,7 +2500,9 @@
                 {
                     "mnemonic": "dctfixq",
                     "operands": [ "FRT", "FRBp" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2435,7 +2571,9 @@
                 {
                     "mnemonic": "ddedpd",
                     "operands": [ "SP", "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2463,7 +2601,9 @@
                 {
                     "mnemonic": "ddedpdq",
                     "operands": [ "SP", "FRTp", "FRBp" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2498,7 +2638,9 @@
                 {
                     "mnemonic": "ddiv",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2525,7 +2667,9 @@
                 {
                     "mnemonic": "ddivq",
                     "operands": [ "FRTp", "FRAp", "FRBp" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2568,7 +2712,9 @@
                 {
                     "mnemonic": "denbcd",
                     "operands": [ "S", "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2596,7 +2742,9 @@
                 {
                     "mnemonic": "denbcdq",
                     "operands": [ "S", "FRTp", "FRBp" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2633,7 +2781,9 @@
                 {
                     "mnemonic": "dxex",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2660,7 +2810,9 @@
                 {
                     "mnemonic": "dxexq",
                     "operands": [ "FRT", "FRBp" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2692,7 +2844,9 @@
                 {
                     "mnemonic": "diex",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2760,7 +2914,9 @@
                 {
                     "mnemonic": "dmul",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2787,7 +2943,9 @@
                 {
                     "mnemonic": "dmulq",
                     "operands": [ "FRTp", "FRAp", "FRBp" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2828,7 +2986,9 @@
                 {
                     "mnemonic": "dqua",
                     "operands": [ "FRT", "FRA", "FRB", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2856,7 +3016,9 @@
                 {
                     "mnemonic": "dquai",
                     "operands": [ "TE", "FRT", "FRB", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2884,7 +3046,9 @@
                 {
                     "mnemonic": "dquaiq",
                     "operands": [ "TE", "FRTp", "FRBp", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2931,7 +3095,9 @@
                 {
                     "mnemonic": "dquaq",
                     "operands": [ "FRTp", "FRAp", "FRBp", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -2981,7 +3147,9 @@
                 {
                     "mnemonic": "drrnd",
                     "operands": [ "FRT", "FRA", "FRB", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3009,7 +3177,9 @@
                 {
                     "mnemonic": "drrndq",
                     "operands": [ "FRTp", "FRA", "FRBp", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3081,7 +3251,9 @@
                 {
                     "mnemonic": "drdpq",
                     "operands": [ "FRTp", "FRBp" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3128,7 +3300,9 @@
                 {
                     "mnemonic": "drsp",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3171,7 +3345,9 @@
                 {
                     "mnemonic": "drintx",
                     "operands": [ "R", "FRT", "FRB", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3200,7 +3376,9 @@
                 {
                     "mnemonic": "drintxq",
                     "operands": [ "R", "FRTp", "FRBp", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3258,7 +3436,9 @@
                 {
                     "mnemonic": "drintn",
                     "operands": [ "R", "FRT", "FRB", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3287,7 +3467,9 @@
                 {
                     "mnemonic": "drintnq",
                     "operands": [ "R", "FRTp", "FRBp", "RMC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3327,7 +3509,9 @@
                 {
                     "mnemonic": "dscli",
                     "operands": [ "FRT", "FRA", "SH" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3354,7 +3538,9 @@
                 {
                     "mnemonic": "dscliq",
                     "operands": [ "FRTp", "FRAp", "SH" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3395,7 +3581,9 @@
                 {
                     "mnemonic": "dscri",
                     "operands": [ "FRT", "FRA", "SH" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3422,7 +3610,9 @@
                 {
                     "mnemonic": "dscriq",
                     "operands": [ "FRTp", "FRAp", "SH" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3463,7 +3653,9 @@
                 {
                     "mnemonic": "dsub",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -3490,7 +3682,9 @@
                 {
                     "mnemonic": "dsubq",
                     "operands": [ "FRTp", "FRAp", "FRBp" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -4973,25 +5167,37 @@
                 {
                     "mnemonic": "divd",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divd.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divdo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divdo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -5036,25 +5242,37 @@
                 {
                     "mnemonic": "divde",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divde.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divdeo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divdeo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -5099,25 +5317,37 @@
                 {
                     "mnemonic": "divdeu",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divdeu.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divdeuo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divdeuo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -5164,25 +5394,37 @@
                 {
                     "mnemonic": "divdu",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divdu.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divduo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divduo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -5226,25 +5468,37 @@
                 {
                     "mnemonic": "divw",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divw.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divwo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divwo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -5290,25 +5544,37 @@
                 {
                     "mnemonic": "divwe",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divwe.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divweo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divweo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -5354,25 +5620,37 @@
                 {
                     "mnemonic": "divweu",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divweu.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divweuo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "divweuo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -5435,25 +5713,37 @@
                 {
                     "mnemonic": "divwu",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divwu.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divwuo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "divwuo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -5499,13 +5789,17 @@
                 {
                     "mnemonic": "eqv",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "eqv.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -5534,13 +5828,17 @@
                 {
                     "mnemonic": "extsb",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "extsb.",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -5570,13 +5868,17 @@
                 {
                     "mnemonic": "extsh",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "extsh.",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -5606,13 +5908,17 @@
                 {
                     "mnemonic": "extsw",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "extsw.",
                     "operands": [ "RA", "RS" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -5642,13 +5948,17 @@
                 {
                     "mnemonic": "extswsli",
                     "operands": [ "RA", "RS", "SH" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.0"
                 },
                 {
                     "mnemonic": "extswsli.",
                     "operands": [ "RA", "RS", "SH" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -5683,13 +5993,17 @@
                 {
                     "mnemonic": "fabs",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fabs.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -5717,13 +6031,17 @@
                 {
                     "mnemonic": "fadd",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fadd.",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -5751,13 +6069,17 @@
                 {
                     "mnemonic": "fadds",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fadds.",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -5894,13 +6216,17 @@
                 {
                     "mnemonic": "fctid",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fctid.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -5948,13 +6274,17 @@
                 {
                     "mnemonic": "fctiw",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P2"
                 },
                 {
                     "mnemonic": "fctiw.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P2"
                 }
             ],
@@ -6001,13 +6331,17 @@
                 {
                     "mnemonic": "fctidu",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "fctidu.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -6054,13 +6388,17 @@
                 {
                     "mnemonic": "fctiwu",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "fctiwu.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -6107,13 +6445,17 @@
                 {
                     "mnemonic": "fcfid",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fcfid.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -6150,13 +6492,17 @@
                 {
                     "mnemonic": "fcfids",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "fcfids.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -6193,13 +6539,17 @@
                 {
                     "mnemonic": "fcfidu",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "fcfidu.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -6236,13 +6586,17 @@
                 {
                     "mnemonic": "fcfidus",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "fcfidus.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -6291,13 +6645,17 @@
                 {
                     "mnemonic": "fctidz",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fctidz.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -6345,13 +6703,17 @@
                 {
                     "mnemonic": "fctiwz",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P2"
                 },
                 {
                     "mnemonic": "fctiwz.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P2"
                 }
             ],
@@ -6398,13 +6760,17 @@
                 {
                     "mnemonic": "fctiduz",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "fctiduz.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -6451,13 +6817,17 @@
                 {
                     "mnemonic": "fctiwuz",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 },
                 {
                     "mnemonic": "fctiwuz.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -6504,13 +6874,17 @@
                 {
                     "mnemonic": "fcpsgn",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.05"
                 },
                 {
                     "mnemonic": "fcpsgn.",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.05"
                 }
             ],
@@ -6538,13 +6912,17 @@
                 {
                     "mnemonic": "fdiv",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fdiv.",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -6572,13 +6950,17 @@
                 {
                     "mnemonic": "fdivs",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fdivs.",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -6684,13 +7066,17 @@
                 {
                     "mnemonic": "fmr",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fmr.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -6717,13 +7103,17 @@
                 {
                     "mnemonic": "fmul",
                     "operands": [ "FRT", "FRA", "FRC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fmul.",
                     "operands": [ "FRT", "FRA", "FRC" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -6751,13 +7141,17 @@
                 {
                     "mnemonic": "fmuls",
                     "operands": [ "FRT", "FRA", "FRC" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fmuls.",
                     "operands": [ "FRT", "FRA", "FRC" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -6794,13 +7188,17 @@
                 {
                     "mnemonic": "fmadd",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fmadd.",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -6828,13 +7226,17 @@
                 {
                     "mnemonic": "fmadds",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fmadds.",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -6872,13 +7274,17 @@
                 {
                     "mnemonic": "fmsub",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fmsub.",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -6906,13 +7312,17 @@
                 {
                     "mnemonic": "fmsubs",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fmsubs.",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -6950,13 +7360,17 @@
                 {
                     "mnemonic": "fneg",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fneg.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -6984,13 +7398,17 @@
                 {
                     "mnemonic": "fnabs",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fnabs.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -7018,13 +7436,17 @@
                 {
                     "mnemonic": "fnmadd",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fnmadd.",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -7052,13 +7474,17 @@
                 {
                     "mnemonic": "fnmadds",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fnmadds.",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -7100,13 +7526,17 @@
                 {
                     "mnemonic": "fnmsub",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fnmsub.",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -7134,13 +7564,17 @@
                 {
                     "mnemonic": "fnmsubs",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fnmsubs.",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -7182,13 +7616,17 @@
                 {
                     "mnemonic": "fre",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.02"
                 },
                 {
                     "mnemonic": "fre.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.02"
                 }
             ],
@@ -7216,13 +7654,17 @@
                 {
                     "mnemonic": "fres",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fres.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -7265,13 +7707,17 @@
                 {
                     "mnemonic": "frsqrte",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "frsqrte.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -7299,13 +7745,17 @@
                 {
                     "mnemonic": "frsqrtes",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.02"
                 },
                 {
                     "mnemonic": "frsqrtes.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.02"
                 }
             ],
@@ -7348,13 +7798,17 @@
                 {
                     "mnemonic": "frim",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.02"
                 },
                 {
                     "mnemonic": "frim.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.02"
                 }
             ],
@@ -7385,13 +7839,17 @@
                 {
                     "mnemonic": "frin",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.02"
                 },
                 {
                     "mnemonic": "frin.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.02"
                 }
             ],
@@ -7424,13 +7882,17 @@
                 {
                     "mnemonic": "frip",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.02"
                 },
                 {
                     "mnemonic": "frip.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.02"
                 }
             ],
@@ -7462,13 +7924,17 @@
                 {
                     "mnemonic": "friz",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.02"
                 },
                 {
                     "mnemonic": "friz.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.02"
                 }
             ],
@@ -7499,13 +7965,17 @@
                 {
                     "mnemonic": "frsp",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "frsp.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -7539,13 +8009,17 @@
                 {
                     "mnemonic": "fsel",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fsel.",
                     "operands": [ "FRT", "FRA", "FRC", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -7602,13 +8076,17 @@
                 {
                     "mnemonic": "fsqrt",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P2"
                 },
                 {
                     "mnemonic": "fsqrt.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P2"
                 }
             ],
@@ -7636,13 +8114,17 @@
                 {
                     "mnemonic": "fsqrts",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fsqrts.",
                     "operands": [ "FRT", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -7680,13 +8162,17 @@
                 {
                     "mnemonic": "fsub",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "fsub.",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -7714,13 +8200,17 @@
                 {
                     "mnemonic": "fsubs",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "fsubs.",
                     "operands": [ "FRT", "FRA", "FRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -13358,13 +13848,17 @@
                 {
                     "mnemonic": "mffs",
                     "operands": [ "FRT" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "mffs.",
                     "operands": [ "FRT" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -13855,13 +14349,17 @@
                 {
                     "mnemonic": "mtfsb0",
                     "operands": [ "BT" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "mtfsb0.",
                     "operands": [ "BT" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -13889,13 +14387,17 @@
                 {
                     "mnemonic": "mtfsb1",
                     "operands": [ "BT" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "mtfsb1.",
                     "operands": [ "BT" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -13924,13 +14426,17 @@
                 {
                     "mnemonic": "mtfsfi",
                     "operands": [ "BF", "U", "W" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "mtfsfi.",
                     "operands": [ "BF", "U", "W" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -13964,13 +14470,17 @@
                 {
                     "mnemonic": "mtfsf",
                     "operands": [ "FLM", "FRB", "L", "W" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "mtfsf.",
                     "operands": [ "FLM", "FRB", "L", "W" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -14590,13 +15100,17 @@
                 {
                     "mnemonic": "mulhd",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "mulhd.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -14629,13 +15143,17 @@
                 {
                     "mnemonic": "mulhdu",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "mulhdu.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -14670,13 +15188,17 @@
                 {
                     "mnemonic": "mulhw",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "mulhw.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -14711,13 +15233,17 @@
                 {
                     "mnemonic": "mulhwu",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "mulhwu.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -14754,25 +15280,37 @@
                 {
                     "mnemonic": "mulld",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "mulld.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "mulldo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "mulldo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -14838,25 +15376,37 @@
                 {
                     "mnemonic": "mullw",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "mullw.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "mullwo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "mullwo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -14989,13 +15539,17 @@
                 {
                     "mnemonic": "nand",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "nand.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -15024,13 +15578,17 @@
                 {
                     "mnemonic": "nor",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "nor.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -15060,25 +15618,37 @@
                 {
                     "mnemonic": "neg",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "neg.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "nego",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "nego.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -15149,13 +15719,17 @@
                 {
                     "mnemonic": "or",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "or.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -15242,13 +15816,17 @@
                 {
                     "mnemonic": "orc",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "orc.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -15531,13 +16109,17 @@
                 {
                     "mnemonic": "rldic",
                     "operands": [ "RA", "RS", "SH", "MB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "rldic.",
                     "operands": [ "RA", "RS", "SH", "MB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -15577,13 +16159,17 @@
                 {
                     "mnemonic": "rldicl",
                     "operands": [ "RA", "RS", "SH", "MB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "rldicl.",
                     "operands": [ "RA", "RS", "SH", "MB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -15623,13 +16209,17 @@
                 {
                     "mnemonic": "rldicr",
                     "operands": [ "RA", "RS", "SH", "ME" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "rldicr.",
                     "operands": [ "RA", "RS", "SH", "ME" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -15669,13 +16259,17 @@
                 {
                     "mnemonic": "rldimi",
                     "operands": [ "RA", "RS", "SH", "MB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "rldimi.",
                     "operands": [ "RA", "RS", "SH", "MB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -15725,13 +16319,17 @@
                 {
                     "mnemonic": "rldcl",
                     "operands": [ "RA", "RS", "RB", "MB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "rldcl.",
                     "operands": [ "RA", "RS", "RB", "MB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -15770,13 +16368,17 @@
                 {
                     "mnemonic": "rldcr",
                     "operands": [ "RA", "RS", "RB", "ME" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "rldcr.",
                     "operands": [ "RA", "RS", "RB", "ME" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -15813,13 +16415,17 @@
                 {
                     "mnemonic": "rlwinm",
                     "operands": [ "RA", "RS", "SH", "MB", "ME" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "rlwinm.",
                     "operands": [ "RA", "RS", "SH", "MB", "ME" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -15857,13 +16463,17 @@
                 {
                     "mnemonic": "rlwimi",
                     "operands": [ "RA", "RS", "SH", "MB", "ME" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "rlwimi.",
                     "operands": [ "RA", "RS", "SH", "MB", "ME" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -15901,13 +16511,17 @@
                 {
                     "mnemonic": "rlwnm",
                     "operands": [ "RA", "RS", "RB", "MB", "ME" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "rlwnm.",
                     "operands": [ "RA", "RS", "RB", "MB", "ME" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -16094,13 +16708,17 @@
                 {
                     "mnemonic": "sld",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "sld.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -16136,13 +16754,17 @@
                 {
                     "mnemonic": "slw",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "slw.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -16179,13 +16801,17 @@
                 {
                     "mnemonic": "srad",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "srad.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -16233,13 +16859,17 @@
                 {
                     "mnemonic": "sradi",
                     "operands": [ "RA", "RS", "SH" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "sradi.",
                     "operands": [ "RA", "RS", "SH" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -16284,13 +16914,17 @@
                 {
                     "mnemonic": "sraw",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "sraw.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -16341,13 +16975,17 @@
                 {
                     "mnemonic": "srawi",
                     "operands": [ "RA", "RS", "SH" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "srawi.",
                     "operands": [ "RA", "RS", "SH" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -16392,13 +17030,17 @@
                 {
                     "mnemonic": "srd",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "srd.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -16434,13 +17076,17 @@
                 {
                     "mnemonic": "srw",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "srw.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -19496,25 +20142,37 @@
                 {
                     "mnemonic": "subf",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "subf.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "subfo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "PPC"
                 },
                 {
                     "mnemonic": "subfo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "PPC"
                 }
             ],
@@ -19543,25 +20201,37 @@
                 {
                     "mnemonic": "subfc",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfc.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfco",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfco.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -19591,25 +20261,37 @@
                 {
                     "mnemonic": "subfe",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfe.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfeo",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfeo.",
                     "operands": [ "RT", "RA", "RB" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -19661,25 +20343,37 @@
                 {
                     "mnemonic": "subfme",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfme.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfmeo",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfmeo.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -19707,25 +20401,37 @@
                 {
                     "mnemonic": "subfze",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfze.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=0 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "0" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfzeo",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=0)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "subfzeo.",
                     "operands": [ "RT", "RA" ],
-                    "conditions": "(OE=1 Rc=1)",
+                    "conditions": [ 
+                        { "field": "OE", "value": "1" },
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],
@@ -20254,7 +20960,9 @@
                 {
                     "mnemonic": "xsaddqp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -21597,7 +22305,9 @@
                 {
                     "mnemonic": "xscvqpdp",
                     "operands": [ "VRT", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -22996,7 +23706,9 @@
                 {
                     "mnemonic": "xsdivqp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -24183,7 +24895,9 @@
                 {
                     "mnemonic": "xsmulqp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -24349,7 +25063,9 @@
                 {
                     "mnemonic": "xsmaddqp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -24567,7 +25283,9 @@
                 {
                     "mnemonic": "xsmsubqp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -25167,7 +25885,9 @@
                 {
                     "mnemonic": "xsnmaddqp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -25385,7 +26105,9 @@
                 {
                     "mnemonic": "xsnmsubqp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -26318,7 +27040,9 @@
                 {
                     "mnemonic": "xsrqpi",
                     "operands": [ "R", "VRT", "VRB", "RMC" ],
-                    "conditions": "(EX=0)",
+                    "conditions": [ 
+                        { "field": "EX", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -26563,7 +27287,9 @@
                 {
                     "mnemonic": "xssqrtqp",
                     "operands": [ "VRT", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -26795,7 +27521,9 @@
                 {
                     "mnemonic": "xssubqp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(RO=0)",
+                    "conditions": [ 
+                        { "field": "RO", "value": "0" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -28467,7 +29195,9 @@
                 {
                     "mnemonic": "xvcmpeqdp",
                     "operands": [ "XT", "XA", "XB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -28537,7 +29267,9 @@
                 {
                     "mnemonic": "xvcmpeqsp",
                     "operands": [ "XT", "XA", "XB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -28607,7 +29339,9 @@
                 {
                     "mnemonic": "xvcmpgtdp",
                     "operands": [ "XT", "XA", "XB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -28683,7 +29417,9 @@
                 {
                     "mnemonic": "xvcmpgtsp",
                     "operands": [ "XT", "XA", "XB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -28760,7 +29496,9 @@
                 {
                     "mnemonic": "xvcmpgedp",
                     "operands": [ "XT", "XA", "XB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -28836,7 +29574,9 @@
                 {
                     "mnemonic": "xvcmpgesp",
                     "operands": [ "XT", "XA", "XB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.06"
                 }
             ],
@@ -35701,13 +36441,17 @@
                 {
                     "mnemonic": "vcmpbfp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpbfp.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -35747,13 +36491,17 @@
                 {
                     "mnemonic": "vcmpeqfp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpeqfp.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -35798,7 +36546,9 @@
                 {
                     "mnemonic": "vcmpequq",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.1"
                 }
             ],
@@ -35844,13 +36594,17 @@
                 {
                     "mnemonic": "vcmpequb",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpequb.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -35898,13 +36652,17 @@
                 {
                     "mnemonic": "vcmpequd",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.07"
                 },
                 {
                     "mnemonic": "vcmpequd.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.07"
                 }
             ],
@@ -35952,13 +36710,17 @@
                 {
                     "mnemonic": "vcmpequh",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpequh.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36006,13 +36768,17 @@
                 {
                     "mnemonic": "vcmpequw",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpequw.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36060,13 +36826,17 @@
                 {
                     "mnemonic": "vcmpgtfp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpgtfp.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36111,13 +36881,17 @@
                 {
                     "mnemonic": "vcmpgtsb",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpgtsb.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36166,13 +36940,17 @@
                 {
                     "mnemonic": "vcmpgtsd",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.07"
                 },
                 {
                     "mnemonic": "vcmpgtsd.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.07"
                 }
             ],
@@ -36221,13 +36999,17 @@
                 {
                     "mnemonic": "vcmpgtsh",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpgtsh.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36276,7 +37058,9 @@
                 {
                     "mnemonic": "vcmpgtsq",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.1"
                 }
             ],
@@ -36325,13 +37109,17 @@
                 {
                     "mnemonic": "vcmpgtsw",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpgtsw.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36380,13 +37168,17 @@
                 {
                     "mnemonic": "vcmpgtub",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpgtub.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36435,13 +37227,17 @@
                 {
                     "mnemonic": "vcmpgtud",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.07"
                 },
                 {
                     "mnemonic": "vcmpgtud.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.07"
                 }
             ],
@@ -36490,13 +37286,17 @@
                 {
                     "mnemonic": "vcmpgtuh",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpgtuh.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36545,7 +37345,9 @@
                 {
                     "mnemonic": "vcmpgtuq",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.1"
                 }
             ],
@@ -36594,13 +37396,17 @@
                 {
                     "mnemonic": "vcmpgtuw",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpgtuw.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36649,13 +37455,17 @@
                 {
                     "mnemonic": "vcmpgefp",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v2.03"
                 },
                 {
                     "mnemonic": "vcmpgefp.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v2.03"
                 }
             ],
@@ -36700,13 +37510,17 @@
                 {
                     "mnemonic": "vcmpneb",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.0"
                 },
                 {
                     "mnemonic": "vcmpneb.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -36755,13 +37569,17 @@
                 {
                     "mnemonic": "vcmpneh",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.0"
                 },
                 {
                     "mnemonic": "vcmpneh.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -36810,13 +37628,17 @@
                 {
                     "mnemonic": "vcmpnew",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.0"
                 },
                 {
                     "mnemonic": "vcmpnew.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -36865,13 +37687,17 @@
                 {
                     "mnemonic": "vcmpnezb",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.0"
                 },
                 {
                     "mnemonic": "vcmpnezb.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -36920,13 +37746,17 @@
                 {
                     "mnemonic": "vcmpnezh",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.0"
                 },
                 {
                     "mnemonic": "vcmpnezh.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -36975,13 +37805,17 @@
                 {
                     "mnemonic": "vcmpnezw",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.0"
                 },
                 {
                     "mnemonic": "vcmpnezw.",
                     "operands": [ "VRT", "VRA", "VRB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "v3.0"
                 }
             ],
@@ -45430,7 +46264,9 @@
                 {
                     "mnemonic": "vstribl",
                     "operands": [ "VRT", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.1"
                 }
             ],
@@ -45475,7 +46311,9 @@
                 {
                     "mnemonic": "vstribr",
                     "operands": [ "VRT", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.1"
                 }
             ],
@@ -45520,7 +46358,9 @@
                 {
                     "mnemonic": "vstrihl",
                     "operands": [ "VRT", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.1"
                 }
             ],
@@ -45567,7 +46407,9 @@
                 {
                     "mnemonic": "vstrihr",
                     "operands": [ "VRT", "VRB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "v3.1"
                 }
             ],
@@ -46561,13 +47403,17 @@
                 {
                     "mnemonic": "xor",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=0)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "0" }
+                    ],
                     "release": "P1"
                 },
                 {
                     "mnemonic": "xor.",
                     "operands": [ "RA", "RS", "RB" ],
-                    "conditions": "(Rc=1)",
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
                     "release": "P1"
                 }
             ],

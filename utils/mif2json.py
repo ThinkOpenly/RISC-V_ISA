@@ -40,7 +40,15 @@ class Mnemonic:
 				comma = ", "
 		print(" ]," + line_postfix)
 		if self.conditions != None:
-			print(line_prefix + t + t + t + "\"conditions\": \"" + self.conditions + "\"," + line_postfix,sep="")
+			print(line_prefix + t*3 + "\"conditions\": [ " + line_postfix,sep="")
+			comma = ''
+			for condition in self.conditions[1:-1].split():
+				(field, value) = condition.split('=')
+				print(comma,end="")
+				print(line_prefix + t*4 + "{ \"field\": \"" + field + "\", \"value\": \"" + value + "\" }" + line_postfix,sep="",end="")
+				comma = "," + line_postfix + "\n"
+			print("")
+			print(line_prefix + t*3 + "]," + line_postfix,sep="")
 		print(line_prefix + t + t + t + "\"release\": \"" + str(self.release) + "\"",sep="")
 		print(line_prefix + t + t + "}",sep="",end="")
 
