@@ -32566,9 +32566,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "operands": [  ],
-                    "release": ""
+                    "mnemonic": "xvmsubadp",
+                    "operands": [ "XT", "XA", "XB" ],
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -32622,9 +32622,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "operands": [  ],
-                    "release": ""
+                    "mnemonic": "xvmsubmdp",
+                    "operands": [ "XT", "XA", "XB" ],
+                    "release": "v2.06"
                 }
             ],
             "layout": [

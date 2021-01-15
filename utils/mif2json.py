@@ -359,7 +359,7 @@ def xTag(f):
 		except: pass
 		inst = Instruction();
 		insts.append(inst)
-	elif s in [ "Instruction Form", ":p1.inst-syntax", ":p1.inst-syntax-compact", ":p1.inst-syntax.wide", ":p1.inst-syntax compact" ]:
+	elif s in [ "Instruction Form", ":p1.inst-syntax", ":p1.inst-syntax-compact", ":p1.inst-syntax.wide", ":p1.inst-syntax compact", ":inst-syntax." ]:
 		tag = "Instruction Form"
 		inst.mnemonics.append(Mnemonic())
 
