@@ -13505,9 +13505,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "operands": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvbf16ger2np",
+                    "operands": [ "AT", "XA", "XB", "XMSK", "YMSK", "PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -13545,9 +13545,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "operands": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvbf16ger2pn",
+                    "operands": [ "AT", "XA", "XB", "XMSK", "YMSK", "PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -13585,9 +13585,9 @@
             "category": "Vector-Scalar Extension Facility",
             "mnemonics": [
                 {
-                    "mnemonic": "",
-                    "operands": [  ],
-                    "release": ""
+                    "mnemonic": "pmxvbf16ger2pp",
+                    "operands": [ "AT", "XA", "XB", "XMSK", "YMSK", "PMSK" ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -36550,6 +36550,14 @@
                         { "field": "Rc", "value": "0" }
                     ],
                     "release": "v3.1"
+                },
+                {
+                    "mnemonic": "vcmpequq.",
+                    "operands": [ "VRT", "VRA", "VRB" ],
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -37062,6 +37070,14 @@
                         { "field": "Rc", "value": "0" }
                     ],
                     "release": "v3.1"
+                },
+                {
+                    "mnemonic": "vcmpgtsq.",
+                    "operands": [ "VRT", "VRA", "VRB" ],
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -37347,6 +37363,14 @@
                     "operands": [ "VRT", "VRA", "VRB" ],
                     "conditions": [ 
                         { "field": "Rc", "value": "0" }
+                    ],
+                    "release": "v3.1"
+                },
+                {
+                    "mnemonic": "vcmpgtuq.",
+                    "operands": [ "VRT", "VRA", "VRB" ],
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
                     ],
                     "release": "v3.1"
                 }
@@ -46268,6 +46292,14 @@
                         { "field": "Rc", "value": "0" }
                     ],
                     "release": "v3.1"
+                },
+                {
+                    "mnemonic": "vstribl.",
+                    "operands": [ "VRT", "VRB" ],
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -46313,6 +46345,14 @@
                     "operands": [ "VRT", "VRB" ],
                     "conditions": [ 
                         { "field": "Rc", "value": "0" }
+                    ],
+                    "release": "v3.1"
+                },
+                {
+                    "mnemonic": "vstribr.",
+                    "operands": [ "VRT", "VRB" ],
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
                     ],
                     "release": "v3.1"
                 }
@@ -46362,6 +46402,14 @@
                         { "field": "Rc", "value": "0" }
                     ],
                     "release": "v3.1"
+                },
+                {
+                    "mnemonic": "vstrihl.",
+                    "operands": [ "VRT", "VRB" ],
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
+                    ],
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -46409,6 +46457,14 @@
                     "operands": [ "VRT", "VRB" ],
                     "conditions": [ 
                         { "field": "Rc", "value": "0" }
+                    ],
+                    "release": "v3.1"
+                },
+                {
+                    "mnemonic": "vstrihr.",
+                    "operands": [ "VRT", "VRB" ],
+                    "conditions": [ 
+                        { "field": "Rc", "value": "1" }
                     ],
                     "release": "v3.1"
                 }
