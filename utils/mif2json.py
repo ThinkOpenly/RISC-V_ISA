@@ -4,6 +4,7 @@
 
 import sys
 import re
+import html
 
 debug = False
 next_arg = 1
@@ -250,6 +251,7 @@ def ParaLine(f,tag):
 				elif FTag == "symbol":
 					s = s.replace(b'\xc2\xac'.decode(),':=')
 				s = s.replace(b'\xc2\xac'.decode(),'~').replace(b'\xc2\xa3'.decode(),'<=').replace(b'\xc2\xba'.decode(),'==').replace(b'\xc3\x85'.decode(),'^').replace('\>','>').replace(b'\xc2\xb9'.decode(),'!=').replace(b'\xc2\xb4'.decode(),'*')
+				s = html.escape(s)
 				if FTag == "subscript":
 					s = "<sub>" + s + "</sub>"
 				elif FTag == "superscript":
@@ -259,6 +261,7 @@ def ParaLine(f,tag):
 				try:
 					c = f.read(1)
 					s = getString(f).replace('\>','>').replace('\q','')
+					s = html.escape(s)
 					if FTag == "subscript":
 						s = "<sub>" + s + "</sub>"
 					elif FTag == "superscript":

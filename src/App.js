@@ -122,7 +122,7 @@ class App extends Component {
     displayBody(item) {
         let all = [];
         for (let i = 0; i < item.body.length; i++) {
-            all.push(<p key={i}>{item.body[i]}</p>);
+            all.push(<p key={i} dangerouslySetInnerHTML={{__html: item.body[i]}}/>);
         }
         return all;
     }
@@ -215,7 +215,7 @@ class App extends Component {
                             console.log("clicked");
                         }}
                     >
-                        {this.displayCode(item)}
+                        <p className="inner" dangerouslySetInnerHTML={{__html: this.displayCode(item)}}/>
                     </CodeSnippet>
                     <br />
                     <div className="prose">
