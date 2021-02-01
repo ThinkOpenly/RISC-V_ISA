@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./App.scss";
 import Nav from "./Nav";
 import ISA from "./ISA.json";
 import {

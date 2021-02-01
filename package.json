@@ -1,26 +1,32 @@
 {
   "name": "isa",
   "version": "0.2.0",
-  "private": true,
-  "dependencies": {
-    "carbon-components": "^10.25.0",
-    "carbon-components-react": "^7.25.0",
-    "carbon-icons": "^7.0.7",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1"
-  },
+  "description": "Power ISA web",
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git@github.ibm.com:sdk/ISA.git"
+  },
+  "keywords": [
+    "OpenPOWER",
+    "ISA"
+  ],
+  "author": "Paul A. Clarke",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "carbon-components": "^10.27.0",
+    "carbon-components-react": "^7.27.0",
+    "carbon-icons": "^7.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.1",
+    "sass": "^1.32.5"
   },
   "browserslist": {
     "production": [
