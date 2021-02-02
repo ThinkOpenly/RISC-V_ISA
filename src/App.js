@@ -233,12 +233,28 @@ class App extends Component {
             s = s + comma + item.mnemonics[i].mnemonic;
             comma = ", ";
         }
+        let v = "";
+        comma = "";
+        for (let i = 0; i < item.mnemonics.length; i++) {
+            let match = false;
+            for (let j = i+1; j < item.mnemonics.length; j++) {
+                if (item.mnemonics[i].release == item.mnemonics[j].release) {
+                    match = true;
+                    break;
+                }
+            }
+            if (!match) {
+                v += comma + item.mnemonics[i].release;
+                comma = ", ";
+            }
+        }
         return (
             <table className="item">
                 <tbody>
                     <tr>
                         <td className="itemtitledesc">{item.description}</td>
                         <td className="itemtitlemnem">{s}</td>
+                        <td className="itemtitleISA">{v}</td>
                     </tr>
                 </tbody>
             </table>
