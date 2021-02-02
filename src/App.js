@@ -82,31 +82,50 @@ class App extends Component {
     }
 
     displayMnemonics(item) {
-        let s = "";
-        let newline = "";
-        const spaces = "            ";
+        let all = [];
+        const spaces = "               ";
 
         for (let i = 0; i < item.mnemonics.length; i++) {
             let gap = spaces.length - item.mnemonics[i].mnemonic.length;
             if (gap < 2) gap = 2;
-            s += newline +
+            let s =
                 item.mnemonics[i].mnemonic +
                 spaces.substr(0,gap) +
                 this.displayOperands(item.mnemonics[i].operands);
+            let conditions = "";
             try {
                 if (item.mnemonics[i].conditions.length > 0) {
-                    s += "  (";
+                    conditions = "(";
                     let comma = "";
                     for (let c = 0; c < item.mnemonics[i].conditions.length; c++) {
-                        s += comma + item.mnemonics[i].conditions[c].field + "=" + item.mnemonics[i].conditions[c].value;
+                        conditions += comma + item.mnemonics[i].conditions[c].field + "=" + item.mnemonics[i].conditions[c].value;
                         comma = ", ";
                     }
-                    s += ")";
+                    conditions += ")";
                 }
             } catch(err) {}
-            newline = "\n\r";
+            all.push(
+                <table>
+                    <tr>
+                        <td>
+                            <CodeSnippet
+                                className="syntax"
+                                feedback="Copied to clipboard"
+                                copyButtonDescription="Copy"
+                                ariaLabel="mnemonic"
+                                type="inline"
+                            >
+                                {s}
+                            </CodeSnippet>
+                        </td>
+                        <td>
+                            <p className="conditions">{conditions}</p>
+                        </td>
+                    </tr>
+                </table>
+            );
         }
-        return s;
+        return all;
     }
 
     displayCode(item) {
@@ -179,18 +198,7 @@ class App extends Component {
         return (
             <div className="expandContainer">
                 <div className="column">
-                    <CodeSnippet
-                        className="syntax"
-                        feedback="Copied to clipboard"
-                        copyButtonDescription="Copy"
-                        ariaLabel="mnemonic"
-                        onClick={() => {
-                            console.log("clicked");
-                        }}
-                        type="multi"
-                    >
-                        {this.displayMnemonics(item)}
-                    </CodeSnippet>
+                    {this.displayMnemonics(item)}
                     <br />
                     <table style={{width: '100%'}}>
                         <tbody>

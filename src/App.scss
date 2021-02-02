@@ -81,6 +81,15 @@
 .syntax {
     text-align: left;
     font-weight: bold;
+    white-space: pre;
+    code {
+        font-weight: bold;
+    }
+}
+
+.conditions {
+    text-align: left;
+    font-size: 75%;
 }
 
 .pseudocode {
