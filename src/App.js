@@ -76,10 +76,12 @@ class App extends Component {
 
     displayOperands(operands) {
         let all = "";
+        let comma = "";
         for (let i = 0; i < operands.length; i++) {
-            all += operands[i] + ",";
+            all += comma + operands[i];
+            comma = ",";
         }
-        return all.substring(0, all.length - 2);
+        return all;
     }
 
     displayMnemonics(item) {
