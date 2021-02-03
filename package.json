@@ -24,6 +24,7 @@
     "carbon-components-react": "^7.27.0",
     "carbon-icons": "^7.0.7",
     "react": "^17.0.1",
+    "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.1",
     "sass": "^1.32.5"

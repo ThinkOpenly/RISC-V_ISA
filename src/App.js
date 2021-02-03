@@ -9,6 +9,7 @@ import {
     Checkbox,
     CodeSnippet
 } from "carbon-components-react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const releases = [
     "P1",
@@ -76,7 +77,7 @@ class App extends Component {
     displayOperands(operands) {
         let all = "";
         for (let i = 0; i < operands.length; i++) {
-            all += operands[i] + ", ";
+            all += operands[i] + ",";
         }
         return all.substring(0, all.length - 2);
     }
@@ -104,24 +105,30 @@ class App extends Component {
                     conditions += ")";
                 }
             } catch(err) {}
+            let key = "mnemonics-table-" + i.toString();
             all.push(
-                <table>
-                    <tr>
-                        <td>
-                            <CodeSnippet
-                                className="syntax"
-                                feedback="Copied to clipboard"
-                                copyButtonDescription="Copy"
-                                ariaLabel="mnemonic"
-                                type="inline"
-                            >
-                                {s}
-                            </CodeSnippet>
-                        </td>
-                        <td>
-                            <p className="conditions">{conditions}</p>
-                        </td>
-                    </tr>
+                <table key={key}>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <CopyToClipboard text={s}>
+                                    <CodeSnippet
+                                        className="syntax"
+                                        key="syntax"
+                                        feedback="Copied to clipboard"
+                                        copyButtonDescription="Copy"
+                                        ariaLabel="mnemonic"
+                                        type="inline"
+                                    >
+                                        {s}
+                                    </CodeSnippet>
+                                </CopyToClipboard>
+                            </td>
+                            <td>
+                                <p className="conditions">{conditions}</p>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             );
         }
@@ -215,16 +222,16 @@ class App extends Component {
                         </tbody>
                     </table>
                     <br />
-                    <CodeSnippet
-                        className="pseudocode"
-                        type="multi"
-                        feedback="Copied to clipboard"
-                        onClick={() => {
-                            console.log("clicked");
-                        }}
-                    >
-                        <p className="inner" dangerouslySetInnerHTML={{__html: this.displayCode(item)}}/>
-                    </CodeSnippet>
+                    <CopyToClipboard text={this.displayCode(item)}>
+                        <CodeSnippet
+                            className="pseudocode"
+                            key="pseudocode"
+                            type="multi"
+                            feedback="Copied to clipboard"
+                        >
+                            <p className="inner" dangerouslySetInnerHTML={{__html: this.displayCode(item)}}/>
+                        </CodeSnippet>
+                    </CopyToClipboard>
                     <br />
                     <div className="prose">
                         {this.displayBody(item)}
