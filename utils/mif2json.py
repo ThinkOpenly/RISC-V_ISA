@@ -616,6 +616,33 @@ def Tbls(f):
 			Tbl(f)
 		FindElementEnd(f)
 
+conditions = {}
+
+def Condition (f):
+    global c, conditions
+    while True:
+        try:
+            FindElementStart (f)
+        except: break
+        token = getToken (f)
+        if token == "CTag":
+            c = f.read(1)
+            ctag = getString (f)
+        elif token == "CState":
+            c = f.read(1)
+            conditions[ctag] = getToken (f)
+        FindElementEnd (f)
+
+def ConditionCatalog (f):
+    while True:
+        try:
+            FindElementStart(f)
+        except: break
+        token = getToken(f)
+        if token == "Condition":
+            Condition(f)
+        FindElementEnd(f)
+
 def process_file (f):
     global c,layout,layouts,suppress,PgfTag,possibly_in_instruction
     possibly_in_instruction = False
@@ -636,8 +663,9 @@ def process_file (f):
             Tbls(f)
         elif token == "MIFFile":
             inst = None
+        elif token == "ConditionCatalog":
+            ConditionCatalog (f)
         FindElementEnd(f)
-
 
 if next_arg == len(sys.argv):
     process_file (sys.stdin)
