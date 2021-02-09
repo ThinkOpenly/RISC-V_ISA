@@ -345,7 +345,7 @@ def ParaLine(f,tag):
 		FindElementEnd(f)
 
 def xTag(f):
-	global c,inst,insts,title
+	global c,inst,insts,title,possibly_in_instruction
 	tag = ''
 	c = f.read(1)
 	s = getString(f)
@@ -364,7 +364,8 @@ def xTag(f):
 		insts.append(inst)
 	elif s in [ "Instruction Form", ":p1.inst-syntax", ":p1.inst-syntax-compact", ":p1.inst-syntax.wide", ":p1.inst-syntax compact", ":inst-syntax." ]:
 		tag = "Instruction Form"
-		inst.mnemonics.append(Mnemonic())
+		if possibly_in_instruction:
+			inst.mnemonics.append(Mnemonic())
 
 	# This is a weird one, which sometimes appears as the tag for
 	# where the ATbl for the Instruction Layout is found, AND
@@ -381,7 +382,7 @@ def xTag(f):
 		tag = "Body"
 	elif s in [ "instruction index" ]:
 		tag = s
-	elif s in [ "Instruction Layout", "InstructionFormat", "Instruction Layout - compressed", ":inst-encoding." ]:
+	elif s in [ "Instruction Layout", "Instruction Layout - compressed", ":inst-encoding." ]:
 		tag = "Instruction Layout"
 	elif s in [ "Title (Chapter)" ]:
 		tag = "title"
