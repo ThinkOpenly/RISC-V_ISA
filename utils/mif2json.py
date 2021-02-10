@@ -63,11 +63,13 @@ class Instruction:
 		self.body = []
 		self.category = ''
 		self.layout = None
+		self.book = ''
 	def outputJSON(self,line_prefix,line_postfix):
 		print(line_prefix + "{" + line_postfix);
 		print(line_prefix + t + "\"description\": \"" + self.head + "\"," + line_postfix)
 		print(line_prefix + t + "\"form\": \"" + self.form + "\"," + line_postfix)
 		print(line_prefix + t + "\"category\": \"" + self.category + "\"," + line_postfix)
+		print(line_prefix + t + "\"book\": \"" + self.book + "\"," + line_postfix)
 		print(line_prefix + t + "\"mnemonics\": [" + line_postfix)
 		comma = ''
 		for mnemonic in self.mnemonics:
@@ -137,6 +139,8 @@ class InstructionLayout:
 
 inst = None
 insts = []
+book_title = ''
+books = {}
 title = []
 outline = {}
 layout = None
@@ -202,6 +206,13 @@ def getString(f):
 		c = f.read(1)
 	return s
 
+def getVariable(name):
+    global variables,volume
+    value = variables[name]
+    value = value.replace ("<$volnum\>",volume)
+    dprint (f"getVariable(\"{name}\") = \"{value}\"")
+    return value
+
 def updateOutline(outline,title):
 	if len(title[0]) > 0:
 		if title[0] not in outline:
@@ -212,7 +223,7 @@ def updateOutline(outline,title):
 suppress = False
 possibly_in_instruction = False
 def ParaLine(f,tag):
-	global c,inst,title,outline,suppress,possibly_in_instruction
+	global c,inst,title,outline,suppress,possibly_in_instruction,volume,book_title
 	FTag = ''
 	if tag == "code_example" and possibly_in_instruction:
 		try:
@@ -237,6 +248,7 @@ def ParaLine(f,tag):
 				h = getString(f)
 				inst.head.append(h)
 				inst.category = title[len(title)-1]
+				inst.book = volume
 				updateOutline(outline,title)
 				possibly_in_instruction = True
 			elif tag == "Instruction Form" and possibly_in_instruction:
@@ -269,6 +281,9 @@ def ParaLine(f,tag):
 						s = "<sup>" + s + "</sup>"
 					inst.body[len(inst.body)-1] += s
 				except: pass
+			elif tag == "Book Title":
+				c = f.read(1)
+				book_title += getString (f)
 			elif tag == "title":
 				c = f.read(1)
 				title[0] += getString(f)
@@ -281,6 +296,10 @@ def ParaLine(f,tag):
 			elif tag == "sub-sub-sub-title":
 				c = f.read(1)
 				title[3] += getString(f)
+			elif tag == "Head_2":
+				c = f.read(1)
+				h = getString(f)
+				dprint (f"{tag} \"{h}\"")
 		elif token == "Char" and not suppress and possibly_in_instruction:
 			c = f.read(1)
 			token = getToken(f)
@@ -342,6 +361,18 @@ def ParaLine(f,tag):
 						token = getToken(f)
 						if token == "FSubscript":
 							FTag = "subscript"
+					FindElementEnd(f)
+		elif token == "Variable":
+			if tag == "Book Title":
+				while True:
+					try:
+						FindElementStart(f)
+					except: break
+					token = getToken(f)
+					if token == "VariableName":
+						c = f.read(1)
+						s = getString(f)
+						book_title += getVariable (s)
 					FindElementEnd(f)
 		FindElementEnd(f)
 
@@ -405,11 +436,13 @@ def xTag(f):
 	# 	tag = "sub-sub-sub-title"
 	# 	title = title[0:3]
 	# 	title.append("")
+	elif s in [ "Title" ]:
+		tag = "Book Title"
 	return tag
 
 PgfTag = ''
 def Para(f):
-	global c,inst,insts,PgfTag
+	global c,inst,insts,PgfTag,outline,book_title
 	while True:
 		try:
 			FindElementStart(f)
@@ -435,6 +468,15 @@ def Para(f):
 		else:
 			pass
 		FindElementEnd(f)
+
+	if PgfTag == "Book Title":
+		#updateOutline(outline,book_title)
+		# only the first title, please
+		if volume not in books:
+			books[volume] = book_title
+		book_title = ''
+		PgfTag = ''
+         
 	# some silly cleaning...
 	try:
 		if inst.mnemonics[len(inst.mnemonics)-1] == []:
@@ -645,10 +687,13 @@ def ConditionCatalog (f):
             Condition(f)
         FindElementEnd(f)
 
+volume = '0'
+
 def BookComponent (f):
-    global c, dir
+    global c, dir, volume
     filename = None
     exclude = False
+    volume_style = None
     while True:
         try:
             FindElementStart(f)
@@ -665,7 +710,27 @@ def BookComponent (f):
             elif token == "No":
                 exclude = False
             else: print (f"Unrecognized \"ExcludeComponent\" value \"{token}\"")
+        elif token == "VolumeNumStart":
+            c = f.read(1)
+            volume = getToken (f)
+        elif token == "VolumeNumStyle":
+            c = f.read(1)
+            volume_style = getToken (f)
+        elif token == "VolumeNumText":
+            c = f.read(1)
+            volume_text = getString (f)
         FindElementEnd(f)
+    if volume_style == 'UCRoman':
+        # One could `pip install roman`, but adds a dependency
+        # (for little value here)
+        if volume == '1':
+            volume = 'I'
+        elif volume == '2':
+            volume = 'II'
+        elif volume == '3':
+            volume = 'III'
+    elif volume_style == 'TextStyle':
+        volume = volume_text
     if filename != None and not exclude:
         if filename.startswith ("<c\>"):
             filename = filename.replace ("<c\>",dir + "/",1)
@@ -679,6 +744,35 @@ def BookComponent (f):
             return
         dprint (f"Processing \"{filename}\"...")
         process_file (fr)
+
+variables = {}
+
+def VariableFormat (f):
+    global c,variables
+    while True:
+        try:
+            FindElementStart (f)
+        except: break
+        token = getToken (f)
+        if token == "VariableName":
+            c = f.read(1)
+            name = getString (f)
+        elif token == "VariableDef":
+            c = f.read(1)
+            value = getString (f)
+        FindElementEnd (f)
+    variables[name] = value
+
+def VariableFormats (f):
+    global c
+    while True:
+        try:
+            FindElementStart (f)
+        except: break
+        token = getToken (f)
+        if token == "VariableFormat":
+            VariableFormat (f)
+        FindElementEnd (f)
 
 def process_file (f):
     global c,layout,layouts,suppress,PgfTag,possibly_in_instruction
@@ -704,6 +798,8 @@ def process_file (f):
             ConditionCatalog (f)
         elif token == "BookComponent":
             BookComponent (f)
+        elif token == "VariableFormats":
+            VariableFormats (f)
         FindElementEnd(f)
 
 dir = '.'
@@ -719,6 +815,7 @@ else:
         next_arg += 1
 
 forms = []
+books_with_insts = set()
 for inst in insts:
 	inst.head = [x.strip() for x in inst.head]
 	# hack to get HardHyphen properly inline in Instruction Head
@@ -753,6 +850,8 @@ for inst in insts:
 	inst.mnemonics = mnemonics
 	if len(inst.mnemonics) == 0:
 		inst.mnemonics.append(Mnemonic())
+
+	books_with_insts.add (inst.book)
 
 forms.sort()
 
@@ -799,11 +898,28 @@ def printOutline(outline,line_prefix):
 			print(comma + line_prefix + t + "{")
 			print(line_prefix + t + t + "\"name\": \"" + c + "\"",sep="",end="")
 			printOutline(outline[c],line_prefix+t+t)
+			print("")
 			comma=',\n'
 			print(line_prefix + t + "}",sep="",end="")
 		print("\n" + line_prefix,sep="",end="")
-	print("]");
+	print("]",sep="",end="");
 
 printOutline(outline,t)
 
+print(",")
+print(t + "\"books\": [",sep="",end="")
+comma=''
+for book in books:
+    if book in books_with_insts:
+        print (comma, sep="")
+        print (t*2 + "{", sep="")
+        print (t*3 + "\"shortname\": \"" + book + "\",", sep="")
+        print (t*3 + "\"title\": \"" + books[book] + "\"", sep="")
+        print (t*2 + "}", sep="", end="")
+        comma = ','
+print()
+print(t + "]", sep="",end="");
+print()
+
 print("}")
+
