@@ -3,6 +3,7 @@
 # This project is licensed under the Apache License version 2.0, see LICENSE.
 
 import sys
+import os
 import re
 import html
 
@@ -644,6 +645,41 @@ def ConditionCatalog (f):
             Condition(f)
         FindElementEnd(f)
 
+def BookComponent (f):
+    global c, dir
+    filename = None
+    exclude = False
+    while True:
+        try:
+            FindElementStart(f)
+        except: break
+        token = getToken(f)
+        if token == "FileName":
+            c = f.read(1)
+            filename = getString (f)
+        elif token == "ExcludeComponent":
+            c = f.read(1)
+            token = getToken (f)
+            if token == "Yes":
+                exclude = True
+            elif token == "No":
+                exclude = False
+            else: print (f"Unrecognized \"ExcludeComponent\" value \"{token}\"")
+        FindElementEnd(f)
+    if filename != None and not exclude:
+        if filename.startswith ("<c\>"):
+            filename = filename.replace ("<c\>",dir + "/",1)
+        filename = filename.replace ("<c\>","/")
+        if filename.endswith (".fm"):
+            filename = filename[0:-3] + ".mif"
+        try:
+            fr = open (filename)
+        except:
+            print (f"Warning: failed to open \"{filename}\". Ignoring.",file=sys.stderr)
+            return
+        dprint (f"Processing \"{filename}\"...")
+        process_file (fr)
+
 def process_file (f):
     global c,layout,layouts,suppress,PgfTag,possibly_in_instruction
     possibly_in_instruction = False
@@ -666,13 +702,18 @@ def process_file (f):
             inst = None
         elif token == "ConditionCatalog":
             ConditionCatalog (f)
+        elif token == "BookComponent":
+            BookComponent (f)
         FindElementEnd(f)
 
+dir = '.'
 if next_arg == len(sys.argv):
     process_file (sys.stdin)
 else:
     while next_arg < len(sys.argv):
+        dir = os.path.dirname (sys.argv[next_arg])
         f = open(sys.argv[next_arg])
+        dprint (f"Processing \"{sys.argv[next_arg]}\"...")
         process_file (f)
         f.close ()
         next_arg += 1
