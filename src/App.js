@@ -47,6 +47,7 @@ const cores = [
 
 var classes = [];
 var forms = [];
+var books = [];
 
 function genClassList(tree,index,array) {
     classes.push(tree.name);
@@ -57,17 +58,27 @@ function genFormList(tree,index,array) {
     forms.push(tree);
 }
 
+function genBookList(tree,index,array) {
+    books.push(tree.shortname);
+}
+
 class App extends Component {
 
     constructor(props) {
         super(props);
-        ISA.chapters.forEach(genClassList);
-        ISA.forms.forEach(genFormList);
+        /* Is the constructor called twice?? */
+        if (classes.length == 0)
+            ISA.chapters.forEach(genClassList);
+        if (forms.length == 0)
+            ISA.forms.forEach(genFormList);
+        if (books.length == 0)
+            ISA.books.forEach(genBookList);
         this.state = {
             data: ISA.instructions,
             releaseSet: releases,
             classSet: classes,
             formSet: forms,
+            bookSet: books,
             search: "",
             search_mnemonics: true,
             search_names: false
@@ -301,12 +312,15 @@ class App extends Component {
                         ) &&
                         this.state.formSet.includes(
                             data[i].form
+                        ) &&
+                        this.state.bookSet.includes(
+                            data[i].book
                         )
                     ) {
                         allJson.push(
                             <AccordionItem
                                 title={this.genTitle(data[i])}
-                                key={data[i].mnemonics[0].mnemonic}
+                                key={data[i].mnemonics[0].mnemonic + data[i].book}
                                 onClick={e => {
                                     console.log("click");
                                 }}
@@ -382,6 +396,28 @@ class App extends Component {
         return all;
     }
 
+    genBookCheckboxes(books) {
+        let all = [];
+        for (let i = 0; i < books.length; i++) {
+            all.push(
+                <Checkbox
+                    defaultChecked
+                    className="checkbox"
+                    id={books[i].shortname}
+                    key={books[i].shortname}
+                    labelText={books[i].title}
+                    disabled={false}
+                    hideLabel={false}
+                    wrapperClassName=""
+                    onChange={e => {
+                        this.filterByBooks(e, books[i].shortname);
+                    }}
+                />
+            );
+        }
+        return all;
+    }
+
     genFormCheckboxes(forms) {
         let all = [];
         for (let i = 0; i < forms.length; i++) {
@@ -445,6 +481,18 @@ class App extends Component {
         this.setState({ formSet: newSet });
     }
 
+    filterAllBooks(set) {
+        let newSet = [];
+        if (set) {
+            newSet = books;
+        }
+        for (let i = 0; i < books.length; i++) {
+            let id = document.getElementById(books[i]);
+            id.checked = set;
+        }
+        this.setState({ bookSet: newSet });
+    }
+
     filterByReleases(set, b) {
         let newSet = [];
         if (set) {
@@ -471,6 +519,23 @@ class App extends Component {
             }
         }
         this.setState({ classSet: newSet });
+    }
+
+    filterByBooks(set, b) {
+        console.log("filterByBooks(" + b + ")")
+        let newSet = [];
+        if (set) {
+            newSet = this.state.bookSet;
+            newSet.push(b);
+        } else {
+            for (let i = 0; i < this.state.bookSet.length; i++) {
+                console.log(this.state.bookSet[i] + "==" + b);
+                if (this.state.bookSet[i] === b) continue;
+                newSet.push(this.state.bookSet[i]);
+            }
+        }
+        console.log(newSet)
+        this.setState({ bookSet: newSet });
     }
 
     filterByForms(set, b) {
@@ -559,6 +624,27 @@ class App extends Component {
                                                 }}
                                             />
                                             {this.genFormCheckboxes(ISA.forms)}
+                                        </fieldset>
+                                    </AccordionItem>
+                                </Accordion>
+                                <Accordion>
+                                    <AccordionItem
+                                        title="Books"
+                                    >
+                                        <fieldset className="checkboxes">
+                                            <Checkbox
+                                                defaultChecked
+                                                className="checkbox"
+                                                id="all-books"
+                                                labelText="[all]"
+                                                disabled={false}
+                                                hideLabel={false}
+                                                wrapperClassName=""
+                                                onChange={e => {
+                                                    this.filterAllBooks(e);
+                                                }}
+                                            />
+                                            {this.genBookCheckboxes(ISA.books)}
                                         </fieldset>
                                     </AccordionItem>
                                 </Accordion>
