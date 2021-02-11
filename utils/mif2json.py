@@ -110,10 +110,12 @@ class InstructionLayout:
 	def outputJSON(self,line_prefix,line_postfix):
 		print("[" + line_postfix,sep="");
 		column = 0
+		multiword_adjust = 0
 		opcode_index = 0
 		comma = ''
 		while column < len(self.rows[0]):
 			col = self.rows[0][column]
+			field_start = self.rows[1][column]
 			column += 1
 			if col.isdecimal():
 				field_name = f"opcode"
@@ -129,6 +131,17 @@ class InstructionLayout:
 			while column < len(self.rows[0]) and len(self.rows[0][column]) == 0:
 				field_width += 1
 				column += 1
+			try:
+				field_start = str(int(field_start) + multiword_adjust)
+				if column < len(self.rows[0]):
+					if self.rows[1][column] == '0' and column > 0:
+						multiword_adjust += 32
+					field_end = str(int(self.rows[1][column]) + multiword_adjust)
+				else:
+					field_end = str(multiword_adjust + 32)
+				if field_start.isdecimal() and field_end.isdecimal():
+					field_width = int(field_end) - int(field_start)
+			except: pass
 			print (f"{comma}{line_prefix}" + t + "{" + f" \"name\": \"{field_name}\", \"size\": \"{field_width}\"",sep="",end="")
 			if field_value != None:
 				print (f", \"value\": \"{field_value}\"",sep="",end="")

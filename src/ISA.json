@@ -1230,11 +1230,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "430" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "430" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -1888,9 +1888,9 @@
                 { "name": "opcode", "size": "1", "value": "31" },
                 { "name": "reserved", "size": "2" },
                 { "name": "opcode", "size": "1", "value": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "774" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "774" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -1928,11 +1928,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "838" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "838" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -3781,8 +3781,8 @@
                 { "name": "opcode", "size": "6", "value": "59" },
                 { "name": "FRT", "size": "5" },
                 { "name": "FRA", "size": "5" },
-                { "name": "SH", "size": "6" },
-                { "name": "opcode", "size": "9", "value": "66" },
+                { "name": "SH", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "66" },
                 { "name": "Rc", "size": "1" }
             ],
             "code": [
@@ -3811,8 +3811,8 @@
                 { "name": "opcode", "size": "6", "value": "63" },
                 { "name": "FRTp", "size": "5" },
                 { "name": "FRAp", "size": "5" },
-                { "name": "SH", "size": "6" },
-                { "name": "opcode", "size": "9", "value": "66" },
+                { "name": "SH", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "66" },
                 { "name": "Rc", "size": "1" }
             ],
             "code": [
@@ -3855,8 +3855,8 @@
                 { "name": "opcode", "size": "6", "value": "59" },
                 { "name": "FRT", "size": "5" },
                 { "name": "FRA", "size": "5" },
-                { "name": "SH", "size": "6" },
-                { "name": "opcode", "size": "9", "value": "98" },
+                { "name": "SH", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "98" },
                 { "name": "Rc", "size": "1" }
             ],
             "code": [
@@ -3885,8 +3885,8 @@
                 { "name": "opcode", "size": "6", "value": "63" },
                 { "name": "FRTp", "size": "5" },
                 { "name": "FRAp", "size": "5" },
-                { "name": "SH", "size": "6" },
-                { "name": "opcode", "size": "9", "value": "98" },
+                { "name": "SH", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "98" },
                 { "name": "Rc", "size": "1" }
             ],
             "code": [
@@ -4327,12 +4327,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "L", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "86" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "2" },
+                { "name": "L", "size": "3" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "86" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -4394,11 +4394,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "54" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "54" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -4448,11 +4448,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "TH", "size": "2" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "278" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "TH", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "278" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -4507,11 +4507,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "TH", "size": "2" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "246" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "TH", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "246" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -4568,11 +4568,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "1014" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "1014" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -6377,11 +6377,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "854" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "854" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -9037,11 +9037,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "19" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "274" },
+                { "name": "opcode", "size": "6", "value": "19" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "274" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -9109,11 +9109,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "982" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "982" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -9155,12 +9155,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
+                { "name": "opcode", "size": "6", "value": "31" },
                 { "name": "reserved", "size": "1" },
-                { "name": "CT", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "22" },
+                { "name": "CT", "size": "4" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "22" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -9196,11 +9196,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "19" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "150" },
+                { "name": "opcode", "size": "6", "value": "19" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "150" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -9273,11 +9273,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "52" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "52" },
                 { "name": "EH", "size": "1" }
             ],
             "code": [
@@ -9423,11 +9423,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "853" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "853" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -9659,11 +9659,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "84" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "84" },
                 { "name": "EH", "size": "1" }
             ],
             "code": [
@@ -9709,11 +9709,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "2" },
-                { "name": "RA", "size": "1" },
-                { "name": "FC", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "614" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "FC", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "614" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -9802,11 +9802,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "885" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "885" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -10697,11 +10697,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "116" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "116" },
                 { "name": "EH", "size": "1" }
             ],
             "code": [
@@ -10889,11 +10889,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "821" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "821" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -11062,11 +11062,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RTp", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "276" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RTp", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "276" },
                 { "name": "EH", "size": "1" }
             ],
             "code": [
@@ -13181,11 +13181,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "20" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "20" },
                 { "name": "EH", "size": "1" }
             ],
             "code": [
@@ -13232,11 +13232,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "2" },
-                { "name": "RA", "size": "1" },
-                { "name": "FC", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "582" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "FC", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "582" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -13425,11 +13425,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "789" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "789" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -15135,11 +15135,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "238" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "238" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -15174,11 +15174,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "174" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "174" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -15214,11 +15214,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "110" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "110" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -15253,11 +15253,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "206" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "206" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -15292,11 +15292,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "142" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "142" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -15339,11 +15339,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "78" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "78" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -15378,11 +15378,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "886" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "886" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -15616,10 +15616,10 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "BHRBE", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "302" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "BHRBE", "size": "10" },
+                { "name": "opcode", "size": "10", "value": "302" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -15923,11 +15923,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": " ///", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "83" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": " ///", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "83" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -16047,10 +16047,10 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "spr", "size": "1" },
-                { "name": "339 ", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "spr", "size": "10" },
+                { "name": "339 ", "size": "10" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -16101,10 +16101,10 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "tbr", "size": "2" },
-                { "name": "opcode", "size": "1", "value": "371" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "tbr", "size": "10" },
+                { "name": "opcode", "size": "10", "value": "371" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -16533,12 +16533,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "reserved", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "reserved", "size": "4" },
                 { "name": " L", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "146" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "146" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -16586,12 +16586,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": " ///", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": " ///", "size": "4" },
                 { "name": "L", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "178" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "178" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -16744,10 +16744,10 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "spr", "size": "1" },
-                { "name": "467 ", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "spr", "size": "10" },
+                { "name": "467 ", "size": "10" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -18287,9 +18287,9 @@
                 { "name": "opcode", "size": "1", "value": "31" },
                 { "name": "reserved", "size": "2" },
                 { "name": "L", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "902" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "902" },
                 { "name": "opcode", "size": "1", "value": "1" }
             ],
             "code": [
@@ -18464,11 +18464,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "19" },
-                { "name": "reserved", "size": "1" },
-                { "name": " ///", "size": "1" },
-                { "name": " ///", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "18" },
+                { "name": "opcode", "size": "6", "value": "19" },
+                { "name": "reserved", "size": "5" },
+                { "name": " ///", "size": "5" },
+                { "name": " ///", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "18" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -18535,11 +18535,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "19" },
-                { "name": "reserved", "size": "1" },
-                { "name": " ///", "size": "1" },
-                { "name": " ///", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "82" },
+                { "name": "opcode", "size": "6", "value": "19" },
+                { "name": "reserved", "size": "5" },
+                { "name": " ///", "size": "5" },
+                { "name": " ///", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "82" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -18651,12 +18651,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "19" },
-                { "name": "reserved", "size": "1" },
-                { "name": " ///", "size": "1" },
-                { "name": " ///", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "19" },
+                { "name": "reserved", "size": "5" },
+                { "name": " ///", "size": "5" },
+                { "name": " ///", "size": "4" },
                 { "name": "S", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "146" },
+                { "name": "opcode", "size": "10", "value": "146" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -19156,11 +19156,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": " RT", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "979" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": " RT", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "979" },
                 { "name": "opcode", "size": "1", "value": "1" }
             ],
             "code": [
@@ -19233,12 +19233,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "IH", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "498" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "2" },
+                { "name": "IH", "size": "3" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "498" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -19350,12 +19350,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": " ///", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": " ///", "size": "4" },
                 { "name": "L", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "850" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "850" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -19421,11 +19421,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": " ///", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "434" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": " ///", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "434" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -19519,11 +19519,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": " ///", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "466" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": " ///", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "466" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -19637,12 +19637,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RT", "size": "1" },
-                { "name": "reserved", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RT", "size": "5" },
+                { "name": "reserved", "size": "4" },
                 { "name": "L", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "915" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "915" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -19685,12 +19685,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": " RT ", "size": "1" },
-                { "name": "reserved", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": " RT ", "size": "5" },
+                { "name": "reserved", "size": "4" },
                 { "name": "L", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "851" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "851" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -19733,11 +19733,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "402" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "402" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -19803,11 +19803,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "338" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "338" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -20594,11 +20594,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "981" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "981" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -20631,11 +20631,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "694" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "694" },
                 { "name": "opcode", "size": "1", "value": "1" }
             ],
             "code": [
@@ -20924,11 +20924,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "2" },
-                { "name": "RA", "size": "1" },
-                { "name": "FC", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "742" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "FC", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "742" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -21022,11 +21022,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "1013" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "1013" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -21059,11 +21059,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "214" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "214" },
                 { "name": "opcode", "size": "1", "value": "1" }
             ],
             "code": [
@@ -21966,11 +21966,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "949" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "949" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -22004,11 +22004,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "726" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "726" },
                 { "name": "opcode", "size": "1", "value": "1" }
             ],
             "code": [
@@ -22234,11 +22234,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RSp", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "182" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RSp", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "182" },
                 { "name": "opcode", "size": "1", "value": "1" }
             ],
             "code": [
@@ -23991,11 +23991,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "2" },
-                { "name": "RA", "size": "1" },
-                { "name": "FC", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "710" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "FC", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "710" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -24074,11 +24074,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "917" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "917" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -24111,11 +24111,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
-                { "name": "RA", "size": "1" },
-                { "name": "RB ", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "150" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
+                { "name": "RA", "size": "5" },
+                { "name": "RB ", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "150" },
                 { "name": "opcode", "size": "1", "value": "1" }
             ],
             "code": [
@@ -24624,13 +24624,13 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "L", "size": "1" },
-                { "name": "reserved", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "2" },
+                { "name": "L", "size": "3" },
+                { "name": "reserved", "size": "3" },
                 { "name": "SC", "size": "1" },
                 { "name": "reserved", "size": "2" },
-                { "name": "opcode", "size": "1", "value": "598" },
+                { "name": "opcode", "size": "10", "value": "598" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -24733,12 +24733,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "17" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "LEV", "size": "1" },
-                { "name": "reserved", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "17" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "4" },
+                { "name": "LEV", "size": "7" },
+                { "name": "reserved", "size": "3" },
                 { "name": "opcode", "size": "1", "value": "1" },
                 { "name": "reserved", "size": "1" }
             ],
@@ -24831,12 +24831,12 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "17" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "LEV", "size": "1" },
-                { "name": "reserved", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "17" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "4" },
+                { "name": "LEV", "size": "7" },
+                { "name": "reserved", "size": "3" },
                 { "name": "opcode", "size": "1", "value": "0" },
                 { "name": "opcode", "size": "1", "value": "1" }
             ],
@@ -24888,14 +24888,14 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
                 { "name": "reserved", "size": "1" },
-                { "name": "RIC", "size": "1" },
+                { "name": "RIC", "size": "2" },
                 { "name": "PRS", "size": "1" },
                 { "name": "R", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "306 ", "size": "1" },
+                { "name": "RB", "size": "5" },
+                { "name": "306 ", "size": "10" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -25184,14 +25184,14 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "RS", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "RS", "size": "5" },
                 { "name": "reserved", "size": "1" },
-                { "name": "RIC", "size": "1" },
+                { "name": "RIC", "size": "2" },
                 { "name": "PRS", "size": "1" },
                 { "name": "R", "size": "1" },
-                { "name": "RB", "size": "1" },
-                { "name": "274 ", "size": "1" },
+                { "name": "RB", "size": "5" },
+                { "name": "274 ", "size": "10" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -25426,11 +25426,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "566" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "566" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -25830,11 +25830,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "19" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "306" },
+                { "name": "opcode", "size": "6", "value": "19" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "306" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -32876,8 +32876,8 @@
                 { "name": "T", "size": "5" },
                 { "name": "A", "size": "5" },
                 { "name": "B", "size": "5" },
-                { "name": "opcode", "size": "8", "value": "8" },
-                { "name": "AX", "size": "1" },
+                { "name": "opcode", "size": "9", "value": "8" },
+                { "name": "AX", "size": "0" },
                 { "name": "BX", "size": "1" },
                 { "name": "TX", "size": "1" }
             ],
@@ -53237,14 +53237,14 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "31" },
-                { "name": "??", "size": "1" },
+                { "name": "opcode", "size": "6", "value": "31" },
+                { "name": "??", "size": "2" },
                 { "name": "reserved", "size": "1" },
-                { "name": "WC", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "PL", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "30" },
+                { "name": "WC", "size": "2" },
+                { "name": "reserved", "size": "3" },
+                { "name": "PL", "size": "2" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "30" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
@@ -53409,11 +53409,11 @@
                 }
             ],
             "layout": [
-                { "name": "opcode", "size": "1", "value": "19" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "reserved", "size": "1" },
-                { "name": "opcode", "size": "1", "value": "370" },
+                { "name": "opcode", "size": "6", "value": "19" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "reserved", "size": "5" },
+                { "name": "opcode", "size": "10", "value": "370" },
                 { "name": "reserved", "size": "1" }
             ],
             "code": [
