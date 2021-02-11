@@ -580,7 +580,7 @@ def Cell(f):
 		if token == "CellContent":
 			s += CellContent(f)
 		FindElementEnd(f)
-	return s
+	return s.strip()
 
 def setISA(m,ISA):
 	for inst in insts:
