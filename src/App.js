@@ -7,7 +7,8 @@ import {
     AccordionItem,
     Search,
     Checkbox,
-    CodeSnippet
+    CodeSnippet,
+    Link
 } from "carbon-components-react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -223,7 +224,16 @@ class App extends Component {
             let comma = "";
             for (let i = 0; i < item.intrinsics.length; i++) {
                 all.push(comma);
-                all.push(item.intrinsics[i]);
+                all.push(
+                    <Link
+                        className="link"
+                        key={item.intrinsics[i]}
+                        href="#"
+                        onClick={e => { this.setState({ search: item.intrinsics[i], search_intrinsics: true }); }}
+                    >
+                        {item.intrinsics[i]}
+                    </Link>
+                );
                 comma = ", ";
             }
         }
@@ -579,7 +589,16 @@ class App extends Component {
             let comma = "";
             for (let i = 0; i < item.instructions.length; i++) {
                 all.push(comma);
-                all.push(item.instructions[i]);
+                all.push(
+                    <Link
+                        className="link"
+                        key={item.instructions[i]}
+                        href="#"
+                        onClick={e => { this.setState({ search: item.instructions[i], search_instructions: true }); }}
+                    >
+                        {item.instructions[i]}
+                    </Link>
+                );
                 comma = ", ";
             }
         }
