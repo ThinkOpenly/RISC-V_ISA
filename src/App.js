@@ -75,13 +75,15 @@ class App extends Component {
             ISA.books.forEach(genBookList);
         this.state = {
             data: ISA.instructions,
+            intrinsics: ISA.intrinsics,
             releaseSet: releases,
             classSet: classes,
             formSet: forms,
             bookSet: books,
             search: "",
             search_mnemonics: true,
-            search_names: false
+            search_names: false,
+            search_intrinsics: false
         };
     }
 
@@ -214,6 +216,20 @@ class App extends Component {
         return (all);
     }
 
+    displayAssociatedIntrinsics(item) {
+        let all = [];
+        if (item.intrinsics.length) {
+            all.push(<p key={item.description}>Associated Intrinsics:</p>);
+            let comma = "";
+            for (let i = 0; i < item.intrinsics.length; i++) {
+                all.push(comma);
+                all.push(item.intrinsics[i]);
+                comma = ", ";
+            }
+        }
+        return all;
+    }
+
     genItem(item) {
         return (
             <div className="expandContainer">
@@ -248,6 +264,10 @@ class App extends Component {
                     <br />
                     <div className="prose">
                         {this.displayBody(item)}
+                    </div>
+                    <br />
+                    <div className="intrinsics">
+                        {this.displayAssociatedIntrinsics(item)}
                     </div>
                 </div>
             </div>
@@ -552,6 +572,71 @@ class App extends Component {
         this.setState({ formSet: newSet });
     }
 
+    displayAssociatedInstructions(item) {
+        let all = [];
+        if (item.instructions.length) {
+            all.push(<p key={item.mnemonic}>Associated Instructions:</p>);
+            let comma = "";
+            for (let i = 0; i < item.instructions.length; i++) {
+                all.push(comma);
+                all.push(item.instructions[i]);
+                comma = ", ";
+            }
+        }
+        return all;
+    }
+
+    genIntrinsic(item) {
+        return (
+            <div className="expandContainer">
+                <div className="column">
+                    {item.syntax}
+                    <br />
+                    <p className="purpose">
+                        {item.purpose}
+                    </p>
+                    <br />
+                    <p className="result">
+                        {item.result}
+                    </p>
+                    <br />
+                    <p className="endianness">
+                        {item.endianness}
+                    </p>
+                </div>
+                <br />
+                <div className="intrinsics">
+                    {this.displayAssociatedInstructions(item)}
+                </div>
+            </div>
+        );
+    }
+
+    genIntrinsics = data => {
+        let allJson = [];
+        if (this.state.search_intrinsics) {
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].mnemonic.startsWith(this.state.search)) {
+                        allJson.push(
+                            <AccordionItem
+                                title={data[i].mnemonic}
+                                key={data[i].mnemonic}
+                                onClick={e => {
+                                    console.log("click");
+                                }}
+                                onHeadingClick={e => {
+                                    console.log("heading click");
+                                }}
+                            >
+                                {this.genIntrinsic(data[i])}
+                            </AccordionItem>
+                        );
+                }
+            }
+        }
+        return allJson;
+    };
+
     render() {
         return (
             <div className="App">
@@ -692,6 +777,17 @@ class App extends Component {
                                                             this.setState({ search_names: e });
                                                         }}
                                                     />
+                                                    <Checkbox
+                                                        className="checkbox"
+                                                        id="search-intrinsics"
+                                                        labelText="intrinsics"
+                                                        disabled={false}
+                                                        hideLabel={false}
+                                                        wrapperClassName=""
+                                                        onChange={e => {
+                                                            this.setState({ search_intrinsics: e });
+                                                        }}
+                                                    />
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -699,6 +795,7 @@ class App extends Component {
                                 </div>
                                 <Accordion>
                                     {this.genData(this.state.data)}
+                                    {this.genIntrinsics(this.state.intrinsics)}
                                 </Accordion>
                             </div>
                         </div>
