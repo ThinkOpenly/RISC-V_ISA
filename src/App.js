@@ -642,6 +642,19 @@ class App extends Component {
         );
     }
 
+    genIntrinsicTitle (item) {
+        return (
+            <table className="item">
+                <tbody>
+                    <tr>
+                        <td className="itemtitledesc">{item.name}</td>
+                        <td className="itemtitlemnem">{item.mnemonic}</td>
+                    </tr>
+                </tbody>
+            </table>
+        );
+    }
+
     genIntrinsics = data => {
         let allJson = [];
         if (this.state.search_intrinsics) {
@@ -649,7 +662,7 @@ class App extends Component {
                 if (data[i].mnemonic.startsWith(this.state.search)) {
                         allJson.push(
                             <AccordionItem
-                                title={data[i].mnemonic}
+                                title={this.genIntrinsicTitle (data[i])}
                                 key={data[i].mnemonic}
                                 onClick={e => {
                                     console.log("click");
