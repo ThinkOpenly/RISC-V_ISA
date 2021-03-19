@@ -939,4 +939,6 @@ print (file=s)
 
 print ("}", end="", file=s)
 
-print (s.getvalue ())
+import json
+j = json.loads (s.getvalue ())
+print (json.dumps (j, indent=4))
