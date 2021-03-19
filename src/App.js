@@ -609,7 +609,18 @@ class App extends Component {
         return (
             <div className="expandContainer">
                 <div className="column">
-                    {item.syntax}
+                    <CopyToClipboard text={item.syntax}>
+                        <CodeSnippet
+                            className="syntax"
+                            key="syntax"
+                            feedback="Copied to clipboard"
+                            copyButtonDescription="Copy"
+                            ariaLabel="syntax"
+                            type="single"
+                        >
+                            {item.syntax}
+                        </CodeSnippet>
+                    </CopyToClipboard>
                     <br />
                     <p className="purpose">
                         {item.purpose}

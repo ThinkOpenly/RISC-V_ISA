@@ -87589,6 +87589,7 @@
     "intrinsics": [
         {
             "mnemonic": "vec_abs",
+            "name": "Vector Absolute Value",
             "syntax": "r = vec_abs (a)",
             "purpose": "Returns a vector r that contains the\n      absolute values of the contents of the vector\n      a.",
             "result": "The value of each element of r is the\n      absolute value of the corresponding element of\n      a.  For integer vectors, the arithmetic\n      is modular.",
@@ -87646,6 +87647,7 @@
         },
         {
             "mnemonic": "vec_absd",
+            "name": "Vector Absolute Difference",
             "syntax": "r = vec_absd (a, b)",
             "purpose": "Computes the absolute difference of two vectors.",
             "result": "The value of each element of r is the\n      absolute difference of the corresponding elements of a and b, using\n      modular arithmetic.",
@@ -87690,6 +87692,7 @@
         },
         {
             "mnemonic": "vec_abss",
+            "name": "Vector Absolute Value Saturated",
             "syntax": "r = vec_abss (a)",
             "purpose": "Returns a vector r that contains the\n      saturated absolute values of the contents of the vector\n      a.",
             "result": "The value of each element of r is the\n      saturated absolute value of the corresponding element of\n      a.",
@@ -87732,6 +87735,7 @@
         },
         {
             "mnemonic": "vec_add",
+            "name": "Vector Addition",
             "syntax": "r = vec_add (a, b)",
             "purpose": "Computes the sum of two vectors.",
             "result": "The value of each element of r is the\n      sum of the corresponding elements of a and b.  Modular\n      arithmetic is used for both signed and unsigned integers.",
@@ -87830,6 +87834,7 @@
         },
         {
             "mnemonic": "vec_addc",
+            "name": "Vector Add Carrying",
             "syntax": "r = vec_addc (a, b)",
             "purpose": "Returns a vector of carries produced by adding two vectors.",
             "result": "The value of each element of r is the\n      carry produced by adding the corresponding elements of a and b (1\n      if there is a carry, 0 otherwise).",
@@ -87875,6 +87880,7 @@
         },
         {
             "mnemonic": "vec_adde",
+            "name": "Vector Add Extended",
             "syntax": "r = vec_adde (a, b, c)",
             "purpose": "Returns a vector formed as the sum of two vectors and a carry vector.",
             "result": "The value of each element of r is\n      produced by adding the corresponding elements of a and b with\n      a carry specified in the corresponding element of c (1 if there is a carry, 0 otherwise).",
@@ -87927,6 +87933,7 @@
         },
         {
             "mnemonic": "vec_addec",
+            "name": "Vector Add Extended Carrying",
             "syntax": "r = vec_addec (a, b, c)",
             "purpose": "Returns a vector of carries produced by adding two vectors and\n      a carry vector.",
             "result": "The value of each element of r is\n      the carry produced by adding the corresponding elements of a and b and\n      a carry specified in the corresponding element of c (1 if there is a carry, 0 otherwise).",
@@ -87981,6 +87988,7 @@
         },
         {
             "mnemonic": "vec_adds",
+            "name": "Vector Add Saturating",
             "syntax": "r = vec_adds (a, b)",
             "purpose": "Computes the saturated sum of two vectors.",
             "result": "The value of each element of r is the\n      saturated sum of the corresponding elements of a and b.",
@@ -88042,6 +88050,7 @@
         },
         {
             "mnemonic": "vec_all_eq",
+            "name": "Vector All Equal",
             "syntax": "r = vec_all_eq (a, b)",
             "purpose": "Tests whether all elements of a\n      are equal to the corresponding elements of b.",
             "result": "r is 1 if each\n      element of a is equal to the\n      corresponding element of b. Otherwise,\n      r is 0.",
@@ -88159,6 +88168,7 @@
         },
         {
             "mnemonic": "vec_all_ge",
+            "name": "Vector All Greater or Equal",
             "syntax": "r = vec_all_ge (a, b)",
             "purpose": "Tests whether all elements of a are\n      greater than or equal to the corresponding elements of b.",
             "result": "r is 1 if\n      all elements of a are greater\n      than or equal to the corresponding elements of b.  Otherwise, r is 0.",
@@ -88250,6 +88260,7 @@
         },
         {
             "mnemonic": "vec_all_gt",
+            "name": "Vector All Greater Than",
             "syntax": "r = vec_all_gt (a, b)",
             "purpose": "Tests whether all elements of a are\n      greater than the corresponding elements of b.",
             "result": "r is 1 if\n      all elements of a are greater\n      than the corresponding elements of b.  Otherwise, r is 0.",
@@ -88341,6 +88352,7 @@
         },
         {
             "mnemonic": "vec_all_in",
+            "name": "Vector All In Range",
             "syntax": "r = vec_all_in (a, b)",
             "purpose": "Tests whether all elements of a vector are within a given range.",
             "result": "r  is 1 if each\n      element of a has a value less than or\n      equal to the value of the corresponding element of b, and greater than or equal to the negative of\n      the value of the corresponding element of b. Otherwise, r\n      is 0.",
@@ -88369,6 +88381,7 @@
         },
         {
             "mnemonic": "vec_all_le",
+            "name": "Vector All Less or Equal",
             "syntax": "r = vec_all_le (a, b)",
             "purpose": "Tests whether all elements of a are\n      less than or equal to the corresponding elements of b.",
             "result": "r is 1 if all\n      elements of a are less than or equal to\n      the corresponding elements of b.\n      Otherwise, r is 0.",
@@ -88460,6 +88473,7 @@
         },
         {
             "mnemonic": "vec_all_lt",
+            "name": "Vector All Less Than",
             "syntax": "r = vec_all_lt (a, b)",
             "purpose": "Tests whether all elements of a are\n      less than the corresponding elements of b.",
             "result": "r is 1 if all\n      elements of a are less than the\n      corresponding elements of b. Otherwise,\n      r is 0.",
@@ -88551,6 +88565,7 @@
         },
         {
             "mnemonic": "vec_all_nan",
+            "name": "Vector All Not-a-Number",
             "syntax": "r = vec_all_nan (a)",
             "purpose": "Tests whether all elements of a\n      are not-a-number (NaN).",
             "result": "r is 1 if\n      all elements of a are\n      NaN.  Otherwise, r is 0.",
@@ -88583,6 +88598,7 @@
         },
         {
             "mnemonic": "vec_all_ne",
+            "name": "Vector All Not Equal",
             "syntax": "r = vec_all_ne (a, b)",
             "purpose": "Tests whether all elements of a\n      are not equal to the corresponding elements of b.",
             "result": "r is 1 if\n      all elements of a are not equal\n      to the corresponding elements of b.  Otherwise, r is 0.",
@@ -88700,6 +88716,7 @@
         },
         {
             "mnemonic": "vec_all_nge",
+            "name": "Vector All Not Greater or Equal",
             "syntax": "r = vec_all_nge (a, b)",
             "purpose": "Tests whether all elements of a\n      are not greater than or equal to the corresponding elements of\n      b.",
             "result": "r is 1 if\n      all elements of a are not\n      greater than or equal to the corresponding elements of b. Otherwise, r is 0.",
@@ -88735,6 +88752,7 @@
         },
         {
             "mnemonic": "vec_all_ngt",
+            "name": "Vector All Not Greater Than",
             "syntax": "r = vec_all_ngt (a, b)",
             "purpose": "Tests whether all elements of a\n      are not greater than the corresponding elements of b.",
             "result": "r is 1 if\n      all elements of a are not\n      greater than the corresponding elements of b.  Otherwise, r is 0.",
@@ -88770,6 +88788,7 @@
         },
         {
             "mnemonic": "vec_all_nle",
+            "name": "Vector All Not Less or Equal",
             "syntax": "r = vec_all_nle (a, b)",
             "purpose": "Tests whether all elements of a\n      are not less than or equal to the corresponding elements of\n      b.",
             "result": "r is 1 if\n      all elements of a are not less\n      than or equal to the corresponding elements of b.  Otherwise, r is 0.",
@@ -88805,6 +88824,7 @@
         },
         {
             "mnemonic": "vec_all_nlt",
+            "name": "Vector All Not Less Than",
             "syntax": "r = vec_all_nlt (a, b)",
             "purpose": "Tests whether all elements of a\n      are not less than the corresponding elements of b.",
             "result": "r is 1 if\n      all elements of a are not less\n      than the corresponding elements of b.  Otherwise, r is 0.",
@@ -88840,6 +88860,7 @@
         },
         {
             "mnemonic": "vec_all_numeric",
+            "name": "Vector All Numeric",
             "syntax": "r = vec_all_numeric (a)",
             "purpose": "Tests whether all elements of the vector are numeric (not NaN).",
             "result": "r is 1 if\n      all elements of a are numeric\n      (not NaN).  Otherwise, r is\n      0.",
@@ -88872,6 +88893,7 @@
         },
         {
             "mnemonic": "vec_and",
+            "name": "Vector AND",
             "syntax": "r = vec_and (a, b)",
             "purpose": "Performs a bitwise AND of two vectors.",
             "result": "The value of r is the bitwise AND\n      of a and b.",
@@ -88980,6 +89002,7 @@
         },
         {
             "mnemonic": "vec_andc",
+            "name": "Vector AND with Complement",
             "syntax": "r = vec_andc (a, b)",
             "purpose": "Performs a bitwise AND of one vector with the bitwise complement of\n      another vector.",
             "result": "The value of r is the bitwise AND\n      of a with the bitwise complement\n      of b.",
@@ -89088,6 +89111,7 @@
         },
         {
             "mnemonic": "vec_any_eq",
+            "name": "Vector Any Equal",
             "syntax": "r = vec_any_eq (a, b)",
             "purpose": "Tests whether any element of a\n      is equal to the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is equal to the\n      corresponding element of b. Otherwise,\n      r is 0.",
@@ -89207,6 +89231,7 @@
         },
         {
             "mnemonic": "vec_any_ge",
+            "name": "Vector Any Greater or Equal",
             "syntax": "r = vec_any_ge (a, b)",
             "purpose": "Tests whether any element of a is\n      greater than or equal to the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is greater than or equal\n      to the corresponding element of b.\n      Otherwise, r is 0.",
@@ -89300,6 +89325,7 @@
         },
         {
             "mnemonic": "vec_any_gt",
+            "name": "Vector Any Greater Than",
             "syntax": "r = vec_any_gt (a, b)",
             "purpose": "Tests whether any element of a is\n      greater than the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is greater than the\n      corresponding element of b. Otherwise,\n      r is 0.",
@@ -89393,6 +89419,7 @@
         },
         {
             "mnemonic": "vec_any_le",
+            "name": "Vector Any Less or Equal",
             "syntax": "r = vec_any_le (a, b)",
             "purpose": "Tests whether any element of a is less\n      than or equal to the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is less than or equal to\n      the corresponding element of b.\n      Otherwise, r is 0.",
@@ -89486,6 +89513,7 @@
         },
         {
             "mnemonic": "vec_any_lt",
+            "name": "Vector Any Less Than",
             "syntax": "r = vec_any_lt (a, b)",
             "purpose": "Tests whether any element of a is less\n      than the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is less than the\n      corresponding element of b. Otherwise,\n      r is 0.",
@@ -89579,6 +89607,7 @@
         },
         {
             "mnemonic": "vec_any_nan",
+            "name": "Vector Any Not-a-Number",
             "syntax": "r = vec_any_nan (a)",
             "purpose": "Tests whether any element of the source vector is a NaN.",
             "result": "r is 1 if any\n      element of a is a NaN. Otherwise,\n      r is 0.",
@@ -89613,6 +89642,7 @@
         },
         {
             "mnemonic": "vec_any_ne",
+            "name": "Vector Any Not Equal",
             "syntax": "r = vec_any_ne (a, b)",
             "purpose": "Tests whether any element of a\n      is not equal to the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is not equal to the\n      corresponding element of b. Otherwise,\n      r is 0.",
@@ -89732,6 +89762,7 @@
         },
         {
             "mnemonic": "vec_any_nge",
+            "name": "Vector Any Not Greater or Equal",
             "syntax": "r = vec_any_nge (a, b)",
             "purpose": "Tests whether any element of a is not\n      greater than or equal to the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is not greater than or\n      equal to the corresponding element of b. Otherwise, r\n      is 0.",
@@ -89769,6 +89800,7 @@
         },
         {
             "mnemonic": "vec_any_ngt",
+            "name": "Vector Any Not Greater Than",
             "syntax": "r = vec_any_ngt (a, b)",
             "purpose": "Tests whether any element of a is not\n      greater than the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is not greater than the\n      corresponding element of b. Otherwise,\n      r is 0.",
@@ -89806,6 +89838,7 @@
         },
         {
             "mnemonic": "vec_any_nle",
+            "name": "Vector Any Not Less or Equal",
             "syntax": "r = vec_any_nle (a, b)",
             "purpose": "Tests whether any element of a is not\n      less than or equal to the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is not less than or equal\n      to the corresponding element of b.\n      Otherwise, r is 0.",
@@ -89843,6 +89876,7 @@
         },
         {
             "mnemonic": "vec_any_nlt",
+            "name": "Vector Any Not Less Than",
             "syntax": "r = vec_any_nlt (a, b)",
             "purpose": "Tests whether any element of a is not\n      less than the corresponding element of b.",
             "result": "r is 1 if any\n      element of a is not less than the\n      corresponding element of b. Otherwise,\n      r is 0.",
@@ -89880,6 +89914,7 @@
         },
         {
             "mnemonic": "vec_any_numeric",
+            "name": "Vector Any Numeric",
             "syntax": "r = vec_any_numeric (a)",
             "purpose": "Tests whether any element of the source vector is numeric (not a NaN).",
             "result": "r is 1 if any\n      element of a is numeric (not a NaN).\n      Otherwise, r is 0.",
@@ -89914,6 +89949,7 @@
         },
         {
             "mnemonic": "vec_any_out",
+            "name": "Vector Any Out of Range",
             "syntax": "r = vec_any_out (a, b)",
             "purpose": "Tests whether the value of any element of a vector is outside of a\n      given range.",
             "result": "r is 1 if the\n      value of any element of a is greater\n      than the value of the corresponding element of b or less than the negative of the value of the\n      corresponding element of b. Otherwise,\n      r is 0.",
@@ -89944,6 +89980,7 @@
         },
         {
             "mnemonic": "vec_avg",
+            "name": "Vector Average",
             "syntax": "r = vec_avg (a, b)",
             "purpose": "Returns a vector containing the elementwise average of two vectors.",
             "result": "The value of each element of r is the\n      average of the value of the corresponding elements of a and b.",
@@ -90005,6 +90042,7 @@
         },
         {
             "mnemonic": "vec_bperm",
+            "name": "Vector Bit Permute",
             "syntax": "r = vec_bperm (a, b)",
             "purpose": "Gathers up to 16 one-bit values from a quadword or from each\n      doubleword element in the specified order, zeroing other bits.",
             "result": "",
@@ -90048,6 +90086,7 @@
         },
         {
             "mnemonic": "vec_ceil",
+            "name": "Vector Ceiling",
             "syntax": "r = vec_ceil (a)",
             "purpose": "Returns a vector r that contains the\n      result of applying the floating-point ceiling function to each\n      element of a.",
             "result": "The value of each element of r is the\n      smallest representable floating-point integral value greater than or\n      equal to the value of the corresponding element of\n      a.",
@@ -90078,6 +90117,7 @@
         },
         {
             "mnemonic": "vec_cipher_be",
+            "name": "Vector AES Cipher Big-Endian",
             "syntax": "r = vec_cipher_be (a, b)",
             "purpose": "Performs one round of the AES cipher operation on an intermediate state\n      array a by using a given round key\n      b.",
             "result": "r contains the\n      resulting intermediate state, after one round of the AES cipher\n      operation on intermediate state array a,\n      using the round key specified by b.",
@@ -90104,6 +90144,7 @@
         },
         {
             "mnemonic": "vec_cipherlast_be",
+            "name": "Vector AES Cipher Last Big-Endian",
             "syntax": "r = vec_cipherlast_be (a, b)",
             "purpose": "Performs the final round of the AES cipher operation on an intermediate\n      state array a using the specified\n      round key b.",
             "result": "r contains the\n      resulting final state, after the final round of the AES cipher\n      operation on intermediate state array a,\n      using the round key specified by b.",
@@ -90130,6 +90171,7 @@
         },
         {
             "mnemonic": "vec_cmpb",
+            "name": "Vector Compare Bytes",
             "syntax": "r = vec_cmpb (a, b)",
             "purpose": "Performs a bounds comparison of each set of corresponding elements\n      of two vectors.",
             "result": "",
@@ -90156,6 +90198,7 @@
         },
         {
             "mnemonic": "vec_cmpeq",
+            "name": "Vector Compare Equal",
             "syntax": "r = vec_cmpeq (a, b)",
             "purpose": "Returns a vector containing the results of comparing each set of\n      corresponding elements of two vectors for equality.",
             "result": "For each element of r, the value\n      of each bit is 1 if the corresponding elements of a and b\n      are equal.  Otherwise, the value of each bit is 0.",
@@ -90265,6 +90308,7 @@
         },
         {
             "mnemonic": "vec_cmpge",
+            "name": "Vector Compare Greater or Equal",
             "syntax": "r = vec_cmpge (a, b)",
             "purpose": "Returns a vector containing the results of a greater-than-or-equal-to\n      comparison between each set of corresponding elements of two\n      vectors.",
             "result": "For each element of r, the value\n      of each bit is 1 if the corresponding element of a is greater than or equal to the corresponding\n      element of b.  Otherwise, the value\n      of each bit is 0.",
@@ -90355,6 +90399,7 @@
         },
         {
             "mnemonic": "vec_cmpgt",
+            "name": "Vector Compare Greater Than",
             "syntax": "r = vec_cmpgt (a, b)",
             "purpose": "Returns a vector containing the results of a greater-than\n      comparison between each set of corresponding elements of two\n      vectors.",
             "result": "For each element of r, the value\n      of each bit is 1 if the corresponding element of a is greater than the corresponding\n      element of b.  Otherwise, the value\n      of each bit is 0.",
@@ -90444,6 +90489,7 @@
         },
         {
             "mnemonic": "vec_cmple",
+            "name": "Vector Compare Less Than or Equal",
             "syntax": "r = vec_cmple (a, b)",
             "purpose": "Returns a vector containing the results of a less-than-or-equal\n      comparison between each set of corresponding elements of two\n      vectors.",
             "result": "For each element of r, the value\n      of each bit is 1 if the corresponding element of a is less than or equal to the corresponding\n      element of b.  Otherwise, the value\n      of each bit is 0.",
@@ -90534,6 +90580,7 @@
         },
         {
             "mnemonic": "vec_cmplt",
+            "name": "Vector Compare Less Than",
             "syntax": "r = vec_cmplt (a, b)",
             "purpose": "Returns a vector containing the results of a less-than\n      comparison between each set of corresponding elements of two\n      vectors.",
             "result": "For each element of r, the value\n      of each bit is 1 if the corresponding element of a is less than the corresponding\n      element of b.  Otherwise, the value\n      of each bit is 0.",
@@ -90623,6 +90670,7 @@
         },
         {
             "mnemonic": "vec_cmpne",
+            "name": "Vector Compare Not Equal",
             "syntax": "r = vec_cmpne (a, b)",
             "purpose": "Returns a vector containing the results of comparing each set of\n      corresponding elements of two vectors for inequality.",
             "result": "For each element of r, the value\n      of each bit is 1 if the corresponding elements of a and b\n      are not equal.  Otherwise, the value of each bit is 0.",
@@ -90733,6 +90781,7 @@
         },
         {
             "mnemonic": "vec_cmpnez",
+            "name": "Vector Compare Not Equal or Zero",
             "syntax": "r = vec_cmpnez (a, b)",
             "purpose": "Returns a vector containing the results of comparing each set of\n      corresponding elements of two vectors for inequality, or for\n      an element with a zero value.",
             "result": "For each element of r, the value\n      of each bit is 1 if the corresponding elements of a and b\n      are not equal, or if the a element or\n      the b element is zero.  Otherwise,\n      the value of each bit is 0.",
@@ -90798,6 +90847,7 @@
         },
         {
             "mnemonic": "vec_cntlz",
+            "name": "Vector Count Leading Zeros",
             "syntax": "r = vec_cntlz (a)",
             "purpose": "Returns a vector containing the number of most-significant bits\n      equal to zero of each corresponding element of the source vector.",
             "result": "The value of each element of r is\n      set to the number of leading zeros of the corresponding element\n      of a.",
@@ -90869,6 +90919,7 @@
         },
         {
             "mnemonic": "vec_cntlz_lsbb",
+            "name": "Vector Count Leading Zero Least-Significant Bits by Byte",
             "syntax": "r = vec_cntlz_lsbb (a)",
             "purpose": "Returns the number of leading byte elements (starting at the\n      lowest-numbered element) of a vector that have a least-significant\n      bit of zero.",
             "result": "The value of r is set to the\n      number of leading byte elements (starting at the lowest-numbered\n      element) of a that have a\n      least-significant bit of zero.",
@@ -90904,6 +90955,7 @@
         },
         {
             "mnemonic": "vec_cnttz",
+            "name": "Vector Count Trailing Zeros",
             "syntax": "r = vec_cnttz (a)",
             "purpose": "Returns a vector containing the number of least-significant bits\n      equal to zero of each corresponding element of the source vector.",
             "result": "The value of each element of r is\n      set to the number of trailing zeros of the corresponding element\n      of a.",
@@ -90975,6 +91027,7 @@
         },
         {
             "mnemonic": "vec_cnttz_lsbb",
+            "name": "Vector Count Trailing Zero Least-Significant Bits by Byte",
             "syntax": "r = vec_cnttz_lsbb (a)",
             "purpose": "Returns the number of trailing byte elements (starting at the\n      highest-numbered element) of a vector that have a least-significant\n      bit of zero.",
             "result": "The value of r is set to the\n      number of trailing byte elements (starting at the highest-numbered\n      element) of a that have a\n      least-significant bit of zero.",
@@ -91010,6 +91063,7 @@
         },
         {
             "mnemonic": "vec_cpsgn",
+            "name": "Vector Copy Sign",
             "syntax": "r = vec_cpsgn (a, b)",
             "purpose": "Returns a vector by copying the sign of the elements in one\n      vector to the sign of the corresponding elements of another\n      vector.",
             "result": "The value of each element of r is set\n      to the corresponding element of b\n      with its sign replaced by the sign from the corresponding element of\n      a.",
@@ -91046,6 +91100,7 @@
         },
         {
             "mnemonic": "vec_ctf",
+            "name": "Vector Convert to Floating-Point",
             "syntax": "r = vec_ctf (a, b)",
             "purpose": "Converts an integer vector into a floating-point vector.",
             "result": "The value of each element of r is the\n      closest floating-point approximation of the value of the\n      corresponding element of a divided\n      by 2 to the power of b, which must\n      be in the range 0\u201331.",
@@ -91091,6 +91146,7 @@
         },
         {
             "mnemonic": "vec_cts",
+            "name": "Vector Convert to Signed Integer",
             "syntax": "r = vec_cts (a, b)",
             "purpose": "Converts a floating-point vector into a signed integer vector.",
             "result": "The value of each element of r is the\n      saturated signed-integer value, truncated towards zero, obtained by\n      multiplying the corresponding element of a multiplied by 2 to the power of b, which must be in the range 0\u201331.",
@@ -91117,6 +91173,7 @@
         },
         {
             "mnemonic": "vec_ctu",
+            "name": "Vector Convert to Unsigned Integer",
             "syntax": "r = vec_ctu (a, b)",
             "purpose": "Converts a floating-point vector into an unsigned integer vector.",
             "result": "The value of each element of r is the\n      saturated unsigned-integer value, truncated towards zero, obtained by\n      multiplying the corresponding element of a multiplied by 2 to the power of b, which must be in the range 0\u201331.",
@@ -91143,6 +91200,7 @@
         },
         {
             "mnemonic": "vec_div",
+            "name": "Vector Divide",
             "syntax": "r = vec_div (a, b)",
             "purpose": "Divides the elements in one vector by the corresponding elements\n      in another vector and places the quotients in the result vector.",
             "result": "The value of each element of r is\n      obtained by dividing the corresponding element of a by the corresponding element of b.",
@@ -91193,6 +91251,7 @@
         },
         {
             "mnemonic": "vec_double",
+            "name": "Vector Convert to Double Precision",
             "syntax": "r = vec_double (a)",
             "purpose": "Converts a vector of long integers into a vector of double-precision\n      numbers.",
             "result": "The value of each element of r is\n      obtained by converting the corresponding element of a to double precision floating-point.",
@@ -91223,6 +91282,7 @@
         },
         {
             "mnemonic": "vec_doublee",
+            "name": "Vector Convert Even Elements to Double Precision",
             "syntax": "r = vec_doublee (a)",
             "purpose": "Converts the even elements of a vector into a vector of double-precision\n      numbers.",
             "result": "Elements 0 and 1 of r are set to\n      the converted values of elements 0 and 2 of a.",
@@ -91268,6 +91328,7 @@
         },
         {
             "mnemonic": "vec_doubleh",
+            "name": "Vector Convert High Elements to Double Precision",
             "syntax": "r = vec_doubleh (a)",
             "purpose": "Converts the high-order elements of a vector into a vector\n      of double-precision numbers.",
             "result": "Elements 0 and 1 of r are set to\n      the converted values of elements 0 and 1 of a.",
@@ -91313,6 +91374,7 @@
         },
         {
             "mnemonic": "vec_doublel",
+            "name": "Vector Convert Low Elements to Double Precision",
             "syntax": "r = vec_doublel (a)",
             "purpose": "Converts the low-order elements of a vector into a vector\n      of double-precision numbers.",
             "result": "Elements 0 and 1 of r are set to\n      the converted values of elements 2 and 3 of a.",
@@ -91358,6 +91420,7 @@
         },
         {
             "mnemonic": "vec_doubleo",
+            "name": "Vector Convert Odd Elements to Double Precision",
             "syntax": "r = vec_doubleo (a)",
             "purpose": "Converts the odd elements of a vector into a vector\n      of double-precision numbers.",
             "result": "Elements 0 and 1 of r are set to\n      the converted values of elements 1 and 3 of a.",
@@ -91403,6 +91466,7 @@
         },
         {
             "mnemonic": "vec_eqv",
+            "name": "Vector Equivalence",
             "syntax": "r = vec_eqv (a, b)",
             "purpose": "Performs a bitwise equivalence (exclusive NOR) of two vectors.",
             "result": "The value of r is the bitwise XNOR\n      of a and b.",
@@ -91507,6 +91571,7 @@
         },
         {
             "mnemonic": "vec_expte",
+            "name": "Vector Exponential Estimate",
             "syntax": "r = vec_expte (a)",
             "purpose": "Returns a vector r containing\n      estimates of 2 raised to the power of the corresponding elements\n      of a.",
             "result": "The value of each element of r is the\n      estimated value of 2 raised to the power of the corresponding element of\n      a.",
@@ -91531,6 +91596,7 @@
         },
         {
             "mnemonic": "vec_extract",
+            "name": "Vector Extract",
             "syntax": "r = vec_extract (a, b)",
             "purpose": "Returns the value of the bth\n      element of vector a.",
             "result": "The value of each element of r is the\n      element of a at position\n      b modulo the number of elements of\n      a.",
@@ -91668,6 +91734,7 @@
         },
         {
             "mnemonic": "vec_extract_exp",
+            "name": "Vector Extract Exponent",
             "syntax": "r = vec_extract_exp (a)",
             "purpose": "Extracts exponents from a vector of floating-point numbers.",
             "result": "Each element of r is extracted\n      from the exponent field of the corresponding floating-point\n      vector element of a.",
@@ -91701,6 +91768,7 @@
         },
         {
             "mnemonic": "vec_extract_fp32_from_shorth",
+            "name": "Vector Extract Floats from High Elements of Vector Short Int",
             "syntax": "r = vec_extract_fp32_from_shorth (a)",
             "purpose": "Extracts four single-precision floating-point numbers from the high\n      elements of a vector of eight 16-bit elements, interpreting each\n      element as a 16-bit floating-point number in IEEE format.",
             "result": "The first four elements of a are\n      interpreted as 16-bit floating-point numbers in IEEE format, and\n      extended to single-precision format, returning a vector with four\n      single-precision IEEE numbers.",
@@ -91730,6 +91798,7 @@
         },
         {
             "mnemonic": "vec_extract_fp32_from_shortl",
+            "name": "Vector Extract Floats from Low Elements of Vector Short Int",
             "syntax": "r = vec_extract_fp32_from_shortl (a)",
             "purpose": "Extracts four single-precision floating-point numbers from the low\n      elements of a vector of eight 16-bit elements, interpreting each\n      element as a 16-bit floating-point number in IEEE format.",
             "result": "The last four elements of a are\n      interpreted as 16-bit floating-point numbers in IEEE format, and\n      extended to single-precision format, returning a vector with four\n      single-precision IEEE numbers.",
@@ -91759,6 +91828,7 @@
         },
         {
             "mnemonic": "vec_extract_sig",
+            "name": "Vector Extract Significand",
             "syntax": "r = vec_extract_sig (a)",
             "purpose": "Extracts a vector of significands (mantissas) from a vector of\n      floating-point numbers.",
             "result": "Each element of\n      r is extracted from the significand\n      (mantissa) field of the corresponding floating-point element of\n      a.",
@@ -91792,6 +91862,7 @@
         },
         {
             "mnemonic": "vec_extract4b",
+            "name": "Vector Extract Four Bytes",
             "syntax": "r = vec_extract4b (a, b)",
             "purpose": "Extracts a word from vector a at\n      constant byte position b.",
             "result": "The first\n      doubleword element of r contains\n      the zero-extended extracted word from a.\n      The second doubleword is set to 0. b\n      specifies the least-significant byte number (0\u201312) of the word\n      to be extracted.",
@@ -91822,6 +91893,7 @@
         },
         {
             "mnemonic": "vec_first_match_index",
+            "name": "Vector Index of First Match",
             "syntax": "r = vec_first_match_index (a, b)",
             "purpose": "Performs a comparison of equality on each of the corresponding\n      elements of a and b, and returns the first position of\n      equality.",
             "result": "Returns the\n      element index of the position of the first character match in\n      natural element order.  If no match, returns the number of\n      characters as an element count in the vector argument.",
@@ -91898,6 +91970,7 @@
         },
         {
             "mnemonic": "vec_first_match_or_eos_index",
+            "name": "Vector Index of First Match or End of String",
             "syntax": "r = vec_first_match_or_eos_index (a, b)",
             "purpose": "Performs a comparison of equality on each of the corresponding\n      elements of a and b. Returns the first position of\n      equality, or the zero string terminator.",
             "result": "Returns the\n      element index of the position, in natural element order, of\n      either the first character match or an end-of-string (EOS)\n      terminator. If no match or terminator, returns the number of\n      characters as an element count in the vector argument.",
@@ -91979,6 +92052,7 @@
         },
         {
             "mnemonic": "vec_first_mismatch_index",
+            "name": "Vector Index of First Mismatch",
             "syntax": "r = vec_first_mismatch_index (a, b)",
             "purpose": "Performs a comparison of inequality on each of the corresponding\n      elements of a and b, and returns the first position of\n      inequality.",
             "result": "Returns the\n      element index of the position of the first character mismatch in\n      natural element order. If no mismatch, returns the number of\n      characters as an element count in the vector argument.",
@@ -92054,6 +92128,7 @@
         },
         {
             "mnemonic": "vec_first_mismatch_or_eos_index",
+            "name": "Vector Index of First Mismatch or End of String",
             "syntax": "r = vec_first_mismatch_or_eos_index (a, b)",
             "purpose": "Performs a comparison of inequality on each of the corresponding\n      elements of a and b. Returns the first position of\n      inequality, or the zero string terminator.",
             "result": "Returns the\n      element index of the position, in natural element order, of\n      either the first character mismatch or an end-of-string (EOS)\n      terminator. If no mismatch or terminator, returns the number of\n      characters as an element count in the vector argument.",
@@ -92135,6 +92210,7 @@
         },
         {
             "mnemonic": "vec_float",
+            "name": "Vector Convert Integer to Floating-Point",
             "syntax": "r = vec_float (a)",
             "purpose": "Converts a vector of integers to a vector of single-precision\n      floating-point numbers.",
             "result": "Elements of\n      r are obtained by converting the\n      respective elements of a to\n      single-precision floating-point numbers.",
@@ -92165,6 +92241,7 @@
         },
         {
             "mnemonic": "vec_float2",
+            "name": "Vector Convert Two Vectors to Floating-Point",
             "syntax": "r = vec_float2 (a, b)",
             "purpose": "Converts two vectors of long long integers or double-precision\n      floating-point numbers to a vector of single-precision numbers.",
             "result": "Elements of\n      r are obtained by converting the\n      elements of a and\n      b to single-precision numbers.\n      Elements 0 and 1 of r are converted\n      from elements 0 and 1 of a,\n      respectively, and elements 2 and 3 of r\n      are converted from elements 0 and 1 of b, respectively.",
@@ -92210,6 +92287,7 @@
         },
         {
             "mnemonic": "vec_floate",
+            "name": "Vector Convert to Floating-Point in Even Elements",
             "syntax": "r = vec_floate (a)",
             "purpose": "Converts the elements of a source vector to single-precision\n      floating-point and stores the results in the even elements of\n      the target vector.",
             "result": "The even-numbered\n      elements of r are obtained by\n      converting the elements of a to\n      single-precision numbers, using the current floating-point rounding\n      mode.",
@@ -92251,6 +92329,7 @@
         },
         {
             "mnemonic": "vec_floato",
+            "name": "Vector Convert to Floating-Point in Odd Elements",
             "syntax": "r = vec_floato (a)",
             "purpose": "Converts the elements of a source vector to single-precision\n      floating-point and stores the results in the odd elements of the\n      target vector.",
             "result": "The odd-numbered\n      elements of r are obtained by\n      converting the elements of a to\n      single-precision numbers, using the current floating-point rounding\n      mode.",
@@ -92292,6 +92371,7 @@
         },
         {
             "mnemonic": "vec_floor",
+            "name": "Vector Floor",
             "syntax": "r = vec_floor (a)",
             "purpose": "Returns a vector containing the largest representable floating-point\n      integral values less than or equal to the values of the corresponding\n      elements of the source vector.",
             "result": "Each element of\n      r contains the largest representable\n      floating-point integral value less than or equal to the value of the\n      corresponding element of a.",
@@ -92322,6 +92402,7 @@
         },
         {
             "mnemonic": "vec_gb",
+            "name": "Vector Gather Bits by Byte",
             "syntax": "r = vec_gb (a)",
             "purpose": "Performs a gather-bits operation on the input.",
             "result": "Within each\n      doubleword, let x(i) (0 \u2264 i < 8) denote the byte elements, with\n      x(0) the most-significant byte. For each pair of i and j (0 \u2264 i\n      < 8, 0 \u2264 j < 8), the jth bit of the\n      ith byte element of\n      r is set to the value of the\n      ith bit of the jth byte\n      element of a.",
@@ -92346,6 +92427,7 @@
         },
         {
             "mnemonic": "vec_insert",
+            "name": "Vector Insert",
             "syntax": "r = vec_insert (a, b, c)",
             "purpose": "Returns a copy of vector b  with\n      element c replaced by the value of\n      a.",
             "result": "r contains a copy of vector\n      b with element c replaced by the value of a. This function uses modular arithmetic on\n      c to determine the element number.\n      For example, if c is out of range, the\n      compiler uses c modulo the number of\n      elements in the vector to determine the element position.",
@@ -92455,6 +92537,7 @@
         },
         {
             "mnemonic": "vec_insert_exp",
+            "name": "Vector Insert Exponent",
             "syntax": "r = vec_insert_exp (a, b)",
             "purpose": "Inserts exponents into a vector of floating-point numbers.",
             "result": "Each element of\n      r is generated by combining the exponent\n      specified by the corresponding element of b with the sign and significand of the\n      corresponding element of a.",
@@ -92505,6 +92588,7 @@
         },
         {
             "mnemonic": "vec_insert4b",
+            "name": "Vector Insert Four Bytes",
             "syntax": "r = vec_insert4b (a, b, c)",
             "purpose": "Inserts a word into a vector at a byte position.",
             "result": "Let W be the first\n      doubleword element of a, truncated to\n      32 bits. The result vector r is formed\n      by inserting W into b at the byte\n      position (0\u201312) specified by c.",
@@ -92547,6 +92631,7 @@
         },
         {
             "mnemonic": "vec_ld",
+            "name": "Vector Load Indexed",
             "syntax": "r = vec_ld (a, b)",
             "purpose": "Loads a 16-byte vector from the memory address specified by the\n      displacement and the pointer, ignoring the four low-order bits\n      of the calculated address.",
             "result": "The value of\n      r is obtained by adding a and b,\n      masking off the four low-order bits of the result, and\n      loading the 16-byte vector from the resultant memory address.",
@@ -92741,6 +92826,7 @@
         },
         {
             "mnemonic": "vec_lde",
+            "name": "Vector Load Element Indexed",
             "syntax": "r = vec_lde (a, b)",
             "purpose": "Loads a single element into the position in the vector register\n      corresponding to its address, leaving the remaining elements of\n      the register undefined.",
             "result": "The integer value a is added to the\n      pointer value b.  The resulting\n      address is rounded down to the nearest address that is a multiple of\n      es, where es is 1 for\n      char pointers, 2 for short pointers, and 4 for float or int pointers.\n      The element at this address is loaded into an element of r, leaving all other elements of r undefined.  The position of the loaded\n      element in r is determined by taking the\n      address modulo 16.",
@@ -92805,6 +92891,7 @@
         },
         {
             "mnemonic": "vec_ldl",
+            "name": "Vector Load Indexed Least Recently Used",
             "syntax": "r = vec_ldl (a, b)",
             "purpose": "Loads a 16-byte vector from the memory address specified by the\n      displacement and the pointer, ignoring the four low-order bits\n      of the calculated address, and marks the cache line loaded from\n      as least recently used.",
             "result": "The value of\n      r is obtained by adding a and b,\n      masking off the four low-order bits of the result, and\n      loading the 16-byte vector from the resultant memory address.",
@@ -92975,6 +93062,7 @@
         },
         {
             "mnemonic": "vec_loge",
+            "name": "Vector Base-2 Logarithm Estimate",
             "syntax": "r = vec_loge (a)",
             "purpose": "Returns a vector containing estimates of the base-2 logarithms of the\n      corresponding elements of the source vector.",
             "result": "Each element of\n      r contains an estimated value of the\n      base-2 logarithm of the corresponding element of a.",
@@ -92999,6 +93087,7 @@
         },
         {
             "mnemonic": "vec_madd",
+            "name": "Vector Multiply-Add",
             "syntax": "r = vec_madd (a, b, c)",
             "purpose": "Returns a vector containing the results of performing a fused\n      multiply-add operation for each corresponding set of elements of the\n      source vectors.",
             "result": "The value of each\n      element of r is the product of the\n      values of the corresponding elements of a and b, added\n      to the value of the corresponding element of c.",
@@ -93064,6 +93153,7 @@
         },
         {
             "mnemonic": "vec_madds",
+            "name": "Vector Multiply-Add Saturated",
             "syntax": "r = vec_madds (a, b, c)",
             "purpose": "Returns a vector containing the results of performing a saturated\n      multiply-high-and-add operation for each corresponding set of elements\n      of the source vectors.",
             "result": "The value of each\n      element of r is produced as follows:\n      The values of the corresponding elements of a and b are\n      multiplied. The value of the 17 most-significant bits of this product\n      is then added, using 16-bit-saturated addition, to the value of the\n      corresponding element of c.",
@@ -93092,6 +93182,7 @@
         },
         {
             "mnemonic": "vec_max",
+            "name": "Vector Maximum",
             "syntax": "r = vec_max (a, b)",
             "purpose": "Returns a vector containing the maximum value from each set of\n      corresponding elements of the source vectors.",
             "result": "The value of each element of r is the\n      maximum of the values of the corresponding elements of a and b.",
@@ -93181,6 +93272,7 @@
         },
         {
             "mnemonic": "vec_mergee",
+            "name": "Vector Merge Even",
             "syntax": "r = vec_mergee (a, b)",
             "purpose": "Merges the even-numbered values from two vectors.",
             "result": "The even-numbered\n      elements of a are stored into the\n      even-numbered elements of r. The\n      even-numbered elements of b are stored\n      into the odd-numbered elements of r.",
@@ -93260,6 +93352,7 @@
         },
         {
             "mnemonic": "vec_mergeh",
+            "name": "Vector Merge High",
             "syntax": "r = vec_mergeh (a, b)",
             "purpose": "Merges the first halves (in element order) of two vectors.",
             "result": "The\n      nth element of r,\n      if n is an even number, is given the value of the\n      (n/2)th element of a.  The (n+1)th element\n      of r, if n is an\n      even number, is given the value of the (n/2)th\n      element of b.",
@@ -93392,6 +93485,7 @@
         },
         {
             "mnemonic": "vec_mergel",
+            "name": "Vector Merge Low",
             "syntax": "r = vec_mergel (a, b)",
             "purpose": "Merges the last halves (in element order) of two vectors.",
             "result": "Let\n      m be the number of elements in r.  The nth element of\n      r, if n is an even\n      number, is given the value of the m/2 +\n      (n/2)th element of a.  The (n+1)th element\n      of r, if n is an\n      even number, is given the value of the m/2 +\n      (n/2)th element of b.",
@@ -93524,6 +93618,7 @@
         },
         {
             "mnemonic": "vec_mergeo",
+            "name": "Vector Merge Odd",
             "syntax": "r = vec_mergeo (a, b)",
             "purpose": "Merges the odd-numbered values from two vectors.",
             "result": "The odd-numbered\n      elements of a are stored into the\n      even-numbered elements of r. The\n      odd-numbered elements of b are stored\n      into the odd-numbered elements of r.",
@@ -93603,6 +93698,7 @@
         },
         {
             "mnemonic": "vec_mfvscr",
+            "name": "Vector Move From Vector Status and Control Register",
             "syntax": "r = vec_mfvscr ()",
             "purpose": "Copies the contents of the Vector Status and Control Register\n      (VSCR) into the result vector.",
             "result": "The high-order 16\n      bits of the VSCR are copied into the seventh element of r, using big-endian (left-to-right) order. The\n      low-order 16 bits of the VSCR are copied into the eighth element of\n      r, using big-endian order.  All other\n      elements of r are set to zero.",
@@ -93625,6 +93721,7 @@
         },
         {
             "mnemonic": "vec_min",
+            "name": "Vector Minimum",
             "syntax": "r = vec_min (a, b)",
             "purpose": "Returns a vector containing the minimum value from each set of\n      corresponding elements of the source vectors.",
             "result": "The value of each\n      element of r is the minimum of the\n      values of the corresponding elements of a and b.",
@@ -93714,6 +93811,7 @@
         },
         {
             "mnemonic": "vec_mradds",
+            "name": "Vector Multiply-High Round and Add Saturated",
             "syntax": "r = vec_mradds (a, b, c)",
             "purpose": "Returns a vector containing the results of performing a saturated\n      multiply-high-round-and-add operation for each corresponding set of\n      elements of the source vectors.",
             "result": "The value of each\n      element of r is produced as follows.\n      The values of the corresponding elements of a and b are\n      multiplied and rounded such that the 15 least-significant bits are 0.\n      The value of the 17 most-significant bits of this rounded product is\n      then added, using 16-bit-saturated addition, to the value of the\n      corresponding element of c.",
@@ -93742,6 +93840,7 @@
         },
         {
             "mnemonic": "vec_msub",
+            "name": "Vector Multiply-Subtract",
             "syntax": "r = vec_msub (a, b, c)",
             "purpose": "Returns a vector containing the results of performing a multiply-subtract\n      operation using the source vectors.",
             "result": "Each element of\n      r is produced by multiplying the\n      corresponding element of a by the\n      corresponding element of b and then\n      subtracting the corresponding element of c.",
@@ -93778,6 +93877,7 @@
         },
         {
             "mnemonic": "vec_msum",
+            "name": "Vector Multiply-Sum",
             "syntax": "r = vec_msum (a, b, c)",
             "purpose": "Returns a vector containing the results of performing a multiply-sum\n      operation using the source vectors.",
             "result": "",
@@ -93830,6 +93930,7 @@
         },
         {
             "mnemonic": "vec_msums",
+            "name": "Vector Multiply-Sum Saturated",
             "syntax": "r = vec_msums (a, b, c)",
             "purpose": "Returns a vector containing the results of performing a saturated\n      multiply-sum operation using the source vectors.",
             "result": "Assume that the\n      elements of each vector are numbered beginning with 0. The value of each\n      element n of r\n      is obtained as follows. For p =\n      2n to 2n+1, multiply element\n      p of a by element\n      p of b. Add the\n      sum of these products to element n of\n      c. All additions are performed using\n      32-bit saturated arithmetic.",
@@ -93866,6 +93967,7 @@
         },
         {
             "mnemonic": "vec_mtvscr",
+            "name": "Vector Move to Vector Status and Control Register",
             "syntax": "vec_mtvscr (a)",
             "purpose": "Copies a value into the Vector Status and Control Register\n      (VSCR).  The low-order 32 bits of a are copied into the VSCR.",
             "result": "None.",
@@ -93924,6 +94026,7 @@
         },
         {
             "mnemonic": "vec_mul",
+            "name": "Vector Multiply",
             "syntax": "r = vec_mul (a, b)",
             "purpose": "Compute the products of corresponding elements of two vectors.",
             "result": "Each element of\n      r receives the product of\n      the corresponding elements of a and\n      b.",
@@ -94012,6 +94115,7 @@
         },
         {
             "mnemonic": "vec_mule",
+            "name": "Vector Multiply Even",
             "syntax": "r = vec_mule (a, b)",
             "purpose": "Multiplies the even-numbered elements of the source vectors to\n      produce the target vector.",
             "result": "Each element\n      n of r is the\n      product of element 2n of a and element 2n of\n      b.",
@@ -94086,6 +94190,7 @@
         },
         {
             "mnemonic": "vec_mulo",
+            "name": "Vector Multiply Odd",
             "syntax": "r = vec_mulo (a, b)",
             "purpose": "Multiplies the odd-numbered elements of the source vectors to\n      produce the target vector.",
             "result": "Each element\n      n of r is the\n      product of element 2n+1 of a and element 2n+1 of\n      b.",
@@ -94160,6 +94265,7 @@
         },
         {
             "mnemonic": "vec_nabs",
+            "name": "Vector Negated Absolute Value",
             "syntax": "r = vec_nabs (a)",
             "purpose": "Returns a vector containing the negated absolute values of the contents\n      of the source vector.",
             "result": "The value of each\n      element of r is the negated absolute\n      value of the corresponding element of a. For integer vectors, the arithmetic is\n      modular.",
@@ -94219,6 +94325,7 @@
         },
         {
             "mnemonic": "vec_nand",
+            "name": "Vector NAND",
             "syntax": "r = vec_nand (a, b)",
             "purpose": "Performs a bitwise NAND of two vectors.",
             "result": "r is the bitwise\n      NAND of a and b.",
@@ -94323,6 +94430,7 @@
         },
         {
             "mnemonic": "vec_ncipher_be",
+            "name": "Vector AES Inverse Cipher Big-Endian",
             "syntax": "r = vec_ncipher_be (a, b)",
             "purpose": "Performs one round of the AES inverse cipher operation on an\n      intermediate state array a by using a\n      given round key b.",
             "result": "r contains the\n      resulting intermediate state, after one round of the AES inverse cipher\n      operation on intermediate state array a,\n      using the round key specified by b.",
@@ -94349,6 +94457,7 @@
         },
         {
             "mnemonic": "vec_ncipherlast_be",
+            "name": "Vector AES Inverse Cipher Last Big-Endian",
             "syntax": "r = vec_ncipherlast_be (a, b)",
             "purpose": "Performs the final round of the AES inverse cipher operation on an\n      intermediate state array a using the\n      specified round key b.",
             "result": "r contains the\n      resulting final state, after the final round of the AES inverse cipher\n      operation on intermediate state array a,\n      using the round key specified by b.",
@@ -94375,6 +94484,7 @@
         },
         {
             "mnemonic": "vec_nearbyint",
+            "name": "Vector Nearby Integer",
             "syntax": "r = vec_nearbyint (a)",
             "purpose": "Returns a vector containing the floating-point integral values nearest to\n      the values of the corresponding elements of the source vector.",
             "result": "Each\n      element of r contains the\n      nearest representable floating-point integral value to the value\n      of the corresponding element of a. When an input element value is exactly\n      between two integer values, the input value with the larger\n      absolute value is selected.  The current floating-point rounding\n      mode is ignored.",
@@ -94405,6 +94515,7 @@
         },
         {
             "mnemonic": "vec_neg",
+            "name": "Vector Negate",
             "syntax": "r = vec_neg (a)",
             "purpose": "Returns a vector containing the negated values of the contents of the\n      source vector.",
             "result": "The value of each\n      element of r is the negated value of\n      the corresponding element of a. For\n      integer vectors, the arithmetic is modular.",
@@ -94460,6 +94571,7 @@
         },
         {
             "mnemonic": "vec_nmadd",
+            "name": "Vector Negated Multiply-Add",
             "syntax": "r = vec_nmadd (a, b, c)",
             "purpose": "Returns a vector containing the results of performing a negated\n      multiply-add operation on the source vectors.",
             "result": "The value of each\n      element of r is the product of the\n      corresponding elements of a and\n      b, added to the corresponding elements\n      of c, then multiplied by\n      \u20131.0.",
@@ -94496,6 +94608,7 @@
         },
         {
             "mnemonic": "vec_nmsub",
+            "name": "Vector Negated Multiply-Subtract",
             "syntax": "r = vec_nmsub (a, b, c)",
             "purpose": "Returns a vector containing the results of performing a negated\n      multiply-subtract operation on the source vectors.",
             "result": "The value of each\n      element of r is the value of the\n      corresponding element of c subtracted\n      from the product of the corresponding elements of a and b, and\n      then multiplied by \u20131.0.",
@@ -94532,6 +94645,7 @@
         },
         {
             "mnemonic": "vec_nor",
+            "name": "Vector NOR",
             "syntax": "r = vec_nor (a, b)",
             "purpose": "Performs a bitwise NOR of two vectors.",
             "result": "r is the bitwise NOR\n      of a and b.",
@@ -94636,6 +94750,7 @@
         },
         {
             "mnemonic": "vec_or",
+            "name": "Vector OR",
             "syntax": "r = vec_or (a, b)",
             "purpose": "Performs a bitwise OR of two vectors.",
             "result": "r is the bitwise OR\n      of a and b.",
@@ -94740,6 +94855,7 @@
         },
         {
             "mnemonic": "vec_orc",
+            "name": "Vector OR with Complement",
             "syntax": "r = vec_orc (a, b)",
             "purpose": "Performs a bitwise OR of the first vector with the bitwise-complemented\n      second vector.",
             "result": "r is the bitwise OR\n      of a and the bitwise complement of\n      b.",
@@ -94844,6 +94960,7 @@
         },
         {
             "mnemonic": "vec_pack",
+            "name": "Vector Pack",
             "syntax": "r = vec_pack (a, b)",
             "purpose": "Packs information from each element of two vectors into the result\n      vector.",
             "result": "Let v represent the concatenation of vectors\n      a and b.  For integer types, the value of each element\n      of r is taken from the low-order half\n      of the corresponding element of v. For\n      floating-point types, the value of each element of r is the corresponding element of v, rounded to the result type.",
@@ -94941,6 +95058,7 @@
         },
         {
             "mnemonic": "vec_pack_to_short_fp32",
+            "name": "Vector Pack 32-bit Float to Short",
             "syntax": "r = vec_pack_to_short_fp32 (a, b)",
             "purpose": "Packs eight single-precision 32-bit floating-point numbers from two\n      source vectors into a vector of eight 16-bit floating-point numbers.",
             "result": "Let v represent the 16-element concatenation of\n      a and b.  Each value of r contains the result of converting the\n      corresponding single-precision element of v to half-precision.",
@@ -94972,6 +95090,7 @@
         },
         {
             "mnemonic": "vec_packpx",
+            "name": "Vector Pack Pixel",
             "syntax": "r = vec_packpx (a, b)",
             "purpose": "Packs information from each element of two vectors into the result\n      vector.",
             "result": "Let v be the concatenation of a and b.  The\n      value of each element of r is taken\n      from the corresponding element of v as\n      follows:",
@@ -95000,6 +95119,7 @@
         },
         {
             "mnemonic": "vec_packs",
+            "name": "Vector Pack Saturated",
             "syntax": "r = vec_packs (a, b)",
             "purpose": "Packs information from each element of two vectors into the result\n      vector, using saturated values.",
             "result": "Let v be the concatenation of a and b. The\n      value of each element of r is the\n      saturated value of the corresponding element of v.",
@@ -95068,6 +95188,7 @@
         },
         {
             "mnemonic": "vec_packsu",
+            "name": "Vector Pack Saturated Unsigned",
             "syntax": "r = vec_packsu (a, b)",
             "purpose": "Packs information from each element of two vectors into the result\n      vector, using unsigned saturated values.",
             "result": "Let v be the concatenation of a and b. The\n      value of each element of r is the\n      saturated value of the corresponding element of v.",
@@ -95136,6 +95257,7 @@
         },
         {
             "mnemonic": "vec_parity_lsbb",
+            "name": "Vector Parity over Least-Significant Bits of Bytes",
             "syntax": "r = vec_parity_lsbb (a)",
             "purpose": "Compute parity on the least-significant bit of each byte.",
             "result": "Each element of\n      r contains the parity computed over the\n      low-order bit of each of the bytes in the corresponding element of\n      a.",
@@ -95194,6 +95316,7 @@
         },
         {
             "mnemonic": "vec_perm",
+            "name": "Vector Permute",
             "syntax": "r = vec_perm (a, b, c)",
             "purpose": "Returns a vector that contains elements selected from two\n      vectors, in the order specified by a third vector.",
             "result": "Let v be the concatenation of a and b.  Each\n      byte of r selected by using the\n      least-significant 5 bits of the corresponding byte of c as an index into v.",
@@ -95337,6 +95460,7 @@
         },
         {
             "mnemonic": "vec_permxor",
+            "name": "Vector Permute and Exclusive-OR",
             "syntax": "r = vec_permxor (a, b, c)",
             "purpose": "Applies a permute and exclusive-OR operation on two vectors of byte\n      elements, with the selected elements identified by a third vector.",
             "result": "For each\n      i (0 \u2264 i < 16), let\n      x be bits 0\u20133 and\n      y be bits 4\u20137 of byte element\n      i of c.  Byte\n      element i of r\n      is set to the exclusive-OR of byte elements x\n      of a and y\n      of b.",
@@ -95384,6 +95508,7 @@
         },
         {
             "mnemonic": "vec_pmsum_be",
+            "name": "Vector Polynomial Multiply-Sum Big-Endian",
             "syntax": "r = vec_pmsum_be (a, b)",
             "purpose": "Performs the exclusive-OR operation (implementing polynomial addition)\n      on each even-odd pair of the polynomial-multiplication result of the\n      corresponding elements of a and\n      b.",
             "result": "Each element\n      i of r is\n      computed by an exclusive-OR operation of the polynomial\n      multiplication of input elements 2 \u00d7 i of\n      a and b and input elements 2 \u00d7\n      i + 1 of a and\n      b.",
@@ -95431,6 +95556,7 @@
         },
         {
             "mnemonic": "vec_popcnt",
+            "name": "Vector Population Count",
             "syntax": "r = vec_popcnt (a)",
             "purpose": "Returns a vector containing the number of bits set in each element of\n      the source vector.",
             "result": "The value of each\n      element of r is the number of bits set\n      in the corresponding element of a.",
@@ -95493,6 +95619,7 @@
         },
         {
             "mnemonic": "vec_re",
+            "name": "Vector Reciprocal Estimate",
             "syntax": "r = vec_re (a)",
             "purpose": "Returns a vector containing estimates of the reciprocals of the\n      corresponding elements of the source vector.",
             "result": "Each element of\n      r contains the estimated value of the\n      reciprocal of the corresponding element of a.",
@@ -95523,6 +95650,7 @@
         },
         {
             "mnemonic": "vec_recipdiv",
+            "name": "Vector Reciprocal Divide",
             "syntax": "r = vec_recipdiv (a, b)",
             "purpose": "Returns a vector containing refined approximations of the\n      division of the corresponding elements of a by the corresponding elements of\n      b.",
             "result": "Each element of\n      r contains a refined approximation of\n      the division of the corresponding element of a by the corresponding element of b.",
@@ -95562,6 +95690,7 @@
         },
         {
             "mnemonic": "vec_revb",
+            "name": "Vector Reverse Bytes",
             "syntax": "r = vec_revb (a)",
             "purpose": "Reverse the bytes of each vector element of a vector.",
             "result": "Each element of\n      r contains the byte-reversed value of\n      the corresponding element of a.",
@@ -95681,6 +95810,7 @@
         },
         {
             "mnemonic": "vec_reve",
+            "name": "Vector Reverse Elements",
             "syntax": "r = vec_reve (a)",
             "purpose": "Reverse the elements of a vector.",
             "result": "Returns a vector\n      with the elements of the source vector in reversed order.",
@@ -95771,6 +95901,7 @@
         },
         {
             "mnemonic": "vec_rint",
+            "name": "Vector Round to Nearest Integer",
             "syntax": "r = vec_rint (a)",
             "purpose": "Returns a vector containing the floating-point integral values nearest\n      to the values of the corresponding elements of the source vector.",
             "result": "Each element of\n      r contains the nearest representable\n      floating-point integral value to the value of the corresponding element\n      of a. When an input element value is\n      exactly between two integer values, the result value is selected based\n      on the rounding mode specified by the Floating-Point Rounding Control\n      field (RN) of the FPSCR register.",
@@ -95801,6 +95932,7 @@
         },
         {
             "mnemonic": "vec_rl",
+            "name": "Vector Rotate Left",
             "syntax": "r = vec_rl (a, b)",
             "purpose": "Rotates each element of a vector left by a given number of bits.",
             "result": "Each element of\n      r is obtained by rotating the\n      corresponding element of a left by the\n      number of bits specified by the corresponding element of\n      b.",
@@ -95872,6 +96004,7 @@
         },
         {
             "mnemonic": "vec_rlmi",
+            "name": "Vector Rotate Left then Mask Insert",
             "syntax": "r = vec_rlmi (a, b, c)",
             "purpose": "Rotates each element of a vector left and inserts each element under\n      a mask.",
             "result": "Each element of\n      r is obtained by rotating the\n      corresponding element of vector b left\n      and inserting it under mask into the corresponding element of\n      a. Bits 11:15 of the corresponding\n      element of c contain the mask\n      beginning, bits 19:23 contain the mask end, and bits 27:31 contain the\n      shift count.",
@@ -95911,6 +96044,7 @@
         },
         {
             "mnemonic": "vec_rlnm",
+            "name": "Vector Rotate Left then AND with Mask",
             "syntax": "r = vec_rlnm (a, b, c)",
             "purpose": "Rotates each element of a vector left, then logically ANDs it with a\n      mask.",
             "result": "Each element of\n      a is rotated left, then logically ANDed\n      with a mask specified by b and\n      c.",
@@ -95956,6 +96090,7 @@
         },
         {
             "mnemonic": "vec_round",
+            "name": "Vector Round",
             "syntax": "r = vec_round (a)",
             "purpose": "Returns a vector containing the rounded values of the corresponding\n      elements of the source vector.",
             "result": "Each element of\n      r contains the value of the\n      corresponding element of a, rounded\n      to the nearest representable floating-point integer, using IEEE\n      round-to-nearest rounding.  The current floating-point rounding\n      mode is ignored.",
@@ -95986,6 +96121,7 @@
         },
         {
             "mnemonic": "vec_rsqrt",
+            "name": "Vector Reciprocal Square Root",
             "syntax": "r = vec_rsqrt (a)",
             "purpose": "Returns a vector containing a refined approximation of the reciprocal\n      square roots of the corresponding elements of the source vector. This\n      function provides an implementation-dependent greater precision than\n      vec_rsqrte.",
             "result": "Each element of\n      r contains a refined approximation of\n      the reciprocal square root of the corresponding element of\n      a.",
@@ -96025,6 +96161,7 @@
         },
         {
             "mnemonic": "vec_rsqrte",
+            "name": "Vector Reciprocal Square Root Estimate",
             "syntax": "r = vec_rsqrte (a)",
             "purpose": "Returns a vector containing estimates of the reciprocal square roots of\n      the corresponding elements of the source vector.",
             "result": "Each element of\n      r contains the estimated value of the\n      reciprocal square root of the corresponding element of a.",
@@ -96055,6 +96192,7 @@
         },
         {
             "mnemonic": "vec_sbox_be",
+            "name": "Vector AES SubBytes Big-Endian",
             "syntax": "r = vec_sbox_be (a)",
             "purpose": "Performs the SubBytes operation, as defined in Federal Information\n      Processing Standards FIPS-197, on a state_array contained in\n      a.",
             "result": "r contains the\n      result of the SubBytes operation, as defined in Federal Information\n      Processing Standard FIPS-197, on the state array represented by\n      a.",
@@ -96079,6 +96217,7 @@
         },
         {
             "mnemonic": "vec_sel",
+            "name": "Vector Select",
             "syntax": "r = vec_sel (a, b, c)",
             "purpose": "Returns a vector selecting bits from two source vectors\n      depending on the corresponding bit values of a third source\n      vector.",
             "result": "Each bit of\n      r has the value of the corresponding\n      bit of a if the corresponding bit of\n      c is 0. Otherwise, the bit of\n      r has the value of the corresponding\n      bit of b.",
@@ -96296,6 +96435,7 @@
         },
         {
             "mnemonic": "vec_shasigma_be",
+            "name": "Vector SHA Sigma Big-Endian",
             "syntax": "r = vec_shasigma_be (a, b, c)",
             "purpose": "Performs a Secure Hash computation in accordance with Federal\n      Information Processing Standards FIPS-180-3.",
             "result": "Each element of\n      r contains the SHA256 or SHA512 hash\n      as follows.",
@@ -96331,6 +96471,7 @@
         },
         {
             "mnemonic": "vec_signed",
+            "name": "Vector Convert Floating-Point to Signed Integer",
             "syntax": "r = vec_signed (a)",
             "purpose": "Converts a vector of floating-point numbers to a vector of signed\n      integers.",
             "result": "Each\n      element of r is obtained by\n      truncating the corresponding element of a to a signed integer.  The current\n      floating-point rounding mode is ignored.",
@@ -96361,6 +96502,7 @@
         },
         {
             "mnemonic": "vec_signed2",
+            "name": "Vector Convert Double-Precision to Signed Word",
             "syntax": "r = vec_signed2 (a, b)",
             "purpose": "Converts two vectors of double-precision floating-point numbers to a\n      vector of signed 32-bit integers.",
             "result": "Let v be the concatenation of a and b.  Each\n      element of r is obtained by truncating\n      the corresponding element of v to a\n      signed 32-bit integer.",
@@ -96392,6 +96534,7 @@
         },
         {
             "mnemonic": "vec_signede",
+            "name": "Vector Convert Double-Precision to Signed Word Even",
             "syntax": "r = vec_signede (a)",
             "purpose": "Converts elements of a source vector to signed integers and stores\n      them in the even-numbered elements of the result vector.",
             "result": "Element 0 of\n      r contains element 0 of a, truncated to a signed integer.  Element 2 of\n      r contains element 1 of a, truncated to a signed integer.  Elements 1 and\n      3 of r are undefined.",
@@ -96419,6 +96562,7 @@
         },
         {
             "mnemonic": "vec_signedo",
+            "name": "Vector Convert Double-Precision to Signed Word Odd",
             "syntax": "r = vec_signedo (a)",
             "purpose": "Converts elements of a source vector to signed integers and stores them\n      in the odd-numbered elements of the result vector.",
             "result": "Element 1 of\n      r contains element 0 of a, truncated to a signed integer.  Element 3 of\n      r contains element 1 of a, truncated to a signed integer.  Elements 0 and\n      2 of r are undefined.",
@@ -96446,6 +96590,7 @@
         },
         {
             "mnemonic": "vec_sl",
+            "name": "Vector Shift Left",
             "syntax": "r = vec_sl (a, b)",
             "purpose": "Performs a left shift for each element of a vector.",
             "result": "Each element of\n      r is the result of left-shifting the\n      corresponding element of a by the\n      number of bits specified by the corresponding element of b, modulo the number of bits in the element.\n      Zeros are shifted in from the right.",
@@ -96517,6 +96662,7 @@
         },
         {
             "mnemonic": "vec_sld",
+            "name": "Vector Shift Left Double",
             "syntax": "r = vec_sld (a, b, c)",
             "purpose": "Left shifts a double vector (that is, two concatenated vectors) by a\n      given number of bytes. For vec_sld being performed on the vector bool\n      and floating-point types, the result is undefined when the specified\n      shift count is not a multiple of the element size.",
             "result": "Vector r receives the most-significant 16 bytes obtained\n      by concatenating a and b and shifting left by the number of bytes\n      specified by c, which must be in the\n      range 0\u201315.",
@@ -96643,6 +96789,7 @@
         },
         {
             "mnemonic": "vec_sldw",
+            "name": "Vector Shift Left Double by Words",
             "syntax": "r = vec_sldw (a, b, c)",
             "purpose": "Returns a vector obtained by shifting left the concatenated source\n      vectors by the number of specified words.",
             "result": "Vector r receives the most-significant 16 bytes obtained\n      by concatenating a and b and shifting left by the number of words\n      specified by c, which must be in the\n      range 0\u20133.",
@@ -96720,6 +96867,7 @@
         },
         {
             "mnemonic": "vec_sll",
+            "name": "Vector Shift Left Long",
             "syntax": "r = vec_sll (a, b)",
             "purpose": "Left shifts an entire vector by a given number of bits.",
             "result": "Vector\n      r contains the contents of a, shifted left by the number of bits specified\n      by the three least-significant bits of b. Zeros are supplied on the right. The shift\n      count must have been replicated into all bytes of b; if not, the value of r is undefined.",
@@ -96794,6 +96942,7 @@
         },
         {
             "mnemonic": "vec_slo",
+            "name": "Vector Shift Left by Octets",
             "syntax": "r = vec_slo (a, b)",
             "purpose": "Left shifts a vector by a given number of bytes (octets).",
             "result": "Vector r receives the contents of a, shifted left by the number of bytes specified\n      by bits 1:4 of the least-significant byte of b.",
@@ -96934,6 +97083,7 @@
         },
         {
             "mnemonic": "vec_slv",
+            "name": "Vector Shift Left Variable",
             "syntax": "r = vec_slv (a, b)",
             "purpose": "Left-shifts a vector by a varying number of bits by element.",
             "result": "Let v be a 17-byte vector formed from a in bytes [0:15] and a zero byte in element 16.\n      Then each byte element i of r is determined as follows.  The start bit\n      sb is obtained from bits 5:7 of byte element\n      i of b.  Then\n      the contents of bits sb:sb+7\n      of the halfword in byte elements\n      i:i+1 of v are placed into byte element\n      i of r.",
@@ -96962,6 +97112,7 @@
         },
         {
             "mnemonic": "vec_splat",
+            "name": "Vector Splat",
             "syntax": "r = vec_splat (a, b)",
             "purpose": "Returns a vector that has all of its elements set to a given value.",
             "result": "The value of each\n      element of r is the value of the\n      element of a specified by b, which must be an element number less than the\n      number of elements supported for a's\n      type.",
@@ -97091,6 +97242,7 @@
         },
         {
             "mnemonic": "vec_splat_s8",
+            "name": "Vector Splat to Signed Byte",
             "syntax": "r = vec_splat_s8 (a)",
             "purpose": "Returns a vector with all elements equal to the given value.",
             "result": "Each element of r is given the\n      sign-extended 5-bit value of a.\n      The range of this value is [-16:15].",
@@ -97115,6 +97267,7 @@
         },
         {
             "mnemonic": "vec_splat_s16",
+            "name": "Vector Splat to Signed Halfword",
             "syntax": "r = vec_splat_s16 (a)",
             "purpose": "Returns a vector with all elements equal to the given value.",
             "result": "Each element of r is given the\n      sign-extended 5-bit value of a.\n      The range of this value is [-16:15].",
@@ -97139,6 +97292,7 @@
         },
         {
             "mnemonic": "vec_splat_s32",
+            "name": "Vector Splat to Signed Word",
             "syntax": "r = vec_splat_s32 (a)",
             "purpose": "Returns a vector with all elements equal to the given value.",
             "result": "Each element of r is given the\n      sign-extended 5-bit value of a.\n      The range of this value is [-16:15].",
@@ -97163,6 +97317,7 @@
         },
         {
             "mnemonic": "vec_splat_u8",
+            "name": "Vector Splat to Unsigned Byte",
             "syntax": "r = vec_splat_u8 (a)",
             "purpose": "Returns a vector with all elements equal to the given value.",
             "result": "The 5-bit signed value of a is\n      sign-extended to a byte and the resulting value is cast to an\n      unsigned char.  This value is placed in each element of\n      r.  The range of the original value is\n      [-16:15].",
@@ -97187,6 +97342,7 @@
         },
         {
             "mnemonic": "vec_splat_u16",
+            "name": "Vector Splat to Unsigned Halfword",
             "syntax": "r = vec_splat_u16 (a)",
             "purpose": "Returns a vector with all elements equal to the given value.",
             "result": "The 5-bit signed value of a is\n      sign-extended to a halfword and the resulting value is cast to an\n      unsigned short.  This value is placed in each element of\n      r.  The range of the original value is\n      [-16:15].",
@@ -97211,6 +97367,7 @@
         },
         {
             "mnemonic": "vec_splat_u32",
+            "name": "Vector Splat to Unsigned Word",
             "syntax": "r = vec_splat_u32 (a)",
             "purpose": "Returns a vector with all elements equal to the given value.",
             "result": "The 5-bit signed value of a is\n      sign-extended to a word and the resulting value is cast to an\n      unsigned int.  This value is placed in each element of\n      r.  The range of the original value is\n      [-16:15].",
@@ -97235,6 +97392,7 @@
         },
         {
             "mnemonic": "vec_splats",
+            "name": "Vector Splat Scalar",
             "syntax": "r = vec_splats (a)",
             "purpose": "Returns a vector with the value of each element set to the value of\n      the scalar input parameter.",
             "result": "Each element of\n      r is set to the value of a.",
@@ -97321,6 +97479,7 @@
         },
         {
             "mnemonic": "vec_sqrt",
+            "name": "Vector Square Root",
             "syntax": "r = vec_sqrt (a)",
             "purpose": "Returns a vector containing the square root of each element in the\n      source vector.",
             "result": "Each element of\n      r is the square root of the\n      corresponding element of a.",
@@ -97351,6 +97510,7 @@
         },
         {
             "mnemonic": "vec_sr",
+            "name": "Vector Shift Right",
             "syntax": "r = vec_sr (a, b)",
             "purpose": "Performs a logical right shift for each element of a vector.",
             "result": "Each element of\n      r is the result of logically\n      right-shifting the corresponding element of a by the number of bits specified by the\n      corresponding element of b, modulo the\n      number of bits in the element. Zeros are shifted in from the\n      left.",
@@ -97422,6 +97582,7 @@
         },
         {
             "mnemonic": "vec_sra",
+            "name": "Vector Shift Right Algebraic",
             "syntax": "r = vec_sra (a, b)",
             "purpose": "Performs an algebraic right shift for each element of a vector.",
             "result": "Each element of\n      r is the result of algebraically\n      right-shifting the corresponding element of a by the number of bits specified by the\n      corresponding element of b, modulo the\n      number of bits in the element. Copies of the sign bit are shifted in\n      from the left.",
@@ -97493,6 +97654,7 @@
         },
         {
             "mnemonic": "vec_srl",
+            "name": "Vector Shift Right Long",
             "syntax": "r = vec_srl (a, b)",
             "purpose": "Right shifts a vector by a given number of bits.",
             "result": "Vector r contains the contents of a, shifted right by the number of bits specified\n      by the 3 least-significant bits of b.\n      Zeros are supplied on the left. The shift count must have been\n      replicated into all bytes of b; if not,\n      the value of r is undefined.",
@@ -97567,6 +97729,7 @@
         },
         {
             "mnemonic": "vec_sro",
+            "name": "Vector Shift Right by Octets",
             "syntax": "r = vec_sro (a, b)",
             "purpose": "Right shifts a vector by a given number of bytes (octets).",
             "result": "Vector\n      r receives the contents of\n      a, shifted right by the number of bytes\n      specified by bits 1\u20134 of the least-significant byte of\n      b.\n      Zeros are supplied from the left.",
@@ -97707,6 +97870,7 @@
         },
         {
             "mnemonic": "vec_srv",
+            "name": "Vector Shift Right Variable",
             "syntax": "r = vec_srv (a, b)",
             "purpose": "Right-shifts a vector by a varying number of bits by element.",
             "result": "Let v be a 17-byte vector formed from a zero byte\n      in element 0 and the elements of a\n      in bytes [1:16].  Then each byte element i of\n      r is determined as follows.  The\n      start bit sb is obtained from bits 5:7 of\n      byte element i of b.  Then the contents of bits\n      (8 \u2013 sb):(15 \u2013 sb) of the\n      halfword in byte elements i:i+1\n      of v are placed into byte element\n      i of r.",
@@ -97735,9 +97899,10 @@
         },
         {
             "mnemonic": "vec_st",
+            "name": "Vector Store Indexed",
             "syntax": "vec_st (a, b, c)",
             "purpose": "Stores a 16-byte vector into memory at the address specified by a\n      displacement and a pointer, ignoring the four low-order bits\n      of the calculated address.",
-            "result": "",
+            "result": "A memory address\n      is obtained by adding b and c, and masking off the four low-order bits of the\n      result.  The 16-byte vector in a is\n      stored to the resultant memory address.",
             "endianness": "None.",
             "instructions": [
                 "stvx"
@@ -97941,9 +98106,10 @@
         },
         {
             "mnemonic": "vec_ste",
+            "name": "Vector Store Element Indexed",
             "syntax": "vec_ste (a, b, c)",
             "purpose": "Stores a single element from a 16-byte vector into memory at the address\n      specified by a displacement and a pointer, aligned to the element size.",
-            "result": "",
+            "result": "The integer value\n      b is added to the pointer value\n      c.  The resulting address is rounded\n      down to the nearest address that is a multiple of\n      es, where es is 1 for char\n      pointers, 2 for short pointers, and 4 for float or int pointers.\n      An element offset eo is calculated by taking the\n      resultant address modulo 16.  The vector element of a at offset eo is stored\n      to the resultant address.",
             "endianness": "None.",
             "instructions": [
                 "stvebx",
@@ -98047,9 +98213,10 @@
         },
         {
             "mnemonic": "vec_stl",
+            "name": "Vector Store Indexed Least Recently Used",
             "syntax": "vec_stl (a, b, c)",
             "purpose": "Stores a 16-byte vector into memory at the address specified by a\n      displacement and a pointer, ignoring the four low-order bits\n      of the calculated address, and marking the cache line containing\n      the address as least frequently used.",
-            "result": "",
+            "result": "A memory address\n      is obtained by adding b and c, and masking off the four low-order bits of the\n      result.  The 16-byte vector in a is\n      stored to the resultant memory address, and the containing cache\n      line is marked as least frequently used.",
             "endianness": "None.",
             "instructions": [
                 "stvxl"
@@ -98253,6 +98420,7 @@
         },
         {
             "mnemonic": "vec_sub",
+            "name": "Vector Subtract",
             "syntax": "r = vec_sub (a, b)",
             "purpose": "Returns a vector containing the result of subtracting each element of\n      one source vector from the corresponding element of another source\n      vector.",
             "result": "The value of each\n      element of r is the result of\n      subtracting the value of the corresponding element of b from the value of the corresponding element of\n      a. The arithmetic is modular for\n      integer vectors.",
@@ -98351,6 +98519,7 @@
         },
         {
             "mnemonic": "vec_subc",
+            "name": "Vector Subtract Carryout",
             "syntax": "r = vec_subc (a, b)",
             "purpose": "Returns a vector wherein each element contains the carry\n      produced by subtracting the corresponding elements of the two\n      source vectors.",
             "result": "The value of each\n      element of r is the complement of the\n      carry produced by subtracting the value of the corresponding element of\n      b from the value of the corresponding\n      element of a. The value is 0 if a\n      borrow occurred, or 1 if no borrow occurred.",
@@ -98396,6 +98565,7 @@
         },
         {
             "mnemonic": "vec_sube",
+            "name": "Vector Subtract Extended",
             "syntax": "r = vec_sube (a, b, c)",
             "purpose": "Returns a vector containing the result of first elementwise subtracting\n      one vector from another vector, and then elementwise adding a third\n      carry vector. Elements of the carry vector have a value of 0 or 1.",
             "result": "Let c' be a vector for which each element is 0 if\n      the rightmost bit of the corresponding element of c is 0, and 1 otherwise. Then the value of each\n      element of r is produced by subtracting\n      the corresponding element of b from the\n      corresponding element of a, and then\n      adding the corresponding element of c'.",
@@ -98448,6 +98618,7 @@
         },
         {
             "mnemonic": "vec_subec",
+            "name": "Vector Subtract Extended Carryout",
             "syntax": "r = vec_subec (a, b, c)",
             "purpose": "Returns a vector containing the carries produced by subtracting one\n      vector from another, then adding a third vector to the difference.  The\n      third vector is a carry vector, with each element having a value of 0\n      or 1.",
             "result": "The value of each\n      element of r is the carry produced by\n      subtracting the corresponding element of b from the corresponding element of a, and then adding the carry specified in the\n      corresponding element of c (1 if there\n      is a carry, 0 otherwise).",
@@ -98502,6 +98673,7 @@
         },
         {
             "mnemonic": "vec_subs",
+            "name": "Vector Subtract Saturated",
             "syntax": "r = vec_subs (a, b)",
             "purpose": "Returns a vector containing the saturated differences of each set of\n      corresponding elements of the source vectors.",
             "result": "The value of each\n      element of r is the saturated result of\n      subtracting the value of the corresponding element of b from the value of the corresponding element of\n      a.",
@@ -98563,6 +98735,7 @@
         },
         {
             "mnemonic": "vec_sum2s",
+            "name": "Vector Sum Across Half",
             "syntax": "r = vec_sum2s (a, b)",
             "purpose": "Returns a vector containing the results of performing a sum-across\n      operation within each doubleword of the first source vector together with\n      accumulated results in the second source vector.",
             "result": "Elements 0 and 2\n      of r are 0. Element 1 of r contains the saturated sum of elements 0 and 1\n      of a and element 1 of b. Element 3 of r contains the saturated sum of elements 2 and 3\n      of a and element 3 of b.",
@@ -98592,6 +98765,7 @@
         },
         {
             "mnemonic": "vec_sum4s",
+            "name": "Vector Sum Across Quarter",
             "syntax": "r = vec_sum4s (a, b)",
             "purpose": "Returns a vector containing the results of performing a sum-across\n      operation within each word of the first source vector together with\n      accumulated results in the second source vector.",
             "result": "",
@@ -98632,6 +98806,7 @@
         },
         {
             "mnemonic": "vec_sums",
+            "name": "Vector Sum Across",
             "syntax": "r = vec_sums (a, b)",
             "purpose": "Returns a vector containing the results of performing a sum-across\n      operation on the first source vector together with accumulated results\n      in the second source vector.",
             "result": "Elements 0, 1, and 2\n      of r are 0. Element 3 is the saturated\n      sum of all the elements of a and\n      element 3 of b.",
@@ -98662,6 +98837,7 @@
         },
         {
             "mnemonic": "vec_test_data_class",
+            "name": "Vector Test Data Class",
             "syntax": "r = vec_test_data_class (a, b)",
             "purpose": "Determines the data class for each floating-point element.",
             "result": "",
@@ -98698,6 +98874,7 @@
         },
         {
             "mnemonic": "vec_trunc",
+            "name": "Vector Truncate",
             "syntax": "r = vec_trunc (a)",
             "purpose": "Returns a vector containing the truncated values of the corresponding\n      elements of the source vector.",
             "result": "Each element of\n      r contains the value of the\n      corresponding element of a, truncated\n      to an integral value.",
@@ -98728,6 +98905,7 @@
         },
         {
             "mnemonic": "vec_unpackh",
+            "name": "Vector Unpack High",
             "syntax": "r = vec_unpackh (a)",
             "purpose": "Unpacks the most-significant (\u201chigh\u201d) half of a vector into a vector\n      with larger elements.",
             "result": "If a is an integer vector, the value of each element\n      of r is the value of the corresponding\n      element of the most-significant half of a.",
@@ -98805,6 +98983,7 @@
         },
         {
             "mnemonic": "vec_unpackl",
+            "name": "Vector Unpack Low",
             "syntax": "r = vec_unpackl (a)",
             "purpose": "Unpacks the least-significant (\u201clow\u201d) half of a vector into a vector\n      with larger elements.",
             "result": "If a is an integer vector, the value of each element\n      of r is the value of the corresponding\n      element of the least-significant half of a.",
@@ -98882,6 +99061,7 @@
         },
         {
             "mnemonic": "vec_unsigned",
+            "name": "Vector Convert Floating-Point to Unsigned Integer",
             "syntax": "r = vec_unsigned (a)",
             "purpose": "Converts a vector of floating-point numbers to a vector of unsigned\n      integers.",
             "result": "Each element of\n      r is obtained by truncating the\n      corresponding element of a to an\n      unsigned integer.  The current floating-point rounding mode is\n      ignored.",
@@ -98912,6 +99092,7 @@
         },
         {
             "mnemonic": "vec_unsigned2",
+            "name": "Vector Convert Double-Precision to Unsigned Word",
             "syntax": "r = vec_unsigned2 (a, b)",
             "purpose": "Converts two vectors of double-precision floating-point numbers to a\n      vector of unsigned 32-bit integers.",
             "result": "Let v be the concatenation of a and b.  Each\n      element of r is obtained by truncating\n      the corresponding element of v to an\n      unsigned 32-bit integer.  The current floating-point rounding\n      mode is ignored.",
@@ -98943,6 +99124,7 @@
         },
         {
             "mnemonic": "vec_unsignede",
+            "name": "Vector Convert Double-Precision to Unsigned Word Even",
             "syntax": "r = vec_unsignede (a)",
             "purpose": "Converts elements of the source vector to unsigned integers and stores\n      them in the even-numbered elements of the result vector.",
             "result": "Element 0 of\n      r contains element 0 of a, truncated to an unsigned integer.  Element 2 of\n      r contains element 1 of a, truncated to a signed integer.  Elements 1 and\n      3 of r are undefined.  Truncation\n      of a negative number to an unsigned integer results in a value of\n      zero.",
@@ -98970,6 +99152,7 @@
         },
         {
             "mnemonic": "vec_unsignedo",
+            "name": "Vector Convert Double-Precision to Unsigned Word Odd",
             "syntax": "r = vec_unsignedo (a)",
             "purpose": "Converts elements of the source vector to unsigned integers and stores\n      them in the odd-numbered elements of the result vector.",
             "result": "Element 1 of\n      r contains element 0 of a, truncated to an unsigned integer.  Element 3 of\n      r contains element 1 of a, truncated to an unsigned integer.  Elements 0\n      and 2 of r are undefined.  Truncation\n      of a negative number to an unsigned integer results in a value of\n      zero.",
@@ -98997,6 +99180,7 @@
         },
         {
             "mnemonic": "vec_xl",
+            "name": "VSX Unaligned Load",
             "syntax": "r = vec_xl (a, b)",
             "purpose": "Loads a 16-byte vector from the memory address specified by the\n      displacement and the pointer.",
             "result": "The value of\n      r is obtained by adding a and b, then\n      loading the 16-byte vector from the resultant memory address.",
@@ -99089,6 +99273,7 @@
         },
         {
             "mnemonic": "vec_xl_be",
+            "name": "VSX Unaligned Load as Big Endian",
             "syntax": "r = vec_xl_be (a, b)",
             "purpose": "Loads a vector from an address into a register in big-endian element\n      order, regardless of the endianness of the target machine.",
             "result": "The value of\n      r is obtained by adding a and b, then\n      loading the vector elements from the resulting address in big-endian\n      order.",
@@ -99198,6 +99383,7 @@
         },
         {
             "mnemonic": "vec_xl_len",
+            "name": "Vector Load with Length",
             "syntax": "r = vec_xl_len (a, b)",
             "purpose": "Loads a vector of a specified byte length.",
             "result": "Loads the number of\n      bytes specified by b from the address\n      specified in a. Initializes elements in\n      order from the byte stream (as defined by the endianness of the target).\n      Any bytes of elements that cannot be initialized from the\n      number of loaded bytes have a zero value.",
@@ -99304,6 +99490,7 @@
         },
         {
             "mnemonic": "vec_xl_len_r",
+            "name": "Vector Load with Length Right-Justified",
             "syntax": "r = vec_xl_len_r (a, b)",
             "purpose": "Loads a vector of a specified byte length, right-justified.",
             "result": "Loads the number of\n      bytes specified by b from the address\n      specified in a, right justified in\n      r. Initializes elements in order from\n      the byte stream (as defined by the endianness of the target).\n      Any bytes of elements that cannot be initialized from the\n      number of loaded bytes have a zero value.",
@@ -99335,6 +99522,7 @@
         },
         {
             "mnemonic": "vec_xor",
+            "name": "Vector Exclusive OR",
             "syntax": "r = vec_xor (a, b)",
             "purpose": "Performs a bitwise XOR of two vectors.",
             "result": "v is the bitwise\n      exclusive OR of a and b.",
@@ -99439,9 +99627,10 @@
         },
         {
             "mnemonic": "vec_xst",
+            "name": "VSX Unaligned Store",
             "syntax": "vec_xst (a, b, c)",
             "purpose": "Stores a 16-byte value into memory at the address specified by the\n      displacement and pointer.",
-            "result": "",
+            "result": "The values of\n      b and c are added, and the value of a is stored to the resultant address.",
             "endianness": "For ISA 2.07, there is no bi-endian unaligned store instruction.  For\n      little-endian targets, it is necessary to first swap the doublewords\n      of the value to be stored using an xxswapd instruction, and then store\n      the result using the stxvd2x instruction.  For big-endian targets, the\n      stxvd2x or stxvw4x instruction suffices.  The examples below assume ISA\n      3.0, where the bi-endian stxv instruction is available.",
             "instructions": [
                 "stxv"
@@ -99531,6 +99720,7 @@
         },
         {
             "mnemonic": "vec_xst_be",
+            "name": "VSX Unaligned Store as Big Endian",
             "syntax": "vec_xst_be (a, b, c)",
             "purpose": "Stores a vector to an address using big-endian\n      element order, regardless of the endianness of the target machine.",
             "result": "The values of\n      b and c are added, and the value of a is stored to the resultant address using\n      big-endian element order.",
@@ -99640,9 +99830,10 @@
         },
         {
             "mnemonic": "vec_xst_len",
+            "name": "Vector Store with Length",
             "syntax": "vec_xst_len (a, b, c)",
             "purpose": "Stores a vector of a specified byte length.",
-            "result": "",
+            "result": "Stores the number of\n      bytes specified by c of the vector\n      a to the address specified in\n      b. The bytes are obtained starting from\n      the lowest-numbered byte of the lowest-numbered element (as defined by\n      the endianness of the target). All bytes of an element\n      are accessed before proceeding to the next higher element.",
             "endianness": "None.",
             "instructions": [
                 "sldi",
@@ -99746,9 +99937,10 @@
         },
         {
             "mnemonic": "vec_xst_len_r",
+            "name": "Vector Store with Length Right-Justified",
             "syntax": "vec_xst_len_r (a, b, c)",
             "purpose": "Stores a right-justified vector of a specified byte length.",
-            "result": "",
+            "result": "Stores the number of\n      bytes specified by c of the\n      right-justified vector a to the address\n      specified by b.",
             "endianness": "None.",
             "instructions": [
                 "lvsr",
