@@ -8,7 +8,8 @@ import {
     Search,
     Checkbox,
     CodeSnippet,
-    Link
+    Link,
+    StructuredListWrapper, StructuredListBody, StructuredListRow, StructuredListCell
 } from "carbon-components-react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -585,7 +586,6 @@ class App extends Component {
     displayAssociatedInstructions(item) {
         let all = [];
         if (item.instructions.length) {
-            all.push(<p key={item.mnemonic}>Associated Instructions:</p>);
             let comma = "";
             for (let i = 0; i < item.instructions.length; i++) {
                 all.push(comma);
@@ -607,37 +607,58 @@ class App extends Component {
 
     genIntrinsic(item) {
         return (
-            <div className="expandContainer">
-                <div className="column">
-                    <CopyToClipboard text={item.syntax}>
-                        <CodeSnippet
-                            className="syntax"
-                            key="syntax"
-                            feedback="Copied to clipboard"
-                            copyButtonDescription="Copy"
-                            ariaLabel="syntax"
-                            type="single"
-                        >
-                            {item.syntax}
-                        </CodeSnippet>
-                    </CopyToClipboard>
-                    <br />
-                    <p className="purpose">
-                        {item.purpose}
-                    </p>
-                    <br />
-                    <p className="result">
-                        {item.result}
-                    </p>
-                    <br />
-                    <p className="endianness">
-                        {item.endianness}
-                    </p>
-                </div>
+            <div className="column">
+                <CopyToClipboard text={item.syntax}>
+                    <CodeSnippet
+                        className="syntax"
+                        key="syntax"
+                        feedback="Copied to clipboard"
+                        copyButtonDescription="Copy"
+                        ariaLabel="syntax"
+                        type="single"
+                    >
+                        {item.syntax}
+                    </CodeSnippet>
+                </CopyToClipboard>
                 <br />
-                <div className="intrinsics">
-                    {this.displayAssociatedInstructions(item)}
-                </div>
+                <StructuredListWrapper>
+                    <StructuredListBody>
+                        <StructuredListRow>
+                            <StructuredListCell head>
+                                Purpose:
+                            </StructuredListCell>
+                            <StructuredListCell>
+                                {item.purpose}
+                            </StructuredListCell>
+                        </StructuredListRow>
+                        <StructuredListRow>
+                            <StructuredListCell head>
+                                Result:
+                            </StructuredListCell>
+                            <StructuredListCell>
+                                {item.result}
+                            </StructuredListCell>
+                        </StructuredListRow>
+                        <StructuredListRow>
+                            <StructuredListCell head>
+                                Endianness:
+                            </StructuredListCell>
+                            <StructuredListCell>
+                                {item.endianness}
+                            </StructuredListCell>
+                        </StructuredListRow>
+                        <StructuredListRow>
+                            <StructuredListCell head>
+                                Associated instructions:
+                            </StructuredListCell>
+                            <StructuredListCell>
+                                <div className="intrinsics">
+                                    {this.displayAssociatedInstructions(item)}
+                                </div>
+                            </StructuredListCell>
+                        </StructuredListRow>
+                    </StructuredListBody>
+                </StructuredListWrapper>
             </div>
         );
     }
