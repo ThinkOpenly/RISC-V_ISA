@@ -30,29 +30,29 @@ class Mnemonic:
 		self.operands = None
 		self.conditions = None
 		self.release = ''
-	def outputJSON(self,line_prefix,line_postfix):
-		print(line_prefix + t + t + "{" + line_postfix)
-		print(line_prefix + t + t + t + "\"mnemonic\": \"" + self.mnemonic + "\"",sep="",end="")
-		print(",")
-		print(line_prefix + t + t + t + "\"operands\": [ ",sep="",end="")
+	def outputJSON(self,f,line_prefix,line_postfix):
+		print(line_prefix + t + t + "{" + line_postfix, file=f)
+		print(line_prefix + t + t + t + "\"mnemonic\": \"" + self.mnemonic + "\"",sep="",end="", file=f)
+		print(",", file=f)
+		print(line_prefix + t + t + t + "\"operands\": [ ",sep="",end="", file=f)
 		comma = ''
 		if self.operands != None:
 			for operand in self.operands.split(','):
-				print(comma + "\"" + operand + "\"",sep="",end="")
+				print(comma + "\"" + operand + "\"",sep="",end="", file=f)
 				comma = ", "
-		print(" ]," + line_postfix)
+		print(" ]," + line_postfix, file=f)
 		if self.conditions != None:
-			print(line_prefix + t*3 + "\"conditions\": [ " + line_postfix,sep="")
+			print(line_prefix + t*3 + "\"conditions\": [ " + line_postfix,sep="", file=f)
 			comma = ''
 			for condition in self.conditions[1:-1].split():
 				(field, value) = condition.split('=')
-				print(comma,end="")
-				print(line_prefix + t*4 + "{ \"field\": \"" + field + "\", \"value\": \"" + value + "\" }" + line_postfix,sep="",end="")
+				print(comma,end="", file=f)
+				print(line_prefix + t*4 + "{ \"field\": \"" + field + "\", \"value\": \"" + value + "\" }" + line_postfix,sep="",end="", file=f)
 				comma = "," + line_postfix + "\n"
-			print("")
-			print(line_prefix + t*3 + "]," + line_postfix,sep="")
-		print(line_prefix + t + t + t + "\"release\": \"" + str(self.release) + "\"",sep="")
-		print(line_prefix + t + t + "}",sep="",end="")
+			print(file=f)
+			print(line_prefix + t*3 + "]," + line_postfix,sep="", file=f)
+		print(line_prefix + t + t + t + "\"release\": \"" + str(self.release) + "\"",sep="", file=f)
+		print(line_prefix + t + t + "}",sep="",end="", file=f)
 
 class Instruction:
 	def __init__(self):
@@ -64,42 +64,42 @@ class Instruction:
 		self.category = ''
 		self.layout = None
 		self.book = ''
-	def outputJSON(self,line_prefix,line_postfix):
-		print(line_prefix + "{" + line_postfix);
-		print(line_prefix + t + "\"description\": \"" + self.head + "\"," + line_postfix)
-		print(line_prefix + t + "\"form\": \"" + self.form + "\"," + line_postfix)
-		print(line_prefix + t + "\"category\": \"" + self.category + "\"," + line_postfix)
-		print(line_prefix + t + "\"book\": \"" + self.book + "\"," + line_postfix)
-		print(line_prefix + t + "\"mnemonics\": [" + line_postfix)
+	def outputJSON(self,f,line_prefix,line_postfix):
+		print(line_prefix + "{" + line_postfix, file=f)
+		print(line_prefix + t + "\"description\": \"" + self.head + "\"," + line_postfix, file=f)
+		print(line_prefix + t + "\"form\": \"" + self.form + "\"," + line_postfix, file=f)
+		print(line_prefix + t + "\"category\": \"" + self.category + "\"," + line_postfix, file=f)
+		print(line_prefix + t + "\"book\": \"" + self.book + "\"," + line_postfix, file=f)
+		print(line_prefix + t + "\"mnemonics\": [" + line_postfix, file=f)
 		comma = ''
 		for mnemonic in self.mnemonics:
-			print(comma,sep="",end="")
-			mnemonic.outputJSON(line_prefix,line_postfix)
+			print(comma,sep="",end="", file=f)
+			mnemonic.outputJSON(f,line_prefix,line_postfix)
 			comma = "," + line_postfix + "\n"
-		print("")
-		print(line_prefix + t + "]," + line_postfix)
+		print(file=f)
+		print(line_prefix + t + "]," + line_postfix, file=f)
 
-		print(line_prefix + t + "\"layout\": ",sep="",end="")
-		self.layout.outputJSON(line_prefix+t,line_postfix)
-		print("," + line_postfix)
+		print(line_prefix + t + "\"layout\": ",sep="",end="", file=f)
+		self.layout.outputJSON(f,line_prefix+t,line_postfix)
+		print("," + line_postfix, file=f)
 
-		print(line_prefix + t + "\"code\": [" + line_postfix)
+		print(line_prefix + t + "\"code\": [" + line_postfix, file=f)
 		comma = ''
 		for line in self.code:
-			print(comma,sep="",end="")
-			print(line_prefix + t + t + "\"" + line + "\"",sep="",end="")
+			print(comma,sep="",end="", file=f)
+			print(line_prefix + t + t + "\"" + line + "\"",sep="",end="", file=f)
 			comma = "," + line_postfix + "\n"
-		print("")
-		print(line_prefix + t + "]," + line_postfix)
-		print(line_prefix + t + "\"body\": [" + line_postfix)
+		print(file=f)
+		print(line_prefix + t + "]," + line_postfix, file=f)
+		print(line_prefix + t + "\"body\": [" + line_postfix, file=f)
 		comma = ''
 		for line in self.body:
-			print(comma,sep="",end="")
-			print(line_prefix + t + t + "\"" + line + "\"",sep="",end="")
+			print(comma,sep="",end="", file=f)
+			print(line_prefix + t + t + "\"" + line + "\"",sep="",end="", file=f)
 			comma = "," + line_postfix + "\n"
-		print("")
-		print(line_prefix + t + "]" + line_postfix)
-		print(line_prefix + "}" + line_postfix,sep="",end="");
+		print(file=f)
+		print(line_prefix + t + "]" + line_postfix, file=f)
+		print(line_prefix + "}" + line_postfix,sep="",end="", file=f)
 
 class InstructionLayout:
 	def __init__(self):
@@ -107,8 +107,8 @@ class InstructionLayout:
 	def append(self,layout):
 		self.rows[0] += layout.rows[0]
 		self.rows[1] += layout.rows[1]
-	def outputJSON(self,line_prefix,line_postfix):
-		print("[" + line_postfix,sep="");
+	def outputJSON(self,f,line_prefix,line_postfix):
+		print("[" + line_postfix,sep="", file=f)
 		column = 0
 		multiword_adjust = 0
 		opcode_index = 0
@@ -142,13 +142,13 @@ class InstructionLayout:
 				if field_start.isdecimal() and field_end.isdecimal():
 					field_width = int(field_end) - int(field_start)
 			except: pass
-			print (f"{comma}{line_prefix}" + t + "{" + f" \"name\": \"{field_name}\", \"size\": \"{field_width}\"",sep="",end="")
+			print (f"{comma}{line_prefix}" + t + "{" + f" \"name\": \"{field_name}\", \"size\": \"{field_width}\"",sep="",end="", file=f)
 			if field_value != None:
-				print (f", \"value\": \"{field_value}\"",sep="",end="")
-			print (" }",sep="",end="")
+				print (f", \"value\": \"{field_value}\"",sep="",end="", file=f)
+			print (" }",sep="",end="", file=f)
 			comma = "," + line_postfix + "\n"
-		print("" + line_postfix);
-		print(line_prefix + "]",sep="",end="");
+		print("" + line_postfix, file=f)
+		print(line_prefix + "]",sep="",end="", file=f)
 
 inst = None
 insts = []
@@ -880,59 +880,63 @@ for i in range(len(insts)-1):
 #insts.sort(key=lambda inst: inst.head.removeprefix("Prefixed "))
 insts.sort(key=lambda inst: inst.head.replace("Prefixed ","",1))
 
-print("{")
-print(t + "\"instructions\": [")
+import io
+s = io.StringIO()
+print ("{", file=s)
+
+print (t + "\"instructions\": [", file=s)
 comma=''
 for inst in insts:
 	# hack because some empty instructions are sneaking through, because of ATbls not being suppressed, I think
 	if inst.head != "":
-		print(comma,sep="",end="")
-		inst.outputJSON(t+t,'')
+		print (comma,sep="",end="", file=s)
+		inst.outputJSON(s,t+t,'')
 		comma=',\n'
-print("")
-print(t + "]",sep="",end="")
+print (file=s)
+print (t + "]",sep="",end="", file=s)
 
-print(",")
-print(t + "\"forms\": [")
+print (",", file=s)
+print (t + "\"forms\": [", file=s)
 comma=''
 for form in forms:
-	print(f"{comma}{t*2}\"{form}\"",sep="",end="")
+	print (f"{comma}{t*2}\"{form}\"",sep="",end="", file=s)
 	comma=',\n'
-print()
-print(t + "]",sep="",end="")
+print (file=s)
+print (t + "]",sep="",end="", file=s)
 
-def printOutline(outline,line_prefix):
-	print(",")
-	print(line_prefix + "\"chapters\": [",sep="",end="")
+def printOutline(f,outline,line_prefix):
+	print (",", file=f)
+	print (line_prefix + "\"chapters\": [",sep="",end="", file=f)
 	if len(outline) > 0:
-		print("")
+		print (file=f)
 		comma=''
 		for c in outline:
-			print(comma + line_prefix + t + "{")
-			print(line_prefix + t + t + "\"name\": \"" + c + "\"",sep="",end="")
-			printOutline(outline[c],line_prefix+t+t)
-			print("")
+			print (comma + line_prefix + t + "{", file=f)
+			print (line_prefix + t + t + "\"name\": \"" + c + "\"",sep="",end="", file=f)
+			printOutline(f,outline[c],line_prefix+t+t)
+			print (file=f)
 			comma=',\n'
-			print(line_prefix + t + "}",sep="",end="")
-		print("\n" + line_prefix,sep="",end="")
-	print("]",sep="",end="");
+			print (line_prefix + t + "}",sep="",end="", file=f)
+		print ("\n" + line_prefix,sep="",end="", file=f)
+	print ("]",sep="",end="", file=f)
 
-printOutline(outline,t)
+printOutline(s,outline,t)
 
-print(",")
-print(t + "\"books\": [",sep="",end="")
+print (",", file=s)
+print (t + "\"books\": [",sep="",end="", file=s)
 comma=''
 for book in books:
     if book in books_with_insts:
-        print (comma, sep="")
-        print (t*2 + "{", sep="")
-        print (t*3 + "\"shortname\": \"" + book + "\",", sep="")
-        print (t*3 + "\"title\": \"" + books[book] + "\"", sep="")
-        print (t*2 + "}", sep="", end="")
+        print (comma, sep="", file=s)
+        print (t*2 + "{", sep="", file=s)
+        print (t*3 + "\"shortname\": \"" + book + "\",", sep="", file=s)
+        print (t*3 + "\"title\": \"" + books[book] + "\"", sep="", file=s)
+        print (t*2 + "}", sep="", end="", file=s)
         comma = ','
-print()
-print(t + "]", sep="",end="");
-print()
+print (file=s)
+print (t + "]", sep="",end="", file=s)
+print (file=s)
 
-print("}")
+print ("}", end="", file=s)
 
+print (s.getvalue ())
