@@ -606,6 +606,18 @@ class App extends Component {
         return all;
     }
 
+    genMultiLine(row,string) {
+        let all = [];
+        try {
+          string.split("\n").map ((line) => (
+            all.push(line),
+            all.push(<br/>)
+          ))
+        }
+        catch (err) {}
+        return all;
+    }
+
     genIntrinsic(item) {
         return (
             <div className="column">
@@ -670,7 +682,7 @@ class App extends Component {
                                                     {rows.map((row) => (
                                                         <TableRow key={row.id}>
                                                             {row.cells.map((cell) => (
-                                                                <TableCell key={cell.id}>{cell.value}</TableCell>
+                                                                <TableCell key={cell.id} className="type-sig-entry">{this.genMultiLine(row,cell.value)}</TableCell>
                                                             ))}
                                                         </TableRow>
                                                     ))}
