@@ -772,7 +772,7 @@
             "list": [
                 [ "vector unsigned char", "vector unsigned char", "vector unsigned char", "vbpermq r,a,b" ],
                 [ "vector unsigned long long", "vector unsigned __int128", "vector unsigned char", "vbpermq r,a,b", "" ],
-                [ "vector unsigned long long", "vector unsigned long long", "vector unsigned char", "vbpermd r,a,b", "ISA 3.0 or later", "" ]
+                [ "vector unsigned long long", "vector unsigned long long", "vector unsigned char", "vbpermd r,a,b", "ISA 3.0 or later" ]
             ]
         }
     },

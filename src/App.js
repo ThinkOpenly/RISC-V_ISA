@@ -9,7 +9,8 @@ import {
     Checkbox,
     CodeSnippet,
     Link,
-    StructuredListWrapper, StructuredListBody, StructuredListRow, StructuredListCell
+    StructuredListWrapper, StructuredListBody, StructuredListRow, StructuredListCell,
+    DataTable, TableContainer, Table, TableHead, TableRow, TableHeader, TableBody, TableCell
 } from "carbon-components-react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -645,6 +646,39 @@ class App extends Component {
                             </StructuredListCell>
                             <StructuredListCell>
                                 {item.endianness}
+                            </StructuredListCell>
+                        </StructuredListRow>
+                        <StructuredListRow>
+                            <StructuredListCell head>
+                                Type signatures:
+                            </StructuredListCell>
+                            <StructuredListCell>
+                                <DataTable headers={item.type_signatures.var_heads} rows={item.type_signatures.list}>
+                                    {({ headers, rows }) => (
+                                        <TableContainer>
+                                            <Table>
+                                                <TableHead>
+                                                    <TableRow>
+                                                        {headers.map((header) => (
+                                                            <TableHeader>
+                                                                {header.header}
+                                                            </TableHeader>
+                                                        ))}
+                                                    </TableRow>
+                                                </TableHead>
+                                                <TableBody>
+                                                    {rows.map((row) => (
+                                                        <TableRow key={row.id}>
+                                                            {row.cells.map((cell) => (
+                                                                <TableCell key={cell.id}>{cell.value}</TableCell>
+                                                            ))}
+                                                        </TableRow>
+                                                    ))}
+                                                </TableBody>
+                                            </Table>
+                                        </TableContainer>
+                                    )}
+                                </DataTable>
                             </StructuredListCell>
                         </StructuredListRow>
                         <StructuredListRow>
