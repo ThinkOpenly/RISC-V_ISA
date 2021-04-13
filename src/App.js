@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 import Nav from "./Nav";
 import ISA from "./ISA.json";
+import emnems from "./emnem.json";
 import {
     Accordion,
     AccordionItem,
@@ -9,7 +10,7 @@ import {
     Checkbox,
     CodeSnippet,
     Link,
-    StructuredListWrapper, StructuredListBody, StructuredListRow, StructuredListCell,
+    StructuredListWrapper, StructuredListHead, StructuredListBody, StructuredListRow, StructuredListCell,
     DataTable, TableContainer, Table, TableHead, TableRow, TableHeader, TableBody, TableCell
 } from "carbon-components-react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -79,6 +80,7 @@ class App extends Component {
         this.state = {
             data: ISA.instructions,
             intrinsics: ISA.intrinsics,
+            emnems: emnems,
             releaseSet: releases,
             classSet: classes,
             formSet: forms,
@@ -86,7 +88,9 @@ class App extends Component {
             search: "",
             search_mnemonics: true,
             search_names: false,
-            search_intrinsics: false
+            search_intrinsics: false,
+            search_emnems: true,
+            search_emnems_names: false
         };
     }
 
@@ -595,7 +599,7 @@ class App extends Component {
                         className="link"
                         key={item.instructions[i]}
                         href="#"
-                        onClick={e => { this.setState({ search: item.instructions[i], search_instructions: true }); }}
+                        onClick={e => { this.setState({ search: item.instructions[i], search_mnemonics: true }); }}
                     >
                         {item.instructions[i]}
                     </Link>
@@ -747,6 +751,177 @@ class App extends Component {
         return allJson;
     };
 
+    displayOps(ops, optionals) {
+        let all = "";
+        let comma = "";
+        for (let i = 0; i < ops.length; i++) {
+            let optional = ops[i].optional[0] - '0';
+            if (optional <= optionals) {
+                all += comma + ops[i].name;
+                comma = ",";
+            }
+        }
+        return all;
+    }
+
+    displayEmnem(item,i) {
+        let all = [];
+        const spaces = "               ";
+        let gap_emnem = spaces.length - item.emnem.length;
+        if (gap_emnem < 2) gap_emnem = 2;
+        let gap_mnem = spaces.length - item.mnemonic.length;
+        if (gap_mnem < 2) gap_mnem = 2;
+
+        let optionals = 0;
+        for (let i = 0; i < item.ops.length; i++) {
+            let optional = item.ops[i].optional[0] - '0';
+            if (optional > optionals) optionals = optional;
+        }
+        for (let i = optionals; i >= 0; i--) {
+            let emnem =
+                item.emnem +
+                spaces.substr(0,gap_emnem) +
+                this.displayOps(item.ops, i);
+            let basic =
+                item.mnemonic +
+                spaces.substr(0,gap_mnem) +
+                this.displayOperands(item.operands);
+            let optionalstr = "";
+            let comma = "";
+            for (let o = 0; o < item.ops.length; o++) {
+                if (item.ops[o].optional[0] - '0' > i) {
+                    optionalstr += comma + item.ops[o].name + '=' + item.ops[o].default;
+                    comma = ",";
+                }
+            }
+            all.push(
+                <StructuredListRow>
+                    <StructuredListCell>
+                        <CopyToClipboard text={emnem}>
+                            <CodeSnippet
+                                className="syntax"
+                                key="syntax"
+                                feedback="Copied to clipboard"
+                                copyButtonDescription="Copy"
+                                ariaLabel="emnem"
+                                type="inline"
+                            >
+                                {emnem}
+                            </CodeSnippet>
+                        </CopyToClipboard>
+                    </StructuredListCell>
+                    <StructuredListCell>
+                        {optionalstr}
+                    </StructuredListCell>
+                    <StructuredListCell>
+                        <CopyToClipboard text={basic}>
+                            <CodeSnippet
+                                className="syntax"
+                                key="syntax"
+                                feedback="Copied to clipboard"
+                                copyButtonDescription="Copy"
+                                ariaLabel="mnemonic"
+                                type="inline"
+                            >
+                                {basic}
+                            </CodeSnippet>
+                        </CopyToClipboard>
+                    </StructuredListCell>
+                </StructuredListRow>
+            );
+        }
+        return all;
+    }
+
+    displayEmnems(item) {
+        let all = [];
+        all.push(
+            <StructuredListWrapper>
+                <StructuredListHead>
+                    <StructuredListRow head>
+                        <StructuredListCell head>Extended mnemonic syntax</StructuredListCell>
+                        <StructuredListCell head>Default operands</StructuredListCell>
+                        <StructuredListCell head>Equivalent to</StructuredListCell>
+                    </StructuredListRow>
+                </StructuredListHead>
+                <StructuredListBody>
+                    {this.displayEmnem(item)}
+                </StructuredListBody>
+            </StructuredListWrapper>
+        );
+        all.push(
+            <StructuredListWrapper>
+                <StructuredListBody>
+                    <StructuredListRow>
+                        <StructuredListCell>Associated instructions:</StructuredListCell>
+                        <StructuredListCell>
+                            <Link
+                                className="link"
+                                key={item.mnemonic}
+                                href="#"
+                                onClick={e => { this.setState({ search: item.mnemonic, search_mnemonics: true }); }}
+                            >
+                                {item.mnemonic}
+                            </Link>
+                        </StructuredListCell>
+                    </StructuredListRow>
+                </StructuredListBody>
+            </StructuredListWrapper>
+        );
+        return all;
+    }
+
+    genEmnem(item) {
+        return (
+            <div className="expandContainer">
+                <div className="column">
+                    {this.displayEmnems(item)}
+                </div>
+            </div>
+        );
+    }
+
+    genEmnemTitle (item) {
+        return (
+            <table className="item">
+                <tbody>
+                    <tr>
+                        <td className="itemtitledesc">{item.description}</td>
+                        <td className="itemtitlemnem">{item.emnem}</td>
+                    </tr>
+                </tbody>
+            </table>
+        );
+    }
+
+    genEmnems = data => {
+        let allJson = [];
+        for (let i = 0; i < data.length; i++) {
+            if (
+                (this.state.search_emnems &&
+                 data[i].emnem.startsWith(this.state.search)) ||
+                (this.state.search_emnems_names &&
+                 this.state.search.split(" ").every(this.matchEach,data[i].description.toLowerCase()))
+            ) {
+                allJson.push(
+                    <AccordionItem
+                        title={this.genEmnemTitle (data[i])}
+                        key={data[i].emnem}
+                        onClick={e => {
+                            console.log("click");
+                        }}
+                        onHeadingClick={e => {
+                            console.log("heading click");
+                        }}
+                    >
+                        {this.genEmnem(data[i])}
+                    </AccordionItem>
+                );
+            }
+        }
+        return allJson;
+    };
+
     render() {
         return (
             <div className="App">
@@ -849,7 +1024,7 @@ class App extends Component {
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <td style={{justifyContent: 'center'}}>
+                                                <td style={{width: '50%', justifyContent: 'center'}}>
                                                     <Search
                                                         className="some-class"
                                                         name=""
@@ -887,6 +1062,33 @@ class App extends Component {
                                                             this.setState({ search_names: e });
                                                         }}
                                                     />
+                                                </td>
+                                                <td>
+                                                    <Checkbox
+                                                        defaultChecked
+                                                        className="checkbox"
+                                                        id="search-emnems"
+                                                        labelText="extended mnemonics"
+                                                        disabled={false}
+                                                        hideLabel={false}
+                                                        wrapperClassName=""
+                                                        onChange={e => {
+                                                            this.setState({ search_emnems: e });
+                                                        }}
+                                                    />
+                                                    <Checkbox
+                                                        className="checkbox"
+                                                        id="search-emnems-names"
+                                                        labelText="extended mnemonics names"
+                                                        disabled={false}
+                                                        hideLabel={false}
+                                                        wrapperClassName=""
+                                                        onChange={e => {
+                                                            this.setState({ search_emnems_names: e });
+                                                        }}
+                                                    />
+                                                </td>
+                                                <td>
                                                     <Checkbox
                                                         className="checkbox"
                                                         id="search-intrinsics"
@@ -906,6 +1108,7 @@ class App extends Component {
                                 <Accordion>
                                     {this.genData(this.state.data)}
                                     {this.genIntrinsics(this.state.intrinsics)}
+                                    {this.genEmnems(this.state.emnems)}
                                 </Accordion>
                             </div>
                         </div>
