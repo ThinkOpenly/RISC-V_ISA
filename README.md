@@ -5,7 +5,7 @@ Power ISA
 # create ISA.json
 
 ```
-$ (cat PPC1_ChFixedPt.mif PPC_ApInstMnem.mif ) | ./utils/mif2json.py > ./src/ISA.json
+$ ./utils/mif2json.py ../PowerISA/PowerISA_tags.mif > ./src/ISA.json
 ```
 
 # Run Local React Environment
@@ -26,11 +26,12 @@ npm i
 #### 2. After npm installs your dependencies, run
 
 ```
-npm run local
+npm run start
 ```
 
 This will create a local react server at localhost:3000 by default.
 
 Navigate to that address in your favorite browser to interact with the UI.
+`npm run start` will automatically launch a browser or browser tab.
 While running in this local dev environment, any code changes will cause a quick
 server restart on save, so you can quickly tweak UI code to your specifications
