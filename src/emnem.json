@@ -15,7 +15,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "target"
         ]
@@ -36,7 +36,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -57,7 +57,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "target"
         ]
@@ -78,7 +78,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -99,7 +99,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "target"
         ]
@@ -120,7 +120,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -141,7 +141,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "target"
         ]
@@ -162,7 +162,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "target"
         ]
@@ -183,7 +183,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "target"
         ]
@@ -204,7 +204,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "target"
         ]
@@ -225,7 +225,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "target"
         ]
@@ -246,7 +246,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "target"
         ]
@@ -267,7 +267,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "target"
         ]
@@ -288,7 +288,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "target"
         ]
@@ -309,7 +309,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -330,7 +330,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -351,7 +351,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "target"
         ]
@@ -372,7 +372,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "target"
         ]
@@ -393,7 +393,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -414,7 +414,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -435,7 +435,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "target"
         ]
@@ -456,7 +456,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "target"
         ]
@@ -477,7 +477,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -498,7 +498,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -519,7 +519,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "target"
         ]
@@ -540,7 +540,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "target"
         ]
@@ -561,7 +561,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "target"
         ]
@@ -582,7 +582,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "target"
         ]
@@ -603,7 +603,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "target"
         ]
@@ -624,7 +624,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "target"
         ]
@@ -645,7 +645,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "target"
         ]
@@ -666,7 +666,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "target"
         ]
@@ -687,7 +687,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "target"
         ]
@@ -708,7 +708,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "target"
         ]
@@ -729,7 +729,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "target"
         ]
@@ -750,7 +750,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "target"
         ]
@@ -770,7 +770,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00000",
+            "0b00000",
             "BI",
             "target"
         ]
@@ -790,7 +790,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00010",
+            "0b00010",
             "BI",
             "target"
         ]
@@ -810,7 +810,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "target"
         ]
@@ -830,7 +830,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "target"
         ]
@@ -850,7 +850,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "target"
         ]
@@ -870,7 +870,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01000",
+            "0b01000",
             "BI",
             "target"
         ]
@@ -890,7 +890,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01010",
+            "0b01010",
             "BI",
             "target"
         ]
@@ -910,7 +910,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "target"
         ]
@@ -930,7 +930,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "target"
         ]
@@ -950,7 +950,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "target"
         ]
@@ -966,7 +966,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "10000",
+            "0b10000",
             "BI",
             "target"
         ]
@@ -982,7 +982,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "11001",
+            "0b11001",
             "BI",
             "target"
         ]
@@ -998,7 +998,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "11000",
+            "0b11000",
             "BI",
             "target"
         ]
@@ -1014,7 +1014,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "10010",
+            "0b10010",
             "BI",
             "target"
         ]
@@ -1030,7 +1030,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "11011",
+            "0b11011",
             "BI",
             "target"
         ]
@@ -1046,7 +1046,7 @@
         ],
         "mnemonic": "bc",
         "operands": [
-            "11010",
+            "0b11010",
             "BI",
             "target"
         ]
@@ -1067,7 +1067,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "target"
         ]
@@ -1088,7 +1088,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -1109,7 +1109,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "target"
         ]
@@ -1130,7 +1130,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -1151,7 +1151,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "target"
         ]
@@ -1172,7 +1172,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -1193,7 +1193,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "target"
         ]
@@ -1214,7 +1214,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "target"
         ]
@@ -1235,7 +1235,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "target"
         ]
@@ -1256,7 +1256,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "target"
         ]
@@ -1277,7 +1277,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "target"
         ]
@@ -1298,7 +1298,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "target"
         ]
@@ -1319,7 +1319,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "target"
         ]
@@ -1340,7 +1340,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "target"
         ]
@@ -1361,7 +1361,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -1382,7 +1382,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -1403,7 +1403,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "target"
         ]
@@ -1424,7 +1424,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "target"
         ]
@@ -1445,7 +1445,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -1466,7 +1466,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -1487,7 +1487,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "target"
         ]
@@ -1508,7 +1508,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "target"
         ]
@@ -1529,7 +1529,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -1550,7 +1550,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -1571,7 +1571,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "target"
         ]
@@ -1592,7 +1592,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "target"
         ]
@@ -1613,7 +1613,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "target"
         ]
@@ -1634,7 +1634,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "target"
         ]
@@ -1655,7 +1655,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "target"
         ]
@@ -1676,7 +1676,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "target"
         ]
@@ -1697,7 +1697,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "target"
         ]
@@ -1718,7 +1718,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "target"
         ]
@@ -1739,7 +1739,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "target"
         ]
@@ -1760,7 +1760,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "target"
         ]
@@ -1781,7 +1781,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "target"
         ]
@@ -1802,7 +1802,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "target"
         ]
@@ -1822,7 +1822,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00000",
+            "0b00000",
             "BI",
             "target"
         ]
@@ -1842,7 +1842,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00010",
+            "0b00010",
             "BI",
             "target"
         ]
@@ -1862,7 +1862,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "target"
         ]
@@ -1882,7 +1882,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "target"
         ]
@@ -1902,7 +1902,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "target"
         ]
@@ -1922,7 +1922,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01000",
+            "0b01000",
             "BI",
             "target"
         ]
@@ -1942,7 +1942,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01010",
+            "0b01010",
             "BI",
             "target"
         ]
@@ -1962,7 +1962,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "target"
         ]
@@ -1982,7 +1982,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "target"
         ]
@@ -2002,7 +2002,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "target"
         ]
@@ -2018,7 +2018,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "10000",
+            "0b10000",
             "BI",
             "target"
         ]
@@ -2034,7 +2034,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "11001",
+            "0b11001",
             "BI",
             "target"
         ]
@@ -2050,7 +2050,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "11000",
+            "0b11000",
             "BI",
             "target"
         ]
@@ -2066,7 +2066,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "10010",
+            "0b10010",
             "BI",
             "target"
         ]
@@ -2082,7 +2082,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "11011",
+            "0b11011",
             "BI",
             "target"
         ]
@@ -2098,7 +2098,7 @@
         ],
         "mnemonic": "bca",
         "operands": [
-            "11010",
+            "0b11010",
             "BI",
             "target"
         ]
@@ -2119,7 +2119,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "target"
         ]
@@ -2140,7 +2140,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -2161,7 +2161,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "target"
         ]
@@ -2182,7 +2182,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -2203,7 +2203,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "target"
         ]
@@ -2224,7 +2224,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -2245,7 +2245,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "target"
         ]
@@ -2266,7 +2266,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "target"
         ]
@@ -2287,7 +2287,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "target"
         ]
@@ -2308,7 +2308,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "target"
         ]
@@ -2329,7 +2329,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "target"
         ]
@@ -2350,7 +2350,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "target"
         ]
@@ -2371,7 +2371,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "target"
         ]
@@ -2392,7 +2392,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "target"
         ]
@@ -2413,7 +2413,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -2434,7 +2434,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -2455,7 +2455,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "target"
         ]
@@ -2476,7 +2476,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "target"
         ]
@@ -2497,7 +2497,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -2518,7 +2518,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -2539,7 +2539,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "target"
         ]
@@ -2560,7 +2560,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "target"
         ]
@@ -2581,7 +2581,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -2602,7 +2602,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -2623,7 +2623,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "target"
         ]
@@ -2644,7 +2644,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "target"
         ]
@@ -2665,7 +2665,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "target"
         ]
@@ -2686,7 +2686,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "target"
         ]
@@ -2707,7 +2707,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "target"
         ]
@@ -2728,7 +2728,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "target"
         ]
@@ -2749,7 +2749,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "target"
         ]
@@ -2770,7 +2770,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "target"
         ]
@@ -2791,7 +2791,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "target"
         ]
@@ -2812,7 +2812,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "target"
         ]
@@ -2833,7 +2833,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "target"
         ]
@@ -2854,7 +2854,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "target"
         ]
@@ -2874,7 +2874,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00000",
+            "0b00000",
             "BI",
             "target"
         ]
@@ -2894,7 +2894,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00010",
+            "0b00010",
             "BI",
             "target"
         ]
@@ -2914,7 +2914,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "target"
         ]
@@ -2934,7 +2934,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "target"
         ]
@@ -2954,7 +2954,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "target"
         ]
@@ -2974,7 +2974,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01000",
+            "0b01000",
             "BI",
             "target"
         ]
@@ -2994,7 +2994,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01010",
+            "0b01010",
             "BI",
             "target"
         ]
@@ -3014,7 +3014,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "target"
         ]
@@ -3034,7 +3034,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "target"
         ]
@@ -3054,7 +3054,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "target"
         ]
@@ -3070,7 +3070,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "10000",
+            "0b10000",
             "BI",
             "target"
         ]
@@ -3086,7 +3086,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "11001",
+            "0b11001",
             "BI",
             "target"
         ]
@@ -3102,7 +3102,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "11000",
+            "0b11000",
             "BI",
             "target"
         ]
@@ -3118,7 +3118,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "10010",
+            "0b10010",
             "BI",
             "target"
         ]
@@ -3134,7 +3134,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "11011",
+            "0b11011",
             "BI",
             "target"
         ]
@@ -3150,7 +3150,7 @@
         ],
         "mnemonic": "bcl",
         "operands": [
-            "11010",
+            "0b11010",
             "BI",
             "target"
         ]
@@ -3171,7 +3171,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "target"
         ]
@@ -3192,7 +3192,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -3213,7 +3213,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "target"
         ]
@@ -3234,7 +3234,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -3255,7 +3255,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "target"
         ]
@@ -3276,7 +3276,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "target"
         ]
@@ -3297,7 +3297,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "target"
         ]
@@ -3318,7 +3318,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "target"
         ]
@@ -3339,7 +3339,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "target"
         ]
@@ -3360,7 +3360,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "target"
         ]
@@ -3381,7 +3381,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "target"
         ]
@@ -3402,7 +3402,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "target"
         ]
@@ -3423,7 +3423,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "target"
         ]
@@ -3444,7 +3444,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "target"
         ]
@@ -3465,7 +3465,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -3486,7 +3486,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -3507,7 +3507,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "target"
         ]
@@ -3528,7 +3528,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "target"
         ]
@@ -3549,7 +3549,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -3570,7 +3570,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -3591,7 +3591,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "target"
         ]
@@ -3612,7 +3612,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "target"
         ]
@@ -3633,7 +3633,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "target"
         ]
@@ -3654,7 +3654,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "target"
         ]
@@ -3675,7 +3675,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "target"
         ]
@@ -3696,7 +3696,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "target"
         ]
@@ -3717,7 +3717,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "target"
         ]
@@ -3738,7 +3738,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "target"
         ]
@@ -3759,7 +3759,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "target"
         ]
@@ -3780,7 +3780,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "target"
         ]
@@ -3801,7 +3801,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "target"
         ]
@@ -3822,7 +3822,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "target"
         ]
@@ -3843,7 +3843,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "target"
         ]
@@ -3864,7 +3864,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "target"
         ]
@@ -3885,7 +3885,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "target"
         ]
@@ -3906,7 +3906,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "target"
         ]
@@ -3926,7 +3926,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00000",
+            "0b00000",
             "BI",
             "target"
         ]
@@ -3946,7 +3946,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00010",
+            "0b00010",
             "BI",
             "target"
         ]
@@ -3966,7 +3966,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "target"
         ]
@@ -3986,7 +3986,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "target"
         ]
@@ -4006,7 +4006,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "target"
         ]
@@ -4026,7 +4026,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01000",
+            "0b01000",
             "BI",
             "target"
         ]
@@ -4046,7 +4046,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01010",
+            "0b01010",
             "BI",
             "target"
         ]
@@ -4066,7 +4066,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "target"
         ]
@@ -4086,7 +4086,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "target"
         ]
@@ -4106,7 +4106,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "target"
         ]
@@ -4122,7 +4122,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "10000",
+            "0b10000",
             "BI",
             "target"
         ]
@@ -4138,7 +4138,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "11001",
+            "0b11001",
             "BI",
             "target"
         ]
@@ -4154,7 +4154,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "11000",
+            "0b11000",
             "BI",
             "target"
         ]
@@ -4170,7 +4170,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "10010",
+            "0b10010",
             "BI",
             "target"
         ]
@@ -4186,7 +4186,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "11011",
+            "0b11011",
             "BI",
             "target"
         ]
@@ -4202,7 +4202,7 @@
         ],
         "mnemonic": "bcla",
         "operands": [
-            "11010",
+            "0b11010",
             "BI",
             "target"
         ]
@@ -4244,7 +4244,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "BH"
         ]
@@ -4266,7 +4266,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -4288,7 +4288,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "BH"
         ]
@@ -4310,7 +4310,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -4332,7 +4332,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "BH"
         ]
@@ -4354,7 +4354,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -4376,7 +4376,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "BH"
         ]
@@ -4398,7 +4398,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "BH"
         ]
@@ -4420,7 +4420,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -4442,7 +4442,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -4464,7 +4464,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -4486,7 +4486,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -4508,7 +4508,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "BH"
         ]
@@ -4530,7 +4530,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "BH"
         ]
@@ -4552,7 +4552,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -4574,7 +4574,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -4596,7 +4596,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "BH"
         ]
@@ -4618,7 +4618,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "BH"
         ]
@@ -4640,7 +4640,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -4662,7 +4662,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -4684,7 +4684,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "BH"
         ]
@@ -4706,7 +4706,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "BH"
         ]
@@ -4728,7 +4728,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -4750,7 +4750,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -4772,7 +4772,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "BH"
         ]
@@ -4794,7 +4794,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "BH"
         ]
@@ -4816,7 +4816,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "BH"
         ]
@@ -4838,7 +4838,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "BH"
         ]
@@ -4860,7 +4860,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -4882,7 +4882,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -4904,7 +4904,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -4926,7 +4926,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -4948,7 +4948,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -4970,7 +4970,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -4992,7 +4992,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -5014,7 +5014,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -5035,7 +5035,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00000",
+            "0b00000",
             "BI",
             "BH"
         ]
@@ -5056,7 +5056,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00010",
+            "0b00010",
             "BI",
             "BH"
         ]
@@ -5077,7 +5077,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "BH"
         ]
@@ -5098,7 +5098,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "BH"
         ]
@@ -5119,7 +5119,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "BH"
         ]
@@ -5140,7 +5140,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01000",
+            "0b01000",
             "BI",
             "BH"
         ]
@@ -5161,7 +5161,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01010",
+            "0b01010",
             "BI",
             "BH"
         ]
@@ -5182,7 +5182,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "BH"
         ]
@@ -5203,7 +5203,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "BH"
         ]
@@ -5224,7 +5224,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "BH"
         ]
@@ -5241,7 +5241,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "10000",
+            "0b10000",
             "BI",
             "BH"
         ]
@@ -5258,7 +5258,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "11001",
+            "0b11001",
             "BI",
             "BH"
         ]
@@ -5275,7 +5275,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "11000",
+            "0b11000",
             "BI",
             "BH"
         ]
@@ -5292,7 +5292,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "10010",
+            "0b10010",
             "BI",
             "BH"
         ]
@@ -5309,7 +5309,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "11011",
+            "0b11011",
             "BI",
             "BH"
         ]
@@ -5326,7 +5326,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "11010",
+            "0b11010",
             "BI",
             "BH"
         ]
@@ -5343,7 +5343,7 @@
         ],
         "mnemonic": "bclr",
         "operands": [
-            "10100",
+            "0b10100",
             "BI",
             "BH"
         ]
@@ -5385,7 +5385,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "BH"
         ]
@@ -5407,7 +5407,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -5429,7 +5429,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "BH"
         ]
@@ -5451,7 +5451,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -5473,7 +5473,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "BH"
         ]
@@ -5495,7 +5495,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -5517,7 +5517,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "BH"
         ]
@@ -5539,7 +5539,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "BH"
         ]
@@ -5561,7 +5561,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -5583,7 +5583,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -5605,7 +5605,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -5627,7 +5627,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -5649,7 +5649,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "BH"
         ]
@@ -5671,7 +5671,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "BH"
         ]
@@ -5693,7 +5693,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -5715,7 +5715,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -5737,7 +5737,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "BH"
         ]
@@ -5759,7 +5759,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "BH"
         ]
@@ -5781,7 +5781,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -5803,7 +5803,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -5825,7 +5825,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "BH"
         ]
@@ -5847,7 +5847,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "BH"
         ]
@@ -5869,7 +5869,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -5891,7 +5891,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -5913,7 +5913,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "BH"
         ]
@@ -5935,7 +5935,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "BH"
         ]
@@ -5957,7 +5957,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "BH"
         ]
@@ -5979,7 +5979,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "BH"
         ]
@@ -6001,7 +6001,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -6023,7 +6023,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -6045,7 +6045,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -6067,7 +6067,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -6089,7 +6089,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -6111,7 +6111,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -6133,7 +6133,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -6155,7 +6155,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -6176,7 +6176,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00000",
+            "0b00000",
             "BI",
             "BH"
         ]
@@ -6197,7 +6197,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00010",
+            "0b00010",
             "BI",
             "BH"
         ]
@@ -6218,7 +6218,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "BH"
         ]
@@ -6239,7 +6239,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "BH"
         ]
@@ -6260,7 +6260,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "BH"
         ]
@@ -6281,7 +6281,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01000",
+            "0b01000",
             "BI",
             "BH"
         ]
@@ -6302,7 +6302,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01010",
+            "0b01010",
             "BI",
             "BH"
         ]
@@ -6323,7 +6323,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "BH"
         ]
@@ -6344,7 +6344,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "BH"
         ]
@@ -6365,7 +6365,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "BH"
         ]
@@ -6382,7 +6382,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "10000",
+            "0b10000",
             "BI",
             "BH"
         ]
@@ -6399,7 +6399,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "11001",
+            "0b11001",
             "BI",
             "BH"
         ]
@@ -6416,7 +6416,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "11000",
+            "0b11000",
             "BI",
             "BH"
         ]
@@ -6433,7 +6433,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "10010",
+            "0b10010",
             "BI",
             "BH"
         ]
@@ -6450,7 +6450,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "11011",
+            "0b11011",
             "BI",
             "BH"
         ]
@@ -6467,7 +6467,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "11010",
+            "0b11010",
             "BI",
             "BH"
         ]
@@ -6484,7 +6484,7 @@
         ],
         "mnemonic": "bclrl",
         "operands": [
-            "10100",
+            "0b10100",
             "BI",
             "BH"
         ]
@@ -6526,7 +6526,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "BH"
         ]
@@ -6548,7 +6548,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -6570,7 +6570,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "BH"
         ]
@@ -6592,7 +6592,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -6614,7 +6614,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "BH"
         ]
@@ -6636,7 +6636,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -6658,7 +6658,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "BH"
         ]
@@ -6680,7 +6680,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "BH"
         ]
@@ -6702,7 +6702,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -6724,7 +6724,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -6746,7 +6746,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -6768,7 +6768,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -6790,7 +6790,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "BH"
         ]
@@ -6812,7 +6812,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "BH"
         ]
@@ -6834,7 +6834,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -6856,7 +6856,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -6878,7 +6878,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "BH"
         ]
@@ -6900,7 +6900,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "BH"
         ]
@@ -6922,7 +6922,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -6944,7 +6944,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -6966,7 +6966,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "BH"
         ]
@@ -6988,7 +6988,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "BH"
         ]
@@ -7010,7 +7010,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -7032,7 +7032,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -7054,7 +7054,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "BH"
         ]
@@ -7076,7 +7076,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "BH"
         ]
@@ -7098,7 +7098,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "BH"
         ]
@@ -7120,7 +7120,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "BH"
         ]
@@ -7142,7 +7142,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -7164,7 +7164,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -7186,7 +7186,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -7208,7 +7208,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -7230,7 +7230,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -7252,7 +7252,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -7274,7 +7274,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -7296,7 +7296,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -7317,7 +7317,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "BH"
         ]
@@ -7338,7 +7338,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "BH"
         ]
@@ -7359,7 +7359,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "BH"
         ]
@@ -7380,7 +7380,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "BH"
         ]
@@ -7401,7 +7401,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "BH"
         ]
@@ -7422,7 +7422,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "BH"
         ]
@@ -7439,7 +7439,7 @@
         ],
         "mnemonic": "bcctr",
         "operands": [
-            "10100",
+            "0b10100",
             "BI",
             "BH"
         ]
@@ -7481,7 +7481,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "BH"
         ]
@@ -7503,7 +7503,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -7525,7 +7525,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "BH"
         ]
@@ -7547,7 +7547,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -7569,7 +7569,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "BH"
         ]
@@ -7591,7 +7591,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -7613,7 +7613,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "BH"
         ]
@@ -7635,7 +7635,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "BH"
         ]
@@ -7657,7 +7657,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -7679,7 +7679,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -7701,7 +7701,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -7723,7 +7723,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -7745,7 +7745,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "BH"
         ]
@@ -7767,7 +7767,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "BH"
         ]
@@ -7789,7 +7789,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -7811,7 +7811,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -7833,7 +7833,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "BH"
         ]
@@ -7855,7 +7855,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "BH"
         ]
@@ -7877,7 +7877,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -7899,7 +7899,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -7921,7 +7921,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "BH"
         ]
@@ -7943,7 +7943,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "BH"
         ]
@@ -7965,7 +7965,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -7987,7 +7987,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -8009,7 +8009,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "BH"
         ]
@@ -8031,7 +8031,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "BH"
         ]
@@ -8053,7 +8053,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "BH"
         ]
@@ -8075,7 +8075,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "BH"
         ]
@@ -8097,7 +8097,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -8119,7 +8119,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -8141,7 +8141,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -8163,7 +8163,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -8185,7 +8185,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -8207,7 +8207,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -8229,7 +8229,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -8251,7 +8251,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -8272,7 +8272,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "BH"
         ]
@@ -8293,7 +8293,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "BH"
         ]
@@ -8314,7 +8314,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "BH"
         ]
@@ -8335,7 +8335,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "BH"
         ]
@@ -8356,7 +8356,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "BH"
         ]
@@ -8377,7 +8377,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "BH"
         ]
@@ -8394,7 +8394,7 @@
         ],
         "mnemonic": "bcctrl",
         "operands": [
-            "10100",
+            "0b10100",
             "BI",
             "BH"
         ]
@@ -8436,7 +8436,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "BH"
         ]
@@ -8458,7 +8458,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -8480,7 +8480,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "BH"
         ]
@@ -8502,7 +8502,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -8524,7 +8524,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "BH"
         ]
@@ -8546,7 +8546,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -8568,7 +8568,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "BH"
         ]
@@ -8590,7 +8590,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "BH"
         ]
@@ -8612,7 +8612,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -8634,7 +8634,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -8656,7 +8656,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -8678,7 +8678,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -8700,7 +8700,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "BH"
         ]
@@ -8722,7 +8722,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "BH"
         ]
@@ -8744,7 +8744,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -8766,7 +8766,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -8788,7 +8788,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "BH"
         ]
@@ -8810,7 +8810,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "BH"
         ]
@@ -8832,7 +8832,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -8854,7 +8854,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -8876,7 +8876,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "BH"
         ]
@@ -8898,7 +8898,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "BH"
         ]
@@ -8920,7 +8920,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -8942,7 +8942,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -8964,7 +8964,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "BH"
         ]
@@ -8986,7 +8986,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "BH"
         ]
@@ -9008,7 +9008,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "BH"
         ]
@@ -9030,7 +9030,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "BH"
         ]
@@ -9052,7 +9052,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -9074,7 +9074,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -9096,7 +9096,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -9118,7 +9118,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -9140,7 +9140,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -9162,7 +9162,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -9184,7 +9184,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -9206,7 +9206,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -9227,7 +9227,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00000",
+            "0b00000",
             "BI",
             "BH"
         ]
@@ -9248,7 +9248,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00010",
+            "0b00010",
             "BI",
             "BH"
         ]
@@ -9269,7 +9269,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "BH"
         ]
@@ -9290,7 +9290,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "BH"
         ]
@@ -9311,7 +9311,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "BH"
         ]
@@ -9332,7 +9332,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01000",
+            "0b01000",
             "BI",
             "BH"
         ]
@@ -9353,7 +9353,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01010",
+            "0b01010",
             "BI",
             "BH"
         ]
@@ -9374,7 +9374,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "BH"
         ]
@@ -9395,7 +9395,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "BH"
         ]
@@ -9416,7 +9416,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "BH"
         ]
@@ -9433,7 +9433,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "10000",
+            "0b10000",
             "BI",
             "BH"
         ]
@@ -9450,7 +9450,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "11001",
+            "0b11001",
             "BI",
             "BH"
         ]
@@ -9467,7 +9467,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "11000",
+            "0b11000",
             "BI",
             "BH"
         ]
@@ -9484,7 +9484,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "10010",
+            "0b10010",
             "BI",
             "BH"
         ]
@@ -9501,7 +9501,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "11011",
+            "0b11011",
             "BI",
             "BH"
         ]
@@ -9518,7 +9518,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "11010",
+            "0b11010",
             "BI",
             "BH"
         ]
@@ -9535,7 +9535,7 @@
         ],
         "mnemonic": "bctar",
         "operands": [
-            "10100",
+            "0b10100",
             "BI",
             "BH"
         ]
@@ -9577,7 +9577,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+lt",
             "BH"
         ]
@@ -9599,7 +9599,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -9621,7 +9621,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+eq",
             "BH"
         ]
@@ -9643,7 +9643,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -9665,7 +9665,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+gt",
             "BH"
         ]
@@ -9687,7 +9687,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+lt",
             "BH"
         ]
@@ -9709,7 +9709,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+eq",
             "BH"
         ]
@@ -9731,7 +9731,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+gt",
             "BH"
         ]
@@ -9753,7 +9753,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -9775,7 +9775,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -9797,7 +9797,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01100",
+            "0b01100",
             "BFA*4+so",
             "BH"
         ]
@@ -9819,7 +9819,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00100",
+            "0b00100",
             "BFA*4+so",
             "BH"
         ]
@@ -9841,7 +9841,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+lt",
             "BH"
         ]
@@ -9863,7 +9863,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+lt",
             "BH"
         ]
@@ -9885,7 +9885,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -9907,7 +9907,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -9929,7 +9929,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+eq",
             "BH"
         ]
@@ -9951,7 +9951,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+eq",
             "BH"
         ]
@@ -9973,7 +9973,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -9995,7 +9995,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -10017,7 +10017,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+gt",
             "BH"
         ]
@@ -10039,7 +10039,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+gt",
             "BH"
         ]
@@ -10061,7 +10061,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+lt",
             "BH"
         ]
@@ -10083,7 +10083,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+lt",
             "BH"
         ]
@@ -10105,7 +10105,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+eq",
             "BH"
         ]
@@ -10127,7 +10127,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+eq",
             "BH"
         ]
@@ -10149,7 +10149,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+gt",
             "BH"
         ]
@@ -10171,7 +10171,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+gt",
             "BH"
         ]
@@ -10193,7 +10193,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -10215,7 +10215,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -10237,7 +10237,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -10259,7 +10259,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -10281,7 +10281,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01111",
+            "0b01111",
             "BFA*4+so",
             "BH"
         ]
@@ -10303,7 +10303,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01110",
+            "0b01110",
             "BFA*4+so",
             "BH"
         ]
@@ -10325,7 +10325,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00111",
+            "0b00111",
             "BFA*4+so",
             "BH"
         ]
@@ -10347,7 +10347,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00110",
+            "0b00110",
             "BFA*4+so",
             "BH"
         ]
@@ -10368,7 +10368,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00000",
+            "0b00000",
             "BI",
             "BH"
         ]
@@ -10389,7 +10389,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00010",
+            "0b00010",
             "BI",
             "BH"
         ]
@@ -10410,7 +10410,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00100",
+            "0b00100",
             "BI",
             "BH"
         ]
@@ -10431,7 +10431,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00111",
+            "0b00111",
             "BI",
             "BH"
         ]
@@ -10452,7 +10452,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "00110",
+            "0b00110",
             "BI",
             "BH"
         ]
@@ -10473,7 +10473,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01000",
+            "0b01000",
             "BI",
             "BH"
         ]
@@ -10494,7 +10494,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01010",
+            "0b01010",
             "BI",
             "BH"
         ]
@@ -10515,7 +10515,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01100",
+            "0b01100",
             "BI",
             "BH"
         ]
@@ -10536,7 +10536,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01111",
+            "0b01111",
             "BI",
             "BH"
         ]
@@ -10557,7 +10557,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "01110",
+            "0b01110",
             "BI",
             "BH"
         ]
@@ -10574,7 +10574,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "10000",
+            "0b10000",
             "BI",
             "BH"
         ]
@@ -10591,7 +10591,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "11001",
+            "0b11001",
             "BI",
             "BH"
         ]
@@ -10608,7 +10608,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "11000",
+            "0b11000",
             "BI",
             "BH"
         ]
@@ -10625,7 +10625,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "10010",
+            "0b10010",
             "BI",
             "BH"
         ]
@@ -10642,7 +10642,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "11011",
+            "0b11011",
             "BI",
             "BH"
         ]
@@ -10659,7 +10659,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "11010",
+            "0b11010",
             "BI",
             "BH"
         ]
@@ -10676,7 +10676,7 @@
         ],
         "mnemonic": "bctarl",
         "operands": [
-            "10100",
+            "0b10100",
             "BI",
             "BH"
         ]
