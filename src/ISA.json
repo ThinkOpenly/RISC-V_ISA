@@ -31583,8 +31583,8 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "SH",
-                        "MB"
+                        "sh",
+                        "mb"
                     ],
                     "conditions": [
                         {
@@ -31599,8 +31599,8 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "SH",
-                        "MB"
+                        "sh",
+                        "mb"
                     ],
                     "conditions": [
                         {
@@ -31655,9 +31655,9 @@
                 "RA := r &amp; m"
             ],
             "body": [
-                "The contents of register RS are rotated<sub>64</sub> left SH bits. A ",
-                "mask is generated having 1-bits from bit MB through bit ",
-                "63-SH and 0-bits elsewhere. The rotated data are ",
+                "The contents of register RS are rotated<sub>64</sub> left sh bits. A ",
+                "mask is generated having 1-bits from bit mb through bit ",
+                "63-sh and 0-bits elsewhere. The rotated data are ",
                 "ANDed with the generated mask and the result is ",
                 "placed into register RA.",
                 "Example of extended mnemonics for Rotate Left Dou",
@@ -31679,8 +31679,8 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "SH",
-                        "MB"
+                        "sh",
+                        "mb"
                     ],
                     "conditions": [
                         {
@@ -31695,8 +31695,8 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "SH",
-                        "MB"
+                        "sh",
+                        "mb"
                     ],
                     "conditions": [
                         {
@@ -31751,8 +31751,8 @@
                 "RA := r &amp; m"
             ],
             "body": [
-                "The contents of register RS are rotated<sub>64</sub> left SH bits. A ",
-                "mask is generated having 1-bits from bit MB through bit ",
+                "The contents of register RS are rotated<sub>64</sub> left sh bits. A ",
+                "mask is generated having 1-bits from bit mb through bit ",
                 "63 and 0-bits elsewhere. The rotated data are ANDed ",
                 "with the generated mask and the result is placed into ",
                 "register RA.",
@@ -31779,8 +31779,8 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "SH",
-                        "ME"
+                        "sh",
+                        "me"
                     ],
                     "conditions": [
                         {
@@ -31795,8 +31795,8 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "SH",
-                        "ME"
+                        "sh",
+                        "me"
                     ],
                     "conditions": [
                         {
@@ -31851,9 +31851,9 @@
                 "RA := r &amp; m"
             ],
             "body": [
-                "The contents of register RS are rotated<sub>64</sub> left SH bits. A ",
+                "The contents of register RS are rotated<sub>64</sub> left sh bits. A ",
                 "mask is generated having 1-bits from bit 0 through bit ",
-                "ME and 0-bits elsewhere. The rotated data are ANDed ",
+                "me and 0-bits elsewhere. The rotated data are ANDed ",
                 "with the generated mask and the result is placed into ",
                 "register RA.",
                 "Examples of extended mnemonics for Rotate Left Dou",
@@ -31873,8 +31873,8 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "SH",
-                        "MB"
+                        "sh",
+                        "mb"
                     ],
                     "conditions": [
                         {
@@ -31889,8 +31889,8 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "SH",
-                        "MB"
+                        "sh",
+                        "mb"
                     ],
                     "conditions": [
                         {
@@ -31945,9 +31945,9 @@
                 "RA := r&amp;m | (RA) &amp; ~m"
             ],
             "body": [
-                "The contents of register RS are rotated<sub>64</sub> left SH bits. A ",
-                "mask is generated having 1-bits from bit MB through bit ",
-                "63-SH and 0-bits elsewhere. The rotated data are ",
+                "The contents of register RS are rotated<sub>64</sub> left sh bits. A ",
+                "mask is generated having 1-bits from bit mb through bit ",
+                "63-sh and 0-bits elsewhere. The rotated data are ",
                 "inserted into register RA under control of the generated ",
                 "mask.",
                 "Example of extended mnemonics for Rotate Left Dou",
@@ -31978,7 +31978,7 @@
                         "RA",
                         "RS",
                         "RB",
-                        "MB"
+                        "mb"
                     ],
                     "conditions": [
                         {
@@ -31994,7 +31994,7 @@
                         "RA",
                         "RS",
                         "RB",
-                        "MB"
+                        "mb"
                     ],
                     "conditions": [
                         {
@@ -32047,7 +32047,7 @@
             "body": [
                 "The contents of register RS are rotated<sub>64</sub> left the num",
                 "ber of bits specified by (RB)<sub>58:63</sub>. A mask is generated ",
-                "having 1-bits from bit MB through bit 63 and 0-bits else",
+                "having 1-bits from bit mb through bit 63 and 0-bits else",
                 "where. The rotated data are ANDed with the generated ",
                 "mask and the result is placed into register RA.",
                 "Example of extended mnemonics for Rotate Left Dou",
@@ -32068,7 +32068,7 @@
                         "RA",
                         "RS",
                         "RB",
-                        "ME"
+                        "me"
                     ],
                     "conditions": [
                         {
@@ -32084,7 +32084,7 @@
                         "RA",
                         "RS",
                         "RB",
-                        "ME"
+                        "me"
                     ],
                     "conditions": [
                         {
@@ -32137,7 +32137,7 @@
             "body": [
                 "The contents of register RS are rotated<sub>64</sub> left the num",
                 "ber of bits specified by (RB)<sub>58:63</sub>. A mask is generated ",
-                "having 1-bits from bit 0 through bit ME and 0-bits else",
+                "having 1-bits from bit 0 through bit me and 0-bits else",
                 "where. The rotated data are ANDed with the generated ",
                 "mask and the result is placed into register RA.",
                 "  "
