@@ -967,7 +967,7 @@
         "mnemonic": "bc",
         "operands": [
             "0b10000",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -983,7 +983,7 @@
         "mnemonic": "bc",
         "operands": [
             "0b11001",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -999,7 +999,7 @@
         "mnemonic": "bc",
         "operands": [
             "0b11000",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -1015,7 +1015,7 @@
         "mnemonic": "bc",
         "operands": [
             "0b10010",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -1031,7 +1031,7 @@
         "mnemonic": "bc",
         "operands": [
             "0b11011",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -1047,7 +1047,7 @@
         "mnemonic": "bc",
         "operands": [
             "0b11010",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -2019,7 +2019,7 @@
         "mnemonic": "bca",
         "operands": [
             "0b10000",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -2035,7 +2035,7 @@
         "mnemonic": "bca",
         "operands": [
             "0b11001",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -2051,7 +2051,7 @@
         "mnemonic": "bca",
         "operands": [
             "0b11000",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -2067,7 +2067,7 @@
         "mnemonic": "bca",
         "operands": [
             "0b10010",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -2083,7 +2083,7 @@
         "mnemonic": "bca",
         "operands": [
             "0b11011",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -2099,7 +2099,7 @@
         "mnemonic": "bca",
         "operands": [
             "0b11010",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -3071,7 +3071,7 @@
         "mnemonic": "bcl",
         "operands": [
             "0b10000",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -3087,7 +3087,7 @@
         "mnemonic": "bcl",
         "operands": [
             "0b11001",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -3103,7 +3103,7 @@
         "mnemonic": "bcl",
         "operands": [
             "0b11000",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -3119,7 +3119,7 @@
         "mnemonic": "bcl",
         "operands": [
             "0b10010",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -3135,7 +3135,7 @@
         "mnemonic": "bcl",
         "operands": [
             "0b11011",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -3151,7 +3151,7 @@
         "mnemonic": "bcl",
         "operands": [
             "0b11010",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -4123,7 +4123,7 @@
         "mnemonic": "bcla",
         "operands": [
             "0b10000",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -4139,7 +4139,7 @@
         "mnemonic": "bcla",
         "operands": [
             "0b11001",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -4155,7 +4155,7 @@
         "mnemonic": "bcla",
         "operands": [
             "0b11000",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -4171,7 +4171,7 @@
         "mnemonic": "bcla",
         "operands": [
             "0b10010",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -4187,7 +4187,7 @@
         "mnemonic": "bcla",
         "operands": [
             "0b11011",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -4203,7 +4203,7 @@
         "mnemonic": "bcla",
         "operands": [
             "0b11010",
-            "BI",
+            "ignored",
             "target_addr"
         ]
     },
@@ -5242,7 +5242,7 @@
         "mnemonic": "bclr",
         "operands": [
             "0b10000",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -5259,7 +5259,7 @@
         "mnemonic": "bclr",
         "operands": [
             "0b11001",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -5276,7 +5276,7 @@
         "mnemonic": "bclr",
         "operands": [
             "0b11000",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -5293,7 +5293,7 @@
         "mnemonic": "bclr",
         "operands": [
             "0b10010",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -5310,7 +5310,7 @@
         "mnemonic": "bclr",
         "operands": [
             "0b11011",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -5327,7 +5327,7 @@
         "mnemonic": "bclr",
         "operands": [
             "0b11010",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -5344,7 +5344,7 @@
         "mnemonic": "bclr",
         "operands": [
             "0b10100",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -6383,7 +6383,7 @@
         "mnemonic": "bclrl",
         "operands": [
             "0b10000",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -6400,7 +6400,7 @@
         "mnemonic": "bclrl",
         "operands": [
             "0b11001",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -6417,7 +6417,7 @@
         "mnemonic": "bclrl",
         "operands": [
             "0b11000",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -6434,7 +6434,7 @@
         "mnemonic": "bclrl",
         "operands": [
             "0b10010",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -6451,7 +6451,7 @@
         "mnemonic": "bclrl",
         "operands": [
             "0b11011",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -6468,7 +6468,7 @@
         "mnemonic": "bclrl",
         "operands": [
             "0b11010",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -6485,7 +6485,7 @@
         "mnemonic": "bclrl",
         "operands": [
             "0b10100",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -7440,7 +7440,7 @@
         "mnemonic": "bcctr",
         "operands": [
             "0b10100",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -8395,7 +8395,7 @@
         "mnemonic": "bcctrl",
         "operands": [
             "0b10100",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -9434,7 +9434,7 @@
         "mnemonic": "bctar",
         "operands": [
             "0b10000",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -9451,7 +9451,7 @@
         "mnemonic": "bctar",
         "operands": [
             "0b11001",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -9468,7 +9468,7 @@
         "mnemonic": "bctar",
         "operands": [
             "0b11000",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -9485,7 +9485,7 @@
         "mnemonic": "bctar",
         "operands": [
             "0b10010",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -9502,7 +9502,7 @@
         "mnemonic": "bctar",
         "operands": [
             "0b11011",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -9519,7 +9519,7 @@
         "mnemonic": "bctar",
         "operands": [
             "0b11010",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -9536,7 +9536,7 @@
         "mnemonic": "bctar",
         "operands": [
             "0b10100",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -10575,7 +10575,7 @@
         "mnemonic": "bctarl",
         "operands": [
             "0b10000",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -10592,7 +10592,7 @@
         "mnemonic": "bctarl",
         "operands": [
             "0b11001",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -10609,7 +10609,7 @@
         "mnemonic": "bctarl",
         "operands": [
             "0b11000",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -10626,7 +10626,7 @@
         "mnemonic": "bctarl",
         "operands": [
             "0b10010",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -10643,7 +10643,7 @@
         "mnemonic": "bctarl",
         "operands": [
             "0b11011",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -10660,7 +10660,7 @@
         "mnemonic": "bctarl",
         "operands": [
             "0b11010",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
@@ -10677,7 +10677,7 @@
         "mnemonic": "bctarl",
         "operands": [
             "0b10100",
-            "BI",
+            "ignored",
             "BH"
         ]
     },
