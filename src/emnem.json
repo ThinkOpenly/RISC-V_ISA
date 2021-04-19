@@ -17481,7 +17481,7 @@
         "emnem": "lqarx",
         "ops": [
             {
-                "name": "RT",
+                "name": "RTp",
                 "optional": "0"
             },
             {
@@ -17495,7 +17495,7 @@
         ],
         "mnemonic": "lqarx",
         "operands": [
-            "RT",
+            "RTp",
             "RA",
             "RB",
             "0"
