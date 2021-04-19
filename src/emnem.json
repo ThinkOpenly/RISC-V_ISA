@@ -17378,7 +17378,7 @@
     },
     {
         "description": "Load Byte and Reserve Indexed",
-        "emnem": "lBytearx",
+        "emnem": "lbarx",
         "ops": [
             {
                 "name": "RT",
@@ -17403,7 +17403,7 @@
     },
     {
         "description": "Load Halfword and Reserve Indexed",
-        "emnem": "lHalfwordarx",
+        "emnem": "lharx",
         "ops": [
             {
                 "name": "RT",
@@ -17428,7 +17428,7 @@
     },
     {
         "description": "Load Word and Reserve Indexed",
-        "emnem": "lWordarx",
+        "emnem": "lwarx",
         "ops": [
             {
                 "name": "RT",
@@ -17453,7 +17453,7 @@
     },
     {
         "description": "Load Doubleword and Reserve Indexed",
-        "emnem": "lDoublewordarx",
+        "emnem": "ldarx",
         "ops": [
             {
                 "name": "RT",
@@ -17478,7 +17478,7 @@
     },
     {
         "description": "Load Quadword and Reserve Indexed",
-        "emnem": "lQuadwordarx",
+        "emnem": "lqarx",
         "ops": [
             {
                 "name": "RT",
