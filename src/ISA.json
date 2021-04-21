@@ -31650,8 +31650,7 @@
             "code": [
                 "n := sh<sub>5</sub> || sh<sub>0:4</sub>",
                 "r := ROTL<sub>64</sub>((RS), n)",
-                "b := mb<sub>5</sub> || mb<sub>0:4</sub>",
-                "m := MASK(b, ~n)",
+                "m := MASK(mb, ~n)",
                 "RA := r &amp; m"
             ],
             "body": [
@@ -31746,8 +31745,7 @@
             "code": [
                 "n := sh<sub>5</sub> || sh<sub>0:4</sub>",
                 "r := ROTL<sub>64</sub>((RS), n)",
-                "b := mb<sub>5</sub> || mb<sub>0:4</sub>",
-                "m := MASK(b, 63)",
+                "m := MASK(mb, 63)",
                 "RA := r &amp; m"
             ],
             "body": [
@@ -31846,8 +31844,7 @@
             "code": [
                 "n := sh<sub>5</sub> || sh<sub>0:4</sub>",
                 "r := ROTL<sub>64</sub>((RS), n)",
-                "e := me<sub>5</sub> || me<sub>0:4</sub>",
-                "m := MASK(0, e)",
+                "m := MASK(0, me)",
                 "RA := r &amp; m"
             ],
             "body": [
@@ -31940,8 +31937,7 @@
             "code": [
                 "n := sh<sub>5</sub> || sh<sub>0:4</sub>",
                 "r := ROTL<sub>64</sub>((RS), n)",
-                "b := mb<sub>5</sub> || mb<sub>0:4</sub>",
-                "m := MASK(b, ~n)",
+                "m := MASK(mb, ~n)",
                 "RA := r&amp;m | (RA) &amp; ~m"
             ],
             "body": [
@@ -32040,8 +32036,7 @@
             "code": [
                 "n := (RB)<sub>58:63</sub>",
                 "r := ROTL<sub>64</sub>((RS), n)",
-                "b := mb<sub>5</sub> || mb<sub>0:4</sub>",
-                "m := MASK(b, 63)",
+                "m := MASK(mb, 63)",
                 "RA := r &amp; m"
             ],
             "body": [
@@ -32130,8 +32125,7 @@
             "code": [
                 "n := (RB)<sub>58:63</sub>",
                 "r := ROTL<sub>64</sub>((RS), n)",
-                "e := me<sub>5</sub> || me<sub>0:4</sub>",
-                "m := MASK(0, e)",
+                "m := MASK(0, me)",
                 "RA := r &amp; m"
             ],
             "body": [
@@ -64797,7 +64791,7 @@
                     "value": "15"
                 },
                 {
-                    "name": "dx",
+                    "name": "dc",
                     "size": "1"
                 },
                 {
@@ -64896,7 +64890,7 @@
                     "value": "13"
                 },
                 {
-                    "name": "dx",
+                    "name": "dc",
                     "size": "1"
                 },
                 {
