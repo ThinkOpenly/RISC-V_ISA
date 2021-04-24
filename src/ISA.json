@@ -10967,7 +10967,7 @@
                     "size": "5"
                 },
                 {
-                    "name": "sh",
+                    "name": "sl",
                     "size": "5"
                 },
                 {
@@ -10985,7 +10985,7 @@
                 }
             ],
             "code": [
-                "n  := sh<sub>5</sub> || sh<sub>0:4</sub>",
+                "n  := sh || sl",
                 "r  := ROTL64(EXTS64(RS<sub>32:63</sub>), n)",
                 "m  := MASK(0, 63-n)",
                 "RA := r &amp; m"
@@ -31583,7 +31583,7 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "sh",
+                        "SH",
                         "mb"
                     ],
                     "conditions": [
@@ -31599,7 +31599,7 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "sh",
+                        "SH",
                         "mb"
                     ],
                     "conditions": [
@@ -31626,7 +31626,7 @@
                     "size": "5"
                 },
                 {
-                    "name": "sh",
+                    "name": "sl",
                     "size": "5"
                 },
                 {
@@ -31648,7 +31648,7 @@
                 }
             ],
             "code": [
-                "n := sh<sub>5</sub> || sh<sub>0:4</sub>",
+                "n := sh || sl",
                 "r := ROTL<sub>64</sub>((RS), n)",
                 "m := MASK(mb, ~n)",
                 "RA := r &amp; m"
@@ -31678,7 +31678,7 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "sh",
+                        "SH",
                         "mb"
                     ],
                     "conditions": [
@@ -31694,7 +31694,7 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "sh",
+                        "SH",
                         "mb"
                     ],
                     "conditions": [
@@ -31721,7 +31721,7 @@
                     "size": "5"
                 },
                 {
-                    "name": "sh",
+                    "name": "sl",
                     "size": "5"
                 },
                 {
@@ -31743,7 +31743,7 @@
                 }
             ],
             "code": [
-                "n := sh<sub>5</sub> || sh<sub>0:4</sub>",
+                "n := sh || sl",
                 "r := ROTL<sub>64</sub>((RS), n)",
                 "m := MASK(mb, 63)",
                 "RA := r &amp; m"
@@ -31777,7 +31777,7 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "sh",
+                        "SH",
                         "me"
                     ],
                     "conditions": [
@@ -31793,7 +31793,7 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "sh",
+                        "SH",
                         "me"
                     ],
                     "conditions": [
@@ -31820,7 +31820,7 @@
                     "size": "5"
                 },
                 {
-                    "name": "sh",
+                    "name": "sl",
                     "size": "5"
                 },
                 {
@@ -31842,7 +31842,7 @@
                 }
             ],
             "code": [
-                "n := sh<sub>5</sub> || sh<sub>0:4</sub>",
+                "n := sh || sl",
                 "r := ROTL<sub>64</sub>((RS), n)",
                 "m := MASK(0, me)",
                 "RA := r &amp; m"
@@ -31870,7 +31870,7 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "sh",
+                        "SH",
                         "mb"
                     ],
                     "conditions": [
@@ -31886,7 +31886,7 @@
                     "operands": [
                         "RA",
                         "RS",
-                        "sh",
+                        "SH",
                         "mb"
                     ],
                     "conditions": [
@@ -31913,7 +31913,7 @@
                     "size": "5"
                 },
                 {
-                    "name": "sh",
+                    "name": "sl",
                     "size": "5"
                 },
                 {
@@ -31935,7 +31935,7 @@
                 }
             ],
             "code": [
-                "n := sh<sub>5</sub> || sh<sub>0:4</sub>",
+                "n := sh || sl",
                 "r := ROTL<sub>64</sub>((RS), n)",
                 "m := MASK(mb, ~n)",
                 "RA := r&amp;m | (RA) &amp; ~m"
@@ -33994,7 +33994,7 @@
                     "size": "5"
                 },
                 {
-                    "name": "sh",
+                    "name": "sl",
                     "size": "5"
                 },
                 {
@@ -34012,7 +34012,7 @@
                 }
             ],
             "code": [
-                "n := sh<sub>5</sub> || sh<sub>0:4</sub>",
+                "n := sh || sl",
                 "r := ROTL<sub>64</sub>((RS), 64-n)",
                 "m := MASK(n, 63)",
                 "s := (RS)<sub>0</sub>",
