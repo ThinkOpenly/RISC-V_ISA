@@ -3978,6 +3978,21 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dadd.",
+                    "operands": [
+                        "FRT",
+                        "FRA",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -4029,6 +4044,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "daddq.",
+                    "operands": [
+                        "FRTp",
+                        "FRAp",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -4349,6 +4379,20 @@
                         }
                     ],
                     "release": "v2.06"
+                },
+                {
+                    "mnemonic": "dcffix.",
+                    "operands": [
+                        "FRT",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -4409,6 +4453,20 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dcffixq.",
+                    "operands": [
+                        "FRTp",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -4533,6 +4591,20 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dctqpq.",
+                    "operands": [
+                        "FRTp",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -4595,6 +4667,20 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dctdp.",
+                    "operands": [
+                        "FRT",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -4662,6 +4748,20 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dctfix.",
+                    "operands": [
+                        "FRT",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -4712,6 +4812,20 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dctfixq.",
+                    "operands": [
+                        "FRT",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -4837,6 +4951,21 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "ddedpd.",
+                    "operands": [
+                        "SP",
+                        "FRT",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -4892,6 +5021,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "ddedpdq.",
+                    "operands": [
+                        "SP",
+                        "FRTp",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -4962,6 +5106,21 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "ddiv.",
+                    "operands": [
+                        "FRT",
+                        "FRA",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -5013,6 +5172,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "ddivq.",
+                    "operands": [
+                        "FRTp",
+                        "FRAp",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -5088,6 +5262,21 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "denbcd.",
+                    "operands": [
+                        "S",
+                        "FRT",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -5143,6 +5332,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "denbcdq.",
+                    "operands": [
+                        "S",
+                        "FRTp",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -5214,6 +5418,20 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dxex.",
+                    "operands": [
+                        "FRT",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -5264,6 +5482,20 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dxexq.",
+                    "operands": [
+                        "FRT",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -5328,6 +5560,21 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "diex.",
+                    "operands": [
+                        "FRT",
+                        "FRA",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -5374,6 +5621,27 @@
                         "FRTp",
                         "FRA",
                         "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "diexq.",
+                    "operands": [
+                        "FRTp",
+                        "FRA",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
                     ],
                     "release": "v2.05"
                 }
@@ -5447,6 +5715,21 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dmul.",
+                    "operands": [
+                        "FRT",
+                        "FRA",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -5498,6 +5781,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dmulq.",
+                    "operands": [
+                        "FRTp",
+                        "FRAp",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -5572,6 +5870,22 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dqua.",
+                    "operands": [
+                        "FRT",
+                        "FRA",
+                        "FRB",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -5631,6 +5945,22 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dquai.",
+                    "operands": [
+                        "TE",
+                        "FRT",
+                        "FRB",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -5687,6 +6017,22 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dquaiq.",
+                    "operands": [
+                        "TE",
+                        "FRTp",
+                        "FRBp",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -5767,6 +6113,22 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dquaq.",
+                    "operands": [
+                        "FRTp",
+                        "FRAp",
+                        "FRBp",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -5853,6 +6215,22 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "drrnd.",
+                    "operands": [
+                        "FRT",
+                        "FRA",
+                        "FRB",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -5909,6 +6287,22 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "drrndq.",
+                    "operands": [
+                        "FRTp",
+                        "FRA",
+                        "FRBp",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -6015,6 +6409,20 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "drdpq.",
+                    "operands": [
+                        "FRTp",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -6087,6 +6495,20 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "drsp.",
+                    "operands": [
+                        "FRT",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -6163,6 +6585,22 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "drintx.",
+                    "operands": [
+                        "R",
+                        "FRT",
+                        "FRB",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -6223,6 +6661,22 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "drintxq.",
+                    "operands": [
+                        "R",
+                        "FRTp",
+                        "FRBp",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -6320,6 +6774,22 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "drintn.",
+                    "operands": [
+                        "R",
+                        "FRT",
+                        "FRB",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -6380,6 +6850,22 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "drintnq.",
+                    "operands": [
+                        "R",
+                        "FRTp",
+                        "FRBp",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -6458,6 +6944,21 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dscli.",
+                    "operands": [
+                        "FRT",
+                        "FRA",
+                        "SH"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -6509,6 +7010,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dscliq.",
+                    "operands": [
+                        "FRTp",
+                        "FRAp",
+                        "SH"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -6582,6 +7098,21 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dscri.",
+                    "operands": [
+                        "FRT",
+                        "FRA",
+                        "SH"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -6633,6 +7164,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dscriq.",
+                    "operands": [
+                        "FRTp",
+                        "FRAp",
+                        "SH"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -6706,6 +7252,21 @@
                         }
                     ],
                     "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dsub.",
+                    "operands": [
+                        "FRT",
+                        "FRA",
+                        "FRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -6757,6 +7318,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.05"
+                },
+                {
+                    "mnemonic": "dsubq.",
+                    "operands": [
+                        "FRTp",
+                        "FRAp",
+                        "FRBp"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.05"
@@ -42953,6 +43529,21 @@
                         }
                     ],
                     "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xsaddqpo",
+                    "operands": [
+                        "VRT",
+                        "VRA",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -44968,6 +45559,20 @@
                         }
                     ],
                     "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xscvqpdpo",
+                    "operands": [
+                        "VRT",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -46921,6 +47526,21 @@
                         }
                     ],
                     "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xsdivqpo",
+                    "operands": [
+                        "VRT",
+                        "VRA",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -48725,6 +49345,21 @@
                         }
                     ],
                     "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xsmulqpo",
+                    "operands": [
+                        "VRT",
+                        "VRA",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -48951,6 +49586,21 @@
                         {
                             "field": "RO",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xsmaddqpo",
+                    "operands": [
+                        "VRT",
+                        "VRA",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
                         }
                     ],
                     "release": "v3.0"
@@ -49260,6 +49910,21 @@
                         {
                             "field": "RO",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xsmsubqpo",
+                    "operands": [
+                        "VRT",
+                        "VRA",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
                         }
                     ],
                     "release": "v3.0"
@@ -50182,6 +50847,21 @@
                         }
                     ],
                     "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xsnmaddqpo",
+                    "operands": [
+                        "VRT",
+                        "VRA",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -50488,6 +51168,21 @@
                         {
                             "field": "RO",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xsnmsubqpo",
+                    "operands": [
+                        "VRT",
+                        "VRA",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
                         }
                     ],
                     "release": "v3.0"
@@ -51801,6 +52496,22 @@
                         }
                     ],
                     "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xsrqpix",
+                    "operands": [
+                        "R",
+                        "VRT",
+                        "VRB",
+                        "RMC"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "EX",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -52138,6 +52849,20 @@
                         }
                     ],
                     "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xssqrtqpo",
+                    "operands": [
+                        "VRT",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -52459,6 +53184,21 @@
                         {
                             "field": "RO",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v3.0"
+                },
+                {
+                    "mnemonic": "xssubqpo",
+                    "operands": [
+                        "VRT",
+                        "VRA",
+                        "VRB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "RO",
+                            "value": "1"
                         }
                     ],
                     "release": "v3.0"
@@ -55600,6 +56340,21 @@
                         }
                     ],
                     "release": "v2.06"
+                },
+                {
+                    "mnemonic": "xvcmpeqdp.",
+                    "operands": [
+                        "XT",
+                        "XA",
+                        "XB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
+                        }
+                    ],
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -55690,7 +56445,16 @@
             ],
             "intrinsics": [
                 "vec_cmpeq",
-                "vec_cmpne"
+                "vec_cmpne",
+                "vec_all_eq",
+                "vec_all_nan",
+                "vec_all_ne",
+                "vec_all_nge",
+                "vec_all_numeric",
+                "vec_any_eq",
+                "vec_any_nan",
+                "vec_any_ne",
+                "vec_any_numeric"
             ]
         },
         {
@@ -55710,6 +56474,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.06"
+                },
+                {
+                    "mnemonic": "xvcmpeqsp.",
+                    "operands": [
+                        "XT",
+                        "XA",
+                        "XB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.06"
@@ -55803,7 +56582,16 @@
             ],
             "intrinsics": [
                 "vec_cmpeq",
-                "vec_cmpne"
+                "vec_cmpne",
+                "vec_all_eq",
+                "vec_all_nan",
+                "vec_all_ne",
+                "vec_all_nge",
+                "vec_all_numeric",
+                "vec_any_eq",
+                "vec_any_nan",
+                "vec_any_ne",
+                "vec_any_numeric"
             ]
         },
         {
@@ -55823,6 +56611,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.06"
+                },
+                {
+                    "mnemonic": "xvcmpgtdp.",
+                    "operands": [
+                        "XT",
+                        "XA",
+                        "XB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.06"
@@ -55922,7 +56725,15 @@
             ],
             "intrinsics": [
                 "vec_cmpgt",
-                "vec_cmplt"
+                "vec_cmplt",
+                "vec_all_gt",
+                "vec_all_lt",
+                "vec_all_ngt",
+                "vec_all_nlt",
+                "vec_any_gt",
+                "vec_any_lt",
+                "vec_any_ngt",
+                "vec_any_nlt"
             ]
         },
         {
@@ -55942,6 +56753,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.06"
+                },
+                {
+                    "mnemonic": "xvcmpgtsp.",
+                    "operands": [
+                        "XT",
+                        "XA",
+                        "XB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.06"
@@ -56042,7 +56868,15 @@
             ],
             "intrinsics": [
                 "vec_cmpgt",
-                "vec_cmplt"
+                "vec_cmplt",
+                "vec_all_gt",
+                "vec_all_lt",
+                "vec_all_ngt",
+                "vec_all_nlt",
+                "vec_any_gt",
+                "vec_any_lt",
+                "vec_any_ngt",
+                "vec_any_nlt"
             ]
         },
         {
@@ -56062,6 +56896,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.06"
+                },
+                {
+                    "mnemonic": "xvcmpgedp.",
+                    "operands": [
+                        "XT",
+                        "XA",
+                        "XB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.06"
@@ -56161,7 +57010,14 @@
             ],
             "intrinsics": [
                 "vec_cmpge",
-                "vec_cmple"
+                "vec_cmple",
+                "vec_all_ge",
+                "vec_all_le",
+                "vec_all_nle",
+                "vec_any_ge",
+                "vec_any_le",
+                "vec_any_nge",
+                "vec_any_nle"
             ]
         },
         {
@@ -56181,6 +57037,21 @@
                         {
                             "field": "Rc",
                             "value": "0"
+                        }
+                    ],
+                    "release": "v2.06"
+                },
+                {
+                    "mnemonic": "xvcmpgesp.",
+                    "operands": [
+                        "XT",
+                        "XA",
+                        "XB"
+                    ],
+                    "conditions": [
+                        {
+                            "field": "Rc",
+                            "value": "1"
                         }
                     ],
                     "release": "v2.06"
@@ -56280,7 +57151,14 @@
             ],
             "intrinsics": [
                 "vec_cmpge",
-                "vec_cmple"
+                "vec_cmple",
+                "vec_all_ge",
+                "vec_all_le",
+                "vec_all_nle",
+                "vec_any_ge",
+                "vec_any_le",
+                "vec_any_nge",
+                "vec_any_nle"
             ]
         },
         {
