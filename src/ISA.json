@@ -32085,9 +32085,11 @@
             "book": "II",
             "mnemonics": [
                 {
-                    "mnemonic": "rfebbS",
-                    "operands": [],
-                    "release": ""
+                    "mnemonic": "rfebb",
+                    "operands": [
+                        "S"
+                    ],
+                    "release": "v2.07"
                 }
             ],
             "layout": [
