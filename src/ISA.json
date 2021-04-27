@@ -2338,7 +2338,7 @@
                     "value": "508"
                 },
                 {
-                    "name": "Rc",
+                    "name": "reserved",
                     "size": "1"
                 }
             ],
@@ -31715,7 +31715,7 @@
                     "value": "122"
                 },
                 {
-                    "name": "Rc",
+                    "name": "reserved",
                     "size": "1"
                 }
             ],
