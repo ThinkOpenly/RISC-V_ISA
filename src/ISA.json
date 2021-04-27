@@ -50444,7 +50444,7 @@
                     "value": "804"
                 },
                 {
-                    "name": "TX",
+                    "name": "reserved",
                     "size": "1"
                 }
             ],
