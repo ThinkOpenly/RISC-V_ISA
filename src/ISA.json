@@ -16126,7 +16126,7 @@
                     "mnemonic": "plbz",
                     "operands": [
                         "RT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -16517,7 +16517,7 @@
                     "mnemonic": "pld",
                     "operands": [
                         "RT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -17128,7 +17128,7 @@
                     "mnemonic": "plfd",
                     "operands": [
                         "FRT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -17578,7 +17578,7 @@
                     "mnemonic": "plfs",
                     "operands": [
                         "FRT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -18033,7 +18033,7 @@
                     "mnemonic": "plha",
                     "operands": [
                         "RT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -18502,7 +18502,7 @@
                     "mnemonic": "plhz",
                     "operands": [
                         "RT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -19223,7 +19223,7 @@
                     "mnemonic": "plxsd",
                     "operands": [
                         "VRT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -19488,7 +19488,7 @@
                     "mnemonic": "plxssp",
                     "operands": [
                         "VRT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -20030,7 +20030,7 @@
                     "mnemonic": "plxv",
                     "operands": [
                         "XT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -20588,7 +20588,7 @@
                     "mnemonic": "plxvp",
                     "operands": [
                         "XTp",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -21980,7 +21980,7 @@
                     "mnemonic": "plwa",
                     "operands": [
                         "RT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -22477,7 +22477,7 @@
                     "mnemonic": "plwz",
                     "operands": [
                         "RT",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -35043,7 +35043,7 @@
                     "mnemonic": "pstb",
                     "operands": [
                         "RS",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -35554,7 +35554,7 @@
                     "mnemonic": "pstd",
                     "operands": [
                         "RS",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -36249,7 +36249,7 @@
                     "mnemonic": "pstfd",
                     "operands": [
                         "FRS",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -36706,7 +36706,7 @@
                     "mnemonic": "pstfs",
                     "operands": [
                         "FRS",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -37114,7 +37114,7 @@
                     "mnemonic": "psth",
                     "operands": [
                         "RS",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -38033,7 +38033,7 @@
                     "mnemonic": "pstxsd",
                     "operands": [
                         "VRS",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -38358,7 +38358,7 @@
                     "mnemonic": "pstxssp",
                     "operands": [
                         "VRS",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -38748,7 +38748,7 @@
                     "mnemonic": "pstxv",
                     "operands": [
                         "XS",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -39235,7 +39235,7 @@
                     "mnemonic": "pstxvp",
                     "operands": [
                         "XSp",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
@@ -40312,7 +40312,7 @@
                     "mnemonic": "pstw",
                     "operands": [
                         "RS",
-                        "D(RA)",
+                        "DD(RA)",
                         "R"
                     ],
                     "release": "v3.1"
