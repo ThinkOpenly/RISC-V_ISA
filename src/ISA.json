@@ -749,7 +749,7 @@
                     "operands": [
                         "RT",
                         "RA",
-                        "SI",
+                        "DSI",
                         "R"
                     ],
                     "release": "v3.1"
