@@ -1405,7 +1405,7 @@
                 {
                     "mnemonic": "b",
                     "operands": [
-                        "target_addr"
+                        "target_addr26"
                     ],
                     "conditions": [
                         {
@@ -1422,7 +1422,7 @@
                 {
                     "mnemonic": "ba",
                     "operands": [
-                        "target_addr"
+                        "target_addr26"
                     ],
                     "conditions": [
                         {
@@ -1439,7 +1439,7 @@
                 {
                     "mnemonic": "bl",
                     "operands": [
-                        "target_addr"
+                        "target_addr26"
                     ],
                     "conditions": [
                         {
@@ -1456,7 +1456,7 @@
                 {
                     "mnemonic": "bla",
                     "operands": [
-                        "target_addr"
+                        "target_addr26"
                     ],
                     "conditions": [
                         {
@@ -1496,7 +1496,7 @@
                 "if LK then LR :=<sub>iea</sub> CIA + 4"
             ],
             "body": [
-                "target_addr specifies the branch target address.",
+                "target_addr26 specifies the branch target address.",
                 "If AA=0 then the branch target address is the sum of ",
                 "LI||0b00 sign-extended and the address of this ",
                 "instruction, with the high-order 32 bits of the branch tar",
@@ -1521,7 +1521,7 @@
                     "operands": [
                         "BO",
                         "BI",
-                        "target_addr"
+                        "target_addr16"
                     ],
                     "conditions": [
                         {
@@ -1540,7 +1540,7 @@
                     "operands": [
                         "BO",
                         "BI",
-                        "target_addr"
+                        "target_addr16"
                     ],
                     "conditions": [
                         {
@@ -1559,7 +1559,7 @@
                     "operands": [
                         "BO",
                         "BI",
-                        "target_addr"
+                        "target_addr16"
                     ],
                     "conditions": [
                         {
@@ -1578,7 +1578,7 @@
                     "operands": [
                         "BO",
                         "BI",
-                        "target_addr"
+                        "target_addr16"
                     ],
                     "conditions": [
                         {
@@ -1635,7 +1635,7 @@
             "body": [
                 "BI+32 specifies the Condition Register bit to be tested. ",
                 "The BO field is used to resolve the branch as described ",
-                "in Figure42. target_addr specifies the branch target ",
+                "in Figure42. target_addr16 specifies the branch target ",
                 "address.",
                 "If AA=0 then the branch target address is the sum of ",
                 "BD||0b00 sign-extended and the address of this ",
