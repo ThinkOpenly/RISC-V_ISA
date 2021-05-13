@@ -11474,6 +11474,1033 @@
         ]
     },
     {
+        "description": "Prefixed Load Byte and Zero",
+        "emnem": "plbz",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plbz",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Halfword and Zero",
+        "emnem": "plhz",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plhz",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Word and Zero",
+        "emnem": "plwz",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plwz",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Halfword Algebraic",
+        "emnem": "plha",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plha",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Word Algebraic",
+        "emnem": "plwa",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plwa",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Doubleword",
+        "emnem": "pld",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pld",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Quadword",
+        "emnem": "plq",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plq",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store Byte",
+        "emnem": "pstb",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstb",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store Halfword",
+        "emnem": "psth",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "psth",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store Word",
+        "emnem": "pstw",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstw",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store Doubleword",
+        "emnem": "pstd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstd",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store Quadword",
+        "emnem": "pstq",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstq",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Floating-Point Single",
+        "emnem": "plfs",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plfs",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Floating-Point Double",
+        "emnem": "plfd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plfd",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load VSX Scalar Single-Precision",
+        "emnem": "plxssp",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plxssp",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load VSX Scalar Double",
+        "emnem": "plxsd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plxsd",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load VSX Vector Paired",
+        "emnem": "plxvp",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plxvp",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load VSX Vector",
+        "emnem": "plxv",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plxv",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store Floating-Point Single",
+        "emnem": "pstfs",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstfs",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store Floating-Point Double",
+        "emnem": "pstfd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstfd",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store VSX Scalar Single-Precision",
+        "emnem": "pstxssp",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstxssp",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store VSX Scalar Double",
+        "emnem": "pstxsd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstxsd",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store VSX Vector Paired",
+        "emnem": "pstxvp",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstxvp",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Store VSX Vector",
+        "emnem": "pstxv",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstxv",
+        "operands": [
+            "Rx",
+            "value(Ry)",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Byte and Zero",
+        "emnem": "plbz",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plbz",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load Halfword and Zero",
+        "emnem": "plhz",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plhz",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load Word and Zero",
+        "emnem": "plwz",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plwz",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load Halfword Algebraic",
+        "emnem": "plha",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plha",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load Word Algebraic",
+        "emnem": "plwa",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plwa",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load Doubleword",
+        "emnem": "pld",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pld",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load Quadword",
+        "emnem": "plq",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plq",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store Byte",
+        "emnem": "pstb",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstb",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store Halfword",
+        "emnem": "psth",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "psth",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store Word",
+        "emnem": "pstw",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstw",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store Doubleword",
+        "emnem": "pstd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstd",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store Quadword",
+        "emnem": "pstq",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstq",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load Floating-Point Single",
+        "emnem": "plfs",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plfs",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load Floating-Point Double",
+        "emnem": "plfd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plfd",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load VSX Scalar Single-Precision",
+        "emnem": "plxssp",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plxssp",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load VSX Scalar Double",
+        "emnem": "plxsd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plxsd",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load VSX Vector Paired",
+        "emnem": "plxvp",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plxvp",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load VSX Vector",
+        "emnem": "plxv",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "plxv",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store Floating-Point Single",
+        "emnem": "pstfs",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstfs",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store Floating-Point Double",
+        "emnem": "pstfd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstfd",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store VSX Scalar Single-Precision",
+        "emnem": "pstxssp",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstxssp",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store VSX Scalar Double",
+        "emnem": "pstxsd",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstxsd",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store VSX Vector Paired",
+        "emnem": "pstxvp",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstxvp",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Store VSX Vector",
+        "emnem": "pstxv",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "pstxv",
+        "operands": [
+            "Rx",
+            "value(0)",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Load Address",
+        "emnem": "pla",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value(Ry)",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "paddi",
+        "operands": [
+            "Rx",
+            "Ry",
+            "value",
+            "0"
+        ]
+    },
+    {
+        "description": "Prefixed Load Address",
+        "emnem": "pla",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "paddi",
+        "operands": [
+            "Rx",
+            "0",
+            "value",
+            "1"
+        ]
+    },
+    {
+        "description": "Prefixed Add Immediate",
+        "emnem": "paddi",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "Ry",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "paddi",
+        "operands": [
+            "Rx",
+            "Ry",
+            "value",
+            "0"
+        ]
+    },
+    {
         "description": "Subtract Immediate",
         "emnem": "subi",
         "ops": [
@@ -11497,6 +12524,32 @@
             "-SI"
         ],
         "condition": "(SI&0x8000)==0x8000"
+    },
+    {
+        "description": "Prefixed Subtract Immediate",
+        "emnem": "psubi",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "Ry",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "paddi",
+        "operands": [
+            "Rx",
+            "Ry",
+            "-value",
+            "0"
+        ],
+        "condition": "(value&0x200000000)==0x200000000"
     },
     {
         "description": "Subtract Immediate Shifted",
@@ -14500,6 +15553,234 @@
             "RS",
             "64-(b+n)",
             "b"
+        ]
+    },
+    {
+        "description": "Move From FPR Doubleword",
+        "emnem": "mffprd",
+        "ops": [
+            {
+                "name": "RA",
+                "optional": "0"
+            },
+            {
+                "name": "FRS",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mfvsrd",
+        "operands": [
+            "RA",
+            "FRS"
+        ]
+    },
+    {
+        "description": "Move To FPR Doubleword",
+        "emnem": "mtfprd",
+        "ops": [
+            {
+                "name": "FRT",
+                "optional": "0"
+            },
+            {
+                "name": "RA",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtvsrd",
+        "operands": [
+            "FRT",
+            "RA"
+        ]
+    },
+    {
+        "description": "Move From VR Doubleword",
+        "emnem": "mfvrd",
+        "ops": [
+            {
+                "name": "RA",
+                "optional": "0"
+            },
+            {
+                "name": "VRS",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtvsrd",
+        "operands": [
+            "RA",
+            "VRS+32"
+        ]
+    },
+    {
+        "description": "Move To VR Doubleword",
+        "emnem": "mtvrd",
+        "ops": [
+            {
+                "name": "VRT",
+                "optional": "0"
+            },
+            {
+                "name": "RA",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtvsrd",
+        "operands": [
+            "VRT+32",
+            "RA"
+        ]
+    },
+    {
+        "description": "Move From FPR Word and Zero",
+        "emnem": "mffprwz",
+        "ops": [
+            {
+                "name": "RA",
+                "optional": "0"
+            },
+            {
+                "name": "FRS",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mfvsrwz",
+        "operands": [
+            "RA",
+            "FRS"
+        ]
+    },
+    {
+        "description": "Move To FPR Word and Zero",
+        "emnem": "mtfprwz",
+        "ops": [
+            {
+                "name": "FRT",
+                "optional": "0"
+            },
+            {
+                "name": "RA",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtvsrwz",
+        "operands": [
+            "FRT",
+            "RA"
+        ]
+    },
+    {
+        "description": "Move From VR Word and Zero",
+        "emnem": "mfvrwz",
+        "ops": [
+            {
+                "name": "RA",
+                "optional": "0"
+            },
+            {
+                "name": "VRS",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtvsrwz",
+        "operands": [
+            "RA",
+            "VRS+32"
+        ]
+    },
+    {
+        "description": "Move To VR Word and Zero",
+        "emnem": "mtvrwz",
+        "ops": [
+            {
+                "name": "VRT",
+                "optional": "0"
+            },
+            {
+                "name": "RA",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtvsrwz",
+        "operands": [
+            "VRT+32",
+            "RA"
+        ]
+    },
+    {
+        "description": "Move From FPR Word Algebraic",
+        "emnem": "mffprwa",
+        "ops": [
+            {
+                "name": "RA",
+                "optional": "0"
+            },
+            {
+                "name": "FRS",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mfvsrwa",
+        "operands": [
+            "RA",
+            "FRS"
+        ]
+    },
+    {
+        "description": "Move To FPR Word Algebraic",
+        "emnem": "mtfprwa",
+        "ops": [
+            {
+                "name": "FRT",
+                "optional": "0"
+            },
+            {
+                "name": "RA",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtvsrwa",
+        "operands": [
+            "FRT",
+            "RA"
+        ]
+    },
+    {
+        "description": "Move From VR Word Algebraic",
+        "emnem": "mfvrwa",
+        "ops": [
+            {
+                "name": "RA",
+                "optional": "0"
+            },
+            {
+                "name": "VRS",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtvsrwa",
+        "operands": [
+            "RA",
+            "VRS+32"
+        ]
+    },
+    {
+        "description": "Move To VR Word Algebraic",
+        "emnem": "mtvrwa",
+        "ops": [
+            {
+                "name": "VRT",
+                "optional": "0"
+            },
+            {
+                "name": "RA",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtvsrwa",
+        "operands": [
+            "VRT+32",
+            "RA"
         ]
     },
     {
@@ -17623,6 +18904,318 @@
         ]
     },
     {
+        "description": "Move To CR",
+        "emnem": "mtcr",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "mtcrf",
+        "operands": [
+            "0b11111111",
+            "Rx"
+        ]
+    },
+    {
+        "description": "Vector Move Register",
+        "emnem": "vmr",
+        "ops": [
+            {
+                "name": "Vx",
+                "optional": "0"
+            },
+            {
+                "name": "Vy",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "vor",
+        "operands": [
+            "Vx",
+            "Vy",
+            "Vy"
+        ]
+    },
+    {
+        "description": "Vector Complement Register",
+        "emnem": "vnot",
+        "ops": [
+            {
+                "name": "Vx",
+                "optional": "0"
+            },
+            {
+                "name": "Vy",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "vnot",
+        "operands": [
+            "Vx",
+            "Vy",
+            "Vy"
+        ]
+    },
+    {
+        "description": "Vector Convert to Signed Fixed-Point Word Saturate",
+        "emnem": "vcfpsxws",
+        "ops": [
+            {
+                "name": "VRT",
+                "optional": "0"
+            },
+            {
+                "name": "VRB",
+                "optional": "0"
+            },
+            {
+                "name": "UIM",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "vctsxs",
+        "operands": [
+            "VRT",
+            "VRB",
+            "UIM"
+        ]
+    },
+    {
+        "description": "Vector Convert from Signed Fixed-Point Word",
+        "emnem": "vcsxwfp",
+        "ops": [
+            {
+                "name": "VRT",
+                "optional": "0"
+            },
+            {
+                "name": "VRB",
+                "optional": "0"
+            },
+            {
+                "name": "UIM",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "vcfsx",
+        "operands": [
+            "VRT",
+            "VRB",
+            "UIM"
+        ]
+    },
+    {
+        "description": "Vector Convert to Unsigned Fixed-Point Word Saturate",
+        "emnem": "vcfpuxws",
+        "ops": [
+            {
+                "name": "VRT",
+                "optional": "0"
+            },
+            {
+                "name": "VRB",
+                "optional": "0"
+            },
+            {
+                "name": "UIM",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "vctuxs",
+        "operands": [
+            "VRT",
+            "VRB",
+            "UIM"
+        ]
+    },
+    {
+        "description": "Vector Convert from Unsigned Fixed-Point Word",
+        "emnem": "vcuxwfp",
+        "ops": [
+            {
+                "name": "VRT",
+                "optional": "0"
+            },
+            {
+                "name": "VRB",
+                "optional": "0"
+            },
+            {
+                "name": "UIM",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "vcfux",
+        "operands": [
+            "VRT",
+            "VRB",
+            "UIM"
+        ]
+    },
+    {
+        "description": "VSX Vector Move Single-Precision",
+        "emnem": "xvmovsp",
+        "ops": [
+            {
+                "name": "XT",
+                "optional": "0"
+            },
+            {
+                "name": "XB",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "xvcpsgnsp",
+        "operands": [
+            "XT",
+            "XB",
+            "XB"
+        ]
+    },
+    {
+        "description": "VSX Vector Move Double-Precision",
+        "emnem": "xvmovdp",
+        "ops": [
+            {
+                "name": "XT",
+                "optional": "0"
+            },
+            {
+                "name": "XB",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "xvcpsgndp",
+        "operands": [
+            "XT",
+            "XB",
+            "XB"
+        ]
+    },
+    {
+        "description": "VSX Vector Splat Doubleword",
+        "emnem": "xxspltd",
+        "ops": [
+            {
+                "name": "T",
+                "optional": "0"
+            },
+            {
+                "name": "A",
+                "optional": "0"
+            },
+            {
+                "name": "0",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "xxpermdi",
+        "operands": [
+            "T",
+            "A",
+            "A",
+            "0b00"
+        ]
+    },
+    {
+        "description": "VSX Vector Splat Doubleword",
+        "emnem": "xxspltd",
+        "ops": [
+            {
+                "name": "T",
+                "optional": "0"
+            },
+            {
+                "name": "A",
+                "optional": "0"
+            },
+            {
+                "name": "1",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "xxpermdi",
+        "operands": [
+            "T",
+            "A",
+            "A",
+            "0b11"
+        ]
+    },
+    {
+        "description": "VSX Vector Merge High Doubleword",
+        "emnem": "xxmrghd",
+        "ops": [
+            {
+                "name": "T",
+                "optional": "0"
+            },
+            {
+                "name": "A",
+                "optional": "0"
+            },
+            {
+                "name": "B",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "xxpermdi",
+        "operands": [
+            "T",
+            "A",
+            "B",
+            "0b00"
+        ]
+    },
+    {
+        "description": "VSX Vector Merge Low Doubleword",
+        "emnem": "xxmrgld",
+        "ops": [
+            {
+                "name": "T",
+                "optional": "0"
+            },
+            {
+                "name": "A",
+                "optional": "0"
+            },
+            {
+                "name": "B",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "xxpermdi",
+        "operands": [
+            "T",
+            "A",
+            "B",
+            "0b11"
+        ]
+    },
+    {
+        "description": "VSX Vector Swap Doubleword",
+        "emnem": "xxswapd",
+        "ops": [
+            {
+                "name": "T",
+                "optional": "0"
+            },
+            {
+                "name": "A",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "xxpermdi",
+        "operands": [
+            "T",
+            "A",
+            "A",
+            "0b10"
+        ]
+    },
+    {
         "description": "No-op",
         "emnem": "nop",
         "ops": [],
@@ -17676,6 +19269,27 @@
         ]
     },
     {
+        "description": "Prefixed Load Immediate",
+        "emnem": "pli",
+        "ops": [
+            {
+                "name": "Rx",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "paddi",
+        "operands": [
+            "Rx",
+            "0",
+            "value",
+            "0"
+        ]
+    },
+    {
         "description": "Load Immediate Shifted",
         "emnem": "lis",
         "ops": [
@@ -17694,6 +19308,26 @@
             "0",
             "value"
         ]
+    },
+    {
+        "description": "Subtract PC Immediate Shifted",
+        "emnem": "subpcis",
+        "ops": [
+            {
+                "name": "RT",
+                "optional": "0"
+            },
+            {
+                "name": "value",
+                "optional": "0"
+            }
+        ],
+        "mnemonic": "addpcis",
+        "operands": [
+            "RT",
+            "-value"
+        ],
+        "condition": "(value&0x8000)==0x8000"
     },
     {
         "description": "Load Next Instruction Address",

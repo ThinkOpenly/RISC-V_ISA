@@ -906,7 +906,7 @@ class App extends Component {
                 allJson.push(
                     <AccordionItem
                         title={this.genEmnemTitle (data[i])}
-                        key={data[i].emnem}
+                        key={data[i].emnem + i.toString()}
                         onClick={e => {
                             console.log("click");
                         }}
