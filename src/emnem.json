@@ -7,7 +7,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -15,6 +15,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -29,7 +30,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -37,6 +38,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -51,7 +53,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -59,6 +61,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -73,7 +76,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -81,6 +84,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -95,7 +99,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -103,6 +107,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -117,7 +122,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -125,6 +130,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -139,7 +145,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -147,6 +153,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -161,7 +168,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -169,6 +176,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -183,7 +191,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -191,6 +199,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -205,7 +214,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -213,6 +222,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -227,7 +237,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -235,6 +245,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -249,7 +260,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -257,6 +268,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -271,7 +283,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -279,6 +291,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -293,7 +306,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -301,6 +314,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -315,7 +329,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -323,6 +337,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -337,7 +352,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -345,6 +360,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -359,7 +375,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -367,6 +383,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -381,7 +398,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -389,6 +406,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -403,7 +421,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -411,6 +429,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -425,7 +444,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -433,6 +452,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -447,7 +467,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -455,6 +475,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -469,7 +490,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -477,6 +498,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -491,7 +513,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -499,6 +521,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -513,7 +536,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -521,6 +544,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -535,7 +559,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -543,6 +567,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -557,7 +582,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -565,6 +590,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -579,7 +605,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -587,6 +613,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -601,7 +628,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -609,6 +636,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -623,7 +651,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -631,6 +659,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -645,7 +674,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -653,6 +682,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -667,7 +697,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -675,6 +705,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -689,7 +720,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -697,6 +728,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -711,7 +743,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -719,6 +751,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -733,7 +766,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -741,6 +774,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -755,7 +789,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -763,6 +797,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -777,7 +812,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -785,6 +820,7 @@
             }
         ],
         "mnemonic": "bc",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -1095,7 +1131,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1103,6 +1139,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -1117,7 +1154,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1125,6 +1162,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -1139,7 +1177,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1147,6 +1185,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -1161,7 +1200,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1169,6 +1208,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -1183,7 +1223,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1191,6 +1231,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -1205,7 +1246,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1213,6 +1254,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -1227,7 +1269,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1235,6 +1277,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -1249,7 +1292,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1257,6 +1300,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -1271,7 +1315,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1279,6 +1323,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -1293,7 +1338,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1301,6 +1346,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -1315,7 +1361,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1323,6 +1369,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -1337,7 +1384,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1345,6 +1392,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -1359,7 +1407,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1367,6 +1415,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -1381,7 +1430,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1389,6 +1438,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -1403,7 +1453,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1411,6 +1461,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -1425,7 +1476,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1433,6 +1484,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -1447,7 +1499,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1455,6 +1507,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -1469,7 +1522,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1477,6 +1530,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -1491,7 +1545,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1499,6 +1553,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -1513,7 +1568,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1521,6 +1576,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -1535,7 +1591,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1543,6 +1599,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -1557,7 +1614,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1565,6 +1622,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -1579,7 +1637,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1587,6 +1645,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -1601,7 +1660,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1609,6 +1668,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -1623,7 +1683,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1631,6 +1691,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -1645,7 +1706,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1653,6 +1714,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -1667,7 +1729,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1675,6 +1737,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -1689,7 +1752,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1697,6 +1760,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -1711,7 +1775,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1719,6 +1783,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -1733,7 +1798,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1741,6 +1806,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -1755,7 +1821,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1763,6 +1829,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -1777,7 +1844,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1785,6 +1852,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -1799,7 +1867,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1807,6 +1875,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -1821,7 +1890,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1829,6 +1898,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -1843,7 +1913,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1851,6 +1921,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -1865,7 +1936,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -1873,6 +1944,7 @@
             }
         ],
         "mnemonic": "bca",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -2183,7 +2255,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2191,6 +2263,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -2205,7 +2278,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2213,6 +2286,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -2227,7 +2301,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2235,6 +2309,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -2249,7 +2324,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2257,6 +2332,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -2271,7 +2347,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2279,6 +2355,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -2293,7 +2370,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2301,6 +2378,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -2315,7 +2393,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2323,6 +2401,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -2337,7 +2416,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2345,6 +2424,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -2359,7 +2439,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2367,6 +2447,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -2381,7 +2462,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2389,6 +2470,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -2403,7 +2485,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2411,6 +2493,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -2425,7 +2508,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2433,6 +2516,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -2447,7 +2531,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2455,6 +2539,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -2469,7 +2554,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2477,6 +2562,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -2491,7 +2577,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2499,6 +2585,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -2513,7 +2600,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2521,6 +2608,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -2535,7 +2623,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2543,6 +2631,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -2557,7 +2646,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2565,6 +2654,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -2579,7 +2669,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2587,6 +2677,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -2601,7 +2692,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2609,6 +2700,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -2623,7 +2715,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2631,6 +2723,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -2645,7 +2738,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2653,6 +2746,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -2667,7 +2761,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2675,6 +2769,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -2689,7 +2784,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2697,6 +2792,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -2711,7 +2807,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2719,6 +2815,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -2733,7 +2830,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2741,6 +2838,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -2755,7 +2853,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2763,6 +2861,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -2777,7 +2876,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2785,6 +2884,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -2799,7 +2899,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2807,6 +2907,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -2821,7 +2922,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2829,6 +2930,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -2843,7 +2945,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2851,6 +2953,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -2865,7 +2968,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2873,6 +2976,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -2887,7 +2991,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2895,6 +2999,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -2909,7 +3014,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2917,6 +3022,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -2931,7 +3037,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2939,6 +3045,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -2953,7 +3060,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -2961,6 +3068,7 @@
             }
         ],
         "mnemonic": "bcl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -3271,7 +3379,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3279,6 +3387,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -3293,7 +3402,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3301,6 +3410,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -3315,7 +3425,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3323,6 +3433,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -3337,7 +3448,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3345,6 +3456,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -3359,7 +3471,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3367,6 +3479,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -3381,7 +3494,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3389,6 +3502,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -3403,7 +3517,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3411,6 +3525,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -3425,7 +3540,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3433,6 +3548,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -3447,7 +3563,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3455,6 +3571,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -3469,7 +3586,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3477,6 +3594,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -3491,7 +3609,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3499,6 +3617,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -3513,7 +3632,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3521,6 +3640,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -3535,7 +3655,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3543,6 +3663,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -3557,7 +3678,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3565,6 +3686,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -3579,7 +3701,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3587,6 +3709,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -3601,7 +3724,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3609,6 +3732,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -3623,7 +3747,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3631,6 +3755,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -3645,7 +3770,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3653,6 +3778,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -3667,7 +3793,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3675,6 +3801,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -3689,7 +3816,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3697,6 +3824,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -3711,7 +3839,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3719,6 +3847,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -3733,7 +3862,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3741,6 +3870,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -3755,7 +3885,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3763,6 +3893,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -3777,7 +3908,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3785,6 +3916,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -3799,7 +3931,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3807,6 +3939,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -3821,7 +3954,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3829,6 +3962,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -3843,7 +3977,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3851,6 +3985,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -3865,7 +4000,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3873,6 +4008,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -3887,7 +4023,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3895,6 +4031,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -3909,7 +4046,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3917,6 +4054,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -3931,7 +4069,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3939,6 +4077,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -3953,7 +4092,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3961,6 +4100,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -3975,7 +4115,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -3983,6 +4123,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -3997,7 +4138,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -4005,6 +4146,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -4019,7 +4161,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -4027,6 +4169,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -4041,7 +4184,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "target_addr16",
@@ -4049,6 +4192,7 @@
             }
         ],
         "mnemonic": "bcla",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -4379,7 +4523,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4388,6 +4532,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -4402,7 +4547,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4411,6 +4556,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -4425,7 +4571,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4434,6 +4580,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -4448,7 +4595,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4457,6 +4604,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -4471,7 +4619,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4480,6 +4628,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -4494,7 +4643,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4503,6 +4652,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -4517,7 +4667,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4526,6 +4676,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -4540,7 +4691,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4549,6 +4700,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -4563,7 +4715,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4572,6 +4724,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -4586,7 +4739,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4595,6 +4748,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -4609,7 +4763,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4618,6 +4772,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -4632,7 +4787,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4641,6 +4796,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -4655,7 +4811,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4664,6 +4820,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -4678,7 +4835,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4687,6 +4844,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -4701,7 +4859,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4710,6 +4868,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -4724,7 +4883,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4733,6 +4892,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -4747,7 +4907,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4756,6 +4916,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -4770,7 +4931,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4779,6 +4940,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -4793,7 +4955,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4802,6 +4964,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -4816,7 +4979,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4825,6 +4988,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -4839,7 +5003,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4848,6 +5012,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -4862,7 +5027,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4871,6 +5036,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -4885,7 +5051,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4894,6 +5060,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -4908,7 +5075,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4917,6 +5084,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -4931,7 +5099,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4940,6 +5108,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -4954,7 +5123,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4963,6 +5132,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -4977,7 +5147,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -4986,6 +5156,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -5000,7 +5171,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5009,6 +5180,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -5023,7 +5195,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5032,6 +5204,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -5046,7 +5219,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5055,6 +5228,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -5069,7 +5243,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5078,6 +5252,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -5092,7 +5267,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5101,6 +5276,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -5115,7 +5291,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5124,6 +5300,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -5138,7 +5315,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5147,6 +5324,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -5161,7 +5339,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5170,6 +5348,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -5184,7 +5363,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5193,6 +5372,7 @@
             }
         ],
         "mnemonic": "bclr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -5556,7 +5736,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5565,6 +5745,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -5579,7 +5760,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5588,6 +5769,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -5602,7 +5784,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5611,6 +5793,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -5625,7 +5808,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5634,6 +5817,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -5648,7 +5832,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5657,6 +5841,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -5671,7 +5856,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5680,6 +5865,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -5694,7 +5880,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5703,6 +5889,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -5717,7 +5904,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5726,6 +5913,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -5740,7 +5928,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5749,6 +5937,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -5763,7 +5952,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5772,6 +5961,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -5786,7 +5976,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5795,6 +5985,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -5809,7 +6000,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5818,6 +6009,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -5832,7 +6024,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5841,6 +6033,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -5855,7 +6048,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5864,6 +6057,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -5878,7 +6072,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5887,6 +6081,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -5901,7 +6096,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5910,6 +6105,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -5924,7 +6120,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5933,6 +6129,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -5947,7 +6144,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5956,6 +6153,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -5970,7 +6168,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -5979,6 +6177,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -5993,7 +6192,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6002,6 +6201,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -6016,7 +6216,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6025,6 +6225,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -6039,7 +6240,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6048,6 +6249,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -6062,7 +6264,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6071,6 +6273,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -6085,7 +6288,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6094,6 +6297,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -6108,7 +6312,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6117,6 +6321,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -6131,7 +6336,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6140,6 +6345,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -6154,7 +6360,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6163,6 +6369,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -6177,7 +6384,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6186,6 +6393,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -6200,7 +6408,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6209,6 +6417,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -6223,7 +6432,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6232,6 +6441,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -6246,7 +6456,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6255,6 +6465,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -6269,7 +6480,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6278,6 +6489,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -6292,7 +6504,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6301,6 +6513,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -6315,7 +6528,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6324,6 +6537,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -6338,7 +6552,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6347,6 +6561,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -6361,7 +6576,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6370,6 +6585,7 @@
             }
         ],
         "mnemonic": "bclrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -6733,7 +6949,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6742,6 +6958,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -6756,7 +6973,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6765,6 +6982,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -6779,7 +6997,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6788,6 +7006,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -6802,7 +7021,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6811,6 +7030,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -6825,7 +7045,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6834,6 +7054,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -6848,7 +7069,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6857,6 +7078,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -6871,7 +7093,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6880,6 +7102,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -6894,7 +7117,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6903,6 +7126,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -6917,7 +7141,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6926,6 +7150,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -6940,7 +7165,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6949,6 +7174,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -6963,7 +7189,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6972,6 +7198,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -6986,7 +7213,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -6995,6 +7222,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -7009,7 +7237,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7018,6 +7246,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -7032,7 +7261,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7041,6 +7270,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -7055,7 +7285,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7064,6 +7294,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -7078,7 +7309,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7087,6 +7318,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -7101,7 +7333,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7110,6 +7342,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -7124,7 +7357,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7133,6 +7366,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -7147,7 +7381,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7156,6 +7390,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -7170,7 +7405,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7179,6 +7414,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -7193,7 +7429,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7202,6 +7438,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -7216,7 +7453,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7225,6 +7462,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -7239,7 +7477,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7248,6 +7486,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -7262,7 +7501,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7271,6 +7510,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -7285,7 +7525,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7294,6 +7534,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -7308,7 +7549,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7317,6 +7558,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -7331,7 +7573,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7340,6 +7582,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -7354,7 +7597,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7363,6 +7606,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -7377,7 +7621,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7386,6 +7630,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -7400,7 +7645,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7409,6 +7654,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -7423,7 +7669,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7432,6 +7678,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -7446,7 +7693,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7455,6 +7702,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -7469,7 +7717,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7478,6 +7726,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -7492,7 +7741,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7501,6 +7750,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -7515,7 +7765,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7524,6 +7774,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -7538,7 +7789,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7547,6 +7798,7 @@
             }
         ],
         "mnemonic": "bcctr",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -7724,7 +7976,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7733,6 +7985,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -7747,7 +8000,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7756,6 +8009,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -7770,7 +8024,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7779,6 +8033,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -7793,7 +8048,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7802,6 +8057,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -7816,7 +8072,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7825,6 +8081,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -7839,7 +8096,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7848,6 +8105,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -7862,7 +8120,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7871,6 +8129,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -7885,7 +8144,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7894,6 +8153,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -7908,7 +8168,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7917,6 +8177,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -7931,7 +8192,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7940,6 +8201,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -7954,7 +8216,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7963,6 +8225,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -7977,7 +8240,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -7986,6 +8249,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -8000,7 +8264,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8009,6 +8273,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -8023,7 +8288,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8032,6 +8297,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -8046,7 +8312,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8055,6 +8321,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -8069,7 +8336,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8078,6 +8345,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -8092,7 +8360,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8101,6 +8369,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -8115,7 +8384,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8124,6 +8393,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -8138,7 +8408,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8147,6 +8417,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -8161,7 +8432,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8170,6 +8441,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -8184,7 +8456,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8193,6 +8465,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -8207,7 +8480,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8216,6 +8489,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -8230,7 +8504,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8239,6 +8513,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -8253,7 +8528,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8262,6 +8537,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -8276,7 +8552,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8285,6 +8561,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -8299,7 +8576,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8308,6 +8585,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -8322,7 +8600,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8331,6 +8609,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -8345,7 +8624,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8354,6 +8633,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -8368,7 +8648,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8377,6 +8657,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -8391,7 +8672,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8400,6 +8681,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -8414,7 +8696,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8423,6 +8705,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -8437,7 +8720,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8446,6 +8729,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -8460,7 +8744,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8469,6 +8753,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -8483,7 +8768,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8492,6 +8777,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -8506,7 +8792,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8515,6 +8801,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -8529,7 +8816,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8538,6 +8825,7 @@
             }
         ],
         "mnemonic": "bcctrl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -8715,7 +9003,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8724,6 +9012,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -8738,7 +9027,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8747,6 +9036,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -8761,7 +9051,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8770,6 +9060,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -8784,7 +9075,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8793,6 +9084,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -8807,7 +9099,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8816,6 +9108,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -8830,7 +9123,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8839,6 +9132,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -8853,7 +9147,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8862,6 +9156,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -8876,7 +9171,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8885,6 +9180,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -8899,7 +9195,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8908,6 +9204,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -8922,7 +9219,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8931,6 +9228,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -8945,7 +9243,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8954,6 +9252,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -8968,7 +9267,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -8977,6 +9276,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -8991,7 +9291,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9000,6 +9300,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -9014,7 +9315,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9023,6 +9324,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -9037,7 +9339,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9046,6 +9348,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -9060,7 +9363,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9069,6 +9372,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -9083,7 +9387,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9092,6 +9396,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -9106,7 +9411,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9115,6 +9420,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -9129,7 +9435,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9138,6 +9444,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -9152,7 +9459,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9161,6 +9468,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -9175,7 +9483,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9184,6 +9492,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -9198,7 +9507,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9207,6 +9516,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -9221,7 +9531,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9230,6 +9540,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -9244,7 +9555,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9253,6 +9564,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -9267,7 +9579,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9276,6 +9588,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -9290,7 +9603,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9299,6 +9612,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -9313,7 +9627,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9322,6 +9636,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -9336,7 +9651,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9345,6 +9660,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -9359,7 +9675,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9368,6 +9684,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -9382,7 +9699,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9391,6 +9708,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -9405,7 +9723,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9414,6 +9732,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -9428,7 +9747,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9437,6 +9756,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -9451,7 +9771,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9460,6 +9780,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -9474,7 +9795,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9483,6 +9804,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -9497,7 +9819,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9506,6 +9828,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -9520,7 +9843,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9529,6 +9852,7 @@
             }
         ],
         "mnemonic": "bctar",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -9892,7 +10216,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9901,6 +10225,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01100",
             "BFA*4+lt",
@@ -9915,7 +10240,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9924,6 +10249,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -9938,7 +10264,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9947,6 +10273,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01100",
             "BFA*4+eq",
@@ -9961,7 +10288,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9970,6 +10297,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -9984,7 +10312,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -9993,6 +10321,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01100",
             "BFA*4+gt",
@@ -10007,7 +10336,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10016,6 +10345,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00100",
             "BFA*4+lt",
@@ -10030,7 +10360,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10039,6 +10369,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00100",
             "BFA*4+eq",
@@ -10053,7 +10384,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10062,6 +10393,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00100",
             "BFA*4+gt",
@@ -10076,7 +10408,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10085,6 +10417,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -10099,7 +10432,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10108,6 +10441,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -10122,7 +10456,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10131,6 +10465,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01100",
             "BFA*4+so",
@@ -10145,7 +10480,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10154,6 +10489,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00100",
             "BFA*4+so",
@@ -10168,7 +10504,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10177,6 +10513,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01111",
             "BFA*4+lt",
@@ -10191,7 +10528,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10200,6 +10537,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b01110",
             "BFA*4+lt",
@@ -10214,7 +10552,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10223,6 +10561,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -10237,7 +10576,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10246,6 +10585,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -10260,7 +10600,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10269,6 +10609,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01111",
             "BFA*4+eq",
@@ -10283,7 +10624,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10292,6 +10633,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b01110",
             "BFA*4+eq",
@@ -10306,7 +10648,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10315,6 +10657,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -10329,7 +10672,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10338,6 +10681,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -10352,7 +10696,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10361,6 +10705,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01111",
             "BFA*4+gt",
@@ -10375,7 +10720,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10384,6 +10729,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b01110",
             "BFA*4+gt",
@@ -10398,7 +10744,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10407,6 +10753,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00111",
             "BFA*4+lt",
@@ -10421,7 +10768,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10430,6 +10777,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==0",
         "operands": [
             "0b00110",
             "BFA*4+lt",
@@ -10444,7 +10792,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10453,6 +10801,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00111",
             "BFA*4+eq",
@@ -10467,7 +10816,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10476,6 +10825,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==2",
         "operands": [
             "0b00110",
             "BFA*4+eq",
@@ -10490,7 +10840,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10499,6 +10849,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00111",
             "BFA*4+gt",
@@ -10513,7 +10864,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10522,6 +10873,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==1",
         "operands": [
             "0b00110",
             "BFA*4+gt",
@@ -10536,7 +10888,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10545,6 +10897,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -10559,7 +10912,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10568,6 +10921,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -10582,7 +10936,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10591,6 +10945,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -10605,7 +10960,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10614,6 +10969,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -10628,7 +10984,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10637,6 +10993,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01111",
             "BFA*4+so",
@@ -10651,7 +11008,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10660,6 +11017,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b01110",
             "BFA*4+so",
@@ -10674,7 +11032,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10683,6 +11041,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00111",
             "BFA*4+so",
@@ -10697,7 +11056,7 @@
                 "name": "BFA",
                 "optional": "1",
                 "default": "0",
-                "value": "BI/4"
+                "value": "int(BI/4)"
             },
             {
                 "name": "BH",
@@ -10706,6 +11065,7 @@
             }
         ],
         "mnemonic": "bctarl",
+        "condition": "(BI&0b11)==3",
         "operands": [
             "0b00110",
             "BFA*4+so",
@@ -11135,7 +11495,8 @@
             "RT",
             "RA",
             "-SI"
-        ]
+        ],
+        "condition": "(SI&0x8000)==0x8000"
     },
     {
         "description": "Subtract Immediate Shifted",
