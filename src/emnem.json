@@ -15606,7 +15606,7 @@
                 "optional": "0"
             }
         ],
-        "mnemonic": "mtvsrd",
+        "mnemonic": "mfvsrd",
         "operands": [
             "RA",
             "VRS+32"
@@ -15682,7 +15682,7 @@
                 "optional": "0"
             }
         ],
-        "mnemonic": "mtvsrwz",
+        "mnemonic": "mfvsrwz",
         "operands": [
             "RA",
             "VRS+32"
@@ -15758,7 +15758,7 @@
                 "optional": "0"
             }
         ],
-        "mnemonic": "mtvsrwa",
+        "mnemonic": "mfvsrwa",
         "operands": [
             "RA",
             "VRS+32"
@@ -18951,7 +18951,7 @@
                 "optional": "0"
             }
         ],
-        "mnemonic": "vnot",
+        "mnemonic": "vnor",
         "operands": [
             "Vx",
             "Vy",
