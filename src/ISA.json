@@ -1090,9 +1090,7 @@
                 "corresponding carry bit is 0, and a zero (0b0000) in ",
                 "every position for which the corresponding carry bit is ",
                 "1.",
-                "  ",
-                "",
-                ""
+                "  "
             ],
             "intrinsics": []
         },
@@ -2285,15 +2283,13 @@
                 "if      a &lt; b then c := 0b100",
                 "else if a &gt; b then c := 0b010",
                 "else               c := 0b001",
-                "CR<sub>4</sub>*<sub>BF+32:4</sub>*<sub>BF+35</sub> := c || XER<sub>SO</sub>",
-                ""
+                "CR<sub>4</sub>*<sub>BF+32:4</sub>*<sub>BF+35</sub> := c || XER<sub>SO</sub>"
             ],
             "body": [
                 "The contents of register RA ((RA)<sub>32:63</sub> if L=0) are com",
                 "pared with the contents of register RB ((RB)<sub>32:63</sub> if L=0), ",
                 "treating the operands as signed integers. The result of ",
-                "the comparison is placed into CR field BF",
-                ".",
+                "the comparison is placed into CR field BF.",
                 "Examples of extended mnemonics for Compare:"
             ],
             "intrinsics": []
@@ -2479,8 +2475,7 @@
                 "if      a &lt; EXTS(SI) then c := 0b100",
                 "else if a &gt; EXTS(SI) then c := 0b010",
                 "else                      c := 0b001",
-                "CR<sub>4</sub>*<sub>BF+32:4</sub>*<sub>BF+35</sub> := c || XER<sub>SO</sub>",
-                ""
+                "CR<sub>4</sub>*<sub>BF+32:4</sub>*<sub>BF+35</sub> := c || XER<sub>SO</sub>"
             ],
             "body": [
                 "The contents of register RA ((RA)<sub>32:63</sub> sign-extended to ",
@@ -2554,15 +2549,13 @@
                 "if      a &lt;<sup>u</sup> b then c := 0b100",
                 "else if a &gt;<sup>u</sup> b then c := 0b010",
                 "else                c := 0b001",
-                "CR<sub>4</sub>*<sub>BF+32:4</sub>*<sub>BF+35</sub> := c || XER<sub>SO</sub>",
-                ""
+                "CR<sub>4</sub>*<sub>BF+32:4</sub>*<sub>BF+35</sub> := c || XER<sub>SO</sub>"
             ],
             "body": [
                 "The contents of register RA ((RA)<sub>32:63</sub> if L=0) are com",
                 "pared with the contents of register RB ((RB)<sub>32:63</sub> if L=0), ",
                 "treating the operands as unsigned integers. The result ",
-                "of the comparison is placed into CR field BF",
-                ".",
+                "of the comparison is placed into CR field BF.",
                 "Examples of extended mnemonics for Compare Logi",
                 "cal:"
             ],
@@ -2618,15 +2611,13 @@
                 "if      a &lt;<sup>u</sup> (<sup>48</sup>0 || UI) then c := 0b100",
                 "else if a &gt;<sup>u</sup> (<sup>48</sup>0 || UI) then c := 0b010",
                 "else                         c := 0b001",
-                "CR<sub>4</sub>*<sub>BF+32:4</sub>*<sub>BF+35</sub> := c || XER<sub>SO</sub>",
-                ""
+                "CR<sub>4</sub>*<sub>BF+32:4</sub>*<sub>BF+35</sub> := c || XER<sub>SO</sub>"
             ],
             "body": [
                 "The contents of register RA ((RA)<sub>32:63</sub> zero-extended to ",
                 "64 bits if L=0) are compared with 480||UI, treating the ",
                 "operands as unsigned integers. The result of the com",
-                "parison is placed into CR field BF",
-                ".",
+                "parison is placed into CR field BF.",
                 "Examples of extended mnemonics for Compare Logi",
                 "cal Immediate:"
             ],
@@ -3353,8 +3344,7 @@
                 "copy_buffer := memory(EA,128)||MEM<sub>metadata</sub>(EA,128)"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). ",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
                 "The 128 bytes in storage, and associated metadata,  ",
                 "addressed by EA is loaded into the copy buffer.",
                 "If the EA is not a multiple of 128, the system alignment ",
@@ -3420,8 +3410,6 @@
                 "Any pending errors in the Copy-Paste Facility are ",
                 "cleared and the state is reset to prepare for a new ",
                 "copy.",
-                " ",
-                " ",
                 "",
                 "The Atomic Memory Operation (AMO) facility may be ",
                 "used to optimize performance when many software ",
@@ -3489,7 +3477,6 @@
                 "Store Conditional instructions unless otherwise stated ",
                 "or obvious from context.",
                 "  ",
-                " ",
                 " "
             ],
             "intrinsics": []
@@ -8016,8 +8003,7 @@
             ],
             "code": [],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB).",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "For the L operand, the values 2, 5, and 7 are reserved. ",
                 "The results of executing a dcbf instruction with L=2, 5, ",
                 "or 7 are boundedly undefined.",
@@ -8046,12 +8032,9 @@
                 "Store (dstst), and Data Stream Stop (dss) instructions ",
                 "(primary opcode 31, extended opcodes 342, 374, and ",
                 "822 respectively), which were proposed for addition to ",
-                "the Power ISA and were implemented by some pro",
-                "cessors, must be treated as no-ops (rather than as ille",
-                "gal instructions).",
-                "",
-                "",
-                "",
+                "the Power ISA and were implemented by some proces",
+                "sors, must be treated as no-ops (rather than as illegal ",
+                "instructions).",
                 "The treatment of these instructions is independent of ",
                 "whether other Vector instructions are available (i.e., is ",
                 "independent of the contents of MSR<sub>VEC</sub> (see Book III).",
@@ -8104,8 +8087,7 @@
             ],
             "code": [],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB).",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "If the block containing the byte addressed by EA is in ",
                 "storage that is Memory Coherence Required and a ",
                 "block containing the byte addressed by EA is in the ",
@@ -8295,8 +8277,6 @@
                 "without coding the TH field explicitly.",
                 " ",
                 " ",
-                " ",
-                "  ",
                 ""
             ],
             "intrinsics": []
@@ -8351,17 +8331,14 @@
                 "n := block size (bytes)",
                 "m := log<sub>2</sub>(n)",
                 "ea := EA<sub>0:63-m</sub> || <sup>m</sup>0",
-                "MEM(ea, n) := <sup>n</sup>0x00",
-                ""
+                "MEM(ea, n) := <sup>n</sup>0x00"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB).",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "All bytes in the block containing the byte addressed by ",
                 "EA are set to zero.",
                 "This instruction is treated as a Store (see Section 4.3).",
                 " ",
-                "  ",
                 ""
             ],
             "intrinsics": []
@@ -9964,7 +9941,6 @@
                 "",
                 "",
                 "",
-                " ",
                 ""
             ],
             "intrinsics": []
@@ -10103,8 +10079,8 @@
                 "If an attempt is made to perform any of the divisions",
                 "then the contents of register RT are undefined as are (if ",
                 "Rc=1) the contents of the LT, GT, and EQ bits of CR ",
-                "Field 0. In these cases, if OE=1 then ",
-                "OV and OV32 are set to 1.",
+                "Field 0. In these cases, if OE=1 then OV and OV32 are ",
+                "set to 1.",
                 "  "
             ],
             "intrinsics": [
@@ -10246,8 +10222,7 @@
                 "attempt is made to perform the division",
                 "then the contents of register RT are undefined as are (if ",
                 "Rc=1) the contents of the LT, GT, and EQ bits of CR Field ",
-                "0. In these cases, if OE=1 then OV and ",
-                "OV32 are set to 1."
+                "0. In these cases, if OE=1 then OV and OV32 are set to 1."
             ],
             "intrinsics": []
         },
@@ -10386,9 +10361,8 @@
                 "If (RA) \u00b3 (RB), or if an attempt is made to perform the ",
                 "division",
                 "then the contents of register RT are undefined as are (if ",
-                "Rc=1) the contents of the LT, GT, and EQ bits of CR Field 0",
-                ". In these cases, if OE=1 then OV and OV32 ",
-                "are set to 1.",
+                "Rc=1) the contents of the LT, GT, and EQ bits of CR Field ",
+                "0. In these cases, if OE=1 then OV and OV32 are set to 1.",
                 "  "
             ],
             "intrinsics": []
@@ -10526,9 +10500,8 @@
                 "where 0 \u00a3 r &lt; divisor.",
                 "If an attempt is made to perform the division",
                 "then the contents of register RT are undefined as are (if ",
-                "Rc=1) the contents of the LT, GT, and EQ bits of CR Field 0",
-                ". In this case, if OE=1 then OV and OV32 ",
-                "are set to 1."
+                "Rc=1) the contents of the LT, GT, and EQ bits of CR Field ",
+                "0. In this case, if OE=1 then OV and OV32 are set to 1."
             ],
             "intrinsics": []
         },
@@ -10668,8 +10641,8 @@
                 "If an attempt is made to perform any of the divisions",
                 "then the contents of register RT are undefined as are ",
                 "(ifRc=1) the contents of the LT, GT, and EQ bits of CR ",
-                "Field 0. In these cases, if OE=1 then OV ",
-                "and OV32 are set to 1."
+                "Field 0. In these cases, if OE=1 then OV and OV32 are set ",
+                "to 1."
             ],
             "intrinsics": []
         },
@@ -10809,8 +10782,7 @@
                 "attempt is made to perform the division",
                 "then the contents of register RT are undefined as are (if ",
                 "Rc=1) the contents of the LT, GT, and EQ bits of CR Field ",
-                "0. In these cases, if OE=1 then OV and ",
-                "OV32 are set to 1."
+                "0. In these cases, if OE=1 then OV and OV32 are set to 1."
             ],
             "intrinsics": []
         },
@@ -10950,9 +10922,8 @@
                 "If (RA) \u00b3 (RB), or if an attempt is made to perform the ",
                 "division",
                 "then the contents of register RT are undefined as are (if ",
-                "Rc=1) the contents of the LT, GT, and EQ bits of CR Field 0",
-                ". In these cases, if OE=1 then OV and OV32 ",
-                "are set to 1.",
+                "Rc=1) the contents of the LT, GT, and EQ bits of CR Field ",
+                "0. In these cases, if OE=1 then OV and OV32 are set to 1.",
                 "Unsigned long division of a 64-bit dividend contained in ",
                 "two 32-bit registers by a 32-bit divisor can be computed ",
                 "as follows. The algorithm is shown first, followed by ",
@@ -11107,9 +11078,8 @@
                 "where 0 \u00a3 r &lt; divisor.",
                 "If an attempt is made to perform the division",
                 "then the contents of register RT are undefined as are (if ",
-                "Rc=1) the contents of the LT, GT, and EQ bits of CR Field 0",
-                ". In this case, if OE=1 then OV and OV32 ",
-                "are set to 1."
+                "Rc=1) the contents of the LT, GT, and EQ bits of CR Field ",
+                "0. In this case, if OE=1 then OV and OV32 are set to 1."
             ],
             "intrinsics": []
         },
@@ -11182,7 +11152,6 @@
                 "instruction may complete before operations caused by ",
                 "dcbt and dcbtst instructions preceding the eieio ",
                 "instruction have been performed",
-                "  ",
                 "  ",
                 "  "
             ],
@@ -12640,8 +12609,6 @@
                 "described as \u201cties to even.\u201d The rounding performed by ",
                 "these instructions is described fully in SectionA.4, ",
                 "\u201cFloating-Point Round to Integer Model\u201d on page1018. ",
-                "  ",
-                "  ",
                 "  "
             ],
             "intrinsics": []
@@ -13348,8 +13315,7 @@
                 "The contents of word element 1 of FPR[FRB] are placed ",
                 "into word element 1 of FPR[FRT].",
                 "fmrgow is treated as a Floating-Point instruction in ",
-                "terms of resource availability.",
-                "  "
+                "terms of resource availability."
             ],
             "intrinsics": []
         },
@@ -15151,8 +15117,8 @@
                 "This section gives examples of how the Floating Select instruction can be used to implement certain simple forms of ",
                 "if-then-else constructions, without branching.",
                 "The examples show program fragments in an imaginary, C-like, high-level programming language, and the corre",
-                "sponding program fragment using fsel and other Power ISA instructions. In the examples, a, b, x, y, and z are ",
-                "floating-point variables, which are assumed to be in FPRs fa, fb, fx, fy, and fz. FPR fs is assumed to be available for ",
+                "sponding program fragment using fsel and other Power ISA instructions. In the examples, a, b, x, y, and z are float",
+                "ing-point variables, which are assumed to be in FPRs fa, fb, fx, fy, and fz. FPR fs is assumed to be available for ",
                 "scratch space.",
                 "Warning: Care must be taken in using fsel if IEEE compatibility is required, or if the values being tested can be NaNs ",
                 "or infinities; see Section.",
@@ -15164,10 +15130,10 @@
                 "arithmetic relations (&lt;, \u00a3, and \u00b9). They should also be ",
                 "considered when any other use of fsel is contemplated.",
                 "In these Notes, the \u201coptimized program\u201d is the Power ",
-                "ISA program shown, and the \u201cunoptimized pro",
-                "gram\u201d (not shown) is the corresponding Power ISA ",
-                "program that uses fcmpu and Branch Conditional ",
-                "instructions instead of fsel.",
+                "ISA program shown, and the \u201cunoptimized program\u201d ",
+                "(not shown) is the corresponding Power ISA program ",
+                "that uses fcmpu and Branch Conditional instructions ",
+                "instead of fsel.",
                 ""
             ],
             "intrinsics": []
@@ -15666,38 +15632,27 @@
                 }
             ],
             "code": [
-                "",
-                "",
-                "",
-                "",
                 "MSR<sub>48</sub> := HSRR1<sub>48</sub> | HSRR1<sub>49</sub>",
                 "MSR<sub>58</sub> := (CTR<sub>58</sub> | CTR<sub>49</sub><sub>)</sub>",
                 "<sub>    &amp; </sub>~(MSR<sub>41 </sub><sub>&amp; MSR</sub><sub>3 </sub><sub>&amp; (</sub>~CTR<sub>49</sub><sub>))</sub>",
                 "MSR<sub>59</sub> := (CTR<sub>59</sub> | CTR<sub>49)</sub>",
                 "<sub>    &amp; </sub>~(MSR<sub>41 </sub><sub>&amp; MSR</sub><sub>3 </sub><sub>&amp; (</sub>~CTR<sub>49</sub><sub>))</sub>",
-                "",
+                "MSR<sub>0:</sub><sub>32 37:40 49:57 60:63</sub> := HSRR1<sub>0:</sub><sub>32 37:40 49:57 60:63</sub>",
                 "NIA :=<sub>iea</sub> HSRR0<sub>0:61</sub> || 0b00"
             ],
             "body": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                " The result of ",
-                "ORing bits 48 and 49 of HSRR1 is placed into MSR<sub>48</sub>. ",
-                "The result of ANDing bit 41 of the MSR with bit 3 of ",
-                "HSRR1 and with the complement of bit 49 of HSRR1 is ",
-                "complemented and then ANDed with the result of ",
-                "ORing bits 58 and 49 of HSRR1 and placed into ",
-                "MSR<sub>58</sub>. The result of ANDing bit 41 of the MSR with bit ",
-                "3 of HSRR1 and with the complement of bit 49 of ",
-                "HSRR1 is complemented and then ANDed with the ",
+                " The result of ORing bits 48 and 49 of HSRR1 is placed ",
+                "into MSR<sub>48</sub>. The result of ANDing bit 41 of the MSR ",
+                "with bit 3 of HSRR1 and with the complement of bit 49 ",
+                "of HSRR1 is complemented and then ANDed with the ",
+                "result of ORing bits 58 and 49 of HSRR1 and placed ",
+                "into MSR<sub>58</sub>. The result of ANDing bit 41 of the MSR ",
+                "with bit 3 of HSRR1 and with the complement of bit 49 ",
+                "of HSRR1 is complemented and then ANDed with the ",
                 "result of ORing bits 59 and 49 of HSRR1 and placed ",
-                "into MSR<sub>59</sub>. ",
-                "",
-                ".",
+                "into MSR<sub>59</sub>. Bits 0:32, 37:40, 49:57, and 60:63 of ",
+                "HSRR1 are placed into the corresponding bits of the ",
+                "MSR.",
                 "If the new MSR value does not enable any pending ",
                 "exceptions, then the next instruction is fetched, under ",
                 "control of the new MSR value, from the address ",
@@ -15763,8 +15718,7 @@
             ],
             "code": [],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB).",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "If the block containing the byte addressed by EA is in ",
                 "storage that is Memory Coherence Required and a ",
                 "block containing the byte addressed by EA is in the ",
@@ -15848,8 +15802,7 @@
                 "This instruction treated as a Load (see Section 4.3), ",
                 "except that the system data storage error handler is not ",
                 "invoked, and reference and change recording need not ",
-                "be done.",
-                "  "
+                "be done."
             ],
             "intrinsics": []
         },
@@ -16033,9 +15986,9 @@
                 "RT := <sup>56</sup>0 || MEM(EA, 1)"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). The byte in storage addressed by EA ",
-                "is loaded into RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
+                "The byte in storage addressed by EA is loaded into ",
+                "RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0.",
                 "This instruction creates a reservation for use by a ",
                 "stbcx. or waitrsv instruction. A real address computed ",
                 "from the EA as described in Section 1.7.2.1 is associ",
@@ -16109,7 +16062,6 @@
                 "bits.",
                 "The byte in storage addressed by EA is loaded into ",
                 "RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0.",
-                "",
                 "For plbz, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Byte and Zero:"
@@ -16206,7 +16158,6 @@
                 "bits.",
                 "The byte in storage addressed by EA is loaded into ",
                 "RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0.",
-                "",
                 "For plbz, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Byte and Zero:"
@@ -16265,8 +16216,8 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). The byte in storage addressed by EA ",
-                "is loaded into RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0.",
+                "(RA|0)+(RB). The byte in storage addressed by EA is ",
+                "loaded into RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0.",
                 "The storage access caused by this instruction is per",
                 "formed as though the specified storage location is ",
                 "Caching Inhibited and Guarded.",
@@ -16326,8 +16277,8 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. The byte in storage addressed by EA ",
-                "is loaded into RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0."
+                "(RA|0)+(RB). The byte in storage addressed by EA is ",
+                "loaded into RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0."
             ],
             "intrinsics": []
         },
@@ -16371,9 +16322,9 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA)+<sub>D</sub>. ",
-                "The byte in storage addressed by EA is loaded into ",
-                "RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0.",
+                "Let the effective address (EA) be the sum (RA)+D. The ",
+                "byte in storage addressed by EA is loaded into RT<sub>56:63</sub>. ",
+                "RT<sub>0:55</sub> are set to 0.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
             ],
@@ -16429,9 +16380,9 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>. The byte in storage addressed by EA is ",
-                "loaded into RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0.",
+                "Let the effective address (EA) be the sum (RA)+(RB). ",
+                "The byte in storage addressed by EA is loaded into ",
+                "RT<sub>56:63</sub>. RT<sub>0:55</sub> are set to 0.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
             ],
@@ -16500,7 +16451,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The doubleword in storage addressed by EA is loaded ",
                 "into RT.",
-                "",
                 "For pld, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Doubleword:"
@@ -16597,7 +16547,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The doubleword in storage addressed by EA is loaded ",
                 "into RT.",
-                "",
                 "For pld, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Doubleword:"
@@ -16659,9 +16608,9 @@
                 "RT := MEM(EA, 8)"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). The doubleword in storage addressed ",
-                "by EA is loaded into RT.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
+                "The doubleword in storage addressed by EA is loaded ",
+                "into RT.",
                 "This instruction creates a reservation for use by a ",
                 "stdcx. or waitrsv  instruction. A real address computed ",
                 "from the EA as described in Section 1.7.2.1 is associ",
@@ -16802,8 +16751,7 @@
                 "|| load_data<sub>8:15</sub>  || load_data<sub>0:7</sub>"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. ",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
                 "Bits 0:7 of the doubleword in storage addressed by EA ",
                 "are loaded into RT<sub>56:63</sub>. ",
                 "Bits 8:15 of the doubleword in storage addressed by EA ",
@@ -16875,8 +16823,8 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). The doubleword in storage addressed ",
-                "by EA is loaded into RT.",
+                "(RA|0)+(RB). The doubleword in storage addressed by ",
+                "EA is loaded into RT.",
                 "The storage access caused by this instruction is per",
                 "formed as though the specified storage location is ",
                 "Caching Inhibited and Guarded.",
@@ -16936,8 +16884,8 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. The doubleword in storage ",
-                "addressed by EA is loaded into RT."
+                "(RA|0)+(RB). The doubleword in storage addressed ",
+                "by EA is loaded into RT."
             ],
             "intrinsics": []
         },
@@ -16987,7 +16935,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(DS||0b00)</sub>. The doubleword in storage ",
+                "(RA)+(DS||0b00). The doubleword in storage ",
                 "addressed by EA is loaded into RT.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
@@ -17044,9 +16992,9 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>. The doubleword in storage addressed ",
-                "by EA is loaded into RT.",
+                "Let the effective address (EA) be the sum (RA)+(RB). ",
+                "The doubleword in storage addressed by EA is loaded ",
+                "into RT.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
             ],
@@ -17110,7 +17058,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The doubleword in storage addressed by EA is loaded ",
                 "into register FRT.",
-                "",
                 "For plfd, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Floating-Point ",
@@ -17208,7 +17155,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The doubleword in storage addressed by EA is loaded ",
                 "into register FRT.",
-                "",
                 "For plfd, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Floating-Point ",
@@ -17268,7 +17214,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "(RA|0)+(RB).",
                 "The doubleword in storage addressed by EA is loaded ",
                 "into register FRT."
             ],
@@ -17322,7 +17268,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(DS||0b00)</sub>. ",
+                "(RA|0)+(DS||0b00). ",
                 "The doubleword in storage addressed by EA is placed ",
                 "into the even-numbered register of FRTp. ",
                 "The doubleword in storage addressed by EA+8 is placed ",
@@ -17384,7 +17330,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. ",
+                "(RA|0)+(RB). ",
                 "The doubleword in storage addressed by EA is placed ",
                 "into the even-numbered register of FRTp. ",
                 "The doubleword in storage addressed by EA+8 is placed ",
@@ -17433,7 +17379,7 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA)+<sub>D</sub>.",
+                "Let the effective address (EA) be the sum (RA)+D.",
                 "The doubleword in storage addressed by EA is loaded ",
                 "into register FRT.",
                 "EA is placed into register RA.",
@@ -17491,8 +17437,7 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>.",
+                "Let the effective address (EA) be the sum (RA)+(RB).",
                 "The doubleword in storage addressed by EA is loaded ",
                 "into register FRT.",
                 "EA is placed into register RA.",
@@ -17560,7 +17505,6 @@
                 "a floating-point single-precision operand. This word is ",
                 "converted to floating-point double format (see ",
                 "page163) and placed into register FRT.",
-                "",
                 "For plfs, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Floating-Point ",
@@ -17660,7 +17604,6 @@
                 "a floating-point single-precision operand. This word is ",
                 "converted to floating-point double format (see ",
                 "page163) and placed into register FRT.",
-                "",
                 "For plfs, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Floating-Point ",
@@ -17720,7 +17663,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "(RA|0)+(RB).",
                 "The word in storage addressed by EA is interpreted as a ",
                 "floating-point single-precision operand. This word is ",
                 "converted to floating-point double format (see ",
@@ -17768,7 +17711,7 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA)+<sub>D</sub>.",
+                "Let the effective address (EA) be the sum (RA)+D.",
                 "The word in storage addressed by EA is interpreted as a ",
                 "floating-point single-precision operand. This word is ",
                 "converted to floating-point double format (see ",
@@ -17828,8 +17771,7 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>.",
+                "Let the effective address (EA) be the sum (RA)+(RB).",
                 "The word in storage addressed by EA is interpreted as a ",
                 "floating-point single-precision operand. This word is ",
                 "converted to floating-point double format (see ",
@@ -17891,7 +17833,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "(RA|0)+(RB).",
                 "The word in storage addressed by EA is loaded into ",
                 "FRT<sub>32:63</sub>. FRT<sub>0:31</sub> are set to 0."
             ],
@@ -17949,7 +17891,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "(RA|0)+(RB).",
                 "The word in storage addressed by EA is loaded into ",
                 "FRT<sub>32:63</sub>. FRT<sub>0:31</sub> are filled with a copy of bit 0 of the ",
                 "loaded word."
@@ -18015,7 +17957,6 @@
                 "The halfword in storage addressed by EA is loaded into ",
                 "RT<sub>48:63</sub>. RT<sub>0:47</sub> are filled with a copy of bit 0 of the loaded ",
                 "halfword.",
-                "",
                 "For plha, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Halfword Alge",
@@ -18114,7 +18055,6 @@
                 "The halfword in storage addressed by EA is loaded into ",
                 "RT<sub>48:63</sub>. RT<sub>0:47</sub> are filled with a copy of bit 0 of the loaded ",
                 "halfword.",
-                "",
                 "For plha, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Halfword Alge",
@@ -18174,9 +18114,9 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. The halfword in storage addressed ",
-                "by EA is loaded into RT<sub>48:63</sub>. RT<sub>0:47</sub> are filled with a copy ",
-                "of bit 0 of the loaded halfword."
+                "(RA|0)+(RB). The halfword in storage addressed by ",
+                "EA is loaded into RT<sub>48:63</sub>. RT<sub>0:47</sub> are filled with a copy of ",
+                "bit 0 of the loaded halfword."
             ],
             "intrinsics": []
         },
@@ -18220,8 +18160,8 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA) +<sub>D</sub>. ",
-                "The halfword in storage addressed by EA is loaded into ",
+                "Let the effective address (EA) be the sum (RA) +D. The ",
+                "halfword in storage addressed by EA is loaded into ",
                 "RT<sub>48:63</sub>. RT<sub>0:47</sub> are filled with a copy of bit 0 of the loaded ",
                 "halfword.",
                 "EA is placed into register RA.",
@@ -18279,10 +18219,10 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>. The halfword in storage addressed by ",
-                "EA is loaded into RT<sub>48:63</sub>. RT<sub>0:47</sub> are filled with a copy of ",
-                "bit 0 of the loaded halfword.",
+                "Let the effective address (EA) be the sum (RA)+(RB). ",
+                "The halfword in storage addressed by EA is loaded into ",
+                "RT<sub>48:63</sub>. RT<sub>0:47</sub> are filled with a copy of bit 0 of the loaded ",
+                "halfword.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
             ],
@@ -18343,9 +18283,9 @@
                 "RT := <sup>48</sup>0 || MEM(EA, 2)"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). The halfword in storage addressed by ",
-                "EA is loaded into RT<sub>48:63</sub>. RT<sub>0:47</sub> are set to 0.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
+                "The halfword in storage addressed by EA is loaded into ",
+                "RT<sub>48:63</sub>. RT<sub>0:47</sub> are set to 0.",
                 "This instruction creates a reservation for use by a ",
                 "sthcx. or waitrsv  instruction. A real address computed ",
                 "from the EA as described in Section 1.7.2.1 is associ",
@@ -18416,8 +18356,7 @@
                 "RT := <sup>48</sup>0 || load_data<sub>8:15</sub> || load_data<sub>0:7</sub>"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "Bits 0:7 of the halfword in storage addressed by EA are ",
                 "loaded into RT<sub>56:63</sub>. ",
                 "Bits 8:15 of the halfword in storage addressed by EA are ",
@@ -18484,7 +18423,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The halfword in storage addressed by EA is loaded into ",
                 "RT<sub>48:63</sub>. RT<sub>0:47</sub> are set to 0.",
-                "",
                 "For plhz, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Halfword and ",
@@ -18582,7 +18520,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The halfword in storage addressed by EA is loaded into ",
                 "RT<sub>48:63</sub>. RT<sub>0:47</sub> are set to 0.",
-                "",
                 "For plhz, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Halfword and ",
@@ -18703,8 +18640,8 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. The halfword in storage addressed ",
-                "by EA is loaded into RT<sub>48:63</sub>. RT<sub>0:47</sub> are set to 0."
+                "(RA|0)+(RB). The halfword in storage addressed by ",
+                "EA is loaded into RT<sub>48:63</sub>. RT<sub>0:47</sub> are set to 0."
             ],
             "intrinsics": []
         },
@@ -18748,8 +18685,8 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA)+<sub>D</sub>. ",
-                "The halfword in storage addressed by EA is loaded into ",
+                "Let the effective address (EA) be the sum (RA)+D. The ",
+                "halfword in storage addressed by EA is loaded into ",
                 "RT<sub>48:63</sub>. RT<sub>0:47</sub> are set to 0.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
@@ -18806,9 +18743,9 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>. The halfword in storage addressed by ",
-                "EA is loaded into RT<sub>48:63</sub>. RT<sub>0:47</sub> are set to 0.",
+                "Let the effective address (EA) be the sum (RA)+(RB). ",
+                "The halfword in storage addressed by EA is loaded into ",
+                "RT<sub>48:63</sub>. RT<sub>0:47</sub> are set to 0.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
             ],
@@ -18860,7 +18797,7 @@
             ],
             "body": [
                 "Let n = (32-RT). Let the effective address (EA) be the ",
-                "sum (RA|0)+<sub>D</sub>.",
+                "sum (RA|0)+D.",
                 "n consecutive words starting at EA are loaded into the ",
                 "low-order 32 bits of GPRs RT through 31. The ",
                 "high-order 32 bits of these GPRs are set to zero.",
@@ -18869,6 +18806,220 @@
                 "This instruction is not supported in Little-Endian mode. ",
                 "If it is executed in Little-Endian mode, the system align",
                 "ment error handler is invoked."
+            ],
+            "intrinsics": []
+        },
+        {
+            "description": "Load Quadword",
+            "form": "DQ-form",
+            "category": "Fixed-Point Facility",
+            "book": "I",
+            "mnemonics": [
+                {
+                    "mnemonic": "lq",
+                    "operands": [
+                        "RTp",
+                        "DQ(RA)"
+                    ],
+                    "release": "v2.03"
+                }
+            ],
+            "layout": [
+                {
+                    "name": "opcode",
+                    "size": "6",
+                    "value": "56"
+                },
+                {
+                    "name": "RTp",
+                    "size": "5"
+                },
+                {
+                    "name": "RA",
+                    "size": "5"
+                },
+                {
+                    "name": "DQ",
+                    "size": "12"
+                },
+                {
+                    "name": "reserved",
+                    "size": "4"
+                }
+            ],
+            "code": [
+                "if \u201clq\u201d  then",
+                "   EA := (RA|0) + EXTS64(DQ||0b0000)",
+                "if \u201cplq\u201d &amp; R=0 then",
+                "   EA := (RA|0) + EXTS64(d0||d1)",
+                "if \u201cplq\u201d &amp; R=1 then",
+                "   EA := CIA + EXTS64(d0||d1)",
+                "if Big-Endian byte ordering then",
+                "   RTp||RTp+1 := MEM(EA,16)",
+                "if \u201clq\u201d and Little-Endian byte ordering then",
+                "   RTp||RTp+1 := MEM(EA,16)",
+                "if \u201cplq\u201d and Little-Endian byte ordering then",
+                "   RTp+1||RTp := MEM(EA,16)"
+            ],
+            "body": [
+                "Prefix:",
+                "Suffix::",
+                "For lq, let the effective address (EA) be the sum of the ",
+                "contents of register RA, or the value 0 if RA=0, and the ",
+                "value DQ||0b0000, sign-extended to 64 bits.",
+                "For plq with R=0, let the effective address (EA) be the ",
+                "sum of the contents of register RA, or the value 0 if RA=0, ",
+                "and the value d0||d1, sign-extended to 64 bits.",
+                "For plq with R=1, let the effective address (EA) be the ",
+                "sum of the address of the instruction and the value ",
+                "d0||d1, sign-extended to 64 bits.",
+                "For Big-Endian byte ordering, the quadword in storage ",
+                "addressed by EA is loaded into RTp||RTp+1.",
+                "For lq and Little-Endian byte ordering, the quadword in ",
+                "storage addressed by EA is byte-reversed and loaded ",
+                "into RTp||RTp+1.",
+                "For plq and Little-Endian byte ordering, the quadword ",
+                "in storage addressed by EA is byte-reversed and loaded ",
+                "into RTp+1||RTp.",
+                "If RTp is odd or RTp=RA, the instruction form is invalid. If ",
+                "RTp=RA, an attempt to execute this instruction will invoke ",
+                "the system illegal instruction error handler. (The RTp=RA ",
+                "case includes the case of RTp=RA=0.)",
+                "The quadword in storage addressed by EA is loaded ",
+                "into an even-odd pair of GPRs as follows. In ",
+                "Big-Endian mode, the even-numbered GPR is loaded ",
+                "with the doubleword from storage addressed by EA and ",
+                "the odd-numbered GPR is loaded with the doubleword ",
+                "addressed by EA+8. In Little-Endian mode, the ",
+                "even-numbered GPR is loaded with the byte-reversed  ",
+                "doubleword from storage addressed by EA+8 and the ",
+                "odd-numbered GPR is loaded with the byte-reversed ",
+                "doubleword addressed by EA.",
+                "For plq, if R is equal to 1 and RA is not equal to 0, the ",
+                "instruction form is invalid.",
+                " ",
+                "Extended mnemonics for Prefixed Load Quadword:"
+            ],
+            "intrinsics": []
+        },
+        {
+            "description": "Prefixed Load Quadword",
+            "form": "8LS:D-form",
+            "category": "Fixed-Point Facility",
+            "book": "I",
+            "mnemonics": [
+                {
+                    "mnemonic": "plq",
+                    "operands": [
+                        "RTp",
+                        "D(RA)",
+                        "R"
+                    ],
+                    "release": "v3.1"
+                }
+            ],
+            "layout": [
+                {
+                    "name": "opcode",
+                    "size": "6",
+                    "value": "1"
+                },
+                {
+                    "name": "opcode",
+                    "size": "2",
+                    "value": "0"
+                },
+                {
+                    "name": "opcode",
+                    "size": "1",
+                    "value": "0"
+                },
+                {
+                    "name": "reserved",
+                    "size": "2"
+                },
+                {
+                    "name": "R",
+                    "size": "1"
+                },
+                {
+                    "name": "reserved",
+                    "size": "2"
+                },
+                {
+                    "name": "d0",
+                    "size": "18"
+                },
+                {
+                    "name": "opcode",
+                    "size": "6",
+                    "value": "56"
+                },
+                {
+                    "name": "RTp",
+                    "size": "5"
+                },
+                {
+                    "name": "RA",
+                    "size": "5"
+                },
+                {
+                    "name": "d1",
+                    "size": "16"
+                }
+            ],
+            "code": [
+                "if \u201clq\u201d  then",
+                "   EA := (RA|0) + EXTS64(DQ||0b0000)",
+                "if \u201cplq\u201d &amp; R=0 then",
+                "   EA := (RA|0) + EXTS64(d0||d1)",
+                "if \u201cplq\u201d &amp; R=1 then",
+                "   EA := CIA + EXTS64(d0||d1)",
+                "if Big-Endian byte ordering then",
+                "   RTp||RTp+1 := MEM(EA,16)",
+                "if \u201clq\u201d and Little-Endian byte ordering then",
+                "   RTp||RTp+1 := MEM(EA,16)",
+                "if \u201cplq\u201d and Little-Endian byte ordering then",
+                "   RTp+1||RTp := MEM(EA,16)"
+            ],
+            "body": [
+                "Prefix:",
+                "Suffix::",
+                "For lq, let the effective address (EA) be the sum of the ",
+                "contents of register RA, or the value 0 if RA=0, and the ",
+                "value DQ||0b0000, sign-extended to 64 bits.",
+                "For plq with R=0, let the effective address (EA) be the ",
+                "sum of the contents of register RA, or the value 0 if RA=0, ",
+                "and the value d0||d1, sign-extended to 64 bits.",
+                "For plq with R=1, let the effective address (EA) be the ",
+                "sum of the address of the instruction and the value ",
+                "d0||d1, sign-extended to 64 bits.",
+                "For Big-Endian byte ordering, the quadword in storage ",
+                "addressed by EA is loaded into RTp||RTp+1.",
+                "For lq and Little-Endian byte ordering, the quadword in ",
+                "storage addressed by EA is byte-reversed and loaded ",
+                "into RTp||RTp+1.",
+                "For plq and Little-Endian byte ordering, the quadword ",
+                "in storage addressed by EA is byte-reversed and loaded ",
+                "into RTp+1||RTp.",
+                "If RTp is odd or RTp=RA, the instruction form is invalid. If ",
+                "RTp=RA, an attempt to execute this instruction will invoke ",
+                "the system illegal instruction error handler. (The RTp=RA ",
+                "case includes the case of RTp=RA=0.)",
+                "The quadword in storage addressed by EA is loaded ",
+                "into an even-odd pair of GPRs as follows. In ",
+                "Big-Endian mode, the even-numbered GPR is loaded ",
+                "with the doubleword from storage addressed by EA and ",
+                "the odd-numbered GPR is loaded with the doubleword ",
+                "addressed by EA+8. In Little-Endian mode, the ",
+                "even-numbered GPR is loaded with the byte-reversed  ",
+                "doubleword from storage addressed by EA+8 and the ",
+                "odd-numbered GPR is loaded with the byte-reversed ",
+                "doubleword addressed by EA.",
+                "For plq, if R is equal to 1 and RA is not equal to 0, the ",
+                "instruction form is invalid.",
+                " ",
+                "Extended mnemonics for Prefixed Load Quadword:"
             ],
             "intrinsics": []
         },
@@ -18924,15 +19075,12 @@
                 "RESERVE := 1",
                 "RESERVE_LENGTH := 16",
                 "RESERVE_ADDR := real_addr(EA)",
-                "RTp := MEM(EA, 16)",
-                "",
-                "",
-                ""
+                "RTp := MEM(EA, 16)"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). The quadword in storage addressed by ",
-                "EA is loaded into RTp.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
+                "The quadword in storage addressed by EA is loaded ",
+                "into RTp.",
                 "This instruction creates a reservation for use by a ",
                 "stqcx. or waitrsv  instruction. A real address computed ",
                 "from the EA as described in Section 1.7.2.1 is associ",
@@ -18945,12 +19093,9 @@
                 "gram will perform a subsequent store to the double",
                 "word in storage addressed by EA before some other ",
                 "processor attempts to modify it.",
-                "",
-                "",
-                "",
                 "EA must be a multiple of 16. If it is not, either the sys",
-                "tem alignment error handler is invoked or",
-                " the results are boundedly undefined.",
+                "tem alignment error handler is invoked or the results ",
+                "are boundedly undefined.",
                 "If RTp is odd, RTp=RA, or RTp=RB the instruction form ",
                 "is invalid. If RTp=RA or RTp=RB, an attempt to execute ",
                 "this instruction will invoke the system illegal instruction ",
@@ -19106,10 +19251,10 @@
                 "   n := n - 1"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. Let n=XER<sub>57:63</sub>; n is the number of ",
-                "bytes to load. Let nr=CEIL(n/4); nr is the number of reg",
-                "isters to receive data.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
+                "Let n=XER<sub>57:63</sub>; n is the number of bytes to load. Let ",
+                "nr=CEIL(n/4); nr is the number of registers to receive ",
+                "data.",
                 "If n&gt;0, n consecutive bytes starting at EA are loaded ",
                 "into GPRs RT through RT+nr-1. Data are loaded into the ",
                 "low-order four bytes of each GPR; the high-order four ",
@@ -19205,7 +19350,6 @@
                 "VSR[VRT+32].",
                 "The contents of doubleword element 1 of VSR[VRT+32] ",
                 "are set to 0.",
-                "",
                 "For plxsd, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load VSX Scalar ",
@@ -19315,7 +19459,6 @@
                 "VSR[VRT+32].",
                 "The contents of doubleword element 1 of VSR[VRT+32] ",
                 "are set to 0.",
-                "",
                 "For plxsd, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load VSX Scalar ",
@@ -19370,7 +19513,7 @@
             "code": [
                 "if MSR.VSX=0 then VSX_Unavailable()",
                 "",
-                "EA ~ ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA ~ ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "",
                 "VSR[32\u00d7TX+T].dword[0] ~ MEM(EA,8)",
                 "VSR[32\u00d7TX+T].dword[1] ~ 0x0000_0000_0000_0000"
@@ -19470,7 +19613,6 @@
                 "0 of VSR[VRT+32] in double-precision format.",
                 "The contents of doubleword element 1 of VSR[VRT+32] ",
                 "are set to 0.",
-                "",
                 "For plxssp, if R is equal to 1 and RA is not equal to 0, ",
                 "the instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load VSX Scalar ",
@@ -19583,7 +19725,6 @@
                 "0 of VSR[VRT+32] in double-precision format.",
                 "The contents of doubleword element 1 of VSR[VRT+32] ",
                 "are set to 0.",
-                "",
                 "For plxssp, if R is equal to 1 and RA is not equal to 0, ",
                 "the instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load VSX Scalar ",
@@ -19638,7 +19779,7 @@
             "code": [
                 "if MSR.VSX=0 then VSX_Unavailable()",
                 "",
-                "EA ~ ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA ~ ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "",
                 "load_data ~ MEM(EA,4)",
                 "result ~ bfp_CONVERT_FROM_BFP32(MEM(EA,4))",
@@ -20008,7 +20149,6 @@
                 "contents of the quadword in storage at address EA are ",
                 "placed into load_data in such an order that;",
                 "load_data is placed into VSR[XT].",
-                "",
                 "For plxv, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load VSX Vector:"
@@ -20124,7 +20264,6 @@
                 "contents of the quadword in storage at address EA are ",
                 "placed into load_data in such an order that;",
                 "load_data is placed into VSR[XT].",
-                "",
                 "For plxv, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load VSX Vector:"
@@ -20569,8 +20708,6 @@
                 "contents of the octword in storage at address EA are ",
                 "placed into load_data in such an order that;",
                 "Bits 0-127 of load_data are placed into VSR[XTp].",
-                "",
-                "",
                 "For plxvp, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Load VSX Vector Paired Pre",
@@ -20687,8 +20824,6 @@
                 "contents of the octword in storage at address EA are ",
                 "placed into load_data in such an order that;",
                 "Bits 0-127 of load_data are placed into VSR[XTp].",
-                "",
-                "",
                 "For plxvp, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Load VSX Vector Paired Pre",
@@ -21446,7 +21581,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "eb := EA.bit[60:63]",
                 " ",
                 "VSR[VRT+32] := undefined",
@@ -21520,7 +21655,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "EA := EA &amp; 0xFFFF_FFFF_FFFF_FFFE",
                 "eb := EA.bit[60:63]",
                 " ",
@@ -21590,7 +21725,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "EA := EA &amp; 0xFFFF_FFFF_FFFF_FFFC",
                 "eb := EA.bit[60:63]",
                 "",
@@ -21660,7 +21795,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "EA := EA &amp; 0xFFFF_FFFF_FFFF_FFF0",
                 "",
                 "VSR[VRT+32] := MEM(EA, 16)"
@@ -21722,7 +21857,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "EA := EA &amp; 0xFFFF_FFFF_FFFF_FFF0",
                 "",
                 "VSR[VRT+32] := MEM(EA, 16)",
@@ -21962,7 +22097,6 @@
                 "The word in storage addressed by EA is loaded into ",
                 "RT<sub>32:63</sub>. RT<sub>0:31</sub> are filled with a copy of bit 0 of the loaded ",
                 "word.",
-                "",
                 "For plwa, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Word Alge",
@@ -22061,7 +22195,6 @@
                 "The word in storage addressed by EA is loaded into ",
                 "RT<sub>32:63</sub>. RT<sub>0:31</sub> are filled with a copy of bit 0 of the loaded ",
                 "word.",
-                "",
                 "For plwa, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Word Alge",
@@ -22121,9 +22254,9 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. The word in storage addressed by EA ",
-                "is loaded into RT<sub>32:63</sub>. RT<sub>0:31</sub> are filled with a copy of bit ",
-                "0 of the loaded word."
+                "(RA|0)+(RB). The word in storage addressed by EA is ",
+                "loaded into RT<sub>32:63</sub>. RT<sub>0:31</sub> are filled with a copy of bit 0 ",
+                "of the loaded word."
             ],
             "intrinsics": []
         },
@@ -22177,10 +22310,10 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>. The word in storage addressed by EA ",
-                "is loaded into RT<sub>32:63</sub>. RT<sub>0:31</sub> are filled with a copy of bit ",
-                "0 of the loaded word.",
+                "Let the effective address (EA) be the sum (RA)+(RB). ",
+                "The word in storage addressed by EA is loaded into ",
+                "RT<sub>32:63</sub>. RT<sub>0:31</sub> are filled with a copy of bit 0 of the loaded ",
+                "word.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
             ],
@@ -22241,9 +22374,9 @@
                 "RT := <sup>32</sup>0 || MEM(EA, 4)"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). The word in storage addressed by EA ",
-                "is loaded into RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
+                "The word in storage addressed by EA is loaded into ",
+                "RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0.",
                 "This instruction creates a reservation for use by a ",
                 "stwcx. or waitrsv  instruction. A real address com",
                 "puted from the EA as described in Section 1.7.2.1 is ",
@@ -22388,7 +22521,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. ",
+                "(RA|0)+(RB). ",
                 "Bits 0:7 of the word in storage addressed by EA are ",
                 "loaded into RT<sub>56:63</sub>. ",
                 "Bits 8:15 of the word in storage addressed by EA are ",
@@ -22459,7 +22592,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The word in storage addressed by EA is loaded into ",
                 "RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0.",
-                "",
                 "For plwz, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Word and ",
@@ -22557,7 +22689,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The word in storage addressed by EA is loaded into ",
                 "RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0.",
-                "",
                 "For plwz, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Load Word and ",
@@ -22617,8 +22748,8 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). The word in storage addressed by EA ",
-                "is loaded into RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0.",
+                "(RA|0)+(RB). The word in storage addressed by EA is ",
+                "loaded into RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0.",
                 "The storage access caused by this instruction is per",
                 "formed as though the specified storage location is ",
                 "Caching Inhibited and Guarded.",
@@ -22678,8 +22809,8 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. The word in storage addressed by EA ",
-                "is loaded into RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0."
+                "(RA|0)+(RB). The word in storage addressed by EA is ",
+                "loaded into RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0."
             ],
             "intrinsics": []
         },
@@ -22723,9 +22854,9 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA) +<sub>D</sub>. ",
-                "The word in storage addressed by EA is loaded into ",
-                "RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0.",
+                "Let the effective address (EA) be the sum (RA) +D. The ",
+                "word in storage addressed by EA is loaded into RT<sub>32:63</sub>. ",
+                "RT<sub>0:31</sub> are set to 0.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
             ],
@@ -22781,9 +22912,9 @@
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>. The word in storage addressed by EA is ",
-                "loaded into RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0.",
+                "Let the effective address (EA) be the sum (RA)+(RB). ",
+                "The word in storage addressed by EA is loaded into ",
+                "RT<sub>32:63</sub>. RT<sub>0:31</sub> are set to 0.",
                 "EA is placed into register RA.",
                 "If RA=0 or RA=RT, the instruction form is invalid."
             ],
@@ -27966,9 +28097,6 @@
                 "Extended mnemonics for Move From Time Base: ",
                 "  ",
                 " ",
-                " ",
-                " ",
-                " ",
                 "",
                 "Since the update frequency of the Time Base is imple",
                 "mentation-dependent, the algorithm for converting the ",
@@ -28697,7 +28825,6 @@
                 "  ",
                 "  ",
                 "  ",
-                "  ",
                 "  "
             ],
             "intrinsics": []
@@ -28751,18 +28878,13 @@
             ],
             "code": [
                 "if L = 0 then",
-                "",
-                "",
-                "",
-                "",
-                "",
                 "   MSR<sub>48</sub> := (RS)<sub>48</sub> | (RS)<sub>49</sub> ",
                 "   MSR<sub>58</sub> := ((RS)<sub>58</sub> | (RS)<sub>49</sub><sub>)</sub>",
                 "<sub>    &amp; </sub>~(MSR<sub>41 </sub><sub>&amp; MSR</sub><sub>3 </sub><sub>&amp; (</sub>~(RS)<sub>49</sub><sub>))</sub>",
                 "   MSR<sub>59</sub> := ((RS)<sub>59</sub> | (RS)<sub>49</sub><sub>)</sub>",
                 "<sub>    &amp; </sub>~(MSR<sub>41 </sub><sub>&amp; MSR</sub><sub>3 </sub><sub>&amp; (</sub>~(RS)<sub>49</sub><sub>))</sub>",
-                "",
-                "",
+                "   MSR<sub>0:2 4:</sub><sub>40 42:47 49:50 52:57 60:62</sub> ",
+                "       := (RS)<sub>0:2 4 6:</sub><sub>40 42:47 49:50 52:57 60:62</sub>",
                 "else",
                 "   MSR<sub>48 62</sub> := (RS)<sub>48 62</sub>"
             ],
@@ -28782,7 +28904,6 @@
                 "context (e.g., a reference to an mtmsrd instruction that ",
                 "modifies an MSR bit other than the EE or RI bit implies ",
                 "L=0).",
-                "  ",
                 "  ",
                 "  ",
                 "  ",
@@ -28931,8 +29052,7 @@
                 "Examples of extended mnemonics for Move To Special ",
                 "Purpose Register:",
                 "     ",
-                "  ",
-                " "
+                "  "
             ],
             "intrinsics": []
         },
@@ -29052,10 +29172,8 @@
                 "Execution of this instruction specifying an SPR number ",
                 "that is undefined for the implementation causes one of ",
                 "the following.",
-                "",
                 "  ",
-                "  ",
-                ""
+                "  "
             ],
             "intrinsics": []
         },
@@ -31185,8 +31303,7 @@
                 "and the result is placed into register RA.",
                 "The preferred \u201cno-op\u201d (an instruction that does nothing) ",
                 "is:",
-                "Example of extended mnemonics for OR Immediate:",
-                "  "
+                "Example of extended mnemonics for OR Immediate:"
             ],
             "intrinsics": []
         },
@@ -31563,7 +31680,6 @@
                 "one bits the value 1 is placed into RA<sub>32:63</sub>; otherwise the ",
                 "value 0 is placed into RA<sub>32:63</sub>.",
                 "  ",
-                "  ",
                 ""
             ],
             "intrinsics": []
@@ -31634,15 +31750,13 @@
                 "  else",
                 "    CR0:=0b001||XER<sub>SO</sub>",
                 "clear the state of the Copy-Paste Facility",
-                "",
                 ""
             ],
             "body": [
                 "If there was a copy-paste sequence error or a transla",
                 "tion conflict, set CR0 to indicate failure.  Otherwise, ",
                 "continue as follows.",
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). ",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
                 "If L=1, then set metadata bits in the copy buffer to zero.",
                 "The physical target of the operation, and by implication ",
                 "the function to be performed, is determined by the real ",
@@ -31657,7 +31771,6 @@
                 "based on the completion status.",
                 "",
                 "The state of the Copy-Paste Facility is cleared.",
-                "",
                 "If MSR<sub>PR</sub>=1, paste. with L=0 is an invalid form.",
                 "If the EA is not a multiple of 128, the system alignment ",
                 "error handler is invoked.",
@@ -31890,40 +32003,31 @@
                 }
             ],
             "code": [
-                "",
-                "",
+                " ",
                 "MSR<sub>51</sub> := (MSR<sub>3</sub> &amp; SRR1<sub>51</sub>) | ((~MSR<sub>3</sub>) &amp; MSR<sub>51</sub>)",
                 "MSR3 := MSR<sub>3</sub> &amp; SRR1<sub>3 </sub>",
-                "",
                 "MSR<sub>48</sub> := SRR1<sub>48</sub> | SRR1<sub>49</sub> ",
                 "MSR<sub>58</sub> := (CTR<sub>58</sub> | CTR<sub>49</sub><sub>)</sub>",
                 "<sub>    &amp; </sub>~(MSR<sub>41 </sub><sub>&amp; MSR</sub><sub>3 </sub><sub>&amp; (</sub>~CTR<sub>49</sub><sub>))</sub>",
                 "MSR<sub>59</sub> := (CTR<sub>59</sub> | CTR<sub>49)</sub>",
                 "<sub>    &amp; </sub>~(MSR<sub>41 </sub><sub>&amp; MSR</sub><sub>3 </sub><sub>&amp; (</sub>~CTR<sub>49</sub><sub>))</sub>",
-                "",
+                "MSR<sub>0:2 4:</sub><sub>32 37:40 49:50 52:57 60:63</sub>:=SRR1<sub>0:2 4:</sub><sub>32 37:40 49:50 52:57 60:63</sub>",
                 "NIA :=<sub>iea</sub> SRR0<sub>0:61</sub> || 0b00"
             ],
             "body": [
-                "",
-                "",
-                "",
-                "If MSR<sub>3</sub>=1 then ",
-                "bits 3 and 51 of SRR1 are placed into the correspond",
-                "ing bits of the MSR. ",
-                "",
-                "",
-                " The result of ORing bits 48 and 49 ",
-                "of SRR1 is placed into MSR<sub>48</sub>. The result of ANDing bit ",
-                "41 of the MSR with bit 3 of the MSR and with the com",
-                "plement of bit 49 of SRR1 is complemented and then ",
-                "ANDed with the result of ORing bits 58 and 49 of SRR1 ",
-                "and placed into MSR<sub>58</sub>. The result of ANDing bit 41 of ",
-                "the MSR with bit 3 of the MSR and with the comple",
-                "ment of bit 49 of SRR1 is complemented and then ",
-                "ANDed with the result of ORing bits 59 and 49 of SRR1 ",
-                "and placed into MSR<sub>59</sub>. ",
-                "",
-                "",
+                "If MSR<sub>3</sub>=1 then bits 3 and 51 of SRR1 are placed into ",
+                "the corresponding bits of the MSR.  The result of ORing ",
+                "bits 48 and 49 of SRR1 is placed into MSR<sub>48</sub>. The ",
+                "result of ANDing bit 41 of the MSR with bit 3 of the ",
+                "MSR and with the complement of bit 49 of SRR1 is ",
+                "complemented and then ANDed with the result of ",
+                "ORing bits 58 and 49 of SRR1 and placed into MSR<sub>58</sub>. ",
+                "The result of ANDing bit 41 of the MSR with bit 3 of the ",
+                "MSR and with the complement of bit 49 of SRR1 is ",
+                "complemented and then ANDed with the result of ",
+                "ORing bits 59 and 49 of SRR1 and placed into MSR<sub>59</sub>. ",
+                "Bits 0:2, 4:32, 37:40, 49:50, 52:57, and 60:63 of SRR1 ",
+                "are placed into the corresponding bits of the MSR.",
                 "If  the new MSR value does not enable any pending ",
                 "exceptions, then the next instruction is fetched, under ",
                 "control of the new MSR value, from the address ",
@@ -31982,72 +32086,17 @@
                 }
             ],
             "code": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
                 "MSR<sub>48</sub> := CTR<sub>48</sub> | CTR<sub>49</sub> ",
                 "MSR<sub>58</sub> := (CTR<sub>58</sub> | CTR<sub>49</sub><sub>)</sub>",
                 "<sub>    &amp; </sub>~(MSR<sub>41 </sub><sub>&amp; MSR</sub><sub>3 </sub><sub>&amp; (</sub>~CTR<sub>49</sub><sub>))</sub>",
                 "MSR<sub>59</sub> := (CTR<sub>59</sub> | CTR<sub>49)</sub>",
                 "<sub>    &amp; </sub>~(MSR<sub>41 </sub><sub>&amp; MSR</sub><sub>3 </sub><sub>&amp; (</sub>~CTR<sub>49</sub><sub>))</sub>",
-                "",
+                "MSR<sub>0:2 4:</sub><sub>32 37:40 49:50 52:57 60:63</sub>:=CTR<sub>0:2 4:</sub><sub>32 37:40 49:50 52:57 60:63</sub>",
                 "NIA :=<sub>iea</sub> LR<sub>0:61</sub> || 0b00"
             ],
             "body": [
                 "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "I",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                " ",
-                "The result of ORing bits 48 and 49 of the Count Regis",
+                " The result of ORing bits 48 and 49 of the Count Regis",
                 "ter is placed into MSR<sub>48</sub>. The result of ANDing bit 41 of ",
                 "the MSR with bit 3 of the MSR and with the comple",
                 "ment of bit 49 of the Count Register is complemented ",
@@ -32057,9 +32106,9 @@
                 "MSR and with the complement of bit 49 of the Count ",
                 "Register is complemented and then ANDed with the ",
                 "result of ORing bits 59 and 49 of the Count Register ",
-                "and placed into MSR<sub>59</sub>. ",
-                "",
-                "",
+                "and placed into MSR<sub>59</sub>. Bits 0:2, 4:32, 37:40, 49:50, ",
+                "52:57, and 60:63 of the Count Register are placed into ",
+                "the corresponding bits of the MSR.",
                 "If the new MSR value does not enable any pending ",
                 "exceptions, then the next instruction is fetched, under ",
                 "control of the new MSR value, from the address LR<sub>0:61</sub> ",
@@ -32074,7 +32123,7 @@
                 "executed next had the interrupt not occurred.",
                 "This instruction is privileged and context synchronizing.",
                 "  ",
-                "  "
+                ""
             ],
             "intrinsics": []
         },
@@ -33066,19 +33115,18 @@
                 "search is performed as if it were being performed for ",
                 "purposes of address translation. That is, in order for a ",
                 "given entry to satisfy the search, the entry must be ",
-                "valid (V=1), (RB)<sub>0:63-s</sub> must equal SLBE[ESID<sub>0:63-s</sub>] ",
-                "(where 2s is the segment size selected by the B field in ",
-                "the entry). If exactly ",
-                "one matching entry is found, the contents of the B, ",
-                "VSID, K<sub>s</sub>, K<sub>p</sub>, N, L, C, and LP fields of the entry are ",
-                "placed into register RT. If no matching entry is found, ",
-                "register RT is set to 0. If more than one matching entry ",
-                "is found, either one of the matching entries is used, as ",
-                "if it were the only matching entry, or a Machine Check ",
-                "occurs. If a Machine Check occurs, register RT, CR ",
-                "Field 0 are set to ",
-                "undefined values, and the description below of how this ",
-                "register and set does not apply.",
+                "valid (V=1), and (RB)<sub>0:63-s</sub> must equal ",
+                "SLBE[ESID<sub>0:63-s</sub>] (where 2s is the segment size ",
+                "selected by the B field in the entry).If exactly one ",
+                "matching entry is found, the contents of the B, VSID, ",
+                "K<sub>s</sub>, K<sub>p</sub>, N, L, C, and LP fields of the entry are placed ",
+                "into register RT. If no matching entry is found, register ",
+                "RT is set to 0. If more than one matching entry is found, ",
+                "either one of the matching entries is used, as if it were ",
+                "the only matching entry, or a Machine Check occurs. If ",
+                "a Machine Check occurs, register RT, and CR Field 0 ",
+                "are set to undefined values, and the description below ",
+                "of how this register and this field is set does not apply.",
                 "The contents of registers RT and RB are interpreted as ",
                 "shown in Figure55.",
                 "RT",
@@ -33090,26 +33138,24 @@
                 "RT<sub>54</sub>N",
                 "RT<sub>55</sub>L",
                 "RT<sub>56</sub>C",
-                "RT<sub>57</sub>",
+                "RT<sub>57</sub>set to 0b0",
                 "RT<sub>58:59</sub>LP",
                 "RT<sub>60:63</sub>set to 0b0000",
                 "RB<sub>0:35</sub>ESID",
-                "",
-                "",
-                "",
+                "RB<sub>36:39</sub>must be 0b0000",
+                "RB<sub>40:63</sub>must be 0x000000",
                 "If s &gt; 28, RT<sub>80-s:51</sub> are set to zeros. On implementa",
                 "tions that support a virtual address size of only n bits, n ",
                 "&lt; 78, RT<sub>2:79-n</sub> are set to zeros.",
-                "CR Field 0 set ",
-                "as follows. j is a 1-bit value that is equal to 0b1 if a ",
-                "matching entry was found. Otherwise, j is 0b0.  When ",
-                "LPCR<sub>UPRT</sub>\u00b90,  j=0b0.",
+                "CR Field 0 is set as follows. j is a 1-bit value that is ",
+                "equal to 0b1 if a matching entry was found. Otherwise, j ",
+                "is 0b0.  When LPCR<sub>UPRT</sub>\u00b90,  j=0b0.",
                 "The hardware ignores the contents of RB<sub>36:38 40:63</sub>.",
                 "If this instruction is executed in 32-bit mode, (RB)<sub>0:31</sub> ",
                 "must be zeros (i.e., the ESID must be in the range ",
                 "0-15).",
                 "This instruction is privileged.",
-                "  ",
+                "",
                 "  "
             ],
             "intrinsics": []
@@ -33251,9 +33297,9 @@
                 "  ",
                 " ",
                 "",
-                " ",
                 "",
-                " "
+                "",
+                ""
             ],
             "intrinsics": []
         },
@@ -33349,8 +33395,7 @@
                 "TSE=0, making it hypervisor privileged.",
                 "  ",
                 "  ",
-                " ",
-                " ",
+                "",
                 ""
             ],
             "intrinsics": []
@@ -33402,7 +33447,6 @@
                 "if, for SLB entry that translates ",
                 "  or most recently translated ea,",
                 "    entry_class = (RB)<sub>36 </sub>and     ",
-                "",
                 "    entry_seg_size = size specified in (RB)<sub>37:38</sub>",
                 "then for SLB entry (if any) that translates ea",
                 "  SLBE<sub>V</sub><sub> </sub>:= 0",
@@ -33426,25 +33470,24 @@
                 "RB<sub>0:35</sub>ESID",
                 "RB<sub>36</sub>Class",
                 "RB<sub>37:38</sub>B",
-                "",
+                "RB<sub>39:63</sub>must be 0b0 || 0x000000",
                 "",
                 "Let the Effective Address (EA) be any EA for which ",
-                "EA<sub>0:35</sub> = (RB)<sub>0:35</sub>.  Let the class be (RB)<sub>36</sub>.  ",
-                " Let the segment size be equal to the ",
-                "segment size specified in (RB)<sub>37:38</sub>; the allowed values ",
-                "of (RB)<sub>37:38</sub>, and the correspondence between the val",
-                "ues and the segment size, are the same as for the B ",
-                "field in the SLBE (see Figure29 on page1218).",
-                "The class value and segment size must be ",
-                "the same as the class value and segment ",
-                "size in the SLB entry that translates the EA, or the val",
-                "ues that were in the SLB entry that most recently trans",
-                "lated the EA if the translation is no longer in the SLB; if ",
-                "these values are not the same, it is implementa",
-                "tion-dependent whether the SLB entry (or implementa",
-                "tion-dependent translation information) that translates ",
-                "the EA is invalidated, and the next paragraph need not ",
-                "apply.",
+                "EA<sub>0:35</sub> = (RB)<sub>0:35</sub>.  Let the class be (RB)<sub>36</sub>.   Let the ",
+                "segment size be equal to the segment size specified in ",
+                "(RB)<sub>37:38</sub>; the allowed values of (RB)<sub>37:38</sub>, and the cor",
+                "respondence between the values and the segment ",
+                "size, are the same as for the B field in the SLBE (see ",
+                "Figure29 on page1218).",
+                "The class value and segment size must be the same as ",
+                "the class value and segment size in the SLB entry that ",
+                "translates the EA, or the values that were in the SLB ",
+                "entry that most recently translated the EA if the transla",
+                "tion is no longer in the SLB; if these values are not the ",
+                "same, it is implementation-dependent whether the SLB ",
+                "entry (or implementation-dependent translation infor",
+                "mation) that translates the EA is invalidated, and the ",
+                "next paragraph need not apply.",
                 "If the SLB contains only a single entry that translates ",
                 "the EA, then that is the only SLB entry that is invali",
                 "dated, except that it is implementation-dependent ",
@@ -33470,9 +33513,7 @@
                 "   ",
                 " ",
                 "  ",
-                "  ",
-                " ",
-                " "
+                ""
             ],
             "intrinsics": []
         },
@@ -33529,7 +33570,6 @@
                 "  if, for each SLB entry that",
                 "  translates or most recently translated ea",
                 "    entry_class = (RB)<sub>36 </sub>and",
-                "",
                 "    entry_seg_size = size specified in (RB)<sub>37:38</sub>",
                 "  then for SLB entry (if any)",
                 "  that translates ea and is not software-created",
@@ -33557,31 +33597,30 @@
                 "RB<sub>0:35</sub>ESID",
                 "RB<sub>36</sub>Class",
                 "RB<sub>37:38</sub>B",
-                "",
-                "",
+                "RB<sub>39:63</sub>must be 0b0 || 0x000000",
                 "",
                 "Let the target PID be RS<sub>0:31</sub>.  If the instruction is exe",
                 "cuted in hypervisor state, let the target LPID be ",
                 "RS<sub>32:63</sub>; otherwise let the target LPID be the contents ",
                 "of LPIDR.  Let the Effective Address (EA) be any EA for ",
-                "which EA<sub>0:35</sub> = (RB)<sub>0:35</sub>.  Let the class be (RB)<sub>36</sub>.  ",
-                " Let the segment size be equal ",
-                "to the segment size specified in (RB)<sub>37:38</sub>; the allowed ",
-                "values of (RB)<sub>37:38</sub>, and the correspondence between ",
-                "the values and the segment size, are the same as for ",
-                "the B field in the SLBE (see Figure29 on page1218).",
+                "which EA<sub>0:35</sub> = (RB)<sub>0:35</sub>.  Let the class be (RB)<sub>36</sub>.   Let ",
+                "the segment size be equal to the segment size speci",
+                "fied in (RB)<sub>37:38</sub>; the allowed values of (RB)<sub>37:38</sub>, and ",
+                "the correspondence between the values and the seg",
+                "ment size, are the same as for the B field in the SLBE ",
+                "(see Figure29 on page1218).",
                 "Only SLBs for threads running on behalf of target_LPID ",
                 "and target_PID are searched.  Software-created ",
-                "entries are not invalidated.  The class value ",
-                "and segment size must be the same as the class value",
-                " and segment size in the SLB entry that trans",
-                "lates the EA, or the values that were in the SLB entry ",
-                "that most recently translated the EA if the translation is ",
-                "no longer in the SLB; if these values are not the same, ",
-                "it is implementation-dependent whether the SLB entry ",
-                "(or implementation-dependent translation information) ",
-                "that translates the EA is invalidated, and the next para",
-                "graph need not apply.",
+                "entries are not invalidated.  The class value and seg",
+                "ment size must be the same as the class value and ",
+                "segment size in the SLB entry that translates the EA, or ",
+                "the values that were in the SLB entry that most recently ",
+                "translated the EA if the translation is no longer in the ",
+                "SLB; if these values are not the same, it is implementa",
+                "tion-dependent whether the SLB entry (or implementa",
+                "tion-dependent translation information) that translates ",
+                "the EA is invalidated, and the next paragraph need not ",
+                "apply.",
                 "If the SLB contains only a single entry that translates ",
                 "the EA, then that is the only SLB entry that is invali",
                 "dated, except that it is implementation-dependent ",
@@ -33612,9 +33651,7 @@
                 "   ",
                 " ",
                 " ",
-                "  ",
-                " ",
-                " "
+                ""
             ],
             "intrinsics": []
         },
@@ -33687,7 +33724,7 @@
                 "The hardware ignores the contents of RB<sub>0:51</sub>.",
                 "This instruction is privileged.",
                 "The use of the L field is implementation specific.",
-                " "
+                ""
             ],
             "intrinsics": []
         },
@@ -33745,10 +33782,9 @@
                 "bits 52:63 of register RB.  When LPCR<sub>UPRT</sub>=1, only the ",
                 "first four entries can be read, so bits 52:61 of register ",
                 "RB are ignored.  If the specified entry is valid (V=1), the ",
-                "contents of the B, VSID, K<sub>s</sub>, K<sub>p</sub>, N, L, C,  and LP ",
-                "fields of the entry are placed into register RT. The con",
-                "tents of these registers are interpreted as shown in ",
-                "Figure53.",
+                "contents of the B, VSID, K<sub>s</sub>, K<sub>p</sub>, N, L, C,  and LP fields ",
+                "of the entry are placed into register RT. The contents of ",
+                "these registers are interpreted as shown in Figure53.",
                 "RT",
                 "RB",
                 "On implementations that support a virtual address size ",
@@ -33827,7 +33863,7 @@
                 "RS<sub>54</sub>N",
                 "RS<sub>55</sub>L",
                 "RS<sub>56</sub>C",
-                "",
+                "RS<sub>57</sub>must be 0b0",
                 "RS<sub>58:59</sub>LP",
                 "RS<sub>60:63</sub>must be 0b0000",
                 "RB<sub>0:35</sub>ESID",
@@ -33850,7 +33886,6 @@
                 "LPCR<sub>UPRT</sub>=1, and cannot be used  to invalidate the ",
                 "translation contained in an SLB entry.",
                 "This instruction is privileged.",
-                "  ",
                 "  ",
                 ""
             ],
@@ -33946,7 +33981,7 @@
                 "for multiple partitions.)",
                 "Invalidation Selector (IS) (found in RB) specifies the ",
                 "scope of the context to be invalidated.",
-                " ",
+                "",
                 "The IS\u00b90 RIC=2 variants of tlbie and tlbiel perform the ",
                 "same TLB invalidations as the corresponding RIC=0 ",
                 "variants, but in addition invalidate Page Walk Cache ",
@@ -34514,9 +34549,7 @@
                 "set equal to (RS), and CA and CA32 to be set to 0. Shift ",
                 "amounts from 64 to 127 give a result of 64 sign bits in ",
                 "RA, and cause CA and CA32 to receive the sign bit of ",
-                "(RS).",
-                "",
-                ""
+                "(RS)."
             ],
             "intrinsics": []
         },
@@ -34608,8 +34641,6 @@
                 "otherwise CA and CA32 are set to 0. A shift amount of ",
                 "zero causes RA to be set equal to (RS), and CA and CA32 ",
                 "to be set to 0.",
-                "",
-                "",
                 "Special Registers Altered:"
             ],
             "intrinsics": []
@@ -34704,10 +34735,7 @@
                 "RA to receive EXTS((RS)<sub>32:63</sub><sub>)</sub>, and CA and CA32 to be set ",
                 "to 0. Shift amounts from 32 to 63 give a result of 64 ",
                 "sign bits, and cause CA and CA32 to receive the sign bit ",
-                "of (RS)<sub>32:63</sub>.",
-                "",
-                "",
-                ""
+                "of (RS)<sub>32:63</sub>."
             ],
             "intrinsics": []
         },
@@ -34796,9 +34824,7 @@
                 "and any 1-bits are shifted out of position 63; otherwise ",
                 "CA and CA32 are set to 0. A shift amount of zero causes ",
                 "RA to receive EXTS((RS)<sub>32:63</sub><sub>)</sub>, and CA and CA32 to be set ",
-                "to 0.",
-                "",
-                ""
+                "to 0."
             ],
             "intrinsics": []
         },
@@ -35009,8 +35035,7 @@
                 "if \u201cpstb\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 1) := (RS)<sub>56:63</sub>",
-                ""
+                "MEM(EA, 1) := (RS)<sub>56:63</sub>"
             ],
             "body": [
                 "Prefix:",
@@ -35026,7 +35051,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "(RS)<sub>56:63</sub> are stored into the byte in storage addressed ",
                 "by EA.",
-                "",
                 "For pstb, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Byte:"
@@ -35107,8 +35131,7 @@
                 "if \u201cpstb\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 1) := (RS)<sub>56:63</sub>",
-                ""
+                "MEM(EA, 1) := (RS)<sub>56:63</sub>"
             ],
             "body": [
                 "Prefix:",
@@ -35124,7 +35147,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "(RS)<sub>56:63</sub> are stored into the byte in storage addressed ",
                 "by EA.",
-                "",
                 "For pstb, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Byte:"
@@ -35179,13 +35201,12 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 1) := (RS)<sub>56:63</sub>",
-                ""
+                "MEM(EA, 1) := (RS)<sub>56:63</sub>"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). (RS)<sub>56:63</sub> are stored into the byte in ",
-                "storage addressed by EA.",
+                "(RA|0)+(RB). (RS)<sub>56:63</sub> are stored into the byte in stor",
+                "age addressed by EA.",
                 "The storage access caused by this instruction is per",
                 "formed as though the specified storage location is ",
                 "Caching Inhibited and Guarded.",
@@ -35246,7 +35267,6 @@
                 "  if RESERVE_LENGTH = 1 &amp;",
                 "     RESERVE_ADDR = real_addr(EA) then",
                 "      MEM(EA, 1) := (RS)<sub>56:63</sub>",
-                "",
                 "      undefined_case  := 0",
                 "      store_performed := 1",
                 "   else",
@@ -35264,19 +35284,14 @@
                 "  u1 := undefined 1-bit value",
                 "  if u1 then",
                 "    MEM(EA, 1) := (RS)<sub>56:63</sub>",
-                "",
                 "  u2 := undefined 1-bit value",
                 "  CR0 := 0b00 || u2 || XER<sub>SO</sub>",
-                "",
                 "else",
                 "  CR0 := 0b00 || store_performed || XER<sub>SO</sub>",
-                "",
-                "",
                 "RESERVE := 0"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB).",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "If a reservation exists, the length associated with the ",
                 "reservation is 1 byte, and the real storage location ",
                 "specified by the stbcx. is the same as the real storage ",
@@ -35297,12 +35312,11 @@
                 "in storage addressed by EA. Otherwise, no store is per",
                 "formed.",
                 "If a reservation does not exist, no store is performed.",
-                "CR Field 0 set ",
-                "as follows. n is a 1-bit value that indicates whether the ",
-                "store was performed, except that if, per the preceding ",
-                "description, it is undefined whether the store is per",
-                "formed, the value of n is undefined (and need not ",
-                "reflect whether the store was performed).",
+                "CR Field 0 is set as follows. n is a 1-bit value that indi",
+                "cates whether the store was performed, except that if, ",
+                "per the preceding description, it is undefined whether ",
+                "the store is performed, the value of n is undefined (and ",
+                "need not reflect whether the store was performed).",
                 "The reservation is cleared."
             ],
             "intrinsics": []
@@ -35355,13 +35369,12 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 1) := (RS)<sub>56:63</sub>",
-                ""
+                "MEM(EA, 1) := (RS)<sub>56:63</sub>"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. (RS)<sub>56:63</sub> are stored into the byte in ",
-                "storage addressed by EA."
+                "(RA|0)+(RB). (RS)<sub>56:63</sub> are stored into the byte in stor",
+                "age addressed by EA."
             ],
             "intrinsics": []
         },
@@ -35402,11 +35415,10 @@
             "code": [
                 "EA := (RA) + EXTS(D)",
                 "MEM(EA, 1) := (RS)<sub>56:63</sub>",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA)+<sub>D</sub>. ",
+                "Let the effective address (EA) be the sum (RA)+D. ",
                 "(RS)<sub>56:63</sub> are stored into the byte in storage addressed ",
                 "by EA.",
                 "EA is placed into register RA.",
@@ -35461,13 +35473,12 @@
             "code": [
                 "EA := (RA) + (RB)",
                 "MEM(EA, 1) := (RS)<sub>56:63</sub>",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>. (RS)<sub>56:63</sub> are stored into the byte in ",
-                "storage addressed by EA.",
+                "Let the effective address (EA) be the sum (RA)+(RB). ",
+                "(RS)<sub>56:63</sub> are stored into the byte in storage addressed ",
+                "by EA.",
                 "EA is placed into register RA.",
                 "If RA=0, the instruction form is invalid."
             ],
@@ -35520,8 +35531,7 @@
                 "if \u201cpstd\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 8) := (RS)",
-                ""
+                "MEM(EA, 8) := (RS)"
             ],
             "body": [
                 "Prefix:",
@@ -35537,7 +35547,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "(RS) is stored into the doubleword in storage addressed ",
                 "by EA.",
-                "",
                 "For pstd, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Doubleword:"
@@ -35618,8 +35627,7 @@
                 "if \u201cpstd\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 8) := (RS)",
-                ""
+                "MEM(EA, 8) := (RS)"
             ],
             "body": [
                 "Prefix:",
@@ -35635,7 +35643,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "(RS) is stored into the doubleword in storage addressed ",
                 "by EA.",
-                "",
                 "For pstd, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Doubleword:"
@@ -35765,12 +35772,10 @@
                 "MEM(EA, 8) := (RS)<sub>56:63</sub> || (RS)<sub>48:55</sub>",
                 "|| (RS)<sub>40:47</sub> || (RS)<sub>32:39</sub>",
                 "|| (RS)<sub>24:31</sub> || (RS)<sub>16:23</sub>",
-                "|| (RS)<sub>8:15</sub>  || (RS)<sub>0:7</sub>",
-                ""
+                "|| (RS)<sub>8:15</sub>  || (RS)<sub>0:7</sub>"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. ",
+                "Let the effective address (EA) be the sum (RA|0)+(RB). ",
                 "(RS)<sub>56:63</sub> are stored into bits 0:7 of the doubleword in ",
                 "storage addressed by EA. ",
                 "(RS)<sub>48:55</sub> are stored into bits 8:15 of the doubleword in ",
@@ -35838,8 +35843,7 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 8) := (RS)",
-                ""
+                "MEM(EA, 8) := (RS)"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
@@ -35905,7 +35909,6 @@
                 "  if RESERVE_LENGTH = 8 &amp;",
                 "     RESERVE_ADDR = real_addr(EA) then",
                 "      MEM(EA, 8) := (RS)",
-                "",
                 "      undefined_case  := 0",
                 "      store_performed := 1",
                 "   else",
@@ -35923,19 +35926,14 @@
                 "  u1 := undefined 1-bit value",
                 "  if u1 then",
                 "    MEM(EA, 8) := (RS)",
-                "",
                 "  u2 := undefined 1-bit value",
                 "  CR0 := 0b00 || u2 || XER<sub>SO</sub>",
-                "",
                 "else",
                 "  CR0 := 0b00 || store_performed || XER<sub>SO</sub>",
-                "",
-                "",
                 "RESERVE := 0"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB).",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "If a reservation exists, the length associated with the ",
                 "reservation is 8 bytes, and the real storage location ",
                 "specified by the stdcx. is the same as the real storage ",
@@ -35956,12 +35954,11 @@
                 "word in storage addressed by EA. Otherwise, no store ",
                 "is performed. ",
                 "If a reservation does not exist, no store is performed.",
-                "CR Field 0 set ",
-                "as follows. n is a 1-bit value that indicates whether the ",
-                "store was performed, except that if, per the preceding ",
-                "description, it is undefined whether the store is per",
-                "formed, the value of n is undefined (and need not ",
-                "reflect whether the store was performed).",
+                "CR Field 0 is set as follows. n is a 1-bit value that indi",
+                "cates whether the store was performed, except that if, ",
+                "per the preceding description, it is undefined whether ",
+                "the store is performed, the value of n is undefined (and ",
+                "need not reflect whether the store was performed).",
                 "The reservation is cleared.",
                 "EA must be a multiple of 8. If it is not, either the system ",
                 "alignment error handler is invoked or the results are ",
@@ -35988,13 +35985,7 @@
                 "byte-reversed into the doubleword in storage ",
                 "addressed by EA+8 and the odd-numbered GPR is ",
                 "stored byte-reversed into the doubleword addressed by ",
-                "EA.",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "EA."
             ],
             "intrinsics": []
         },
@@ -36046,12 +36037,11 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 8) := (RS)",
-                ""
+                "MEM(EA, 8) := (RS)"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "(RA|0)+(RB).",
                 "(RS) is stored into the doubleword in storage addressed ",
                 "by EA."
             ],
@@ -36099,12 +36089,11 @@
             "code": [
                 "EA := (RA) + EXTS(DS || 0b00)",
                 "MEM(EA, 8) := (RS)",
-                "",
                 "RA := EA"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(DS||0b00)</sub>.",
+                "(RA)+(DS||0b00).",
                 "(RS) is stored into the doubleword in storage addressed ",
                 "by EA.",
                 "EA is placed into register RA.",
@@ -36159,12 +36148,10 @@
             "code": [
                 "EA := (RA) + (RB)",
                 "MEM(EA, 8) := (RS)",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>.",
+                "Let the effective address (EA) be the sum (RA)+(RB).",
                 "(RS) is stored into the doubleword in storage addressed ",
                 "by EA.",
                 "EA is placed into register RA.",
@@ -36214,8 +36201,7 @@
                 "if \u201cpstfd\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 8) := (FRS)",
-                ""
+                "MEM(EA, 8) := (FRS)"
             ],
             "body": [
                 "Prefix:",
@@ -36231,7 +36217,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The contents of register FRS are stored into the double",
                 "word in storage addressed by EA.",
-                "",
                 "For pstfd, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Floating-Point ",
@@ -36313,8 +36298,7 @@
                 "if \u201cpstfd\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 8) := (FRS)",
-                ""
+                "MEM(EA, 8) := (FRS)"
             ],
             "body": [
                 "Prefix:",
@@ -36330,7 +36314,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "The contents of register FRS are stored into the double",
                 "word in storage addressed by EA.",
-                "",
                 "For pstfd, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Floating-Point ",
@@ -36386,12 +36369,11 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 8) := (FRS)",
-                ""
+                "MEM(EA, 8) := (FRS)"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "(RA|0)+(RB).",
                 "The contents of register FRS are stored into the double",
                 "word in storage addressed by EA."
             ],
@@ -36445,7 +36427,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(DS||0b00)</sub>. ",
+                "(RA|0)+(DS||0b00). ",
                 "The contents of the even-numbered register of FRSp are ",
                 "stored into the doubleword in storage addressed by EA.",
                 "The contents of the odd-numbered register of FRSp are ",
@@ -36508,7 +36490,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(DS||0b00)</sub>. ",
+                "(RA|0)+(DS||0b00). ",
                 "The contents of the even-numbered register of FRSp are ",
                 "stored into the doubleword in storage addressed by ",
                 "EA.",
@@ -36556,11 +36538,10 @@
             "code": [
                 "EA := (RA) + EXTS(D)",
                 "MEM(EA, 8) := (FRS)",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA)+<sub>D</sub>.",
+                "Let the effective address (EA) be the sum (RA)+D.",
                 "The contents of register FRS are stored into the double",
                 "word in storage addressed by EA.",
                 "EA is placed into register RA.",
@@ -36615,12 +36596,10 @@
             "code": [
                 "EA := (RA) + (RB)",
                 "MEM(EA, 8) := (FRS)",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>.",
+                "Let the effective address (EA) be the sum (RA)+(RB).",
                 "The contents of register FRS are stored into the double",
                 "word in storage addressed by EA.",
                 "EA is placed into register RA.",
@@ -36670,8 +36649,7 @@
                 "if \u201cpstfs\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 4) := SINGLE((FRS))",
-                ""
+                "MEM(EA, 4) := SINGLE((FRS))"
             ],
             "body": [
                 "Prefix:",
@@ -36688,7 +36666,6 @@
                 "The contents of register FRS are converted to single for",
                 "mat (see page168) and stored into the word in storage ",
                 "addressed by EA.",
-                "",
                 "For pstfs, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Floating-Point ",
@@ -36770,8 +36747,7 @@
                 "if \u201cpstfs\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 4) := SINGLE((FRS))",
-                ""
+                "MEM(EA, 4) := SINGLE((FRS))"
             ],
             "body": [
                 "Prefix:",
@@ -36788,7 +36764,6 @@
                 "The contents of register FRS are converted to single for",
                 "mat (see page168) and stored into the word in storage ",
                 "addressed by EA.",
-                "",
                 "For pstfs, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Floating-Point ",
@@ -36844,12 +36819,11 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 4) := SINGLE((FRS))",
-                ""
+                "MEM(EA, 4) := SINGLE((FRS))"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "(RA|0)+(RB).",
                 "The contents of register FRS are converted to single for",
                 "mat (see page168) and stored into the word in storage ",
                 "addressed by EA."
@@ -36893,11 +36867,10 @@
             "code": [
                 "EA := (RA) + EXTS(D)",
                 "MEM(EA, 4) := SINGLE((FRS))",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA)+<sub>D</sub>.",
+                "Let the effective address (EA) be the sum (RA)+D.",
                 "The contents of register FRS are converted to single for",
                 "mat (see page168) and stored into the word in storage ",
                 "addressed by EA.",
@@ -36953,12 +36926,10 @@
             "code": [
                 "EA := (RA) + (RB)",
                 "MEM(EA, 4) := SINGLE((FRS))",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>.",
+                "Let the effective address (EA) be the sum (RA)+(RB).",
                 "The contents of register FRS are converted to single for",
                 "mat (see page168) and stored into the word in storage ",
                 "addressed by EA.",
@@ -37015,12 +36986,10 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 4) := (FRS)<sub>32:63</sub>",
-                ""
+                "MEM(EA, 4) := (FRS)<sub>32:63</sub>"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "(FRS)<sub>32:63</sub> are stored, without conversion, into the word ",
                 "in storage addressed by EA.",
                 "If the contents of register FRS were produced, either ",
@@ -37033,8 +37002,7 @@
                 "an instruction if FRS is the final target register of a ",
                 "sequence of one or more Floating-Point Move instruc",
                 "tions, with the input to the sequence having been pro",
-                "duced directly by such an instruction.)",
-                "  "
+                "duced directly by such an instruction.)"
             ],
             "intrinsics": []
         },
@@ -37080,8 +37048,7 @@
                 "if \u201cpsth\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 2) := (RS)<sub>48:63</sub>",
-                ""
+                "MEM(EA, 2) := (RS)<sub>48:63</sub>"
             ],
             "body": [
                 "Prefix:",
@@ -37097,7 +37064,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "(RS)<sub>48:63</sub> are stored into the halfword in storage ",
                 "addressed by EA.",
-                "",
                 "For psth, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Halfword:"
@@ -37178,8 +37144,7 @@
                 "if \u201cpsth\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 2) := (RS)<sub>48:63</sub>",
-                ""
+                "MEM(EA, 2) := (RS)<sub>48:63</sub>"
             ],
             "body": [
                 "Prefix:",
@@ -37195,7 +37160,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "(RS)<sub>48:63</sub> are stored into the halfword in storage ",
                 "addressed by EA.",
-                "",
                 "For psth, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Halfword:"
@@ -37250,12 +37214,10 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 2) := (RS)<sub>56:63</sub> || (RS)<sub>48:55</sub>",
-                ""
+                "MEM(EA, 2) := (RS)<sub>56:63</sub> || (RS)<sub>48:55</sub>"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "(RS)<sub>56:63</sub> are stored into bits 0:7 of the halfword in stor",
                 "age addressed by EA. ",
                 "(RS)<sub>48:55</sub> are stored into bits 8:15 of the halfword in ",
@@ -37311,13 +37273,12 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 2) := (RS)<sub>48:63</sub>",
-                ""
+                "MEM(EA, 2) := (RS)<sub>48:63</sub>"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). (RS)<sub>48:63</sub> are stored into the halfword ",
-                "in storage addressed by EA.",
+                "(RA|0)+(RB). (RS)<sub>48:63</sub> are stored into the halfword in ",
+                "storage addressed by EA.",
                 "The storage access caused by this instruction is per",
                 "formed as though the specified storage location is ",
                 "Caching Inhibited and Guarded.",
@@ -37379,7 +37340,6 @@
                 "  if RESERVE_LENGTH = 2 &amp;",
                 "     RESERVE_ADDR = real_addr(EA) then",
                 "      MEM(EA, 2) := (RS)<sub>48:63</sub>",
-                "",
                 "      undefined_case  := 0",
                 "      store_performed := 1",
                 "   else",
@@ -37397,19 +37357,14 @@
                 "  u1 := undefined 1-bit value",
                 "  if u1 then",
                 "    MEM(EA, 2) := (RS)<sub>48:63</sub>",
-                "",
                 "  u2 := undefined 1-bit value",
                 "  CR0 := 0b00 || u2 || XER<sub>SO</sub>",
-                "",
                 "else",
                 "  CR0 := 0b00 || store_performed || XER<sub>SO</sub>",
-                "",
-                "",
                 "RESERVE := 0"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB).",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "If a reservation exists, the length associated with the ",
                 "reservation is 2 bytes, and the real storage location ",
                 "specified by the sthcx. is the same as the real storage ",
@@ -37430,17 +37385,15 @@
                 "word in storage addressed by EA. Otherwise, no store ",
                 "is performed.",
                 "If a reservation does not exist, no store is performed.",
-                "CR Field 0 set ",
-                "as follows. n is a 1-bit value that indicates whether the ",
-                "store was performed, except that if, per the preceding ",
-                "description, it is undefined whether the store is per",
-                "formed, the value of n is undefined (and need not ",
-                "reflect whether the store was performed).",
+                "CR Field 0 is set as follows. n is a 1-bit value that indi",
+                "cates whether the store was performed, except that if, ",
+                "per the preceding description, it is undefined whether ",
+                "the store is performed, the value of n is undefined (and ",
+                "need not reflect whether the store was performed).",
                 "The reservation is cleared.",
                 "EA must be a multiple of 2. If it is not, either the system ",
                 "alignment error handler is invoked or the results are ",
-                "boundedly undefined.",
-                ""
+                "boundedly undefined."
             ],
             "intrinsics": []
         },
@@ -37492,13 +37445,12 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 2) := (RS)<sub>48:63</sub>",
-                ""
+                "MEM(EA, 2) := (RS)<sub>48:63</sub>"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. (RS)<sub>48:63</sub> are stored into the halfword ",
-                "in storage addressed by EA."
+                "(RA|0)+(RB). (RS)<sub>48:63</sub> are stored into the halfword in ",
+                "storage addressed by EA."
             ],
             "intrinsics": []
         },
@@ -37539,11 +37491,10 @@
             "code": [
                 "EA := (RA) + EXTS(D)",
                 "MEM(EA, 2) := (RS)<sub>48:63</sub>",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA)+<sub>D</sub>. ",
+                "Let the effective address (EA) be the sum (RA)+D. ",
                 "(RS)<sub>48:63</sub> are stored into the halfword in storage ",
                 "addressed by EA.",
                 "EA is placed into register RA.",
@@ -37598,13 +37549,12 @@
             "code": [
                 "EA := (RA) + (RB)",
                 "MEM(EA, 2) := (RS)<sub>48:63</sub>",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>. (RS)<sub>48:63</sub> are stored into the halfword in ",
-                "storage addressed by EA.",
+                "Let the effective address (EA) be the sum (RA)+(RB). ",
+                "(RS)<sub>48:63</sub> are stored into the halfword in storage ",
+                "addressed by EA.",
                 "EA is placed into register RA.",
                 "If RA=0, the instruction form is invalid."
             ],
@@ -37651,18 +37601,228 @@
                 "r := RS",
                 "do while r &lt;= 31",
                 "   MEM(EA, 4) := GPR(r)<sub>32:63</sub>",
-                "",
                 "   r := r + 1",
                 "   EA := EA + 4"
             ],
             "body": [
                 "Let n = (32-RS). Let the effective address (EA) be the ",
-                "sum (RA|0)+<sub>D</sub>.",
+                "sum (RA|0)+D.",
                 "n consecutive words starting at EA are stored from the ",
                 "low-order 32 bits of GPRs RS through 31.",
                 "This instruction is not supported in Little-Endian mode. ",
                 "If it is executed in Little-Endian mode, the system align",
                 "ment error handler is invoked."
+            ],
+            "intrinsics": []
+        },
+        {
+            "description": "Store Quadword",
+            "form": "DS-form",
+            "category": "Fixed-Point Facility",
+            "book": "I",
+            "mnemonics": [
+                {
+                    "mnemonic": "stq",
+                    "operands": [
+                        "RSp",
+                        "DS(RA)"
+                    ],
+                    "release": "v2.03"
+                }
+            ],
+            "layout": [
+                {
+                    "name": "opcode",
+                    "size": "6",
+                    "value": "62"
+                },
+                {
+                    "name": "RSp",
+                    "size": "5"
+                },
+                {
+                    "name": "RA",
+                    "size": "5"
+                },
+                {
+                    "name": "DS",
+                    "size": "14"
+                },
+                {
+                    "name": "opcode",
+                    "size": "2",
+                    "value": "2"
+                }
+            ],
+            "code": [
+                "if \u201cstq\u201d  then",
+                "   EA := (RA|0) + EXTS64(DS||0b00)",
+                "if \u201cpstq\u201d &amp; R=0 then",
+                "   EA := (RA|0) + EXTS64(d0||d1)",
+                "if \u201cpstq\u201d &amp; R=1 then",
+                "   EA := CIA + EXTS64(d0||d1)",
+                "if Big-Endian byte ordering then",
+                "   MEM(EA,16) := (RSp)||(RSp+1)",
+                "if \u201cstq\u201d and Little-Endian byte ordering then",
+                "   MEM(EA,16) := (RSp)||(RSp+1)",
+                "if \u201cpstq\u201d and Little-Endian byte ordering then",
+                "   MEM(EA,16) := (RSp+1)||(RSp)"
+            ],
+            "body": [
+                "Prefix:",
+                "Suffix::",
+                "For stq, let the effective address (EA) be the sum of the ",
+                "contents of register RA, or the value 0 if RA=0, and the ",
+                "value DS||0b00, sign-extended to 64 bits.",
+                "For pstq with R=0, let the effective address (EA) be the ",
+                "sum of the contents of register RA, or the value 0 if RA=0, ",
+                "and the value d0||d1, sign-extended to 64 bits.",
+                "For pstq with R=1, let the effective address (EA) be the ",
+                "sum of the address of the instruction and the value ",
+                "d0||d1, sign-extended to 64 bits.",
+                "For Big-Endian byte ordering, the content of register ",
+                "pair RSp||RSp+1 is stored into the quadword in storage ",
+                "addressed by EA.",
+                "For stq and Little-Endian byte ordering, the content of ",
+                "register pair RSp||RSp+1 is byte-reversed and stored ",
+                "into the quadword in storage addressed by EA.",
+                "For pstq and Little-Endian byte ordering, the content of ",
+                "register pair RSp+1||RSp is byte-reversed and stored ",
+                "into the quadword in storage addressed by EA.",
+                "If RSp is odd, the instruction form is invalid.",
+                "The contents of an even-odd pair of GPRs is stored ",
+                "into the quadword in storage addressed by EA as fol",
+                "lows. In Big-Endian mode, the even-numbered GPR is ",
+                "stored into the doubleword in storage addressed by EA ",
+                "and the odd-numbered GPR is stored into the double",
+                "word addressed by EA+8. In Little-Endian mode, the ",
+                "even-numbered GPR is stored byte-reversed into the ",
+                "doubleword in storage addressed by EA+8 and the ",
+                "odd-numbered GPR is stored byte-reversed into the ",
+                "doubleword addressed by EA.",
+                "For pstq, if R is equal to 1 and RA is not equal to 0, the ",
+                "instruction form is invalid.",
+                " ",
+                "Extended mnemonics for Prefixed Store Quadword:"
+            ],
+            "intrinsics": []
+        },
+        {
+            "description": "Prefixed Store Quadword",
+            "form": "8LS:D-form",
+            "category": "Fixed-Point Facility",
+            "book": "I",
+            "mnemonics": [
+                {
+                    "mnemonic": "pstq",
+                    "operands": [
+                        "RSp",
+                        "D(RA)",
+                        "R"
+                    ],
+                    "release": "v3.1"
+                }
+            ],
+            "layout": [
+                {
+                    "name": "opcode",
+                    "size": "6",
+                    "value": "1"
+                },
+                {
+                    "name": "opcode",
+                    "size": "2",
+                    "value": "0"
+                },
+                {
+                    "name": "opcode",
+                    "size": "1",
+                    "value": "0"
+                },
+                {
+                    "name": "reserved",
+                    "size": "2"
+                },
+                {
+                    "name": "R",
+                    "size": "1"
+                },
+                {
+                    "name": "reserved",
+                    "size": "2"
+                },
+                {
+                    "name": "d0",
+                    "size": "18"
+                },
+                {
+                    "name": "opcode",
+                    "size": "6",
+                    "value": "60"
+                },
+                {
+                    "name": "RSp",
+                    "size": "5"
+                },
+                {
+                    "name": "RA",
+                    "size": "5"
+                },
+                {
+                    "name": "d1",
+                    "size": "16"
+                }
+            ],
+            "code": [
+                "if \u201cstq\u201d  then",
+                "   EA := (RA|0) + EXTS64(DS||0b00)",
+                "if \u201cpstq\u201d &amp; R=0 then",
+                "   EA := (RA|0) + EXTS64(d0||d1)",
+                "if \u201cpstq\u201d &amp; R=1 then",
+                "   EA := CIA + EXTS64(d0||d1)",
+                "if Big-Endian byte ordering then",
+                "   MEM(EA,16) := (RSp)||(RSp+1)",
+                "if \u201cstq\u201d and Little-Endian byte ordering then",
+                "   MEM(EA,16) := (RSp)||(RSp+1)",
+                "if \u201cpstq\u201d and Little-Endian byte ordering then",
+                "   MEM(EA,16) := (RSp+1)||(RSp)"
+            ],
+            "body": [
+                "Prefix:",
+                "Suffix::",
+                "For stq, let the effective address (EA) be the sum of the ",
+                "contents of register RA, or the value 0 if RA=0, and the ",
+                "value DS||0b00, sign-extended to 64 bits.",
+                "For pstq with R=0, let the effective address (EA) be the ",
+                "sum of the contents of register RA, or the value 0 if RA=0, ",
+                "and the value d0||d1, sign-extended to 64 bits.",
+                "For pstq with R=1, let the effective address (EA) be the ",
+                "sum of the address of the instruction and the value ",
+                "d0||d1, sign-extended to 64 bits.",
+                "For Big-Endian byte ordering, the content of register ",
+                "pair RSp||RSp+1 is stored into the quadword in storage ",
+                "addressed by EA.",
+                "For stq and Little-Endian byte ordering, the content of ",
+                "register pair RSp||RSp+1 is byte-reversed and stored ",
+                "into the quadword in storage addressed by EA.",
+                "For pstq and Little-Endian byte ordering, the content of ",
+                "register pair RSp+1||RSp is byte-reversed and stored ",
+                "into the quadword in storage addressed by EA.",
+                "If RSp is odd, the instruction form is invalid.",
+                "The contents of an even-odd pair of GPRs is stored ",
+                "into the quadword in storage addressed by EA as fol",
+                "lows. In Big-Endian mode, the even-numbered GPR is ",
+                "stored into the doubleword in storage addressed by EA ",
+                "and the odd-numbered GPR is stored into the double",
+                "word addressed by EA+8. In Little-Endian mode, the ",
+                "even-numbered GPR is stored byte-reversed into the ",
+                "doubleword in storage addressed by EA+8 and the ",
+                "odd-numbered GPR is stored byte-reversed into the ",
+                "doubleword addressed by EA.",
+                "For pstq, if R is equal to 1 and RA is not equal to 0, the ",
+                "instruction form is invalid.",
+                " ",
+                "Extended mnemonics for Prefixed Store Quadword:"
             ],
             "intrinsics": []
         },
@@ -37719,7 +37879,6 @@
                 "  if RESERVE_LENGTH = 16 &amp;",
                 "     RESERVE_ADDR = real_addr(EA) then",
                 "      MEM(EA, 16) := (RSp)",
-                "",
                 "      undefined_case  := 0",
                 "      store_performed := 1",
                 "   else",
@@ -37737,27 +37896,20 @@
                 "  u1 := undefined 1-bit value",
                 "  if u1 then",
                 "    MEM(EA, 16) := (RSp)",
-                "",
                 "  u2 := undefined 1-bit value",
                 "  CR0 := 0b00 || u2 || XER<sub>SO</sub>",
-                "",
                 "else",
                 "  CR0 := 0b00 || store_performed || XER<sub>SO</sub>",
-                "",
-                "",
                 "RESERVE := 0"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB).",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "If a reservation exists, the length associated with the ",
                 "reservation is 16 bytes, and the real storage location ",
                 "specified by the stqcx. is the same as the real storage ",
                 "location specified by the lqarx instruction that estab",
                 "lished the reservation, (RSp) is stored into the quad",
                 "word in storage addressed by EA.",
-                "",
-                "",
                 "If a reservation exists, and either the length associated ",
                 "with the reservation is not 16 bytes or the real storage ",
                 "location specified by the stqcx. is not the same as the ",
@@ -37772,16 +37924,15 @@
                 "in storage addressed by EA. Otherwise, no store is per",
                 "formed. ",
                 "If a reservation does not exist, no store is performed.",
-                "CR Field 0 set ",
-                "as follows. n is a 1-bit value that indicates whether the ",
-                "store was performed, except that if, per the preceding ",
-                "description, it is undefined whether the store is per",
-                "formed, the value of n is undefined (and need not ",
-                "reflect whether the store was performed).",
+                "CR Field 0 is set as follows. n is a 1-bit value that indi",
+                "cates whether the store was performed, except that if, ",
+                "per the preceding description, it is undefined whether ",
+                "the store is performed, the value of n is undefined (and ",
+                "need not reflect whether the store was performed).",
                 "The reservation is cleared.",
                 "EA must be a multiple of 16. If it is not, either the sys",
-                "tem alignment error handler is invoked or",
-                " the results are boundedly undefined.",
+                "tem alignment error handler is invoked or the results ",
+                "are boundedly undefined.",
                 "If RSp is odd, the instruction form is invalid.",
                 "CR0"
             ],
@@ -37841,7 +37992,6 @@
                 "do while n &gt; 0",
                 "   if i = 32 then r := r + 1 (mod 32)",
                 "   MEM(EA, 1) := GPR(r)<sub>i:i+7</sub>",
-                "",
                 "   i := i + 8",
                 "   if i = 64 then i := 32",
                 "   EA := EA + 1",
@@ -37918,7 +38068,6 @@
                 "do while n &gt; 0",
                 "   if i = 32 then r := r + 1 (mod 32)",
                 "   MEM(EA, 1) := GPR(r)<sub>i:i+7</sub>",
-                "",
                 "   i := i + 8",
                 "   if i = 64 then i := 32",
                 "   EA := EA + 1",
@@ -37926,7 +38075,7 @@
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. Let n = XER<sub>57:63</sub>; n is the number of ",
+                "(RA|0)+(RB). Let n = XER<sub>57:63</sub>; n is the number of ",
                 "bytes to store. Let nr = CEIL(n/4); nr is the number of ",
                 "registers to supply data.",
                 "If n&gt;0, n consecutive bytes starting at EA are stored from ",
@@ -38015,7 +38164,6 @@
                 "When Little-Endian byte ordering is employed, ",
                 "store_data is placed in the doubleword in storage at ",
                 "address EA in such order that;",
-                "",
                 "For pstxsd, if R is equal to 1 and RA is not equal to 0, ",
                 "the instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store VSX Scalar ",
@@ -38123,7 +38271,6 @@
                 "When Little-Endian byte ordering is employed, ",
                 "store_data is placed in the doubleword in storage at ",
                 "address EA in such order that;",
-                "",
                 "For pstxsd, if R is equal to 1 and RA is not equal to 0, ",
                 "the instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store VSX Scalar ",
@@ -38245,7 +38392,7 @@
             "code": [
                 "if MSR.VSX=0 then VSX_Unavailable()",
                 "",
-                "EA ~ ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA ~ ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "",
                 "MEM(EA,4) ~ bfp32_CONVERT_FROM_BFP64(VSR[32\u00d7SX+S].dword[0])",
                 ""
@@ -38340,7 +38487,6 @@
                 "When Little-Endian byte ordering is employed, ",
                 "store_data is placed in the word in storage at address ",
                 "EA in such order that;",
-                "",
                 "For pstxssp, if R is equal to 1 and RA is not equal to 0, ",
                 "the instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store VSX Scalar ",
@@ -38449,7 +38595,6 @@
                 "When Little-Endian byte ordering is employed, ",
                 "store_data is placed in the word in storage at address ",
                 "EA in such order that;",
-                "",
                 "For pstxssp, if R is equal to 1 and RA is not equal to 0, ",
                 "the instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store VSX Scalar ",
@@ -38507,8 +38652,7 @@
                 "",
                 "EA ~ ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "",
-                "MEM(EA,1) ~ VSR[32\u00d7SX+S].byte[7]",
-                ""
+                "MEM(EA,1) ~ VSR[32\u00d7SX+S].byte[7]"
             ],
             "body": [
                 "Let XS be the value 32\u00d7SX + S.",
@@ -38728,7 +38872,6 @@
                 "When Little-Endian byte ordering is employed, ",
                 "store_data is placed into the quadword in storage at ",
                 "address EA in such an order that;",
-                "",
                 "For pstxv, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store VSX Vector:"
@@ -38843,7 +38986,6 @@
                 "When Little-Endian byte ordering is employed, ",
                 "store_data is placed into the quadword in storage at ",
                 "address EA in such an order that;",
-                "",
                 "For pstxv, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store VSX Vector:"
@@ -38898,12 +39040,11 @@
                 "if SX=0 &amp; MSR.VSX=0 then VSX_Unavailable()",
                 "if SX=1 &amp; MSR.VEC=0 then Vector_Unavailable()",
                 "",
-                "EA ~ ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA ~ ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "",
                 "do i = 0 to 15",
                 "   MEM(EA+i,1) ~ VSR[32\u00d7SX+S].byte[i]",
-                "end",
-                ""
+                "end"
             ],
             "body": [
                 "Let XS be the value 32\u00d7SX + S.",
@@ -38970,11 +39111,10 @@
             "code": [
                 "if MSR.VSX=0 then VSX_Unavailable()",
                 "",
-                "EA ~ ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA ~ ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "",
                 "MEM(EA,8)     := VSR[32\u00d7SX+S].dword[0]",
-                "MEM(EA+8,8)   := VSR[32\u00d7SX+S].dword[1]",
-                ""
+                "MEM(EA+8,8)   := VSR[32\u00d7SX+S].dword[1]"
             ],
             "body": [
                 "Let XS be the value 32\u00d7SX + S.",
@@ -39034,12 +39174,11 @@
                 "if SX=0 &amp; MSR.VSX=0 then VSX_Unavailable()",
                 "if SX=1 &amp; MSR.VEC=0 then Vector_Unavailable()",
                 "",
-                "EA ~ ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA ~ ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "",
                 "do i = 0 to 7",
                 "   MEM(EA+2\u00d7i,2) ~ VSR[32\u00d7SX+S].hword[i]",
-                "end",
-                ""
+                "end"
             ],
             "body": [
                 "Let XS be the value 32\u00d7SX + S.",
@@ -39107,10 +39246,9 @@
                 "if SX=0 &amp; MSR.VSX=0 then VSX_Unavailable()",
                 "if SX=1 &amp; MSR.VEC=0 then Vector_Unavailable()",
                 "",
-                "EA ~ ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA ~ ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "",
-                "MEM(EA,16) ~ VSR[32\u00d7SX+S]",
-                ""
+                "MEM(EA,16) ~ VSR[32\u00d7SX+S]"
             ],
             "body": [
                 "Let XS be the value 32\u00d7SX + S.",
@@ -39190,8 +39328,7 @@
                 "store_data.bit[  0:127] ~ VSR[32\u00d7SX+2\u00d7Sp]",
                 "store_data.bit[128:255] ~ VSR[32\u00d7SX+2\u00d7Sp+1]",
                 "",
-                "MEM(EA,32) ~ store_data",
-                ""
+                "MEM(EA,32) ~ store_data"
             ],
             "body": [
                 "Prefix:",
@@ -39215,10 +39352,8 @@
                 "When Little-Endian byte ordering is employed, ",
                 "store_data is placed into the octword in storage at ",
                 "address EA in such an order that;",
-                "For pstxvp, if R is equal to 1 and ",
-                "RA is not equal to 0, the instruction form is invalid.",
-                "",
-                "",
+                "For pstxvp, if R is equal to 1 and RA is not equal to 0, ",
+                "the instruction form is invalid.",
                 "Extended mnemonics for Store VSX Vector Paired Pre",
                 "fixed:",
                 "  "
@@ -39311,8 +39446,7 @@
                 "store_data.bit[  0:127] ~ VSR[32\u00d7SX+2\u00d7Sp]",
                 "store_data.bit[128:255] ~ VSR[32\u00d7SX+2\u00d7Sp+1]",
                 "",
-                "MEM(EA,32) ~ store_data",
-                ""
+                "MEM(EA,32) ~ store_data"
             ],
             "body": [
                 "Prefix:",
@@ -39336,10 +39470,8 @@
                 "When Little-Endian byte ordering is employed, ",
                 "store_data is placed into the octword in storage at ",
                 "address EA in such an order that;",
-                "For pstxvp, if R is equal to 1 and ",
-                "RA is not equal to 0, the instruction form is invalid.",
-                "",
-                "",
+                "For pstxvp, if R is equal to 1 and RA is not equal to 0, ",
+                "the instruction form is invalid.",
                 "Extended mnemonics for Store VSX Vector Paired Pre",
                 "fixed:",
                 "  "
@@ -39402,8 +39534,7 @@
                 "store_data.bit[  0:127] ~ VSR[32\u00d7SX+2\u00d7Sp]",
                 "store_data.bit[128:255] ~ VSR[32\u00d7SX+2\u00d7Sp+1]",
                 "",
-                "MEM(EA,32) ~ store_data",
-                ""
+                "MEM(EA,32) ~ store_data"
             ],
             "body": [
                 "Let XSp be the value 32\u00d7SX + 2\u00d7Sp (i.e., only even ",
@@ -39719,13 +39850,12 @@
             "code": [
                 "if MSR.VSX=0 then VSX_Unavailable()",
                 "",
-                "EA ~ ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA ~ ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "",
                 "MEM(EA,4)     := VSR[32\u00d7SX+S].word[0]",
                 "MEM(EA+4,4)   := VSR[32\u00d7SX+S].word[1]",
                 "MEM(EA+8,4)   := VSR[32\u00d7SX+S].word[2]",
-                "MEM(EA+12,4)  := VSR[32\u00d7SX+S].word[3]",
-                ""
+                "MEM(EA+12,4)  := VSR[32\u00d7SX+S].word[3]"
             ],
             "body": [
                 "Let XS be the value 32\u00d7SX + S.",
@@ -39796,8 +39926,7 @@
                 "else                     // Little-Endian byte ordering",
                 "   store_data ~ VSR[32\u00d7SX+S].byte[16-nb:15]",
                 "",
-                "MEM(EA,nb) ~ store_data",
-                ""
+                "MEM(EA,nb) ~ store_data"
             ],
             "body": [
                 "Let XS be the value 32\u00d7SX + S.",
@@ -39876,7 +40005,6 @@
                 "",
                 "if nb&gt;0 then do i = 0 to nb-1",
                 "   MEM(EA+i,1) ~ VSR[32\u00d7SX+S].byte[i]",
-                "",
                 "end"
             ],
             "body": [
@@ -39942,7 +40070,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "eb := EA.bit[60:63]",
                 "",
                 "if Big-Endian byte ordering then ",
@@ -40012,7 +40140,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "EA := EA &amp; 0xFFFF_FFFF_FFFF_FFFE",
                 "eb := EA.bit[60:63]",
                 "",
@@ -40082,7 +40210,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "EA := EA &amp; 0xFFFF_FFFF_FFFF_FFFC",
                 "eb := EA.bit[60:63]",
                 "",
@@ -40152,7 +40280,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "EA := EA &amp; 0xFFFF_FFFF_FFFF_FFF0",
                 "",
                 "MEM(EA, 16) := VSR[VRS+32]"
@@ -40214,7 +40342,7 @@
             ],
             "code": [
                 "if MSR.VEC=0 then Vector_Unavailable()",
-                "EA := ((RA=0) ? 0 : GPR[RA]) +<sub> GPR[RB]</sub>",
+                "EA := ((RA=0) ? 0 : GPR[RA]) + GPR[RB]",
                 "EA := EA &amp; 0xFFFF_FFFF_FFFF_FFF0",
                 "",
                 "MEM(EA, 16) := VSR[VRS+32]",
@@ -40278,8 +40406,7 @@
                 "if \u201cpstw\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 4) := (RS)<sub>32:63</sub>",
-                ""
+                "MEM(EA, 4) := (RS)<sub>32:63</sub>"
             ],
             "body": [
                 "Prefix:",
@@ -40295,7 +40422,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "(RS)<sub>32:63</sub> are stored into the word in storage addressed ",
                 "by EA.",
-                "",
                 "For pstw, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Word:"
@@ -40376,8 +40502,7 @@
                 "if \u201cpstw\u201d &amp; R=1 then",
                 "   EA := CIA + EXTS64(d0||d1)",
                 "",
-                "MEM(EA, 4) := (RS)<sub>32:63</sub>",
-                ""
+                "MEM(EA, 4) := (RS)<sub>32:63</sub>"
             ],
             "body": [
                 "Prefix:",
@@ -40393,7 +40518,6 @@
                 "d0||d1, sign-extended to 64 bits.",
                 "(RS)<sub>32:63</sub> are stored into the word in storage addressed ",
                 "by EA.",
-                "",
                 "For pstw, if R is equal to 1 and RA is not equal to 0, the ",
                 "instruction form is invalid.",
                 "Extended mnemonics for Prefixed Store Word:"
@@ -40516,12 +40640,10 @@
                 "else           b := (RA)",
                 "EA := b + (RB)",
                 "MEM(EA, 4) := (RS)<sub>56:63</sub> || (RS)<sub>48:55</sub> || (RS)<sub>40:47</sub>",
-                "               ||(RS)<sub>32:39</sub>",
-                ""
+                "               ||(RS)<sub>32:39</sub>"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>.",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "(RS)<sub>56:63</sub> are stored into bits 0:7 of the word in storage ",
                 "addressed by EA. ",
                 "(RS)<sub>48:55</sub> are stored into bits 8:15 of the word in storage ",
@@ -40581,13 +40703,12 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 4) := (RS)<sub>32:63</sub>",
-                ""
+                "MEM(EA, 4) := (RS)<sub>32:63</sub>"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB). (RS)<sub>32:63</sub> are stored into the word in ",
-                "storage addressed by EA.",
+                "(RA|0)+(RB). (RS)<sub>32:63</sub> are stored into the word in stor",
+                "age addressed by EA.",
                 "The storage access caused by this instruction is per",
                 "formed as though the specified storage location is ",
                 "Caching Inhibited and Guarded.",
@@ -40648,7 +40769,6 @@
                 "  if RESERVE_LENGTH = 4 &amp;",
                 "     RESERVE_ADDR = real_addr(EA) then",
                 "      MEM(EA, 4) := (RS)<sub>32:63</sub>",
-                "",
                 "      undefined_case  := 0",
                 "      store_performed := 1",
                 "   else",
@@ -40666,19 +40786,14 @@
                 "  u1 := undefined 1-bit value",
                 "  if u1 then",
                 "    MEM(EA, 4) := (RS)<sub>32:63</sub>",
-                "",
                 "  u2 := undefined 1-bit value",
                 "  CR0 := 0b00 || u2 || XER<sub>SO</sub>",
-                "",
                 "else",
                 "  CR0 := 0b00 || store_performed || XER<sub>SO</sub>",
-                "",
-                "",
                 "RESERVE := 0"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA|0)+(RB).",
+                "Let the effective address (EA) be the sum (RA|0)+(RB).",
                 "If a reservation exists, the length associated with the ",
                 "reservation is 4 bytes, and the real storage location ",
                 "specified by the stwcx. is the same as the real storage ",
@@ -40699,12 +40814,11 @@
                 "in storage addressed by EA. Otherwise, no store is per",
                 "formed.",
                 "If a reservation does not exist, no store is performed.",
-                "CR Field 0 set ",
-                "as follows. n is a 1-bit value that indicates whether the ",
-                "store was performed, except that if, per the preceding ",
-                "description, it is undefined whether the store is per",
-                "formed, the value of n is undefined (and need not ",
-                "reflect whether the store was performed).",
+                "CR Field 0 is set as follows. n is a 1-bit value that indi",
+                "cates whether the store was performed, except that if, ",
+                "per the preceding description, it is undefined whether ",
+                "the store is performed, the value of n is undefined (and ",
+                "need not reflect whether the store was performed).",
                 "The reservation is cleared.",
                 "EA must be a multiple of 4. If it is not, either the system ",
                 "alignment error handler is invoked or the results are ",
@@ -40760,12 +40874,11 @@
                 "if RA = 0 then b := 0",
                 "else           b := (RA)",
                 "EA := b + (RB)",
-                "MEM(EA, 4) := (RS)<sub>32:63</sub>",
-                ""
+                "MEM(EA, 4) := (RS)<sub>32:63</sub>"
             ],
             "body": [
                 "Let the effective address (EA) be the sum ",
-                "(RA|0)+<sub>(RB)</sub>. (RS)<sub>32:63</sub> are stored into the word in ",
+                "(RA|0)+(RB). (RS)<sub>32:63</sub> are stored into the word in ",
                 "storage addressed by EA."
             ],
             "intrinsics": []
@@ -40807,11 +40920,10 @@
             "code": [
                 "EA := (RA) + EXTS(D)",
                 "MEM(EA, 4) := (RS)<sub>32:63</sub>",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum (RA)+<sub>D</sub>. ",
+                "Let the effective address (EA) be the sum (RA)+D. ",
                 "(RS)<sub>32:63</sub> are stored into the word in storage addressed ",
                 "by EA.",
                 "EA is placed into register RA.",
@@ -40866,13 +40978,12 @@
             "code": [
                 "EA := (RA) + (RB)",
                 "MEM(EA, 4) := (RS)<sub>32:63</sub>",
-                "",
                 "RA := EA"
             ],
             "body": [
-                "Let the effective address (EA) be the sum ",
-                "(RA)+<sub>(RB)</sub>. (RS)<sub>32:63</sub> are stored into the word in ",
-                "storage addressed by EA.",
+                "Let the effective address (EA) be the sum (RA)+(RB). ",
+                "(RS)<sub>32:63</sub> are stored into the word in storage addressed ",
+                "by EA.",
                 "EA is placed into register RA.",
                 "If RA=0, the instruction form is invalid."
             ],
@@ -41618,9 +41729,6 @@
                 "Version 3.1 and subsequent versions of the architec",
                 "ture.  If any other combination is used, the instruction ",
                 "form is invalid.",
-                "  ",
-                "  ",
-                "  ",
                 "Extended mnemonics for Synchronize: ",
                 "Except in the sync instruction description in this sec",
                 "tion, references to \u201csync\u201d in Books I-III imply L=0 ",
@@ -41638,8 +41746,7 @@
                 "memory barriers in some cases.",
                 "  ",
                 "  ",
-                "  ",
-                " "
+                "  "
             ],
             "intrinsics": []
         },
@@ -41907,12 +42014,8 @@
                 "LR := CIA + 4",
                 "CTR<sub>33:36 42:47</sub> := undefined",
                 "CTR<sub>0:32 37:41 48:63</sub> := MSR<sub>0:32 37:41 48:63</sub>",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "MSR := new_value (see below)",
+                "NIA := (see below)"
             ],
             "body": [
                 "The effective address of the instruction following the ",
@@ -41925,15 +42028,10 @@
                 "The interrupt causes the MSR to be altered as ",
                 "described in Section 7.5.",
                 "The interrupt causes the next instruction to be fetched ",
-                "",
-                "",
-                "as specified in LPCR<sub>AIL</sub> or ",
-                "LPCR<sub>HAIL</sub> as appropriate (see Section 2.2)",
-                ".",
+                "as specified in LPCR<sub>AIL</sub> or LPCR<sub>HAIL</sub> as appropriate ",
+                "(see Section 2.2).",
                 "The SRRs are not affected.",
                 "This instruction is context synchronizing.",
-                "",
-                "",
                 "",
                 ""
             ],
@@ -42261,13 +42359,11 @@
                 "  ",
                 "  ",
                 "  ",
-                "   ",
+                "  ",
                 "",
-                "  ",
-                "  ",
-                "  ",
-                " ",
-                " "
+                "",
+                "",
+                ""
             ],
             "intrinsics": []
         },
@@ -42474,7 +42570,7 @@
                 "",
                 "RB for IS=0b01, 0b10, or 0b11:",
                 "",
-                "   ",
+                "  ",
                 "LPIDR contains the partiion ID (LPID) of the partition ",
                 "for which the translation is being invalidated.  RS<sub>0:31</sub> ",
                 "contains a PID value.  The supported values of RS<sub>0:31</sub> ",
@@ -42541,10 +42637,9 @@
                 "",
                 "",
                 "  ",
-                "   ",
                 "  ",
                 "",
-                " ",
+                "",
                 ""
             ],
             "intrinsics": []
@@ -42654,23 +42749,23 @@
                 "The following are guidelines for safety when multiple ",
                 "sources of asynchronous updates are possible.  To ",
                 "interact correctly with hardware that atomically updates ",
-                " bits (as well as with ",
-                "updates from other software threads), software should ",
-                "use atomic updates to modify valid PTEs.  Academi",
-                "cally speaking, if hardware uses simple loads and ",
-                "stores, software may either use locking and first invali",
-                "date the PTE and cached translations, or may attempt ",
-                "to optimize using atomic updates that don\u2019t change the ",
-                "values of the bytes containing the ",
-                " bits with the exception of potentially set",
-                "ting those specific bits to 1 or the Reference bit to 0.  ",
-                "When modifying only bytes not subject to hardware ",
-                "modification, software may use either locking or atomic ",
-                "updates, subject to the limitations and optimizations ",
-                "described below.  The realities of  ",
-                " bit placement may severely limit what opti",
-                "mizations are possible when hardware uses normal ",
-                "loads and stores to update those bits.",
+                "Reference and Change bits (as well as with updates ",
+                "from other software threads), software should use ",
+                "atomic updates to modify valid PTEs.  Academically ",
+                "speaking, if hardware uses simple loads and stores, ",
+                "software may either use locking and first invalidate the ",
+                "PTE and cached translations, or may attempt to opti",
+                "mize using atomic updates that don\u2019t change the val",
+                "ues of the bytes containing the Reference and Change ",
+                "bits with the exception of potentially setting those spe",
+                "cific bits to 1 or the Reference bit to 0.  When modifying ",
+                "only bytes not subject to hardware modification, soft",
+                "ware may use either locking or atomic updates, subject ",
+                "to the limitations and optimizations described below.  ",
+                "The realities of  Reference and Change bit placement ",
+                "may severely limit what optimizations are possible ",
+                "when hardware uses normal loads and stores to ",
+                "update those bits.",
                 "To simplify verification and avoid paradoxes, ",
                 "non-impactful limitations are placed on translation table ",
                 "update sequence optimizations.  One limitation is that ",
@@ -42806,50 +42901,22 @@
             "code": [
                 "a := (RA)",
                 "b := (RB)",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "if (a &lt; b) &amp; TO<sub>0</sub>",
-                "",
-                " then TRAP",
-                "if (a &gt; b) &amp; TO<sub>1</sub>",
-                "",
-                "",
-                " then TRAP",
-                "if (a = b) &amp; TO<sub>2</sub>",
-                "",
-                "",
-                " then TRAP",
+                "if (a &lt; b) &amp; TO<sub>0</sub> then TRAP",
+                "if (a &gt; b) &amp; TO<sub>1</sub> then TRAP",
+                "if (a = b) &amp; TO<sub>2</sub> then TRAP",
                 "if (a &lt;<sup>u</sup> b) &amp; TO<sub>3</sub> then TRAP",
-                "if (a &gt;<sup>u</sup> b) &amp; TO<sub>4</sub> ",
-                " then TRAP"
+                "if (a &gt;<sup>u</sup> b) &amp; TO<sub>4</sub>  then TRAP"
             ],
             "body": [
                 "The contents of register RA are compared with the con",
-                "tents of register RB. ",
-                "",
-                " any bit in the TO field is set to 1 and its corre",
-                "sponding condition is met by the result of the compari",
-                "son, the system trap handler is invoked.",
+                "tents of register RB. If any bit in the TO field is set to 1 ",
+                "and its corresponding condition is met by the result of ",
+                "the comparison, the system trap handler is invoked.",
                 "If the trap conditions are met, this instruction is context ",
                 "synchronizing (see Book III).",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
                 "Examples of extended mnemonics for Trap Double",
-                "word:"
+                "word:",
+                ""
             ],
             "intrinsics": []
         },
@@ -42891,48 +42958,20 @@
             "code": [
                 "a := (RA)",
                 "b := EXTS(SI)",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "if (a &lt; b) &amp; TO<sub>0</sub>",
-                "",
-                " then TRAP",
-                "if (a &gt; b) &amp; TO<sub>1</sub>",
-                "",
-                "",
-                " then TRAP",
-                "if (a = b) &amp; TO<sub>2</sub>",
-                "",
-                "",
-                " then TRAP",
+                "if (a &lt; b) &amp; TO<sub>0</sub> then TRAP",
+                "if (a &gt; b) &amp; TO<sub>1</sub> then TRAP",
+                "if (a = b) &amp; TO<sub>2</sub> then TRAP",
                 "if (a &lt;<sup>u</sup> b) &amp; TO<sub>3</sub> then TRAP",
-                "if (a &gt;<sup>u</sup> b) &amp; TO<sub>4</sub> ",
-                " then TRAP"
+                "if (a &gt;<sup>u</sup> b) &amp; TO<sub>4</sub>  then TRAP"
             ],
             "body": [
                 "The contents of register RA are compared with the ",
-                "sign-extended value of the SI field. ",
-                "",
-                "any bit in the TO field is set to 1 ",
-                "and its corresponding condition is met by the result of ",
-                "the comparison, the system trap handler is invoked.",
+                "sign-extended value of the SI field. If any bit in the TO ",
+                "field is set to 1 and its corresponding condition is met ",
+                "by the result of the comparison, the system trap han",
+                "dler is invoked.",
                 "If the trap conditions are met, this instruction is context ",
                 "synchronizing (see Book III).",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
                 "Examples of extended mnemonics for Trap Double",
                 "word Immediate:"
             ],
@@ -42996,8 +43035,6 @@
                 "of RB<sub>32:63</sub>. If any bit in the TO field is set to 1 and its cor",
                 "responding condition is met by the result of the compar",
                 "ison, the system trap handler is invoked.",
-                "If the trap conditions are met, this instruction is context ",
-                "synchronizing (see Book III).",
                 "Examples of extended mnemonics for Trap Word:"
             ],
             "intrinsics": []
@@ -43051,8 +43088,6 @@
                 "field is set to 1 and its corresponding condition is met ",
                 "by the result of the comparison, the system trap han",
                 "dler is invoked.",
-                "If the trap conditions are met, this instruction is context ",
-                "synchronizing (see Book III).",
                 "Examples of extended mnemonics for Trap Word ",
                 "Immediate:"
             ],
@@ -43099,38 +43134,27 @@
                 }
             ],
             "code": [
-                "",
-                "",
-                "",
-                "",
                 "MSR<sub>48</sub> := USRR1<sub>48</sub> | USRR1<sub>49</sub>",
                 "MSR<sub>58</sub> := (USRR1<sub>58</sub> | USRR1<sub>49</sub><sub>)</sub>",
                 "<sub>    &amp; </sub>~(USRR1<sub>41 </sub><sub>&amp; USRR1</sub><sub>3 </sub><sub>&amp; (</sub>~USRR1<sub>49</sub><sub>))</sub>",
                 "MSR<sub>59</sub> := (USRR1<sub>59</sub> | USRR1<sub>49</sub><sub>)</sub>",
                 "<sub>    &amp; </sub>~(USRR1<sub>41 </sub><sub>&amp; USRR1</sub><sub>3 </sub><sub>&amp; (</sub>~USRR1<sub>49</sub><sub>))</sub>",
-                "",
+                "MSR<sub>0:</sub><sub>32 37:41 49:57 60:63</sub> := USRR1<sub>0:</sub><sub>32 37:41 49:57 60:63</sub>",
                 "NIA :=<sub>iea</sub> USRR0<sub>0:61</sub> || 0b00"
             ],
             "body": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                " The result of ",
-                "ORing bits 48 and 49 of USRR1 is placed into MSR<sub>48</sub>.  ",
-                "The result of ANDing bit 41 of USRR1 with bit 3 of ",
-                "USRR1 and with the complement of bit 49 of USRR1 is ",
-                "complemented and then ANDed with the result of ",
-                "ORing bits 58 and 49 of USRR1 and placed into ",
-                "MSR<sub>58</sub>. The result of ANDing bit 41 of USRR1 with bit 3 ",
-                "of USRR1 and with the complement of bit 49 of USRR1 ",
-                "is complemented and then ANDed with the result of ",
-                "ORing bits 59 and 49 of USRR1 and placed into ",
-                "MSR<sub>59</sub>. ",
-                "",
-                ".",
+                " The result of ORing bits 48 and 49 of USRR1 is placed ",
+                "into MSR<sub>48</sub>.  The result of ANDing bit 41 of USRR1 with ",
+                "bit 3 of USRR1 and with the complement of bit 49 of ",
+                "USRR1 is complemented and then ANDed with the ",
+                "result of ORing bits 58 and 49 of USRR1 and placed ",
+                "into MSR<sub>58</sub>. The result of ANDing bit 41 of USRR1 with ",
+                "bit 3 of USRR1 and with the complement of bit 49 of ",
+                "USRR1 is complemented and then ANDed with the ",
+                "result of ORing bits 59 and 49 of USRR1 and placed ",
+                "into MSR<sub>59</sub>. Bits 0:32, 37:41, 49:57, and 60:63 of ",
+                "USRR1 are placed into the corresponding bits of the ",
+                "MSR.",
                 "If the new MSR value does not enable any pending ",
                 "exceptions, then the next instruction is fetched, under ",
                 "control of the new MSR value, from the address ",
@@ -63922,7 +63946,6 @@
             "body": [
                 "Let XT be the value 32\u00d7TX + T.",
                 "For each integer value i from 0 to 3, do the following.",
-                " ",
                 "Operation with various special values of the operand is ",
                 "summarized below.",
                 "If a trap-enabled exception occurs in any element of ",
@@ -88007,7 +88030,6 @@
             ],
             "code": [],
             "body": [
-                " ",
                 "The wait instruction causes instruction fetching and ",
                 "execution to be suspended under certain conditions, ",
                 "depending on the values of the WC and PL fields.  ",
@@ -88048,7 +88070,7 @@
                 " ",
                 " ",
                 "",
-                "  ",
+                "",
                 ""
             ],
             "intrinsics": []
@@ -88174,7 +88196,6 @@
                 "does nothing, but consumes execution resources nev",
                 "ertheless) is:",
                 "Example of extended mnemonics for XOR Immediate:",
-                "  ",
                 "  "
             ],
             "intrinsics": [
@@ -88292,7 +88313,7 @@
                 "state because that scenario may not be thoroughly ver",
                 "ified.",
                 "This instruction is privileged and context synchronizing.",
-                "  ",
+                "",
                 "Before software executes the stop instruction, the ",
                 "PSSCR is initialized. If the stop instruction is to be ",
                 "used by the OS, the hypervisor initializes the fields that ",
