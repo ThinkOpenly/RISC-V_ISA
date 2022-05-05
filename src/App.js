@@ -104,57 +104,53 @@ class App extends Component {
         return all;
     }
 
-    displayMnemonics(item) {
-        let all = [];
+    displayMnemonic(item) {
         const spaces = "               ";
 
-        for (let i = 0; i < item.mnemonics.length; i++) {
-            let gap = spaces.length - item.mnemonics[i].mnemonic.length;
-            if (gap < 2) gap = 2;
-            let s =
-                item.mnemonics[i].mnemonic +
-                spaces.substr(0,gap) +
-                this.displayOperands(item.mnemonics[i].operands);
-            let conditions = "";
-            try {
-                if (item.mnemonics[i].conditions.length > 0) {
-                    conditions = "(";
-                    let comma = "";
-                    for (let c = 0; c < item.mnemonics[i].conditions.length; c++) {
-                        conditions += comma + item.mnemonics[i].conditions[c].field + "=" + item.mnemonics[i].conditions[c].value;
-                        comma = ", ";
-                    }
-                    conditions += ")";
+        let gap = spaces.length - item.mnemonic.length;
+        if (gap < 2) gap = 2;
+        let s =
+            item.mnemonic +
+            spaces.substr(0,gap) +
+            this.displayOperands(item.operands);
+        let conditions = "";
+        try {
+            if (item.conditions.length > 0) {
+                conditions = "(";
+                let comma = "";
+                for (let c = 0; c < item.conditions.length; c++) {
+                    conditions += comma + item.conditions[c].field + "=" + item.conditions[c].value;
+                    comma = ", ";
                 }
-            } catch(err) {}
-            let key = "mnemonics-table-" + i.toString();
-            all.push(
-                <table key={key}>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <CopyToClipboard text={s}>
-                                    <CodeSnippet
-                                        className="syntax"
-                                        key="syntax"
-                                        feedback="Copied to clipboard"
-                                        copyButtonDescription="Copy"
-                                        ariaLabel="mnemonic"
-                                        type="inline"
-                                    >
-                                        {s}
-                                    </CodeSnippet>
-                                </CopyToClipboard>
-                            </td>
-                            <td>
-                                <p className="conditions">{conditions}</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            );
-        }
-        return all;
+                conditions += ")";
+            }
+        } catch(err) {}
+        let key = "mnemonics-table-" + item.mnemonic;
+        return (
+            <table key={key}>
+                <tbody>
+                    <tr>
+                        <td>
+                            <CopyToClipboard text={s}>
+                                <CodeSnippet
+                                    className="syntax"
+                                    key="syntax"
+                                    feedback="Copied to clipboard"
+                                    copyButtonDescription="Copy"
+                                    ariaLabel="mnemonic"
+                                    type="inline"
+                                >
+                                    {s}
+                                </CodeSnippet>
+                            </CopyToClipboard>
+                        </td>
+                        <td>
+                            <p className="conditions">{conditions}</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        );
     }
 
     displayCode(item) {
@@ -176,13 +172,7 @@ class App extends Component {
     }
 
     displayField(layout,key) {
-        let all = [];
-        var d = layout.name;
-        if (d.includes("opcode")) {
-            d = d.replace("opcode",layout.value);
-        }
-        all.push(<td className="instruction-field" key={key} colSpan={layout.size}>{d}</td>);
-        return all;
+        return(<td className="instruction-field" key={key} colSpan={layout.size}>{layout.name}</td>);
     }
 
     displayFields(layout) {
@@ -246,11 +236,11 @@ class App extends Component {
         return all;
     }
 
-    genItem(item) {
+    genItem(item, which) {
         return (
             <div className="expandContainer">
                 <div className="column">
-                    {this.displayMnemonics(item)}
+                    {this.displayMnemonic(item.mnemonics[which])}
                     <br />
                     <table style={{width: '100%'}}>
                         <tbody>
@@ -262,7 +252,7 @@ class App extends Component {
                                         </tbody>
                                     </table>
                                 </td>
-                                <td style={{textAlign: 'right'}}>{item.form}</td>
+                                <td style={{textAlign: 'right'}}>{item.mnemonics[which].form}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -291,34 +281,13 @@ class App extends Component {
     }
 
     genTitle(item) {
-        let s = "";
-        let comma = "";
-        for (let i = 0; i < item.mnemonics.length; i++) {
-            s = s + comma + item.mnemonics[i].mnemonic;
-            comma = ", ";
-        }
-        let v = "";
-        comma = "";
-        for (let i = 0; i < item.mnemonics.length; i++) {
-            let match = false;
-            for (let j = i+1; j < item.mnemonics.length; j++) {
-                if (item.mnemonics[i].release == item.mnemonics[j].release) {
-                    match = true;
-                    break;
-                }
-            }
-            if (!match) {
-                v += comma + item.mnemonics[i].release;
-                comma = ", ";
-            }
-        }
         return (
             <table className="item">
                 <tbody>
                     <tr>
-                        <td className="itemtitledesc">{item.description}</td>
-                        <td className="itemtitlemnem">{s}</td>
-                        <td className="itemtitleISA">{v}</td>
+                        <td className="itemtitledesc">{item.name}</td>
+                        <td className="itemtitlemnem">{item.mnemonic}</td>
+                        <td className="itemtitleISA">{item.release}</td>
                     </tr>
                 </tbody>
             </table>
@@ -332,42 +301,40 @@ class App extends Component {
     genData = data => {
         let allJson = [];
         for (let i = 0; i < data.length; i++) {
-            for (let m = 0; m < data[i].mnemonics.length; m++) {
-                if (
-                    (this.state.search_mnemonics &&
-                     data[i].mnemonics[m].mnemonic.startsWith(this.state.search)) ||
-                    (this.state.search_names &&
-                     this.state.search.split(" ").every(this.matchEach,data[i].description.toLowerCase()))
-                ) {
+            if (
+                this.state.classSet.includes(data[i].category) &&
+                this.state.bookSet.includes(data[i].book)
+            ) {
+                for (let m = 0; m < data[i].mnemonics.length; m++) {
                     if (
-                        this.state.releaseSet.includes(
-                            data[i].mnemonics[m].release
-                        ) &&
-                        this.state.classSet.includes(
-                            data[i].category
-                        ) &&
-                        this.state.formSet.includes(
-                            data[i].form
-                        ) &&
-                        this.state.bookSet.includes(
-                            data[i].book
-                        )
+                        (this.state.search_mnemonics &&
+                         data[i].mnemonics[m].mnemonic.startsWith(this.state.search)) ||
+                        (this.state.search_names &&
+                         this.state.search.split(" ").every(this.matchEach,data[i].mnemonics[m].name.toLowerCase()))
                     ) {
-                        allJson.push(
-                            <AccordionItem
-                                title={this.genTitle(data[i])}
-                                key={data[i].mnemonics[0].mnemonic + data[i].book}
-                                onClick={e => {
-                                    console.log("click");
-                                }}
-                                onHeadingClick={e => {
-                                    console.log("heading click");
-                                }}
-                            >
-                                {this.genItem(data[i])}
-                            </AccordionItem>
-                        );
-                        break;
+                        if (
+                            this.state.releaseSet.includes(
+                                data[i].mnemonics[m].release
+                            ) &&
+                            this.state.formSet.includes(
+                                data[i].mnemonics[m].form
+                            )
+                        ) {
+                            allJson.push(
+                                <AccordionItem
+                                    title={this.genTitle(data[i].mnemonics[m])}
+                                    key={data[i].mnemonics[m].mnemonic + data[i].book}
+                                    onClick={e => {
+                                        console.log("click");
+                                    }}
+                                    onHeadingClick={e => {
+                                        console.log("heading click");
+                                    }}
+                                >
+                                    {this.genItem(data[i],m)}
+                                </AccordionItem>
+                            );
+                        }
                     }
                 }
             }
