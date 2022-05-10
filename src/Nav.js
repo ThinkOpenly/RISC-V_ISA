@@ -4,7 +4,7 @@ import {
     HeaderName,
     HeaderNavigation,
     HeaderMenuItem
-} from "carbon-components-react/lib/components/UIShell";
+} from "@carbon/react";
 
 class Nav extends Component {
     /*

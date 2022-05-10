@@ -12,7 +12,7 @@ import {
     Link,
     StructuredListWrapper, StructuredListHead, StructuredListBody, StructuredListRow, StructuredListCell,
     DataTable, TableContainer, Table, TableHead, TableRow, TableHeader, TableBody, TableCell
-} from "carbon-components-react";
+} from "@carbon/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const releases = [

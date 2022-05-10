@@ -1,3 +1,5 @@
+@use '@carbon/react';
+
 body {
     margin: 0;
     padding: 0;
@@ -8,5 +10,3 @@ body {
 code {
     font-family: 'Courier New', monospace;
 }
-
-@import "~carbon-components/css/carbon-components.css";
