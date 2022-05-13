@@ -4,13 +4,30 @@
 
 import sys
 import json
+import argparse
+
+parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
+	description='''
+Merge Power Vector Intrinsics Programming Reference JSON data info
+PowerISA JSON data.
+''', epilog='''
+$ ''' + sys.argv[0] + ''' --pvipr PowerVIPR.json src/ISA.json > ISA-vipr.json
+''')
+parser.add_argument('--debug', action='store_true', help='enable debugging output')
+parser.add_argument('--pvipr', metavar='PVIPR', required=True, help='Power VIPR JSON database')
+parser.add_argument('file',
+	nargs='?',
+	help="the ISA LaTeX document(s) to process (default: standard input)",
+	default=None)
+params = parser.parse_args()
 
 f = sys.stdin
-if len(sys.argv) > 1:
-    f = open (sys.argv[1])
-powervipr = json.load (f)
+if params.file != None:
+    f = open (params.file)
+powerisa = json.load (f)
+f.close ()
 
-powerisa = json.load (open ('src/ISA.json'))
+powervipr = json.load (open (params.pvipr))
 powerisa['intrinsics'] = powervipr
 map = {}
 for intrinsic in powervipr:
