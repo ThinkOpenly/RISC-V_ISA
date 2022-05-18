@@ -368,8 +368,8 @@ class App extends Component {
                     disabled={false}
                     hideLabel={false}
                     wrapperClassName=""
-                    onChange={e => {
-                        this.filterByReleases(e, releases[i]);
+                    onChange={(value, id, event) => {
+                        this.filterByReleases(id.checked, releases[i]);
                     }}
                 />
             );
@@ -390,8 +390,8 @@ class App extends Component {
                     disabled={false}
                     hideLabel={false}
                     wrapperClassName=""
-                    onChange={e => {
-                        this.filterByClasses(e, chapters[i].name);
+                    onChange={(value, id, event) => {
+                        this.filterByClasses(id.checked, chapters[i].name);
                     }}
                 />
             );
@@ -412,8 +412,8 @@ class App extends Component {
                     disabled={false}
                     hideLabel={false}
                     wrapperClassName=""
-                    onChange={e => {
-                        this.filterByBooks(e, books[i].shortname);
+                    onChange={(value, id, event) => {
+                        this.filterByBooks(id.checked, books[i].shortname);
                     }}
                 />
             );
@@ -434,8 +434,8 @@ class App extends Component {
                     disabled={false}
                     hideLabel={false}
                     wrapperClassName=""
-                    onChange={e => {
-                        this.filterByForms(e, forms[i]);
+                    onChange={(value, id, event) => {
+                        this.filterByForms(id.checked, forms[i]);
                     }}
                 />
             );
@@ -449,6 +449,7 @@ class App extends Component {
     }
 
     filterAllReleases(set) {
+        console.log("filterAllReleases(" + set.toString() + ")");
         let newSet = [];
         if (set) {
             newSet = releases;
@@ -914,8 +915,8 @@ class App extends Component {
                                                 disabled={false}
                                                 hideLabel={false}
                                                 wrapperClassName=""
-                                                onChange={e => {
-                                                    this.filterAllReleases(e);
+                                                onChange={(value, id, event) => {
+                                                    this.filterAllReleases(id.checked);
                                                 }}
                                             />
                                             {this.genReleaseCheckboxes()}
@@ -935,8 +936,8 @@ class App extends Component {
                                                 disabled={false}
                                                 hideLabel={false}
                                                 wrapperClassName=""
-                                                onChange={e => {
-                                                    this.filterAllClasses(e);
+                                                onChange={(value, id, event) => {
+                                                    this.filterAllClasses(id.checked);
                                                 }}
                                             />
                                             {this.genClassCheckboxes(ISA.chapters)}
@@ -956,8 +957,8 @@ class App extends Component {
                                                 disabled={false}
                                                 hideLabel={false}
                                                 wrapperClassName=""
-                                                onChange={e => {
-                                                    this.filterAllForms(e);
+                                                onChange={(value, id, event) => {
+                                                    this.filterAllForms(id.checked);
                                                 }}
                                             />
                                             {this.genFormCheckboxes(ISA.forms)}
@@ -977,8 +978,8 @@ class App extends Component {
                                                 disabled={false}
                                                 hideLabel={false}
                                                 wrapperClassName=""
-                                                onChange={e => {
-                                                    this.filterAllBooks(e);
+                                                onChange={(value, id, event) => {
+                                                    this.filterAllBooks(id.checked);
                                                 }}
                                             />
                                             {this.genBookCheckboxes(ISA.books)}
@@ -1014,8 +1015,8 @@ class App extends Component {
                                                         disabled={false}
                                                         hideLabel={false}
                                                         wrapperClassName=""
-                                                        onChange={e => {
-                                                            this.setState({ search_mnemonics: e });
+                                                        onChange={(value, id, event) => {
+                                                            this.setState({ search_mnemonics: id.checked });
                                                         }}
                                                     />
                                                     <Checkbox
@@ -1025,8 +1026,8 @@ class App extends Component {
                                                         disabled={false}
                                                         hideLabel={false}
                                                         wrapperClassName=""
-                                                        onChange={e => {
-                                                            this.setState({ search_names: e });
+                                                        onChange={(value, id, event) => {
+                                                            this.setState({ search_names: id.checked });
                                                         }}
                                                     />
                                                 </td>
@@ -1039,8 +1040,8 @@ class App extends Component {
                                                         disabled={false}
                                                         hideLabel={false}
                                                         wrapperClassName=""
-                                                        onChange={e => {
-                                                            this.setState({ search_emnems: e });
+                                                        onChange={(value, id, event) => {
+                                                            this.setState({ search_emnems: id.checked });
                                                         }}
                                                     />
                                                     <Checkbox
@@ -1050,8 +1051,8 @@ class App extends Component {
                                                         disabled={false}
                                                         hideLabel={false}
                                                         wrapperClassName=""
-                                                        onChange={e => {
-                                                            this.setState({ search_emnems_names: e });
+                                                        onChange={(value, id, event) => {
+                                                            this.setState({ search_emnems_names: id.checked });
                                                         }}
                                                     />
                                                 </td>
@@ -1063,8 +1064,8 @@ class App extends Component {
                                                         disabled={false}
                                                         hideLabel={false}
                                                         wrapperClassName=""
-                                                        onChange={e => {
-                                                            this.setState({ search_intrinsics: e });
+                                                        onChange={(value, id, event) => {
+                                                            this.setState({ search_intrinsics: id.checked });
                                                         }}
                                                     />
                                                 </td>
