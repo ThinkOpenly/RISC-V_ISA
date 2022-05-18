@@ -40,6 +40,8 @@ for instruction in powerisa['instructions']:
     intrinsics = []
     for mnemonic in instruction['mnemonics']:
         if mnemonic['mnemonic'] in map:
-            intrinsics += map[mnemonic['mnemonic']]
+            for intrinsic in map[mnemonic['mnemonic']]:
+                if intrinsic not in intrinsics:
+                    intrinsics.append(intrinsic)
     instruction['intrinsics'] = intrinsics
 print (json.dumps (powerisa, indent=4))
