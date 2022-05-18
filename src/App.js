@@ -406,8 +406,8 @@ class App extends Component {
                 <Checkbox
                     defaultChecked
                     className="checkbox"
-                    id={books[i].shortname}
-                    key={books[i].shortname}
+                    id={"Book"+books[i].shortname}
+                    key={"Book"+books[i].shortname}
                     labelText={books[i].title}
                     disabled={false}
                     hideLabel={false}
@@ -491,7 +491,7 @@ class App extends Component {
             newSet = books;
         }
         for (let i = 0; i < books.length; i++) {
-            let id = document.getElementById(books[i]);
+            let id = document.getElementById("Book"+books[i]);
             id.checked = set;
         }
         this.setState({ bookSet: newSet });
