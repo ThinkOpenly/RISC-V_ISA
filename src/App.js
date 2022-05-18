@@ -324,12 +324,6 @@ class App extends Component {
                                 <AccordionItem
                                     title={this.genTitle(data[i].mnemonics[m])}
                                     key={data[i].mnemonics[m].mnemonic + data[i].book}
-                                    onClick={e => {
-                                        console.log("click");
-                                    }}
-                                    onHeadingClick={e => {
-                                        console.log("heading click");
-                                    }}
                                 >
                                     {this.genItem(data[i],m)}
                                 </AccordionItem>
@@ -449,7 +443,6 @@ class App extends Component {
     }
 
     filterAllReleases(set) {
-        console.log("filterAllReleases(" + set.toString() + ")");
         let newSet = [];
         if (set) {
             newSet = releases;
@@ -526,19 +519,16 @@ class App extends Component {
     }
 
     filterByBooks(set, b) {
-        console.log("filterByBooks(" + b + ")")
         let newSet = [];
         if (set) {
             newSet = this.state.bookSet;
             newSet.push(b);
         } else {
             for (let i = 0; i < this.state.bookSet.length; i++) {
-                console.log(this.state.bookSet[i] + "==" + b);
                 if (this.state.bookSet[i] === b) continue;
                 newSet.push(this.state.bookSet[i]);
             }
         }
-        console.log(newSet)
         this.setState({ bookSet: newSet });
     }
 
@@ -703,12 +693,6 @@ class App extends Component {
                             <AccordionItem
                                 title={this.genIntrinsicTitle (data[i])}
                                 key={data[i].mnemonic}
-                                onClick={e => {
-                                    console.log("click");
-                                }}
-                                onHeadingClick={e => {
-                                    console.log("heading click");
-                                }}
                             >
                                 {this.genIntrinsic(data[i])}
                             </AccordionItem>
@@ -875,12 +859,6 @@ class App extends Component {
                     <AccordionItem
                         title={this.genEmnemTitle (data[i])}
                         key={data[i].emnem + i.toString()}
-                        onClick={e => {
-                            console.log("click");
-                        }}
-                        onHeadingClick={e => {
-                            console.log("heading click");
-                        }}
                     >
                         {this.genEmnem(data[i])}
                     </AccordionItem>
