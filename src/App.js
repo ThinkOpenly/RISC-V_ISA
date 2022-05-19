@@ -361,7 +361,6 @@ class App extends Component {
                     labelText={this.genReleaseLabel(i)}
                     disabled={false}
                     hideLabel={false}
-                    wrapperClassName=""
                     onChange={(value, id, event) => {
                         this.filterByReleases(id.checked, releases[i]);
                     }}
@@ -383,7 +382,6 @@ class App extends Component {
                     labelText={chapters[i].name}
                     disabled={false}
                     hideLabel={false}
-                    wrapperClassName=""
                     onChange={(value, id, event) => {
                         this.filterByClasses(id.checked, chapters[i].name);
                     }}
@@ -405,7 +403,6 @@ class App extends Component {
                     labelText={books[i].title}
                     disabled={false}
                     hideLabel={false}
-                    wrapperClassName=""
                     onChange={(value, id, event) => {
                         this.filterByBooks(id.checked, books[i].shortname);
                     }}
@@ -427,7 +424,6 @@ class App extends Component {
                     labelText={forms[i]}
                     disabled={false}
                     hideLabel={false}
-                    wrapperClassName=""
                     onChange={(value, id, event) => {
                         this.filterByForms(id.checked, forms[i]);
                     }}
@@ -892,7 +888,6 @@ class App extends Component {
                                                 labelText="[all]"
                                                 disabled={false}
                                                 hideLabel={false}
-                                                wrapperClassName=""
                                                 onChange={(value, id, event) => {
                                                     this.filterAllReleases(id.checked);
                                                 }}
@@ -913,7 +908,6 @@ class App extends Component {
                                                 labelText="[all]"
                                                 disabled={false}
                                                 hideLabel={false}
-                                                wrapperClassName=""
                                                 onChange={(value, id, event) => {
                                                     this.filterAllClasses(id.checked);
                                                 }}
@@ -934,7 +928,6 @@ class App extends Component {
                                                 labelText="[all]"
                                                 disabled={false}
                                                 hideLabel={false}
-                                                wrapperClassName=""
                                                 onChange={(value, id, event) => {
                                                     this.filterAllForms(id.checked);
                                                 }}
@@ -955,7 +948,6 @@ class App extends Component {
                                                 labelText="[all]"
                                                 disabled={false}
                                                 hideLabel={false}
-                                                wrapperClassName=""
                                                 onChange={(value, id, event) => {
                                                     this.filterAllBooks(id.checked);
                                                 }}
@@ -977,7 +969,7 @@ class App extends Component {
                                                         defaultValue=""
                                                         labelText="Search"
                                                         closeButtonLabelText=""
-                                                        placeHolderText="Search"
+                                                        placeholder="Search"
                                                         onChange={() => {
                                                             this.search();
                                                         }}
@@ -992,7 +984,6 @@ class App extends Component {
                                                         labelText="mnemonics"
                                                         disabled={false}
                                                         hideLabel={false}
-                                                        wrapperClassName=""
                                                         onChange={(value, id, event) => {
                                                             this.setState({ search_mnemonics: id.checked });
                                                         }}
@@ -1003,7 +994,6 @@ class App extends Component {
                                                         labelText="names"
                                                         disabled={false}
                                                         hideLabel={false}
-                                                        wrapperClassName=""
                                                         onChange={(value, id, event) => {
                                                             this.setState({ search_names: id.checked });
                                                         }}
@@ -1017,7 +1007,6 @@ class App extends Component {
                                                         labelText="extended mnemonics"
                                                         disabled={false}
                                                         hideLabel={false}
-                                                        wrapperClassName=""
                                                         onChange={(value, id, event) => {
                                                             this.setState({ search_emnems: id.checked });
                                                         }}
@@ -1028,7 +1017,6 @@ class App extends Component {
                                                         labelText="extended mnemonics names"
                                                         disabled={false}
                                                         hideLabel={false}
-                                                        wrapperClassName=""
                                                         onChange={(value, id, event) => {
                                                             this.setState({ search_emnems_names: id.checked });
                                                         }}
@@ -1041,7 +1029,6 @@ class App extends Component {
                                                         labelText="intrinsics"
                                                         disabled={false}
                                                         hideLabel={false}
-                                                        wrapperClassName=""
                                                         onChange={(value, id, event) => {
                                                             this.setState({ search_intrinsics: id.checked });
                                                         }}
