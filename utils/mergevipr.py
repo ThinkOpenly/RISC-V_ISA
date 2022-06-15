@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Copyright (c) IBM 2021 All Rights Reserved.
+# Copyright (c) IBM 2022 All Rights Reserved.
 # This project is licensed under the Apache License version 2.0, see LICENSE.
 
 import sys
@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpForm
 Merge Power Vector Intrinsics Programming Reference JSON data info
 PowerISA JSON data.
 ''', epilog='''
-$ ''' + sys.argv[0] + ''' --pvipr PowerVIPR.json src/ISA.json > ISA-vipr.json
+$ ''' + sys.argv[0] + ''' --pvipr PowerVIPR.json LaTeX2jsonOutput.json
 ''')
 parser.add_argument('--debug', action='store_true', help='enable debugging output')
 parser.add_argument('--pvipr', metavar='PVIPR', required=True, help='Power VIPR JSON database')
@@ -27,7 +27,7 @@ if params.file != None:
 powerisa = json.load (f)
 f.close ()
 
-powervipr = json.load (open (params.pvipr))
+powervipr = json.load (open (params.pvipr, encoding='utf-8'))
 powerisa['intrinsics'] = powervipr
 map = {}
 for intrinsic in powervipr:
@@ -44,4 +44,32 @@ for instruction in powerisa['instructions']:
                 if intrinsic not in intrinsics:
                     intrinsics.append(intrinsic)
     instruction['intrinsics'] = intrinsics
-print (json.dumps (powerisa, indent=4))
+
+for intrinsic in powerisa['intrinsics']:
+    headerData = intrinsic['type_signatures']['var_heads']
+    newheaders = []
+    for header in headerData:
+        newheaderData = {}
+        key = header
+        if 'implementation' in key.lower():
+            key = "implementation"
+        newheaderData['key'] = key
+        newheaderData['header'] = header
+        newheaders.append(newheaderData)
+    intrinsic['type_signatures']['var_heads'] = newheaders
+    list = intrinsic['type_signatures']['list']
+    id = 0
+    newlist = []
+    for sig in list:
+        newsig = {}
+        newsig['id'] = str(id)
+        index = 0
+        for field in sig:
+            newsig[newheaders[index]['key']] = field
+            index += 1
+        newlist.append (newsig)
+        id += 1
+    intrinsic['type_signatures']['list'] = newlist
+
+print(json.dumps (powerisa, indent=4))
+
