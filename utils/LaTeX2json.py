@@ -12,10 +12,11 @@ parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpForm
 	description='''
 Extract ISA information from LaTeX document, emit JSON
 ''', epilog='''
-$ ''' + sys.argv[0] + ''' --db instructions.txt ISA.tex
+$ ''' + sys.argv[0] + ''' --db PowerISAinstructions.txt -o LaTeX2jsonOutput.json PowerISA.tex
 ''')
 parser.add_argument('--debug', action='store_true', help='enable debugging output')
 parser.add_argument('--db', metavar='DB', help='instruction database')
+parser.add_argument('-o', '--output', help="name of file that json is output to", metavar = 'Output')
 parser.add_argument('files',
 	nargs=argparse.REMAINDER,
 	help="the ISA LaTeX document(s) to process (default: standard input)",
@@ -710,4 +711,10 @@ dprint (s.getvalue ())
 
 import json
 j = json.loads (s.getvalue ())
-print (json.dumps (j, indent=4))
+
+if(params.output):
+    jsonFileOutput = open(params.output, 'w')
+    jsonFileOutput.write(json.dumps (j, indent=4))
+    jsonFileOutput.close()
+else:
+    print(json.dumps (j, indent=4))

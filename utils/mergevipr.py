@@ -11,10 +11,11 @@ parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpForm
 Merge Power Vector Intrinsics Programming Reference JSON data info
 PowerISA JSON data.
 ''', epilog='''
-$ ''' + sys.argv[0] + ''' --pvipr PowerVIPR.json LaTeX2jsonOutput.json
+$ ''' + sys.argv[0] + ''' --pvipr PowerVIPR.json -o VIPRmergedjsonOutput.json LaTeX2jsonOutput.json
 ''')
 parser.add_argument('--debug', action='store_true', help='enable debugging output')
 parser.add_argument('--pvipr', metavar='PVIPR', required=True, help='Power VIPR JSON database')
+parser.add_argument('-o', '--output', help="name of file that result is output to", metavar = 'Output')
 parser.add_argument('file',
 	nargs='?',
 	help="the ISA LaTeX document(s) to process (default: standard input)",
@@ -71,5 +72,11 @@ for intrinsic in powerisa['intrinsics']:
         id += 1
     intrinsic['type_signatures']['list'] = newlist
 
-print(json.dumps (powerisa, indent=4))
+if(params.output):
+    jsonFileOutput = open(params.output, 'w')
+    jsonFileOutput.write(json.dumps (powerisa, indent=4))
+    jsonFileOutput.close()
+
+else:
+    print(json.dumps (powerisa, indent=4))
 
