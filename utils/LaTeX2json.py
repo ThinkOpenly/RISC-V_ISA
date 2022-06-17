@@ -534,7 +534,7 @@ def process_nodelist (nodelist):
     while i < len (nodelist):
         node = nodelist[i]
         if node.isNodeType (LatexMacroNode):
-            if node.macroname == 'input':
+            if node.macroname in ['input', 'include']:
                 dprint (node)
                 filename = process_groupnode_to_chars (node.nodeargd.argnlist[0].nodelist)
                 try:
