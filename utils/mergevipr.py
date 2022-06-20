@@ -75,6 +75,7 @@ for intrinsic in powerisa['intrinsics']:
 if(params.output):
     jsonFileOutput = open(params.output, 'w')
     jsonFileOutput.write(json.dumps (powerisa, indent=4))
+    jsonFileOutput.write('\n')
     jsonFileOutput.close()
 
 else:

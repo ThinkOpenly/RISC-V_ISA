@@ -715,6 +715,7 @@ j = json.loads (s.getvalue ())
 if(params.output):
     jsonFileOutput = open(params.output, 'w')
     jsonFileOutput.write(json.dumps (j, indent=4))
+    jsonFileOutput.write('\n')
     jsonFileOutput.close()
 else:
     print(json.dumps (j, indent=4))
