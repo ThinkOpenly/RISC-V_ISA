@@ -487,10 +487,8 @@ def assign_version (mnemonic, version):
 	global insts
 	# Unfortunately, the "dot" ('.') character will match any character in
 	# re.match (), below.  So, use a character without special meaning instead.
-	# '/' seems to work...
-	# pattern = '^' + re.sub (r"\[([\w\.])\]", '\\1{0,1}', mnemonic) + '$'
-	encoded_mnemonic = mnemonic.replace ('.', '/')
-	pattern = '^' + re.sub (r"\[([\w/])\]", '\\1{0,1}', encoded_mnemonic) + '$'
+	# '\.' seems to work...
+	pattern = '^' + re.sub (r"\[([\w\.])\]", '\\1{0,1}', mnemonic).replace ('.', '\.') + '$'
 	for inst in insts:
 		for m in inst.mnemonics:
 			if re.match (pattern, m.mnemonic):
