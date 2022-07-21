@@ -5373,7 +5373,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Add",
@@ -5415,7 +5415,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -5521,7 +5521,7 @@
                         "SI"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -5598,7 +5598,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 },
                 {
                     "name": "Subtract From",
@@ -5640,7 +5640,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -5780,7 +5780,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Add Carrying",
@@ -5822,7 +5822,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -5911,7 +5911,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Subtract From Carrying",
@@ -5953,7 +5953,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -6043,7 +6043,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Add Extended",
@@ -6085,7 +6085,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -6175,7 +6175,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Subtract From Extended",
@@ -6217,7 +6217,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -6305,7 +6305,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Add to Minus One Extended",
@@ -6345,7 +6345,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -6432,7 +6432,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Add to Zero Extended",
@@ -6472,7 +6472,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -6559,7 +6559,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Subtract From Minus One Extended",
@@ -6599,7 +6599,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -6688,7 +6688,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Subtract From Zero Extended",
@@ -6728,7 +6728,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -6885,7 +6885,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Negate",
@@ -6925,7 +6925,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -7083,7 +7083,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Multiply Low Word",
@@ -7125,7 +7125,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -7213,7 +7213,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -7303,7 +7303,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -7403,7 +7403,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 },
                 {
                     "name": "Divide Word",
@@ -7445,7 +7445,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -7562,7 +7562,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 },
                 {
                     "name": "Divide Word Unsigned",
@@ -7604,7 +7604,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -7719,7 +7719,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 },
                 {
                     "name": "Divide Word Extended",
@@ -7761,7 +7761,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -7881,7 +7881,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 },
                 {
                     "name": "Divide Word Extended Unsigned",
@@ -7923,7 +7923,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -8271,7 +8271,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 },
                 {
                     "name": "Multiply Low Doubleword",
@@ -8313,7 +8313,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -8402,7 +8402,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -8488,7 +8488,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -8780,7 +8780,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 },
                 {
                     "name": "Divide Doubleword",
@@ -8822,7 +8822,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -8936,7 +8936,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 },
                 {
                     "name": "Divide Doubleword Unsigned",
@@ -8978,7 +8978,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -9091,7 +9091,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 },
                 {
                     "name": "Divide Doubleword Extended",
@@ -9133,7 +9133,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -9250,7 +9250,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 },
                 {
                     "name": "Divide Doubleword Extended Unsigned",
@@ -9292,7 +9292,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -10312,7 +10312,7 @@
                         "UI"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -10361,7 +10361,7 @@
                         "UI"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -10646,7 +10646,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -10729,7 +10729,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -10808,7 +10808,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -10887,7 +10887,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -10969,7 +10969,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -11048,7 +11048,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -11127,7 +11127,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -11206,7 +11206,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -11283,7 +11283,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -11365,7 +11365,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -11511,7 +11511,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -11613,7 +11613,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -11888,7 +11888,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -12091,7 +12091,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -12174,7 +12174,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -12693,7 +12693,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -12814,7 +12814,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -12907,7 +12907,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -12998,7 +12998,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -13104,7 +13104,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -13203,7 +13203,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -13305,7 +13305,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -13401,7 +13401,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -13496,7 +13496,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -13594,7 +13594,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -13682,7 +13682,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -13770,7 +13770,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -13865,7 +13865,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -13965,7 +13965,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -14051,7 +14051,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -14147,7 +14147,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -14233,7 +14233,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -14331,7 +14331,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -15273,7 +15273,7 @@
                 "",
                 "Let XT be the value 32TX + T.",
                 "",
-                "The two\u2019s-complement integer in bits 32:63 of GPR[RA] is",
+                "The two\u00e2\u20ac\u2122s-complement integer in bits 32:63 of GPR[RA] is",
                 "sign-extended to 64 bits and placed into doubleword element 0 of",
                 "VSR[XT].",
                 "",
@@ -18013,7 +18013,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -18085,7 +18085,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -18157,7 +18157,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -18229,7 +18229,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -18303,7 +18303,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -18508,7 +18508,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Floating Add Single",
@@ -18542,7 +18542,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -18598,7 +18598,7 @@
                 "(G, R, and X) enter into the",
                 "computation.",
                 "",
-                "If a carry occurs, the sum\u2019s significand is shifted right one bit",
+                "If a carry occurs, the sum\u00e2\u20ac\u2122s significand is shifted right one bit",
                 "position and the exponent is increased by one.",
                 "",
                 "FPRF is set to the class and sign of the result, except",
@@ -18643,7 +18643,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Floating Subtract Single",
@@ -18677,7 +18677,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -18767,7 +18767,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Floating Multiply Single",
@@ -18801,7 +18801,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -18890,7 +18890,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Floating Divide Single",
@@ -18924,7 +18924,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -19013,7 +19013,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P2"
                 },
                 {
                     "name": "Floating Square Root Single",
@@ -19045,7 +19045,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -19135,7 +19135,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.02"
                 },
                 {
                     "name": "Floating Reciprocal Estimate Single",
@@ -19167,7 +19167,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -19262,7 +19262,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 },
                 {
                     "name": "Floating Reciprocal Square Root Estimate Single",
@@ -19294,7 +19294,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.02"
                 }
             ],
             "layout": [
@@ -19547,7 +19547,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Floating Multiply-Add Single",
@@ -19583,7 +19583,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -19683,7 +19683,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Floating Multiply-Subtract Single",
@@ -19719,7 +19719,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -19819,7 +19819,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Floating Negative Multiply-Add Single",
@@ -19855,7 +19855,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -19961,7 +19961,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 },
                 {
                     "name": "Floating Negative Multiply-Subtract Single",
@@ -19997,7 +19997,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -20099,7 +20099,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -20179,7 +20179,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -20280,7 +20280,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -20381,7 +20381,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -20484,7 +20484,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -20587,7 +20587,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P2"
                 }
             ],
             "layout": [
@@ -20688,7 +20688,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P2"
                 }
             ],
             "layout": [
@@ -20789,7 +20789,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -20891,7 +20891,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -20993,7 +20993,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -21076,7 +21076,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -21159,7 +21159,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -21242,7 +21242,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -21325,7 +21325,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.02"
                 }
             ],
             "layout": [
@@ -21404,7 +21404,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.02"
                 }
             ],
             "layout": [
@@ -21480,7 +21480,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.02"
                 }
             ],
             "layout": [
@@ -21556,7 +21556,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.02"
                 }
             ],
             "layout": [
@@ -21796,7 +21796,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -21879,7 +21879,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -22362,7 +22362,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -22448,7 +22448,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -22544,7 +22544,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -22609,7 +22609,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "P1"
                 }
             ],
             "layout": [
@@ -22678,7 +22678,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Add Quad",
@@ -22712,7 +22712,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -22801,7 +22801,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Subtract Quad",
@@ -22835,7 +22835,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -22925,7 +22925,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Multiply Quad",
@@ -22959,7 +22959,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -23050,7 +23050,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Divide Quad",
@@ -23084,7 +23084,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -23734,7 +23734,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Quantize Immediate Quad",
@@ -23770,7 +23770,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -23872,7 +23872,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Quantize Quad",
@@ -23908,7 +23908,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -24013,7 +24013,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Reround Quad",
@@ -24049,7 +24049,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -24178,7 +24178,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Round To FP Integer With Inexact Quad",
@@ -24214,7 +24214,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -24331,7 +24331,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Round To FP Integer Without Inexact Quad",
@@ -24367,7 +24367,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -24458,7 +24458,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -24539,7 +24539,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -24621,7 +24621,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -24710,7 +24710,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -24799,7 +24799,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -24881,7 +24881,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -25024,7 +25024,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Convert To Fixed Quad",
@@ -25056,7 +25056,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -25198,7 +25198,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Decode DPD To BCD Quad",
@@ -25232,7 +25232,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -25343,7 +25343,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Encode BCD To DPD Quad",
@@ -25377,7 +25377,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -25480,7 +25480,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Extract Biased Exponent Quad",
@@ -25512,7 +25512,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -25595,7 +25595,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Insert Biased Exponent Quad",
@@ -25624,7 +25624,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -25718,7 +25718,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Shift Significand Left Immediate Quad",
@@ -25752,7 +25752,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -25798,7 +25798,7 @@
                 "exponent of the result is the same as the exponent of the source",
                 "operand.",
                 "",
-                "For an Infinity, QNaN or SNaN result, the target format\u2019s N-bit",
+                "For an Infinity, QNaN or SNaN result, the target format\u00e2\u20ac\u2122s N-bit",
                 "combination field is set as follows.",
                 "",
                 "",
@@ -25845,7 +25845,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 },
                 {
                     "name": "DFP Shift Significand Right Immediate Quad",
@@ -25879,7 +25879,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -25925,7 +25925,7 @@
                 "exponent of the result is the same as the exponent of the source",
                 "operand.",
                 "",
-                "For an Infinity, QNaN or SNaN result, the target format\u2019s N-bit",
+                "For an Infinity, QNaN or SNaN result, the target format\u00e2\u20ac\u2122s N-bit",
                 "combination field is set as follows.",
                 "",
                 "",
@@ -26741,7 +26741,7 @@
                 "GPR[RA], or 0 if RA=0, and the contents of",
                 "GPR[RB].",
                 "",
-                "Let X be the 32-byte value 0x00 || 0x01 || 0x02 || \u2026 || 0x1D ||",
+                "Let X be the 32-byte value 0x00 || 0x01 || 0x02 || \u00e2\u20ac\u00a6 || 0x1D ||",
                 "0x1E || 0x1F.",
                 "",
                 "Bytes sh to sh+15 of X are placed",
@@ -26826,7 +26826,7 @@
                 "GPR[RA], or 0 if RA=0, and the contents of",
                 "GPR[RB].",
                 "",
-                "Let X be the 32-byte value 0x00 || 0x01 || 0x02 || \u2026 || 0x1D ||",
+                "Let X be the 32-byte value 0x00 || 0x01 || 0x02 || \u00e2\u20ac\u00a6 || 0x1D ||",
                 "0x1E || 0x1F.",
                 "",
                 "Bytes 16-sh to 31-sh of X are",
@@ -34580,7 +34580,7 @@
                 "integers.",
                 "",
                 "The rightmost 128 bits of the sum of src1,",
-                "the one\u2019s complement of src2, and the value 1",
+                "the one\u00e2\u20ac\u2122s complement of src2, and the value 1",
                 "are placed into VSR[VRT+32].",
                 "",
                 "",
@@ -34657,7 +34657,7 @@
                 "integers.",
                 "",
                 "The rightmost 128 bits of the sum of src1,",
-                "the one\u2019s complement of src2, and cin are",
+                "the one\u00e2\u20ac\u2122s complement of src2, and cin are",
                 "placed into VSR[VRT+32].",
                 "",
                 "",
@@ -34724,7 +34724,7 @@
                 "src1 and src2 can be signed or unsigned",
                 "integers.",
                 "",
-                "The carry out of the sum of src1, the one\u2019s complement of",
+                "The carry out of the sum of src1, the one\u00e2\u20ac\u2122s complement of",
                 "src2, and the value 1 is placed into",
                 "VSR[VRT+32].",
                 "",
@@ -34801,7 +34801,7 @@
                 "src1 and src2 can be signed or unsigned",
                 "integers.",
                 "",
-                "The carry out of the sum of src1, the one\u2019s complement of",
+                "The carry out of the sum of src1, the one\u00e2\u20ac\u2122s complement of",
                 "src2, and cin are placed into VSR[VRT+32].",
                 "",
                 "",
@@ -39383,7 +39383,7 @@
                 "",
                 "",
                 "",
-                "The sum of the one\u2019s-complement of the signed integer in word element",
+                "The sum of the one\u00e2\u20ac\u2122s-complement of the signed integer in word element",
                 "i of VSR[VRB+32] and 1 is placed into word",
                 "element i of VSR[VRT+32].",
                 "",
@@ -39448,7 +39448,7 @@
                 "",
                 "",
                 "",
-                "The sum of the one\u2019s-complement of the signed integer in doubleword",
+                "The sum of the one\u00e2\u20ac\u2122s-complement of the signed integer in doubleword",
                 "element i of VSR[VRB+32] and 1 is placed into",
                 "doubleword element i of VSR[VRT+32].",
                 "",
@@ -41831,7 +41831,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -41952,7 +41952,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -42072,7 +42072,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -42193,7 +42193,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.07"
                 }
             ],
             "layout": [
@@ -42316,7 +42316,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -42415,7 +42415,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -42546,7 +42546,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -42676,7 +42676,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -42806,7 +42806,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -42936,7 +42936,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -43066,7 +43066,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -43196,7 +43196,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.07"
                 }
             ],
             "layout": [
@@ -43326,7 +43326,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.07"
                 }
             ],
             "layout": [
@@ -43456,7 +43456,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -43561,7 +43561,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -43666,7 +43666,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -43791,7 +43791,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -43913,7 +43913,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -44036,7 +44036,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -44156,7 +44156,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -44281,7 +44281,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -48090,7 +48090,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -48214,7 +48214,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -48335,7 +48335,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -48457,7 +48457,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.03"
                 }
             ],
             "layout": [
@@ -48603,7 +48603,7 @@
                 "Unless x  -146 or the single-precision",
                 "floating-point result of computing 2 raised to the power x would be a zero, an infinity, or a QNaN, the estimate has a",
                 "relative error in precision no greater than one part in 16.",
-                "The most significant 12 bits of the estimate\u2019s significand are",
+                "The most significant 12 bits of the estimate\u00e2\u20ac\u2122s significand are",
                 "monotonic.",
                 "An integral input value returns an integral value when the result is",
                 "representable.",
@@ -48689,7 +48689,7 @@
                 "Under the same conditions, the estimate has a relative error in",
                 "precision no greater than one part in 8.",
                 "",
-                "The most significant 12 bits of the estimate\u2019s significand are",
+                "The most significant 12 bits of the estimate\u00e2\u20ac\u2122s significand are",
                 "monotonic.",
                 "The estimate is exact if x=2, where y is an integer",
                 "between -149 and +127 inclusive.",
@@ -53049,7 +53049,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -53142,7 +53142,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -53235,7 +53235,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -53331,7 +53331,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v3.1"
                 }
             ],
             "layout": [
@@ -53537,7 +53537,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v2.07"
                 }
             ],
             "layout": [
@@ -53658,7 +53658,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v2.07"
                 }
             ],
             "layout": [
@@ -53778,7 +53778,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -53912,7 +53912,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -54084,7 +54084,7 @@
                         "VRB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -54214,7 +54214,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -54377,7 +54377,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -54476,7 +54476,7 @@
                         "VRB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -54826,7 +54826,7 @@
                         "VRB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -54910,7 +54910,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -55016,7 +55016,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -55155,7 +55155,7 @@
                         "VRB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -55274,7 +55274,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -55419,7 +55419,7 @@
                         "PS"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -55550,7 +55550,7 @@
                         "VRB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -64406,7 +64406,7 @@
                 "",
                 "Let XB be the value 32BX + B.",
                 "",
-                "Let src be the two\u2019s-complement integer value in doubleword element 0",
+                "Let src be the two\u00e2\u20ac\u2122s-complement integer value in doubleword element 0",
                 "of VSR[XB].",
                 "",
                 "src is converted to floating-point format, and rounded to",
@@ -66510,7 +66510,7 @@
                 "The contents of doubleword element 1 of VSR[XT] are set",
                 "to 0.",
                 "",
-                "The minimum of +0 and \u20130 is \u20130.",
+                "The minimum of +0 and \u00e2\u20ac\u201c0 is \u00e2\u20ac\u201c0.",
                 "The minimum of a QNaN and any value is that value.",
                 "The minimum of any value and an SNaN is that SNaN converted to a QNaN.",
                 "",
@@ -73145,7 +73145,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -73324,7 +73324,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -73503,7 +73503,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -73686,7 +73686,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -73869,7 +73869,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -74049,7 +74049,7 @@
                             "value": "1"
                         }
                     ],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -80038,7 +80038,7 @@
                 "VSR[XT] in single-precision format.",
                 "",
                 "",
-                "The maximum of +0 and \u20130 is +0.",
+                "The maximum of +0 and \u00e2\u20ac\u201c0 is +0.",
                 "The maximum of a QNaN and any value is that value.",
                 "The maximum of any value and an SNaN when VE=0 is that SNaN converted",
                 "to a QNaN.",
@@ -89355,7 +89355,7 @@
                         "L"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v3.0"
                 }
             ],
             "layout": [
@@ -89418,7 +89418,7 @@
                 "The physical target of the operation, and by implication the function",
                 "to be performed, is determined by the real address that is translated",
                 "from EA.",
-                "If the real address is in the platform\u2019s system memory, a simple copy",
+                "If the real address is in the platform\u00e2\u20ac\u2122s system memory, a simple copy",
                 "is performed.",
                 "If the real address has an associated mapping to another system, the",
                 "copy buffer is transmitted to the other system.",
@@ -90136,7 +90136,7 @@
                         "RB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -90246,7 +90246,7 @@
                         "RB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v2.06"
                 }
             ],
             "layout": [
@@ -90361,7 +90361,7 @@
                         "RB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -90568,7 +90568,7 @@
                         "RB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "PPC"
                 }
             ],
             "layout": [
@@ -90780,7 +90780,7 @@
                         "RB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v2.07"
                 }
             ],
             "layout": [
@@ -93740,7 +93740,7 @@
                         "RB"
                     ],
                     "conditions": [],
-                    "release": ""
+                    "release": "v2.05"
                 }
             ],
             "layout": [
@@ -94796,8 +94796,10 @@
                 }
             ],
             "code": [
-                "msgtype := GPR(RB)<sub>32:36</sub>payload := GPR(RB)<sub>37:63</sub>",
-                "if (msgtype = 0x05) then",
+                "msgtype := GPR(RB)<sub>32:36</sub>",
+                "payload := GPR(RB)<sub>37:63</sub>",
+                "if (msgtype = 0x05)",
+                "then",
                 "  send_msg(msgtype, payload)"
             ],
             "body": [
@@ -94806,37 +94808,12 @@
                 "system.",
                 "The message type and destination thread(s) are specified in RB.",
                 "",
-                "RB",
-                "",
-                "",
                 "",
                 "",
                 "",
                 "The contents of RB are defined below.",
                 "Bits 37:63 are referred to as the message payload.",
                 "",
-                "",
-                "",
-                "",
-                "",
-                "If Type=0x05, then a Directed Ultravisor Doorbell message is to be",
-                "sent to the thread(s) specified in the Message Payload field.",
-                "",
-                "",
-                "All other values of the Type field are reserved; if the instruction",
-                "is executed with this field set to a reserved value, the instruction",
-                "is treated as a no-op.",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "This field indicates the recipient thread(s) as specified in the B",
-                "field.",
-                "If this field set to a value that is not the same as bits",
-                "PIR44:63 of any thread in the system, then the",
-                "instruction behaves as if it were a no-op.",
                 "",
                 "",
                 "The actions taken on receipt of a message are defined in",
@@ -94885,17 +94862,16 @@
                 }
             ],
             "code": [
-                "t := hypervisor thread number of executing thread\\",
+                "t := hypervisor thread number of executing thread",
                 "if (msgtype = 0x05) then",
-                "       clear any Directed Ultravisor Doorbell exception",
-                "       for thread t"
+                "       clear any Directed Ultravisor Doorbell exception for thread t"
             ],
             "body": [
                 "",
                 "msgclru clears a message previously accepted by",
                 "the thread executing the msgclru.",
                 "",
-                "Let msgtype be (RB)32: 36, and let t be the",
+                "Let msgtype be (RB)32:36, and let t be the",
                 "hypervisor thread number of the thread executing the",
                 "msgclru instruction.",
                 "",
@@ -94946,8 +94922,10 @@
                 }
             ],
             "code": [
-                "msgtype := GPR(RB)<sub>32:36</sub>payload := GPR(RB)<sub>37:63</sub>",
-                "if(msgtype = 0x05)then",
+                "msgtype := GPR(RB)<sub>32:36</sub>",
+                "payload := GPR(RB)<sub>37:63</sub>",
+                "if (msgtype = 0x05)",
+                "then",
                 "  send_msg(msgtype, payload)"
             ],
             "body": [
@@ -94956,37 +94934,12 @@
                 "system.",
                 "The message type and destination thread(s) are specified in RB.",
                 "",
-                "RB",
-                "",
-                "",
                 "",
                 "",
                 "",
                 "The contents of RB are defined below.",
                 "Bits 37:63 are referred to as the message payload.",
                 "",
-                "",
-                "",
-                "",
-                "",
-                "If Type=0x05, then a Directed Hypervisor Doorbell message is to be",
-                "sent to the thread(s) specified in the Message Payload field.",
-                "",
-                "",
-                "All other values of the Type field are reserved; if the instruction",
-                "is executed with this field set to a reserved value, the instruction",
-                "is treated as a no-op.",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "This field indicates the recipient thread(s) as specified in the B",
-                "field.",
-                "If this field set to a value that is not the same as bits",
-                "PIR44:63 of any thread in the system, then the",
-                "instruction behaves as if it were a no-op.",
                 "",
                 "",
                 "The actions taken on receipt of a message are defined in",
@@ -95035,17 +94988,17 @@
                 }
             ],
             "code": [
-                "t := hypervisor thread number of executing thread\\",
-                "if(msgtype = 0x05) then",
-                "       clear any Directed Hypervisor Doorbell exception",
-                "       for thread t"
+                "t := hypervisor thread number of executing thread",
+                "if (msgtype = 0x05)",
+                "then",
+                "  clear any Directed Hypervisor Doorbell exception for thread t"
             ],
             "body": [
                 "",
                 "msgclr clears a message previously accepted by",
                 "the thread executing the msgclr.",
                 "",
-                "Let msgtype be (RB)32: 36, and let t be the",
+                "Let msgtype be (RB)32:36, and let t be the",
                 "hypervisor thread number of the thread executing the",
                 "msgclr instruction.",
                 "",
@@ -95096,14 +95049,14 @@
                 }
             ],
             "code": [
-                "msgtype := (RB)<sub>32:36</sub>payload := (RB)<sub>37:63</sub>",
+                "msgtype := (RB)<sub>32:36</sub>",
+                "payload := (RB)<sub>37:63</sub>",
                 "t := (RB)<sub>57:63</sub>",
                 "if msgtype = 5 and",
-                "  t <=  maximum privileged thread number\\",
-                "      on processor or sub-processor",
-                " then\\",
-                "DPDES<sub>63-t</sub> := 1",
-                "   send_msg(msgtype, payload, t)"
+                "  t <=  maximum privileged thread number on processor or sub-processor",
+                "then",
+                "  DPDES<sub>63-t</sub> := 1",
+                "  send_msg(msgtype, payload, t)"
             ],
             "body": [
                 "",
@@ -95113,32 +95066,12 @@
                 "sub-processor (if the processor is in sub-processor mode).",
                 "The message type and destination thread(s) are specified in RB.",
                 "",
-                "RB",
-                "",
-                "",
                 "",
                 "",
                 "",
                 "The contents of RB are defined below.",
                 "Bits 37:63 are referred to as the message payload.",
                 "",
-                "",
-                "",
-                "",
-                "",
-                "This message is sent to the thread for which the privileged thread",
-                "number is equal to contents of the TIRTAG field of the message",
-                "payload, and one of the following conditions applies.",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "If msgsndp is executed with TIRTAG set to a value",
-                "greater than the highest privileged thread number on the",
-                "sub-processor (or on the multi-threaded processor if sub-processors",
-                "are not supported), then this instruction behaves as a no-op",
                 "",
                 "",
                 "The actions taken on receipt of a message are defined in",
@@ -95188,10 +95121,10 @@
             ],
             "code": [
                 "msgtype := (RB)<sub>32:36</sub>",
-                "t := privileged thread number of executing thread\\",
-                "IF(msgtype = 0x05)",
-                " then",
-                "               DPDES<sub>63-t</sub> := 0"
+                "t := privileged thread number of executing thread",
+                "IF (msgtype = 0x05)",
+                "then",
+                "  DPDES<sub>63-t</sub> := 0"
             ],
             "body": [
                 "",
