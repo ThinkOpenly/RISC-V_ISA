@@ -2,12 +2,6 @@
 
 Power ISA
 
-# create ISA.json
-
-```
-$ ./utils/mif2json.py ../PowerISA/PowerISA_tags.mif > ./src/ISA.json
-```
-
 # Run Local React Environment
 
 Note: These intructions assume you have Node and React installed on your machine. If you do not visit the node.js website and follow
