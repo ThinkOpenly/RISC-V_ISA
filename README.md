@@ -1,8 +1,6 @@
-# ISA
+# RISC-V ISA
 
-Power ISA
-
-# Run Local React Environment
+## Run Local React Environment
 
 Note: These intructions assume you have Node and React installed on your machine. If you do not visit the node.js website and follow
 their install instructions. Once Node is installed, you can use the node package manager to install React with the following command
@@ -11,13 +9,13 @@ their install instructions. Once Node is installed, you can use the node package
 npm i react
 ```
 
-#### 1. Once you have cloned the repo, navigate to the same directory that contains package.json and run
+Once you have cloned the repo, navigate to the same directory that contains package.json and run
 
 ```
 npm i
 ```
 
-#### 2. After npm installs your dependencies, run
+After npm installs your dependencies, run
 
 ```
 npm run start
