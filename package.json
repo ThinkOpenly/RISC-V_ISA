@@ -1,7 +1,7 @@
 {
   "name": "isa",
-  "version": "0.2.0",
-  "description": "Power ISA web",
+  "version": "0.5.0",
+  "description": "RISC-V ISA web",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.ibm.com:sdk/ISA.git"
+    "url": "git@github.com:ThinkOpenly/RISC-V_ISA.git"
   },
   "keywords": [
-    "OpenPOWER",
+    "RISC-V",
     "ISA"
   ],
   "author": "Paul A. Clarke",
