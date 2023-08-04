@@ -27,3 +27,46 @@ Navigate to that address in your favorite browser to interact with the UI.
 `npm run start` will automatically launch a browser or browser tab.
 While running in this local dev environment, any code changes will cause a quick
 server restart on save, so you can quickly tweak UI code to your specifications
+
+## Deploy to GitHub Pages
+
+1. Install gh-pages:
+   ```
+   $ npm install gh-pages --save-dev
+   ```
+
+1. Customize the "homepage" as defined in `package.json`:
+   ```
+   "homepage": "https://your-username.github.io/your-repository-name"
+   ```
+
+1. Build:
+   ```
+   $ npm run build
+   ```
+
+1. Deploy:
+   ```
+   $ npm run deploy
+   ```
+
+1. Enable GitHub Pages:
+   1. Settings...
+   1. GitHub Pages -> select "gh-pages" branch.
+   1. Save.
+
+1. Visit the "homepage" link as defined above.
+
+(_Thanks to ArdeshirV @ https://github.com/orgs/community/discussions/60881 for describing these simple steps!_)
+
+### Redeploy to GitHub Pages after changes
+
+1. Build:
+   ```
+   $ npm run build
+   ```
+
+1. Deploy:
+   ```
+   $ npm run deploy
+   ```
