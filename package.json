@@ -7,8 +7,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://ThinkOpenly.github.io/RISC-V_ISA",
   "repository": {
     "type": "git",
     "url": "git@github.com:ThinkOpenly/RISC-V_ISA.git"
@@ -37,5 +40,8 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-scripts": "^5.0.1",
     "sass": "^1.51.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
