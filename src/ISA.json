@@ -13,6 +13,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -63,6 +64,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -113,6 +115,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b01",
@@ -159,6 +162,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -213,6 +217,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "bs",
@@ -259,6 +264,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -317,6 +323,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "fm",
@@ -379,6 +386,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00011",
@@ -437,6 +445,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0000101",
@@ -479,6 +488,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b011000000000",
@@ -537,6 +547,7 @@
           "type": "bool"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "imm",
@@ -563,7 +574,7 @@
           "size": 7
         }
       ],
-      "function": "{ let offset : xlenbits = EXTS(64, imm) in { match ext_data_get_addr(rs1, offset, Read(Data), width) { Ext_DataAddr_Error(e) -> { ext_handle_data_check_error(e); RETIRE_FAIL }, Ext_DataAddr_OK(vaddr) -> if check_misaligned(vaddr, width) then { handle_mem_exception(vaddr, E_Load_Addr_Align()); RETIRE_FAIL } else match translateAddr(vaddr, Read(Data)) { TR_Failure((e, _)) -> { handle_mem_exception(vaddr, e); RETIRE_FAIL }, TR_Address((paddr, _)) -> match width { BYTE -> process_load(rd, vaddr, mem_read(Read(Data), paddr, 1, aq, rl, false), is_unsigned), HALF -> process_load(rd, vaddr, mem_read(Read(Data), paddr, 2, aq, rl, false), is_unsigned), WORD -> process_load(rd, vaddr, mem_read(Read(Data), paddr, 4, aq, rl, false), is_unsigned), DOUBLE when gteq_int(64, 64) -> process_load(rd, vaddr, mem_read(Read(Data), paddr, 8, aq, rl, false), is_unsigned), _ -> report_invalid_width(\"model/riscv_insts_base.sail\", 406, width, \"load\") } } } } }",
+      "function": "{ let offset : xlenbits = EXTS(64, imm) in { match ext_data_get_addr(rs1, offset, Read(Data), width) { Ext_DataAddr_Error(e) -> { ext_handle_data_check_error(e); RETIRE_FAIL }, Ext_DataAddr_OK(vaddr) -> if check_misaligned(vaddr, width) then { handle_mem_exception(vaddr, E_Load_Addr_Align()); RETIRE_FAIL } else match translateAddr(vaddr, Read(Data)) { TR_Failure((e, _)) -> { handle_mem_exception(vaddr, e); RETIRE_FAIL }, TR_Address((paddr, _)) -> match width { BYTE -> process_load(rd, vaddr, mem_read(Read(Data), paddr, 1, aq, rl, false), is_unsigned), HALF -> process_load(rd, vaddr, mem_read(Read(Data), paddr, 2, aq, rl, false), is_unsigned), WORD -> process_load(rd, vaddr, mem_read(Read(Data), paddr, 4, aq, rl, false), is_unsigned), DOUBLE when gteq_int(64, 64) -> process_load(rd, vaddr, mem_read(Read(Data), paddr, 8, aq, rl, false), is_unsigned), _ -> report_invalid_width(\"model/riscv_insts_base.sail\", 423, width, \"load\") } } } } }",
       "description": "TBD"
     },
     {
@@ -583,6 +594,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "imm",
@@ -625,6 +637,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -679,6 +692,7 @@
           "type": "word_width"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "imm",
@@ -721,6 +735,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b01",
@@ -771,6 +786,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0010100",
@@ -817,6 +833,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0110000",
@@ -867,6 +884,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "bs",
@@ -913,6 +931,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b011000000010",
@@ -951,6 +970,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -997,6 +1017,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b011000000001",
@@ -1035,6 +1056,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -1089,6 +1111,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "bs",
@@ -1135,6 +1158,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -1185,6 +1209,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b01",
@@ -1235,6 +1260,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b01",
@@ -1285,6 +1311,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0000101",
@@ -1327,6 +1354,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -1377,6 +1405,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0000100",
@@ -1419,6 +1448,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b000010001111",
@@ -1446,7 +1476,7 @@
     },
     {
       "mnemonic": "jalr",
-      "name": "TBD",
+      "name": "jump and link register",
       "operands": [
         {
           "name": "imm",
@@ -1461,6 +1491,7 @@
           "type": "regidx"
         }
       ],
+      "format": "I",
       "fields": [
         {
           "field": "imm",
@@ -1484,7 +1515,7 @@
         }
       ],
       "function": "{ let t : xlenbits = add_bits(rX_bits(rs1), EXTS(64, imm)) in { match ext_control_check_addr(t) { Ext_ControlAddr_Error(e) -> { ext_handle_control_check_error(e); RETIRE_FAIL }, Ext_ControlAddr_OK(addr) -> { let target = bitvector_update(addr, 0, bitzero) in { if and_bool(bit_to_bool(bitvector_access(target, 1)), not(haveRVC())) then { handle_mem_exception(target, E_Fetch_Addr_Align()); RETIRE_FAIL } else { wX_bits(rd, get_next_pc()); set_next_pc(target); RETIRE_SUCCESS } } } } } }",
-      "description": "TBD"
+      "description": "The target address is obtained by adding the sign-extended 12-bit I-immediate to the register rs1, then setting the least-significant bit of the result to zero. The address of the instruction following the jump (pc+4) is written to register rd. Register x0 can be used as the destination if the result is not required."
     },
     {
       "mnemonic": "rori",
@@ -1503,6 +1534,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b011000",
@@ -1549,6 +1581,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0010100",
@@ -1595,6 +1628,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -1641,6 +1675,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b011010111000",
@@ -1687,6 +1722,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "bs",
@@ -1733,6 +1769,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b011010000111",
@@ -1775,6 +1812,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0000001",
@@ -1821,6 +1859,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -1875,6 +1914,7 @@
           "type": "bool"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0000001",
@@ -1921,6 +1961,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b011000000000",
@@ -1959,6 +2000,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -2017,6 +2059,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00010",
@@ -2079,6 +2122,7 @@
           "type": "bool"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0000001",
@@ -2125,6 +2169,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0001001",
@@ -2151,7 +2196,7 @@
           "size": 7
         }
       ],
-      "function": "{ let addr : option(xlenbits) = if eq_bits(rs1, 0b00000) then None() else Some(rX_bits(rs1)) in { let asid : option(xlenbits) = if eq_bits(rs2, 0b00000) then None() else Some(rX_bits(rs2)) in { match cur_privilege { User -> { handle_illegal(); RETIRE_FAIL }, Supervisor -> match (architecture(get_mstatus_SXL(mstatus)), _get_Mstatus_TVM(mstatus)) { (Some(_), 0b1) -> { handle_illegal(); RETIRE_FAIL }, (Some(_), 0b0) -> { flush_TLB(asid, addr); RETIRE_SUCCESS }, (_, _) -> internal_error(\"model/riscv_insts_base.sail\", 870, \"unimplemented sfence architecture\") }, Machine -> { flush_TLB(asid, addr); RETIRE_SUCCESS } } } } }",
+      "function": "{ let addr : option(xlenbits) = if eq_bits(rs1, 0b00000) then None() else Some(rX_bits(rs1)) in { let asid : option(xlenbits) = if eq_bits(rs2, 0b00000) then None() else Some(rX_bits(rs2)) in { match cur_privilege { User -> { handle_illegal(); RETIRE_FAIL }, Supervisor -> match (architecture(get_mstatus_SXL(mstatus)), _get_Mstatus_TVM(mstatus)) { (Some(_), 0b1) -> { handle_illegal(); RETIRE_FAIL }, (Some(_), 0b0) -> { flush_TLB(asid, addr); RETIRE_SUCCESS }, (_, _) -> internal_error(\"model/riscv_insts_base.sail\", 887, \"unimplemented sfence architecture\") }, Machine -> { flush_TLB(asid, addr); RETIRE_SUCCESS } } } } }",
       "description": "TBD"
     },
     {
@@ -2171,6 +2216,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "imm",
@@ -2209,6 +2255,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b011000000010",
@@ -2251,6 +2298,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b01",
@@ -2301,6 +2349,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0000101",
@@ -2343,6 +2392,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -2393,6 +2443,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b01",
@@ -2439,6 +2490,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -2485,6 +2537,7 @@
           "type": "bits(4)"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b1000",
@@ -2531,6 +2584,7 @@
           "type": "bits(4)"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b0000",
@@ -2577,6 +2631,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b011000000001",
@@ -2615,6 +2670,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b000010001111",
@@ -2657,6 +2713,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b000010",
@@ -2707,6 +2764,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "bs",
@@ -2753,6 +2811,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b001010000111",
@@ -2791,6 +2850,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b00",
@@ -2841,6 +2901,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "0b01",
@@ -2895,6 +2956,7 @@
           "type": "regidx"
         }
       ],
+      "format": "TBD",
       "fields": [
         {
           "field": "bs",
