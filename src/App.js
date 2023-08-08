@@ -155,6 +155,7 @@ class App extends Component {
                                         </tbody>
                                     </table>
                                 </td>
+                                <td style={{textAlign: 'right'}}>{item.format}-type</td>
                             </tr>
                         </tbody>
                     </table>
