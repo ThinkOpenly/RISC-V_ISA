@@ -101,7 +101,7 @@ class App extends Component {
 
     displayBitScale(layout) {
         let all = [];
-        for (let i = 0; i < 32; i++) {
+        for (let i = 31; i >= 0; i--) {
             all.push(<td className="instruction-bit-number" key={i}>{("0" + i.toString()).slice(-2)}</td>);
         }
         return all;
