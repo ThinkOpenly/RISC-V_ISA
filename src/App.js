@@ -88,7 +88,17 @@ class App extends Component {
     }
 
     displayField(layout,key) {
-        return(<td className="instruction-field" key={key} colSpan={layout.size}>{layout.field}</td>);
+        if(layout.field.startsWith("0b")){
+            const binaryValue = layout.field.substring(2);
+            const binaryDigits = binaryValue.split("");
+
+            return binaryDigits.map((digit, index) => (
+                <td className="instruction-field" key={key + "-" + index} colSpan={1}>{digit}</td>
+            ));
+        }
+        else{
+            return(<td className="instruction-field" key={key} colSpan={layout.size}>{layout.field}</td>);
+        }
     }
 
     displayFields(layout) {
