@@ -15,13 +15,24 @@ import {
 } from "@carbon/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
+var formats = [];
+
+function genFormatList(tree,index,array) {
+    formats.push(tree);
+}
+
 class App extends Component {
 
     constructor(props) {
         super(props);
         /* Is the constructor called twice?? */
+
+        if (formats.length == 0)
+            ISA.formats.forEach(genFormatList);
         this.state = {
             data: ISA.instructions,
+            extensionSet: ISA.extensions,
+            formatSet: formats,
             search: "",
             search_mnemonics: true,
             search_names: false,
@@ -186,6 +197,7 @@ class App extends Component {
                     <tr>
                         <td className="itemtitledesc">{item.name}</td>
                         <td className="itemtitlemnem">{item.mnemonic}</td>
+                        <td className="itemtitleext">{item.extensions.join()}</td>
                     </tr>
                 </tbody>
             </table>
@@ -194,6 +206,14 @@ class App extends Component {
 
     matchEach(value) {
         return this.includes(value);
+    }
+
+    matchAny(listA,listB) {
+        if (listA.length == 0) return true;
+        for (let i = 0; i < listA.length; i++) {
+            if (listB.includes(listA[i])) return true;
+        }
+        return false;
     }
 
     genData = data => {
@@ -206,7 +226,8 @@ class App extends Component {
                         (this.state.search_names &&
                          this.state.search.split(" ").every(this.matchEach,data[i].name.toLowerCase()))
                     ) {
-                        {
+                        if (this.state.formatSet.includes(data[i].format) &&
+                            this.matchAny(data[i].extensions,this.state.extensionSet)) {
                             allJson.push(
                                 <AccordionItem
                                     title={this.genTitle(data[i])}
@@ -222,9 +243,115 @@ class App extends Component {
         return allJson;
     };
 
+    genExtensionLabel(extension) {
+        return (
+            <table className="extensionlabel">
+                <tbody>
+                    <tr>
+                        <td className="extensionversion">{extension}</td>
+                    </tr>
+                </tbody>
+            </table>
+        );
+    }
+
+    genExtensionCheckboxes(extensions) {
+        let all = [];
+        for (let i = 0; i < extensions.length; i++) {
+            all.push(
+                <Checkbox
+                    defaultChecked
+                    className="checkbox"
+                    id={extensions[i]}
+                    key={extensions[i]}
+                    labelText={this.genExtensionLabel(extensions[i])}
+                    disabled={false}
+                    hideLabel={false}
+                    onChange={(value, id, event) => {
+                        this.filterByExtensions(id.checked, extensions[i]);
+                    }}
+                />
+            );
+        }
+        return all;
+    }
+
+    genFormatCheckboxes(formats) {
+        let all = [];
+        for (let i = 0; i < formats.length; i++) {
+            all.push(
+                <Checkbox
+                    defaultChecked
+                    className="checkbox"
+                    id={formats[i]}
+                    key={formats[i]}
+                    labelText={formats[i]}
+                    disabled={false}
+                    hideLabel={false}
+                    onChange={(value, id, event) => {
+                        this.filterByFormats(id.checked, formats[i]);
+                    }}
+                />
+            );
+        }
+        return all;
+    }
+
     search() {
         let id = document.getElementById("search-1");
         this.setState({ search: id.value.toLowerCase() });
+    }
+
+    filterAllExtensions(set) {
+        let newSet = [];
+        if (set) {
+            newSet = ISA.extensions;
+        }
+        for (let i = 0; i < ISA.extensions.length; i++) {
+            let id = document.getElementById(ISA.extensions[i]);
+            id.checked = set;
+        }
+        this.setState({ extensionSet: newSet });
+    }
+
+    filterAllFormats(set) {
+        let newSet = [];
+        if (set) {
+            newSet = formats;
+        }
+        for (let i = 0; i < formats.length; i++) {
+            let id = document.getElementById(formats[i]);
+            id.checked = set;
+        }
+        this.setState({ formatSet: newSet });
+    }
+
+    filterByExtensions(set, b) {
+        let newSet = [];
+        if (set) {
+            newSet = this.state.extensionSet;
+            newSet.push(b);
+        } else {
+            for (let i = 0; i < this.state.extensionSet.length; i++) {
+                if (this.state.extensionSet[i] === b) continue;
+                newSet.push(this.state.extensionSet[i]);
+            }
+        }
+        this.setState({ extensionSet: newSet });
+    }
+
+    filterByFormats(set, b) {
+        let newSet = [];
+        if (set) {
+            newSet = this.state.formatSet;
+            newSet.push(b);
+        } else {
+            for (let i = 0; i < this.state.formatSet.length; i++) {
+                if (this.state.formatSet[i] === b) continue;
+                newSet.push(this.state.formatSet[i]);
+            }
+        }
+        this.setState({ formatSet: newSet });
     }
 
     genMultiLine(row,string) {
@@ -263,6 +390,48 @@ class App extends Component {
                     <div className="homeContainer">
                         <Nav />
                         <div className="mainContainer">
+                            <div className="filterContainer">
+                                <Accordion>
+                                    <AccordionItem
+                                        title="Extensions"
+                                    >
+                                        <fieldset className="checkboxes">
+                                            <Checkbox
+                                                defaultChecked
+                                                className="checkbox"
+                                                id="all-extensions"
+                                                labelText="[all]"
+                                                disabled={false}
+                                                hideLabel={false}
+                                                onChange={(value, id, event) => {
+                                                    this.filterAllExtensions(id.checked);
+                                                }}
+                                            />
+                                            {this.genExtensionCheckboxes(ISA.extensions)}
+                                        </fieldset>
+                                    </AccordionItem>
+                                </Accordion>
+                                <Accordion>
+                                    <AccordionItem
+                                        title="Instruction formats"
+                                    >
+                                        <fieldset className="checkboxes">
+                                            <Checkbox
+                                                defaultChecked
+                                                className="checkbox"
+                                                id="all-forms"
+                                                labelText="[all]"
+                                                disabled={false}
+                                                hideLabel={false}
+                                                onChange={(value, id, event) => {
+                                                    this.filterAllFormats(id.checked);
+                                                }}
+                                            />
+                                            {this.genFormatCheckboxes(ISA.formats)}
+                                        </fieldset>
+                                    </AccordionItem>
+                                </Accordion>
+                            </div>
                             <div className="accordianContainer">
                                 <div className="searchContainer">
                                     <table>
