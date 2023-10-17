@@ -120,21 +120,21 @@ class App extends Component {
         return all;
     }
 
-    displayBitScale(layout) {
+    displayBitScale(layout,width) {
         let all = [];
-        for (let i = 31; i >= 0; i--) {
+        for (let i = width-1; i >= 0; i--) {
             all.push(<td className="instruction-bit-number" key={i}>{("0" + i.toString()).slice(-2)}</td>);
         }
         return all;
     }
 
-    displayLayoutRows(layout) {
+    displayLayoutRows(layout,width) {
         let all = [];
         let bits = 0;
         let start = 0;
         for (let i = 0; i < layout.length; i++) {
             bits += parseInt(layout[i].size);
-            if (bits >= 32) {
+            if (bits >= width) {
                 all.push(<tr key={start}>{this.displayFields(layout.slice(start,i+1))}</tr>);
                 start = i+1;
                 bits = 0;
@@ -145,8 +145,13 @@ class App extends Component {
 
     displayLayout(layout) {
 	let all = [];
-        all.push(this.displayLayoutRows(layout));
-        all.push(<tr key="bitScale">{this.displayBitScale(layout)}</tr>);
+        let width = 0;
+        for (let i = 0; i < layout.length; i++) {
+            width += parseInt(layout[i].size);
+        }
+        if (width > 32) width = 32;
+        all.push(this.displayLayoutRows(layout,width));
+        all.push(<tr key="bitScale">{this.displayBitScale(layout,width)}</tr>);
         return (all);
     }
 
