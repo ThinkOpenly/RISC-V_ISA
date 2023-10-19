@@ -213,10 +213,13 @@ class App extends Component {
         return this.includes(value);
     }
 
-    matchAny(listA,listB) {
-        if (listA.length == 0) return true;
-        for (let i = 0; i < listA.length; i++) {
-            if (listB.includes(listA[i])) return true;
+    matchAny(extensions,extensionSet) {
+        let id = document.getElementById("all-extensions");
+        if (!id) return true; /* too early? */
+        if (extensions.length == 0) return id.checked;
+        if (extensions.length > 0 && extensionSet.length == 0) return false;
+        for (let i = 0; i < extensions.length; i++) {
+            if (extensionSet.includes(extensions[i])) return true;
         }
         return false;
     }
