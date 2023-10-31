@@ -39,16 +39,6 @@ class App extends Component {
         };
     }
 
-    displayOperands(operands) {
-        let all = "";
-        let comma = "";
-        for (let i = 0; i < operands.length; i++) {
-            all += comma + operands[i].name;
-            comma = ",";
-        }
-        return all;
-    }
-
     displayMnemonic(item) {
         const spaces = "               ";
 
@@ -57,7 +47,7 @@ class App extends Component {
         let s =
             item.mnemonic +
             spaces.substr(0,gap) +
-            this.displayOperands(item.operands);
+            item.syntax;
         let conditions = "";
         try {
             if (item.conditions.length > 0) {
