@@ -55548,7 +55548,7 @@
       "description": "TBD"
     },
     {
-      "mnemonic": "vsetvli",
+      "mnemonic": "vsetvl",
       "name": "TBD",
       "operands": [
         {
