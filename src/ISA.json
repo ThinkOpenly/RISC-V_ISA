@@ -20423,15 +20423,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
-          "type": "regidx"
-        },
-        {
           "name": "imm",
           "type": "bits(12)"
+        },
+        {
+          "name": "rs1",
+          "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,imm",
+      "syntax": "rd,imm(rs1)",
       "format": "I",
       "fields": [
         {
@@ -21648,7 +21648,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -21705,7 +21705,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -21762,7 +21762,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -21819,7 +21819,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -21876,7 +21876,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -21933,7 +21933,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -21990,7 +21990,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -22047,7 +22047,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -22104,7 +22104,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -22161,7 +22161,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -22218,7 +22218,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -22275,7 +22275,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -22332,7 +22332,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -22389,7 +22389,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -22446,7 +22446,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -22503,7 +22503,7 @@
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1",
+      "syntax": "rd,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -24592,15 +24592,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -24653,15 +24653,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -24714,15 +24714,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -24775,15 +24775,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -24836,15 +24836,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -24897,15 +24897,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -24958,15 +24958,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -25019,15 +25019,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -25080,15 +25080,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -25141,15 +25141,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -25202,15 +25202,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -25263,15 +25263,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -25324,15 +25324,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -25385,15 +25385,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -25446,15 +25446,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
@@ -25507,15 +25507,15 @@
           "type": "regidx"
         },
         {
-          "name": "rs1",
+          "name": "rs2",
           "type": "regidx"
         },
         {
-          "name": "rs2",
+          "name": "rs1",
           "type": "regidx"
         }
       ],
-      "syntax": "rd,rs1,rs2",
+      "syntax": "rd,rs2,(rs1)",
       "format": "TBD",
       "fields": [
         {
