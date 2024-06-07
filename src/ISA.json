@@ -2,7 +2,7 @@
   "instructions": [
     {
       "mnemonic": "sha256sig1",
-      "name": "TBD",
+      "name": "SHA2-256 Sigma1",
       "operands": [
         {
           "name": "rs1",
@@ -248,7 +248,7 @@
     },
     {
       "mnemonic": "sha256sum1",
-      "name": "TBD",
+      "name": "SHA2-256 Sum1",
       "operands": [
         {
           "name": "rs1",
@@ -1948,7 +1948,7 @@
     },
     {
       "mnemonic": "sha256sum0",
-      "name": "TBD",
+      "name": "SHA2-256 Sum0",
       "operands": [
         {
           "name": "rs1",
@@ -2332,7 +2332,7 @@
     },
     {
       "mnemonic": "sha256sig0",
-      "name": "TBD",
+      "name": "SHA2-256 Sigma0",
       "operands": [
         {
           "name": "rs1",
