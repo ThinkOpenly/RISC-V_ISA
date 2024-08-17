@@ -156,3 +156,164 @@ h1 {
   padding-bottom: 0;
   padding-left: 0;
 }
+
+/****************************** Dark Mode ******************************/
+:root {
+    --dark-bg-color: #1f1f1f;
+    --dark-text-color: #e8e8e8;
+    --dark-border-color: #e8e8e8;
+    --dark-bg-secondary: #333;
+    --dark-bg-accordion: #3339;
+    --dark-hover-color: #999;
+    --dark-focus-border: #3C1E70;
+    --dark-subtle-border: #636363;
+    --dark-snippet-bg: #222;
+    --dark-pseudocode-bg: #C9D1D9;
+    --dark-scrollbar-thumb: #555;
+    --dark-scrollbar-track: #333;
+    --dark-button-bg: #222;
+}
+
+#theme-switch {
+    background-color: inherit;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15rem;
+}
+
+#theme-switch:hover {
+    transform: scale(1.2);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+body.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+body.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+body.darkmode {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+    --cds-border-subtle: var(--dark-subtle-border);
+}
+
+body.darkmode input {
+    color: var(--dark-text-color);
+    background-color: inherit;
+    border: 1px solid var(--dark-border-color);
+}
+
+body.darkmode input:focus {
+    outline: none;
+    border: 2px solid var(--dark-focus-border);
+}
+
+body.darkmode a:focus {
+    outline: none;
+    border: none;
+}
+
+body.darkmode button:active {
+    outline: none;
+    border: none;
+}
+
+body.darkmode .cds--header {
+    background-color: var(--dark-bg-secondary);
+    color: var(--dark-text-color);
+}
+
+body.darkmode a.cds--header__name,
+body.darkmode a.cds--header__menu-item {
+    color: var(--dark-text-color);
+    background-color: var(--dark-bg-secondary);
+}
+
+body.darkmode a.cds--header__menu-item:hover {
+    color: var(--dark-hover-color);
+}
+
+body.darkmode input#search-1::placeholder {
+    color: var(--dark-text-color);
+}
+
+body.darkmode .cds--checkbox-label::before,
+body.darkmode .cds--checkbox:checked + .cds--checkbox-label::before,
+body.darkmode .cds--checkbox:indeterminate + .cds--checkbox-label::before,
+body.darkmode .cds--checkbox-label[data-contained-checkbox-state=true]::before,
+body.darkmode .cds--checkbox-label[data-contained-checkbox-state=mixed]::before {
+    border-color: var(--dark-border-color);
+    background-color: var(--dark-bg-secondary);
+}
+
+body.darkmode li.cds--accordion__item.cds--accordion__item--active {
+    background-color: var(--dark-bg-accordion);
+    color: var(--dark-text-color);
+}
+
+body.darkmode button.cds--accordion__heading {
+    color: var(--dark-text-color);
+}
+
+body.darkmode button.cds--accordion__heading:hover {
+    --cds-layer-hover: var(--dark-bg-secondary);
+}
+
+body.darkmode .cds--accordion__heading:focus::before {
+    box-sizing: border-box;
+    border: 2px solid var(--dark-focus-border);
+}
+
+body.darkmode svg.cds--accordion__arrow {
+    fill: var(--dark-text-color);
+}
+
+body.darkmode .pseudocode.cds--snippet.cds--snippet--multi {
+    background-color: var(--dark-snippet-bg);
+    scrollbar-color: var(--dark-scrollbar-thumb) var(--dark-scrollbar-track);
+}
+
+body.darkmode .cds--snippet__icon,
+body.darkmode .cds--snippet__overflow-indicator--right,
+body.darkmode .cds--snippet__overflow-indicator--left {
+    fill: var(--dark-text-color);
+}
+
+body.darkmode .cds--snippet__overflow-indicator--right,
+body.darkmode .cds--snippet__overflow-indicator--left {
+    --cds-layer: var(--dark-subtle-border);
+}
+
+body.darkmode button.cds--copy-btn.cds--copy.cds--btn.cds--btn--md.cds--btn--primary {
+    background-color: var(--dark-button-bg);
+    color: var(--dark-text-color);
+}
+body.darkmode button.syntax.cds--snippet.cds--snippet--inline.cds--copy.cds--btn.cds--btn--md.cds--btn--primary {
+    background-color: var(--dark-bg-accordion);
+    color: var(--dark-text-color);
+}
+
+body.darkmode .code {
+    color: var(--dark-text-color);
+}
+
+body.darkmode .instruction-layout {
+    background-color: rgba(51, 51, 51, 0.6);
+}
+
+body.darkmode td.instruction-field,
+body.darkmode td.instruction-bit-number {
+    color: var(--dark-text-color);
+    border: 1px solid var(--dark-border-color);
+}
