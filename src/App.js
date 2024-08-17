@@ -29,6 +29,7 @@ class App extends Component {
 
         if (formats.length == 0)
             ISA.formats.forEach(genFormatList);
+        const savedDarkMode = localStorage.getItem('isDarkMode') === 'true';
         this.state = {
             data: ISA.instructions,
             extensionSet: ISA.extensions,
@@ -36,7 +37,25 @@ class App extends Component {
             search: "",
             search_mnemonics: true,
             search_names: false,
+            isDarkMode: savedDarkMode,
         };
+    }
+
+    toggleDarkMode = () => {
+        this.setState(
+            (prevState) => {
+                const newMode = !prevState.isDarkMode;
+                localStorage.setItem('isDarkMode', newMode);
+                return { isDarkMode: newMode };
+            },
+            () => {
+                document.body.classList.toggle('darkmode', this.state.isDarkMode);
+            }
+        );
+    };
+
+    componentDidMount() {
+        document.body.classList.toggle('darkmode', this.state.isDarkMode);
     }
 
     displayMnemonic(item) {
@@ -378,15 +397,20 @@ class App extends Component {
     }
 
     render() {
+        const { isDarkMode } = this.state;
+        const appClass = isDarkMode ? 'app dark-mode' : 'App';
         return (
-            <div className="App">
+            <div className={appClass}>
                 <div
                     data-floating-menu-container="true"
                     role="main"
                     className="pageContainer"
                 >
                     <div className="homeContainer">
-                        <Nav />
+                        <Nav 
+                            isDarkMode={isDarkMode}
+                            toggleDarkMode={this.toggleDarkMode}
+                        />
                         <div className="mainContainer">
                             <div className="filterContainer">
                                 <Accordion>
