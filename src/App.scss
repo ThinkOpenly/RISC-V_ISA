@@ -41,6 +41,11 @@
     width: 100%;
     display: inline-block;
 }
+span {
+    align-self: center;
+    cursor: default;
+    padding-right: 4px;
+}
 
 .column {
     width: 100%;
