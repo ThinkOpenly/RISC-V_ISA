@@ -39,6 +39,23 @@ class App extends Component {
         };
     }
 
+    displayOperands(operands) {
+        let all = "";
+        let comma = "";
+    
+        for (let i = 0; i < operands.length; i++) {
+            if (operands[i].optional) {
+                all += comma + "[," + operands[i].name + "]";
+            } else {
+                all += comma + operands[i].name;
+            }
+            comma = ",";
+        }
+    
+        return all;
+    }
+    
+
     displayMnemonic(item) {
         const spaces = "               ";
 
